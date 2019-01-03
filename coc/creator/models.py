@@ -1,14 +1,16 @@
+from uuid import uuid4
+
 from creator.constants import GENDER
 
 from django.db.models import (BooleanField, CASCADE, CharField, ForeignKey,
-                              Model, PositiveIntegerField, OneToOneField)
+                              Model, OneToOneField, PositiveIntegerField,
+                              UUIDField)
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
-# TODO: Add ids to every model
-
 class Occupation(Model):
     """Occupation class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
     title = CharField(max_length=50)
     credit_rating_min = PositiveIntegerField()
     credit_rating_max = PositiveIntegerField(
@@ -17,27 +19,21 @@ class Occupation(Model):
 
 class Attributes(Model):
     """Attribute class model."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
     name = CharField(max_length=20)
-    value = PositiveIntegerField()
 
-    @property
-    def half_value(self):
-        """Return half of attribute value."""
-        return self.value // 2
-
-    @property
-    def fifth_value(self):
-        """Return fifth of attribute value."""
-        return self.value // 5
 
 class OccupationAttribute(Model):
     """Relation between occupation and attribute."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
     occupation = ForeignKey(Occupation, on_delete=CASCADE)
     attribute = ForeignKey(Attribute, on_delete=CASCADE)
     modifier = PositiveIntegerField()
 
+
 class Investigator(Model):
     """Investigators class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
     name = CharField(max_length=50)
     player = CharField(max_length=50)
     sex = CharField(max_length=1, choices=GENDER)
@@ -128,18 +124,38 @@ class Investigator(Model):
         pass
 
 
+class InvestigatorAttribute(Model):
+    """Relation between investigator and attribute."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    investigator = ForeignKey(Investigator, on_delete=CASCADE)
+    attribute = ForeignKey(Attribute, on_delete=CASCADE)
+    value = PositiveIntegerField()
+
+    @property
+    def half_value(self):
+        """Return half of attribute value."""
+        return self.value // 2
+
+    @property
+    def fifth_value(self):
+        """Return fifth of attribute value."""
+        return self.value // 5
+
 
 class Skills(Model):
     """Skills class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
     title = CharField(max_length=50)
     value = PositiveIntegerField(default=0)
 
 class InvestigatorSkills(Model):
     """Skills relation with investigator class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     skill = ForeignKey(Skills, on_delete=CASCADE)
 
 class OccupationSkills(Model):
     """Skills relation with Occupation."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
     occupation = ForeignKey(Occupation, on_delete=CASCADE)
     skill = ForeignKey(Skills, on_delete=CASCADE)
