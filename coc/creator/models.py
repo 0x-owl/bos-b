@@ -6,108 +6,9 @@ from creator.constants import GENDER
 
 
 # Create your models here.
-class Skills(Model):
+class Occupation(Model):
+    """Occupation class."""
     title = CharField(max_length=50)
-    value = PositiveIntegerField(default=0)
-
-
-#  class Occupation(Model):
-    #  title = CharField(max_length=50)
-    #  attributes = 
-
-
-class InvestigatorSkills(Model):
-    """Basic skills."""
-    accounting = PositiveIntegerField(
-            default=5, validators=[MaxValueValidator(99)])
-    anthropology = PositiveIntegerField(
-        default=1, validators=[MaxValueValidator(99)])
-    appraise = PositiveIntegerField(
-        default=5, validators=[MaxValueValidator(99)])
-    archaelogy = PositiveIntegerField(
-        default=1, validators=[MaxValueValidator(99)])
-    art_craft = PositiveIntegerField(
-        default=5, validators=[MaxValueValidator(99)])
-    charm = PositiveIntegerField(
-        default=15, validators=[MaxValueValidator(99)])
-    climb = PositiveIntegerField(
-        default=20, validators=[MaxValueValidator(99)])
-    credit_rating = PositiveIntegerField(
-        default=0, validators=[MaxValueValidator(99)])
-    cthulhu_mythos = PositiveIntegerField(
-        default=0, validators=[MaxValueValidator(99)])
-    disguise = PositiveIntegerField(
-        default=5, validators=[MaxValueValidator(99)])
-    dodge = PositiveIntegerField(
-        default=0, validators=[MaxValueValidator(99)])
-    drive_auto = PositiveIntegerField(
-        default=20, validators=[MaxValueValidator(99)])
-    elec_repair = PositiveIntegerField(
-        default=10, validators=[MaxValueValidator(99)])
-    fast_talk = PositiveIntegerField(
-        default=5, validators=[MaxValueValidator(99)])
-    fighting_brawl = PositiveIntegerField(
-        default=25, validators=[MaxValueValidator(99)])
-    firearms_handgun = PositiveIntegerField(
-        default=20, validators=[MaxValueValidator(99)])
-    firearms_shotgun_rifle = PositiveIntegerField(
-        default=25, validators=[MaxValueValidator(99)])
-    first_aid = PositiveIntegerField(
-        default=30, validators=[MaxValueValidator(99)])
-    history = PositiveIntegerField(
-        default=5, validators=[MaxValueValidator(99)])
-    intimidate = PositiveIntegerField(
-        default=15, validators=[MaxValueValidator(99)])
-    jump = PositiveIntegerField(
-        default=0, validators=[MaxValueValidator(99)])
-    language_other = PositiveIntegerField(
-        default=1, validators=[MaxValueValidator(99)])
-    language_own = PositiveIntegerField(
-        default=0, validators=[MaxValueValidator(99)])
-    law = PositiveIntegerField(default=5, validators=[MaxValueValidator(99)])
-    library_use = PositiveIntegerField(
-        default=20, validators=[MaxValueValidator(99)])
-    listen = PositiveIntegerField(
-        default=20, validators=[MaxValueValidator(99)])
-    locksmith = PositiveIntegerField(
-        default=1, validators=[MaxValueValidator(99)])
-    mech_repair = PositiveIntegerField(
-        default=10, validators=[MaxValueValidator(99)])
-    medicine = PositiveIntegerField(
-        default=1, validators=[MaxValueValidator(99)])
-    natural_world = PositiveIntegerField(
-        default=10, validators=[MaxValueValidator(99)])
-    navigate = PositiveIntegerField(
-        default=10, validators=[MaxValueValidator(99)])
-    occult = PositiveIntegerField(
-        default=5, validators=[MaxValueValidator(99)])
-    op_hv_machine = PositiveIntegerField(
-        default=1, validators=[MaxValueValidator(99)])
-    persuade = PositiveIntegerField(
-        default=10, validators=[MaxValueValidator(99)])
-    pilot = PositiveIntegerField(
-        default=1, validators=[MaxValueValidator(99)])
-    psychology = PositiveIntegerField(
-        default=10, validators=[MaxValueValidator(99)])
-    psychoanalysis = PositiveIntegerField(
-        default=1, validators=[MaxValueValidator(99)])
-    ride = PositiveIntegerField(
-        default=5, validators=[MaxValueValidator(99)])
-    science = PositiveIntegerField(
-        default=1, validators=[MaxValueValidator(99)])
-    sleight_of_hand = PositiveIntegerField(
-        default=10, validators=[MaxValueValidator(99)])
-    spot_hidden = PositiveIntegerField(
-        default=25, validators=[MaxValueValidator(99)])
-    stealth = PositiveIntegerField(
-        default=20, validators=[MaxValueValidator(99)])
-    survival = PositiveIntegerField(
-        default=10, validators=[MaxValueValidator(99)])
-    swim = PositiveIntegerField(default=20, validators=[MaxValueValidator(99)])
-    throw = PositiveIntegerField(
-        default=20, validators=[MaxValueValidator(99)])
-    track = PositiveIntegerField(
-        default=10, validators=[MaxValueValidator(99)])
 
 
 class Investigator(Model):
@@ -127,7 +28,8 @@ class Investigator(Model):
     size = IntegerField()
     luck = PositiveIntegerField()
     intelligence = IntegerField()
-    occupation = ForeignKey('Occupation', on_delete=CASCADE)
+    occupation = ForeignKey(Occupation, on_delete=CASCADE)
+
 
     @property
     def health(self):
@@ -148,7 +50,7 @@ class Investigator(Model):
 
     @property
     def move(self):
-        """Move rate property."""
+        """Move rate property, affected by certain conditions."""
         dex = self.dexterity
         siz = self.size
         strg = self.strength
@@ -163,3 +65,36 @@ class Investigator(Model):
             mov = mov - ((self.age // 10) - 3)
 
         return mov
+
+
+    @property
+    def build(self):
+        """Build attribute property."""
+        amount = self.strength + self.size
+        res = ()
+        if amount <= 64:
+            res = ('-2', -2)
+        elif amount <= 84:
+            res = ('-1', -1)
+        elif amount <= 124:
+            res = ('0', 0)
+        elif amount <= 164:
+            res = ('+1D4', 1)
+        elif amount <= 204:
+            res = ('+1D6', 2)
+        elif amount <= 284:
+            res = ('+2D6', 3)
+        else:
+            mod = (amount - 205) // 80
+            dices = '{}D6'.format(mod+2)
+            build = 3 + mod
+            res = (dices, build)
+
+        return res
+
+
+
+class Skills(Model):
+    title = CharField(max_length=50)
+    value = PositiveIntegerField(default=0)
+    investigator = ForeignKey(Investigator, on_delete=CASCADE)
