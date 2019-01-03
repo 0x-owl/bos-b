@@ -1,15 +1,40 @@
-from django.db.models import (BooleanField, CASCADE, CharField, ForeignKey,
-                              IntegerField, Model, PositiveIntegerField)
-from django.core.validators import MaxValueValidator
-
 from creator.constants import GENDER
 
+from django.db.models import (BooleanField, CASCADE, CharField, ForeignKey,
+                              Model, PositiveIntegerField, OneToOneField)
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
+# TODO: Add ids to every model
+
 class Occupation(Model):
     """Occupation class."""
     title = CharField(max_length=50)
+    credit_rating_min = PositiveIntegerField()
+    credit_rating_max = PositiveIntegerField(
+        validators=[MinValueValidator(self.credit_rating_min + 1)]
+    )
 
+class Attributes(Model):
+    """Attribute class model."""
+    name = CharField(max_length=20)
+    value = PositiveIntegerField()
+
+    @property
+    def half_value(self):
+        """Return half of attribute value."""
+        return self.value // 2
+
+    @property
+    def fifth_value(self):
+        """Return fifth of attribute value."""
+        return self.value // 5
+
+class OccupationAttribute(Model):
+    """Relation between occupation and attribute."""
+    occupation = ForeignKey(Occupation, on_delete=CASCADE)
+    attribute = ForeignKey(Attribute, on_delete=CASCADE)
+    modifier = PositiveIntegerField()
 
 class Investigator(Model):
     """Investigators class."""
@@ -19,17 +44,18 @@ class Investigator(Model):
     residence = CharField(max_length=80)
     birthplace = CharField(max_length=80)
     age = PositiveIntegerField(default=18)
+    # TODO: move this attributes to their own table
+    # TODO: update the methods that use them
     strength = PositiveIntegerField()
     dexterity = PositiveIntegerField()
     power = PositiveIntegerField()
     constitution = PositiveIntegerField()
-    appearence = IntegerField()
-    education = IntegerField()
-    size = IntegerField()
+    appearence = PositiveIntegerField()
+    education = PositiveIntegerField()
+    size = PositiveIntegerField()
     luck = PositiveIntegerField()
-    intelligence = IntegerField()
-    occupation = ForeignKey(Occupation, on_delete=CASCADE)
-
+    intelligence = PositiveIntegerField()
+    occupation = OneToOneField(Occupation)
 
     @property
     def health(self):
@@ -66,7 +92,6 @@ class Investigator(Model):
 
         return mov
 
-
     @property
     def build(self):
         """Build attribute property."""
@@ -92,9 +117,29 @@ class Investigator(Model):
 
         return res
 
+    @property
+    def free_skill_points(self):
+        return self.intelligence.value * 2
+
+    @property
+    def occupation_skill_points(self):
+        # TODO: obtain the skills of the occupation and calculate the points
+        # available
+        pass
+
 
 
 class Skills(Model):
+    """Skills class."""
     title = CharField(max_length=50)
     value = PositiveIntegerField(default=0)
+
+class InvestigatorSkills(Model):
+    """Skills relation with investigator class."""
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
+    skill = ForeignKey(Skills, on_delete=CASCADE)
+
+class OccupationSkills(Model):
+    """Skills relation with Occupation."""
+    occupation = ForeignKey(Occupation, on_delete=CASCADE)
+    skill = ForeignKey(Skills, on_delete=CASCADE)
