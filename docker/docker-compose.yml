@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  coc:
+    tty: true
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
