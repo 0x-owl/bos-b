@@ -1,11 +1,9 @@
 from uuid import uuid4
 
-from django.db.models import (BooleanField, CASCADE, CharField, ForeignKey,
-                              Model, OneToOneField, PositiveIntegerField,
-                              UUIDField)
-from django.core.validators import MaxValueValidator, MinValueValidator
-
 from creator.constants import ATTR, GENDER
+from django.db.models import (BooleanField, CASCADE, CharField, ForeignKey,
+                              Model, OneToOneField, PROTECT,
+                              PositiveIntegerField, SET_NULL, UUIDField)
 
 
 def obtain_attribute_value(inv, attribute_name):
@@ -15,33 +13,30 @@ def obtain_attribute_value(inv, attribute_name):
         attr_name -- name of the attribute e.g. STR, DEX, ...
     """
     attr = InvestigatorAttribute.objects.filter(
-        investigator_id = inv.id, attr_name = attribute_name).first().value
+        investigator_id=inv.id, attr_name=attribute_name).first().value
 
     return attr
 
 
 # Create your models here.
-class Occupation(Model):
-    """Occupation class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    title = CharField(max_length=50)
-    credit_rating_min = PositiveIntegerField()
-    credit_rating_max = PositiveIntegerField()
-
-
 class Attribute(Model):
     """Attribute class model."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     name = CharField(max_length=3, choices=ATTR)
 
 
-class OccupationAttribute(Model):
-    """Relation between occupation and attribute."""
+class Skills(Model):
+    """Skills class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    occupation = ForeignKey(Occupation, on_delete=CASCADE)
-    attr = ForeignKey(Attribute, on_delete=CASCADE)
-    modifier = PositiveIntegerField()
-    optional = BooleanField(default=False)
+    title = CharField(max_length=50)
+
+
+class Occupation(Model):
+    """Occupation class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    title = CharField(max_length=50)
+    credit_rating_min = PositiveIntegerField()
+    credit_rating_max = PositiveIntegerField()
 
 
 class Investigator(Model):
@@ -53,7 +48,9 @@ class Investigator(Model):
     residence = CharField(max_length=80)
     birthplace = CharField(max_length=80)
     age = PositiveIntegerField(default=18)
-    occupation = OneToOneField(Occupation, on_delete=CASCADE, default=None)
+    # TODO: Verify if SET_NULL is the correct behaviour or PROTECT
+    occupation = OneToOneField(
+        Occupation, on_delete=SET_NULL, default=None, null=True)
 
     @property
     def health(self):
@@ -132,11 +129,13 @@ class Investigator(Model):
         """Based on the occupation obtain the amount of free skill points."""
         skill_points = 0
         # Obtain a list of the occupation attributes.
-        occ_attr = [occ.attr for occ in\
-            OccupationAttribute.objects.filter(uuid=self.occupation.uuid)]
+        occ_attr = [occ.attr for occ in
+                    OccupationAttribute.objects.filter(
+                        uuid=self.occupation.uuid)]
         # Generate a diccionary with the investigators attribute data.
-        inv_attr = {reg.attr.name: reg.attr.value for reg in\
-            InvestigatorAttribute.objects.filter(investigator_id=self.id)}
+        inv_attr = {reg.attr.name: reg.attr.value for reg in
+                    InvestigatorAttribute.objects.filter(
+                        investigator_id=self.id)}
         optionals = [0]
         # Iterate through the occupation attributes and add the skill points if
         # they are compulsory, if not check the the bigger of the optionals and
@@ -151,29 +150,21 @@ class Investigator(Model):
         return skill_points
 
 
+class OccupationAttribute(Model):
+    """Relation between occupation and attribute."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    occupation = ForeignKey(Occupation, on_delete=CASCADE)
+    attr = ForeignKey(Attribute, on_delete=PROTECT)
+    modifier = PositiveIntegerField()
+    optional = BooleanField(default=False)
+
+
 class InvestigatorAttribute(Model):
     """Relation between investigator and its attributes."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
-    attr = ForeignKey(Attribute, on_delete=CASCADE)
+    attr = ForeignKey(Attribute, on_delete=PROTECT)
     value = PositiveIntegerField()
-
-    @property
-    def half_value(self):
-        """Return half of attribute value."""
-        return self.value // 2
-
-    @property
-    def fifth_value(self):
-        """Return fifth of attribute value."""
-        return self.value // 5
-
-
-class Skills(Model):
-    """Skills class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    title = CharField(max_length=50)
-    value = PositiveIntegerField(default=0)
 
     @property
     def half_value(self):
@@ -190,11 +181,22 @@ class InvestigatorSkills(Model):
     """Skills relation with investigator class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
-    skill = ForeignKey(Skills, on_delete=CASCADE)
+    skill = ForeignKey(Skills, on_delete=PROTECT)
+    value = PositiveIntegerField(default=0)
+
+    @property
+    def half_value(self):
+        """Return half of attribute value."""
+        return self.value // 2
+
+    @property
+    def fifth_value(self):
+        """Return fifth of attribute value."""
+        return self.value // 5
 
 
 class OccupationSkills(Model):
     """Skills relation with Occupation."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     occupation = ForeignKey(Occupation, on_delete=CASCADE)
-    skill = ForeignKey(Skills, on_delete=CASCADE)
+    skill = ForeignKey(Skills, on_delete=PROTECT)
