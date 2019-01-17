@@ -11,5 +11,17 @@ function build(){
 
 
 function run(){
-        docker-compose -f docker/docker-compose.yml run coc bash
+        docker-compose -f docker/docker-compose.yml run coc ash
+}
+
+function rmi(){
+        docker rmi -f $(docker images|grep "<none>"|awk '{print $3}')
+}
+
+function stop(){
+        docker stop $(docker ps -a -q)
+}
+
+function rm(){
+        docker rm $(docker ps -a -q)
 }
