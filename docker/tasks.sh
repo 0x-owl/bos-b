@@ -14,6 +14,11 @@ function run(){
         docker-compose -f docker/docker-compose.yml run coc ash
 }
 
+function up(){
+        docker-compose -f docker/docker-compose.yml up
+}
+
+
 function rmi(){
         docker rmi -f $(docker images|grep "<none>"|awk '{print $3}')
 }
