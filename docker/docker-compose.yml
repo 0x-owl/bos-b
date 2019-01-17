@@ -3,6 +3,12 @@ version: '3'
 services:
   coc:
     tty: true
+    ports:
+      - "8000:8000"
+    command: python coc/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ../coc:/coc/coc
+      - ../docker:/coc/docker  
     build:
       context: ..
       dockerfile: docker/Dockerfile
