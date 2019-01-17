@@ -5,13 +5,13 @@ GENDER = (
 
 
 ATTR = (
-    ('Strength', 'STR'),
-    ('Dexterity', 'DEX'),
-    ('Appearence', 'APP'),
-    ('Educated', 'EDU'),
-    ('Intelligence', 'INT'),
-    ('Size', 'SIZ'),
-    ('Constitution', 'CON'),
-    ('Luck', 'LCK'),
-    ('Power', 'PWR')
+    ('STR', 'Strength'),
+    ('DEX', 'Dexterity'),
+    ('APP', 'Appearence'),
+    ('EDU', 'Education'),
+    ('INT', 'Intelligence'),
+    ('SIZ', 'Size'),
+    ('CON', 'Constitution'),
+    ('LCK', 'Luck'),
+    ('PWR', 'Power')
 )
