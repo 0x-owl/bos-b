@@ -13,7 +13,7 @@ def obtain_attribute_value(inv, attribute_name):
         attr_name -- name of the attribute e.g. STR, DEX, ...
     """
     attr = InvestigatorAttribute.objects.filter(
-        investigator_id=inv.id, attr_name=attribute_name).first().value
+        investigator_id=inv.id, attr__name=attribute_name).first().value
 
     return attr
 
@@ -122,18 +122,17 @@ class Investigator(Model):
         """Obtain the amount of free skill points an investigator has."""
         intelligence = obtain_attribute_value(self, 'INT')
 
-        return intelligence.value * 2
+        return intelligence * 2
 
     @property
     def occupation_skill_points(self):
         """Based on the occupation obtain the amount of free skill points."""
         skill_points = 0
         # Obtain a list of the occupation attributes.
-        occ_attr = [occ.attr for occ in
-                    OccupationAttribute.objects.filter(
-                        uuid=self.occupation.uuid)]
+        occ_attr = [occ for occ in OccupationAttribute.objects.filter(
+                       occupation__uuid=self.occupation.uuid)]
         # Generate a diccionary with the investigators attribute data.
-        inv_attr = {reg.attr.name: reg.attr.value for reg in
+        inv_attr = {reg.attr.name: reg.value for reg in
                     InvestigatorAttribute.objects.filter(
                         investigator_id=self.id)}
         optionals = [0]
@@ -142,9 +141,9 @@ class Investigator(Model):
         # add it to the accumulator.
         for attr in occ_attr:
             if not attr.optional:
-                skill_points += inv_attr[attr.name] * attr.modifier
+                skill_points += inv_attr[attr.attr.name] * attr.modifier
             else:
-                optionals.append(inv_attr[attr.name] * attr.modifier)
+                optionals.append(inv_attr[attr.attr.name] * attr.modifier)
         skill_points += max(optionals)
 
         return skill_points
