@@ -53,18 +53,79 @@ class Investigator(Model):
         Occupation, on_delete=SET_NULL, default=None, null=True)
 
     @property
+    def dexterity(self):
+        """Dexterity attribute property that obtains the value for the
+        investigator.
+        """
+        dex = obtain_attribute_value(self, 'DEX')
+        return dex
+
+    @property
+    def strength(self):
+        """Strength attribute property that obtains the value for the
+        investigator.
+        """
+        str_ = obtain_attribute_value(self, 'STR')
+        return str_
+
+    @property
+    def constitution(self):
+        """Constitution attribute property that obtains the value for the
+        investigator.
+        """
+        con = obtain_attribute_value(self, 'CON')
+        return con
+
+    @property
+    def power(self):
+        """Power attribute property that obtains the value for the
+        investigator.
+        """
+        pow_ = obtain_attribute_value(self, 'PWR')
+        return pow_
+
+    @property
+    def size(self):
+        """Size attribute property that obtains the value for the
+        investigator.
+        """
+        siz = obtain_attribute_value(self, 'SIZ')
+        return siz
+
+    @property
+    def education(self):
+        """Education attribute property that obtains the value for the
+        investigator.
+        """
+        edu = obtain_attribute_value(self, 'EDU')
+        return edu
+
+    @property
+    def intelligence(self):
+        """Intelligence attribute property that obtains the value for the
+        investigator.
+        """
+        int_ = obtain_attribute_value(self, 'INT')
+        return int_
+
+    @property
+    def appearance(self):
+        """Appearance attribute property that obtains the value for the
+        investigator.
+        """
+        app = obtain_attribute_value('APP')
+        return app
+
+    @property
     def health(self):
         """Health property."""
-        siz = obtain_attribute_value(self, 'SIZ')
-        con = obtain_attribute_value(self, 'CON')
-        health = (siz + con) // 10
+        health = (self.size + self.constitution) // 10
         return health
 
     @property
     def sanity(self):
         """Sanity property."""
-        pwr = obtain_attribute_value(self, 'PWR')
-        return pwr
+        return self.power
 
     @property
     def magic_points(self):
@@ -75,12 +136,9 @@ class Investigator(Model):
     @property
     def move(self):
         """Move rate property, affected by certain conditions."""
-        dex = obtain_attribute_value(self, 'DEX')
-        strg = obtain_attribute_value(self, 'STR')
-        siz = obtain_attribute_value(self, 'SIZ')
-        if strg >= siz or dex >= siz:
+        if self.strength >= self.size or self.dexterity >= self.size:
             mov = 8
-        elif strg > siz and dex > siz:
+        elif self.strength > self.size and self.dexterity > self.size:
             mov = 9
         else:
             mov = 7
@@ -93,9 +151,7 @@ class Investigator(Model):
     @property
     def build(self):
         """Build attribute property."""
-        strg = obtain_attribute_value(self, 'STR')
-        siz = obtain_attribute_value(self, 'SIZ')
-        amount = strg + siz
+        amount = self.strength + self.size
         res = ()
         if amount <= 64:
             res = ('-2', -2)
@@ -120,9 +176,7 @@ class Investigator(Model):
     @property
     def free_skill_points(self):
         """Obtain the amount of free skill points an investigator has."""
-        intelligence = obtain_attribute_value(self, 'INT')
-
-        return intelligence * 2
+        return self.intelligence * 2
 
     @property
     def occupation_skill_points(self):
