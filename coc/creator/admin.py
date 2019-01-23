@@ -1,4 +1,4 @@
-from creator.models import (Attribute, Investigator, InvestigatorAttribute,
+from creator.models import (Investigator, InvestigatorAttribute,
                             InvestigatorSkills, Occupation, OccupationAttribute,
                             OccupationSkills, Skills)
 from django.contrib import admin
@@ -7,7 +7,6 @@ from django.contrib import admin
 admin.site.register(Investigator)
 admin.site.register(Skills)
 admin.site.register(Occupation)
-admin.site.register(Attribute)
 admin.site.register(InvestigatorAttribute)
 admin.site.register(InvestigatorSkills)
 admin.site.register(OccupationAttribute)
