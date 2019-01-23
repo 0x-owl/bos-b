@@ -5,5 +5,4 @@ ADD . /coc
 WORKDIR /coc
 
 RUN apk update
-RUN apk add --update bash
 RUN pip3 install -r docker/requirements.txt
