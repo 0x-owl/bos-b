@@ -1,5 +1,6 @@
 from uuid import uuid4
 
+from django_enumfield.enum import Enum, EnumField
 from creator.constants import ATTR, GENDER
 from django.db.models import (BooleanField, CASCADE, CharField, ForeignKey,
                               Model, OneToOneField, PROTECT,
@@ -12,23 +13,35 @@ def obtain_attribute_value(inv, attribute_name):
         inv -- Investigator class instance.
         attr_name -- name of the attribute e.g. STR, DEX, ...
     """
+    attr_value = filter(lambda x: x[0] == attribute_name, Attribute.items())
+    attr_value = attr_value.__next__()[1]
     attr = InvestigatorAttribute.objects.filter(
-        investigator_id=inv.id, attr__name=attribute_name).first().value
-
+        investigator_id=inv.id, attr=attr_value).first().value
     return attr
 
 
 # Create your models here.
-class Attribute(Model):
-    """Attribute class model."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    name = CharField(max_length=3, choices=ATTR)
+class Attribute(Enum):
+    STR = 1
+    DEX = 2
+    CON = 3
+    POW = 4
+    EDU = 5
+    INT = 6
+    APP = 7
 
 
 class Skills(Model):
     """Skills class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     title = CharField(max_length=50)
+
+    class Meta:
+        verbose_name_plural = 'skills'
+
+    def __str__(self):
+        """String representation of the object."""
+        return self.title
 
 
 class Occupation(Model):
@@ -37,6 +50,10 @@ class Occupation(Model):
     title = CharField(max_length=50)
     credit_rating_min = PositiveIntegerField()
     credit_rating_max = PositiveIntegerField()
+
+    def __str__(self):
+        """String representation of the object."""
+        return self.title
 
 
 class Investigator(Model):
@@ -202,21 +219,31 @@ class Investigator(Model):
 
         return skill_points
 
+    def __str__(self):
+        """String representation of the object."""
+        return '{} - {}'.format(self.player, self.name)
+
 
 class OccupationAttribute(Model):
     """Relation between occupation and attribute."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     occupation = ForeignKey(Occupation, on_delete=CASCADE)
-    attr = ForeignKey(Attribute, on_delete=PROTECT)
+    attr = EnumField(Attribute)
     modifier = PositiveIntegerField()
     optional = BooleanField(default=False)
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {} - {}'.format(
+            self.occupation.title, self.attr, self.value)
+        return title
 
 
 class InvestigatorAttribute(Model):
     """Relation between investigator and its attributes."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
-    attr = ForeignKey(Attribute, on_delete=PROTECT)
+    attr = EnumField(Attribute)
     value = PositiveIntegerField()
 
     @property
@@ -228,6 +255,12 @@ class InvestigatorAttribute(Model):
     def fifth_value(self):
         """Return fifth of attribute value."""
         return self.value // 5
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {} - {}'.format(
+            self.investigator.name, self.attr, self.value)
+        return title
 
 
 class InvestigatorSkills(Model):
@@ -247,9 +280,26 @@ class InvestigatorSkills(Model):
         """Return fifth of attribute value."""
         return self.value // 5
 
+    class Meta:
+        verbose_name_plural = 'investigator skills'
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {} - {}'.format(
+            self.investigator.name, self.skill.title, self.value)
+        return title
 
 class OccupationSkills(Model):
     """Skills relation with Occupation."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     occupation = ForeignKey(Occupation, on_delete=CASCADE)
     skill = ForeignKey(Skills, on_delete=PROTECT)
+
+    class Meta:
+        verbose_name_plural = 'occupation skills'
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {} - {}'.format(
+            self.occupation.title, self.skill.title, self.value)
+        return title
