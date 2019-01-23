@@ -3,7 +3,8 @@ __pycache__/
 *.log
 *.pot
 *.py[cod]
-db.sqlite3
+coc/db.sqlite3
+coc/creator/migrations/*
 
 # C extensions
 *.so
