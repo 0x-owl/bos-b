@@ -1,10 +1,12 @@
 from uuid import uuid4
 
+from creator.constants import GENDER
 from django_enumfield.enum import Enum, EnumField
-from creator.constants import ATTR, GENDER
+
 from django.db.models import (BooleanField, CASCADE, CharField, ForeignKey,
                               Model, OneToOneField, PROTECT,
                               PositiveIntegerField, SET_NULL, UUIDField)
+from django.contrib.auth.models import User
 
 
 def obtain_attribute_value(inv, attribute_name):
@@ -22,6 +24,7 @@ def obtain_attribute_value(inv, attribute_name):
 
 # Create your models here.
 class Attribute(Enum):
+    """Attribute enum."""
     STR = 1
     DEX = 2
     CON = 3
@@ -31,10 +34,21 @@ class Attribute(Enum):
     APP = 7
 
 
+class Tag(Model):
+    """Tag class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    title = CharField(max_length=50)
+
+    def __str__(self):
+        """String representation of the object."""
+        return '#{}'.format(self.title)
+
+
 class Skills(Model):
     """Skills class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     title = CharField(max_length=50)
+    user = ForeignKey(User, on_delete=CASCADE)
 
     class Meta:
         verbose_name_plural = 'skills'
@@ -47,6 +61,7 @@ class Skills(Model):
 class Occupation(Model):
     """Occupation class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    user = ForeignKey(User, on_delete=CASCADE)
     title = CharField(max_length=50)
     credit_rating_min = PositiveIntegerField()
     credit_rating_max = PositiveIntegerField()
@@ -59,6 +74,7 @@ class Occupation(Model):
 class Investigator(Model):
     """Investigators class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    user = ForeignKey(User, on_delete=CASCADE)
     name = CharField(max_length=50)
     player = CharField(max_length=50)
     sex = CharField(max_length=1, choices=GENDER)
@@ -288,6 +304,7 @@ class InvestigatorSkills(Model):
         title = '{} - {} - {}'.format(
             self.investigator.name, self.skill.title, self.value)
         return title
+
 
 class OccupationSkills(Model):
     """Skills relation with Occupation."""
