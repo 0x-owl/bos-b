@@ -34,10 +34,35 @@ class Attribute(Enum):
     APP = 7
 
 
+class SpellCategory(Enum):
+    """Spell categories enum."""
+    BANISHMENT_OR_CONTROL = 1
+    BRINGING_FORTH_MONSTERS_AND_GODS = 2
+    COMBAT = 3
+    COMMUNICATION = 4
+    DREAMLANDS = 5
+    ENCHANTMENTS = 6
+    ENVIRONMENTAL = 7
+    EXTENDING_LIFE = 8
+    FOLK = 9
+    HARMFUL = 10
+    INFLUENCE = 11
+    MAKING_MONSTERS = 12
+    OTHER_SPELLS = 13
+    PROTECTION = 14
+    RELATING_TO_TIME = 15
+    TRANSFORMATION = 16
+    TRAVEL_AND_TRANSPORTATION = 17
+
+    class Meta:
+        verbose_name_plural = 'Spell categories'
+
+
 class Tag(Model):
     """Tag class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     title = CharField(max_length=50)
+    user = ForeignKey(User, on_delete=CASCADE)
 
     def __str__(self):
         """String representation of the object."""
@@ -319,4 +344,46 @@ class OccupationSkills(Model):
         """String representation of the object."""
         title = '{} - {} - {}'.format(
             self.occupation.title, self.skill.title, self.value)
+        return title
+
+
+class InvestigatorTags(Model):
+    """Tags assigned to investigators."""
+    tag = ForeignKey(Tag, on_delete=PROTECT)
+    investigator = ForeignKey(Investigator, on_delete=CASCADE)
+
+    class Meta:
+        verbose_name_plural = 'investigator tags'
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.tag.title, self.investigator.name)
+        return title
+
+
+class OccupationTags(Model):
+    """Tags assigned to occupations."""
+    tag = ForeignKey(Tag, on_delete=PROTECT)
+    occupation = ForeignKey(Occupation, on_delete=CASCADE)
+
+    class Meta:
+        verbose_name_plural = 'occupation tags'
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.tag.title, self.occupation.title)
+        return title
+
+
+class SkillTags(Model):
+    """Tags assigned to skills."""
+    tag = ForeignKey(Tag, on_delete=PROTECT)
+    skills = ForeignKey(Skills, on_delete=CASCADE)
+
+    class Meta:
+        verbose_name_plural = 'skill tags'
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.tag.title, self.skills.title)
         return title
