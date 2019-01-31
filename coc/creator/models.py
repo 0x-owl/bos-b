@@ -63,14 +63,27 @@ class Spell(Model):
     """Spell class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     name = CharField(max_length=50)
-    alternative_names = TextField(default=None)
+    alternative_names = TextField(blank=True)
     description = TextField()
-    deeper_magic = TextField(default=None)
-    notes = TextField(default=None)
+    deeper_magic = TextField(blank=True)
+    notes = TextField(blank=True)
     # 15 POW, 2D6 Sanity, 14 Magic Points, 100 sacrifices.
     cost = CharField(max_length=80)
     casting_time = CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
+
+class SpellType(Model):
+    """Association Spell with its category."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    spell = ForeignKey(Spell, on_delete=CASCADE)
     spell_type = EnumField(SpellCategory)
+
+    def __str__(self):
+        title = '{} - {}'.format(self.spell.name, self.spell_type)
+        return title
 
 
 class Tag(Model):
