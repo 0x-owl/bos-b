@@ -5,7 +5,8 @@ from django_enumfield.enum import Enum, EnumField
 
 from django.db.models import (BooleanField, CASCADE, CharField, ForeignKey,
                               Model, OneToOneField, PROTECT,
-                              PositiveIntegerField, SET_NULL, UUIDField)
+                              PositiveIntegerField, SET_NULL, TextField,
+                              UUIDField)
 from django.contrib.auth.models import User
 
 
@@ -56,6 +57,20 @@ class SpellCategory(Enum):
 
     class Meta:
         verbose_name_plural = 'Spell categories'
+
+
+class Spell(Model):
+    """Spell class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    name = CharField(max_length=50)
+    alternative_names = TextField(default=None)
+    description = TextField()
+    deeper_magic = TextField(default=None)
+    notes = TextField(default=None)
+    # 15 POW, 2D6 Sanity, 14 Magic Points, 100 sacrifices.
+    cost = CharField(max_length=80)
+    casting_time = CharField(max_length=50)
+    spell_type = EnumField(SpellCategory)
 
 
 class Tag(Model):
