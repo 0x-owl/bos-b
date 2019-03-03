@@ -2,7 +2,7 @@ from creator.models import (Inventory, Investigator, InvestigatorAttribute,
                             InvestigatorSkills, InvestigatorTags, Item,
                             ItemTag, Occupation, OccupationAttribute,
                             OccupationSkills, OccupationTags, SkillTags,
-                            Skills, Spell, SpellType, Tag)
+                            Skills, Spell, SpellTag, SpellType, Tag)
 from django.contrib import admin
 
 # Register your models here.
@@ -20,5 +20,6 @@ admin.site.register(OccupationTags)
 admin.site.register(Skills)
 admin.site.register(SkillTags)
 admin.site.register(Spell)
+admin.site.register(SpellTag)
 admin.site.register(SpellType)
 admin.site.register(Tag)

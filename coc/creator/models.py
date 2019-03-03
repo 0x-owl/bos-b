@@ -461,4 +461,12 @@ class ItemTag(Model):
         return title
 
 
+class SpellTag(Model):
+    """Tags assigned to the Spell."""
+    tag = ForeignKey(Tag, on_delete=PROTECT)
+    spell = ForeignKey(Spell, on_delete=CASCADE)
 
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.tag.title, self.spell.name)
+        return title
