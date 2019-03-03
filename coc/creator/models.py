@@ -426,6 +426,7 @@ class SkillTags(Model):
 
 
 class Item(Model):
+    """Item class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     title = CharField(max_length=50)
     item_type = EnumField(ItemCategory)
@@ -436,6 +437,7 @@ class Item(Model):
 
 
 class Inventory(Model):
+    """Inventory class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     item = ForeignKey(Item, on_delete=CASCADE)
