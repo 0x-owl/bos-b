@@ -59,6 +59,14 @@ class SpellCategory(Enum):
         verbose_name_plural = 'Spell categories'
 
 
+class ItemCategory(Enum):
+    """Type of items."""
+    MAGIC = 1
+    CONSUMABLE = 2
+    WEAPON = 3
+    TOOL = 4
+
+
 class Spell(Model):
     """Spell class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
@@ -135,7 +143,6 @@ class Investigator(Model):
     residence = CharField(max_length=80)
     birthplace = CharField(max_length=80)
     age = PositiveIntegerField(default=18)
-    # TODO: Verify if SET_NULL is the correct behaviour or PROTECT
     occupation = OneToOneField(
         Occupation, on_delete=SET_NULL, default=None, null=True)
 
@@ -416,3 +423,42 @@ class SkillTags(Model):
         """String representation of the object."""
         title = '{} - {}'.format(self.tag.title, self.skills.title)
         return title
+
+
+class Item(Model):
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    title = CharField(max_length=50)
+    item_type = EnumField(ItemCategory)
+
+    def __str__(self):
+        """String representation of the object."""
+        return self.title
+
+
+class Inventory(Model):
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    investigator = ForeignKey(Investigator, on_delete=CASCADE)
+    item = ForeignKey(Item, on_delete=CASCADE)
+    stock = PositiveIntegerField(default=1)
+
+    class Meta:
+        verbose_name_plural = 'Inventories'
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.item.title, self.investigator.name)
+        return title
+
+
+class ItemTag(Model):
+    """Tags assigned to the Item."""
+    tag = ForeignKey(Tag, on_delete=PROTECT)
+    item = ForeignKey(Item, on_delete=CASCADE)
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.tag.title, self.item.title)
+        return title
+
+
+
