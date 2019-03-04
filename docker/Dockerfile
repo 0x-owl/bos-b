@@ -5,4 +5,5 @@ ADD . /coc
 WORKDIR /coc
 
 RUN apk update
+RUN apk add zlib-dev jpeg-dev gcc musl-dev
 RUN pip3 install -r docker/requirements.txt
