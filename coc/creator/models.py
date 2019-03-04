@@ -1,10 +1,11 @@
 from uuid import uuid4
+from datetime import datetime as dt
 
 from creator.constants import GENDER
 from django_enumfield.enum import Enum, EnumField
 
 from django.db.models import (BooleanField, CASCADE, CharField, ForeignKey,
-                              Model, OneToOneField, PROTECT,
+                              ImageField, Model, OneToOneField, PROTECT,
                               PositiveIntegerField, SET_NULL, TextField,
                               UUIDField)
 from django.contrib.auth.models import User
@@ -21,6 +22,26 @@ def obtain_attribute_value(inv, attribute_name):
     attr = InvestigatorAttribute.objects.filter(
         investigator_id=inv.id, attr=attr_value).first().value
     return attr
+
+
+def renamer(instance, filename):
+    """Rename the files to have understandable names.
+
+    Keyword arguments:
+
+    instance -- Model instance.
+    filename -- filename of the file being uploaded (wont'be used).
+    """
+    now = dt.now()
+    now = now.strftime('%Y%m%d%H%M%S')
+    inst_name = instance.__class__.__name__
+    if inst_name == 'Portrait':
+        fname_clean = 'portraits/{0}/{1}.jpg'.format(
+            instance.investigator.uuid, now)
+    else:
+        fname_clean = 'portraits/{0}/{1}.jpg'.format(
+            instance.item.uuid, now)
+    return fname_clean
 
 
 # Create your models here.
@@ -472,3 +493,23 @@ class SpellTag(Model):
         """String representation of the object."""
         title = '{} - {}'.format(self.tag.title, self.spell.name)
         return title
+
+
+class Portrait(Model):
+    """Investigators picture class."""
+    investigator = OneToOneField(Investigator, on_delete=CASCADE)
+    portrait = ImageField(upload_to=renamer)
+
+    def __str__(self):
+        """String representation of the object."""
+        return self.investigator.name
+
+
+class ItemImage(Model):
+    """Items image."""
+    item = OneToOneField(Item, on_delete=CASCADE)
+    image = ImageField(upload_to=renamer)
+
+    def __str__(self):
+        """String representation of the object."""
+        return self.item.title
