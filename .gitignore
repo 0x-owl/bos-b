@@ -4,6 +4,7 @@ __pycache__/
 *.pot
 *.py[cod]
 coc/db.sqlite3
+db.sqlite3
 coc/creator/migrations/*
 */.DS_Store
 .DS_Store
