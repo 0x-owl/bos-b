@@ -1,4 +1,4 @@
-from creator.models import (Inventory, Investigator, InvestigatorAttribute,
+from creator.models import (Game, Inventory, Investigator, InvestigatorAttribute,
                             InvestigatorSkills, InvestigatorTags, Item,
                             ItemImage, ItemTag, Occupation, OccupationAttribute,
                             OccupationSkills, OccupationTags, Portrait,
@@ -6,6 +6,7 @@ from creator.models import (Inventory, Investigator, InvestigatorAttribute,
 from django.contrib import admin
 
 # Register your models here.
+admin.site.register(Game)
 admin.site.register(Inventory)
 admin.site.register(Investigator)
 admin.site.register(InvestigatorAttribute)
