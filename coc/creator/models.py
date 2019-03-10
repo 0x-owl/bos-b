@@ -166,6 +166,14 @@ class Investigator(Model):
     age = PositiveIntegerField(default=18)
     occupation = OneToOneField(
         Occupation, on_delete=SET_NULL, default=None, null=True)
+    ideologies = TextField(blank=True)
+    description = TextField(blank=True)
+    traits = TextField(blank=True)
+    injure_scars = TextField(blank=True)
+    significant_people = TextField(blank=True)
+    meaningful_locations = TextField(blank=True)
+    treasured_possessions = TextField(blank=True)
+    encounters_with_strange_entities = TextField(blank=True)
 
     @property
     def dexterity(self):
