@@ -1,7 +1,7 @@
 from uuid import uuid4
 from datetime import datetime as dt
 
-from creator.constants import GAME_TYPE, GENDER
+from creator.constants import DECADES, GAME_TYPE, GENDER
 from django_enumfield.enum import Enum, EnumField
 
 from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
@@ -132,6 +132,7 @@ class Skills(Model):
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     title = CharField(max_length=50)
     user = ForeignKey(User, on_delete=CASCADE)
+    end_decade = CharField(max_length=5, choices=DECADES)
 
     class Meta:
         verbose_name_plural = 'skills'
@@ -148,6 +149,7 @@ class Occupation(Model):
     title = CharField(max_length=50)
     credit_rating_min = PositiveIntegerField()
     credit_rating_max = PositiveIntegerField()
+    end_decade = CharField(max_length=5, choices=DECADES)
 
     def __str__(self):
         """String representation of the object."""
@@ -459,6 +461,7 @@ class Item(Model):
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     title = CharField(max_length=50)
     item_type = EnumField(ItemCategory)
+    end_decade = CharField(max_length=5, choices=DECADES)
 
     def __str__(self):
         """String representation of the object."""
