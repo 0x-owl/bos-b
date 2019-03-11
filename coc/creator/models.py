@@ -1,12 +1,12 @@
 from uuid import uuid4
 from datetime import datetime as dt
 
-from creator.constants import GENDER, GAME_TYPE
+from creator.constants import GAME_TYPE, GENDER
 from django_enumfield.enum import Enum, EnumField
 
 from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
-                              ForeignKey, ImageField, Model, OneToOneField, 
-                              PROTECT, PositiveIntegerField, SET_NULL, 
+                              ForeignKey, ImageField, Model, OneToOneField,
+                              PROTECT, PositiveIntegerField, SET_NULL,
                               TextField, UUIDField)
 from django.contrib.auth.models import User
 
@@ -521,6 +521,7 @@ class ItemImage(Model):
     def __str__(self):
         """String representation of the object."""
         return self.item.title
+
 
 class Game(Model):
     """Game class."""

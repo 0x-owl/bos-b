@@ -1,8 +1,9 @@
-from creator.models import (Game, Inventory, Investigator, InvestigatorAttribute,
-                            InvestigatorSkills, InvestigatorTags, Item,
-                            ItemImage, ItemTag, Occupation, OccupationAttribute,
-                            OccupationSkills, OccupationTags, Portrait,
-                            SkillTags, Skills, Spell, SpellTag, SpellType, Tag)
+from creator.models import (Game, Inventory, Investigator,
+                            InvestigatorAttribute, InvestigatorSkills,
+                            InvestigatorTags, Item, ItemImage, ItemTag,
+                            Occupation, OccupationAttribute, OccupationSkills,
+                            OccupationTags, Portrait, SkillTags, Skills, Spell,
+                            SpellTag, SpellType, Tag)
 from django.contrib import admin
 
 # Register your models here.

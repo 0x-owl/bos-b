@@ -4,6 +4,6 @@ GENDER = (
 )
 
 GAME_TYPE = (
-	('1','One-Shot'),
-	('2','Campaign')
+    ('1', 'One-Shot'),
+    ('2', 'Campaign')
 )
