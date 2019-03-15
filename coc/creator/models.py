@@ -538,3 +538,16 @@ class Game(Model):
     def __str__(self):
         """String representation of the object."""
         return self.title
+
+
+class CampaignInvestigator(Model):
+    """Campaign Investigator Relationship"""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    investigator = ForeignKey(Investigator, on_delete=CASCADE)
+    campaign = ForeignKey(Game, on_delete=CASCADE)
+    timestamp = DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.campaign.title, self.investigator.name)
+        return self.title
