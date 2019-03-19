@@ -1,8 +1,6 @@
 from uuid import uuid4
-from datetime import datetime as dt
 
-from creator.constants import GAME_TYPE, GENDER
-from django_enumfield.enum import Enum, EnumField
+from django_enumfield.enum import EnumField
 
 from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
                               ForeignKey, ImageField, Model, OneToOneField,
@@ -10,84 +8,12 @@ from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
                               TextField, UUIDField)
 from django.contrib.auth.models import User
 
-
-def obtain_attribute_value(inv, attribute_name):
-    """Look for the investigators attribute and return its value.
-    Parameters:
-        inv -- Investigator class instance.
-        attr_name -- name of the attribute e.g. STR, DEX, ...
-    """
-    attr_value = filter(lambda x: x[0] == attribute_name, Attribute.items())
-    attr_value = attr_value.__next__()[1]
-    attr = InvestigatorAttribute.objects.filter(
-        investigator_id=inv.id, attr=attr_value).first().value
-    return attr
-
-
-def renamer(instance, filename):
-    """Rename the files to have understandable names.
-
-    Keyword arguments:
-
-    instance -- Model instance.
-    filename -- filename of the file being uploaded (wont'be used).
-    """
-    now = dt.now()
-    now = now.strftime('%Y%m%d%H%M%S')
-    inst_name = instance.__class__.__name__
-    if inst_name == 'Portrait':
-        fname_clean = 'portraits/{0}/{1}.jpg'.format(
-            instance.investigator.uuid, now)
-    else:
-        fname_clean = 'portraits/{0}/{1}.jpg'.format(
-            instance.item.uuid, now)
-    return fname_clean
+from creator.enums import Attribute, ItemCategory, SpellCategory
+from creator.constants import GAME_TYPE, GENDER
+from creator.helpers.model_helpers import obtain_attribute_value, renamer
 
 
 # Create your models here.
-class Attribute(Enum):
-    """Attribute enum."""
-    STR = 1
-    DEX = 2
-    CON = 3
-    POW = 4
-    EDU = 5
-    INT = 6
-    APP = 7
-
-
-class SpellCategory(Enum):
-    """Spell categories enum."""
-    BANISHMENT_OR_CONTROL = 1
-    BRINGING_FORTH_MONSTERS_AND_GODS = 2
-    COMBAT = 3
-    COMMUNICATION = 4
-    DREAMLANDS = 5
-    ENCHANTMENTS = 6
-    ENVIRONMENTAL = 7
-    EXTENDING_LIFE = 8
-    FOLK = 9
-    HARMFUL = 10
-    INFLUENCE = 11
-    MAKING_MONSTERS = 12
-    OTHER_SPELLS = 13
-    PROTECTION = 14
-    RELATING_TO_TIME = 15
-    TRANSFORMATION = 16
-    TRAVEL_AND_TRANSPORTATION = 17
-
-    class Meta:
-        verbose_name_plural = 'Spell categories'
-
-
-class ItemCategory(Enum):
-    """Type of items."""
-    MAGIC = 1
-    CONSUMABLE = 2
-    WEAPON = 3
-    TOOL = 4
-
-
 class Spell(Model):
     """Spell class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
@@ -181,7 +107,8 @@ class Investigator(Model):
         """Dexterity attribute property that obtains the value for the
         investigator.
         """
-        dex = obtain_attribute_value(self, 'DEX')
+        dex = obtain_attribute_value(
+            self, InvestigatorAttribute, Attribute, 'DEX')
         return dex
 
     @property
@@ -189,7 +116,8 @@ class Investigator(Model):
         """Strength attribute property that obtains the value for the
         investigator.
         """
-        str_ = obtain_attribute_value(self, 'STR')
+        str_ = obtain_attribute_value(
+            self, InvestigatorAttribute, Attribute, 'STR')
         return str_
 
     @property
@@ -197,7 +125,8 @@ class Investigator(Model):
         """Constitution attribute property that obtains the value for the
         investigator.
         """
-        con = obtain_attribute_value(self, 'CON')
+        con = obtain_attribute_value(
+            self, InvestigatorAttribute, Attribute, 'CON')
         return con
 
     @property
@@ -205,7 +134,8 @@ class Investigator(Model):
         """Power attribute property that obtains the value for the
         investigator.
         """
-        pow_ = obtain_attribute_value(self, 'PWR')
+        pow_ = obtain_attribute_value(
+            self, InvestigatorAttribute, Attribute, 'PWR')
         return pow_
 
     @property
@@ -213,7 +143,8 @@ class Investigator(Model):
         """Size attribute property that obtains the value for the
         investigator.
         """
-        siz = obtain_attribute_value(self, 'SIZ')
+        siz = obtain_attribute_value(
+            self, InvestigatorAttribute, Attribute, 'SIZ')
         return siz
 
     @property
@@ -221,7 +152,8 @@ class Investigator(Model):
         """Education attribute property that obtains the value for the
         investigator.
         """
-        edu = obtain_attribute_value(self, 'EDU')
+        edu = obtain_attribute_value(
+            self, InvestigatorAttribute, Attribute, 'EDU')
         return edu
 
     @property
@@ -229,7 +161,8 @@ class Investigator(Model):
         """Intelligence attribute property that obtains the value for the
         investigator.
         """
-        int_ = obtain_attribute_value(self, 'INT')
+        int_ = obtain_attribute_value(
+            self, InvestigatorAttribute, Attribute, 'INT')
         return int_
 
     @property
@@ -237,7 +170,8 @@ class Investigator(Model):
         """Appearance attribute property that obtains the value for the
         investigator.
         """
-        app = obtain_attribute_value('APP')
+        app = obtain_attribute_value(
+            self, InvestigatorAttribute, Attribute, 'APP')
         return app
 
     @property
@@ -548,4 +482,4 @@ class CampaignInvestigator(Model):
     def __str__(self):
         """String representation of the object."""
         title = '{} - {}'.format(self.campaign.title, self.investigator.name)
-        return self.title
+        return title
