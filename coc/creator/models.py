@@ -483,3 +483,31 @@ class CampaignInvestigator(Model):
         """String representation of the object."""
         title = '{} - {}'.format(self.campaign.title, self.investigator.name)
         return title
+
+
+class InvestigatorsDiary(Model):
+    """Investigators diary"""
+    title = CharField(max_length=30, blank=True, null=True)
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    investigator = ForeignKey(Investigator, on_delete=CASCADE)
+    notes = TextField(blank=True)
+    timestamp = DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        """String representation of the object."""
+        time = self.timestamp.strftime("%Y-%m-%d-%H:%M:%S")
+        user = self.investigator.user.username
+        title = '{} - {} - {}'.format(time, self.investigator.name, user)
+        return title
+
+
+class TagDiary(Model):
+    """Tag assigned to the Diary"""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    diary = ForeignKey(InvestigatorsDiary, on_delete=CASCADE)
+    tag = ForeignKey(Tag, on_delete=PROTECT)
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.tag.title, self.diary.title)
+        return title
