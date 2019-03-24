@@ -3,9 +3,9 @@ from uuid import uuid4
 from django_enumfield.enum import EnumField
 
 from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
-                              FloatField, ForeignKey, ImageField, Model, OneToOneField,
-                              PROTECT, PositiveIntegerField, SET_NULL,
-                              TextField, UUIDField)
+                              FloatField, ForeignKey, ImageField, Model,
+                              OneToOneField, PROTECT, PositiveIntegerField,
+                              SET_NULL, TextField, UUIDField)
 from django.contrib.auth.models import User
 
 from creator.enums import Attribute, ItemCategory, SpellCategory
@@ -14,6 +14,17 @@ from creator.helpers.model_helpers import obtain_attribute_value, renamer
 
 
 # Create your models here.
+class Tag(Model):
+    """Tag class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    title = CharField(max_length=50)
+    user = ForeignKey(User, on_delete=CASCADE)
+
+    def __str__(self):
+        """String representation of the object."""
+        return '#{}'.format(self.title)
+
+
 class Spell(Model):
     """Spell class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
@@ -42,15 +53,15 @@ class SpellType(Model):
         return title
 
 
-class Tag(Model):
-    """Tag class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    title = CharField(max_length=50)
-    user = ForeignKey(User, on_delete=CASCADE)
+class SpellTag(Model):
+    """Tags assigned to the Spell."""
+    tag = ForeignKey(Tag, on_delete=PROTECT)
+    spell = ForeignKey(Spell, on_delete=CASCADE)
 
     def __str__(self):
         """String representation of the object."""
-        return '#{}'.format(self.title)
+        title = '{} - {}'.format(self.tag.title, self.spell.name)
+        return title
 
 
 class Skills(Model):
@@ -68,6 +79,20 @@ class Skills(Model):
         return self.title
 
 
+class SkillTags(Model):
+    """Tags assigned to skills."""
+    tag = ForeignKey(Tag, on_delete=PROTECT)
+    skills = ForeignKey(Skills, on_delete=CASCADE)
+
+    class Meta:
+        verbose_name_plural = 'skill tags'
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.tag.title, self.skills.title)
+        return title
+
+
 class Occupation(Model):
     """Occupation class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
@@ -79,6 +104,51 @@ class Occupation(Model):
     def __str__(self):
         """String representation of the object."""
         return self.title
+
+
+class OccupationAttribute(Model):
+    """Relation between occupation and attribute."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    occupation = ForeignKey(Occupation, on_delete=CASCADE)
+    attr = EnumField(Attribute)
+    modifier = PositiveIntegerField()
+    optional = BooleanField(default=False)
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {} - {}'.format(
+            self.occupation.title, self.attr, self.value)
+        return title
+
+
+class OccupationSkills(Model):
+    """Skills relation with Occupation."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    occupation = ForeignKey(Occupation, on_delete=CASCADE)
+    skill = ForeignKey(Skills, on_delete=PROTECT)
+
+    class Meta:
+        verbose_name_plural = 'occupation skills'
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {} - {}'.format(
+            self.occupation.title, self.skill.title, self.value)
+        return title
+
+
+class OccupationTags(Model):
+    """Tags assigned to occupations."""
+    tag = ForeignKey(Tag, on_delete=PROTECT)
+    occupation = ForeignKey(Occupation, on_delete=CASCADE)
+
+    class Meta:
+        verbose_name_plural = 'occupation tags'
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.tag.title, self.occupation.title)
+        return title
 
 
 class Investigator(Model):
@@ -265,19 +335,14 @@ class Investigator(Model):
         return '{} - {}'.format(self.player, self.name)
 
 
-class OccupationAttribute(Model):
-    """Relation between occupation and attribute."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    occupation = ForeignKey(Occupation, on_delete=CASCADE)
-    attr = EnumField(Attribute)
-    modifier = PositiveIntegerField()
-    optional = BooleanField(default=False)
+class Portrait(Model):
+    """Investigators picture class."""
+    investigator = OneToOneField(Investigator, on_delete=CASCADE)
+    portrait = ImageField(upload_to=renamer)
 
     def __str__(self):
         """String representation of the object."""
-        title = '{} - {} - {}'.format(
-            self.occupation.title, self.attr, self.value)
-        return title
+        return self.investigator.name
 
 
 class InvestigatorAttribute(Model):
@@ -331,22 +396,6 @@ class InvestigatorSkills(Model):
         return title
 
 
-class OccupationSkills(Model):
-    """Skills relation with Occupation."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    occupation = ForeignKey(Occupation, on_delete=CASCADE)
-    skill = ForeignKey(Skills, on_delete=PROTECT)
-
-    class Meta:
-        verbose_name_plural = 'occupation skills'
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {} - {}'.format(
-            self.occupation.title, self.skill.title, self.value)
-        return title
-
-
 class InvestigatorTags(Model):
     """Tags assigned to investigators."""
     tag = ForeignKey(Tag, on_delete=PROTECT)
@@ -358,132 +407,6 @@ class InvestigatorTags(Model):
     def __str__(self):
         """String representation of the object."""
         title = '{} - {}'.format(self.tag.title, self.investigator.name)
-        return title
-
-
-class OccupationTags(Model):
-    """Tags assigned to occupations."""
-    tag = ForeignKey(Tag, on_delete=PROTECT)
-    occupation = ForeignKey(Occupation, on_delete=CASCADE)
-
-    class Meta:
-        verbose_name_plural = 'occupation tags'
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {}'.format(self.tag.title, self.occupation.title)
-        return title
-
-
-class SkillTags(Model):
-    """Tags assigned to skills."""
-    tag = ForeignKey(Tag, on_delete=PROTECT)
-    skills = ForeignKey(Skills, on_delete=CASCADE)
-
-    class Meta:
-        verbose_name_plural = 'skill tags'
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {}'.format(self.tag.title, self.skills.title)
-        return title
-
-
-class Item(Model):
-    """Item class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    title = CharField(max_length=50)
-    item_type = EnumField(ItemCategory)
-    description = TextField(blank=True)
-    price = FloatField(default=0)
-
-    def __str__(self):
-        """String representation of the object."""
-        return self.title
-
-
-class Inventory(Model):
-    """Inventory class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    investigator = ForeignKey(Investigator, on_delete=CASCADE)
-    item = ForeignKey(Item, on_delete=CASCADE)
-    stock = PositiveIntegerField(default=1)
-
-    class Meta:
-        verbose_name_plural = 'Inventories'
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {}'.format(self.item.title, self.investigator.name)
-        return title
-
-
-class ItemTag(Model):
-    """Tags assigned to the Item."""
-    tag = ForeignKey(Tag, on_delete=PROTECT)
-    item = ForeignKey(Item, on_delete=CASCADE)
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {}'.format(self.tag.title, self.item.title)
-        return title
-
-
-class SpellTag(Model):
-    """Tags assigned to the Spell."""
-    tag = ForeignKey(Tag, on_delete=PROTECT)
-    spell = ForeignKey(Spell, on_delete=CASCADE)
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {}'.format(self.tag.title, self.spell.name)
-        return title
-
-
-class Portrait(Model):
-    """Investigators picture class."""
-    investigator = OneToOneField(Investigator, on_delete=CASCADE)
-    portrait = ImageField(upload_to=renamer)
-
-    def __str__(self):
-        """String representation of the object."""
-        return self.investigator.name
-
-
-class ItemImage(Model):
-    """Items image."""
-    item = OneToOneField(Item, on_delete=CASCADE)
-    image = ImageField(upload_to=renamer)
-
-    def __str__(self):
-        """String representation of the object."""
-        return self.item.title
-
-
-class Game(Model):
-    """Game class."""
-    title = CharField(max_length=80)
-    description = TextField()
-    user = ForeignKey(User, on_delete=CASCADE)
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    timestamp = DateTimeField(auto_now_add=True)
-    game_type = CharField(max_length=1, choices=GAME_TYPE)
-
-    def __str__(self):
-        """String representation of the object."""
-        return self.title
-
-
-class CampaignInvestigator(Model):
-    """Campaign Investigator Relationship"""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    investigator = ForeignKey(Investigator, on_delete=CASCADE)
-    campaign = ForeignKey(Game, on_delete=CASCADE)
-    timestamp = DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {}'.format(self.campaign.title, self.investigator.name)
         return title
 
 
@@ -512,4 +435,127 @@ class TagDiary(Model):
     def __str__(self):
         """String representation of the object."""
         title = '{} - {}'.format(self.tag.title, self.diary.title)
+        return title
+
+
+class Item(Model):
+    """Item class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    title = CharField(max_length=50)
+    item_type = EnumField(ItemCategory)
+    description = TextField(blank=True)
+    price = FloatField(default=0)
+
+    def __str__(self):
+        """String representation of the object."""
+        return self.title
+
+
+class ItemTag(Model):
+    """Tags assigned to the Item."""
+    tag = ForeignKey(Tag, on_delete=PROTECT)
+    item = ForeignKey(Item, on_delete=CASCADE)
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.tag.title, self.item.title)
+        return title
+
+
+class ItemImage(Model):
+    """Items image."""
+    item = OneToOneField(Item, on_delete=CASCADE)
+    image = ImageField(upload_to=renamer)
+
+    def __str__(self):
+        """String representation of the object."""
+        return self.item.title
+
+
+class Weapon(Item):
+    """Weapon model."""
+    damage = CharField(max_length=50)
+    base_range = CharField(max_length=30, default="Touch")
+    uses_per_round = CharField(max_length=10, default="1")
+    # 999 stands for no malfunction.
+    mal_function = PositiveIntegerField(default=999)
+
+    def __str__(self):
+        return self.title
+
+
+class WeaponSkill(Model):
+    """Weapons require a skill to be used."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    weapon = ForeignKey(Weapon, on_delete=CASCADE)
+    skill = ForeignKey(Skills, on_delete=CASCADE)
+
+    def __str__(self):
+        """String representation of object."""
+        title = '{} {}'.format(self.weapon.title, self.skill.title)
+        return title
+
+
+class WeaponTag(Model):
+    """Weapons can have tags related to the era they are used."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    weapon = ForeignKey(Weapon, on_delete=CASCADE)
+    tag = ForeignKey(Tag, on_delete=PROTECT)
+
+    def __str__(self):
+        """String representation of object."""
+        title = '#{} {}'.format(self.tag.title, self.weapon.title)
+        return title
+
+
+class WeaponImage(Model):
+    """Weapons image."""
+    weapon = OneToOneField(Weapon, on_delete=CASCADE)
+    image = ImageField(upload_to=renamer)
+
+    def __str__(self):
+        """String representation of the object."""
+        return self.weapon.title
+
+
+class Inventory(Model):
+    """Inventory class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    investigator = ForeignKey(Investigator, on_delete=CASCADE)
+    item = ForeignKey(Item, on_delete=CASCADE, null=True, blank=True)
+    stock = PositiveIntegerField(default=1)
+
+    class Meta:
+        verbose_name_plural = 'Inventories'
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.item.title, self.investigator.name)
+        return title
+
+
+class Game(Model):
+    """Game class."""
+    title = CharField(max_length=80)
+    description = TextField()
+    user = ForeignKey(User, on_delete=CASCADE)
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    timestamp = DateTimeField(auto_now_add=True)
+    game_type = CharField(max_length=1, choices=GAME_TYPE)
+
+    def __str__(self):
+        """String representation of the object."""
+        return self.title
+
+
+class CampaignInvestigator(Model):
+    """Campaign Investigator Relationship"""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    investigator = ForeignKey(Investigator, on_delete=CASCADE)
+    campaign = ForeignKey(Game, on_delete=CASCADE)
+    timestamp = DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {}'.format(self.campaign.title, self.investigator.name)
         return title
