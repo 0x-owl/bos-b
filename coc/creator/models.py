@@ -3,7 +3,7 @@ from uuid import uuid4
 from django_enumfield.enum import EnumField
 
 from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
-                              ForeignKey, ImageField, Model, OneToOneField,
+                              FloatField, ForeignKey, ImageField, Model, OneToOneField,
                               PROTECT, PositiveIntegerField, SET_NULL,
                               TextField, UUIDField)
 from django.contrib.auth.models import User
@@ -394,6 +394,8 @@ class Item(Model):
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     title = CharField(max_length=50)
     item_type = EnumField(ItemCategory)
+    description = TextField(blank=True)
+    price = FloatField(default=0)
 
     def __str__(self):
         """String representation of the object."""
