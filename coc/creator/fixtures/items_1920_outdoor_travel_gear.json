@@ -1,0 +1,281 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Flare (Disposable)",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":0.27
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Telescope",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":3.45
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Field Glasses (3x to 6x)",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":23.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Cooking Kit",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":8.98 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Binoculars",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":28.50
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Camp Stove",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":6.10 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Jeweled Compass",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":3.25
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Vacuum Bottle",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":0.89
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Compass with Lid",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":2.85
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Folding Bathtub",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":6.79 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Hunting Knife",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":2.35
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Waterproof Blanket (58 x 96 Inches)",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":5.06 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Heavy 2-Blade Pocket Knife",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":1.20
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Folding Camp Bed",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":3.65 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Hand Axe",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":0.98
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Carbide Lamp (300’ Beam)",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":2.59 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Small Live Animal Trap",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":2.48
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Can of Carbide (Two Pounds)",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":0.25
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Coil Spring Animal Trap",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":5.98
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Searchlight",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":5.95 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Bear Trap",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":11.43
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Gasoline Lantern (Built-in Pump)",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":6.59 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Collapsible Fishing Rod and Tackle Se",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":9.35
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Kerosene Lantern",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":1.39 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Hemp Twine",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":0.27
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Dark Lantern",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":1.68 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Pedometer",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":1.70
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Electric Torch",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":2.25 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Heavy Canvas Shoulder Bag",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":3.45
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Batterie",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":0.60
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Pen Light",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - 1920's",
+        "price":1.00
+      }
+    }
+]

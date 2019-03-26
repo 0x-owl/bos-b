@@ -1,0 +1,29 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"College Tuition (Semester)",
+        "item_type":2,
+        "description":"Education - 1920's",
+        "price":480.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Student Room & Board (Year)",
+        "item_type":2,
+        "description":"Education - 1920's",
+        "price":520.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Text Books (Semester)",
+        "item_type":2,
+        "description":"Education - 1920's",
+        "price":30.00
+      }
+    }
+]

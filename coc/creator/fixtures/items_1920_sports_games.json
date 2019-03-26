@@ -1,0 +1,217 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"150 Clay Marbles",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":0.15
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"25 Glass Marbles",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":0.33
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Baseball Mitt",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":5.45
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Baseball Bat",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":1.30
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Baseball Catcher's Pads & Mask Set",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":14.10
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Baseball",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":0.55
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Basketball",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":6.75
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Rugby Football",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":4.15
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Roller Skates",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":1.65
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Tennis Racket & Balls (3-pack)",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":4.82
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Beginner Golf Set w/ Bag",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":9.25
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Pro Steel Golf Club",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":6.15
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"6.15 /S 60m",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":5.95  
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Boxing Gloves",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":3.75 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Dumbbells five pound (Pair)",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":1.68
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Bamboo Vaulting Pole 12 foot",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":7.40
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Playing Cards",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":0.59
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Ouija Board",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":0.98
+      }
+    },{
+    "model": "creator.Item",
+    "fields": {
+        "title":"Dominoes",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":0.59
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Chess Set",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":1.39
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Bicycle",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":23.95
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Croquet Set",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":2.30
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Billiard Cue",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":1.99
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Mahjong Set",
+        "item_type":2,
+        "description":"Sports & Games - 1920's",
+        "price":1.80
+      }
+    }
+]

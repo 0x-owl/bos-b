@@ -1,0 +1,38 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Air Travel Av Ticket Price (per 10 Miles)",
+        "item_type":2,
+        "description":"Air Travel - 1920's",
+        "price":2.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Air Travel International (per 100 Miles)",
+        "item_type":2,
+        "description":"Air Travel - 1920's",
+        "price":18.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Surplus Trainer Biplane",
+        "item_type":2,
+        "description":"Air Travel - 1920's",
+        "price":300.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Travel Air 2000 Biplane",
+        "item_type":2,
+        "description":"Air Travel - 1920's",
+        "price":3000.00
+      }
+    }
+]

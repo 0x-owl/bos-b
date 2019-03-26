@@ -1,0 +1,110 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"7 x 7 foot Tent",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":11.48 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"12 x 16 foot Tent",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":28.15 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"16 x 24 foot Tent",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":53.48 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"24 x 36 foot Tarpaulin",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":39.35 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"7 x 7 foot Car Tent",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":12.80 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"13.5 inch Iron Tent Stakes (Dozen",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":1.15
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Auto Bed",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":8.95
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Canteen (1 Quart)",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":1.69
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Insulated Tank (5 Gallons)",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":3.98
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Water Bag (1 Gallon) ",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":0.80
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Water Bag (2 Gallon) ",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":1.04
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Water Bag (5 Gallon) ",
+        "item_type":2,
+        "description":"Tents - 1920's",
+        "price":2.06
+      }
+    }
+]

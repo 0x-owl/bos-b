@@ -1,0 +1,56 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Plasma Television",
+        "item_type":2,
+        "description":"Entertainment - Modern Day",
+        "price":1000.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"3D Television",
+        "item_type":2,
+        "description":"Entertainment - Modern Day",
+        "price":2000.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Movie Ticket",
+        "item_type":2,
+        "description":"Entertainment - Modern Day",
+        "price":10.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Popular Concert Ticket",
+        "item_type":2,
+        "description":"Entertainment - Modern Day",
+        "price":50.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Pro Football Ticket (Bad Seat)",
+        "item_type":2,
+        "description":"Entertainment - Modern Day",
+        "price":55.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Ballet Ticket (Bad Seat)",
+        "item_type":2,
+        "description":"Entertainment - Modern Day",
+        "price":65.00
+      }
+    }
+]

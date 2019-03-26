@@ -1,0 +1,92 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"BMW Motorcycle",
+        "item_type":2,
+        "description":"Motor Vehicles - Modern Day",
+        "price":23000.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Ducati Streetfighter Motorcycle",
+        "item_type":2,
+        "description":"Motor Vehicles - Modern Day",
+        "price":13000.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Rolls Royce Ghost Sedan",
+        "item_type":2,
+        "description":"Motor Vehicles - Modern Day",
+        "price":260000.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Aston Martin DB9",
+        "item_type":2,
+        "description":"Motor Vehicles - Modern Day",
+        "price":200500.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Cadillac SUV",
+        "item_type":2,
+        "description":"Motor Vehicles - Modern Day",
+        "price":62000.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"BMW 1 Series",
+        "item_type":2,
+        "description":"Motor Vehicles - Modern Day",
+        "price":38000.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Chevrolet Corvette (Convertible)",
+        "item_type":2,
+        "description":"Motor Vehicles - Modern Day",
+        "price":54000.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Dodge SUV",
+        "item_type":2,
+        "description":"Motor Vehicles - Modern Day",
+        "price":33000.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Toyota Prius",
+        "item_type":2,
+        "description":"Motor Vehicles - Modern Day",
+        "price":27000.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Ford Focus",
+        "item_type":2,
+        "description":"Motor Vehicles - Modern Day",
+        "price":16500.00
+      }
+    }
+]

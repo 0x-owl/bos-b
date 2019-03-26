@@ -1,0 +1,56 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Handle Bag (8 Lbs.)",
+        "item_type":2,
+        "description":"Luggage - 1920's",
+        "price":7.45 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Suitcase (15 Lbs.)",
+        "item_type":2,
+        "description":"Luggage - 1920's",
+        "price":9.95 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Steamer Trunk (55 Lbs.)",
+        "item_type":2,
+        "description":"Luggage - 1920's",
+        "price":12.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Wardrobe Trunk (95 Lbs.)",
+        "item_type":2,
+        "description":"Luggage - 1920's",
+        "price":54.95 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Wardrobe Trunk (115 Lbs.)",
+        "item_type":2,
+        "description":"Luggage - 1920's",
+        "price":79.95 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Luggage, black patent leather",
+        "item_type":2,
+        "description":"Luggage - 1920's",
+        "price":12.50 
+      }
+    }
+]

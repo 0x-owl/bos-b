@@ -1,0 +1,155 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Designer Dress worn once",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":500.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Fine Silk Side-drape Dress",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":400.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Acrylic 2-piece Dress",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":150.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Woven Rayon Coat Dress",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":90.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Dacron Pleat-front Pants",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":25.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Stonewashed Jeans",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":35.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Leather Motorcycle Jacket",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":260.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Button Polo Sweater",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":35.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Wool-blend Swing Coat",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":190.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Fashion Print Challis Skirt",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":50.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Fashion Pumps",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":100.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Fashion Boots",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":160.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Good Hiking Boots",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":200.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Shoulder Bag",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":350.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Spandex Bicycle Shorts",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":20.00
+      }
+    }, 
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Pocket Vest",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":60.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Bulletproof Vest",
+        "item_type":2,
+        "description":"Women’s Clothing - Modern Day",
+        "price":600.00
+      }
+    }
+]

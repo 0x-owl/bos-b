@@ -1,0 +1,29 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"50 Miles",
+        "item_type":2,
+        "description":"Train Fares - 1920's",
+        "price":2.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"100 Miles",
+        "item_type":2,
+        "description":"Train Fares - 1920's",
+        "price":3.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"500 Miles",
+        "item_type":2,
+        "description":"Train Fares - 1920's",
+        "price":6.00
+      }
+    }
+]

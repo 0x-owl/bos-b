@@ -1,0 +1,47 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Medical Case",
+        "item_type":4,
+        "description":"Medical Equipment - Modern Day",
+        "price":100.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Disposable Respirator",
+        "item_type":4,
+        "description":"Medical Equipment - Modern Day",
+        "price":30.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Complete First Aid Kit",
+        "item_type":4,
+        "description":"Medical Equipment - Modern Day",
+        "price":60.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Emergency Burn Kit",
+        "item_type":4,
+        "description":"Medical Equipment - Modern Day",
+        "price":160.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Portable Oxygen Unit",
+        "item_type":4,
+        "description":"Medical Equipment - Modern Day",
+        "price":70.00
+      }
+    }
+]

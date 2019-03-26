@@ -1,0 +1,38 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"3-room Family Tent",
+        "item_type":2,
+        "description":"Tents and Campers - Modern Day",
+        "price":70.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"3 person Geodesic Tent",
+        "item_type":2,
+        "description":"Tents and Campers - Modern Day",
+        "price":300.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Winnebago RV",
+        "item_type":2,
+        "description":"Tents and Campers - Modern Day",
+        "price":120000.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Electrical Generator (1500 Watts)",
+        "item_type":2,
+        "description":"Tents and Campers - Modern Day",
+        "price":200.00
+      }
+    }
+]

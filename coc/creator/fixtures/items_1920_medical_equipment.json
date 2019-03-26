@@ -1,0 +1,110 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Aspirin (12 Pills)",
+        "item_type":2,
+        "description":"Medical Equipment - 1920's",
+        "price":0.10
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Epsom Salts /l",
+        "item_type":2,
+        "description":"Medical Equipment - 1920's",
+        "price":0.09 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Indigestion Medicine",
+        "item_type":2,
+        "description":"Medical Equipment - 1920's",
+        "price":0.25
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Laxative Nature's Remedy",
+        "item_type":2,
+        "description":"Medical Equipment - 1920's",
+        "price":0.25
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Medical Case",
+        "item_type":4,
+        "description":"Medical Equipment - 1920's",
+        "price":10.45
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Forceps",
+        "item_type":2,
+        "description":"Medical Equipment - 1920's",
+        "price":3.59
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Scalpel Set",
+        "item_type":2,
+        "description":"Medical Equipment - 1920's",
+        "price":1.39
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Hypodermic Syringes",
+        "item_type":2,
+        "description":"Medical Equipment - 1920's",
+        "price":12.50
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Atomizer",
+        "item_type":2,
+        "description":"Medical Equipment - 1920's",
+        "price":1.39
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Gauze Bandages (Five Yards)",
+        "item_type":2,
+        "description":"Medical Equipment - 1920's",
+        "price":0.69
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Clinical Thermometer",
+        "item_type":2,
+        "description":"Medical Equipment - 1920's",
+        "price":0.69
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Alcohol (Half-gallon)",
+        "item_type":2,
+        "description":"Medical Equipment - 1920's",
+        "price":0.20
+      }
+    }
+]
