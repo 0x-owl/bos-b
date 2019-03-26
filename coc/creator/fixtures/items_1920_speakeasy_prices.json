@@ -1,0 +1,56 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Rotgut Gin (Shot)",
+        "item_type":2,
+        "description":"Speakeasy Prices - 1920's",
+        "price":0.10
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Cocktail",
+        "item_type":2,
+        "description":"Speakeasy Prices - 1920's",
+        "price":0.25
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Wine (Glass)",
+        "item_type":2,
+        "description":"Speakeasy Prices - 1920's",
+        "price":0.75
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Beer (Glass)",
+        "item_type":2,
+        "description":"Speakeasy Prices - 1920's",
+        "price":0.20
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Whiskey (Glass)",
+        "item_type":2,
+        "description":"Speakeasy Prices - 1920's",
+        "price":0.25
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Coca-Cola (12 oz.)",
+        "item_type":2,
+        "description":"Speakeasy Prices - 1920's",
+        "price":0.05
+      }
+    }
+]

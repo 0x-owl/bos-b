@@ -1,0 +1,38 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Chicken, Dinner /perso",
+        "item_type":2,
+        "description":"Meals out - 1920's",
+        "price":2.50
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Breakfast",
+        "item_type":2,
+        "description":"Meals out - 1920's",
+        "price":0.45
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Lunch",
+        "item_type":2,
+        "description":"Meals out - 1920's",
+        "price":0.65
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Dinner",
+        "item_type":2,
+        "description":"Meals out - 1920's",
+        "price":1.25
+      }
+    }
+]

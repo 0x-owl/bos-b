@@ -1,0 +1,209 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Norton Motorcycle",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":95.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Buick Model D-45",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":1020.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Cadillac Type 55",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":2240.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Chevrolet Capitol",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":695.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Chrysler Model F-58",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":1045.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Dodge Model S/1",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":985.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Duesenberg J",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":20000
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Ford Model T",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":360.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Ford Model A",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":450.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Hudson Super Six Series J",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":1750.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Oldsmobile 43-AT",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":1345.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Packard Twin Six Touring",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":2950.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Pierce-Arrow",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":6000.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Pontiac 6-28 Sedan",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":745.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Studebaker Stnd./Dictator",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":995.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Chevrolet Roadster",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":570.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Hudson Coach (7 Passenger)",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":1450.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Studebaker Touring (5 Passenger)",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":995.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"1920 Chevrolet F.B Coupe (Used)",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":300.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"1917 Buick (Used)",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":75.0
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Chevrolet Pickup Truck",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":545.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Dodge 1/2 Ton Truck",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":1085.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Ford Model TT Truck",
+        "item_type":2,
+        "description":"Transport - 1920's",
+        "price":490.00
+      }
+    }
+]

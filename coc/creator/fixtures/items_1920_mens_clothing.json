@@ -1,0 +1,299 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Oxford Dress Shoes",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":6.95
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Lace-bottom Breeches",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":4.95
+      }
+    },     
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Leather Work Shoes",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":4.95
+      }
+    }, 
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Slacks, white flannel",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":8.00
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Shirt, percale",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":1.25
+      }  
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Broadcloth Dress Shirt",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":1.95
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Men’s Clothing Shaker Sweater",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":7.69
+      }  
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Worsted Wool Dress Suit",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":17.95
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Wool Golf Cap",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":0.79
+      }  
+    }, 
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Cashmere Dress Suit",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":18.50
+      }  
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Straw Hat",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":1.95
+      }  
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Suit, mohair",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":13.85 
+      }  
+    }, 
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Padded Leather Football Helmet",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":3.65
+      }  
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Corduroy Norfolk Suit",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":9.95 
+      }  
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Sweatshirt",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":0.98
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Union suit, Forest Mills",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":0.69
+      }
+    }, 
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Sealskin Fur Cap",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":16.95
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Outdoor Coat",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":35.00 
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Silk Four-in-hand Tie",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":0.96
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Dog Fur Overcoat",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":37.50
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Necktie, silk",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":0.50
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Chesterfield Overcoat",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":19.95 
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Batwing Bow Tie",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":0.55
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Felt Fedora",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":4.95
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Sock Garters",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":0.39
+      }
+    }, 
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Cotton Union Suit",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":1.48
+      }
+    }, 
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Cufflinks",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":0.40
+      }  
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Leather Belt",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":1.35
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Suspenders",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":0.79
+      }  
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Hiking Boots",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":7.25
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Shoes with cleats",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":5.25
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Bathing Suit",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":3.45
+      }
+    },   
+    {
+      "model": "creator.Item",
+      "fields": {
+        "title":"Canvas Bathing Shoes",
+        "item_type":2,
+        "description":"Men’s Clothing - 1920's",
+        "price":0.75
+      }
+    }
+]

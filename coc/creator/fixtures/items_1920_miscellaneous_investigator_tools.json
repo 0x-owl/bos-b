@@ -1,0 +1,308 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Handcuffs",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":3.35
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Extra Handcuff Key",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":0.28
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Police Whistle",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":0.30
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Dictaphone",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":39.95
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Wire Recorder",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":129.95
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Wristwatch",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":5.95
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Gold Pocket Watch",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":35.10
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Self-filling Fountain Pen",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":1.80
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Mechanical Pencil",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":0.85
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Writing Tablet",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":0.20
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Straightjacket",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":9.50
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Sketch Pad",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":0.25
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Harris Typewrite",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":66.75 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Complete Diving Suit",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":1200.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Remington Typewriter",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":40.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Pocket Microscope",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":0.58
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"110x Desk Microscope",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":17.50 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Floor Safe (3-Foot high, 950 Lbs.)",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":62.50 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Turkish Water Pipe",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":0.99
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Cigarettes (per Pack)",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":0.10
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Umbrella",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":1.79 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Box of Cigars",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":2.29 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Unabridged Dictionary",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":6.75 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"10-volume Encyclopedia",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":49.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Wet Sponge Respirator",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":1.95 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"3-Lens Pocket Magnifying Glass (7x to 30x)",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":1.68 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Bible",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":3.98 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Briefcase",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":1.48 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Globe on Stand",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":9.95 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Folding Writing Desk",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":16.65 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Glass-Door Oak Bookcase (200 Book)",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":24.65
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Baby Buggy",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":34.45 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Watchmaker's Eye Glass",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":0.45
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Chemical Fire Extinguisher",
+        "item_type":4,
+        "description":"Miscellaneous Investigator Tools - 1920's",
+        "price":13.85 
+      }
+    }
+]

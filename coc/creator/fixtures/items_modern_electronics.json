@@ -1,0 +1,155 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"CB Radio w/Police Scanner",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":90.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Three-band Walkie Talkie",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":35.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Radar Scanner",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":40.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"35mm SLR Digital Camera",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":450.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Pocket One-use Camera",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":10.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Metal Detector",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":240.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Geiger Counter",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":400.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Motion Detector Alarm Set",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":200.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Wireless Perimeter Alarm",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":260.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Telephonic Voice Changer",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":60.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Pen Camcorder",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":250.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Telephone Bug Detector",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":400.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Bug Sweep Kit",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":900.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Body Worn Spy Camera",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":200.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Covert Digital Recorder",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":300.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Listening Device",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":200.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Night Vision Goggles",
+        "item_type":4,
+        "description":"Electronics - Modern Day",
+        "price":600.00 
+      }
+    }
+]

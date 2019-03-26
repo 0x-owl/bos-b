@@ -1,0 +1,146 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"4-person Cook Set",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":25.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Propane Camp Stove",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":60.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Portable Chemical Toilet",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":110.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Poly/Cotton Sleeping Bag",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":30.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"“Survival” Knife",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":65.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Swiss Army Knife",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":30.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Machete cheap",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":20.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"10.5mm Dry Rope (50 m)",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":250.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"G.P.S Handheld",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":260.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Climbing Gear (1 person)",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":2000.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Touring Kayak (1 person)",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":1000.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Scuba Gear good",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":2500.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Signal Gun",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":100.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Polar Sleeping Bag",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":200.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Stabilized Binoculars",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":1300.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"6-watt Fluorescent Lamp",
+        "item_type":4,
+        "description":"Outdoor & Travel Gear - Modern Day",
+        "price":30.00
+      }
+    }
+]

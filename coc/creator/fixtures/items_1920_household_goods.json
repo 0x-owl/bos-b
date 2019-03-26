@@ -1,0 +1,74 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Fan 'G-E Whiz'",
+        "item_type":2,
+        "description":"Household Goods - 1920's",
+        "price":10.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Hard Rubber Syringe",
+        "item_type":2,
+        "description":"Household Goods - 1920's",
+        "price":0.69
+      }
+    },
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Bed Pan",
+        "item_type":2,
+        "description":"Household Goods - 1920's",
+        "price":1.79
+      }
+    },
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Wheel Chair",
+        "item_type":2,
+        "description":"Household Goods - 1920's",
+        "price":39.95
+      }
+    },
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Maple Crutches",
+        "item_type":2,
+        "description":"Household Goods - 1920's",
+        "price":1.59
+      }
+    },
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Adhesive Plaster",
+        "item_type":2,
+        "description":"Household Goods - 1920's",
+        "price":0.29
+      }
+    },
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Metal Arch Supports",
+        "item_type":2,
+        "description":"Household Goods - 1920's",
+        "price":1.98
+      }
+    },
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Leather Ankle Supports (Pair)",
+        "item_type":2,
+        "description":"Household Goods - 1920's",
+        "price":0.98
+      }
+    }
+]

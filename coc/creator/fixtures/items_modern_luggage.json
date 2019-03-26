@@ -1,0 +1,29 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Carryon Upright (5 Lbs.)",
+        "item_type":2,
+        "description":"Luggage - Modern Day",
+        "price":90.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Good Book Bag (15 oz.)",
+        "item_type":2,
+        "description":"Luggage - Modern Day",
+        "price":60.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Duffel Bag (5 Lbs.)",
+        "item_type":2,
+        "description":"Luggage - Modern Day",
+        "price":30.00
+      }
+    }
+]

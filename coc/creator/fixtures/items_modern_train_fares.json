@@ -1,0 +1,29 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Train Fares 50 Miles",
+        "item_type":2,
+        "description":"Train Fares - Modern Day",
+        "price":6.25
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Train Fares 100 Miles",
+        "item_type":2,
+        "description":"Train Fares - Modern Day",
+        "price":12.50
+      }
+    },
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Train Fares 500 Miles",
+        "item_type":2,
+        "description":"Train Fares - Modern Day",
+        "price":62.50
+      }
+    }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "model": "creator.Item",
+    "fields": {
+        "title":"First Class (One–way)",
+        "item_type":2,
+        "description":"Sea Voyage (U.S / England) - 1920's",
+        "price":120.00 
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"First Class (Round-trip)",
+        "item_type":2,
+        "description":"Sea Voyage (U.S / England) - 1920's",
+        "price":200.00 
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Steerage",
+        "item_type":2,
+        "description":"Sea Voyage (U.S / England) - 1920's",
+        "price":35.00
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"4-Man Hot Air Balloon",
+        "item_type":2,
+        "description":"Sea Voyage (U.S / England) - 1920's",
+        "price":1800.00
+      }
+    },
+    {
+    "model": "creator.Item",
+    "fields": {
+        "title":"Streetcar Fare",
+        "item_type":2,
+        "description":"Sea Voyage (U.S / England) - 1920's",
+        "price":0.10
+      }
+    }, 
+    { 
+      "model": "creator.Item",
+      "fields": {
+        "title":"Bus Fare",
+        "item_type":2,
+        "description":"Sea Voyage (U.S / England) - 1920's",
+        "price":0.05
+      }
+    }
+]
