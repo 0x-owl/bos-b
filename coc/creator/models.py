@@ -559,3 +559,49 @@ class CampaignInvestigator(Model):
         """String representation of the object."""
         title = '{} - {}'.format(self.campaign.title, self.investigator.name)
         return title
+
+class Mania(Model):
+    """Manias class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    title = CharField(max_length=50)
+    description = TextField()
+
+    def __str__(self):
+        """String representation of the object."""
+        return self.title
+
+class ManiaInvestigator(Model):
+    """Manias  Investigator Relationship"""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    investigator = ForeignKey(Investigator, on_delete=CASCADE)
+    mania = ForeignKey(Mania, on_delete=CASCADE)
+    #Undefined limit 999999
+    duration = PositiveIntegerField(default=1)
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {} - {}'.format(self.mania.title, self.investigator.name, self.duration)
+        return title
+
+class Phobia(Model):
+    """Phobias class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    title = CharField(max_length=50)
+    description = TextField()
+
+    def __str__(self):
+        """String representation of the object."""
+        return self.title
+
+class PhobiaInvestigator(Model):
+    """Phobias  Investigator Relationship"""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    investigator = ForeignKey(Investigator, on_delete=CASCADE)
+    phobia = ForeignKey(Phobia, on_delete=CASCADE)
+    #Undefined limit 999999
+    duration = PositiveIntegerField(default=1)
+
+    def __str__(self):
+        """String representation of the object."""
+        title = '{} - {} - {}'.format(self.phobias.title, self.investigator.name, self.duration)
+        return title
