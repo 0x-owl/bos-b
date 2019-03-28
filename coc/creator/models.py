@@ -119,7 +119,7 @@ class OccupationAttribute(Model):
     def __str__(self):
         """String representation of the object."""
         title = '{} - {} - {}'.format(
-            self.occupation.title, self.attr, self.value)
+            self.occupation.title, self.attr, self.modifier)
         return title
 
 
