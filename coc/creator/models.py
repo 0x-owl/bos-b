@@ -98,6 +98,8 @@ class Occupation(Model):
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     user = ForeignKey(User, on_delete=CASCADE)
     title = CharField(max_length=50)
+    description = TextField(blank=True)
+    suggested_contacts = TextField()
     credit_rating_min = PositiveIntegerField()
     credit_rating_max = PositiveIntegerField()
 
