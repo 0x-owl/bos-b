@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'creator',
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = 'images/'
+
+
+GRAPHENE = {
+    'SCHEMA': 'coc.schema.schema'
+}
