@@ -1,37 +1,37 @@
-from graphene import Field, List
+from graphene import relay
+from creator.models import Tag
+from django.contrib.auth.models import User
+
 from graphene_django.types import DjangoObjectType
-
-from creator.models import Item, Tag
-from creator.constants import TAG_FIELDS
-from creator.helpers.schema_helpers import attribute_resolver
+from graphene_django.filter import DjangoFilterConnectionField
 
 
-class ItemType(DjangoObjectType):
+class UserNode(DjangoObjectType):
     class Meta:
-        model = Item
+        model = User
+        filter_fields = {
+            'id': ['exact'],
+            'username': ['exact', 'icontains', 'istartswith']
+        }
+        interfaces = (relay.Node, )
 
 
-class TagType(DjangoObjectType):
+class TagNode(DjangoObjectType):
     class Meta:
         model = Tag
+        filter_fields = {
+            'title': ['exact', 'icontains', 'istartswith'],
+            'uuid': ['exact'],
+            'user': ['exact'],
+            'user__username': ['exact', 'istartswith'],
+            'id': ['exact']
+        }
+        interfaces = (relay.Node, )
 
 
 class Query(object):
-    all_items = List(ItemType)
-    all_tags = List(TagType)
-    tag = Field(
-        TagType,
-        **TAG_FIELDS
-    )
+    all_tags = DjangoFilterConnectionField(TagNode)
+    tag = relay.Node.Field(TagNode)
 
-    def resolve_all_items(self, info, **kwargs):
-        """Obtain all records from Item model."""
-        return Item.objects.all()
-
-    def resolve_all_tags(self, info, **kwargs):
-        """Obtain all records from Tag model."""
-        return Tag.objects.all()
-
-    def resolve_tag(self, info, **kwargs):
-        """Obtain record that matches specific query over fields."""
-        return attribute_resolver(Tag, TAG_FIELDS, kwargs)
+    all_user = DjangoFilterConnectionField(UserNode)
+    user = relay.Node.Field(UserNode)
