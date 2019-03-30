@@ -1,3 +1,5 @@
+from graphene import Int, String
+
 GENDER = (
     ('M', 'Male'),
     ('F', 'Female')
@@ -15,3 +17,11 @@ DECADES = (
     ('00', "00's"),
     ('99999', "No end")
 )
+
+
+TAG_FIELDS = {
+    'id': Int(),
+    'uuid': String(),
+    'title': String(),
+    'user_id': Int()
+}
