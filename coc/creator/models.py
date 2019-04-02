@@ -339,6 +339,7 @@ class Investigator(Model):
 
 class Portrait(Model):
     """Investigators picture class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
     investigator = OneToOneField(Investigator, on_delete=CASCADE)
     portrait = ImageField(upload_to=renamer)
 
@@ -579,12 +580,14 @@ class ManiaInvestigator(Model):
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     mania = ForeignKey(Mania, on_delete=CASCADE)
-    #Undefined limit 999999
+    # Undefined limit 999999
     duration = PositiveIntegerField(default=1)
 
     def __str__(self):
         """String representation of the object."""
-        title = '{} - {} - {}'.format(self.mania.title, self.investigator.name, self.duration)
+        title = '{} - {} - {}'.format(
+            self.mania.title, self.investigator.name, self.duration
+        )
         return title
 
 

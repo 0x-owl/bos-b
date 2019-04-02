@@ -1,5 +1,5 @@
 from graphene import relay
-from creator.models import Tag
+from creator.models import Tag, Portrait
 from django.contrib.auth.models import User
 
 from graphene_django.types import DjangoObjectType
@@ -10,7 +10,6 @@ class UserNode(DjangoObjectType):
     class Meta:
         model = User
         filter_fields = {
-            'id': ['exact'],
             'username': ['exact', 'icontains', 'istartswith']
         }
         interfaces = (relay.Node, )
@@ -24,7 +23,16 @@ class TagNode(DjangoObjectType):
             'uuid': ['exact'],
             'user': ['exact'],
             'user__username': ['exact', 'istartswith'],
-            'id': ['exact']
+            'user__id': ['exact']
+        }
+        interfaces = (relay.Node, )
+
+
+class PortraitNode(DjangoObjectType):
+    class Meta:
+        model = Portrait
+        filter_fields = {
+            'uuid': ['exact']
         }
         interfaces = (relay.Node, )
 
@@ -35,3 +43,6 @@ class Query(object):
 
     all_user = DjangoFilterConnectionField(UserNode)
     user = relay.Node.Field(UserNode)
+
+    all_portraits = DjangoFilterConnectionField(PortraitNode)
+    portrait = relay.Node.Field(PortraitNode)
