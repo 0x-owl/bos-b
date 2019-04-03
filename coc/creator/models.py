@@ -70,6 +70,7 @@ class Skills(Model):
     title = CharField(max_length=50)
     description = TextField(blank=True)
     user = ForeignKey(User, on_delete=CASCADE)
+    default_value = PositiveIntegerField(default=0)
 
     class Meta:
         verbose_name_plural = 'skills'
@@ -579,12 +580,13 @@ class ManiaInvestigator(Model):
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     mania = ForeignKey(Mania, on_delete=CASCADE)
-    #Undefined limit 999999
+    # Undefined limit 999999
     duration = PositiveIntegerField(default=1)
 
     def __str__(self):
         """String representation of the object."""
-        title = '{} - {} - {}'.format(self.mania.title, self.investigator.name, self.duration)
+        title = '{} - {} - {}'.format(
+            self.mania.title, self.investigator.name, self.duration)
         return title
 
 
@@ -609,5 +611,6 @@ class PhobiaInvestigator(Model):
 
     def __str__(self):
         """String representation of the object."""
-        title = '{} - {} - {}'.format(self.phobias.title, self.investigator.name, self.duration)
+        title = '{} - {} - {}'.format(
+            self.phobias.title, self.investigator.name, self.duration)
         return title
