@@ -340,6 +340,7 @@ class Investigator(Model):
 
 class Portrait(Model):
     """Investigators picture class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
     investigator = OneToOneField(Investigator, on_delete=CASCADE)
     portrait = ImageField(upload_to=renamer)
 
