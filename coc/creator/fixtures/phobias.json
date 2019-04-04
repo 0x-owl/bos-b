@@ -1,0 +1,702 @@
+[
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Ablutophobia",
+      "description": "Fear of washing or bathing."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Acrophobia",
+      "description": "Fear of heights."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Aerophobia",
+      "description": "Fear of flying."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Agoraphobia",
+      "description": "Fear of open, public (crowded) places."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Alektorophobia",
+      "description": "Fear of chickens."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Alliumphobia",
+      "description": "Fear of garlic."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Amaxophobia",
+      "description": "Fear of being in or riding in vehicles."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Ancraophobia",
+      "description": "Fear of wind."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Androphobia",
+      "description": "Fear of men."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Anglophobia",
+      "description": "Fear of England or English culture, etc."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Anthrophobia",
+      "description": "Fear of flowers."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Apotemnophobia",
+      "description": "Fear of people with amputations."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Arachnophobia",
+      "description": "Fear of spiders."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Astraphobia",
+      "description": "Fear of lightning."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Atephobia",
+      "description": "Fear of ruin or ruins"
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Aulophobia",
+      "description": "Fear of flutes"
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Bacteriophobia",
+      "description": "Fear of bacteria."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Ballistophobia",
+      "description": "Fear of missiles or bullets."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Basophobia",
+      "description": "Fear of falling."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Bibliophobia",
+      "description": "Fear of books."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Botanophobia",
+      "description": "Fear of plants."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Caligynephobia",
+      "description": "Fear of beautiful women."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Cheimaphobia",
+      "description": "Fear of cold."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Chronomentrophobia",
+      "description": "Fear of clocks."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Claustrophobia",
+      "description": "Fear of confined spaces."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Coulrophobia",
+      "description": "Fear of clowns."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Cynophobia",
+      "description": "Fear of dogs."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Demonophobia",
+      "description": "Fear of spirits or demons."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Demophobia",
+      "description": "Fear of crowds."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Dentrophobia",
+      "description": "Fear of dentists."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Disposophobia",
+      "description": "Fear of throwing stuff out (hoarding)."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Doraphobia",
+      "description": "Fear of fur."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Dromophobia",
+      "description": "Fear of crossing streets."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Ecclesiophobia",
+      "description": "Fear of church."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Eisoptrophobia",
+      "description": "Fear of mirrors."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Enetophobia",
+      "description": "Fear of needles or pins."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Entomophobia",
+      "description": "Fear of insects."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Felinophobia",
+      "description": "Fear of cats."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Gephyrophobia",
+      "description": "Fear of crossing bridges."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Gerontophobia",
+      "description": "Fear of old people or of growing old."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Gynophobia",
+      "description": "Fear of women."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Haemaphobia",
+      "description": "Fear of blood."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Hamartophobia",
+      "description": "Fear of sinning."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Haphophobia",
+      "description": "Fear of touch."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Herpetophovia",
+      "description": "Fear of reptiles."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Homichlophobia",
+      "description": "Fear of fog."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Hoplophobia",
+      "description": "Fear of firearms."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Hydrophobia",
+      "description": "Fear of water."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Hypnophobia",
+      "description": "Fear of sleep or of being hypnotized."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Iatrophobia",
+      "description": "Fear of doctors."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Ichthyophobia",
+      "description": "Fear of fish."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Katsaridaphobia",
+      "description": "Fear of cockroaches."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Keraunophobia",
+      "description": "Fear of thunder."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Lachanophobia",
+      "description": "Fear of vegetables."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Ligyrophobia",
+      "description": "Fear of loud noises."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Limnophobia",
+      "description": "Fear of lakes."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Mechanophobia",
+      "description": "Fear of machines or machinery."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Megalophobia",
+      "description": "Fear of large things."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Merinthophobia",
+      "description": "Fear of being bound or tied up."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Merinthophobia",
+      "description": "Fear of meteors or meteorites."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Monophobia",
+      "description": "Fear of being alone."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Mysophobia",
+      "description": "Fear of dirt or contamination."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Myxophobia",
+      "description": "Fear of slime."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Necrophobia",
+      "description": "Fear of dead things."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Octophobia",
+      "description": "Fear of the figure 8."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Odontophobia",
+      "description": "Fear of teeth."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Oneirophobia",
+      "description": "Fear of dreams."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Onomatophobia",
+      "description": "Fear of hearing a certain word or words."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Ophidiophobia",
+      "description": "Fear of snakes."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Ornithophobia",
+      "description": "Fear of birds."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Parasitophobia",
+      "description": "Fear of parasites."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Pediophobia",
+      "description": "Fear of dolls."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Phagophobia",
+      "description": "Fear of swallowgin, of eating or of being eaten."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Pharmacophobia",
+      "description": "Fear of drugs."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Phasmophobia",
+      "description": "Fear of ghosts."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Phenogophobia",
+      "description": "Fear of daylight."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Pogonophobia",
+      "description": "Fear of beards."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Potamophobia",
+      "description": "Fear of rivers."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Potophobia",
+      "description": "Fear of alcohol or alcoholic beverages."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Pyrophobia",
+      "description": "Fear of fire."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Rhabdophobia",
+      "description": "Fear of magic."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Scotophobia",
+      "description": "Fear of darkness or of the night."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Selenophobia",
+      "description": "Fear of the moon."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Siderodromophobia",
+      "description": "Fear of train travel."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Siderophobia",
+      "description": "Fear of stars."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Stenophobia",
+      "description": "Fear of narrow things or places."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Symmetrophobia",
+      "description": "Fear of symmetry."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Taphephobia",
+      "description": "Fear of being buried alive or of cemeteries."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Taurophobia",
+      "description": "Fear of bulls."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Telephonophobia",
+      "description": "Fear of telephones."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Teratophobia",
+      "description": "Fear of monters."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Thalassophobia",
+      "description": "Fear of the sea."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Tomophobia",
+      "description": "Fear of surgical operations."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Triskadekaphobia",
+      "description": "Fear of the number 13."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Vestiphobia",
+      "description": "Fear of clothing."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Wiccaphobia",
+      "description": "Fear of witches and witchcraft."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Xanthophobia",
+      "description": "Fear of the color yellow or the word yellow."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Xenoglossophobia",
+      "description": "Fear of foreign languages."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Xenophobia",
+      "description": "Fear of strangers or foreigners."
+    }
+  },
+  {
+    "model": "creator.Phobia",
+    "fields": {
+      "title": "Zoophobia",
+      "description": "Fear of animals."
+    }
+  }
+]
