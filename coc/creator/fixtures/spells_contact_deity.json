@@ -1,0 +1,90 @@
+[
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Deity Spells",
+        "description": "Contact Deity spells are unused except by the insane priests of these deities or by great independent sorcerers who hope to strike deals and win over some small fraction of the deity’s powers. The deity sought for Contact can be any one of the Gods or Great Old Ones.\nFor each such spell, the caster must sacrifice 5 POW. The chance of successfully contacting the deity is equal to half the caster’s (reduced) POW. If the roll succeeds, the deity or some aspect of it will contact the caster in a semi-friendly manner after a few game hours or days. The deity is unlikely to give non-worshipers anything of value. If the deity is bored or offended the god will likely squash the caster, or drive him or her insane, and so get some inhuman pleasure from the situation.\nEach version of the spell tends to reflect the deity concerned.",
+        "cost": "5 POW; 1D6 Sanity points",
+        "casting_time": "five to ten (1D6 + 4) rounds"
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Deity: Chaugnar Faugn",
+        "description": "Opens communication with Chaugnar Faugn. With a success, the deity sends the caster visions or nightmares that inform the dreamer of the god’s desires, or lets him or her know if a petition to the god is to be favorably answered or rejected.",
+        "cost": "5 POW; 1D6 Sanity points",
+        "casting_time": "five to ten (1D6 + 4) rounds"
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Deity: Cthulhu",
+        "description": "Opens communication with Cthulhu. Cthulhu typically responds at night, during the caster’s dreams. By dreams and nightmares he informs his followers of his desires.",
+        "cost": "5 POW; 1D6 Sanity points",
+        "casting_time": "five to ten (1D6 + 4) rounds"
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Deity: Eihort",
+        "description": "Resembles other Contact Deity spells, but the caster sacrifices 1 magic point instead of 5 POW in casting it. The god automatically appears in dream form if the caster is distant and in person if within a few hundred yards. In imparting this spell into the caster’s brain, Eihort extracts 5 POW in compensation.",
+        "cost": "5 POW; 1D6 Sanity points",
+        "casting_time": "five to ten (1D6 + 4) rounds"
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Deity: Nodens",
+        "description": "Opens communication with Nodens. The Contact spell for Nodens can be cast only from a remote, unpeopled place such as the edge of a sea-cliff. If, later, Nodens contacts the caster, it will be when he or she is alone and in a similar inaccessible place.",
+        "cost": "5 POW; 1D6 Sanity points",
+        "casting_time": "five to ten (1D6 + 4) rounds"
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Deity: Nyarlathotep",
+        "description": "Opens communication with Nyarlathotep. This spell can be cast from anywhere, as befits this omnipresent god; however, Nyarlathotep appears only at meetings of worshipers or when new priests of the Gods are anointed.",
+        "cost": "5 POW; 1D6 Sanity points",
+        "casting_time": "five to ten (1D6 + 4) rounds"
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Deity: Tsathoggua",
+        "description": "Opens communication with Tsathoggua. Tsathoggua may appear in spirit form as a hazy and translucent projection of his real self, to which normal Sanity losses apply. He usually visits only if the caster is alone. He speaks audibly to the caster.",
+        "cost": "5 POW; 1D6 Sanity points",
+        "casting_time": "five to ten (1D6 + 4) rounds"
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Deity: Y’golonac",
+        "description": "Opens communication with Y’golonac. This god responds by attempting to convert the caster to its worship. If the deity feels that the caster would be an unsuitable priest, it will psychically attack him or her and try to eat the soul and mind. If the caster might be suitable, Y’golonac tries to possess a friend, who (controlled) approaches the caster to tempt him or her into service.",
+        "cost": "5 POW; 1D6 Sanity points",
+        "casting_time": "five to ten (1D6 + 4) rounds"
+    }
+  }
+]
