@@ -1,0 +1,109 @@
+[
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Summoning Spells",
+        "description": "Such spells concern themselves with alien races and attendants, those monsters that commonly serve greater monsters or wizards. The general procedures for these spells are the same, but conditions may vary from spell to spell. Knowing one such spell is of no use whatsoever in attempting to cast another. Unless the Keeper wishes otherwise, the summon and the bind portions of each spell are learned together. Foolish is the impatient wizard who only learns to summon and not to bind...\nWith the exception of Summon/Bind Servitor of the Outer Gods, these spells require the sacrifice of 1 magic point per 10 percentiles chance for success. For example, 3 magic points gives a 30% chance for the spell to succeed. In general, for each magic point spent, the caster must spend five minutes chanting—the greater the chance for success, the longer the spell takes to cast. A result of 96-100 is always a failure—a rolled result of 100 should always have bad consequences for the wizard concerned.\nThe caster also loses 1D4 Sanity points per spell cast, whether the spell succeeds or not.\nIf a success, one being appears per spell, 2D10 game minutes after the chant concludes. The thing appearing may also require a Sanity loss to see it.\nAs the Keeper wishes, the thing arrives bound or the Keeper may ask that the caster make an opposed POW roll versus the summoned being. With a success, the thing is bound; with a failure, it attacks the caster and then returns from whence it came. Bound, the thing must obey one order by the caster, even to attacking its own kind, after which it is freed and returns from whence it came.",
+        "cost": "variable magic points; 1D4 Sanity points",
+        "casting_time": "5 minutes per magic point spent, binding takes 1 round."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Summoning Spells - Summon Byakhee",
+        "alternative_names": "Call in to Service Thy Steed, The Melody that brings the Journeyed.",
+        "description": "a whistle must be blown during the chant. This spell is active only on nights when Aldebaran is above the horizon (October through March are the best months). The summoned byakhee will flap down out of the sky, still icy from its travels through space.\nIf the whistle is enchanted, each point of POW in its enchantment adds 2 percentiles to the chance for success. Such a whistle may be used again and again.\n",
+        "cost": "variable magic points; 1D4 Sanity points",
+        "casting_time": "5 minutes per magic point spent, binding takes 1 round."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Summoning Spells - Summon Dark Young",
+        "alternative_names": "Envoke the Darke of the Forest, Knife Ritual of the Bleeding Bark.",
+        "description": "brings present a single dark young. A beast of at least SIZ 40 must be sacrificed. The summoner needs a knife to make certain ritual cuts in dispatching the victim. Cast this spell outdoors, in a wood, during the dark of the moon. A dark young will stalk out of the shadows after the summoning.",
+        "cost": "variable magic points; 1D4 Sanity points",
+        "casting_time": "5 minutes per magic point spent, binding takes 1 round."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Summoning Spells - Summon Dimensional Shambler",
+        "alternative_names": "Recitation to Bring the Wanderer, The Song of Copper.",
+        "description": "a single dimensional shambler gradually assembles itself out of thin air. The spell requires a dagger made from any pure metal such as copper or iron. Alloys such as brass will not work. If the dagger is enchanted, the chance for success also rises by 2 percentiles per point of POW in the dagger. This spell may be cast day or night. One authority has written that shamblers are more easily confused in bright sunlight.",
+        "cost": "variable magic points; 1D4 Sanity points",
+        "casting_time": "5 minutes per magic point spent, binding takes 1 round."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Summoning Spells - Summon Fire Vampire",
+        "alternative_names": "Conjure the Glittering Ones, The Autumnal Call of Living Fire.",
+        "description": "causes one fire vampire to swoop down from the sky like a skittering star. A bonfire or other source of flame is required. The spell may be cast only at night when the star Fomalhaut is above the horizon (September through November are the best times in moderately northern latitudes).",
+        "cost": "variable magic points; 1D4 Sanity points",
+        "casting_time": "5 minutes per magic point spent, binding takes 1 round."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Summoning Spells - Summon Hunting Horror",
+        "alternative_names": "Petition the Feasting Teeth, Utterances That Bring Forth the Twisting Devils.",
+        "description": "A single horror appears headfirst, as though entering through a hole in the air. This spell may be cast only at night in the open air. If no alternate sacrifice has been prepared for the binding (see below), it takes the caster and vanishes",
+        "cost": "variable magic points; 1D4 Sanity points",
+        "casting_time": "5 minutes per magic point spent, binding takes 1 round."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Summoning Spells - Summon Nightgaunt",
+        "alternative_names": "The Whispered Words of the Faceless Men, Conjure the Winged Shadow.",
+        "description": "A nearly silent swoosh of air comes, and then the single ghastly form of the blank-faced flying horror appears. To summon, a stone emblazoned with the cryptic Elder Sign must be present, but the stone itself need not be star-shaped. The spell can be cast only at night when there is no moon.",
+        "cost": "variable magic points; 1D4 Sanity points",
+        "casting_time": "5 minutes per magic point spent, binding takes 1 round."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Summoning Spells - Summon Servitor Of The Outer Gods",
+        "alternative_names": "The Ritual Symphony of the Indescribable Ones, Recitation of the Maddening Piping.",
+        "description": "A single servitor arrives amid haunting echoes of insane piping. The magic point cost is triple that of the standard summoning spell; for each three magic points sacrificed, increase the chance for a successful cast by 10 percentiles; a result of 96-100 is always a failure. Each cast of this spell also costs 3D4 Sanity points. A flute is also needed to cast this spell; if the flute is enchanted, it increases the chance for the spell’s success by 2 percentiles per point of POW within the flute. Cultists cast this spell anywhere and at any time that is especially unhallowed—typical nights would be Midsummer’s Eve, Samhain and Walpurgis Night.",
+        "cost": "variable magic points; 1D4 Sanity points",
+        "casting_time": "5 minutes per magic point spent, binding takes 1 round."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Summoning Spells - Summon Star Vampire",
+        "alternative_names": "The Night Call of the Feasting Death, Chant of the Bloody Letters.",
+        "description": "curious rustling sounds are heard once this invisible thing lurks near. The caster also needs a book in which are written or inscribed the words of the spell. If the book is enchanted, the chance for success is increased by 2 percentiles per point of POW within the book. This spell can be cast only at night under a cloudless sky. The creature is invisible save when its veins fill with blood from some visible creature.",
+        "cost": "variable magic points; 1D4 Sanity points",
+        "casting_time": "5 minutes per magic point spent, binding takes 1 round."
+    }
+  }
+]

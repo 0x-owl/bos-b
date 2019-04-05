@@ -1,0 +1,194 @@
+[
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells",
+        "description": "Contact spells are divided in to two separate groups: spells concerned with contacting Mythos creatures and monsters and spells for contacting Mythos deities (see Contact Deity).\nUsing Contact spells a cultist could get in touch with intelligent monsters and alien races, perhaps to learn more about history, magic, gods or alien species. The caster should have a definite goal in mind; bargains might be struck, agreements made, plans negotiated.\nContact spells do not give the caster the upper hand though; the spell is merely a method of establishing contact. Remember these are independent and intelligent beings with their own (usually antithetical to human) motivations—casters make contact at their peril! This is distinctly different to Summoning Spells that have the potential to allow casters to bind the summoned beings to their will.\nProcedures are much the same for each Contact spell, though particular conditions or requirements may be unique. Knowing one Contact spell is of no help in casting another. Many versions of Contact spells exist.\nCast properly, this spell always works, unless there are no such things living within a convenient distance (flying polyps might journey from the City in the Sands to some part of Australia, but might ignore the chance to fly to North America).\nA Contact spell takes five to ten rounds to cast. The thing reached by the spell may appear in a game hour or take a game day or more to show up. For a random appearance in hours, roll 1D100. Entities living nearby will walk, swim, dig or fly to the spell point. If the trip is too long, the thing called by the spell never shows up. Things from other dimensions can appear in any characteristic or evocative manner.\nThe spell brings a random member of the species, presumably with its own motives. The caster should try to be alone or to be with no more than a small group, in order not to seem threatening. Once the contacted thing appears, it is free to depart, so if the caster has something to offer it, the chances for an extended meeting greatly improve.\nIf a contacted species is large, such as a flying polyp, only one will likely appear. If it is human-sized or smaller, the Keeper may determine if several representatives arrive as a group.\nThere is no guarantee that a contacted entity would rather bargain than devour the caster. It will have an alien motivation; however, if further contact seems of advantage to both sides, then some interesting roleplaying may emerge.\nAs mentioned, each version of the spell requires certain conditions to be in place for it to work.",
+        "cost": "Refer to specific spell. Sanity cost: 1D3 (plus more to view the monster)",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Chthonian",
+        "description": "Unless there are no chthonians nearby, it succeeds automatically. The spell must be cast at a location that has known recent earthquakes or where hot spots and volcanoes offer relatively quick transport from the deep interior of the planet to the outer edge of the geologic crust.",
+        "cost": "5 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Deep One",
+        "description": "Unless there are no deep ones nearby, the chanting succeeds automatically. This spell should be cast at the edge of a saltwater ocean or sea. To work best, it should be cast near a deep one city, such as the waters off Innsmouth, Massachusetts or the coast near the lost town of Dunwich by the Sea, England. Part of the ritual consists of throwing specially inscribed stones into the water.",
+        "cost": "3 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Elder Thing",
+        "description": "Unless there are no elder things nearby, the chanting succeeds automatically. The most likely locations are along the southern part of the Mid-Atlantic Ridge or over the geological trenches nearest Antarctica.",
+        "cost": "3 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Flying Polyp",
+        "description": "Unless there are no flying polyps nearby, it succeeds automatically. Flying polyps occur only in their rare underground cities, the largest of which is beneath the City in the Sands, in the western Australian desert. The caster should first construct or open a communication shaft for their egress.",
+        "cost": "9 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Formless Spawn",
+        "description": "Unless there are no formless spawn nearby, it succeeds automatically. The best place to cast this spell is at a temple of Tsathoggua, whose altar statue of Tsathoggua is still present or at a spot near an opening into the black abyss of N’Kai, somewhere near Binger, Oklahoma. Possibly other places in Western or Midwestern North America offer entry and exit points. One such cavern reputedly exists near Dunwich, Massachusetts.",
+        "cost": "3 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Ghoul",
+        "description": "Unless there are no ghouls nearby, it succeeds automatically. Ghouls are found wherever large concentrations of humans are, especially near graveyards and crypts. Places of burial more than a century old are propitious locations for this spell. Moonlit nights are best.",
+        "cost": "5 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Gnoph-Keh",
+        "description": "Unless there are no gnoph-keh nearby, it succeeds automatically. Gnoph-keh are usually found in Greenland or other frozen wastes near the North Pole.\nThe spell must be augmented with a successful Sing (Art & Craft specialism) roll and before doing so the caster must build a small effigy of the beast from ice and snow.",
+        "cost": "6 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Hound of Tindalos",
+        "description": "If a hound of Tindalos is summoned it will come automatically. There is no known way to bargain with a hound of Tindalos, whose motive for moving through the stream of time and space is pure hunger.",
+        "cost": "7 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Mi-Go",
+        "description": "Unless there are no mi-go nearby, it succeeds automatically. The spell must be cast at the base or the top of a high mountain—in a range known to be mined or visited by the enigmatic space faring race. Among such ranges are the Appalachians, Andes and the Himalayas, and some peaks in Central Africa.",
+        "cost": "8 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Rat-Thing",
+        "description": "To bring forth a foul rat-thing, it must be cast at or near a site infested by rat-things. A population of these evil creatures reportedly exists in Yorkshire, England. Another report of similar creatures comes from Massachusetts.",
+        "cost": "2 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Sand-Dweller",
+        "description": "Unless there are no sand-dwellers nearby, it succeeds automatically. The spell must be cast in a suitable desert, such as in the Sahara, the southwestern United States, Saudi Arabia or central Australia.",
+        "cost": "3 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Servitor of the Outer Gods",
+        "description": "A successful Luck roll establishes that a servitor is within the Milky Way galaxy when the spell is cast. If no servitor is within that range, the magic points are lost.\nStars must be visible to the caster. He or she attempts to visualize Azathoth’s Ineffable Heart (reputedly a spheroidal symbol of meditation but actually of unknown shape) that pulses and shines like liquid flame. The servitor manifests within 1D6+4 rounds and expects a blood sacrifice. If the nominated sacrifice is inadequate, the servitor devours the caster. If the servitor accepts the sacrifice, it agrees to perform one simple task for the caster.\nWith a successful Persuade roll, the servitor also deigns to answer one respectful question about Mighty Azathoth, the court at the center of the universe or an Outer God. The answer adds 1D3 Cthulhu Mythos to the questioner’s total, but the answer is meaningless to onlookers.\nWith a roll of equal to or less than a fifth of the caster’s Persuade skill, the servitor also imparts a spell directly into the caster’s brain, costing the caster 1D8 Sanity points and 1D10 rounds of disorientation. The servitor chooses the spell.\nIts services rendered, the servitor may linger and play its unearthly pipes while colors flash across its body and its tentacles writhe, or it may dissolve and return to some galactic arm or stellar nursery and resume its previous activity.\nHearing its insane and mesmerizing pipes costs 1/1D4 Sanity points and thereafter haunts every singer or instrumentalist who was present. They become indifferent to earthly scales and more and more feel compelled to perform in the cosmic scales revealed to them.",
+        "cost": "14 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Spirits of the Dead",
+        "description": "Many versions of this spell exist. One version requires a tent of white sheets to be erected near a river and jugs full of the stream’s water are placed inside. Songs are sung and dances danced. An entreaty is made for the dead to appear. Add up all the magic points, multiply the sum by five, with the caster needing to roll equal to or under that result on 1D100. With a success, the voices of the dead emerge from the water jugs. One may hear them and discuss or question them by putting one’s head in the tent. Remember that the dead mostly know only what they knew in life and that some have not realized that they are dead.",
+        "cost": "3 or more magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Star-Spawn of Cthulhu",
+        "description": "Unless there are no repesentatives nearby, it succeeds automatically. It should be cast at the ocean shore, perhaps near a deep one outpost or else near a spot where star-spawn may sleep. The spell works well in Polynesia, along the Massachusetts coast and above R’lyeh.",
+        "cost": "6 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Contact Spells - Contact Yithian",
+        "description": "This spell does not reach forward or backward in time. If a Yithian mind occupies a subject within one hundred miles of the caster at the time the spell is cast, the Yithian notices the appeal and may respond if curious, fearful or alarmed. If the caster has nothing interesting to say or offer, then the Great Race scholar ignores later questions or perhaps destroys the caster as a likely pest or nuisance.",
+        "cost": "4 magic points",
+        "casting_time": "1D6 + 4 rounds",
+        "alternative_names": "For Contact spells, use words like: Union, Commune, Exchange, Commerce, Covenant, Pact, Concord, etc. For example, The Red Pact, Covenant of the Deep, and so forth."
+    }
+  }
+]
