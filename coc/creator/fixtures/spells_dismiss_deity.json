@@ -1,0 +1,13 @@
+[
+  {
+    "model": "creator.Spell",
+    "fields": 
+    { 
+        "user": 1,
+        "name": "Dismiss Deity",
+        "description": "A deity who does not want to leave Earth may be dismissed. Every Dismiss spell differs; the caster must know the specific Dismiss spell for the particular deity. First, allot 1 magic point per 25 POW (round down) possessed by the deity. This grants an initial 5% chance to dismiss the god and it opens the way for the deity’s dismissal.\nOnce the way is prepared, the sacrifice of more magic points can tempt the deity into departure. In this, the second stage, each new magic point sacrificed increases the chance that the deity leaves by 5 percentiles. Sacrificing 10 more magic points adds 50 percentiles to the chance. As with the Call Deity version of the spell, a group of people can assist one another to cast Dismiss Deity.\nRoll 1D100 against the total chance for the dismissal. As with Call Deity, the caster is the focus of the spell; other members of the group can contribute magic points. Dismiss Deity costs no Sanity points.\nCall Deity spells always require special conditions and rituals; however, the Dismiss portion of the spell can be cast anytime, anywhere.",
+        "cost": "1 or more magic points per person.",
+        "casting_time": "1 minute plus 1 extra round per participant who donates POW."
+    }
+  }
+]
