@@ -272,7 +272,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "FineArt",
+      "title": "Fine Art",
       "description": "The artist is accomplished in the art of painting (oils, acrylic, watercolor), as well as sketching in pencil, crayon, or pastels. While serious works of art might take many days or months to complete, the artist may quickly sketch accurate impressions, objects, and people. The skill also denotes a familiarity with the art world, and the artist may be able to determine a particular artist’s work, their school, and known history.",
       "user":1,
       "default_value":5
