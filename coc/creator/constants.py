@@ -18,6 +18,15 @@ DECADES = (
     ('99999', "No end")
 )
 
+SKILL_TYPES = (
+    ('1', 'Profession'),
+    ('2', 'ProfessionAlt'),  # Lawyer -> Law or Other Language
+    ('3', 'Interpersonal'),
+    ('4', 'Free'),
+    ('5', 'Misc'),  # Mostly applies to choices between 3 or 4 general skills
+    ('6', 'Combat')
+)
+
 
 TAG_FIELDS = {
     'id': Int(),

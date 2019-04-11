@@ -9,7 +9,7 @@ from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
 from django.contrib.auth.models import User
 
 from creator.enums import Attribute, ItemCategory, SpellCategory
-from creator.constants import GAME_TYPE, GENDER
+from creator.constants import GAME_TYPE, GENDER, SKILL_TYPES
 from creator.helpers.model_helpers import obtain_attribute_value, renamer
 
 
@@ -129,6 +129,9 @@ class OccupationSkills(Model):
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     occupation = ForeignKey(Occupation, on_delete=CASCADE)
     skill = ForeignKey(Skills, on_delete=PROTECT)
+    optional = BooleanField(default=False)
+    limit = PositiveIntegerField(default=0)
+    category = CharField(max_length=1, choices=SKILL_TYPES)
 
     class Meta:
         verbose_name_plural = 'occupation skills'
@@ -136,7 +139,7 @@ class OccupationSkills(Model):
     def __str__(self):
         """String representation of the object."""
         title = '{} - {} - {}'.format(
-            self.occupation.title, self.skill.title, self.value)
+            self.occupation.title, self.skill.title, self.category)
         return title
 
 
