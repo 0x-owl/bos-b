@@ -1,6 +1,6 @@
 # Items
 
-## Retrieve all items but obtain only the price for each one of them.
+## Retrieve all items but obtain only the uuid for each one of them.
 
 query{
   allItems{

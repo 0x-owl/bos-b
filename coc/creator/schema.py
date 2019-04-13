@@ -1,5 +1,5 @@
 from graphene import ClientIDMutation, Field, Float, Int, String, relay
-from creator.models import Portrait, Tag, Item
+from creator.models import Occupation, Portrait, Tag, Item
 from django.contrib.auth.models import User
 
 from graphene_django.types import DjangoObjectType
@@ -43,10 +43,12 @@ class CreateTag(ClientIDMutation):
             input -- (dict) dictionary that has the keys corresponding to the
             Input class (title, user).
         """
-        arguments = kwargs.get('input')
+        input_ = kwargs.get('input')
+        title = input_.get('title')
+        user = input_.get('user')
         tag = Tag(
-            title=arguments.get('title'),
-            user=User.objects.get(pk=arguments.get('user'))
+            title=title,
+            user=User.objects.get(pk=user)
         )
         tag.save()
         return CreateTag(tag=tag)
@@ -62,11 +64,14 @@ class UpdateDeleteTag(ClientIDMutation):
 
     @classmethod
     def mutate(cls, *args, **kwargs):
-        uuid = kwargs.get('input').get('uuid', '')
+        input_ = kwargs.get('input')
+        uuid = input_.get('uuid', '')
+        method = input_.get('method')
+        title = input_.get('title')
         if uuid != '':
             tag = Tag.objects.get(uuid=uuid)
-            if tag is not None and kwargs.get('input').get('method') != 'DEL':
-                tag.title = kwargs.get('input').get('title')
+            if tag is not None and method != 'DEL':
+                tag.title = title
                 tag.save()
                 ret = UpdateDeleteTag(tag=tag)
             else:
@@ -104,12 +109,16 @@ class CreateItem(ClientIDMutation):
             input -- (dict) dictionary that has the keys corresponding to the
             Input class (title, user).
         """
-        arguments = kwargs.get('input')
+        input_ = kwargs.get('input')
+        title = input_.get('title')
+        item_type = input_.get('item_type')
+        description = input_.get('description')
+        price = input_.get('price')
         item = Item(
-            title=arguments.get('title'),
-            item_type=arguments.get('item_type'),
-            description=arguments.get('description'),
-            price=arguments.get('price')
+            title=title,
+            item_type=item_type,
+            description=description,
+            price=price
         )
         item.save()
         return CreateItem(item=item)
@@ -128,18 +137,117 @@ class UpdateDeleteItem(ClientIDMutation):
 
     @classmethod
     def mutate(cls, *args, **kwargs):
-        uuid = kwargs.get('input').get('uuid', '')
+        input_ = kwargs.get('input')
+        uuid = input_.get('uuid', '')
+        method = input_.get('method')
+        title = input_.get('title')
+        item_type = input_.get('item_type')
+        description = input_.get('description')
+        price = input_.get('price')
         if uuid != '':
             item = Item.objects.get(uuid=uuid)
-            if item is not None and kwargs.get('input').get('method') != 'DEL':
-                item.title = kwargs.get('input').get('title')
-                item.item_type = kwargs.get('input').get('item_type')
-                item.description = kwargs.get('input').get('description')
-                item.price = kwargs.get('input').get('price')
+            if item is not None and method != 'DEL':
+                item.title = title
+                item.item_type = item_type
+                item.description = description
+                item.price = price
                 item.save()
                 ret = UpdateDeleteItem(item=item)
             else:
                 item.delete()
+                ret = "Delete"
+            return ret
+
+
+class OccupationNode(DjangoObjectType):
+    class Meta:
+        model = Occupation
+        filter_fields = {
+            'uuid': ['exact'],
+            'user': ['exact'],
+            'user__username': ['exact', 'istartswith'],
+            'user__id': ['exact'],
+            'title': ['exact', 'icontains', 'istartswith'],
+            'suggested_contacts': ['icontains'], 
+            'credit_rating_min': ['exact', 'gt', 'lt', 'gte', 'lte'],
+            'credit_rating_max': ['exact', 'gt', 'lt', 'gte', 'lte']
+        }
+        interfaces = (relay.Node, )
+
+
+class CreateOccupation(ClientIDMutation):
+    occupation = Field(OccupationNode)
+
+    class Input:
+        user = Int()
+        title = String()
+        description = String()
+        suggested_contacts = String()
+        credit_rating_min = Float()
+        credit_rating_max = Float()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        user = input_.get('user')
+        title = input_.get('title')
+        description = input_.get('description')
+        suggested_contacts = input_.get('suggested_contacts')
+        credit_rating_min = input_.get('credit_rating_min')
+        credit_rating_max = input_.get('credit_rating_max')
+        occupation = Occupation(
+            user=User.objects.get(pk=user),
+            title=title,
+            description=description,
+            suggested_contacts=suggested_contacts,
+            credit_rating_min=credit_rating_min,
+            credit_rating_max=credit_rating_max
+        )
+        occupation.save()
+        return CreateOccupation(occupation=occupation)
+
+
+class UpdateDeleteOccupation(ClientIDMutation):
+    occupation = Field(OccupationNode)
+
+    class Input:
+        uuid = String()
+        user = Int()
+        title = String()
+        description = String()
+        suggested_contacts = String()
+        credit_rating_min = Float()
+        credit_rating_max = Float()
+        method = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        input_ = kwargs.get('input')
+        uuid = input_.get('uuid', '')
+        method = input_.get('method')
+        title = input_.get('title')
+        description = input_.get('description')
+        suggested_contacts = input_.get('suggested_contacts')
+        credit_rating_min = input_.get('credit_rating_min')
+        credit_rating_max = input_.get('credit_rating_max')
+        if uuid != '':
+            occupation = Occupation.objects.get(uuid=uuid)
+            if occupation is not None and method != 'DEL':
+                occupation.title = title 
+                occupation.description = description 
+                occupation.suggested_contacts = suggested_contacts 
+                occupation.credit_rating_min = credit_rating_min 
+                occupation.credit_rating_max = credit_rating_max 
+                occupation.save()
+                ret = UpdateDeleteOccupation(occupation=occupation)
+            else:
+                occupation.delete()
                 ret = "Delete"
             return ret
 
@@ -165,6 +273,9 @@ class Query(object):
 
     all_items = DjangoFilterConnectionField(ItemNode)
     item = relay.Node.Field(ItemNode)
+
+    all_occupations = DjangoFilterConnectionField(OccupationNode)
+    occupation = relay.Node.Field(OccupationNode)
     
 
 class Mutation(object):
@@ -172,3 +283,5 @@ class Mutation(object):
     update_delete_tag = UpdateDeleteTag.Field()
     new_item = CreateItem.Field()
     update_delete_item = UpdateDeleteItem.Field()
+    new_occupation = CreateOccupation.Field()
+    update_delete_occupation = UpdateDeleteOccupation.Field()
