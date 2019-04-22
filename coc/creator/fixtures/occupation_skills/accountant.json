@@ -3,8 +3,740 @@
         "model": "creator.OccupationSkills",
         "fields": {
             "occupation": 1,
-            "skill": 75,
-            "optional": false
+            "skill": 1,
+            "optional": false,
+            "category": "1",
+            "limit": 0
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 48,
+            "optional": false,
+            "category": "1",
+            "limit": 0
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 49,
+            "optional": false,
+            "category": "1",
+            "limit": 0
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 51,
+            "optional": false,
+            "category": "1",
+            "limit": 0
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 62,
+            "optional": false,
+            "category": "1",
+            "limit": 0
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 2,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 3,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 4,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 5,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 6,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 7,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 8,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 9,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 10,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 11,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 12,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 13,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 14,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 15,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 16,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 17,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 18,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 19,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 20,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 21,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 22,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 23,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 24,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 25,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 26,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 27,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 28,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 29,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 30,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 31,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 32,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 33,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 34,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 35,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 36,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 37,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 38,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 39,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 40,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 41,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 42,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 43,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 44,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 45,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 46,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 47,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 50,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 52,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 53,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 54,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 55,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 56,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 57,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 58,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 59,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 60,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 61,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 63,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 64,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 65,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 66,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 67,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 68,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 69,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 70,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 71,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 72,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 73,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
+        }
+    },
+    {
+        "model": "creator.OccupationSkills",
+        "fields": {
+            "occupation": 1,
+            "skill": 74,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
         }
     },
     {
@@ -12,655 +744,89 @@
         "fields": {
             "occupation": 1,
             "skill": 75,
-            "optional": false
+            "optional": true,
+            "category": "4",
+            "limit": "2"
         }
     },
     {
         "model": "creator.OccupationSkills",
         "fields": {
             "occupation": 1,
-            "skill": 75,
-            "optional": false
+            "skill": 76,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
         }
     },
     {
         "model": "creator.OccupationSkills",
         "fields": {
             "occupation": 1,
-            "skill": 75,
-            "optional": false
+            "skill": 77,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
         }
     },
     {
         "model": "creator.OccupationSkills",
         "fields": {
             "occupation": 1,
-            "skill": 75,
-            "optional": false
+            "skill": 78,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
         }
     },
     {
         "model": "creator.OccupationSkills",
         "fields": {
             "occupation": 1,
-            "skill": 75,
-            "optional": false
+            "skill": 79,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
         }
     },
     {
         "model": "creator.OccupationSkills",
         "fields": {
             "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
+            "skill": 80,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
         }
     },
     {
         "model": "creator.OccupationSkills",
         "fields": {
             "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
+            "skill": 81,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
         }
     },
     {
         "model": "creator.OccupationSkills",
         "fields": {
             "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
-        }
-    },
-    {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": 1,
-            "skill": 84,
-            "optional": true
+            "skill": 82,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
         }
     },
     {
         "model": "creator.OccupationSkills",
         "fields": {
             "occupation": 1,
-            "skill": 84,
-            "optional": true
+            "skill": 83,
+            "optional": true,
+            "category": "4",
+            "limit": "2"
         }
     },
     {
@@ -668,7 +834,9 @@
         "fields": {
             "occupation": 1,
             "skill": 84,
-            "optional": true
+            "optional": true,
+            "category": "4",
+            "limit": "2"
         }
     }
 ]
