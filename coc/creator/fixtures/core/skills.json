@@ -74,7 +74,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Astronomy",
+      "title": "Science(Astronomy)",
       "description": "The user knows how to find out which stars and planets are overhead, when eclipses and meteor showers occur, and the names of important stars. The skill also provides knowledge of current perceptions about life on other worlds, the existence or the formation of galaxies, and so on. An academic might be able to calculate orbits, discuss stellar life cycles, and (in the modern day), have knowledge of infrared astronomy, or long-baseline interferometry. America’s leading astronomer is Edwin Hubble who, in 1922-24, discovers that nebulae are actually separate galaxies lying far beyond the Milky Way. His discovery in 1929 of “red shifts” leads to theories about an expanding and ever-dynamic universe. Astronomer Clyde Tombaugh discovers the ninth planet (as it was then classified) of our solar system in 1931, naming it Pluto. The largest telescopes in the world are the 100-inch reflector on Mt. Wilson near Pasadena, California and a 72-inch reflector in Vancouver, British Columbia. A number of astronomical societies exist, publishing journals and newsletters, including: The Royal Astronomical Society (1820); The British Astronomical Society (1869); The American Astronomical Society (1899); The Astronomical Society of the Pacific (1880); and The American Association of Variable Star Observers (1911). All welcome the amateur astronomer.",
       "user":1,
       "default_value":1
@@ -92,7 +92,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Biology",
+      "title": "Science(Biology)",
       "description": "The study of life and living organisms, including cytology, ecology, genetics, histology, microbiology, physiology, and so on. With this skill one might develop a vaccine against some hideous Mythos bacterium, isolate the hallucinogenic properties of some jungle plant, or perform analysis of blood and organic matter. By the 1920s, a division of roles has occurred: molecular biology, biochemistry, microbiology, and  biophysics being only a few among the many. The Science and Philosophy of Organism (1929) by Hans Driesch is an up-to-date reference. The lister Institute, funded by Irish beer baron Edward Guinness, establishes a library of overes, 2,000 living cultures, including bacteria, protozoa and fungi.",
       "user":1,
       "default_value":1
@@ -101,7 +101,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Botany",
+      "title": "Science(Botany)",
       "description": "The study of plant life, including classification of species, structure, growth, reproduction, chemical properties, evolutionary principles, diseases, and microscopy. Sub-disciplines of botany include agronomy, forestry, horticulture, and paleobotany. With this skill one might identify the properties of a particular plant (whether poisonous, edible, or psychotropic for example) and its particular uses. By the 1920s, botanist had an awareness of the composition of biological structure and functions at cellular and biochemical level. Advances were closely associated with the knowledge gained through other sciences, like physics and chemestry. During this period, botanist begin tracing the central metabolic pathways of life.",
       "user":1,
       "default_value":1
@@ -146,7 +146,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Chemistry",
+      "title": "Science(Chemistry)",
       "description": "A study of the composition of substances, the effects of temperature, energy, and pressure upon them, as well as how they affect one another. With chemistry, one might create or extract complex chemical compounds, including simple explosives, poisons, gases, and acids, requiring at least a day or so with the proper equipment and chemicals. The user could also analyze an unknown substance, given proper equipment and reagents. 1920s Chemistry has become an essential part of most sciences from medicine and pharmacy, to physics and biology. Synthetic substances like Bakelite (the first plastic) are being developed, while chemistry also helps to explain the role of vitamins and hormones. Synthetic replacement medicines, such as Novocaine for cocaine, are being developed, as well as faster film emulsions and stronger alloys. Currently there are 92 elements listed on the Periodic Table.",
       "user":1,
       "default_value":1
@@ -173,7 +173,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Cryptography",
+      "title": "Science(Cryptography)",
       "description": "The study of secret codes and languages developed by one or more persons to conceal the contents of a conversation or message. A specialized branch of mathematics, this skill enables the identification, creation and deciphering of a code. Codes are usually written, but may take other forms, such as a message hidden within a musical composition, graphic art, or computer coding (in modern day settings). Cracking a code can be painstaking work, often requiring lengthy research and number crunching. Cryptography has a long history, as there have always been people keen to keep information secret. Notable use of cryptography in the period include the ciphers used in the plotting which led to the execution of Mata Hari—an exotic dancer and accused spy who was executed by firing squad in France under charges of espionage for Germany during World War I. Perhaps the most significant event in the runup to the 1920s was the decryption of the Zimmermann Telegram (a message from the German Foreign Office sent to the German ambassador in Mexico) which played a major part in leading America into the Great War.",
       "user":1,
       "default_value":1
@@ -317,7 +317,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Forensics",
+      "title": "Science(Forensics)",
       "description": "The analysis and identification of evidence. Normally associated with crime scene investigation (examination of fingerprints, DNA, hair, and body fluids) and laboratory work in order to determine fact and provide expert witness and evidence for legal disputes. A Note About Forensics: In 1921, John Larson and Leonard Keeler design the portable polygraph; however by 1924, polygraph test results are ruled inadmissible in court. Also in 1924, Philip O. Gravelle develops the comparison microscope for the identification of fired bullets and cartridge cases. The technique is used to examine shell casings from the Thompson machine guns used in the St. Valentine’s Day Massacre, eventually leading police to raid the home of Al -Scarface- Capone, where two of the murder weapons are found.",
       "user":1,
       "default_value":5
@@ -344,7 +344,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Geology",
+      "title": "Science(Geology)",
       "description": "Used to determine the approximate age of rock strata, recognize fossil types, distinguish minerals and crystals, locate promising sites for drilling or mining, evaluate soils, anticipate volcanism, seismic events, avalanches, and other such phenomena.The theory of floating continents (tectonics) gains credence as favorable evidence continues to accumulate. A group of American geologists puts forth the theory that periodic flooding in parts of the world may have been the result of ocean levels rising and falling due to periodic ice ages, rather than a lifting and settling of the continents as previously believed. The world’s two bestknown societies are The Geological Society of London (1807) and The Geology Society of America (1888) in New York.",
       "user":1,
       "default_value":1
@@ -479,7 +479,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Mathematics",
+      "title": "Science(Mathematics)",
       "description": "The study of numbers and logic, including mathematical theories and applied and theoretical solution design and development. The skill might allow the identification of non-Euclidian geometries, solve puzzling formulae, and decrypt complex patterns or codes (see Cryptography for specialized study of codes).",
       "user":1,
       "default_value":10
@@ -506,7 +506,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Meterology",
+      "title": "Science(Meterology)",
       "description": "The scientific study of the atmosphere, including weather systems and patterns, and atmospheric phenomena. Use this skill to determine long-range weather patterns and to forecast effects like rain, snow, and fog.",
       "user":1,
       "default_value":1
@@ -560,7 +560,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Pharmacy",
+      "title": "Science(Pharmacy)",
       "description": "The study of chemical compounds and their effect on living organisms. Traditionally this has involved the formulation, creation, and dispensing of medications (whether a witch-doctor using combination of herbs or a modern pharmacist operating in a laboratory). The application of this skill ensures the safe and effective use of pharmaceutical drugs, including synthesizing ingredients, identification of toxins, and knowledge of possible side effects.",
       "user":1,
       "default_value":1
@@ -578,7 +578,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Physics",
+      "title": "Science(Physics)",
       "description": "Grants theoretical understanding of pressure, materials, motion, magnetism, electricity, optics, radioactivity, and related phenomena, and some ability to construct experimental devices to test ideas. The degree of knowledge depends on the era of use. Practical devices, such as automobiles, are not the province of physicists, however experimental devices may be, perhaps in conjunction with Electronics or Mechanical Repair. In 1921, Albert Einstein is awarded the Nobel Prize in Physics. Later in the decade, Neils Bohr, the Danish physicist, discovers the properties of the atom. In 1925 Werner Heisenberg, Max Born and Erwin Schrödinger formulate quantum mechanics, which leads to the theory behind atomic and nuclear science—perhaps the most significant scientific event in the 20th century",
       "user":1,
       "default_value":1
@@ -749,7 +749,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Zoology",
+      "title": "Science(Zoology)",
       "description": "The study of biology that relates specifically to the animal kingdom, including the structure, evolution, classification, behavioral habits, and distribution of animals, both living and extinct. Use this skill to identify animal species from interaction with the environment (tracks, droppings, marks, etc.), likely behaviors, and territorial traits.",
       "user":1,
       "default_value":1
