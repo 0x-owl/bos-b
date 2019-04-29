@@ -1,0 +1,87 @@
+[
+        {
+                "occupation": "Accountant",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Law",
+                        "Library Use",
+                        "Listen",
+                        "Persuade",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Acrobat",
+                "proffesional_skills": [
+                        "Climb",
+                        "Dodge",
+                        "Jump",
+                        "Throw",
+                        "Swim",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Artist",
+                "proffesional_skills": [
+                        "Art & Craft (Any)",
+                        "Language (Other)",
+                        "Psychology",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Fast Talk",
+                        "Intimidate",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": ["History", "Natural World"],
+                "professionalt_limit": 1,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Alienist [Classic]",
+                "proffesional_skills": [
+                        "Law",
+                        "Listen",
+                        "Language (Other)",
+                        "Psychoanalysis",
+                        "Psychology",
+                        "Science(Biology)",
+                        "Science(Chemistry)"
+                ],
+                "interpersonal_skills": [],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        }
+
+]

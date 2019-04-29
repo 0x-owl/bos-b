@@ -3,13 +3,10 @@
 python3 creator/helpers/scripts/occ_skill_seeder.py -o Accountant -s
 "['Accounting', 'Law', 'Library Use', 'Listen', 'Persuade']"
 
-python3 creator/helpers/scripts/occ_skill_seeder.py -o Accountant -s
-"['Accounting', 'Law', 'Library Use', 'Listen', 'Persuade']" -op -c "4" -l 2
+python3 creator/helpers/scripts/occ_skill_seeder.py -o "
 """
 from os import environ, system
-from ast import literal_eval as le
-from json import dumps
-from argparse import ArgumentParser
+from json import dumps, loads
 
 from django.core.wsgi import get_wsgi_application
 
@@ -29,57 +26,83 @@ get_wsgi_application()
 
 from creator.models import Occupation, Skills
 
-parser = ArgumentParser()
-parser.add_argument('-o', '--occupation', help='name of occupation')
-parser.add_argument('-s', '--skills',
-                    help='''
-List of skills to search, if optional then this list will be
-excluded from optionals'''
-                    )
-parser.add_argument(
-    '-op', '--optional', help='Whether if we need a list of optional skills',
-    action='store_true'
-)
-parser.add_argument(
-    '-c', '--category', help='Category of the skill (default="1")',
-    default="1"
-)
-parser.add_argument(
-    '-l', '--limit', help='Limit of optionals (default=0)',
-    default=0
-)
-args = parser.parse_args()
-
+with open('/coc/coc/creator/helpers/scripts/occupations.json') as occ_file:
+    options = occ_file.read()
+options = loads(options)
+file_path = '/coc/coc/creator/fixtures/occupation_skills/{}.json'
 skills = Skills.objects.all()
-occ = Occupation.objects.filter(title=args.occupation).first()
-skills_list = le(args.skills)
-out = ''
+
 initial_registry = {
-        "model": "creator.OccupationSkills",
-        "fields": {
-            "occupation": None,
-            "skill": None,
-            "optional": False,
-            "category": args.category,
-            "limit": args.limit
-        }
+    "model": "creator.OccupationSkills",
+    "fields": {
+        "occupation": None,
+        "skill": None,
+        "optional": False,
+        "category": None,
+        "limit": 0
+    }
 }
 
-if args.optional:
-    sks = [skill for skill in skills if skill.title not in skills_list]
-    for skill in sks:
+
+def registry_generator(occupation, skills, optional, category, limit, file_):
+    for skill in skills:
         reg = initial_registry
         reg['fields']['skill'] = skill.pk
-        reg['fields']['occupation'] = occ.pk
-        reg['fields']['optional'] = True
-        out += '{},\n'.format(dumps(reg))
+        reg['fields']['occupation'] = occupation.pk
+        reg['fields']['category'] = category
+        reg['fields']['limit'] = limit
 
-else:
-    sks = [skill for skill in skills if skill.title in skills_list]
-    for skill in sks:
-        reg = initial_registry
-        reg['fields']['skill'] = skill.pk
-        reg['fields']['occupation'] = occ.pk
-        out += '{},\n'.format(dumps(reg))
+        file_.write('{},\n'.format(dumps(reg)))
+    return True
 
-print(out)
+
+def determine_category(type_):
+    category = '1'
+    if type_ == 'professionalt':
+        category = '2'
+    elif type_ == 'interpersonal':
+        category = '3'
+    elif type_ == 'combat':
+        category = '6'
+    elif type_ == 'misc':
+        category == '5'
+    return category
+
+
+for occ in options:
+    occupation = Occupation.objects.filter(title=occ['occupation']).first()
+    with open(file_path.format(occ['occupation']), 'a') as out:
+        skills_acquired = []
+        for option in occ:
+            if option.split('_')[-1] == 'skills':
+                if occ[option] != []:
+                    type_ = option.split('_')[0]
+                    category = determine_category(type_)
+                    limit = occ.get('{}_limit'.format(type_), 0)
+                    optional = True if type_ != 'profession' else False
+                    sks = [sk for sk in skills if sk.title in
+                           occ[option]]
+                    registry_generator(
+                        occupation,
+                        sks,
+                        optional,
+                        category,
+                        limit,
+                        out
+                    )
+                    for sk in sks:
+                        skills_acquired.append(sk.pk)
+
+        if occ['free_skills_limit'] != 0:
+            free_skills = [sk for sk in skills if sk.pk not in skills_acquired]
+            category = '4'
+            optional = True
+            limit = occ['free_skills_limit']
+            registry_generator(
+                occupation,
+                free_skills,
+                optional,
+                category,
+                limit,
+                out
+            )
