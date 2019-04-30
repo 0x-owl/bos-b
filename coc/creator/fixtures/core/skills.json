@@ -83,7 +83,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Axe",
+      "title": "Fighting(Axe)",
       "description": "use this skill for larger wood axes. A small hatchet can be used with basic brawling skill. If thrown, use the Throw skill.",
       "user":1,
       "default_value":15
@@ -110,7 +110,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Bow",
+      "title": "Firearms(Bow)",
       "description": "use of bows and crossbows, ranging from medieval longbows to modern, high-powered compound bows.",
       "user":1,
       "default_value":15
@@ -119,7 +119,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Brawl",
+      "title": "Fighting(Brawl)",
       "description": "includes all unarmed fighting and basic weapons that anyone could pick up and make use of, such as clubs (up to cricket bats or baseball bats), knives, and many improvised weapons, such as bottles and chair legs. To determine the damage done with an improvised weapon, the Keeper should refer to the weapons list and pick something comparable.",
       "user":1,
       "default_value":25
@@ -128,7 +128,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Chainsaw",
+      "title": "Fighting(Chainsaw)",
       "description": " the first gasoline-powered, mass-produced chainsaw appeared in 1927, however earlier versions existed.",
       "user":1,
       "default_value":10
@@ -308,7 +308,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Flail",
+      "title": "Fighting(Flail)",
       "description": "nunchaku, morning stars, and similar medieval weapons.",
       "user":1,
       "default_value":10
@@ -317,7 +317,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Flamethrower",
+      "title": "Firearms(Flamethrower)",
       "description": "weapons projecting a stream of ignited flammable liquid or gas. May either be carried by the operator or mounted on a vehicle.",
       "user":1,
       "default_value":10
@@ -344,8 +344,8 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Garrote",
-      "description": "any length of material used to strangle. Requires the victim to make a Fighting Maneuver to escape, or suffer 1D6 damage per round.",
+      "title": "Fighting(Garrote)",
+      "description": "Any length of material used to strangle. Requires the victim to make a Fighting Maneuver to escape, or suffer 1D6 damage per round.",
       "user":1,
       "default_value":15
     }
@@ -362,7 +362,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Handgun",
+      "title": "Firearms(Handgun)",
       "description": "use for all pistol-like firearms when firing discrete shots. For machine pistols (MAC-11, Uzi, etc.) in Modern-era games, use the Submachine Gun skill when firing bursts.",
       "user":1,
       "default_value":20
@@ -371,7 +371,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Heavy Weapons",
+      "title": "Firearms(Heavy Weapons)",
       "description": "use for grenade launchers, anti-tank rockets, etc.",
       "user":1,
       "default_value":10
@@ -497,7 +497,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Machine Gun",
+      "title": "Firearms(Machine Gun)",
       "description": "weapons firing bursts from bipods, tripods, and mounted weapons. If single shots are fired from a bipod, use Rifle skill. The differences between assault rifle, submachine gun, and light machine gun are tenuous today.",
       "user":1,
       "default_value":10
@@ -686,7 +686,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Spear",
+      "title": "Fighting(Spear)",
       "description": "lances and spears. If thrown, use Throw skill.",
       "user":1,
       "default_value":20
@@ -713,7 +713,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "SubmachineGun",
+      "title": "Firearms(Submachine Gun)",
       "description": "use this skill when firing any machine pistol or submachine gun; also for assault rifles set on burst or full automatic fire.",
       "user":1,
       "default_value":15
@@ -731,7 +731,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Sword",
+      "title": "Fighting(Sword)",
       "description": "all blades over two feet in length",
       "user":1,
       "default_value":20
@@ -776,7 +776,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Whip",
+      "title": "Fighting(Whip)",
       "description": "bolas and whips.",
       "user":1,
       "default_value":5
