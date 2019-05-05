@@ -180,6 +180,7 @@ class Investigator(Model):
     meaningful_locations = TextField(blank=True)
     treasured_possessions = TextField(blank=True)
     encounters_with_strange_entities = TextField(blank=True)
+    sanity = PositiveIntegerField(default=0)
 
     @property
     def dexterity(self):
@@ -214,7 +215,7 @@ class Investigator(Model):
         investigator.
         """
         pow_ = obtain_attribute_value(
-            self, InvestigatorAttribute, Attribute, 'PWR')
+            self, InvestigatorAttribute, Attribute, 'POW')
         return pow_
 
     @property
@@ -260,11 +261,6 @@ class Investigator(Model):
         return health
 
     @property
-    def sanity(self):
-        """Sanity property."""
-        return self.power
-
-    @property
     def magic_points(self):
         """Magic points property."""
         mp = self.sanity // 5
@@ -287,7 +283,7 @@ class Investigator(Model):
 
     @property
     def build(self):
-        """Build attribute property."""
+        "default=self.power""Build attribute property."""
         amount = self.strength + self.size
         res = ()
         if amount <= 64:
@@ -323,7 +319,7 @@ class Investigator(Model):
         occ_attr = [occ for occ in OccupationAttribute.objects.filter(
                     occupation__uuid=self.occupation.uuid)]
         # Generate a diccionary with the investigators attribute data.
-        inv_attr = {reg.attr.name: reg.value for reg in
+        inv_attr = {reg.attr: reg.value for reg in
                     InvestigatorAttribute.objects.filter(
                         investigator_id=self.id)}
         optionals = [0]
@@ -332,12 +328,19 @@ class Investigator(Model):
         # add it to the accumulator.
         for attr in occ_attr:
             if not attr.optional:
-                skill_points += inv_attr[attr.attr.name] * attr.modifier
+                skill_points += inv_attr[attr.attr] * attr.modifier
             else:
-                optionals.append(inv_attr[attr.attr.name] * attr.modifier)
+                optionals.append(inv_attr[attr.attr] * attr.modifier)
         skill_points += max(optionals)
 
         return skill_points
+
+    def init_sanity(self):
+        """Sanity property, start."""
+        self.sanity = self.power
+        self.save()
+        ret = 'Sanity was initialized'
+        return ret
 
     def __str__(self):
         """String representation of the object."""
