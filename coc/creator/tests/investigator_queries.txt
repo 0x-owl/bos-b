@@ -1,0 +1,174 @@
+# Investigators
+
+## Retrieve all Investigators but obtain only the uuid for each one of them.
+
+query{
+  allInvestigators{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+
+
+## Retrieve one investigator by the node uuid
+
+query{
+  allInvestigators(uuid:"2c8208ca-1ad8-4e9f-a89f-79c6ab9b2450"){
+    edges{
+      node{
+        name,
+        player,
+        sex,
+        residence,
+        birthplace,
+        age,
+        occupation{
+          title
+        }
+        ideologies,
+        description,
+        traits,
+        injureScars,
+        significantPeople,
+        treasuredPossessions,
+        encountersWithStrangeEntities
+      }
+    }
+  }
+}
+
+## Search investigator by node id
+> Notice the id we have for the elements is different to the id the node has
+> this is because the node model wraps around our model given that we use 
+> relays, maybe in the future this will be different.
+
+query{
+  investigator(id: "SW52ZXN0aWdhdG9yTm9kZTox"){
+        name,
+        player,
+        sex,
+        residence,
+        birthplace,
+        age,
+        occupation{
+          title
+        }
+        ideologies,
+        description,
+        traits,
+        injureScars,
+        significantPeople,
+        treasuredPossessions,
+        encountersWithStrangeEntities
+  }
+}
+
+
+## Create a investigator test
+mutation{
+  newInvestigator(input: {user:1, name: "Eliseo", player: "Pepito", sex: "M", residence: "Capital", birthplace: "Capital", age: 23, occupation: 6, ideologies: "prueba", description: "prueba", traits: "prueba", injureScars: "prueba", significantPeople: "prueba", treasuredPossessions: "prueba", encountersWithStrangeEntities: "prueba", meaningfulLocations: "prueba"}){
+    investigator{
+        name,
+        player,
+        sex,
+        residence,
+        birthplace,
+        age,
+        occupation{
+          title
+        }
+        ideologies,
+        description,
+        traits,
+        meaningfulLocations,
+        injureScars,
+        significantPeople,
+        treasuredPossessions,
+        encountersWithStrangeEntities
+      }
+  }
+}
+
+
+## Edit investigator
+> In this scenario we need the uuid to find the investigator we want to update
+> and we pass the new title that we want to have at our investigator
+
+mutation{
+  updateDeleteInvestigator(
+      input: {
+        uuid: "2c8208ca-1ad8-4e9f-a89f-79c6ab9b2450",
+        name: "Test-3",
+        player: "Update",
+        sex: "F",
+        residence: "Update",
+        birthplace: "Update",
+        age: 24,
+        occupation: 5,
+        ideologies: "Update",
+        description: "Update",
+        traits: "Update", 
+        injureScars: "Update",
+        significantPeople: "Update",
+        meaningfulLocations: "Update",
+        treasuredPossessions: "Update",
+        encountersWithStrangeEntities: "Update"
+      }){
+    investigator{
+      uuid,
+      name,
+      player,
+      sex,
+      residence,
+      birthplace,
+      age,
+      occupation{
+        title
+      }
+      ideologies,
+      description,
+      traits,
+      injureScars,
+      significantPeople,
+      meaningfulLocations,
+      treasuredPossessions,
+      encountersWithStrangeEntities
+    }
+  }
+}
+
+
+## Delete a investigator
+> In this scenario we pass the method which is DEL that stands for DELETE
+> we need to pass the uuid as well so the investigator can be find and later deleted.
+mutation{
+  updateDeleteInvestigator(
+      input: {
+        uuid: "2c8208ca-1ad8-4e9f-a89f-79c6ab9b2450",
+        method: "DEL"
+      }){
+    investigator{
+            uuid,
+      name,
+      player,
+      sex,
+      residence,
+      birthplace,
+      age,
+      occupation{
+        title
+      }
+      ideologies,
+      description,
+      traits,
+      injureScars,
+      significantPeople,
+      meaningfulLocations,
+      treasuredPossessions,
+      encountersWithStrangeEntities
+    }
+  }
+}

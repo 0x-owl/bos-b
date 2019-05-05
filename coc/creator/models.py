@@ -1,16 +1,19 @@
 from uuid import uuid4
 
-from django_enumfield.enum import EnumField
+from creator.constants import GAME_TYPE, GENDER, SKILL_TYPES
+
+from creator.enums import Attribute, ItemCategory, SpellCategory
+
+from creator.helpers.model_helpers import obtain_attribute_value, renamer
+
+from django.contrib.auth.models import User
 
 from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
                               FloatField, ForeignKey, ImageField, Model,
                               OneToOneField, PROTECT, PositiveIntegerField,
                               SET_NULL, TextField, UUIDField)
-from django.contrib.auth.models import User
 
-from creator.enums import Attribute, ItemCategory, SpellCategory
-from creator.constants import GAME_TYPE, GENDER, SKILL_TYPES
-from creator.helpers.model_helpers import obtain_attribute_value, renamer
+from django_enumfield.enum import EnumField
 
 
 # Create your models here.
@@ -301,7 +304,7 @@ class Investigator(Model):
             res = ('+2D6', 3)
         else:
             mod = (amount - 205) // 80
-            dices = '{}D6'.format(mod+2)
+            dices = '{}D6'.format(mod + 2)
             build = 3 + mod
             res = (dices, build)
 
@@ -318,7 +321,7 @@ class Investigator(Model):
         skill_points = 0
         # Obtain a list of the occupation attributes.
         occ_attr = [occ for occ in OccupationAttribute.objects.filter(
-                       occupation__uuid=self.occupation.uuid)]
+                    occupation__uuid=self.occupation.uuid)]
         # Generate a diccionary with the investigators attribute data.
         inv_attr = {reg.attr.name: reg.value for reg in
                     InvestigatorAttribute.objects.filter(
