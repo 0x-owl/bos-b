@@ -10,6 +10,7 @@ class Attribute(Enum):
     EDU = 5
     INT = 6
     APP = 7
+    SIZ = 8
 
 
 class SpellCategory(Enum):
