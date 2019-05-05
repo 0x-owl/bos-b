@@ -1,0 +1,119 @@
+# Skills
+
+## Retrieve all Skills but obtain only the uuid for each one of them.
+
+query{
+  allSkills{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+
+
+## Retrieve one skill by the node uuid
+
+query{
+  allSkills(uuid:"c1c8f82e-7c5a-4cb5-b4c6-5e5ae46112c0"){
+    edges{
+      node{
+        title,
+        description,
+        defaultValue,
+        user{
+          id,
+          username
+        }
+      }
+    }
+  }
+}
+
+
+## Search skill by node id
+> Notice the id we have for the elements is different to the id the node has
+> this is because the node model wraps around our model given that we use 
+> relays, maybe in the future this will be different.
+
+query{
+  skill(id:"U2tpbGxOb2RlOjI="){
+    uuid,
+    title,
+    description,
+    defaultValue
+    user{
+      id,
+      username
+    }
+  }
+}
+
+
+## Create a skill test
+
+mutation{
+  newSkill(input:{user: 1, title: "Test" , description: "Created skill", defaultValue: 1}){
+    skill{
+      uuid,
+      user{
+        username,
+        id
+      }
+      title,
+      description,
+      defaultValue
+    }
+  }
+}
+
+
+## Edit skill
+> In this scenario we need the uuid to find the skill we want to update
+> and we pass the new title that we want to have at our skill
+
+mutation{
+  updateDeleteSkill(input:{
+    uuid: "d04b6bbb-984c-4d49-99a7-3874adeae429",
+    user: 1,
+    title: "Test-2",
+    description: "Update test",
+    defaultValue: 0
+  }){
+    skill{
+      uuid,
+      user{
+        username,
+        id
+      }
+      title,
+      description,
+      defaultValue
+    }
+  }
+}
+
+
+## Delete a skill
+> In this scenario we pass the method which is DEL that stands for DELETE
+> we need to pass the uuid as well so the skill can be find and later deleted.
+
+mutation{
+  updateDeleteSkill(
+    input:{
+      uuid: "d04b6bbb-984c-4d49-99a7-3874adeae429",
+      method: "DEL"
+    }){
+    skill{
+      uuid,
+      user{
+        username,
+        id
+      }
+      title,
+      description,
+      defaultValue
+    }
+  }
+}
