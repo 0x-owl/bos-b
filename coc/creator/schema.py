@@ -1,4 +1,5 @@
-from creator.models import Investigator, Item, Occupation, Portrait, Tag
+from creator.models import Investigator, Item, Occupation, Portrait, Skills, \
+    Tag
 
 from django.contrib.auth.models import User
 
@@ -254,6 +255,77 @@ class UpdateDeleteOccupation(ClientIDMutation):
             return ret
 
 
+class SkillNode(DjangoObjectType):
+    class Meta:
+        model = Skills
+        filter_fields = {
+            'uuid': ['exact'],
+            'user__username': ['exact', 'istartswith'],
+            'user__id': ['exact'],
+            'title': ['exact', 'icontains', 'istartswith'],
+            'default_value': ['exact'],
+        }
+        interfaces = (relay.Node, )
+
+
+class CreateSkill(ClientIDMutation):
+    skill = Field(SkillNode)
+
+    class Input:
+        user = Int()
+        title = String()
+        description = String()
+        default_value = Int()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        usr = User.objects.get(pk=input_['user'])
+        input_['user'] = usr
+        skill = Skills(**input_)
+        skill.save()
+        return CreateSkill(skill=skill)
+
+
+class UpdateDeleteSkill(ClientIDMutation):
+    skill = Field(SkillNode)
+
+    class Input:
+        uuid = String()
+        user = Int()
+        title = String()
+        description = String()
+        default_value = Int()
+        method = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        input_ = kwargs.get('input')
+        uuid = input_.get('uuid', '')
+        title = input_.get('title')
+        description = input_.get('description')
+        default_value = input_.get('default_value')
+        method = input_.get('method')
+        if uuid != '':
+            skill = Skills.objects.get(uuid=uuid)
+            if skill is not None and method != 'DEL':
+                skill.title = title
+                skill.description = description
+                skill.default_value = default_value
+                skill.save()
+                ret = UpdateDeleteSkill(skill=skill)
+            else:
+                skill.delete()
+                ret = "Delete"
+            return ret
+
+
 class InvestigatorNode(DjangoObjectType):
     class Meta:
         model = Investigator
@@ -264,7 +336,7 @@ class InvestigatorNode(DjangoObjectType):
             'user__id': ['exact'],
             'sex': ['exact'],
             'age': ['exact', 'gt', 'lt', 'gte', 'lte'],
-            'occupation': ['exact']
+            'occupation': ['exact'],
         }
         interfaces = (relay.Node, )
 
@@ -404,6 +476,9 @@ class Query(object):
     all_occupations = DjangoFilterConnectionField(OccupationNode)
     occupation = relay.Node.Field(OccupationNode)
 
+    all_skills = DjangoFilterConnectionField(SkillNode)
+    skill = relay.Node.Field(SkillNode)
+
     all_investigators = DjangoFilterConnectionField(InvestigatorNode)
     investigator = relay.Node.Field(InvestigatorNode)
 
@@ -415,5 +490,7 @@ class Mutation(object):
     update_delete_item = UpdateDeleteItem.Field()
     new_occupation = CreateOccupation.Field()
     update_delete_occupation = UpdateDeleteOccupation.Field()
+    new_skill = CreateSkill.Field()
+    update_delete_skill = UpdateDeleteSkill.Field()
     new_investigator = CreateInvestigator.Field()
     update_delete_investigator = UpdateDeleteInvestigator.Field()
