@@ -10,7 +10,7 @@ function build(){
 }
 
 
-function run(){
+function con(){
         docker-compose -f docker/docker-compose.yml run coc ash
 }
 
@@ -19,7 +19,7 @@ function up(){
 }
 
 
-function rmi(){
+function remi(){
         docker rmi -f $(docker images|grep "<none>"|awk '{print $3}')
 }
 
@@ -27,6 +27,6 @@ function stop(){
         docker stop $(docker ps -a -q)
 }
 
-function rm(){
+function rem(){
         docker rm $(docker ps -a -q)
 }

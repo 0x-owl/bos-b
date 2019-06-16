@@ -1,0 +1,9 @@
+[{"model": "creator.OccupationSkills", "fields": {"occupation": 115, "skill": 209, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 115, "skill": 228, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 115, "skill": 238, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 115, "skill": 247, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 115, "skill": 252, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 115, "skill": 254, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 115, "skill": 192, "optional": true, "category": "3", "limit": 1}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 115, "skill": 221, "optional": true, "category": "3", "limit": 1}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 115, "skill": 241, "optional": true, "category": "3", "limit": 1}}]

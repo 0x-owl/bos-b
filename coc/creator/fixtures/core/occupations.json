@@ -212,7 +212,7 @@
     "fields":
     {
     	"user":1,
-        "title":"Antiquarian [Lovecrafian]",
+        "title":"Antiquarian [Lovecraftian]",
         "description":"A person who delights in the timeless excellence of design and execution and in the power of ancient lore. Probably the most Lovecraft-like occupation available to an investigator! An independent income allows the antiquarian to explore things ‘old and obscure’, perhaps sharpening their focus down particular lines of enquiry based on personal preference and interest. Usually a person with an appreciative eye and a swift mind, who frequently fnds mordant or contemptuous humor in the foolishness of the ignorant, the pompous, and the greedy.",
         "suggested_contacts":"Booksellers, antique collectors, historical societies.",
         "credit_rating_min":30,
@@ -254,7 +254,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Archeologist [Lovecrafian]",
+        "title":"Archaeologist [Lovecraftian]",
         "description":"The study and exploration of the past. Primarily the identifcation, examination and analysis of recovered materials relating to human history. The work involves painstaking research and meticulous study, not to mention a willing attitude to getting one’s hands dirty. In the 1920s, successful archeologists became celebrities, seen as explorers and adventurers. While some used scientifc methods, many were happy to apply brute force when unveiling the secrets of the past— the use of dynamite was common. Such bullish behavior would be frowned upon in modern times.",
         "suggested_contacts":" Patrons, museums, universities.",
         "credit_rating_min":10,
@@ -335,7 +335,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Asylum Atendant",
+        "title":"Asylum Attendant",
         "description":"Although there are private sanitariums for those few who can afford them, the vast bulk of the mentally ill are housed in state and county facilities. Aside from a few doctors and nurses, they employ a large number of attendants, often chosen more for their strength and size rather than medical learning",
         "suggested_contacts":"Medical staff, patients and relatives of patients. Access to medical records as well as drugs and other medical supplies.",
         "credit_rating_min":8,
@@ -411,7 +411,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Author [Lovecrafian]",
+        "title":"Author [Lovecraftian]",
         "description":"As distinct from the journalist, the author uses words to defne and explore the human condition, especially the range of human emotions. Their labors are solitary and the rewards solipsistic: only a relative handful make much money in the present day, though in previous eras the trade once provided a regular living wage. The work habits of authors vary widely. Typically an author might spend months or years researching in preparation for a book, then withdrawing for periods of intense creation.",
         "suggested_contacts":"publishers, critics, historians, etc.",
         "credit_rating_min":9,
@@ -558,7 +558,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Boxer/Wrestler",
+        "title":"Boxer-Wrestler",
         "description":"Professional boxers and wrestlers are managed by individuals (promoters) possibly backed by outside interests, and usually locked into contracts. Professional boxers and wrestlers work and train full-time. Amateur boxing competitions abound, a training ground for those aspiring to professional status. In addition, amateur and post-professional boxers and wrestlers can sometimes be found making a living from illegal bareknuckle fghts, usually arranged by organized crime gangs or entrepreneurial locals.",
         "suggested_contacts":"Sports promoters, journalists, organized crime, professional trainers.",
         "credit_rating_min":9,
@@ -587,7 +587,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Butler/Valet",
+        "title":"Butler-Valet-Maid",
         "description":"This occupation covers those who are employed in a servant capacity and includes butler, valet and lady’s maid. A butler is usually employed as a domestic servant for a large household. Traditionally the butler is charge of the dining room, wine cellar and pantry, and ranks as the highest male servant. Usually male— a housekeeper would be the female equivalent—the butler is responsible for male servants within the household. The duties of the butler will vary to according to the requirements of his employer. A valet or lady’s maid provides personal services, such as maintaining her employer's clothes, running baths and effectively acting as personal assistant. The work might include making travel arrangements, managing their employer’s diary and organizing household fnances.",
         "suggested_contacts":"Waiting staff of other households, local businesses and household suppliers.",
         "credit_rating_min":9,
@@ -629,7 +629,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Computer Programmer/Technician",
+        "title":"Computer Programmer-Technician",
         "description":"Usually designing, writing, testing, debugging and/or maintaining the source code of computer programs, the computer programmer is an expert in many different subjects, including formal logic and application platforms. May work freelance or within the confnes of a software development house. The computer technician is tasked with the development and maintenance of computer systems and networks, often working alongside other offce staff (such as project managers) to ensure systems maintain integrity and provide desired functionality. Similar occupations may include: Database Administrator, IT Systems Manager, Multimedia Developer, Network Administrator, Software Engineer, Webmaster, etc. The computer hacker uses computers and computer networks as a means of protest to promote political ends (sometimes referred to as ‘hacktivists’) or for criminal gain. Illegally breaking into computers and other user accounts is required, the outcome of which could be anything from defacing web pages, doxing, swatting to email bombing designed to enact denials of service.",
         "suggested_contacts":"Other IT workers, corporate workers and managers, specialized Internet web communities.",
         "credit_rating_min":10,
@@ -671,7 +671,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Cowboy",
+        "title":"Cowboy-girl",
         "description":"Cowboys work the ranges and ranches of the West. Some own their own ranches, however many are simply hired where and when work is available. Good money can also be made by those willing to risk life and limb on the rodeo circuit, travelling between events for fame and glory. During the 1920s, a few found employment in Hollywood as stuntmen and extras in westerns—for example, Wyatt Earp worked as a technical advisor to the flm industry. In modern times some ranches have opened their gates to holidaymakers wishing to experience ‘life as a cowboy’",
         "suggested_contacts":"Local businesspeople, state agricultural departments, rodeo promoters and entertainers",
         "credit_rating_min":9,
@@ -710,7 +710,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Crafsperson",
+        "title":"Craftsperson",
         "description":"May be equally termed an artisan or master craftsperson. The craftsperson is essentially skilled in the manual production of items or materials. Normally quite talented individuals, some gaining a high reputation for works of art, while others provide a needed community service. Possible trades include: furniture, jewelry, watchmaker, potter, blacksmith, textiles, calligraphy, sewing, carpentry, book binding glassblowing, toy maker, stained glass and so on.",
         "suggested_contacts":"Local business people, other craftspersons and artists.",
         "credit_rating_min":10,
@@ -817,7 +817,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Bootlegger/Thug",
+        "title":"Bootlegger-Thug",
         "description":"Criminals come in all shapes, sizes and shades of grey. Some are merely opportunistic ‘jacks of all trades’, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises; this latter group could include bank robbers, cat burglars, forgers and confdence tricksters. The criminal either works for someone, usually an organized ‘mob’ or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men and armed robbers. Whether bootleggers, cornerboys or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confdence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, ﬂeecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are Criminals come in all shapes, sizes and shades of grey. Some are merely opportunistic ‘jacks of all trades’, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises; this latter group could include bank robbers, cat burglars, forgers and confdence tricksters.The criminal either works for someone,usually an organized ‘mob’ or crime family, orworks solo, perhaps occasionally teamingup with others when the reward is worththe effort and risk. Freelance thugsmight work as muggers, stickup menand armed robbers. Whether bootleggers, cornerboys or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confdence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, ﬂeecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are",
         "suggested_contacts":"Organized crime, street-level law enforcement, local traders.",
         "credit_rating_min":5,
@@ -904,7 +904,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Criminal (freelance/solo)",
+        "title":"Criminal",
         "description":"Criminals come in all shapes, sizes and shades of grey. Some are merely opportunistic ‘jacks of all trades’, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises; this latter group could include bank robbers, cat burglars, forgers and confdence tricksters. The criminal either works for someone, usually an organized ‘mob’ or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men and armed robbers. Whether bootleggers, cornerboys or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confdence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, ﬂeecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are Criminals come in all shapes, sizes and shades of grey. Some are merely opportunistic ‘jacks of all trades’, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises; this latter group could include bank robbers, cat burglars, forgers and confdence tricksters.The criminal either works for someone,usually an organized ‘mob’ or crime family, orworks solo, perhaps occasionally teamingup with others when the reward is worththe effort and risk. Freelance thugsmight work as muggers, stickup menand armed robbers. Whether bootleggers, cornerboys or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confdence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, ﬂeecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are",
         "suggested_contacts":"Other petty criminals, street-level law enforcement.",
         "credit_rating_min":5,
@@ -972,7 +972,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Forger/Counterfeiter",
+        "title":"Forger-Counterfeiter",
         "description":"Criminals come in all shapes, sizes and shades of grey. Some are merely opportunistic ‘jacks of all trades’, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises; this latter group could include bank robbers, cat burglars, forgers and confdence tricksters. The criminal either works for someone, usually an organized ‘mob’ or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men and armed robbers. Whether bootleggers, cornerboys or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confdence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, ﬂeecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are Criminals come in all shapes, sizes and shades of grey. Some are merely opportunistic ‘jacks of all trades’, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises; this latter group could include bank robbers, cat burglars, forgers and confdence tricksters.The criminal either works for someone,usually an organized ‘mob’ or crime family, orworks solo, perhaps occasionally teamingup with others when the reward is worththe effort and risk. Freelance thugsmight work as muggers, stickup menand armed robbers. Whether bootleggers, cornerboys or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confdence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, ﬂeecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are",
         "suggested_contacts":"Organized crime, businesspeople.",
         "credit_rating_min":20,
@@ -1103,7 +1103,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Diletante [Lovecrafian]",
+        "title":"Dilettante [Lovecraftian]",
         "description":"Dilettantes are self-supporting, living off an inheritance, trust fund or some other source of income that does not require them to work. Usually the dilettante has enough money that specialist fnancial advisers are needed to take care of it. Probably well educated, though not necessarily accomplished in anything. Money frees the dilettante to be eccentric and outspoken. He or she has had plenty of time to learn how to be charming and sophisticated; what else has been done with that free time is likely to betray the dilettante’s true character and/or interests.",
         "suggested_contacts":"similar background and tastes, fraternal organizations, bohemian circles, high society at large.",
         "credit_rating_min":50,
@@ -1161,7 +1161,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Doctor of Medicine [Lovecrafian]",
+        "title":"Doctor of Medicine [Lovecraftian]",
         "description":"Most likely a general practitioner, surgeon or other specialist, such as a psychiatrist or an independent medical researcher. Apart from personal goals, three aims—helping patients, gaining money and prestige, and promoting a more rational and wiser society—are common to the profession. If a general practitioner then the doctor will be based in a rural or neighborhood practice in or near a small town or city. Many physicians are employed by large urban hospitals, allowing them to specialize in areas like pathology, toxicology, orthopedics and brain surgery. Doctors may also serve as part- or full-time Medical Examiners, conducting autopsies and signing death certifcates for the city, county or state. In the U.S., physicians are licensed by individual states, most requiring a minimum of two years’ attendance at an accredited medical school. These requirements, however, are but a relatively recent development. During the 1920s, many older physicians frst obtained their licenses long before such strict regulations were in effect, despite failing to have ever attended medical school.",
         "suggested_contacts":"Other physicians, medical workers, patients and ex-patients.",
         "credit_rating_min":30,
@@ -2084,7 +2084,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Librarian [Lovecrafian]",
+        "title":"Librarian [Lovecraftian]",
         "description":"Librarians are most often employed by public institutions or universities, responsible for cataloguing and maintaining stock, as well as dealing with lender enquiries. In modern times, the librarian is also a keeper of electronic media and databases. Some large businesses might employ a librarian to manage a large collection, and occasionally opportunities appear to take over custodial care of a private library for a wealthy collector.",
         "suggested_contacts":"Booksellers, community groups, specialist researchers.",
         "credit_rating_min":9,
@@ -2622,7 +2622,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Professor [Lovecrafian]",
+        "title":"Professor [Lovecraftian]",
         "description":"Professors are academics employed by colleges and universities. Larger corporations may also employ such academics for research and product development. Independent scholars sometimes help support themselves by teaching part-time courses. For the most part, the occupation indicates a Ph.D.—a rank that can earn tenure at universities around the world. The professor is qualifed to teach and to perform competent research, and may have a discernible academic reputation in his or her area of expertise.",
         "suggested_contacts":" Scholars, universities, libraries.",
         "credit_rating_min":20,
@@ -3301,6 +3301,72 @@
         "occupation":113,
         "attr":5,
         "modifier":4
+      }
+    },
+    {
+    "model": "creator.Occupation",
+    "pk":114,
+    "fields": {
+    	"user":1,
+        "title":"Gun Moll [Classic]",
+        "description":"A female professional criminal. While many are fiercely independent, some are at the beck and call of mobster boyfriends--however, in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry.",
+        "suggested_contacts":"Gangsters, law enforcement, local businesses.",
+        "credit_rating_min":10,
+        "credit_rating_max":80
+      }
+    }, 
+    {
+    "model": "creator.OccupationAttribute",
+    "fields": {
+        "occupation":114,
+        "attr":5,
+        "modifier":2
+      }
+    },
+    {
+    "model": "creator.OccupationAttribute",
+    "fields": {
+        "occupation":114,
+        "attr":7,
+        "modifier":2
+      }
+    },
+    {
+    "model": "creator.Occupation",
+    "pk":115,
+    "fields": {
+    	"user":1,
+        "title":"Smuggler",
+        "description":"",
+        "suggested_contacts":"Organized crime, Coast Guard, U.S. Customs officials",
+        "credit_rating_min":20,
+        "credit_rating_max":60
+      }
+    }, 
+    {
+    "model": "creator.OccupationAttribute",
+    "fields": {
+        "occupation":115,
+        "attr":5,
+        "modifier":2
+      }
+    },
+    {
+    "model": "creator.OccupationAttribute",
+    "fields": {
+        "occupation":115,
+        "attr":7,
+        "modifier":2,
+        "optional": true
+      }
+    },
+    {
+    "model": "creator.OccupationAttribute",
+    "fields": {
+        "occupation":115,
+        "attr":2,
+        "modifier":2,
+        "optional": true
       }
     }
 ]

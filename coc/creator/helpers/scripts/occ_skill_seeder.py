@@ -1,9 +1,6 @@
 """Example call of script from /coc/coc location inside container.
 
-python3 creator/helpers/scripts/occ_skill_seeder.py -o Accountant -s
-"['Accounting', 'Law', 'Library Use', 'Listen', 'Persuade']"
-
-python3 creator/helpers/scripts/occ_skill_seeder.py -o "
+python3 creator/helpers/scripts/occ_skill_seeder.py"
 """
 from os import environ, system
 from json import dumps, loads
@@ -12,7 +9,7 @@ from django.core.wsgi import get_wsgi_application
 
 system("export PYTHONPATH=/coc/coc")  # run this command at the bash
 environ.setdefault("DJANGO_SETTINGS_MODULE", "coc.settings")
-apps = [
+APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -21,18 +18,18 @@ apps = [
     'django.contrib.staticfiles',
     'creator'
 ]
-environ.setdefault("INSTALLED_APPS", str(apps))
+environ.setdefault("INSTALLED_APPS", str(APPS))
 get_wsgi_application()
 
 from creator.models import Occupation, Skills
 
 with open('/coc/coc/creator/helpers/scripts/occupations.json') as occ_file:
-    options = occ_file.read()
-options = loads(options)
-file_path = '/coc/coc/creator/fixtures/occupation_skills/{}.json'
-skills = Skills.objects.all()
+    OPTIONS = occ_file.read()
+OCCUPATIONS = loads(OPTIONS)
+FILE_PATH = '/coc/coc/creator/fixtures/occupation_skills/{}.json'
+SKILLS = Skills.objects.all()
 
-initial_registry = {
+INITIAL_REGISTRY = {
     "model": "creator.OccupationSkills",
     "fields": {
         "occupation": None,
@@ -44,65 +41,103 @@ initial_registry = {
 }
 
 
-def registry_generator(occupation, skills, optional, category, limit, file_):
+def registry_generator(
+        occupationx: Occupation, skills: Skills, categoryx: str,
+        limitx: int, file_: object, optionalx: bool) -> bool:
+    """Generates each line of the json for the certain skill."""
     for skill in skills:
-        reg = initial_registry
+        reg = INITIAL_REGISTRY
         reg['fields']['skill'] = skill.pk
-        reg['fields']['occupation'] = occupation.pk
-        reg['fields']['category'] = category
-        reg['fields']['limit'] = limit
+        reg['fields']['occupation'] = occupationx.pk
+        reg['fields']['category'] = categoryx
+        reg['fields']['limit'] = limitx
+        reg['fields']['optional'] = optionalx
 
-        file_.write('{},\n'.format(dumps(reg)))
+        reg = dumps(reg)
+        file_.write(f'{reg},\n')
+
     return True
 
 
-def determine_category(type_):
-    category = '1'
-    if type_ == 'professionalt':
-        category = '2'
-    elif type_ == 'interpersonal':
-        category = '3'
-    elif type_ == 'combat':
-        category = '6'
-    elif type_ == 'misc':
-        category == '5'
-    return category
+def determine_category(typex: str) -> str:
+    """Given a type skill give it a category.
+    @param typex (str)
+    """
+    category_ = '1'
+    if typex == 'professionalt':
+        category_ = '2'
+    elif typex == 'interpersonal':
+        category_ = '3'
+    elif typex == 'combat':
+        category_ = '6'
+    elif typex == 'misc':
+        category_ = '5'
+
+    return category_
 
 
-for occ in options:
-    occupation = Occupation.objects.filter(title=occ['occupation']).first()
-    with open(file_path.format(occ['occupation']), 'a') as out:
-        skills_acquired = []
-        for option in occ:
-            if option.split('_')[-1] == 'skills':
-                if occ[option] != []:
-                    type_ = option.split('_')[0]
+def clean_closing(file_name: str) -> None:
+    """Remove last comma and add closing bracket to json file.
+    @param file_name: name of the file to be cleaned.
+    """
+    # Remove last "," from the end line.
+    with open(file_name, 'rb+') as clean:
+        clean.seek(0, 2)
+        size = clean.tell()
+        clean.truncate(size - 2)
+    with open(file_name, 'a') as clean:
+        clean.write(']')
+
+
+def main():
+    """Main function in charge of processing the occupation.json file and
+    generate the seeder json files.
+    """
+    for occ in OCCUPATIONS:
+        occupation = Occupation.objects.filter(title=occ['occupation']).first()
+        fname = FILE_PATH.format(occ['occupation'])
+        with open(fname, 'a') as out:
+            out.write('[')
+            skills_acquired = []
+            for option in occ:
+                opt_list = option.split('_')
+                if opt_list[-1] == 'skills' and occ[option] != []:
+                    type_ = opt_list[0]
                     category = determine_category(type_)
                     limit = occ.get('{}_limit'.format(type_), 0)
-                    optional = True if type_ != 'profession' else False
-                    sks = [sk for sk in skills if sk.title in
-                           occ[option]]
-                    registry_generator(
-                        occupation,
-                        sks,
-                        optional,
-                        category,
-                        limit,
-                        out
-                    )
-                    for sk in sks:
-                        skills_acquired.append(sk.pk)
+                    optional = bool(type_ != 'proffesional')
+                    skills = [sk for sk in SKILLS if sk.title in occ[option]]
 
-        if occ['free_skills_limit'] != 0:
-            free_skills = [sk for sk in skills if sk.pk not in skills_acquired]
-            category = '4'
-            optional = True
-            limit = occ['free_skills_limit']
-            registry_generator(
-                occupation,
-                free_skills,
-                optional,
-                category,
-                limit,
-                out
-            )
+                    if (limit != 0 and optional) or not optional:
+                        try:
+                            registry_generator(
+                                occupationx=occupation,
+                                skills=skills,
+                                categoryx=category,
+                                limitx=limit,
+                                file_=out,
+                                optionalx=optional
+                            )
+                        except AttributeError:
+                            print(f"Load of occupation {occ} failed")
+                        skills_acquired.extend([skill.pk for skill in skills])
+
+            if occ['free_skills_limit'] != 0:
+                free_skills = [sk for sk in SKILLS if sk.pk not
+                               in skills_acquired]
+                category = '4'
+                optional = True
+                limit = occ['free_skills_limit']
+                registry_generator(
+                    occupationx=occupation,
+                    skills=free_skills,
+                    categoryx=category,
+                    limitx=limit,
+                    file_=out,
+                    optionalx=optional
+                )
+        clean_closing(fname)
+
+
+if __name__ == '__main__':
+    main()

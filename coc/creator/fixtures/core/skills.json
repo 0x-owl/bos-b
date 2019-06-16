@@ -56,7 +56,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Art & Craft (Any)",
+      "title": "Art & Craft(Any)",
       "description": "The investigator sheet contains blank spaces for specializations of this skill, for example: Acting, Cobbler, Fine Art, Opera Singer, Potter, Woodwork, Barber, Cook, Forgery Painter & Decorator, Sculptor, Carpenter, Dancer, Morris Dancer, Photographer, Writer Many of these examples are skills directly linked to a profession, but the skill may just be a leisure pursuit. You may spend skill points to purchase any skill specialization. The generic Art and Craft skill cannot be purchased. Ability with this skill may enable the making or repair of an item—something typically requiring equipment and time, to be determined by the Keeper if necessary. In a situation where graduations of success might be appropriate, a higher level of success indicates the item made is of high quality and/or precision. An art or craft skill might also be used to make a duplicate or fake item. In such a case, the difficulty level would depend on the intricacy and distinctiveness of the original to be copied. In the case of faking documentation, a specific specialization (Forgery) is used. A successful roll might provide information about an item, such as where or when it might have been made, some point of history or technique concerning it, or who might have made it. The holder of a specialization would have a breadth of knowledge within a particular field—knowledge of the subject, its history, and contemporary practitioners, as well as the ability to perform it. Pushing examples: reworking the object, piece or composition from scratch; conducting further research; checking with another expert. Sample Consequences of failing a Pushed roll: a vast amount of time and money is wasted in creating a failed attempt; the audience or customer is highly offended or physically injured by some aspect of your work; the critics slam your work and no one desires your services any longer. If an insane investigator fails a pushed roll, he or she creates a transgressive work that shocks and causes violent reactions in the viewer—perhaps only the most decadent could appreciate it.",
       "user":1,
       "default_value":5
@@ -425,7 +425,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Language (Other)",
+      "title": "Language(Other)",
       "description": "When choosing this skill, the exact language must be specified and written next to the skill. An individual can know any number of languages. The skill represents the user’s chance to understand, speak, read, and write in a language other than his or her own. Ancient or unknown languages (such as Aklo, Hyperborean, etc.) should not be chosen (unless agreed with the Keeper,) but ordinary Earthly languages may be. The Keeper may raise the difficulty level if archaic speech or writing in that language is encountered. A single successful Other Language roll normally allows comprehension of an entire book. Suggestions regarding the Other Languages skill: 1) At 5% skill a language can be correctly identified without need for a roll. 2) At 10% skill simple ideas can be communicated. 3) At 30% transactional requests can be understood. 4) At 50% skill a person is fluent. 5) At 75% skill in a character can pass for a native speaker of a foreign language. 6) To identify a present-day human language (unknown to the investigator), use an EDU roll. 7) To identify an extinct human language, use an Archaeology or History roll. 8) To identify an alien language, use a Cthulhu Mythos or possibly an Occult roll. Pushing examples: taking longer to think through the words you want to say; taking long pauses to answer what you have been told; referencing other books to make a translation. Sample Consequences of failing a Pushed roll: exaggerated or loud discussions between investigators and third parties alert some enemy faction to the investigators’ intentions; a word or phrase is misunderstood (perhaps the meaning is reversed); the listener takes offense to an unintentional slur, and they respond with their fists, or turn everyone in the neighborhood against you. If an insane investigator fails a pushed roll, he or she begins to speak in tongues, or imagines that they are using the Enochian language",
       "user":1,
       "default_value":1
@@ -434,7 +434,7 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Language (Own)",
+      "title": "Language(Own)",
       "description": "When choosing this skill, the exact language must be specified and written next to the skill. In infancy and early childhood, most humans use a single language. The tongue chosen by the player for the Own Language automatically starts as equal to the investigator’s EDU characteristic; thereafter, the investigator understands, speaks, reads, and writes at that percentage or higher (if further skill points are added during investigator creation). Pushing examples: see Language (Other) skill.",
       "user":1,
       "default_value":1
@@ -787,6 +787,24 @@
     "fields": {
       "title": "Science(Zoology)",
       "description": "The study of biology that relates specifically to the animal kingdom, including the structure, evolution, classification, behavioral habits, and distribution of animals, both living and extinct. Use this skill to identify animal species from interaction with the environment (tracks, droppings, marks, etc.), likely behaviors, and territorial traits.",
+      "user":1,
+      "default_value":1
+    }
+  },
+  {
+    "model": "creator.Skills",
+    "fields": {
+      "title": "Pilot(Boat)",
+      "description": "",
+      "user":1,
+      "default_value":1
+    }
+  },
+  {
+    "model": "creator.Skills",
+    "fields": {
+      "title": "Pilot(Aircraft)",
+      "description": "",
       "user":1,
       "default_value":1
     }
