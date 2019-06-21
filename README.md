@@ -11,11 +11,11 @@ the fields.
 Currently the project is in development. The alpha version of the project will
 cover:
 
-- Registration
+- Registration (Based on an OAuth solution)
 - Investigator creation
 - Sharing, Downloading, Exporting the character sheet
 - Random generator
 - Support for 20s, 50s, 90s and 00s sheets
-- Items bank
-- Inventory bank
-- Spells bank
+- Items bank (Done)
+- Inventory bank (Done)
+- Spells bank (Done)
