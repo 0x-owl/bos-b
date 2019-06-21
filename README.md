@@ -19,3 +19,4 @@ cover:
 - Items bank (Done)
 - Inventory bank (Done)
 - Spells bank (Done)
+
