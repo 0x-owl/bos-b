@@ -2,7 +2,7 @@
 
 python3 creator/helpers/scripts/occ_skill_seeder.py"
 """
-from os import environ, system
+from os import environ, system, path
 from json import dumps, loads
 
 from django.core.wsgi import get_wsgi_application
@@ -23,10 +23,16 @@ get_wsgi_application()
 
 from creator.models import Occupation, Skills
 
-with open('/coc/coc/creator/helpers/scripts/occupations.json') as occ_file:
+
+PATH = '/'.join(path.realpath(__file__).split('/')[:-1])
+
+with open(f'{PATH}/occupations.json') as occ_file:
     OPTIONS = occ_file.read()
+
 OCCUPATIONS = loads(OPTIONS)
-FILE_PATH = '/coc/coc/creator/fixtures/occupation_skills/{}.json'
+FILE_PATH = 'coc/coc/creator/fixtures/occupation_skills/{}.json'
+PATH_OUT = '/'.join(path.realpath(__file__).split('/')[:-3])
+FILE_OUT_PATH = f'{PATH_OUT}/fixtures/occupation_skills/'
 SKILLS = Skills.objects.all()
 
 INITIAL_REGISTRY = {
@@ -95,8 +101,8 @@ def main():
     """
     for occ in OCCUPATIONS:
         occupation = Occupation.objects.filter(title=occ['occupation']).first()
-        fname = FILE_PATH.format(occ['occupation'])
-        with open(fname, 'a') as out:
+        fname = f'{FILE_OUT_PATH}{occ["occupation"]}.json'
+        with open(fname, 'a+') as out:
             out.write('[')
             skills_acquired = []
             for option in occ:

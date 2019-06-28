@@ -659,8 +659,8 @@
   {
     "model": "creator.Skills",
     "fields": {
-      "title": "Rifle/Shotgun",
-      "description": "with this skill any type of rifle (whether lever-action, bolt-action, or semi-automatic) or scatter-gun can be fired. Since the load from a shotgun expands in a spreading pattern, the user’s chance to hit does not decrease with range, but the damage dealt does. When an assault rifle fires a single shot (or multiple singles) use this skill.",
+      "title": "Firearms(Rifle/Shotgun)",
+      "description": "With this skill any type of rifle (whether lever-action, bolt-action, or semi-automatic) or scatter-gun can be fired. Since the load from a shotgun expands in a spreading pattern, the user’s chance to hit does not decrease with range, but the damage dealt does. When an assault rifle fires a single shot (or multiple singles) use this skill.",
       "user":1,
       "default_value":25
     }
@@ -804,6 +804,15 @@
     "model": "creator.Skills",
     "fields": {
       "title": "Pilot(Aircraft)",
+      "description": "",
+      "user":1,
+      "default_value":1
+    }
+  },
+  {
+    "model": "creator.Skills",
+    "fields": {
+      "title": "Science(Engineering)",
       "description": "",
       "user":1,
       "default_value":1

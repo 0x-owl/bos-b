@@ -1182,7 +1182,7 @@
     "fields": 
     	{
     	"user":1,
-        "title":"Drifer",
+        "title":"Drifter",
         "description":"As opposed to someone who is poverty-stricken, the drifter’s wandering life is chosen, perhaps compensating for a social, philosophical or economic lack, or perhaps taken due to a desire to break free of societal constraints. The drifter takes jobs, sometimes for days or months, however he or she is disposed to solve problems with the answer of mobility and isolation, not comfort and intimacy. The life of the road might seem especially American, but the same sort of life is chosen wherever travel itself is not systematically dangerous.",
         "suggested_contacts":" Other hobos, a few Friendly railroad guards, soft touches in numerous towns.",
         "credit_rating_min":0,
@@ -1346,7 +1346,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Elected Ofcial",
+        "title":"Elected Official",
         "description":"Popularly elected offcials enjoy prestige commensurate with their position. Small-town mayors and township supervisors fnd their inﬂuence extends little beyond their municipality’s borders. Often these jobs are part-time, paying but small compensation. The mayors of big cities are well paid, however, often ruling their cities like little kingdoms and wielding more inﬂuence and power than the governor of their respective state. Local Representatives and Senators elected to state houses enjoy a fair amount of respect, particularly with the business community and often at a statewide level. Governors are responsible for entire states and have connections across the country. Federal positions carry the most clout. States send a number of Representatives to Congress based upon population count, and the House seats over 400 members, each elected to a two-year term. Each state, regardless of size, also sends two Senators to Washington. Elected to six-year terms and numbering less than a hundred, Senators hold considerably more inﬂuence than Representatives, and some elder senators receive nearly as much respect as the President. In the United Kingdom, Members of Parliament are popularly elected every four to fve years. Representatives in the House of Lords are unelected, receiving their memberships through either birth or appointment.",
         "suggested_contacts":"Political operatives, government, news media, business, foreign governments, possibly organized crime.",
         "credit_rating_min":50,
@@ -1533,8 +1533,8 @@
     "fields": 
     {
     	"user":1,
-        "title":"Firefghter",
-        "description":"Firefghters are civil servants, employed by the communities they serve. They work around the clock, on shifts lasting several days, eating, sleeping and entertaining themselves within the confnes of the fre station. Organized along military lines, promotion through lieutenant, captain and chief is possible.",
+        "title":"Firefighter",
+        "description":"Firefighters are civil servants, employed by the communities they serve. They work around the clock, on shifts lasting several days, eating, sleeping and entertaining themselves within the confnes of the fre station. Organized along military lines, promotion through lieutenant, captain and chief is possible.",
         "suggested_contacts":"Civic workers, medical workers, law enforcement.",
         "credit_rating_min":9,
         "credit_rating_max":30
@@ -1779,7 +1779,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Gentleman",
+        "title":"Gentleman-Lady",
         "description":"A man of good breeding, courteous behavior and good conduct. Usually the term is applied to a member of the upper class who is independently wealthy (either by inheritance or regular allowance). In the 1920s, a gentleman would certainly have had at least one servant (butler, valet, chauffer) and probably a country and city residence. One does not necessarily have to be rich to be a gentleman, as often family status is more important than family wealth in terms of the highest society.",
         "suggested_contacts":"Upper classes and landed gentry, politics, servants and agricultural workers.",
         "credit_rating_min":40,
