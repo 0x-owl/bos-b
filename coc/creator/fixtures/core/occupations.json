@@ -2126,8 +2126,8 @@
     "fields": 
     {
     	"user":1,
-        "title":"Military Ofcer",
-        "description":"Offcers are command rank and most commissions demand some sort of higher education. All armed services have established offcer training programs that may include university education—in the U.S. most major universities provide cadet training programs, allowing simultaneous training for the military while attending school. Upon graduation the cadet is promoted to the rank of Army or Marine Second Lieutenant or Naval Ensign, and assigned to a station. Usually such recruits owe the government four years’ active service, after which time they may return to civilian life. Many of the offcers trained this way hold professional commissions and serve as doctors, lawyers or engineers. Those looking for a life’s career in the military may try to get themselves appointed to one of the military academies: the U.S. Army’s West Point or the Navy’s Annapolis, for example. Graduating from one of these schools earns the offcer respect. Once out of school, some offcers opt for special training, such as air pilot. Occasionally, an experienced and exceptionally worthy enlisted man is promoted to Warrant Offcer. Although technically at the bottom of the offcers’ list of ranks, the time and experience required to achieve this promotion carry a respect and reverence far exceeding that of any junior or middle-grade offcer. Most commissions are for life. Even a long-retired offcer has the right to call himself Captain or General.",
+        "title":"Military Officer",
+        "description":"Officers are command rank and most commissions demand some sort of higher education. All armed services have established offcer training programs that may include university education—in the U.S. most major universities provide cadet training programs, allowing simultaneous training for the military while attending school. Upon graduation the cadet is promoted to the rank of Army or Marine Second Lieutenant or Naval Ensign, and assigned to a station. Usually such recruits owe the government four years’ active service, after which time they may return to civilian life. Many of the offcers trained this way hold professional commissions and serve as doctors, lawyers or engineers. Those looking for a life’s career in the military may try to get themselves appointed to one of the military academies: the U.S. Army’s West Point or the Navy’s Annapolis, for example. Graduating from one of these schools earns the offcer respect. Once out of school, some offcers opt for special training, such as air pilot. Occasionally, an experienced and exceptionally worthy enlisted man is promoted to Warrant Offcer. Although technically at the bottom of the offcers’ list of ranks, the time and experience required to achieve this promotion carry a respect and reverence far exceeding that of any junior or middle-grade offcer. Most commissions are for life. Even a long-retired offcer has the right to call himself Captain or General.",
         "suggested_contacts":"Military, federal government.",
         "credit_rating_min":20,
         "credit_rating_max":70
@@ -2335,7 +2335,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Outdoorsman",
+        "title":"Outdoorsman-Outdoorswoman",
         "description":"The outdoor enthusiast spends much of his or her time living in the wilderness, often alone for long periods. Commonly skilled in hunting and fshing, and able to be self-suffcient in all but the harshest of environments. May be specialized in hiking, fshing, cross-country skiing, canoeing, climbing and camping. The outsdoorsman might work as a wilderness guide or ranger for a national park or outward bound center, or they may be fnancially independent, allowing them enjoy such a lifestyle without regard for paid employment, perhaps living as a hermit and only returning to civilization when the need arises.",
         "suggested_contacts":" Local people and native folk, traders.",
         "credit_rating_min":5,
@@ -2456,7 +2456,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Aviator [Classic]",
+        "title":"Aviator",
         "description":"An aviator is a stunt pilot, working at carnivals or offering ‘daring’ leisure rides for those willing to pay. Often fame could be won by competing in organized air races, either cross-country or on fxed courses. During the twenties, Hollywood makes fair use of stunt pilots. A few aviators even fnd work as test pilots for the aircraft manufacturers. Many aviators learned to ﬂy during the Great War and as a result still hold commissions as offcers in the Army, Navy, Marines, or Coast Guard. Younger pilots have either received military training during peacetime or learned on their own. American ﬂying aces of the World War still in the public limelight include: Eddie Rickenbacker, presently employed by Chrysler Corporation; Tommy Hitchcock, Jr., now a star on the polo felds; and Reed Landis, son of Baseball Commissioner Kenesaw Mountain Landis.",
         "credit_rating_min":30,
         "credit_rating_max":60
@@ -2544,7 +2544,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Uniformed Police Offcer",
+        "title":"Uniformed Police Officer",
         "description":"The plainclothes branch of police agencies, detectives examine crime scenes, gather evidence, conduct interviews andtry to solve homicides, major burglaries and other felonies.They work the streets, often in close cooperation with auniformed patrol.The police detective may be a manager who coordinates staff in some important investigation, but rarely has the luxury of concentrating on a single case. In the U.S., his or her responsibilities at any one time may number in the dozens or hundreds of open cases. The detective’s crucial function is to marshal enough evidence to allow an arrest, in turn leading to a successful criminal prosecution. Detectives everywhere sort truth from lies by evidence and reconstruction. The offces of detective and prosecutor are separate, so that the evidence may be weighed independently before trial. Though present day detectives may attend police science classes, take a degree and undergo special training and civil service exams, police detectives of every era are grounded in their experiences as junior offcers and ordinary patrolmen. The uniformed police offcer is employed by cities and towns, by County sheriffs’ departments, and state or regional police forces. The job may be on foot, behind the wheel of a patrol car or even sitting at a desk.",
         "suggested_contacts":" Law enforcement, local businesses and residents, street level crime, organized crime.",
         "credit_rating_min":9,
@@ -2705,7 +2705,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Psychologist/Psychoanalyst",
+        "title":"Psychologist-Psychoanalyst",
         "description":"While commonly known for the felds of psychotherapy and counseling, this is just one branch of psychology. Other specialists include organizational psychologists who work with businesses and governments, as well as academics conducting research or teaching psychology. Clinical psychologists may work with patients, using a range of therapeutic tools. Note the distinction between a psychologist and a psychiatrist, who is a physician specialist. In the 1920s, the study of human behavior was a rather new feld and primarily focused on Freudian analysis.",
         "suggested_contacts":"Psychological community, patients",
         "credit_rating_min":10,
@@ -2958,7 +2958,7 @@
     "pk":102,
     "fields": {
     	"user":1,
-        "title":"Soldier/Marine",
+        "title":"Soldier-Marine",
         "description":"This refers to the enlisted ranks of the Army and Marines and includes the lowest ranks of private up through gunnery sergeant (in U.S. terms). Although technically outranked by even the freshest of second lieutenants, veteran sergeants are respected by even the highest-ranking offcers. In the U.S., standard enlistment is for six years, including four years’ active duty and two in standby (inactive) reserve. All enlisted persons receive basic training—“boot camp”—where raw recruits are taught how to march, shoot and salute. Upon graduation from basic training, most are assigned to the infantry, although the army also needs soldiers for artillery and the tank corps. A few are trained for noncombat roles such as air controller, mechanic, clerk, or even offcer’s steward. Marines, while technically part of the Navy, are similar to soldiers in background, training and skills.",
         "suggested_contacts":"Military, veterans associations.",
         "credit_rating_min":9,
@@ -3036,7 +3036,7 @@
     "pk":104,
     "fields": {
     	"user":1,
-        "title":"Student/Intern",
+        "title":"Student-Intern",
         "description":"May be a student enrolled at a college or university, or the employee of a company receiving minimal compensation but valuable on-the-job training.",
         "suggested_contacts":"Academics and other students, while interns may also know business people.",
         "credit_rating_min":5,
@@ -3168,7 +3168,7 @@
     "pk":109,
     "fields": {
     	"user":1,
-        "title":"Waitress, Cocktail",
+        "title":"Waitress-Waiter",
         "description":"Serves customers and clients within a hotel, bar or other drinking establishment. Traditionally low-paid, the waitress earns tips from clients by giving good service and trying to establish a rapport. A technically illegal profession during Prohibition, many job opportunities exist working in the illegal speakeasies owned by the mob.",
         "suggested_contacts":"Customers, organized crime.",
         "credit_rating_min":9,
@@ -3208,7 +3208,7 @@
     "pk":110,
     "fields": {
     	"user":1,
-        "title":"Clerk/Executive",
+        "title":"Clerk-Executive",
         "description":"This could range from the lowest-level white-collar position of a clerk to a middle or senior manager. The employer could be a small- to medium-sized locally owned business up to a large national or multinational corporation. Clerks are habitually underpaid and the work is drudgery, with those recognized as having ‘talent’ being earmarked for promotion someday. Middle and senior managers attract higher salaries, with greater responsibilities and say in how the business is managed day-to-day. Although unmarried white-collar workers are not infrequent, most executive types are family-oriented, with a spouse at home and children—it is often expected of them.",
         "suggested_contacts":"Other offce workers.",
         "credit_rating_min":9,
@@ -3228,7 +3228,7 @@
     "pk":111,
     "fields": {
     	"user":1,
-        "title":"Middle/Senior Manager",
+        "title":"Middle-Senior Manager",
         "description":"This could range from the lowest-level white-collar position of a clerk to a middle or senior manager. The employer could be a small- to medium-sized locally owned business up to a large national or multinational corporation. Clerks are habitually underpaid and the work is drudgery, with those recognized as having ‘talent’ being earmarked for promotion someday. Middle and senior managers attract higher salaries, with greater responsibilities and say in how the business is managed day-to-day. Although unmarried white-collar workers are not infrequent, most executive types are family-oriented, with a spouse at home and children—it is often expected of them.",
         "suggested_contacts":"Old college connections, Masons or other fraternal groups, local and federal government, media and marketing.",
         "credit_rating_min":20,
@@ -3368,5 +3368,72 @@
         "modifier":2,
         "optional": true
       }
+    },
+    {
+    "model": "creator.Occupation",
+    "pk":116,
+    "fields": {
+    	"user":1,
+        "title":"Laborer Unskilled",
+        "description":"",
+        "suggested_contacts":"Other workers and supervisors within their industry",
+        "credit_rating_min":9,
+        "credit_rating_max":30
+      }
+    }, 
+    {
+    "model": "creator.OccupationAttribute",
+    "fields": {
+        "occupation":116,
+        "attr":5,
+        "modifier":2
+      }
+    },
+    {
+    "model": "creator.OccupationAttribute",
+    "fields": {
+        "occupation":116,
+        "attr":1,
+        "modifier":2,
+        "optional": true
+      }
+    },
+    {
+    "model": "creator.OccupationAttribute",
+    "fields": {
+        "occupation":116,
+        "attr":2,
+        "modifier":2,
+        "optional": true
+      }
+    },
+    {
+    "model": "creator.Occupation",
+    "pk":117,
+    "fields": {
+    	"user":1,
+        "title":"Prostitute",
+        "description":"",
+        "suggested_contacts":"Other workers and supervisors within their industry",
+        "credit_rating_min":9,
+        "credit_rating_max":30
+      }
+    }, 
+    {
+    "model": "creator.OccupationAttribute",
+    "fields": {
+        "occupation":116,
+        "attr":5,
+        "modifier":2
+      }
+    },
+    {
+    "model": "creator.OccupationAttribute",
+    "fields": {
+        "occupation":116,
+        "attr":7,
+        "modifier":2
+      }
     }
+    
 ]

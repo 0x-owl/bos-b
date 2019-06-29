@@ -1512,5 +1512,1333 @@
                 "misc_skills": [],
                 "misc_limit": 0,
                 "free_skills_limit": 0
-        }
-]
+        },
+        {
+                "occupation": "Investigative Journalist",
+                "proffesional_skills": [
+                        "History",
+                        "Library Use",
+                        "Language(Own)",
+                        "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [
+                        "Art & Craft(Art)",
+                        "Art & Craft(Photography)"
+                ],
+                "professionalt_limit": 1,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Reporter",
+                "proffesional_skills": [
+                        "Art & Craft(Acting)",
+                        "History",
+                        "Listen",
+                        "Language(Own)",
+                        "Psychology",
+                        "Stealth",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Judge",
+                "proffesional_skills": [
+                        "Electrical Repair",
+                        "Fighting(Brawl)",
+                        "First Aid",
+                        "Mechanical Repair",
+                        "Psychology",
+                        "Listen",
+                        "Stealth"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Laboratory Assistant",
+                "proffesional_skills": [
+                        "Electrical Repair",
+                        "Language(Other)",
+                        "Science(Chemistry)",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": ["Computer Use", "Library Use"],
+                "professionalt_limit": 1,
+                "misc_skills": [
+                        "Science(Astronomy)",
+                        "Science(Biology)",
+                        "Science(Botany)",
+                        "Science(Cryptography)",
+                        "Science(Forensics)",
+                        "Science(Geology)",
+                        "Science(Mathematics)",
+                        "Science(Meterology)",
+                        "Science(Pharmacy)",
+                        "Science(Physics)",
+                        "Science(Zoology)",
+                        "Science(Engineering)"
+                ],
+                "misc_limit": 2,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Laborer Unskilled",
+                "proffesional_skills": [
+                        "Drive Auto",
+                        "Electrical Repair",
+                        "Fighting",
+                        "First Aid",
+                        "Mechanical Repair",
+                        "Operate Heavy Machinery",
+                        "Throw"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Lumberjack",
+                "proffesional_skills": [
+                        "Climbing",
+                        "Dodge",
+                        "Fighting(Chainsaw)",
+                        "First Aid",
+                        "Jump",
+                        "Mechanical Repair",
+                        "Throw"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [
+                        "Natural World",
+                        "Science(Biology)",
+                        "Science(Botany)"
+                ],
+                "professionalt_limit": 1,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Miner",
+                "proffesional_skills": [
+                        "Climb",
+                        "Geology",
+                        "Jump",
+                        "Mechanical Repair",
+                        "Operate Heavy Machinery",
+                        "Stealth",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Lawyer",
+                "proffesional_skills": [
+                       "Accounting",
+                       "Law",
+                       "Library Use",
+                       "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Librarian [Lovecraftian]",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Library Use",
+                        "Language(Other)",
+                        "Language(Own)"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 4
+        },
+        {
+                "occupation": "Mechanic",
+                "proffesional_skills": [
+                        "Art & Craft(Any)",
+                        "Climb",
+                        "Drive Auto",
+                        "Electrical Repair",
+                        "Mechanical Repair",
+                        "Operate Heavy Machinery"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Military Officer",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Firearms",
+                        "Navigate",
+                        "First Aid",
+                        "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Missionary",
+                "proffesional_skills": [
+                        "Art & Craft(Any)",
+                        "First Aid",
+                        "Mechanical Repair",
+                        "Medicine",
+                        "Natural World"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Mountain Climber",
+                "proffesional_skills": [
+                        "Climb",
+                        "First Aid",
+                        "Jump",
+                        "Listen",
+                        "Navigate",
+                        "Language(Other)",
+                        "Survival",
+                        "Track"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Museum Curator",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Appraise",
+                        "Archaeology",
+                        "History",
+                        "Library Use",
+                        "Occult",
+                        "Language(Other)",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Musician",
+                "proffesional_skills": [
+                        "Art & Craft(Instrument)",
+                        "Listen",
+                        "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 4
+        },
+        {
+                "occupation": "Nurse",
+                "proffesional_skills": [
+                       "First Aid",
+                       "Listen",
+                       "Medicine",
+                       "Psychology",
+                       "Science(Biology)",
+                       "Science(Chemistry)",
+                       "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Occultist",
+                "proffesional_skills": [
+                       "Anthropology",
+                       "History",
+                       "Library Use",
+                       "Occult",
+                       "Language(Other)",
+                       "Science(Astronomy)"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Outdoorsman-Outdoorswoman",
+                "proffesional_skills": [
+                        "Firearms",
+                        "First Aid",
+                        "Listen",
+                        "Natural World",
+                        "Navigate",
+                        "Spot Hidden",
+                        "Survival",
+                        "Track"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Parapsychologist",
+                "proffesional_skills": [
+                       "Anthropology",
+                       "Art & Craft(Photography)",
+                       "History",
+                       "Library Use",
+                       "Occult",
+                       "Language(Other)",
+                       "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Pharmacist",
+                "proffesional_skills": [
+                        "Accounting",
+                        "First Aid",
+                        "Language(Other)",
+                        "Library Use",
+                        "Psychology",
+                        "Science(Pharmacy)",
+                        "Science(Chemistry)"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Photographer",
+                "proffesional_skills": [
+                       "Art & Craft(Photography)",
+                       "Psychology",
+                       "Science(Chemistry)",
+                       "Stealth",
+                       "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Photojournalist",
+                "proffesional_skills": [
+                        "Art & Craft(Photography)",
+                        "Climb",
+                        "Language(Other)",
+                        "Psychology",
+                        "Science(Chemistry)"
+
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Aviator",
+                "proffesional_skills": [
+                        "Acounting",
+                        "Electrical Repair",
+                        "Mechanical Repair",
+                        "Listen",
+                        "Navigate",
+                        "Pilot(Aircraft)",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Pilot",
+                "proffesional_skills": [
+                        "Electrical Repair",
+                        "Mechanical Repair",
+                        "Operate Heavy Machinery",
+                        "Pilot(Aircraft)",
+                        "Science(Astronomy)",
+                        "Navigate"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Police Detective",
+                "proffesional_skills": [
+                        "Firearms",
+                        "Law",
+                        "Listen",
+                        "Psychology",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [
+                        "Art & Craft(Acting)",
+                        "Disguise"
+                ],
+                "professionalt_limit": 1,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Uniformed Police Officer",
+                "proffesional_skills": [
+                       "Fighting(Brawl)",
+                       "Firearms",
+                       "First Aid",
+                       "Law",
+                       "Psychology",
+                       "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": ["Drive Auto", "Ride"],
+                "professionalt_limit": 1,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Private Investigator",
+                "proffesional_skills": [
+                        "Art & Craft(Photography)",
+                        "Disguise",
+                        "Law",
+                        "Library Use",
+                        "Psychology",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Professor [Lovecraftian]",
+                "proffesional_skills": [
+                       "Library Use",
+                       "Language(Other)",
+                       "Language(Own)",
+                       "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 4
+        },
+        {
+                "occupation": "Prospector",
+                "proffesional_skills": [
+                       "Climb",
+                       "First Aid",
+                       "History",
+                       "Mechanical Repair",
+                       "Navigate",
+                       "Science(Geology)",
+                       "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Prostitute",
+                "proffesional_skills": [
+                        "Art & Craft(Any)",
+                        "Dodge",
+                        "Psychology",
+                        "Sleight of Hand",
+                        "Stealth"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Psychiatrist",
+                "proffesional_skills": [
+                        "Language(Other)",
+                        "Listen",
+                        "Medicine",
+                        "Persuade",
+                        "Psychoanalysis",
+                        "Psychology",
+                        "Science(Biology)",
+                        "Science(Chemistry)"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Psychologist-Psychoanalyst",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Library Use",
+                        "Listen",
+                        "Persuade",
+                        "Psychoanalysis",
+                        "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Researcher",
+                "proffesional_skills": [
+                        "History",
+                        "Library Use",
+                        "Language(Other)",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 3
+        },
+        {
+                "occupation": "Sailor, Naval",
+                "proffesional_skills": [
+                       "First Aid",
+                       "Mechanical Repair",
+                       "Natural World",
+                       "Navigate",
+                       "Pilot(Boat)",
+                       "Spot Hidden",
+                       "Swim"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Sailor, Commercial",
+                "proffesional_skills": [
+                        "First Aid",
+                        "Mechanical Repair",
+                        "Natural World",
+                        "Navigate",
+                        "Pilot(Boat)",
+                        "Spot Hidden",
+                        "Swim"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Salesperson",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Drive Auto",
+                        "Listen",
+                        "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [
+                        "Stealth",
+                        "Sleight of Hand"
+                ],
+                "professionalt_limit": 1,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Scientist",
+                "proffesional_skills": [
+                       "Language(Other)",
+                       "Language(Own)",
+                       "Spot Hiden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [
+                        "Science(Astronomy)",
+                        "Science(Biology)",
+                        "Science(Botany)",
+                        "Science(Chemistry)",
+                        "Science(Cryptography)",
+                        "Science(Forensics)",
+                        "Science(Geology)",
+                        "Science(Mathematics)",
+                        "Science(Meterology)",
+                        "Science(Pharmacy)",
+                        "Science(Physics)",
+                        "Science(Zoology)",
+                        "Science(Engineering)"
+                ],
+                "professionalt_limit": 3,
+                "misc_skills": ["Computer Use", "Library Use"],
+                "misc_limit": 1,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Secretary",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Language(Own)",
+                        "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [
+                        "Art & Craft(Typing)",
+                        "Art & Craft(Short Hand)"
+                ],
+                "professionalt_limit": 1,
+                "misc_skills": [
+                        "Library Use",
+                        "Computer Use"
+                ],
+                "misc_limit": 1,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Shopkeeper",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Electrical Repair",
+                        "Listen",
+                        "Mechanical Repair",
+                        "Spot Hidden",
+                        "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Soldier-Marine",
+                "proffesional_skills": [
+                        "Dodge",
+                        "Fighting",
+                        "Firearms",
+                        "Stealth",
+                        "Survival"
+                        
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [
+                        "First Aid",
+                        "Mechanical Repair",
+                        "Language(Other)"
+                ],
+                "professionalt_limit": 2,
+                "misc_skills": ["Climb", "Swim"],
+                "misc_limit": 1,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Spy",
+                "proffesional_skills": [
+                        "Firearms",
+                        "Listen",
+                        "Language(Other)",
+                        "Psychology",
+                        "Sleight of Hand",
+                        "Stealth"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [
+                        "Art & Craft(Acting)",
+                        "Disguise"
+                ],
+                "professionalt_limit": 1,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Student-Intern",
+                "proffesional_skills": [
+                        "Library Use",
+                        "Listen"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [
+                        "Language(Other)",
+                        "Language(Own)"
+                ],
+                "professionalt_limit": 1,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Stuntman",
+                "proffesional_skills": [
+                       "Climb",
+                       "Dodge",
+                       "Fighting",
+                       "First Aid",
+                       "Jump",
+                       "Swim"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [
+                        "Electrical Repair",
+                        "Mechanical Repair"
+                ],
+                "professionalt_limit": 1,
+                "misc_skills": [
+                        "Diving",
+                        "Drive Auto",
+                        "Pilot",
+                        "Ride"
+                ],
+                "misc_limit": 1,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Tribe Member",
+                "proffesional_skills": [
+                        "Climb",
+                        "Listen",
+                        "Natural World",
+                        "Occult",
+                        "Spot Hidden",
+                        "Swim",
+                        "Survival"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [
+                        "Fighting",
+                        "Throw"
+                ],
+                "combat_limit": 1,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Undertaker",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Drive Auto",
+                        "History",
+                        "Occult",
+                        "Psychology",
+                        "Science(Biology)",
+                        "Science(Chemistry)"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Union Activist",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Fighting(Brawl)",
+                        "Law",
+                        "Listen",
+                        "Operate Heavy Machinery",
+                        "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
+                "occupation": "Waitress-Waiter",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Art & Craft(Any)",
+                        "Listen",
+                        "Dodge",
+                        "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Clerk-Executive",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Language(Own)",
+                        "Listen",
+                        "Law"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [
+                        "Library Use",
+                        "Computer Use"
+                ],
+                "professionalt_limit": 1,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Middle-Senior Manager",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Language(Other)",
+                        "Law",
+                        "Psychology"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 2
+        },
+        {
+                "occupation": "Zealot",
+                "proffesional_skills": [
+                       "History",
+                       "Psychology",
+                       "Stealth"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 3
+        },
+        {
+                "occupation": "Zookeeper",
+                "proffesional_skills": [
+                        "Art & Craft(Animal Handling)",
+                        "Accounting",
+                        "Dodge",
+                        "First Aid",
+                        "Natural World",
+                        "Medicine",
+                        "Science(Pharmacy)",
+                        "Science(Zoology)"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 0,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        }]

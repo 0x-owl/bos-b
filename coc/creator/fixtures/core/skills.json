@@ -817,5 +817,23 @@
       "user":1,
       "default_value":1
     }
+  },
+  {
+    "model": "creator.Skills",
+    "fields": {
+      "title": "Art & Craft(Typing)",
+      "description": "",
+      "user":1,
+      "default_value":1
+    }
+  },
+  {
+    "model": "creator.Skills",
+    "fields": {
+      "title": "Art & Craft(Short Hand)",
+      "description": "",
+      "user":1,
+      "default_value":1
+    }
   }
 ]
