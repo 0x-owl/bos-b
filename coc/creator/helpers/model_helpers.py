@@ -1,4 +1,5 @@
 from datetime import datetime as dt
+from random import randint
 
 
 def obtain_attribute_value(inv, inv_attr, attr, attribute_name):
@@ -16,7 +17,7 @@ def obtain_attribute_value(inv, inv_attr, attr, attribute_name):
     return attr
 
 
-def renamer(instance, filename):
+def renamer(instance, filename) -> str:
     """Rename the files to have understandable names.
 
     Keyword arguments:
@@ -34,3 +35,23 @@ def renamer(instance, filename):
         fname_clean = 'portraits/{0}/{1}.jpg'.format(
             instance.item.uuid, now)
     return fname_clean
+
+
+def roller_stats(dsix: int = 3) -> int:
+    """Roll for stats specifying the amount of d6."""
+    stat = sum([randint(1, 6) for _ in range(dsix)])
+    if dsix == 2:
+        stat += 6
+        stat *= 5
+    else:
+        stat *= 5
+    return stat
+
+
+def attribute_roller(attribute: int) -> int:
+    """Given a attribute roll for it."""
+    if attribute in [5, 6, 8]:
+        val = roller_stats(2)
+    else:
+        val = roller_stats()
+    return val

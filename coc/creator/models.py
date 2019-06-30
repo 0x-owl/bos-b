@@ -1,20 +1,19 @@
 from uuid import uuid4
 
-from creator.constants import GAME_TYPE, GENDER, SKILL_TYPES
-
-from creator.enums import Attribute, ItemCategory, SpellCategory
-
-from creator.helpers.model_helpers import obtain_attribute_value, renamer
-
-from django.contrib.auth.models import User
-
-from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
-                              FloatField, ForeignKey, ImageField, Model,
-                              OneToOneField, PROTECT, PositiveIntegerField,
-                              SET_NULL, TextField, UUIDField)
-
 from django_enumfield.enum import EnumField
 
+from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
+                              FloatField, ForeignKey, ImageField, IntegerField,
+                              Model, OneToOneField, PROTECT,
+                              PositiveIntegerField, SET_NULL, TextField,
+                              UUIDField)
+from django.contrib.auth.models import User
+
+from creator.enums import Attribute, ItemCategory, SpellCategory
+from creator.constants import GAME_TYPE, GENDER, SKILL_TYPES
+from creator.helpers.model_helpers import (attribute_roller,
+                                           obtain_attribute_value, renamer,
+                                           roller_stats)
 
 # Create your models here.
 class Tag(Model):
@@ -181,6 +180,8 @@ class Investigator(Model):
     treasured_possessions = TextField(blank=True)
     encounters_with_strange_entities = TextField(blank=True)
     sanity = PositiveIntegerField(default=0)
+    luck = PositiveIntegerField(default=roller_stats(3))
+    health = IntegerField(default=0)
 
     @property
     def dexterity(self):
@@ -198,6 +199,7 @@ class Investigator(Model):
         """
         str_ = obtain_attribute_value(
             self, InvestigatorAttribute, Attribute, 'STR')
+
         return str_
 
     @property
@@ -255,7 +257,7 @@ class Investigator(Model):
         return app
 
     @property
-    def health(self):
+    def max_health(self):
         """Health property."""
         health = (self.size + self.constitution) // 10
         return health
@@ -388,6 +390,7 @@ class InvestigatorSkills(Model):
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     skill = ForeignKey(Skills, on_delete=PROTECT)
     value = PositiveIntegerField(default=0)
+    category = CharField(max_length=1, choices=SKILL_TYPES)
 
     @property
     def half_value(self):

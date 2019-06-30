@@ -2,12 +2,11 @@
 
 python3 creator/helpers/scripts/occ_skill_seeder.py"
 """
-from os import environ, system, path
+from os import environ, path
 from json import dumps, loads
 
 from django.core.wsgi import get_wsgi_application
 
-system("export PYTHONPATH=/coc/coc")  # run this command at the bash
 environ.setdefault("DJANGO_SETTINGS_MODULE", "coc.settings")
 APPS = [
     'django.contrib.admin',
