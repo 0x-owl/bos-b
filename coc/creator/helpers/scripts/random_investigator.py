@@ -1,25 +1,4 @@
-"""Example call of script from /coc/coc location inside container.
-
-python3 creator/helpers/scripts/random_investigator.py"
-"""
-from os import environ
 from random import randint
-
-from django.core.wsgi import get_wsgi_application
-
-APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'creator'
-]
-
-environ.setdefault("DJANGO_SETTINGS_MODULE", "coc.settings")
-environ.setdefault("INSTALLED_APPS", str(APPS))
-get_wsgi_application()
 
 from django.contrib.auth.models import User
 
@@ -96,6 +75,19 @@ def amount(points_available: int, limit: int):
 def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
     """Assign points for the skills related to occupations."""
     # Assing profession points
+    compulsory_skills = [sk for sk in occ_skills if sk.category == '1']
+
+    for comp_skill in compulsory_skills:
+        val = 1
+        record = InvestigatorSkills(
+            investigator=inv,
+            skill=comp_skill.skill,
+            value=comp_skill.skill.default_value + val,
+            category=comp_skill.category
+        )
+        record.save()
+        max_points -= val
+
     while max_points > 0:
         occ_skill = occ_skill_picker(occ_skills, inv)
         # Determine if the skill has already been assigned to the investigator.
@@ -156,7 +148,7 @@ def free_point_assigner(max_points: int, skills: list, inv: Investigator):
                 max_points -= val
 
 
-def main():
+def random_inv():
     """Main wrapper."""
     # Pick a random occupation
     occ = Occupation.objects.get(pk=randint(1, 117))
@@ -188,8 +180,4 @@ def main():
     free_skills = Skills.objects.all()
     free_point_assigner(inv.free_skill_points, free_skills, inv)
 
-
-if __name__ == '__main__':
-    main()
-
-
+    return inv.uuid
