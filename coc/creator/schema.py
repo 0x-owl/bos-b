@@ -1,13 +1,27 @@
-from creator.models import Investigator, Item, Occupation, Portrait, Skills, \
-    Tag
+from json import loads
 
+from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
+                      relay)
+
+from django.core.serializers import serialize
 from django.contrib.auth.models import User
 
-from graphene import ClientIDMutation, Field, Float, Int, String, relay
-
-from graphene_django.filter import DjangoFilterConnectionField
+from creator.models import (Investigator, Item, Occupation, Portrait, Skills,
+                            Tag)
+from creator.helpers.scripts.random_investigator import random_inv
 
 from graphene_django.types import DjangoObjectType
+from graphene_django.filter import DjangoFilterConnectionField
+
+
+class RandomInvestigatorNode(ObjectType):
+    random_investigator = String()
+
+    def resolve_random_investigator(parent, info):
+        inv_uuid = random_inv()
+        inv = Investigator.objects.get(uuid=inv_uuid)
+        res = loads(serialize('json', [inv]))
+        return res
 
 
 class UserNode(DjangoObjectType):
@@ -481,6 +495,11 @@ class Query(object):
 
     all_investigators = DjangoFilterConnectionField(InvestigatorNode)
     investigator = relay.Node.Field(InvestigatorNode)
+
+    random_investigator = Field(RandomInvestigatorNode)
+
+    def resolve_random_investigator(self, info):
+        return info
 
 
 class Mutation(object):
