@@ -37,7 +37,7 @@ class TagNode(DjangoObjectType):
             'title': ['exact', 'icontains', 'istartswith'],
             'uuid': ['exact'],
             'user': ['exact'],
-            'user__username': ['exact', 'istartswith'],
+            'user__username': ['exact', 'icontains', 'istartswith'],
             'user__id': ['exact']
         }
         interfaces = (relay.Node, )

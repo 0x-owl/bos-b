@@ -31,7 +31,8 @@ class CreateTag(ClientIDMutation):
             user=User.objects.get(pk=user)
         )
         tag.save()
-        return CreateTag(tag=tag)
+        create_tag = CreateTag(tag=tag)
+        return create_tag
 
 
 class UpdateDeleteTag(ClientIDMutation):
@@ -48,6 +49,7 @@ class UpdateDeleteTag(ClientIDMutation):
         uuid = input_.get('uuid', '')
         method = input_.get('method')
         title = input_.get('title')
+        ret = None
         if uuid != '':
             tag = Tag.objects.get(uuid=uuid)
             if tag is not None and method != 'DEL':
@@ -56,8 +58,8 @@ class UpdateDeleteTag(ClientIDMutation):
                 ret = UpdateDeleteTag(tag=tag)
             else:
                 tag.delete()
-                ret = "Delete"
-            return ret
+                ret = f"Tag: {tag.uuid} deleted"
+        return ret
 
 
 class CreateItem(ClientIDMutation):
@@ -78,18 +80,10 @@ class CreateItem(ClientIDMutation):
             Input class (title, user).
         """
         input_ = kwargs.get('input')
-        title = input_.get('title')
-        item_type = input_.get('item_type')
-        description = input_.get('description')
-        price = input_.get('price')
-        item = Item(
-            title=title,
-            item_type=item_type,
-            description=description,
-            price=price
-        )
+        item = Item(**input_)
         item.save()
-        return CreateItem(item=item)
+        create_item = CreateItem(item=item)
+        return create_item
 
 class UpdateDeleteItem(ClientIDMutation):
     item = Field(ItemNode)
@@ -122,7 +116,7 @@ class UpdateDeleteItem(ClientIDMutation):
                 ret = UpdateDeleteItem(item=item)
             else:
                 item.delete()
-                ret = "Delete"
+                ret = f"Item: {item.uuid} deleted"
             return ret
 
 
@@ -161,7 +155,8 @@ class CreateOccupation(ClientIDMutation):
             credit_rating_max=credit_rating_max
         )
         occupation.save()
-        return CreateOccupation(occupation=occupation)
+        create_occupation = CreateOccupation(occupation=occupation)
+        return create_occupation
 
 
 class UpdateDeleteOccupation(ClientIDMutation):
@@ -198,9 +193,8 @@ class UpdateDeleteOccupation(ClientIDMutation):
                 ret = UpdateDeleteOccupation(occupation=occupation)
             else:
                 occupation.delete()
-                ret = "Delete"
+                ret = f"Occupation: {occupation.uuid} deleted"
             return ret
-
 
 
 class CreateSkill(ClientIDMutation):
@@ -225,7 +219,8 @@ class CreateSkill(ClientIDMutation):
         input_['user'] = usr
         skill = Skills(**input_)
         skill.save()
-        return CreateSkill(skill=skill)
+        create_skill = CreateSkill(skill=skill)
+        return create_skill
 
 
 class UpdateDeleteSkill(ClientIDMutation):
@@ -257,7 +252,7 @@ class UpdateDeleteSkill(ClientIDMutation):
                 ret = UpdateDeleteSkill(skill=skill)
             else:
                 skill.delete()
-                ret = "Delete"
+                ret = f"Skill: {skill.uuid} deleted"
             return ret
 
 
@@ -297,7 +292,8 @@ class CreateInvestigator(ClientIDMutation):
         input_['occupation'] = occ
         investigator = Investigator(**input_)
         investigator.save()
-        return CreateInvestigator(investigator=investigator)
+        create_investigator = CreateInvestigator(investigator=investigator)
+        return create_investigator
 
 
 class UpdateDeleteInvestigator(ClientIDMutation):
@@ -344,6 +340,7 @@ class UpdateDeleteInvestigator(ClientIDMutation):
             'encounters_with_strange_entities'
         )
         method = input_.get('method')
+        ret = None
         if uuid != '':
             investigator = Investigator.objects.get(uuid=uuid)
             if investigator is not None and method != 'DEL':
@@ -367,5 +364,5 @@ class UpdateDeleteInvestigator(ClientIDMutation):
                 ret = UpdateDeleteInvestigator(investigator=investigator)
             else:
                 investigator.delete()
-                ret = "Delete"
-            return ret
+                ret = f"Investigator: {investigator.uuid} deleted"
+        return ret
