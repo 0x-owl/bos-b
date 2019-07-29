@@ -1,8 +1,8 @@
-[{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 461, "optional": false, "category": "1", "limit": 0}},
-{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 467, "optional": false, "category": "1", "limit": 0}},
-{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 498, "optional": false, "category": "1", "limit": 0}},
-{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 502, "optional": false, "category": "1", "limit": 0}},
-{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 509, "optional": false, "category": "1", "limit": 0}},
-{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 515, "optional": false, "category": "1", "limit": 0}},
-{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 520, "optional": false, "category": "1", "limit": 0}},
-{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 521, "optional": false, "category": "1", "limit": 0}}]
+[{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 197, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 203, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 234, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 238, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 245, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 251, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 256, "optional": false, "category": "1", "limit": 0}},
+{"model": "creator.OccupationSkills", "fields": {"occupation": 93, "skill": 257, "optional": false, "category": "1", "limit": 0}}]
