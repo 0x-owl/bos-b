@@ -1,0 +1,82 @@
+# Spells
+
+## Retrieve spells based on its attributes
+
+
+
+### Retrive all spells and obtain its uuid
+
+query{
+  allSpells{
+    edges{
+      node{
+     	 uuid  
+      }
+    }
+  }
+}
+
+
+### Retrieve a node by a specific uuid and obtain its name
+
+query{
+  allSpells(uuid: "33ffcccf-9c48-46b9-ae64-2341570e2d38"){
+    edges{
+      node{
+         name
+      }
+    }
+  }
+}
+
+### Update a spell
+
+mutation{
+  spellMutate(
+    input:{
+    	uuid: "33ffcccf-9c48-46b9-ae64-2341570e2d38",
+    	method: "UPDATE",
+    	notes: "test",
+      user: 1
+    }){
+    spell{
+      notes
+    }
+  }
+}
+
+### Delete a spell
+
+mutation{
+  spellMutate(
+    input:{
+      uuid: "f3c7d1e7-4565-40e9-ae7b-0073c988dbbb",
+    	method: "DELETE",
+      user: 1
+    }){
+    spell{
+        uuid
+  }
+}
+
+
+### Create a spell
+
+mutation{
+  spellMutate(
+    input:{
+    	method: "CREATE",
+    	notes: "test",
+      name: "tester spell",
+      description:"We may ommit this",
+      cost: "1D6 Sanity",
+      castingTime: "Immediate",
+      user: 1
+    }){
+    spell{
+      uuid,
+      notes,
+      name
+    }
+  }
+}

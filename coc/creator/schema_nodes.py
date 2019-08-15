@@ -7,7 +7,7 @@ from django.core.serializers import serialize
 from django.contrib.auth.models import User
 
 from creator.models import (Investigator, Item, Occupation, Portrait, Skills,
-                            Tag)
+                            Tag, Spell)
 from creator.helpers.random_investigator import random_inv
 
 
@@ -104,5 +104,17 @@ class PortraitNode(DjangoObjectType):
         model = Portrait
         filter_fields = {
             'uuid': ['exact']
+        }
+        interfaces = (relay.Node, )
+
+
+class SpellNode(DjangoObjectType):
+    class Meta:
+        model = Spell
+        filter_fields = {
+            'uuid': ['exact'],
+            'name': ['exact', 'icontains', 'istartswith'],
+            'cost': ['exact', 'gt', 'lt', 'gte', 'lte'],
+            'casting_time': ['exact', 'gt', 'lt', 'gte', 'lte']
         }
         interfaces = (relay.Node, )

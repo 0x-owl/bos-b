@@ -3,10 +3,10 @@ from graphene_django.filter import DjangoFilterConnectionField
 
 from creator.schema_nodes import (InvestigatorNode, ItemNode, OccupationNode,
                                   PortraitNode, RandomInvestigatorNode,
-                                  SkillNode, TagNode, UserNode)
+                                  SkillNode, SpellNode, TagNode, UserNode)
 from creator.schema_mutations import (CreateInvestigator, CreateItem,
                                       CreateOccupation, CreateSkill, CreateTag,
-                                      UpdateDeleteInvestigator,
+                                      SpellMutation, UpdateDeleteInvestigator,
                                       UpdateDeleteItem, UpdateDeleteOccupation,
                                       UpdateDeleteSkill, UpdateDeleteTag)
 
@@ -33,6 +33,9 @@ class Query(object):
     all_investigators = DjangoFilterConnectionField(InvestigatorNode)
     investigator = relay.Node.Field(InvestigatorNode)
 
+    all_spells = DjangoFilterConnectionField(SpellNode)
+    spell = relay.Node.Field(SpellNode)
+
     random_investigator = Field(RandomInvestigatorNode)
 
     def resolve_random_investigator(self, info):
@@ -50,3 +53,4 @@ class Mutation(object):
     update_delete_skill = UpdateDeleteSkill.Field()
     new_investigator = CreateInvestigator.Field()
     update_delete_investigator = UpdateDeleteInvestigator.Field()
+    spell_mutate = SpellMutation.Field()

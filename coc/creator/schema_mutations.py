@@ -3,9 +3,9 @@ from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
 from django.contrib.auth.models import User
 
 from creator.models import (Investigator, Item, Occupation, Portrait, Skills,
-                            Tag)
+                            Spell, Tag)
 from creator.schema_nodes import (InvestigatorNode, ItemNode, OccupationNode,
-                                  SkillNode, TagNode, UserNode)
+                                  SkillNode, SpellNode, TagNode, UserNode)
 
 
 class CreateTag(ClientIDMutation):
@@ -365,4 +365,49 @@ class UpdateDeleteInvestigator(ClientIDMutation):
             else:
                 investigator.delete()
                 ret = f"Investigator: {investigator.uuid} deleted"
+        return ret
+
+
+class SpellMutation(ClientIDMutation):
+    spell = Field(SpellNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        name = String()
+        alternative_names = String()
+        description = String()
+        deeper_magic = String()
+        notes = String()
+        cost = String()
+        casting_time = String()
+        user = Int()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        usr = User.objects.get(pk=input_['user'])
+        input_['user'] = usr
+        method = input_.get('method')
+        input_.pop('method')
+        if method != "CREATE":
+            spell = Spell.objects.filter(uuid=input_.get('uuid', '')).first()
+            if method == 'DELETE':
+                spell.delete()
+                ret = f"Spell: {spell.uuid} deleted"
+            elif method == 'UPDATE':
+                spell.__dict__.update(input_)
+                spell.save()
+                ret = SpellMutation(spell=spell)
+        else:
+            spell = Spell(**input_)
+            spell.save()
+            ret = SpellMutation(spell=spell)
+
         return ret
