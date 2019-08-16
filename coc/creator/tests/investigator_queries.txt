@@ -69,7 +69,16 @@ query{
 
 ## Create a investigator test
 mutation{
-  newInvestigator(input: {user:1, name: "Eliseo", player: "Pepito", sex: "M", residence: "Capital", birthplace: "Capital", age: 23, occupation: 6, ideologies: "prueba", description: "prueba", traits: "prueba", injureScars: "prueba", significantPeople: "prueba", treasuredPossessions: "prueba", encountersWithStrangeEntities: "prueba", meaningfulLocations: "prueba"}){
+  investigatorMutate(
+    input: {
+      uuid: "bbbbb", user:1, name: "Eliseo", player: "Pepito", sex: "M",
+      residence: "Capital", birthplace: "Capital", age: 23,
+      occupation: 7, ideologies: "prueba", description: "prueba",
+      traits: "prueba", injureScars: "prueba", significantPeople:
+      "prueba", treasuredPossessions: "prueba",
+      encountersWithStrangeEntities: "prueba3",
+      meaningfulLocations: "prueba", method: "CREATE"
+    }){
     investigator{
         name,
         player,
@@ -98,77 +107,69 @@ mutation{
 > and we pass the new title that we want to have at our investigator
 
 mutation{
-  updateDeleteInvestigator(
-      input: {
-        uuid: "2c8208ca-1ad8-4e9f-a89f-79c6ab9b2450",
-        name: "Test-3",
-        player: "Update",
-        sex: "F",
-        residence: "Update",
-        birthplace: "Update",
-        age: 24,
-        occupation: 5,
-        ideologies: "Update",
-        description: "Update",
-        traits: "Update", 
-        injureScars: "Update",
-        significantPeople: "Update",
-        meaningfulLocations: "Update",
-        treasuredPossessions: "Update",
-        encountersWithStrangeEntities: "Update"
-      }){
+  investigatorMutate(
+    input: {
+      uuid: "32a27039-0c58-49f6-ac14-773a8b170a12", user:1, name: "Eliseo", player: "Pepito", sex: "M",
+      residence: "Capital", birthplace: "Capital", age: 23,
+      occupation: 7, ideologies: "prueba", description: "prueba",
+      traits: "prueba", injureScars: "prueba", significantPeople:
+      "prueba", treasuredPossessions: "prueba",
+      encountersWithStrangeEntities: "prueba156",
+      meaningfulLocations: "prueba", method: "UPDATE"
+    }){
     investigator{
-      uuid,
-      name,
-      player,
-      sex,
-      residence,
-      birthplace,
-      age,
-      occupation{
-        title
+      	uuid,
+        name,
+        player,
+        sex,
+        residence,
+        birthplace,
+        age,
+        occupation{
+          title
+        }
+        ideologies,
+        description,
+        traits,
+        meaningfulLocations,
+        injureScars,
+        significantPeople,
+        treasuredPossessions,
+        encountersWithStrangeEntities
       }
-      ideologies,
-      description,
-      traits,
-      injureScars,
-      significantPeople,
-      meaningfulLocations,
-      treasuredPossessions,
-      encountersWithStrangeEntities
-    }
   }
 }
+
 
 
 ## Delete a investigator
 > In this scenario we pass the method which is DEL that stands for DELETE
 > we need to pass the uuid as well so the investigator can be find and later deleted.
+
 mutation{
-  updateDeleteInvestigator(
-      input: {
-        uuid: "2c8208ca-1ad8-4e9f-a89f-79c6ab9b2450",
-        method: "DEL"
-      }){
+  investigatorMutate(
+    input: {
+      uuid: "6be2bd60-4857-4fd6-834b-106a30cb3d25", method: "DELETE"
+    }){
     investigator{
-            uuid,
-      name,
-      player,
-      sex,
-      residence,
-      birthplace,
-      age,
-      occupation{
-        title
+      	uuid,
+        name,
+        player,
+        sex,
+        residence,
+        birthplace,
+        age,
+        occupation{
+          title
+        }
+        ideologies,
+        description,
+        traits,
+        meaningfulLocations,
+        injureScars,
+        significantPeople,
+        treasuredPossessions,
+        encountersWithStrangeEntities
       }
-      ideologies,
-      description,
-      traits,
-      injureScars,
-      significantPeople,
-      meaningfulLocations,
-      treasuredPossessions,
-      encountersWithStrangeEntities
-    }
   }
 }

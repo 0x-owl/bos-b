@@ -169,7 +169,7 @@ class Investigator(Model):
     residence = CharField(max_length=80)
     birthplace = CharField(max_length=80)
     age = PositiveIntegerField(default=18)
-    occupation = OneToOneField(
+    occupation = ForeignKey(
         Occupation, on_delete=SET_NULL, default=None, null=True)
     ideologies = TextField(blank=True)
     description = TextField(blank=True)

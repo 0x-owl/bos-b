@@ -256,47 +256,7 @@ class UpdateDeleteSkill(ClientIDMutation):
             return ret
 
 
-class CreateInvestigator(ClientIDMutation):
-    investigator = Field(InvestigatorNode)
-
-    class Input:
-        user = Int()
-        name = String()
-        player = String()
-        sex = String()
-        residence = String()
-        birthplace = String()
-        age = Int()
-        occupation = Int()
-        ideologies = String()
-        description = String()
-        traits = String()
-        injure_scars = String()
-        significant_people = String()
-        meaningful_locations = String()
-        treasured_possessions = String()
-        encounters_with_strange_entities = String()
-
-    @classmethod
-    def mutate(cls, *args, **kwargs):
-        """Generates mutation which is an instance of the Node class which
-        results in a instance of our model.
-        Arguments:
-            input -- (dict) dictionary that has the keys corresponding to the
-            Input class (title, user).
-        """
-        input_ = kwargs.get('input')
-        occ = Occupation.objects.get(pk=input_['occupation'])
-        usr = User.objects.get(pk=input_['user'])
-        input_['user'] = usr
-        input_['occupation'] = occ
-        investigator = Investigator(**input_)
-        investigator.save()
-        create_investigator = CreateInvestigator(investigator=investigator)
-        return create_investigator
-
-
-class UpdateDeleteInvestigator(ClientIDMutation):
+class InvestigatorMutation(ClientIDMutation):
     investigator = Field(InvestigatorNode)
 
     class Input:
@@ -317,54 +277,36 @@ class UpdateDeleteInvestigator(ClientIDMutation):
         treasured_possessions = String()
         encounters_with_strange_entities = String()
         method = String()
+        user = Int()
 
     @classmethod
     def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
         input_ = kwargs.get('input')
-        uuid = input_.get('uuid', '')
-        name = input_.get('name')
-        player = input_.get('player')
-        sex = input_.get('sex')
-        residence = input_.get('residence')
-        birthplace = input_.get('birthplace')
-        age = input_.get('age')
-        occupation = input_.get('occupation')
-        ideologies = input_.get('ideologies')
-        description = input_.get('description')
-        traits = input_.get('traits')
-        injure_scars = input_.get('injure_scars')
-        significant_people = input_.get('significant_people')
-        meaningful_locations = input_.get('meaningful_locations')
-        treasured_possessions = input_.get('treasured_possessions')
-        encounters_with_strange_entities = input_.get(
-            'encounters_with_strange_entities'
-        )
-        method = input_.get('method')
-        ret = None
-        if uuid != '':
-            investigator = Investigator.objects.get(uuid=uuid)
-            if investigator is not None and method != 'DEL':
-                investigator.name = name
-                investigator.player = player
-                investigator.sex = sex
-                investigator.residence = residence
-                investigator.birthplace = birthplace
-                investigator.age = age
-                investigator.occupation = Occupation.objects.get(pk=occupation)
-                investigator.ideologies = ideologies
-                investigator.description = description
-                investigator.traits = traits
-                investigator.injure_scars = injure_scars
-                investigator.significant_people = significant_people
-                investigator.meaningful_locations = meaningful_locations
-                investigator.treasured_possessions = treasured_possessions
-                investigator.encounters_with_strange_entities =\
-                    encounters_with_strange_entities
-                investigator.save()
-                ret = UpdateDeleteInvestigator(investigator=investigator)
-            else:
+        uuid = input_.pop('uuid')
+        method = input_.pop('method')
+        input_['user'] = User.objects.filter(pk=input_.get('user')).first()
+        input_['occupation'] = Occupation.objects.filter(
+            pk=input_.get('occupation')
+        ).first()
+        if method != 'CREATE':
+            investigator = Investigator.objects.filter(uuid=uuid).first()
+            if method == 'DELETE':
                 investigator.delete()
-                ret = f"Investigator: {investigator.uuid} deleted"
+                ret = investigator
+            elif method == 'UPDATE':
+                investigator.__dict__.update(input_)
+                investigator.save()
+                ret = InvestigatorMutation(investigator=investigator)
+        else:
+            investigator = Investigator(**input_)
+            investigator.save()
+            ret = InvestigatorMutation(investigator=investigator)
         return ret
 
 
@@ -394,8 +336,7 @@ class SpellMutation(ClientIDMutation):
         input_ = kwargs.get('input')
         usr = User.objects.get(pk=input_['user'])
         input_['user'] = usr
-        method = input_.get('method')
-        input_.pop('method')
+        method = input_.pop('method')
         if method != "CREATE":
             spell = Spell.objects.filter(uuid=input_.get('uuid', '')).first()
             if method == 'DELETE':

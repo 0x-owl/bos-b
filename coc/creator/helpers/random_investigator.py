@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, choice
 
 from django.contrib.auth.models import User
 
@@ -7,6 +7,8 @@ from creator.models import (Investigator, InvestigatorAttribute,
                             InvestigatorSkills, Occupation, OccupationAttribute,
                             OccupationSkills, Skills)
 from creator.helpers.model_helpers import attribute_roller, roller_stats
+
+from creator.helpers.random_name import random_names
 
 
 def calc_proff_points(attribute: int, mod: int, inv: Investigator):
@@ -152,11 +154,14 @@ def random_inv():
     """Main wrapper."""
     # Pick a random occupation
     occ = Occupation.objects.get(pk=randint(1, 117))
+    genders = [('M', 'male'), ('F', 'female')]
+    gender_pick = choice(genders)
+    name = random_names(gender_pick[1], "20'", 1, 1)
     attrs = {
         "user": User.objects.get(pk=1),
-        "name": "John Doe",
-        "player": "John Doe player",
-        "sex": "M",
+        "name": name,
+        "player": f"{name} player",
+        "sex": gender_pick[0],
         "residence": "Providence",
         "birthplace": "Misissippi",
         "age": randint(15, 90),

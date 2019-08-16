@@ -1,5 +1,7 @@
-from simplejson import load
+from os import path
 from random import choice
+
+from simplejson import load
 
 
 def random_names(gender, decade, amount_of_names, amount_of_surnames):
@@ -10,10 +12,12 @@ def random_names(gender, decade, amount_of_names, amount_of_surnames):
         amount_of_names - Number of first names
         amount_of_surnames - Number of surnames
     """
-    with open('first_names.json', 'r') as first_names:
+
+    dir_path = path.dirname(path.realpath(__file__))
+    with open(f'{dir_path}/first_names.json', 'r') as first_names:
         first_names = load(first_names)
 
-    with open('last_names.json', 'r') as last_names:
+    with open(f'{dir_path}/last_names.json', 'r') as last_names:
         last_names = load(last_names)
 
     names_list = []

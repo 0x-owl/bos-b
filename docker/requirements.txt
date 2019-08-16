@@ -10,5 +10,6 @@ Pillow==5.4.1
 promise==2.2.1
 pytz==2018.9
 Rx==1.6.1
+simplejson==3.16.0
 singledispatch==3.4.0.3
 six==1.12.0
