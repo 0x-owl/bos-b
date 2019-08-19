@@ -2,15 +2,17 @@
   {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Air Travel ticket price (per 10 Miles)",
         "item_type":2,
         "description":"Air Travel - Modern Day",
         "price":9.80
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Air Travel international (per 100 Miles",
         "item_type":2,
         "description":"Air Travel - Modern Day",

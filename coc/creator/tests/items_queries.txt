@@ -31,7 +31,7 @@ query{
 
 ## Search item by node id
 > Notice the id we have for the elements is different to the id the node has
-> this is because the node model wraps around our model given that we use 
+> this is because the node model wraps around our model given that we use
 > relays, maybe in the future this will be different.
 
 query{
@@ -47,7 +47,15 @@ query{
 ## Create a item test
 
 mutation{
-  newItem(input: {title: "test-item-create", itemType: 2, description: "Created item", price: 25.6}){
+  itemMutate(
+    input:{
+      user: 1,
+      method: "CREATE",
+      title: "test-item-create",
+      itemType: 2,
+      description: "Created item",
+      price: 25.6
+    }){
     item{
       uuid,
       title,
@@ -63,9 +71,11 @@ mutation{
 > and we pass the new title that we want to have at our item
 
 mutation{
-  updateDeleteItem(
-      input: {
-        uuid: "db9c244b-82c5-4cf5-a53d-74ba560b839f",
+  itemMutate(
+      input:{
+        user: 1,
+        method: "UPDATE",
+        uuid: "97ee0162-8b59-4e10-808b-7da249cc6963",
         title: "Test-2",
         description: "Update",
         itemType:4,
@@ -81,15 +91,15 @@ mutation{
   }
 }
 
-
 ## Delete a item
 > In this scenario we pass the method which is DEL that stands for DELETE
 > we need to pass the uuid as well so the item can be find and later deleted.
 mutation{
-  updateDeleteItem(
-      input: {
-        uuid: "fe9c0263-3be1-419f-a9d2-594177fbb3b4",
-        method: "DEL"
+  itemMutate(
+      input:{
+        user: 1,
+        method: "DELETE",
+        uuid: "97ee0162-8b59-4e10-808b-7da249cc6963"
       }){
     item{
       uuid,

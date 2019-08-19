@@ -2,15 +2,17 @@
   {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"BMW Motorcycle",
         "item_type":2,
         "description":"Motor Vehicles - Modern Day",
         "price":23000.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Ducati Streetfighter Motorcycle",
         "item_type":2,
         "description":"Motor Vehicles - Modern Day",
@@ -20,69 +22,77 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Rolls Royce Ghost Sedan",
         "item_type":2,
         "description":"Motor Vehicles - Modern Day",
-        "price":260000.00 
+        "price":260000.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Aston Martin DB9",
         "item_type":2,
         "description":"Motor Vehicles - Modern Day",
-        "price":200500.00 
+        "price":200500.00
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Cadillac SUV",
         "item_type":2,
         "description":"Motor Vehicles - Modern Day",
-        "price":62000.00 
+        "price":62000.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"BMW 1 Series",
         "item_type":2,
         "description":"Motor Vehicles - Modern Day",
-        "price":38000.00 
+        "price":38000.00
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Chevrolet Corvette (Convertible)",
         "item_type":2,
         "description":"Motor Vehicles - Modern Day",
-        "price":54000.00 
+        "price":54000.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Dodge SUV",
         "item_type":2,
         "description":"Motor Vehicles - Modern Day",
-        "price":33000.00 
+        "price":33000.00
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Toyota Prius",
         "item_type":2,
         "description":"Motor Vehicles - Modern Day",
-        "price":27000.00 
+        "price":27000.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Ford Focus",
         "item_type":2,
         "description":"Motor Vehicles - Modern Day",

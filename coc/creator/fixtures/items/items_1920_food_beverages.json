@@ -2,87 +2,97 @@
   {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Bacon, sugar cured /lb",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.25  
+        "price":0.25
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Beef, Pot Roast /l",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.10  
+        "price":0.10
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Bologna & Frankfurters /l",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.19  
+        "price":0.19
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Butter, Brookfield Creamery /l",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.43  
+        "price":0.43
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Carrots /bunc",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.10  
+        "price":0.10
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Cookies, Fig Bars /l",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.25  
+        "price":0.25
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Corn",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.10 
+        "price":0.10
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Eggs /doze",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.13  
+        "price":0.13
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Ham, smoked calf /lb",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.13 
+        "price":0.13
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Lamb, Leg /lb",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -92,33 +102,37 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Lard, Swift's Pure /l",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.17 
+        "price":0.17
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Lettuce",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.10 
+        "price":0.10
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Oil, Olive, Imported /half gallo",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
         "price":2.25
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Peaches /basket ",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -128,55 +142,61 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Oranges /doze",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.50 
+        "price":0.50
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Town Peas /2 quart",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.25 
+        "price":0.25
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Potatoes /4 quart",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.45 
+        "price":0.45
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Prunes, California /2 lb",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.24 
+        "price":0.24
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Rice /3 lb",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.20 
+        "price":0.20
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Tomatoes /no 2 ca",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
-        "price":0.10 
+        "price":0.10
       }
     }
 ]

@@ -2,15 +2,17 @@
   {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Tailored Silk Suit",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
         "price":1000
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Wool Pinstripe Suit",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
@@ -20,15 +22,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Rayon-blend 2-piece Suit",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
         "price":200.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Baggy Jogging Suit",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
@@ -38,15 +42,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Leather Bomber Jacket",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
         "price":200.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Trench-coat leather",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
@@ -56,15 +62,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Oversized Twill Shirt",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
         "price":35.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Double-pleated Pants",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
@@ -74,15 +82,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Crew Neck Cotton Sweater",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
         "price":35.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Nylon Swim Trunks",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
@@ -92,15 +102,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Pocket Vest",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
         "price":60.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Bulletproof Vest",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
@@ -110,55 +122,61 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Good Hiking Boots",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
         "price":200.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Jeans",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
-        "price":40.00 
+        "price":40.00
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Leather Docksider Shoes",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
-        "price":50.00 
+        "price":50.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Cross-trainer Shoes",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
-        "price":100.00 
+        "price":100.00
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Silk Tie",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
-        "price":35.00 
+        "price":35.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Thermal Underwear",
         "item_type":2,
         "description":"Men’s Clothing - Modern Day",
-        "price":15.00 
+        "price":15.00
       }
     }
 ]

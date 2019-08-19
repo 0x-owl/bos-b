@@ -16,7 +16,7 @@ query{
 ## Retrieve one investigator by the node uuid
 
 query{
-  allInvestigators(uuid:"2c8208ca-1ad8-4e9f-a89f-79c6ab9b2450"){
+  allInvestigators(uuid:"51aa9c4e-3793-4d37-8528-354a714c9735"){
     edges{
       node{
         name,
@@ -42,7 +42,7 @@ query{
 
 ## Search investigator by node id
 > Notice the id we have for the elements is different to the id the node has
-> this is because the node model wraps around our model given that we use 
+> this is because the node model wraps around our model given that we use
 > relays, maybe in the future this will be different.
 
 query{
@@ -109,7 +109,7 @@ mutation{
 mutation{
   investigatorMutate(
     input: {
-      uuid: "32a27039-0c58-49f6-ac14-773a8b170a12", user:1, name: "Eliseo", player: "Pepito", sex: "M",
+      uuid: "51aa9c4e-3793-4d37-8528-354a714c9735", user:1, name: "Eliseo", player: "Pepito", sex: "M",
       residence: "Capital", birthplace: "Capital", age: 23,
       occupation: 7, ideologies: "prueba", description: "prueba",
       traits: "prueba", injureScars: "prueba", significantPeople:
@@ -149,7 +149,7 @@ mutation{
 mutation{
   investigatorMutate(
     input: {
-      uuid: "6be2bd60-4857-4fd6-834b-106a30cb3d25", method: "DELETE"
+      uuid: "51aa9c4e-3793-4d37-8528-354a714c9735", method: "DELETE"
     }){
     investigator{
       	uuid,

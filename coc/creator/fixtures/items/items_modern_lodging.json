@@ -2,60 +2,67 @@
   {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Economy Motel",
         "item_type":2,
         "description":"Lodging - Modern Day",
         "price":40.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Average Hotel",
         "item_type":2,
         "description":"Lodging - Modern Day",
         "price":90.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Average Hotel Per week (with Service)",
         "item_type":2,
         "description":"Lodging - Modern Day",
         "price":500.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Good Hotel",
         "item_type":2,
         "description":"Lodging - Modern Day",
-        "price":200.00 
+        "price":200.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Grand Hotel",
         "item_type":2,
         "description":"Lodging - Modern Day",
-        "price":600.00 
+        "price":600.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"House (Rent per Year)",
         "item_type":2,
         "description":"Lodging - Modern Day",
-        "price":20000.00 
+        "price":20000.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Apartment (Rent per Week)",
         "item_type":2,
         "description":"Lodging - Modern Day",

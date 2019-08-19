@@ -8,203 +8,14 @@ from creator.schema_nodes import (InvestigatorNode, ItemNode, OccupationNode,
                                   SkillNode, SpellNode, TagNode, UserNode)
 
 
-class CreateTag(ClientIDMutation):
+class TagMutation(ClientIDMutation):
     tag = Field(TagNode)
 
     class Input:
-        title = String()
-        user = Int()
-
-    @classmethod
-    def mutate(cls, *args, **kwargs):
-        """Generates mutation which is an instance of the Node class which
-        results in a instance of our model.
-        Arguments:
-            input -- (dict) dictionary that has the keys corresponding to the
-            Input class (title, user).
-        """
-        input_ = kwargs.get('input')
-        title = input_.get('title')
-        user = input_.get('user')
-        tag = Tag(
-            title=title,
-            user=User.objects.get(pk=user)
-        )
-        tag.save()
-        create_tag = CreateTag(tag=tag)
-        return create_tag
-
-
-class UpdateDeleteTag(ClientIDMutation):
-    tag = Field(TagNode)
-
-    class Input:
-        title = String()
-        uuid = String()
         method = String()
-
-    @classmethod
-    def mutate(cls, *args, **kwargs):
-        input_ = kwargs.get('input')
-        uuid = input_.get('uuid', '')
-        method = input_.get('method')
-        title = input_.get('title')
-        ret = None
-        if uuid != '':
-            tag = Tag.objects.get(uuid=uuid)
-            if tag is not None and method != 'DEL':
-                tag.title = title
-                tag.save()
-                ret = UpdateDeleteTag(tag=tag)
-            else:
-                tag.delete()
-                ret = f"Tag: {tag.uuid} deleted"
-        return ret
-
-
-class CreateItem(ClientIDMutation):
-    item = Field(ItemNode)
-
-    class Input:
-        title = String()
-        item_type = Int()
-        description = String()
-        price = Float()
-
-    @classmethod
-    def mutate(cls, *args, **kwargs):
-        """Generates mutation which is an instance of the Node class which
-        results in a instance of our model.
-        Arguments:
-            input -- (dict) dictionary that has the keys corresponding to the
-            Input class (title, user).
-        """
-        input_ = kwargs.get('input')
-        item = Item(**input_)
-        item.save()
-        create_item = CreateItem(item=item)
-        return create_item
-
-class UpdateDeleteItem(ClientIDMutation):
-    item = Field(ItemNode)
-
-    class Input:
+        user = Int()
         uuid = String()
         title = String()
-        item_type = Int()
-        description = String()
-        price = Float()
-        method = String()
-
-    @classmethod
-    def mutate(cls, *args, **kwargs):
-        input_ = kwargs.get('input')
-        uuid = input_.get('uuid', '')
-        method = input_.get('method')
-        title = input_.get('title')
-        item_type = input_.get('item_type')
-        description = input_.get('description')
-        price = input_.get('price')
-        if uuid != '':
-            item = Item.objects.get(uuid=uuid)
-            if item is not None and method != 'DEL':
-                item.title = title
-                item.item_type = item_type
-                item.description = description
-                item.price = price
-                item.save()
-                ret = UpdateDeleteItem(item=item)
-            else:
-                item.delete()
-                ret = f"Item: {item.uuid} deleted"
-            return ret
-
-
-class CreateOccupation(ClientIDMutation):
-    occupation = Field(OccupationNode)
-
-    class Input:
-        user = Int()
-        title = String()
-        description = String()
-        suggested_contacts = String()
-        credit_rating_min = Float()
-        credit_rating_max = Float()
-
-    @classmethod
-    def mutate(cls, *args, **kwargs):
-        """Generates mutation which is an instance of the Node class which
-        results in a instance of our model.
-        Arguments:
-            input -- (dict) dictionary that has the keys corresponding to the
-            Input class (title, user).
-        """
-        input_ = kwargs.get('input')
-        user = input_.get('user')
-        title = input_.get('title')
-        description = input_.get('description')
-        suggested_contacts = input_.get('suggested_contacts')
-        credit_rating_min = input_.get('credit_rating_min')
-        credit_rating_max = input_.get('credit_rating_max')
-        occupation = Occupation(
-            user=User.objects.get(pk=user),
-            title=title,
-            description=description,
-            suggested_contacts=suggested_contacts,
-            credit_rating_min=credit_rating_min,
-            credit_rating_max=credit_rating_max
-        )
-        occupation.save()
-        create_occupation = CreateOccupation(occupation=occupation)
-        return create_occupation
-
-
-class UpdateDeleteOccupation(ClientIDMutation):
-    occupation = Field(OccupationNode)
-
-    class Input:
-        uuid = String()
-        title = String()
-        description = String()
-        suggested_contacts = String()
-        credit_rating_min = Float()
-        credit_rating_max = Float()
-        method = String()
-
-    @classmethod
-    def mutate(cls, *args, **kwargs):
-        input_ = kwargs.get('input')
-        uuid = input_.get('uuid', '')
-        method = input_.get('method')
-        title = input_.get('title')
-        description = input_.get('description')
-        suggested_contacts = input_.get('suggested_contacts')
-        credit_rating_min = input_.get('credit_rating_min')
-        credit_rating_max = input_.get('credit_rating_max')
-        if uuid != '':
-            occupation = Occupation.objects.get(uuid=uuid)
-            if occupation is not None and method != 'DEL':
-                occupation.title = title
-                occupation.description = description
-                occupation.suggested_contacts = suggested_contacts
-                occupation.credit_rating_min = credit_rating_min
-                occupation.credit_rating_max = credit_rating_max
-                occupation.save()
-                ret = UpdateDeleteOccupation(occupation=occupation)
-            else:
-                occupation.delete()
-                ret = f"Occupation: {occupation.uuid} deleted"
-            return ret
-
-
-class CreateSkill(ClientIDMutation):
-    skill = Field(SkillNode)
-
-    class Input:
-        user = Int()
-        title = String()
-        description = String()
-        default_value = Int()
 
     @classmethod
     def mutate(cls, *args, **kwargs):
@@ -217,44 +28,145 @@ class CreateSkill(ClientIDMutation):
         input_ = kwargs.get('input')
         usr = User.objects.get(pk=input_['user'])
         input_['user'] = usr
-        skill = Skills(**input_)
-        skill.save()
-        create_skill = CreateSkill(skill=skill)
-        return create_skill
+        method = input_.pop('method')
+        if method != "CREATE":
+            tag = Tag.objects.filter(uuid=input_.get('uuid', '')).first()
+            if method == 'DELETE':
+                tag.delete()
+                ret = tag
+            elif method == 'UPDATE':
+                tag.__dict__.update(input_)
+                tag.save()
+                ret = TagMutation(tag=tag)
+        else:
+            tag = Tag(**input_)
+            tag.save()
+            ret = TagMutation(tag=tag)
+
+        return ret
 
 
-class UpdateDeleteSkill(ClientIDMutation):
+class ItemMutation(ClientIDMutation):
+    item = Field(ItemNode)
+
+    class Input:
+        method = String()
+        user = Int()
+        uuid = String()
+        title = String()
+        item_type = Int()
+        description = String()
+        price = Float()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        usr = User.objects.get(pk=input_['user'])
+        input_['user'] = usr
+        method = input_.pop('method')
+        if method != "CREATE":
+            item = Item.objects.filter(uuid=input_.get('uuid', '')).first()
+            if method == 'DELETE':
+                item.delete()
+                ret = item
+            elif method == 'UPDATE':
+                item.__dict__.update(input_)
+                item.save()
+                ret = ItemMutation(item=item)
+        else:
+            item = Item(**input_)
+            item.save()
+            ret = ItemMutation(item=item)
+
+        return ret
+
+
+class OccupationMutation(ClientIDMutation):
+    occupation = Field(OccupationNode)
+
+    class Input:
+        method = String()
+        user = Int()
+        uuid = String()
+        title = String()
+        description = String()
+        suggested_contacts = String()
+        credit_rating_min = Float()
+        credit_rating_max = Float()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        usr = User.objects.get(pk=input_['user'])
+        input_['user'] = usr
+        method = input_.pop('method')
+        if method != "CREATE":
+            occupation = Occupation.objects.filter(
+                uuid=input_.get('uuid', '')).first()
+            if method == 'DELETE':
+                occupation.delete()
+                ret = occupation
+            elif method == 'UPDATE':
+                occupation.__dict__.update(input_)
+                occupation.save()
+                ret = OccupationMutation(occupation=occupation)
+        else:
+            occupation = Occupation(**input_)
+            occupation.save()
+            ret = OccupationMutation(occupation=occupation)
+
+        return ret
+
+
+class SkillMutation(ClientIDMutation):
     skill = Field(SkillNode)
 
     class Input:
+        method = String()
         uuid = String()
         user = Int()
         title = String()
         description = String()
         default_value = Int()
-        method = String()
 
     @classmethod
     def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
         input_ = kwargs.get('input')
-        uuid = input_.get('uuid', '')
-        title = input_.get('title')
-        description = input_.get('description')
-        default_value = input_.get('default_value')
-        method = input_.get('method')
-        if uuid != '':
-            skill = Skills.objects.get(uuid=uuid)
-            if skill is not None and method != 'DEL':
-                skill.title = title
-                skill.description = description
-                skill.default_value = default_value
-                skill.save()
-                ret = UpdateDeleteSkill(skill=skill)
-            else:
+        input_['user'] = User.objects.filter(pk=input_.get('user')).first()
+        method = input_.pop('method')
+        if method != "CREATE":
+            skill = Skills.objects.filter(uuid=input_.get('uuid', '')).first()
+            if method == 'DELETE':
                 skill.delete()
-                ret = f"Skill: {skill.uuid} deleted"
-            return ret
+                ret = skill
+            elif method == 'UPDATE':
+                skill.__dict__.update(input_)
+                skill.save()
+                ret = SkillMutation(skill=skill)
+        else:
+            skill = Skills(**input_)
+            skill.save()
+            ret = SkillMutation(skill=skill)
 
+        return ret
 
 class InvestigatorMutation(ClientIDMutation):
     investigator = Field(InvestigatorNode)
@@ -307,6 +219,7 @@ class InvestigatorMutation(ClientIDMutation):
             investigator = Investigator(**input_)
             investigator.save()
             ret = InvestigatorMutation(investigator=investigator)
+
         return ret
 
 
@@ -341,7 +254,7 @@ class SpellMutation(ClientIDMutation):
             spell = Spell.objects.filter(uuid=input_.get('uuid', '')).first()
             if method == 'DELETE':
                 spell.delete()
-                ret = f"Spell: {spell.uuid} deleted"
+                ret = spell
             elif method == 'UPDATE':
                 spell.__dict__.update(input_)
                 spell.save()

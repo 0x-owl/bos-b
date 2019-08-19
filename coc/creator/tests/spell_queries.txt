@@ -10,7 +10,7 @@ query{
   allSpells{
     edges{
       node{
-     	 uuid  
+     	 uuid
       }
     }
   }
@@ -20,7 +20,7 @@ query{
 ### Retrieve a node by a specific uuid and obtain its name
 
 query{
-  allSpells(uuid: "33ffcccf-9c48-46b9-ae64-2341570e2d38"){
+  allSpells(uuid: "748a203b-1796-4084-8816-260ee0c58a74"){
     edges{
       node{
          name
@@ -34,7 +34,7 @@ query{
 mutation{
   spellMutate(
     input:{
-    	uuid: "33ffcccf-9c48-46b9-ae64-2341570e2d38",
+    	uuid: "748a203b-1796-4084-8816-260ee0c58a74",
     	method: "UPDATE",
     	notes: "test",
       user: 1
@@ -50,12 +50,13 @@ mutation{
 mutation{
   spellMutate(
     input:{
-      uuid: "f3c7d1e7-4565-40e9-ae7b-0073c988dbbb",
+      uuid: "748a203b-1796-4084-8816-260ee0c58a74",
     	method: "DELETE",
       user: 1
     }){
     spell{
         uuid
+    }
   }
 }
 
