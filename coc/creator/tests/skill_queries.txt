@@ -16,7 +16,7 @@ query{
 ## Retrieve one skill by the node uuid
 
 query{
-  allSkills(uuid:"c1c8f82e-7c5a-4cb5-b4c6-5e5ae46112c0"){
+  allSkills(uuid:"175a8b46-7627-46f2-a7ba-6bcc7b69a721"){
     edges{
       node{
         title,
@@ -34,11 +34,11 @@ query{
 
 ## Search skill by node id
 > Notice the id we have for the elements is different to the id the node has
-> this is because the node model wraps around our model given that we use 
+> this is because the node model wraps around our model given that we use
 > relays, maybe in the future this will be different.
 
 query{
-  skill(id:"U2tpbGxOb2RlOjI="){
+  skill(id:"U2tpbGxOb2RlOjE="){
     uuid,
     title,
     description,
@@ -54,7 +54,14 @@ query{
 ## Create a skill test
 
 mutation{
-  newSkill(input:{user: 1, title: "Test" , description: "Created skill", defaultValue: 1}){
+  skillMutate(
+    input:{
+      method: "CREATE",
+      user: 1,
+      title: "Test",
+      description: "Created skill",
+      defaultValue: 1
+    }){
     skill{
       uuid,
       user{
@@ -74,12 +81,14 @@ mutation{
 > and we pass the new title that we want to have at our skill
 
 mutation{
-  updateDeleteSkill(input:{
-    uuid: "d04b6bbb-984c-4d49-99a7-3874adeae429",
-    user: 1,
-    title: "Test-2",
-    description: "Update test",
-    defaultValue: 0
+  skillMutate(
+    input:{
+      method: "UPDATE",
+      uuid: "faf51587-3187-4a38-9b66-bfd3b846c034",
+      user: 1,
+      title: "Test-2",
+      description: "Update test",
+      defaultValue: 0
   }){
     skill{
       uuid,
@@ -100,10 +109,11 @@ mutation{
 > we need to pass the uuid as well so the skill can be find and later deleted.
 
 mutation{
-  updateDeleteSkill(
+  skillMutate(
     input:{
-      uuid: "d04b6bbb-984c-4d49-99a7-3874adeae429",
-      method: "DEL"
+      uuid: "faf51587-3187-4a38-9b66-bfd3b846c034",
+      method: "DELETE",
+      user: 1
     }){
     skill{
       uuid,

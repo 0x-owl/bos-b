@@ -28,7 +28,7 @@ query{
 
 ## Search tag by node id
 > Notice the id we have for the elements is different to the id the node has
-> this is because the node model wraps around our model given that we use 
+> this is because the node model wraps around our model given that we use
 > relays, maybe in the future this will be different.
 
 query{
@@ -40,7 +40,12 @@ query{
 ## Create a tag test
 
 mutation{
-  newTag(input: {title: "test-tag", user: 1}){
+  tagMutate(
+    input:{
+      method: "CREATE",
+      title: "test-tag",
+      user: 1
+    }){
       tag{
         title
       }
@@ -52,35 +57,36 @@ mutation{
 > and we pass the new title that we want to have at our tag
 
 mutation{
-  updateDeleteTag(
-      input: {
-      	title: "test-tag2",
+  tagMutate(
+      input:{
+        method: "UPDATE",
+        user: 1,
+        title: "test-tag2",
         uuid: "ae42d667-b762-4818-a479-1d5abe0620c1"
    }){
-   	tag{
-		id,
-		uuid,
-		title
-	}
+    tag{
+    id,
+    uuid,
+    title
+    }
    }
 }
-
 
 ## Delete a tag
 > In this scenario we pass the method which is DEL that stands for DELETE
 > we need to pass the uuid as well so the tag can be find and later deleted.
+
 mutation{
-  updateDeleteTag(
+  tagMutate(
       input: {
-      	uuid: "ae42d667-b762-4818-a479-1d5abe0620c1",
-        method: "DEL"
+        user: 1,
+        uuid: "9cff8439-acaa-4503-bc19-7c05affa9d0f",
+        method: "DELETE"
       }){
-		tag{
-			id,
-			uuid,
-			title
-		}
-	}
+    tag{
+      id,
+      uuid,
+      title
+    }
+  }
 }
-
-

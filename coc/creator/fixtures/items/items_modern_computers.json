@@ -2,51 +2,57 @@
   {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Cheap PC System",
         "item_type":2,
         "description":"Computers - Modern Day",
         "price":100.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Laptop",
         "item_type":2,
         "description":"Computers - Modern Day",
         "price":400.00
       }
     },
-    { 
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Good PC System",
         "item_type":2,
         "description":"Computers - Modern Day",
         "price":1500.00
       }
     },
-    { 
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Good Laptop",
         "item_type":2,
         "description":"Computers - Modern Day",
         "price":1300.00
       }
     },
-    { 
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Tablet",
         "item_type":2,
         "description":"Computers - Modern Day",
         "price":400.00
       }
     },
-    { 
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Email Monitoring Software",
         "item_type":2,
         "description":"Computers - Modern Day",

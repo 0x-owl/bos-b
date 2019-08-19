@@ -76,6 +76,7 @@ class SkillNode(DjangoObjectType):
         model = Skills
         filter_fields = {
             'uuid': ['exact'],
+            'user': ['exact'],
             'user__username': ['exact', 'istartswith'],
             'user__id': ['exact'],
             'title': ['exact', 'icontains', 'istartswith'],

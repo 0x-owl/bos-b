@@ -2,15 +2,17 @@
   {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"CB Radio w/Police Scanner",
         "item_type":4,
         "description":"Electronics - Modern Day",
         "price":90.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Three-band Walkie Talkie",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -20,15 +22,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Radar Scanner",
         "item_type":4,
         "description":"Electronics - Modern Day",
         "price":40.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"35mm SLR Digital Camera",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -38,118 +42,131 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Pocket One-use Camera",
         "item_type":4,
         "description":"Electronics - Modern Day",
         "price":10.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Metal Detector",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":240.00 
+        "price":240.00
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Geiger Counter",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":400.00 
+        "price":400.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Motion Detector Alarm Set",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":200.00 
+        "price":200.00
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Wireless Perimeter Alarm",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":260.00 
+        "price":260.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Telephonic Voice Changer",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":60.00 
+        "price":60.00
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Pen Camcorder",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":250.00 
+        "price":250.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Telephone Bug Detector",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":400.00 
+        "price":400.00
       }
     },
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Bug Sweep Kit",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":900.00 
+        "price":900.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Body Worn Spy Camera",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":200.00 
+        "price":200.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Covert Digital Recorder",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":300.00 
+        "price":300.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Listening Device",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":200.00 
+        "price":200.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Night Vision Goggles",
         "item_type":4,
         "description":"Electronics - Modern Day",
-        "price":600.00 
+        "price":600.00
       }
     }
 ]

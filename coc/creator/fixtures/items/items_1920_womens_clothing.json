@@ -2,6 +2,7 @@
   {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Chic Designer Dress",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -11,6 +12,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Silk Crepe Frock",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -20,6 +22,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Silk Taffeta Frock",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -29,6 +32,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Satin Charmeuse",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -38,6 +42,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Gingham Dress",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -47,6 +52,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"French Repp Dress",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -56,6 +62,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Pleated Skirt, silk",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -65,6 +72,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Blouse, cotton",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -74,6 +82,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Worsted Wool Sweater",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -83,6 +92,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Cotton Crepe Negligee",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -92,6 +102,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Spike-heeled Parisian Shoes",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -101,6 +112,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Leather One-strap Slippers",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -110,6 +122,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Snug Velour Hat",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -119,6 +132,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Satin Turban-style Hat",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -128,6 +142,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Rayon Elastic Corset",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -137,6 +152,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Embroidered Costume Slip",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -146,6 +162,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Silk Hose (3 pairs)",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -155,6 +172,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Bloomers, silk",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -164,6 +182,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Tweed Jacket, fully lined",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -173,6 +192,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Velour Coat with Fur Trim",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -182,6 +202,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Brown Fox Fur Coat",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -191,6 +212,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Belted Rain Coat, cotton",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -200,6 +222,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Belted Rain Coat, Schappe silk",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -209,6 +232,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Silk Handbag",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -218,6 +242,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Dress Hair Comb",
         "item_type":2,
         "description":"Women’s Clothing - 1920's",
@@ -227,6 +252,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Khaki Jean Material",
         "item_type":2,
         "description":"Women’s Clothing - Outdoor Shirt",
@@ -236,6 +262,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"All Wool Tweed or Linen",
         "item_type":2,
         "description":"Women’s Clothing - Outdoor Shirt",
@@ -245,6 +272,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Khaki Jean Material",
         "item_type":2,
         "description":"Women’s Clothing - Outdoor Knee-Length Knickers",
@@ -254,6 +282,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Grey Wool Tweed",
         "item_type":2,
         "description":"Women’s Clothing - Outdoor Knee-Length Knickers",
@@ -263,6 +292,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"White Linen",
         "item_type":2,
         "description":"Women’s Clothing - Outdoor Knee-Length Knickers",
@@ -272,6 +302,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Khaki Leggings (Ankle to knee)",
         "item_type":2,
         "description":"Women’s Clothing - Outdoor Knee-Length Knickers",
@@ -281,6 +312,7 @@
    	{
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Outdoor Boots",
         "item_type":2,
         "description":"Women’s Clothing - Outdoor Knee-Length Knickers",
@@ -290,6 +322,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Bathing Suit",
         "item_type":2,
         "description":"Women’s Clothing - Outdoor Knee-Length Knickers",
@@ -299,6 +332,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Bathing Cap",
         "item_type":2,
         "description":"Women’s Clothing - Outdoor Knee-Length Knickers",
@@ -308,6 +342,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Canvas Bathing Shoes",
         "item_type":2,
         "description":"Women’s Clothing - Outdoor Knee-Length Knickers",
@@ -317,6 +352,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Shoes, Pumps",
         "item_type":2,
         "description":"Women’s Clothing - Outdoor Knee-Length Knickers",

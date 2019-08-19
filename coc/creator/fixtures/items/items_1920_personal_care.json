@@ -2,15 +2,17 @@
   {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Make-up Kit",
         "item_type":2,
         "description":"Personal Care - 1920's",
         "price":4.98
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Men’s Toilet Set (10 pieces)",
         "item_type":2,
         "description":"Personal Care - 1920's",
@@ -20,15 +22,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Women’s Toilet Set (15 pieces)",
         "item_type":2,
         "description":"Personal Care - 1920's",
         "price":22.95
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Hair Colorator",
         "item_type":2,
         "description":"Personal Care - 1920's",
@@ -38,24 +42,27 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Curling Iron, Wavette",
         "item_type":2,
         "description":"Personal Care - 1920's",
         "price":2.19
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Hair Brush",
         "item_type":2,
         "description":"Personal Care - 1920's",
         "price":0.89
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Hair net, Zephyr (4)",
         "item_type":2,
         "description":"Personal Care - 1920's",
@@ -65,15 +72,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Mouthwash, Listerine",
         "item_type":2,
         "description":"Personal Care - 1920's",
         "price":0.79
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Shampoo, Coconut Oil",
         "item_type":2,
         "description":"Personal Care - 1920's",
@@ -83,15 +92,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Soap (12 Cakes)",
         "item_type":2,
         "description":"Personal Care - 1920's",
         "price":1.39
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Talcum powder",
         "item_type":2,
         "description":"Personal Care - 1920's",
@@ -101,6 +112,7 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Toothpaste, Pepsodent",
         "item_type":2,
         "description":"Personal Care - 1920's",

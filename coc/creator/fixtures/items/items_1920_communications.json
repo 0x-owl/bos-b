@@ -2,15 +2,17 @@
   {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Telegraph Outfit",
         "item_type":2,
         "description":"Communications - 1920's",
         "price":4.25
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Newspaper",
         "item_type":2,
         "description":"Communications - 1920's",
@@ -20,15 +22,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Desk Phone (Bridging Type)",
         "item_type":2,
         "description":"Communications - 1920's",
         "price":15.75
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"For 12 Words",
         "item_type":2,
         "description":"Communications - 1920's",
@@ -38,15 +42,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Postcard",
         "item_type":2,
         "description":"Communications - 1920's",
         "price":0.20
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Per Additional Word",
         "item_type":2,
         "description":"Communications - 1920's",
@@ -56,15 +62,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"International per Word",
         "item_type":2,
         "description":"Communications - 1920's",
-        "price":1.25 
+        "price":1.25
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Postage per Ounce / 16m",
         "item_type":2,
         "description":"Communications - 1920's",

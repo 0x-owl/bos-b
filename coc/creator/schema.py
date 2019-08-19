@@ -4,11 +4,10 @@ from graphene_django.filter import DjangoFilterConnectionField
 from creator.schema_nodes import (InvestigatorNode, ItemNode, OccupationNode,
                                   PortraitNode, RandomInvestigatorNode,
                                   SkillNode, SpellNode, TagNode, UserNode)
-from creator.schema_mutations import (CreateItem, CreateOccupation,
-                                      CreateSkill, CreateTag,
-                                      InvestigatorMutation, SpellMutation,
-                                      UpdateDeleteItem, UpdateDeleteOccupation,
-                                      UpdateDeleteSkill, UpdateDeleteTag)
+from creator.schema_mutations import (InvestigatorMutation,
+                                      ItemMutation, OccupationMutation,
+                                      SkillMutation, SpellMutation,
+                                      TagMutation)
 
 
 class Query(object):
@@ -32,6 +31,7 @@ class Query(object):
 
     investigator = relay.Node.Field(InvestigatorNode)
     all_investigators = DjangoFilterConnectionField(InvestigatorNode)
+
     all_spells = DjangoFilterConnectionField(SpellNode)
     spell = relay.Node.Field(SpellNode)
 
@@ -42,13 +42,9 @@ class Query(object):
 
 
 class Mutation(object):
-    new_tag = CreateTag.Field()
-    update_delete_tag = UpdateDeleteTag.Field()
-    new_item = CreateItem.Field()
-    update_delete_item = UpdateDeleteItem.Field()
-    new_occupation = CreateOccupation.Field()
-    update_delete_occupation = UpdateDeleteOccupation.Field()
-    new_skill = CreateSkill.Field()
-    update_delete_skill = UpdateDeleteSkill.Field()
+    tag_mutate = TagMutation.Field()
+    item_mutate = ItemMutation.Field()
+    occupation_mutate = OccupationMutation.Field()
+    skill_mutate = SkillMutation.Field()
     investigator_mutate = InvestigatorMutation.Field()
     spell_mutate = SpellMutation.Field()

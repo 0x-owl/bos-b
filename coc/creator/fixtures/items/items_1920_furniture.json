@@ -2,15 +2,17 @@
   {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Lamp Glass Shade",
         "item_type":4,
         "description":"Furniture - 1920's",
         "price":5.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Dinnerware 52 Pieces",
         "item_type":2,
         "description":"Furniture - 1920's",
@@ -20,15 +22,17 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Refrigerator",
         "item_type":2,
         "description":"Furniture - 1920's",
         "price":49.50
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Gas Range",
         "item_type":4,
         "description":"Furniture - 1920's",
@@ -38,69 +42,77 @@
     {
     "model": "creator.Item",
     "fields": {
+        "user": 1,
         "title":"Vacuum cleaner",
         "item_type":2,
         "description":"Furniture - 1920's",
         "price":48.00
       }
-    }, 
-    { 
+    },
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Washing machine",
         "item_type":2,
         "description":"Furniture - 1920's",
         "price":125.00
       }
     },
-    { 
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Bedroom Set walnut finish",
         "item_type":2,
         "description":"Furniture - 1920's",
         "price":199.00
       }
     },
-    { 
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Rocking Chair",
         "item_type":2,
         "description":"Furniture - 1920's",
         "price":25.00
       }
     },
-    { 
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Desk",
         "item_type":2,
         "description":"Furniture - 1920's",
         "price":80.00
       }
     },
-    { 
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Dining Room Set walnut finish",
         "item_type":2,
         "description":"Furniture - 1920's",
         "price":295.00
       }
     },
-    { 
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Living Room Setupholstered mohair",
         "item_type":2,
         "description":"Furniture - 1920's",
         "price":395.00
       }
     },
-    { 
+    {
       "model": "creator.Item",
       "fields": {
+          "user": 1,
         "title":"Rug oriental",
         "item_type":2,
         "description":"Furniture - 1920's",

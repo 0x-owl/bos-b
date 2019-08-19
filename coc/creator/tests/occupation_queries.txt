@@ -3,7 +3,7 @@
 ## Retrieve all occupations but obtain only the uuid for each one of them.
 
 query{
-  alloccupations{
+  allOccupations{
     edges{
       node{
         uuid
@@ -36,7 +36,7 @@ query{
 
 ## Search occupation by node id
 > Notice the id we have for the elements is different to the id the node has
-> this is because the node model wraps around our model given that we use 
+> this is because the node model wraps around our model given that we use
 > relays, maybe in the future this will be different.
 
 query{
@@ -57,7 +57,16 @@ query{
 ## Create a occupation test
 
 mutation{
-  newOccupation(input:{title:"test-occuation-create", user:1 , description:"Created occupation", suggestedContacts:"test", creditRatingMin:20, creditRatingMax:40}){
+  occupationMutate(
+    input:{
+      method: "CREATE",
+      title:"test-occuation-create",
+      user:1,
+      description:"Created occupation",
+      suggestedContacts:"test",
+      creditRatingMin:20,
+      creditRatingMax:40
+    }){
     occupation{
       uuid,
       title,
@@ -74,14 +83,16 @@ mutation{
 > and we pass the new title that we want to have at our occupation
 
 mutation{
-  updateDeleteOccupation(input:{
-    uuid: "c31502db-1ae7-47a2-bf1c-2dab08f255f6",
-    user: 1,
-    title: "Test-2",
-    description: "Update test",
-    suggestedContacts: "test, test2",
-    creditRatingMin: 10,
-    creditRatingMax: 15
+  occupationMutate(
+    input:{
+      method: "UPDATE",
+      uuid: "83e4e716-a923-4377-9d28-1fe11744657b",
+      user: 1,
+      title: "Test-2",
+      description: "Update test",
+      suggestedContacts: "test, test2",
+      creditRatingMin: 10,
+      creditRatingMax: 15
   }){
     occupation{
       uuid,
@@ -98,16 +109,16 @@ mutation{
   }
 }
 
-
 ## Delete a occupation
 > In this scenario we pass the method which is DEL that stands for DELETE
 > we need to pass the uuid as well so the occupation can be find and later deleted.
 
 mutation{
-  updateDeleteOccupation(
+  occupationMutate(
     input:{
-      uuid: "c31502db-1ae7-47a2-bf1c-2dab08f255f6",
-      method: "DEL"
+      method: "DELETE",
+      uuid: "83e4e716-a923-4377-9d28-1fe11744657b",
+      user: 1
     }){
     occupation{
       uuid,
@@ -119,5 +130,3 @@ mutation{
     }
   }
 }
-
-
