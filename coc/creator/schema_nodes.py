@@ -7,18 +7,7 @@ from django.core.serializers import serialize
 from django.contrib.auth.models import User
 
 from creator.models import (Investigator, Item, Occupation, Portrait, Skills,
-                            Tag, Spell)
-from creator.helpers.random_investigator import random_inv
-
-
-class RandomInvestigatorNode(ObjectType):
-    random_investigator = String()
-
-    def resolve_random_investigator(parent, info):
-        inv_uuid = random_inv()
-        inv = Investigator.objects.get(uuid=inv_uuid)
-        res = loads(serialize('json', [inv]))
-        return res
+                            Spell, Tag)
 
 
 class UserNode(DjangoObjectType):
