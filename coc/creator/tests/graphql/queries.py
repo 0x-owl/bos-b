@@ -12,7 +12,7 @@ all_investigators = """
 
 one_investigator = """
 {{
-    allInvestigators(uuid: "{investigator}"){{
+    allInvestigators(uuid: "{uuid}"){{
         edges{{
             node{{
                 uuid
@@ -122,5 +122,82 @@ mutation{{
         encountersWithStrangeEntities
       }}
   }}
+}}
+"""
+
+all_tags = """
+query{
+  allTags{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_tag = """
+query{{
+    allTags(uuid:"{uuid}"){{
+        edges{{
+            node{{
+                title,
+                id,
+            }}
+        }}
+    }}
+}}
+"""
+
+create_tag = """
+mutation{
+  tagMutate(
+    input:{
+      method: "CREATE",
+      title: "test-tag",
+      user: 1
+    }){
+      tag{
+        uuid
+        title
+      }
+  }
+}
+"""
+
+edit_tag = """
+mutation{{
+    tagMutate(
+        input:{{
+            method: "UPDATE",
+            user: 1,
+            title: "test-tag2",
+            uuid: "{uuid}"
+        }}
+    ){{
+        tag{{
+            id,
+            uuid,
+            title
+        }}
+   }}
+}}
+"""
+
+delete_tag = """
+mutation{{
+    tagMutate(
+        input: {{
+            user: 1,
+            uuid: "{uuid}",
+            method: "DELETE"
+          }}){{
+        tag{{
+            id,
+            uuid,
+            title
+        }}
+    }}
 }}
 """
