@@ -25,7 +25,7 @@ SECRET_KEY = '6b_5lw#7mv&67m87()8zuy@)8qhclnimytq2$5^sw_^v0&4rf%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['coc']
 
 
 # Application definition
@@ -122,8 +122,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = 'images/'
-
-
+# Remove this!
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 100000000
 #  GRAPHENE = {
     #  'SCHEMA': 'coc.schema.schema'
 #  }

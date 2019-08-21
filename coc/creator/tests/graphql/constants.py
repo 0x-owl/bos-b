@@ -1,9 +1,12 @@
+from os import environ
 from requests import session
 
 
 class GraphTest:
     sess = session()
-    graphql_url = 'http://localhost:8000/graphql'
+    sess.trust_env = False
+    host = 'coc' if environ.get('ENV', None) == 'Docker' else 'localhost'
+    graphql_url = f"http://{host}:8000/graphql"
     csrf_token = sess.get(graphql_url).cookies['csrftoken']
 
     headers = {
