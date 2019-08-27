@@ -125,6 +125,103 @@ mutation{{
 }}
 """
 
+all_skills = """
+{
+    allSkills{
+        edges{
+            node{
+                uuid
+            }
+        }
+    }
+}
+"""
+
+one_skill = """
+{{
+    allSkills(uuid: "{uuid}"){{
+        edges{{
+            node{{
+                title,
+                description,
+                defaultValue
+            }}
+        }}
+    }}
+}}
+"""
+
+create_skill = """
+mutation{
+  skillMutate(
+    input:{
+      method: "CREATE",
+      user: 1,
+      title: "Test",
+      description: "Created skill",
+      defaultValue: 1
+    }){
+    skill{
+      uuid,
+      user{
+        username,
+        id
+      }
+      title,
+      description,
+      defaultValue
+    }
+  }
+}
+"""
+
+edit_skill = """
+mutation{{
+  skillMutate(
+    input:{{
+      method: "UPDATE",
+      uuid: "{uuid}",
+      user: 1,
+      title: "Test-2",
+      description: "Update test",
+      defaultValue: 0
+  }}){{
+    skill{{
+      uuid,
+      user{{
+        username,
+        id
+      }}
+      title,
+      description,
+      defaultValue
+    }}
+  }}
+}}
+"""
+
+delete_skill = """
+mutation{{
+  skillMutate(
+    input:{{
+      uuid: "{uuid}",
+      method: "DELETE",
+      user: 1
+    }}){{
+    skill{{
+      uuid,
+      user{{
+        username,
+        id
+      }}
+      title,
+      description,
+      defaultValue
+    }}
+  }}
+}}
+"""
+
 all_tags = """
 query{
   allTags{
