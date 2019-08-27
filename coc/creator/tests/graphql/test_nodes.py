@@ -1,15 +1,18 @@
 """
-This tests must be run having an instance of the django server running and a seeded database,
-either locally or remotely for them to work.
+This tests must be run having an instance of the django server running
+and a seeded database, either locally or remotely for them to work.
 """
 from json import loads
 from random import choice
 
-from creator.tests.graphql.queries import (all_investigators, all_tags,
-                                           create_investigator, create_tag,
-                                           delete_investigator, delete_tag,
-                                           edit_investigator, edit_tag,
-                                           one_investigator, one_tag)
+from creator.tests.graphql.queries import (all_investigators, all_skills,
+                                           all_tags, create_investigator,
+                                           create_skill, create_tag,
+                                           delete_investigator, delete_skill,
+                                           delete_tag, edit_investigator,
+                                           edit_skill, edit_tag,
+                                           one_investigator, one_skill,
+                                           one_tag)
 from creator.tests.graphql.constants import GraphTest
 
 
@@ -53,6 +56,47 @@ class TestInvestigatorQuery(GraphTest):
         data, status = self.run_query(one_investigator.format(uuid=inv_uuid))
         assert status == 200
         assert not data['allInvestigators']['edges']
+
+
+class TestSkillQuery(GraphTest):
+    """Test class that encapsulates all skillsa graphql query tests."""
+    def test_skills_query_node(self):
+        """Test acquisitions of a full list of skills or by a single
+        uuid.
+        """
+        # Test acquisition of all the skills
+        data, status = self.run_query(all_skills)
+        assert status == 200
+        skills = data['allSkills']['edges']
+        assert skills
+        # Test acquisition of one skill
+        skill = choice(skills)['node']['uuid']
+        query = one_skill.format(uuid=skill)
+        data, status = self.run_query(query)
+        assert status == 200
+        assert len(data['allSkills']['edges']) == 1
+
+    def test_skills_full_mutation(self):
+        """This tests creates, updates and finally deletes an skill
+        through the graphql queries.
+        """
+        # Create skill
+        data, status = self.run_query(create_skill)
+        assert status == 200
+        ski_uuid = data['skillMutate']['skill']['uuid']
+        # Update skill
+        data, status = self.run_query(edit_skill.format(uuid=ski_uuid))
+        assert status == 200
+        skill = data['skillMutate']['skill']
+        assert skill['title'] == 'Test-2'
+        # Clean the db from the generated test skills
+        data, status = self.run_query(delete_skill.format(
+            uuid=ski_uuid))
+        assert status == 200
+        # Make sure the skill no longer exists
+        data, status = self.run_query(one_skill.format(uuid=ski_uuid))
+        assert status == 200
+        assert not data['allSkills']['edges']
 
 
 class TestTagQuery(GraphTest):
