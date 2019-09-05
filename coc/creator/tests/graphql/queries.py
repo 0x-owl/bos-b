@@ -298,3 +298,107 @@ mutation{{
     }}
 }}
 """
+
+all_items = """
+{
+  allItems{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_item = """
+{{
+  allItems(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        title,
+        price,
+        description,
+        itemType,
+        id
+      }}
+    }}
+  }}
+}}
+"""
+
+search_item = """
+{{
+  item(id: "{uuid}"){{
+    uuid,
+    title,
+    price,
+    description,
+    itemType
+  }}
+}}
+"""
+
+create_item = """
+mutation{
+  itemMutate(
+    input:{
+      user: 1,
+      method: "CREATE",
+      title: "test-item-create",
+      itemType: 2,
+      description: "Created item",
+      price: 25.6
+    }){
+    item{
+      uuid,
+      title,
+      itemType,
+      description,
+      price
+    }
+  }
+}
+"""
+
+edit_item = """
+mutation{{
+  itemMutate(
+      input:{{
+        user: 1,
+        method: "UPDATE",
+        uuid: "{uuid}",
+        title: "Test-2",
+        description: "TestUpdate",
+        itemType: 4,
+        price: 5
+      }}){{
+    item{{
+      uuid,
+      title,
+      itemType,
+      description,
+      price
+    }}
+  }}
+}}
+"""
+
+delete_item = """
+mutation{{
+  itemMutate(
+      input:{{
+        user: 1,
+        method: "DELETE",
+        uuid: "{uuid}"
+      }}){{
+    item{{
+      uuid,
+      title,
+      itemType,
+      description,
+      price
+    }}
+  }}
+}}
+"""
