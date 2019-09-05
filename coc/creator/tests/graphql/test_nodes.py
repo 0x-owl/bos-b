@@ -5,14 +5,17 @@ and a seeded database, either locally or remotely for them to work.
 from json import loads
 from random import choice
 
-from creator.tests.graphql.queries import (all_investigators, all_skills,
-                                           all_tags, create_investigator,
+from creator.tests.graphql.queries import (all_investigators, all_items, 
+                                           all_skills, all_tags, 
+                                           create_investigator, create_item,
                                            create_skill, create_tag,
-                                           delete_investigator, delete_skill,
-                                           delete_tag, edit_investigator,
+                                           delete_investigator, delete_item, 
+                                           delete_skill, delete_tag, 
+                                           edit_investigator, edit_item,
                                            edit_skill, edit_tag,
-                                           one_investigator, one_skill,
-                                           one_tag)
+                                           one_investigator, one_item, 
+                                           one_skill, one_tag)
+
 from creator.tests.graphql.constants import GraphTest
 
 
@@ -138,3 +141,43 @@ class TestTagQuery(GraphTest):
         data, status = self.run_query(one_tag.format(uuid=tag_uuid))
         assert status == 200
         assert not data['allTags']['edges']
+
+class TestItemQuery(GraphTest):
+    """Test class that encapsulates all items graphql query tests."""
+    def test_items_query_node(self):
+        """Test acquisitions of a full list of items or by a single uuid.
+        """
+        # Test acquisition of all the items
+        data, status = self.run_query(all_items)
+        assert status == 200
+        items = data['allItems']['edges']
+        assert items
+        # Test acquisition of one item
+        item = choice(items)['node']['uuid']
+        query = one_item.format(uuid=item)
+        data, status = self.run_query(query)
+        assert status == 200
+        assert len(data['allItems']['edges']) == 1
+
+    def test_items_full_mutation(self):
+        """This tests creates, updates and finally deletes an item
+        through the graphql queries.
+        """
+        # Create item
+        data, status = self.run_query(create_item)
+        assert status == 200
+        item_uuid = data['itemMutate']['item']['uuid']
+
+        # Update item
+        data, status = self.run_query(edit_item.format(uuid=item_uuid))
+        assert status == 200
+        item = data['itemMutate']['item']
+        assert item['description'] == 'TestUpdate'
+        # Clean the db from the generated test items
+        data, status = self.run_query(delete_item.format(
+            uuid=item_uuid))
+        assert status == 200
+        # Make sure the item no longer exists
+        data, status = self.run_query(one_item.format(uuid=item_uuid))
+        assert status == 200
+        assert not data['allItems']['edges']
