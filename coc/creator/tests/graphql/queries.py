@@ -402,3 +402,79 @@ mutation{{
   }}
 }}
 """
+
+all_spells = """
+query{
+  allSpells{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_spell = """
+query{{
+  allSpells(uuid: "{uuid}"){{
+    edges{{
+      node{{
+         name
+      }}
+    }}
+  }}
+}}
+"""
+
+create_spell = """
+mutation{
+  spellMutate(
+    input:{
+        method: "CREATE",
+        notes: "test",
+      name: "tester spell",
+      description:"We may ommit this",
+      cost: "1D6 Sanity",
+      castingTime: "Immediate",
+      user: 1
+    }){
+    spell{
+      uuid,
+      notes,
+      name
+    }
+  }
+}
+"""
+
+delete_spell = """
+mutation{{
+  spellMutate(
+    input:{{
+      uuid: "{uuid}",
+      method: "DELETE",
+      user: 1
+    }}){{
+    spell{{
+        uuid
+    }}
+  }}
+}}
+"""
+
+edit_spell = """
+mutation{{
+  spellMutate(
+    input:{{
+        uuid: "{uuid}",
+        method: "UPDATE",
+        notes: "test",
+      user: 1
+    }}){{
+    spell{{
+      notes
+    }}
+  }}
+}}
+"""

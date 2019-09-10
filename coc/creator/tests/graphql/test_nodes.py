@@ -2,20 +2,19 @@
 This tests must be run having an instance of the django server running
 and a seeded database, either locally or remotely for them to work.
 """
-from json import loads
 from random import choice
 
-from creator.tests.graphql.queries import (all_investigators, all_items, 
-                                           all_skills, all_tags, 
+from creator.tests.graphql.queries import (all_investigators, all_items,
+                                           all_skills, all_spells, all_tags,
                                            create_investigator, create_item,
-                                           create_skill, create_tag,
-                                           delete_investigator, delete_item, 
-                                           delete_skill, delete_tag, 
+                                           create_skill, create_spell,
+                                           create_tag, delete_investigator,
+                                           delete_item, delete_skill,
+                                           delete_spell, delete_tag,
                                            edit_investigator, edit_item,
-                                           edit_skill, edit_tag,
-                                           one_investigator, one_item, 
-                                           one_skill, one_tag)
-
+                                           edit_skill, edit_spell, edit_tag,
+                                           one_investigator, one_item,
+                                           one_skill, one_spell, one_tag)
 from creator.tests.graphql.constants import GraphTest
 
 
@@ -142,6 +141,7 @@ class TestTagQuery(GraphTest):
         assert status == 200
         assert not data['allTags']['edges']
 
+
 class TestItemQuery(GraphTest):
     """Test class that encapsulates all items graphql query tests."""
     def test_items_query_node(self):
@@ -181,3 +181,44 @@ class TestItemQuery(GraphTest):
         data, status = self.run_query(one_item.format(uuid=item_uuid))
         assert status == 200
         assert not data['allItems']['edges']
+
+
+class TestSpellQuery(GraphTest):
+    """Test class that encapsulates all spells graphql query tests."""
+    def test_spell_query_node(self):
+        """Test acquisitions of a full list of spell or by a single uuid.
+        """
+        # Test acquisition of all the spell
+        data, status = self.run_query(all_spells)
+        assert status == 200
+        spells = data['allSpells']['edges']
+        assert spells
+        # Test acquisition of one spell
+        spell = choice(spells)['node']['uuid']
+        query = one_spell.format(uuid=spell)
+        data, status = self.run_query(query)
+        assert status == 200
+        assert len(data['allSpells']['edges']) == 1
+
+    def test_spells_full_mutation(self):
+        """This tests creates, updates and finally deletes a spell
+        through the graphql queries.
+        """
+        # Create spell
+        data, status = self.run_query(create_spell)
+        assert status == 200
+        spell_uuid = data['spellMutate']['spell']['uuid']
+
+        # Update spell
+        data, status = self.run_query(edit_spell.format(uuid=spell_uuid))
+        assert status == 200
+        item = data['spellMutate']['spell']
+        assert item['notes'] == 'test'
+        # Clean the db from the generated test spell
+        data, status = self.run_query(delete_spell.format(
+            uuid=spell_uuid))
+        assert status == 200
+        # Make sure the item no longer exists
+        data, status = self.run_query(one_spell.format(uuid=spell_uuid))
+        assert status == 200
+        assert not data['allSpells']['edges']

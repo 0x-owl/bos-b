@@ -23,8 +23,8 @@ def calc_proff_points(attribute: int, mod: int, inv: Investigator):
 
 def occ_skill_picker(occ_skills: list, inv: Investigator):
     """Pick a random skill from an occupation skill list."""
-    choice = randint(0, len(occ_skills)-1)
-    skill_pick = occ_skills[choice]
+    choice_ = randint(0, len(occ_skills)-1)
+    skill_pick = occ_skills[choice_]
     ret = None
     current_skills_cat = InvestigatorSkills.objects.filter(
         category=skill_pick.category,
@@ -42,8 +42,8 @@ def occ_skill_picker(occ_skills: list, inv: Investigator):
 
 def free_skill_picker(skills: list):
     """Pick a random skill from an occupation skill list."""
-    choice = randint(0, len(skills)-1)
-    skill_pick = skills[choice]
+    choice_ = randint(0, len(skills)-1)
+    skill_pick = skills[choice_]
     ret = skill_pick
 
     return ret

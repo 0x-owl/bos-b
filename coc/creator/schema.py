@@ -44,7 +44,6 @@ class Query(object):
         return inv
 
 
-
 class Mutation(object):
     tag_mutate = TagMutation.Field()
     item_mutate = ItemMutation.Field()
