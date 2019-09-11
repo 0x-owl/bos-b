@@ -5,15 +5,17 @@ and a seeded database, either locally or remotely for them to work.
 from random import choice
 
 from creator.tests.graphql.queries import (all_investigators, all_items,
-                                           all_skills, all_spells, all_tags,
-                                           create_investigator, create_item,
+                                           all_occ, all_skills, all_spells,
+                                           all_tags, create_investigator,
+                                           create_item, create_occ,
                                            create_skill, create_spell,
                                            create_tag, delete_investigator,
-                                           delete_item, delete_skill,
-                                           delete_spell, delete_tag,
-                                           edit_investigator, edit_item,
-                                           edit_skill, edit_spell, edit_tag,
-                                           one_investigator, one_item,
+                                           delete_item, delete_occ,
+                                           delete_skill, delete_spell,
+                                           delete_tag, edit_investigator,
+                                           edit_item, edit_occ, edit_skill,
+                                           edit_spell, edit_tag,
+                                           one_investigator, one_item, one_occ,
                                            one_skill, one_spell, one_tag)
 from creator.tests.graphql.constants import GraphTest
 
@@ -212,13 +214,54 @@ class TestSpellQuery(GraphTest):
         # Update spell
         data, status = self.run_query(edit_spell.format(uuid=spell_uuid))
         assert status == 200
-        item = data['spellMutate']['spell']
-        assert item['notes'] == 'test'
+        spell = data['spellMutate']['spell']
+        assert spell['notes'] == 'test'
         # Clean the db from the generated test spell
         data, status = self.run_query(delete_spell.format(
             uuid=spell_uuid))
         assert status == 200
-        # Make sure the item no longer exists
+        # Make sure the spell no longer exists
         data, status = self.run_query(one_spell.format(uuid=spell_uuid))
         assert status == 200
         assert not data['allSpells']['edges']
+
+
+class TestOccupationQuery(GraphTest):
+    """Test class that encapsulates all occupation graphql query tests."""
+    def test_occupations_query_node(self):
+        """Test acquisitions of a full list of occupations or by a single uuid.
+        """
+        # Test acquisition of all the occupations
+        data, status = self.run_query(all_occ)
+        assert status == 200
+        occs = data['allOccupations']['edges']
+        assert occs
+        # Test acquisition of one occupation
+        occ = choice(occs)['node']['uuid']
+        query = one_occ.format(uuid=occ)
+        data, status = self.run_query(query)
+        assert status == 200
+        assert len(data['allOccupations']['edges']) == 1
+
+    def test_occupations_full_mutation(self):
+        """This tests creates, updates and finally deletes a occupation
+        through the graphql queries.
+        """
+        # Create occupation
+        data, status = self.run_query(create_occ)
+        assert status == 200
+        occ_uuid = data['occupationMutate']['occupation']['uuid']
+
+        # Update occupation
+        data, status = self.run_query(edit_occ.format(uuid=occ_uuid))
+        assert status == 200
+        item = data['occupationMutate']['occupation']
+        assert item['title'] == 'Test-2'
+        # Clean the db from the generated test occupation
+        data, status = self.run_query(delete_occ.format(
+            uuid=occ_uuid))
+        assert status == 200
+        # Make sure the occupation no longer exists
+        data, status = self.run_query(one_occ.format(uuid=occ_uuid))
+        assert status == 200
+        assert not data['allOccupations']['edges']

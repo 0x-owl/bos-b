@@ -478,3 +478,109 @@ mutation{{
   }}
 }}
 """
+
+all_occ = """
+query{
+  allOccupations{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_occ = """
+query{{
+  allOccupations(uuid:"{uuid}"){{
+    edges{{
+      node{{
+        title,
+        description,
+        suggestedContacts,
+        creditRatingMin,
+        creditRatingMax,
+        id,
+        user{{
+          id,
+          username
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+create_occ = """
+mutation{
+  occupationMutate(
+    input:{
+      method: "CREATE",
+      title:"test-occuation-create",
+      user:1,
+      description:"Created occupation",
+      suggestedContacts:"test",
+      creditRatingMin:20,
+      creditRatingMax:40
+    }){
+    occupation{
+      uuid,
+      title,
+      description,
+      suggestedContacts,
+      creditRatingMin,
+      creditRatingMax
+    }
+  }
+}
+"""
+
+edit_occ = """
+mutation{{
+  occupationMutate(
+    input:{{
+      method: "UPDATE",
+      uuid: "{uuid}",
+      user: 1,
+      title: "Test-2",
+      description: "Update test",
+      suggestedContacts: "test, test2",
+      creditRatingMin: 10,
+      creditRatingMax: 15
+  }}){{
+    occupation{{
+      uuid,
+      title,
+      description,
+      suggestedContacts,
+      creditRatingMin,
+      creditRatingMax,
+      user{{
+        id,
+        username
+      }}
+    }}
+  }}
+}}
+"""
+
+delete_occ = """
+mutation{{
+  occupationMutate(
+    input:{{
+      method: "DELETE",
+      uuid: "{uuid}",
+      user: 1
+    }}){{
+    occupation{{
+      uuid,
+      title,
+      description,
+      suggestedContacts,
+      creditRatingMin,
+      creditRatingMax
+    }}
+  }}
+}}
+"""
