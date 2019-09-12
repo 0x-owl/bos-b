@@ -4,15 +4,35 @@
 
 COC_PATH=$(pwd)"/coc/manage.py"
 FIXTURES_PATH=$(pwd)"/coc/creator/fixtures"
-HELPERS_PATH=$(pwd)"/coc/creator/helpers/scripts/occ_skill_seeder.py"
+OCC_SKILL_SCRIPT=$(pwd)"/coc/creator/helpers/scripts/occ_skill_seeder.py"
+DATABASE_PATH=$(pwd)"/coc/db.sqlite3"
 
-echo "Loading core entities..."
+echo "[INFO] Erase sqlite db..."
+rm $DATABASE_PATH
+echo "[INFO] Create database..."
+touch $DATABASE_PATH
+echo "[INFO] Apply migrations..."
+python3 $COC_PATH makemigrations
+python3 $COC_PATH migrate
+
+echo "[INFO] Creating super user..."
+python3 $COC_PATH  createsuperuser --user root --email root@admin.com --noinput
+echo "[INFO] Input  password for root user..."
+python3 $COC_PATH changepassword root
+
+echo "[INFO] Apply project migrations..."
+python3 $COC_PATH makemigrations creator
+python3 $COC_PATH migrate
+
+echo "[INFO] Loading core entities..."
 python3 $COC_PATH loaddata $FIXTURES_PATH/core/*
-echo "Loading items..."
+echo "[INFO] Loading items..."
 python3 $COC_PATH loaddata $FIXTURES_PATH/items/*
-echo "Loading spells..."
+echo "[INFO] Loading spells..."
 python3 $COC_PATH loaddata $FIXTURES_PATH/spells/*
-echo "Generating Occupation Skill fixtures..."
-python3 $HELPERS_PATH 
-echo "Loading OccupationSkills..."
+echo "[INFO] Flush remaining Occupation skills fixtures from previous runs..."
+rm $FIXTURES_PATH/occupation_skills/*
+echo "[INFO] Generating Occupation Skill fixtures..."
+python3 $OCC_SKILL_SCRIPT
+echo "[INFO] Loading OccupationSkills..."
 python3 $COC_PATH loaddata $FIXTURES_PATH/occupation_skills/*
