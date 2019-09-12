@@ -10,6 +10,10 @@ echo "[INFO] Attaching correct python path..."
 echo PYTHONPATH="$(pwd)/coc" >> $(pwd)/env/bin/activate
 echo "export PYTHONPATH" >> $(pwd)/env/bin/activate
 
+awk 'NR==17{print "    unset PYTHONPATH"}19' $(pwd)/env/bin/activate >> $(pwd)/env/bin/activate2
+rm $(pwd)/env/bin/activate
+mv $(pwd)/env/bin/activate2 $(pwd)/env/bin/activate
+
 echo "[INFO] Activate virtualenv..."
 source $(pwd)/env/bin/activate
 
