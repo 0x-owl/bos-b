@@ -6,11 +6,15 @@ COC_PATH=$(pwd)"/coc/manage.py"
 FIXTURES_PATH=$(pwd)"/coc/creator/fixtures"
 OCC_SKILL_SCRIPT=$(pwd)"/coc/creator/helpers/scripts/occ_skill_seeder.py"
 DATABASE_PATH=$(pwd)"/coc/db.sqlite3"
+MIGRATIONS_PATH=$(pwd)"/coc/creator/migrations"
 
 echo "[INFO] Erase sqlite db..."
 rm $DATABASE_PATH
 echo "[INFO] Create database..."
 touch $DATABASE_PATH
+echo "[INFO] Flush creator migrations just in case..."
+rm -rf $MIGRATIONS_PATH/*
+
 echo "[INFO] Apply migrations..."
 python3 $COC_PATH makemigrations
 python3 $COC_PATH migrate
