@@ -26,40 +26,25 @@ class TestInvestigatorQuery(GraphTest):
         """Test acquisitions of a full list of investigators or by a single
         uuid.
         """
-        # Test acquisition of all the investigators
-        data, status = self.run_query(all_investigators)
-        assert status == 200
-        investigators = data['allInvestigators']['edges']
-        assert investigators
-        # Test acquisition of one investigator
-        investigator = choice(investigators)['node']['uuid']
-        query = one_investigator.format(uuid=investigator)
-        data, status = self.run_query(query)
-        assert status == 200
-        assert len(data['allInvestigators']['edges']) == 1
+        assert self.full_research_test(
+            all_investigators, one_investigator, 'allInvestigators')
 
     def test_investigators_full_mutation(self):
         """This tests creates, updates and finally deletes an investigator
         through the graphql queries.
         """
-        # Create investigator
-        data, status = self.run_query(create_investigator)
-        assert status == 200
-        inv_uuid = data['investigatorMutate']['investigator']['uuid']
-
-        # Update investigator
-        data, status = self.run_query(edit_investigator.format(uuid=inv_uuid))
-        assert status == 200
-        investigator = data['investigatorMutate']['investigator']
-        assert investigator['player'] == 'TestUpdate'
-        # Clean the db from the generated test investigators
-        data, status = self.run_query(delete_investigator.format(
-            uuid=inv_uuid))
-        assert status == 200
-        # Make sure the investigator no longer exists
-        data, status = self.run_query(one_investigator.format(uuid=inv_uuid))
-        assert status == 200
-        assert not data['allInvestigators']['edges']
+        test_result = self.full_mutation_test(
+            create_query=create_investigator,
+            edit_query=edit_investigator,
+            delete_query=delete_investigator,
+            one_query=one_investigator,
+            query_edge_name="allInvestigators",
+            mutation_edge_name="investigatorMutate",
+            node_name="investigator",
+            edition_key="player",
+            value_key="TestUpdate"
+        )
+        assert test_result
 
 
 class TestSkillQuery(GraphTest):
@@ -68,39 +53,25 @@ class TestSkillQuery(GraphTest):
         """Test acquisitions of a full list of skills or by a single
         uuid.
         """
-        # Test acquisition of all the skills
-        data, status = self.run_query(all_skills)
-        assert status == 200
-        skills = data['allSkills']['edges']
-        assert skills
-        # Test acquisition of one skill
-        skill = choice(skills)['node']['uuid']
-        query = one_skill.format(uuid=skill)
-        data, status = self.run_query(query)
-        assert status == 200
-        assert len(data['allSkills']['edges']) == 1
+        assert self.full_research_test(
+            all_skills, one_skill, "allSkills"
+        )
 
     def test_skills_full_mutation(self):
         """This tests creates, updates and finally deletes an skill
         through the graphql queries.
         """
-        # Create skill
-        data, status = self.run_query(create_skill)
-        assert status == 200
-        ski_uuid = data['skillMutate']['skill']['uuid']
-        # Update skill
-        data, status = self.run_query(edit_skill.format(uuid=ski_uuid))
-        assert status == 200
-        skill = data['skillMutate']['skill']
-        assert skill['title'] == 'Test-2'
-        # Clean the db from the generated test skills
-        data, status = self.run_query(delete_skill.format(
-            uuid=ski_uuid))
-        assert status == 200
-        # Make sure the skill no longer exists
-        data, status = self.run_query(one_skill.format(uuid=ski_uuid))
-        assert status == 200
-        assert not data['allSkills']['edges']
+        assert self.full_mutation_test(
+            create_query=create_skill,
+            edit_query=edit_skill,
+            delete_query=delete_skill,
+            one_query=one_skill,
+            query_edge_name="allSkills",
+            mutation_edge_name="skillMutate",
+            node_name="skill",
+            edition_key="title",
+            value_key="Test-2"
+        )
 
 
 class TestTagQuery(GraphTest):
@@ -109,39 +80,25 @@ class TestTagQuery(GraphTest):
         """Test acquisitions of a full list of tags or by a single
         uuid.
         """
-        # Test acquisition of all the tags
-        data, status = self.run_query(all_tags)
-        assert status == 200
-        tags = data['allTags']['edges']
-        assert tags
-        # Test acquisition of one tag
-        tag = choice(tags)['node']['uuid']
-        query = one_tag.format(uuid=tag)
-        data, status = self.run_query(query)
-        assert status == 200
-        assert len(data['allTags']['edges']) == 1
+        assert self.full_research_test(
+            all_tags, one_tag, 'allTags'
+        )
 
     def test_tag_full_mutation(self):
         """This tests creates, updates and finally deletes tags through the
         graphql queries.
         """
-        # Create tag
-        data, status = self.run_query(create_tag)
-        assert status == 200
-        tag_uuid = data['tagMutate']['tag']['uuid']
-        # Update tag
-        data, status = self.run_query(edit_tag.format(uuid=tag_uuid))
-        assert status == 200
-        tag = data['tagMutate']['tag']
-        assert tag['title'] == 'test-tag2'
-        # Clean the db from the generated test investigators
-        data, status = self.run_query(delete_tag.format(
-            uuid=tag_uuid))
-        assert status == 200
-        # Make sure the investigator no longer exists
-        data, status = self.run_query(one_tag.format(uuid=tag_uuid))
-        assert status == 200
-        assert not data['allTags']['edges']
+        assert self.full_mutation_test(
+            create_query=create_tag,
+            edit_query=edit_tag,
+            delete_query=delete_tag,
+            one_query=one_tag,
+            query_edge_name="allTags",
+            mutation_edge_name="tagMutate",
+            node_name="tag",
+            edition_key="title",
+            value_key="test-tag2"
+        )
 
 
 class TestItemQuery(GraphTest):
@@ -149,40 +106,25 @@ class TestItemQuery(GraphTest):
     def test_items_query_node(self):
         """Test acquisitions of a full list of items or by a single uuid.
         """
-        # Test acquisition of all the items
-        data, status = self.run_query(all_items)
-        assert status == 200
-        items = data['allItems']['edges']
-        assert items
-        # Test acquisition of one item
-        item = choice(items)['node']['uuid']
-        query = one_item.format(uuid=item)
-        data, status = self.run_query(query)
-        assert status == 200
-        assert len(data['allItems']['edges']) == 1
+        assert self.full_research_test(
+            all_items, one_item, 'allItems'
+        )
 
     def test_items_full_mutation(self):
         """This tests creates, updates and finally deletes an item
         through the graphql queries.
         """
-        # Create item
-        data, status = self.run_query(create_item)
-        assert status == 200
-        item_uuid = data['itemMutate']['item']['uuid']
-
-        # Update item
-        data, status = self.run_query(edit_item.format(uuid=item_uuid))
-        assert status == 200
-        item = data['itemMutate']['item']
-        assert item['description'] == 'TestUpdate'
-        # Clean the db from the generated test items
-        data, status = self.run_query(delete_item.format(
-            uuid=item_uuid))
-        assert status == 200
-        # Make sure the item no longer exists
-        data, status = self.run_query(one_item.format(uuid=item_uuid))
-        assert status == 200
-        assert not data['allItems']['edges']
+        assert self.full_mutation_test(
+            create_query=create_item,
+            edit_query=edit_item,
+            delete_query=delete_item,
+            one_query=one_item,
+            query_edge_name="allItems",
+            mutation_edge_name="itemMutate",
+            node_name="item",
+            edition_key="description",
+            value_key="TestUpdate"
+        )
 
 
 class TestSpellQuery(GraphTest):
@@ -190,40 +132,25 @@ class TestSpellQuery(GraphTest):
     def test_spell_query_node(self):
         """Test acquisitions of a full list of spell or by a single uuid.
         """
-        # Test acquisition of all the spell
-        data, status = self.run_query(all_spells)
-        assert status == 200
-        spells = data['allSpells']['edges']
-        assert spells
-        # Test acquisition of one spell
-        spell = choice(spells)['node']['uuid']
-        query = one_spell.format(uuid=spell)
-        data, status = self.run_query(query)
-        assert status == 200
-        assert len(data['allSpells']['edges']) == 1
+        assert self.full_research_test(
+            all_spells, one_spell, 'allSpells'
+        )
 
     def test_spells_full_mutation(self):
         """This tests creates, updates and finally deletes a spell
         through the graphql queries.
         """
-        # Create spell
-        data, status = self.run_query(create_spell)
-        assert status == 200
-        spell_uuid = data['spellMutate']['spell']['uuid']
-
-        # Update spell
-        data, status = self.run_query(edit_spell.format(uuid=spell_uuid))
-        assert status == 200
-        spell = data['spellMutate']['spell']
-        assert spell['notes'] == 'test'
-        # Clean the db from the generated test spell
-        data, status = self.run_query(delete_spell.format(
-            uuid=spell_uuid))
-        assert status == 200
-        # Make sure the spell no longer exists
-        data, status = self.run_query(one_spell.format(uuid=spell_uuid))
-        assert status == 200
-        assert not data['allSpells']['edges']
+        assert self.full_mutation_test(
+            create_query=create_spell,
+            edit_query=edit_spell,
+            delete_query=delete_spell,
+            one_query=one_spell,
+            query_edge_name="allSpells",
+            mutation_edge_name="spellMutate",
+            node_name="spell",
+            edition_key="notes",
+            value_key="test"
+        )
 
 
 class TestOccupationQuery(GraphTest):
@@ -231,37 +158,22 @@ class TestOccupationQuery(GraphTest):
     def test_occupations_query_node(self):
         """Test acquisitions of a full list of occupations or by a single uuid.
         """
-        # Test acquisition of all the occupations
-        data, status = self.run_query(all_occ)
-        assert status == 200
-        occs = data['allOccupations']['edges']
-        assert occs
-        # Test acquisition of one occupation
-        occ = choice(occs)['node']['uuid']
-        query = one_occ.format(uuid=occ)
-        data, status = self.run_query(query)
-        assert status == 200
-        assert len(data['allOccupations']['edges']) == 1
+        assert self.full_research_test(
+            all_occ, one_occ, 'allOccupations'
+        )
 
     def test_occupations_full_mutation(self):
         """This tests creates, updates and finally deletes a occupation
         through the graphql queries.
         """
-        # Create occupation
-        data, status = self.run_query(create_occ)
-        assert status == 200
-        occ_uuid = data['occupationMutate']['occupation']['uuid']
-
-        # Update occupation
-        data, status = self.run_query(edit_occ.format(uuid=occ_uuid))
-        assert status == 200
-        item = data['occupationMutate']['occupation']
-        assert item['title'] == 'Test-2'
-        # Clean the db from the generated test occupation
-        data, status = self.run_query(delete_occ.format(
-            uuid=occ_uuid))
-        assert status == 200
-        # Make sure the occupation no longer exists
-        data, status = self.run_query(one_occ.format(uuid=occ_uuid))
-        assert status == 200
-        assert not data['allOccupations']['edges']
+        assert self.full_mutation_test(
+            create_query=create_occ,
+            edit_query=edit_occ,
+            delete_query=delete_occ,
+            one_query=one_occ,
+            query_edge_name="allOccupations",
+            mutation_edge_name="occupationMutate",
+            node_name="occupation",
+            edition_key="title",
+            value_key="Test-2"
+        )
