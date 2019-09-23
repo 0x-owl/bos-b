@@ -1,12 +1,14 @@
 from graphene import ObjectType, Schema
-from creator.schema import Query as Q, Mutation as M
+
+from market.schema import Mutation as MMarket, Query as QMarket
+from creator.schema import Mutation as MCreator, Query as QCreator
 
 
-class Query(Q, ObjectType):
+class Query(QCreator, QMarket, ObjectType):
     pass
 
 
-class Mutation(M, ObjectType):
+class Mutation(MCreator, MMarket, ObjectType):
     pass
 
 

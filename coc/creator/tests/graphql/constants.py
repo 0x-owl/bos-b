@@ -26,6 +26,8 @@ class GraphTest:
             json={'query': query},
             headers=self.headers
         )
+        print(response)
+        print(response.json())
         data = response.json()['data']
         status = response.status_code
         return data, status
