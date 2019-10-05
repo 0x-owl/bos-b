@@ -15,7 +15,8 @@ APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'creator'
+    'creator',
+    'market'
 ]
 environ.setdefault("INSTALLED_APPS", str(APPS))
 get_wsgi_application()

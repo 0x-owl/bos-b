@@ -23,18 +23,18 @@ one_investigator = """
 """
 
 create_investigator = """
-mutation{
+mutation{{
   investigatorMutate(
-    input: {
-      uuid: "testtesttestuuid", user:1, name: "Test", player: "Test",
+    input: {{
+      user:1, name: "Test", player: "Test",
       sex: "M", residence: "Capital", birthplace: "Capital", age: 23,
       occupation: 7, ideologies: "prueba", description: "prueba",
       traits: "prueba", injureScars: "prueba", significantPeople:
       "prueba", treasuredPossessions: "prueba",
       encountersWithStrangeEntities: "prueba",
       meaningfulLocations: "prueba", method: "CREATE"
-    }){
-    investigator{
+    }}){{
+    investigator{{
         uuid,
         name,
         player,
@@ -42,9 +42,9 @@ mutation{
         residence,
         birthplace,
         age,
-        occupation{
+        occupation{{
           title
-        }
+        }}
         ideologies,
         description,
         traits,
@@ -53,9 +53,9 @@ mutation{
         significantPeople,
         treasuredPossessions,
         encountersWithStrangeEntities
-      }
-  }
-}
+      }}
+  }}
+}}
 
 """
 
@@ -152,27 +152,27 @@ one_skill = """
 """
 
 create_skill = """
-mutation{
+mutation{{
   skillMutate(
-    input:{
+    input:{{
       method: "CREATE",
       user: 1,
       title: "Test",
       description: "Created skill",
       defaultValue: 1
-    }){
-    skill{
+    }}){{
+    skill{{
       uuid,
-      user{
+      user{{
         username,
         id
-      }
+      }}
       title,
       description,
       defaultValue
-    }
-  }
-}
+    }}
+  }}
+}}
 """
 
 edit_skill = """
@@ -248,19 +248,19 @@ query{{
 """
 
 create_tag = """
-mutation{
+mutation{{
   tagMutate(
-    input:{
+    input:{{
       method: "CREATE",
       title: "test-tag",
       user: 1
-    }){
-      tag{
+    }}){{
+      tag{{
         uuid
         title
-      }
-  }
-}
+      }}
+    }}
+}}
 """
 
 edit_tag = """
@@ -340,25 +340,25 @@ search_item = """
 """
 
 create_item = """
-mutation{
+mutation{{
   itemMutate(
-    input:{
+    input:{{
       user: 1,
       method: "CREATE",
       title: "test-item-create",
       itemType: 2,
       description: "Created item",
       price: 25.6
-    }){
-    item{
+    }}){{
+    item{{
       uuid,
       title,
       itemType,
       description,
       price
-    }
-  }
-}
+    }}
+  }}
+}}
 """
 
 edit_item = """
@@ -428,24 +428,24 @@ query{{
 """
 
 create_spell = """
-mutation{
+mutation{{
   spellMutate(
-    input:{
+    input:{{
         method: "CREATE",
         notes: "test",
-      name: "tester spell",
-      description:"We may ommit this",
-      cost: "1D6 Sanity",
-      castingTime: "Immediate",
-      user: 1
-    }){
-    spell{
+        name: "tester spell",
+        description:"We may ommit this",
+        cost: "1D6 Sanity",
+        castingTime: "Immediate",
+        user: 1
+    }}){{
+    spell{{
       uuid,
       notes,
       name
-    }
-  }
-}
+    }}
+  }}
+}}
 """
 
 delete_spell = """
@@ -513,9 +513,9 @@ query{{
 """
 
 create_occ = """
-mutation{
+mutation{{
   occupationMutate(
-    input:{
+    input:{{
       method: "CREATE",
       title:"test-occuation-create",
       user:1,
@@ -523,17 +523,17 @@ mutation{
       suggestedContacts:"test",
       creditRatingMin:20,
       creditRatingMax:40
-    }){
-    occupation{
+    }}){{
+    occupation{{
       uuid,
       title,
       description,
       suggestedContacts,
       creditRatingMin,
       creditRatingMax
-    }
-  }
-}
+    }}
+  }}
+}}
 """
 
 edit_occ = """

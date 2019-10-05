@@ -1,13 +1,13 @@
 from creator.models import (CampaignInvestigator, Game, Inventory,
                             Investigator, InvestigatorAttribute,
-                            InvestigatorsDiary, InvestigatorSkills,
-                            InvestigatorTags, Item, ItemImage, ItemTag, 
-                            Mania, ManiaInvestigator, Occupation, 
-                            OccupationAttribute, OccupationSkills,
-                            OccupationTags, Phobia, PhobiaInvestigator,
-                            Portrait, SkillTags, Skills, Spell, SpellTag, 
-                            SpellType, Tag, TagDiary, Weapon, WeaponImage, 
-                            WeaponSkill, WeaponTag)
+                            InvestigatorSkills, InvestigatorTags,
+                            InvestigatorsDiary, Item, ItemImage, ItemTag, Mania,
+                            ManiaInvestigator, Occupation, OccupationAttribute,
+                            OccupationSkills, OccupationTags, Phobia,
+                            PhobiaInvestigator, Portrait, SkillTags, Skills,
+                            Spell, SpellTag, SpellType, Tag, TagDiary, Weapon,
+                            WeaponImage, WeaponSkill, WeaponTag)
+
 from django.contrib import admin
 
 # Register your models here.

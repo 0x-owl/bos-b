@@ -42,7 +42,8 @@ class TestInvestigatorQuery(GraphTest):
             mutation_edge_name="investigatorMutate",
             node_name="investigator",
             edition_key="player",
-            value_key="TestUpdate"
+            value_key="TestUpdate",
+            extras={}
         )
         assert test_result
 
@@ -70,7 +71,8 @@ class TestSkillQuery(GraphTest):
             mutation_edge_name="skillMutate",
             node_name="skill",
             edition_key="title",
-            value_key="Test-2"
+            value_key="Test-2",
+            extras={}
         )
 
 
@@ -97,7 +99,8 @@ class TestTagQuery(GraphTest):
             mutation_edge_name="tagMutate",
             node_name="tag",
             edition_key="title",
-            value_key="test-tag2"
+            value_key="test-tag2",
+            extras={}
         )
 
 
@@ -123,7 +126,8 @@ class TestItemQuery(GraphTest):
             mutation_edge_name="itemMutate",
             node_name="item",
             edition_key="description",
-            value_key="TestUpdate"
+            value_key="TestUpdate",
+            extras={}
         )
 
 
@@ -149,7 +153,8 @@ class TestSpellQuery(GraphTest):
             mutation_edge_name="spellMutate",
             node_name="spell",
             edition_key="notes",
-            value_key="test"
+            value_key="test",
+            extras={}
         )
 
 
@@ -175,5 +180,6 @@ class TestOccupationQuery(GraphTest):
             mutation_edge_name="occupationMutate",
             node_name="occupation",
             edition_key="title",
-            value_key="Test-2"
+            value_key="Test-2",
+            extras={}
         )

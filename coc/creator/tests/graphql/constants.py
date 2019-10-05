@@ -70,23 +70,25 @@ class GraphTest:
             node_name -- (str) name of node eg investigator.
             edition_key -- (str) name of the edited key.
             value_key -- (str) value of the edition.
+            extras -- (dict) extra values for query formatting
         """
         edge_name = kwargs['query_edge_name']
         node_name = kwargs['node_name']
         mutation_name = kwargs['mutation_edge_name']
-        data, status = self.run_query(kwargs['create_query'])
+        data, status = self.run_query(kwargs['create_query'].format(
+            **kwargs['extras']))
         assert status == 200
         node_uuid = data[mutation_name][node_name]['uuid']
-
         # Update node
         data, status = self.run_query(kwargs['edit_query'].format(
-            uuid=node_uuid))
+            uuid=node_uuid, **kwargs['extras']))
+        print(kwargs['edit_query'].format(uuid=node_uuid, **kwargs['extras']))
         assert status == 200
         node = data[kwargs['mutation_edge_name']][node_name]
         assert node[kwargs['edition_key']] == kwargs['value_key']
         # Clean the db from the generated test node
         data, status = self.run_query(kwargs['delete_query'].format(
-            uuid=node_uuid))
+            uuid=node_uuid, **kwargs['extras']))
         assert status == 200
         # Make sure the node no longer exists
         data, status = self.run_query(kwargs['one_query'].format(

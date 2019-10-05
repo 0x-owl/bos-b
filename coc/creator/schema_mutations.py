@@ -1,11 +1,13 @@
-from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
-                      relay)
-from django.contrib.auth.models import User
+from coc.utils import mutation_flow
 
 from creator.models import (Investigator, Item, Occupation, Portrait, Skills,
                             Spell, Tag)
 from creator.schema_nodes import (InvestigatorNode, ItemNode, OccupationNode,
                                   SkillNode, SpellNode, TagNode, UserNode)
+
+from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
+                      relay)
+from django.contrib.auth.models import User
 
 
 class TagMutation(ClientIDMutation):
@@ -29,20 +31,13 @@ class TagMutation(ClientIDMutation):
         usr = User.objects.get(pk=input_['user'])
         input_['user'] = usr
         method = input_.pop('method')
-        if method != "CREATE":
-            tag = Tag.objects.filter(uuid=input_.get('uuid', '')).first()
-            if method == 'DELETE':
-                tag.delete()
-                ret = tag
-            elif method == 'UPDATE':
-                tag.__dict__.update(input_)
-                tag.save()
-                ret = TagMutation(tag=tag)
-        else:
-            tag = Tag(**input_)
-            tag.save()
-            ret = TagMutation(tag=tag)
-
+        ret = mutation_flow(
+            TagMutation,
+            Tag,
+            method,
+            input_,
+            'tag'
+        )
         return ret
 
 
@@ -70,20 +65,13 @@ class ItemMutation(ClientIDMutation):
         usr = User.objects.get(pk=input_['user'])
         input_['user'] = usr
         method = input_.pop('method')
-        if method != "CREATE":
-            item = Item.objects.filter(uuid=input_.get('uuid', '')).first()
-            if method == 'DELETE':
-                item.delete()
-                ret = item
-            elif method == 'UPDATE':
-                item.__dict__.update(input_)
-                item.save()
-                ret = ItemMutation(item=item)
-        else:
-            item = Item(**input_)
-            item.save()
-            ret = ItemMutation(item=item)
-
+        ret = mutation_flow(
+            ItemMutation,
+            Item,
+            method,
+            input_,
+            'item'
+        )
         return ret
 
 
@@ -112,20 +100,13 @@ class OccupationMutation(ClientIDMutation):
         usr = User.objects.get(pk=input_['user'])
         input_['user'] = usr
         method = input_.pop('method')
-        if method != "CREATE":
-            occupation = Occupation.objects.filter(
-                uuid=input_.get('uuid', '')).first()
-            if method == 'DELETE':
-                occupation.delete()
-                ret = occupation
-            elif method == 'UPDATE':
-                occupation.__dict__.update(input_)
-                occupation.save()
-                ret = OccupationMutation(occupation=occupation)
-        else:
-            occupation = Occupation(**input_)
-            occupation.save()
-            ret = OccupationMutation(occupation=occupation)
+        ret = mutation_flow(
+            OccupationMutation,
+            Occupation,
+            method,
+            input_,
+            'occupation'
+        )
 
         return ret
 
@@ -152,20 +133,13 @@ class SkillMutation(ClientIDMutation):
         input_ = kwargs.get('input')
         input_['user'] = User.objects.filter(pk=input_.get('user')).first()
         method = input_.pop('method')
-        if method != "CREATE":
-            skill = Skills.objects.filter(uuid=input_.get('uuid', '')).first()
-            if method == 'DELETE':
-                skill.delete()
-                ret = skill
-            elif method == 'UPDATE':
-                skill.__dict__.update(input_)
-                skill.save()
-                ret = SkillMutation(skill=skill)
-        else:
-            skill = Skills(**input_)
-            skill.save()
-            ret = SkillMutation(skill=skill)
-
+        ret = mutation_flow(
+            SkillMutation,
+            Skills,
+            method,
+            input_,
+            'skill'
+        )
         return ret
 
 class InvestigatorMutation(ClientIDMutation):
@@ -200,25 +174,18 @@ class InvestigatorMutation(ClientIDMutation):
             Input class (title, user).
         """
         input_ = kwargs.get('input')
-        uuid = input_.pop('uuid')
         method = input_.pop('method')
         input_['user'] = User.objects.filter(pk=input_.get('user')).first()
         input_['occupation'] = Occupation.objects.filter(
             pk=input_.get('occupation')
         ).first()
-        if method != 'CREATE':
-            investigator = Investigator.objects.filter(uuid=uuid).first()
-            if method == 'DELETE':
-                investigator.delete()
-                ret = investigator
-            elif method == 'UPDATE':
-                investigator.__dict__.update(input_)
-                investigator.save()
-                ret = InvestigatorMutation(investigator=investigator)
-        else:
-            investigator = Investigator(**input_)
-            investigator.save()
-            ret = InvestigatorMutation(investigator=investigator)
+        ret = mutation_flow(
+            InvestigatorMutation,
+            Investigator,
+            method,
+            input_,
+            'investigator'
+        )
 
         return ret
 
@@ -250,18 +217,11 @@ class SpellMutation(ClientIDMutation):
         usr = User.objects.get(pk=input_['user'])
         input_['user'] = usr
         method = input_.pop('method')
-        if method != "CREATE":
-            spell = Spell.objects.filter(uuid=input_.get('uuid', '')).first()
-            if method == 'DELETE':
-                spell.delete()
-                ret = spell
-            elif method == 'UPDATE':
-                spell.__dict__.update(input_)
-                spell.save()
-                ret = SpellMutation(spell=spell)
-        else:
-            spell = Spell(**input_)
-            spell.save()
-            ret = SpellMutation(spell=spell)
-
+        ret = mutation_flow(
+            SpellMutation,
+            Spell,
+            method,
+            input_,
+            'spell'
+        )
         return ret
