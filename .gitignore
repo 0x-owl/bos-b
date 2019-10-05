@@ -7,6 +7,7 @@ coc/db.sqlite3
 coc/coc/db.sqlite3
 db.sqlite3
 coc/creator/migrations/*
+coc/market/migrations/*
 coc/creator/fixtures/occupation_skills/*
 coc/creator/fixtures/occupation_skills/
 */.DS_Store
