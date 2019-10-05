@@ -13,6 +13,7 @@ class TestContentQuery(GraphTest):
     def test_content_query_node(self):
         """Test acquisitions of a full list of contents or by a single uuid."""
         data, status = self.run_query(query=create_content.format())
+        assert status == 200
         content_uuid = data['contentMutate']['content']['uuid']
         assert self.full_research_test(
             all_content, one_content, 'allContents'
@@ -45,6 +46,7 @@ class TestContentTagQuery(GraphTest):
         """Test acquisitions of a full list of contents or by a single uuid."""
         # Build content and content tag to be looked for
         data, status = self.run_query(query=create_content.format())
+        assert status == 200
         content_uuid = data['contentMutate']['content']['uuid']
         tag_data, status = self.run_query(create_tag.format())
         tag_uuid = tag_data['tagMutate']['tag']['uuid']
@@ -53,6 +55,7 @@ class TestContentTagQuery(GraphTest):
             content_uuid=content_uuid,
             tag_uuid=tag_uuid
         ))
+        assert status == 200
         content_tag_uuid = contag['contentTagMutate']['contentTag']['uuid']
 
         assert self.full_research_test(
