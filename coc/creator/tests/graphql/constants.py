@@ -26,8 +26,6 @@ class GraphTest:
             json={'query': query},
             headers=self.headers
         )
-        print(response)
-        print(response.json())
         data = response.json()['data']
         status = response.status_code
         return data, status
@@ -82,7 +80,6 @@ class GraphTest:
         # Update node
         data, status = self.run_query(kwargs['edit_query'].format(
             uuid=node_uuid, **kwargs['extras']))
-        print(kwargs['edit_query'].format(uuid=node_uuid, **kwargs['extras']))
         assert status == 200
         node = data[kwargs['mutation_edge_name']][node_name]
         assert node[kwargs['edition_key']] == kwargs['value_key']
