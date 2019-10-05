@@ -5,18 +5,25 @@ and a seeded database, either locally or remotely for them to work.
 from random import choice
 
 from creator.tests.graphql.queries import (all_investigators, all_items,
-                                           all_occ, all_skills, all_spells,
-                                           all_tags, create_investigator,
-                                           create_item, create_occ,
+                                           all_manias, all_occ, all_phobias,
+                                           all_skills, all_spells, all_tags,
+                                           all_weapons, create_investigator,
+                                           create_item, create_mania,
+                                           create_occ, create_phobia,
                                            create_skill, create_spell,
-                                           create_tag, delete_investigator,
-                                           delete_item, delete_occ,
-                                           delete_skill, delete_spell,
-                                           delete_tag, edit_investigator,
-                                           edit_item, edit_occ, edit_skill,
-                                           edit_spell, edit_tag,
-                                           one_investigator, one_item, one_occ,
-                                           one_skill, one_spell, one_tag)
+                                           create_tag, create_weapon,
+                                           delete_investigator, delete_item,
+                                           delete_mania, delete_occ,
+                                           delete_phobia, delete_skill,
+                                           delete_spell, delete_tag,
+                                           delete_weapon, edit_investigator,
+                                           edit_item, edit_mania, edit_occ,
+                                           edit_phobia, edit_skill, edit_spell,
+                                           edit_tag, edit_weapon,
+                                           one_investigator, one_item,
+                                           one_mania, one_occ, one_phobia,
+                                           one_skill, one_spell, one_tag,
+                                           one_weapon)
 from creator.tests.graphql.constants import GraphTest
 
 
@@ -131,6 +138,37 @@ class TestItemQuery(GraphTest):
         )
 
 
+class TestWeaponQuery(GraphTest):
+    """Test class that encapsulates all weapons graphql query tests."""
+    def test_items_query_node(self):
+        """Test acquisitions of a full list of weapons or by a single uuid.
+        """
+        data_weapon, status = self.run_query(create_weapon.format())
+        assert status == 200
+        weapon_uuid = data_weapon['weaponMutate']['weapon']['uuid']
+        assert self.full_research_test(
+            all_weapons, one_weapon, 'allWeapons'
+        )
+        self.run_query(delete_weapon.format(uuid=weapon_uuid))
+
+    def test_weapon_full_mutation(self):
+        """This tests creates, updates and finally deletes a weapon
+        through the graphql queries.
+        """
+        assert self.full_mutation_test(
+            create_query=create_weapon,
+            edit_query=edit_weapon,
+            delete_query=delete_weapon,
+            one_query=one_weapon,
+            query_edge_name="allWeapons",
+            mutation_edge_name="weaponMutate",
+            node_name="weapon",
+            edition_key="description",
+            value_key="TestUpdate",
+            extras={}
+        )
+
+
 class TestSpellQuery(GraphTest):
     """Test class that encapsulates all spells graphql query tests."""
     def test_spell_query_node(self):
@@ -183,3 +221,58 @@ class TestOccupationQuery(GraphTest):
             value_key="Test-2",
             extras={}
         )
+
+
+class TestManiaQuery(GraphTest):
+    """Test class that encapsulates all manias graphql query tests."""
+    def test_manias_query_node(self):
+        """Test acquisitions of a full list of manias or by a single uuid.
+        """
+        assert self.full_research_test(
+            all_manias, one_mania, 'allManias'
+        )
+
+    def test_manias_full_mutation(self):
+        """This tests creates, updates and finally deletes a mania
+        through the graphql queries.
+        """
+        assert self.full_mutation_test(
+            create_query=create_mania,
+            edit_query=edit_mania,
+            delete_query=delete_mania,
+            one_query=one_mania,
+            query_edge_name="allManias",
+            mutation_edge_name="maniaMutate",
+            node_name="mania",
+            edition_key="title",
+            value_key="test-mania2",
+            extras={}
+        )
+
+
+class TestPhobiaQuery(GraphTest):
+    """Test class that encapsulates all phobias graphql query tests."""
+    def test_manias_query_node(self):
+        """Test acquisitions of a full list of phobias or by a single uuid.
+        """
+        assert self.full_research_test(
+            all_phobias, one_phobia, 'allPhobias'
+        )
+
+    def test_manias_full_mutation(self):
+        """This tests creates, updates and finally deletes a phobia
+        through the graphql queries.
+        """
+        assert self.full_mutation_test(
+            create_query=create_phobia,
+            edit_query=edit_phobia,
+            delete_query=delete_phobia,
+            one_query=one_phobia,
+            query_edge_name="allPhobias",
+            mutation_edge_name="phobiaMutate",
+            node_name="phobia",
+            edition_key="title",
+            value_key="test-phobia2",
+            extras={}
+        )
+

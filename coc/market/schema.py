@@ -1,4 +1,7 @@
-from market.schema_nodes import ContentNode, ContentTagNode
+from market.schema_nodes import (ContentInvestigatorNode, ContentItemlNode,
+                                 ContentManiaNode, ContentNode,
+                                 ContentPhobiaNode, ContentSpellNode,
+                                 ContentTagNode, ContentWeaponNode)
 from market.schema_mutations import ContentMutation, ContentTagMutation
 
 from graphene import relay
@@ -11,6 +14,25 @@ class Query(object):
 
     all_content_tags = DjangoFilterConnectionField(ContentTagNode)
     content_tag = relay.Node.Field(ContentTagNode)
+
+    all_content_investigators = DjangoFilterConnectionField(
+        ContentInvestigatorNode)
+    content_investigator = relay.Node.Field(ContentInvestigatorNode)
+
+    all_content_items = DjangoFilterConnectionField(ContentItemlNode)
+    content_item = relay.Node.Field(ContentItemlNode)
+
+    all_content_manias = DjangoFilterConnectionField(ContentManiaNode)
+    content_mania = relay.Node.Field(ContentManiaNode)
+
+    all_content_phobias = DjangoFilterConnectionField(ContentPhobiaNode)
+    content_phobia = relay.Node.Field(ContentPhobiaNode)
+
+    all_content_spells = DjangoFilterConnectionField(ContentSpellNode)
+    content_spell = relay.Node.Field(ContentSpellNode)
+
+    all_content_weapons = DjangoFilterConnectionField(ContentWeaponNode)
+    content_weapon = relay.Node.Field(ContentWeaponNode)
 
 
 class Mutation(object):

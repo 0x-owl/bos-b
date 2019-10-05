@@ -1,14 +1,16 @@
+from creator.models import Investigator
+from creator.schema_nodes import (InvestigatorNode, ItemNode, ManiaNode,
+                                  OccupationNode, PhobiaNode, PortraitNode,
+                                  SkillNode, SpellNode, TagNode, UserNode,
+                                  WeaponNode)
+from creator.schema_mutations import (InvestigatorMutation, ItemMutation,
+                                      ManiaMutation, OccupationMutation,
+                                      PhobiaMutation, SkillMutation,
+                                      SpellMutation, TagMutation, WeaponMutation)
+from creator.helpers.random_investigator import random_inv
+
 from graphene import Field, relay
 from graphene_django.filter import DjangoFilterConnectionField
-
-from creator.models import Investigator
-from creator.schema_nodes import (InvestigatorNode, ItemNode, OccupationNode,
-                                  PortraitNode, SkillNode, SpellNode, TagNode,
-                                  UserNode)
-from creator.schema_mutations import (InvestigatorMutation, ItemMutation,
-                                      OccupationMutation, SkillMutation,
-                                      SpellMutation, TagMutation)
-from creator.helpers.random_investigator import random_inv
 
 
 class Query(object):
@@ -36,6 +38,15 @@ class Query(object):
     all_spells = DjangoFilterConnectionField(SpellNode)
     spell = relay.Node.Field(SpellNode)
 
+    all_weapons = DjangoFilterConnectionField(WeaponNode)
+    weapon = relay.Node.Field(WeaponNode)
+
+    all_manias = DjangoFilterConnectionField(ManiaNode)
+    mania = relay.Node.Field(ManiaNode)
+
+    all_phobias = DjangoFilterConnectionField(PhobiaNode)
+    phobia = relay.Node.Field(PhobiaNode)
+
     random_investigator = Field(InvestigatorNode)
 
     def resolve_random_investigator(self, info):
@@ -51,3 +62,6 @@ class Mutation(object):
     skill_mutate = SkillMutation.Field()
     investigator_mutate = InvestigatorMutation.Field()
     spell_mutate = SpellMutation.Field()
+    weapon_mutate = WeaponMutation.Field()
+    mania_mutate = ManiaMutation.Field()
+    phobia_mutate = PhobiaMutation.Field()

@@ -1,3 +1,5 @@
+# Investigator
+
 all_investigators = """
 {
     allInvestigators{
@@ -125,6 +127,8 @@ mutation{{
 }}
 """
 
+# Skills
+
 all_skills = """
 {
     allSkills{
@@ -222,6 +226,8 @@ mutation{{
 }}
 """
 
+# Tag
+
 all_tags = """
 query{
   allTags{
@@ -298,6 +304,8 @@ mutation{{
     }}
 }}
 """
+
+# Item
 
 all_items = """
 {
@@ -403,6 +411,8 @@ mutation{{
 }}
 """
 
+# Spells
+
 all_spells = """
 query{
   allSpells{
@@ -478,6 +488,8 @@ mutation{{
   }}
 }}
 """
+
+# Occupations
 
 all_occ = """
 query{
@@ -582,5 +594,260 @@ mutation{{
       creditRatingMax
     }}
   }}
+}}
+"""
+
+
+# Weapons
+
+all_weapons = """
+{
+  allWeapons{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_weapon = """
+{{
+  allWeapons(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        title,
+        price,
+        description,
+        itemType,
+        id,
+        damage
+      }}
+    }}
+  }}
+}}
+"""
+
+create_weapon = """
+mutation{{
+  weaponMutate(
+    input:{{
+      user: 1,
+      method: "CREATE",
+      title: "test-weapon-create",
+      itemType: 3,
+      description: "Created weapon",
+      price: 25.6,
+      damage: "1d6",
+      malFunction: 100,
+      baseRange: "100ft"
+    }}){{
+    weapon{{
+      uuid,
+      title,
+      itemType,
+      description,
+      price,
+      damage
+    }}
+  }}
+}}
+"""
+
+edit_weapon = """
+mutation{{
+  weaponMutate(
+      input:{{
+        user: 1,
+        method: "UPDATE",
+        uuid: "{uuid}",
+        title: "Test-2",
+        description: "TestUpdate",
+        price: 5
+      }}){{
+    weapon{{
+      uuid,
+      title,
+      itemType,
+      description,
+      price
+    }}
+  }}
+}}
+"""
+
+delete_weapon = """
+mutation{{
+  weaponMutate(
+      input:{{
+        user: 1,
+        method: "DELETE",
+        uuid: "{uuid}"
+      }}){{
+    weapon{{
+      uuid,
+      title,
+      itemType,
+      description,
+      price
+    }}
+  }}
+}}
+"""
+
+# Mania
+
+all_manias = """
+query{
+  allManias{
+    edges{
+      node{
+        title,
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_mania = """
+query{{
+  allManias(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        title,
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_mania = """
+mutation{{
+  maniaMutate(
+    input:{{
+      method: "CREATE",
+      title: "test-mania",
+      description: "sample description"
+    }}){{
+      mania{{
+        uuid
+        title
+      }}
+    }}
+}}
+"""
+
+edit_mania = """
+mutation{{
+    maniaMutate(
+        input:{{
+            method: "UPDATE",
+            title: "test-mania2",
+            uuid: "{uuid}"
+        }}
+    ){{
+        mania{{
+            id,
+            uuid,
+            title
+        }}
+   }}
+}}
+"""
+
+delete_mania = """
+mutation{{
+    maniaMutate(
+        input: {{
+            uuid: "{uuid}",
+            method: "DELETE"
+          }}){{
+        mania{{
+            id,
+            uuid,
+            title
+        }}
+    }}
+}}
+"""
+
+# Phobias
+
+all_phobias = """
+query{
+  allPhobias{
+    edges{
+      node{
+        title,
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_phobia = """
+query{{
+  allPhobias(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        title,
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_phobia = """
+mutation{{
+  phobiaMutate(
+    input:{{
+      method: "CREATE",
+      title: "test-phobia",
+      description: "sample description"
+    }}){{
+      phobia{{
+        uuid
+        title
+      }}
+    }}
+}}
+"""
+
+edit_phobia = """
+mutation{{
+    phobiaMutate(
+        input:{{
+            method: "UPDATE",
+            title: "test-phobia2",
+            uuid: "{uuid}"
+        }}
+    ){{
+        phobia{{
+            id,
+            uuid,
+            title
+        }}
+   }}
+}}
+"""
+
+delete_phobia = """
+mutation{{
+    phobiaMutate(
+        input: {{
+            uuid: "{uuid}",
+            method: "DELETE"
+          }}){{
+        phobia{{
+            id,
+            uuid,
+            title
+        }}
+    }}
 }}
 """

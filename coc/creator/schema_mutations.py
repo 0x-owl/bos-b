@@ -1,9 +1,10 @@
 from coc.utils import mutation_flow
 
-from creator.models import (Investigator, Item, Occupation, Portrait, Skills,
-                            Spell, Tag)
-from creator.schema_nodes import (InvestigatorNode, ItemNode, OccupationNode,
-                                  SkillNode, SpellNode, TagNode, UserNode)
+from creator.models import (Investigator, Item, Mania, Occupation, Phobia,
+                            Portrait, Skills, Spell, Tag, Weapon)
+from creator.schema_nodes import (InvestigatorNode, ItemNode, ManiaNode,
+                                  OccupationNode, PhobiaNode, SkillNode,
+                                  SpellNode, TagNode, UserNode, WeaponNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
                       relay)
@@ -225,3 +226,101 @@ class SpellMutation(ClientIDMutation):
             'spell'
         )
         return ret
+
+
+class WeaponMutation(ClientIDMutation):
+    weapon = Field(WeaponNode)
+
+    class Input:
+        method = String()
+        user = Int()
+        uuid = String()
+        title = String()
+        item_type = Int()
+        description = String()
+        price = Float()
+        damage = String()
+        base_range = String()
+        uses_per_round = String()
+        mal_function = Int()
+
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        usr = User.objects.get(pk=input_['user'])
+        input_['user'] = usr
+        method = input_.pop('method')
+        ret = mutation_flow(
+            WeaponMutation,
+            Weapon,
+            method,
+            input_,
+            'weapon'
+        )
+        return ret
+
+
+class ManiaMutation(ClientIDMutation):
+    mania = Field(ManiaNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        title = String()
+        description = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        method = input_.pop('method')
+        ret = mutation_flow(
+            ManiaMutation,
+            Mania,
+            method,
+            input_,
+            'mania'
+        )
+        return ret
+
+
+class PhobiaMutation(ClientIDMutation):
+    phobia = Field(PhobiaNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        title = String()
+        description = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        method = input_.pop('method')
+        ret = mutation_flow(
+            PhobiaMutation,
+            Phobia,
+            method,
+            input_,
+            'phobia'
+        )
+        return ret
+

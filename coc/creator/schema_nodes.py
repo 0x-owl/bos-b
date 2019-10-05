@@ -1,13 +1,12 @@
 from json import loads
+from creator.models import (Investigator, Item, Mania, Occupation, Phobia,
+                            Portrait, Skills, Spell, Tag, Weapon)
 
 from graphene import ObjectType, String, relay
 from graphene_django.types import DjangoObjectType
 
 from django.core.serializers import serialize
 from django.contrib.auth.models import User
-
-from creator.models import (Investigator, Item, Occupation, Portrait, Skills,
-                            Spell, Tag)
 
 
 class UserNode(DjangoObjectType):
@@ -40,6 +39,19 @@ class ItemNode(DjangoObjectType):
             'title': ['exact', 'icontains', 'istartswith'],
             'item_type': ['exact'],
             'price': ['exact', 'gt', 'lt', 'gte', 'lte']
+        }
+        interfaces = (relay.Node, )
+
+
+class WeaponNode(DjangoObjectType):
+    class Meta:
+        model = Weapon
+        filter_fields = {
+            'uuid': ['exact'],
+            'title': ['exact', 'icontains', 'istartswith'],
+            'item_type': ['exact'],
+            'price': ['exact', 'gt', 'lt', 'gte', 'lte'],
+            'damage': ['exact', 'icontains', 'istartswith'],
         }
         interfaces = (relay.Node, )
 
@@ -106,5 +118,25 @@ class SpellNode(DjangoObjectType):
             'name': ['exact', 'icontains', 'istartswith'],
             'cost': ['exact', 'gt', 'lt', 'gte', 'lte'],
             'casting_time': ['exact', 'gt', 'lt', 'gte', 'lte']
+        }
+        interfaces = (relay.Node, )
+
+
+class ManiaNode(DjangoObjectType):
+    class Meta:
+        model = Mania
+        filter_fields = {
+            'uuid': ['exact'],
+            'title': ['exact', 'icontains', 'istartswith']
+        }
+        interfaces = (relay.Node, )
+
+
+class PhobiaNode(DjangoObjectType):
+    class Meta:
+        model = Phobia
+        filter_fields = {
+            'uuid': ['exact'],
+            'title': ['exact', 'icontains', 'istartswith']
         }
         interfaces = (relay.Node, )

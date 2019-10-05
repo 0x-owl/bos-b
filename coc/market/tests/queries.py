@@ -165,3 +165,257 @@ mutation{{
     }}
 }}
 """
+
+all_content_invs = """
+query{{
+  allContentInvestigators{{
+    edges{{
+      node{{
+        uuid
+        content{{
+          uuid,
+          title,
+          user{{
+            username
+          }}
+        }}
+        investigator{{
+          uuid,
+          name
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+one_content_inv = """
+query{{
+  allContentInvestigators(uuid:"{uuid}"){{
+    edges{{
+      node{{
+        uuid
+        content{{
+          uuid,
+          title,
+          user{{
+            username
+          }}
+        }}
+        investigator{{
+          uuid,
+          name
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+all_content_items = """
+query{{
+  allContentItems{{
+    edges{{
+      node{{
+        uuid,
+        content{{
+          uuid,
+          title
+        }},
+        item{{
+          uuid,
+          title,
+          user{{
+            username
+          }}
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+one_content_item = """
+query{{
+  allContentItems(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid,
+        content{{
+          uuid,
+          title
+        }},
+        item{{
+          uuid,
+          title,
+          user{{
+            username
+          }}
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+all_content_spells = """
+query{{
+  allContentSpells{{
+    edges{{
+      node{{
+        uuid,
+        content{{
+          uuid,
+          title
+        }},
+        spell{{
+          name,
+          alternativeNames,
+          uuid
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+one_content_spell = """
+query{{
+  allContentSpells(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid,
+        content{{
+          uuid,
+          title
+        }},
+        spell{{
+          name,
+          alternativeNames,
+          uuid
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+all_content_weapons = """
+query{{
+  allContentWeapons{{
+    edges{{
+      node{{
+        uuid,
+        content{{
+          uuid,
+          title
+        }},
+        weapon{{
+          uuid,
+          title
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+one_content_weapon = """
+query{{
+  allContentWeapons(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid,
+        content{{
+          uuid,
+          title
+        }},
+        weapon{{
+          uuid,
+          title
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+all_content_manias = """
+query{{
+  allContentManias{{
+    edges{{
+      node{{
+        uuid,
+        content{{
+          uuid,
+          title
+        }},
+        mania{{
+          uuid,
+          title
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+one_content_mania = """
+query{{
+  allContentManias(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid,
+        content{{
+          uuid,
+          title
+        }},
+        mania{{
+          uuid,
+          title
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+all_content_phobias = """
+query{{
+  allContentPhobias{{
+    edges{{
+      node{{
+        uuid,
+        content{{
+          uuid,
+          title
+        }},
+        phobia{{
+          uuid,
+          title
+        }}
+      }}
+    }}
+  }}
+}}
+"""
+
+one_content_phobia = """
+query{{
+  allContentPhobias(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid,
+        content{{
+          uuid,
+          title
+        }},
+        phobia{{
+          uuid,
+          title
+        }}
+      }}
+    }}
+  }}
+}}
+"""
