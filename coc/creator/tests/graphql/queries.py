@@ -852,9 +852,9 @@ mutation{{
 }}
 """
 
-all_phobiasInv = """
+all_phobias_inv = """
 query{
-  allPhobiasinv{
+  allPhobiasInv{
     edges{
       node{
         uuid
@@ -864,9 +864,9 @@ query{
 }
 """
 
-one_phobiaInv = """
+one_phobia_inv = """
 {{
-  allPhobiasinv(uuid: "{uuid}"){{
+  allPhobiasInv(uuid: "{uuid}"){{
     edges{{
       node{{
         uuid
@@ -876,7 +876,7 @@ one_phobiaInv = """
 }}
 """
 
-create_phobiaInv = """
+create_phobia_inv = """
 mutation{{
   phobiaInvMutate(
     input: {{
@@ -897,7 +897,7 @@ mutation{{
 }}
 """
 
-delete_phobiaInv = """
+delete_phobia_inv = """
 mutation{{
   phobiaInvMutate(
     input: {{
@@ -918,7 +918,7 @@ mutation{{
 }}
 """
 
-edit_phobiaInv = """
+edit_phobia_inv = """
 mutation{{
   phobiaInvMutate(
     input: {{
@@ -932,6 +932,93 @@ mutation{{
         name
       }},
       phobia{{
+        title
+      }},
+      duration
+    }}
+  }}
+}}
+"""
+
+all_manias_inv = """
+query{
+  allManiasInv{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_mania_inv = """
+{{
+  allManiasInv(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_mania_inv = """
+mutation{{
+  maniaInvMutate(
+    input:{{
+      method: "CREATE", mania: 10, investigator: 1, duration:10
+      }})
+  {{
+    maniaInv{{
+      uuid,
+      investigator{{
+        name
+      }},
+      mania{{
+        title
+      }},
+      duration
+    }}
+  }}
+}}
+"""
+
+delete_mania_inv = """
+mutation{{
+  maniaInvMutate(
+    input:{{
+      method: "DELETE", uuid: "{uuid}"
+      }})
+  {{
+    maniaInv{{
+      uuid,
+      investigator{{
+        name
+      }},
+      mania{{
+        title
+      }},
+      duration
+    }}
+  }}
+}}
+"""
+
+edit_mania_inv = """
+mutation{{
+  maniaInvMutate(
+    input:{{
+      method: "UPDATE", uuid: "{uuid}", mania: 40, investigator: 1, duration:40
+      }})
+  {{
+    maniaInv{{
+      uuid,
+      investigator{{
+        name
+      }},
+      mania{{
         title
       }},
       duration
