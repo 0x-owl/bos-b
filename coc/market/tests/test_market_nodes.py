@@ -165,6 +165,47 @@ class TestContentInvQuery(GraphTest):
         self.run_query(delete_content.format(uuid=content_uuid))
         self.run_query(delete_investigator.format(uuid=inv_uuid))
 
+    def test_content_inv_full_mutation(self):
+        """This test creates, updates and finally deletes a content through the
+        grapql queries.
+        """
+        content_data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = content_data['contentMutate']['content']['uuid']
+
+        first_inv_data, status = self.run_query(create_investigator.format())
+        assert status == 200
+        inv_uuid = first_inv_data['investigatorMutate']['investigator']['uuid']
+
+        second_inv_data, status = self.run_query(create_investigator.format())
+        assert status == 200
+        inv_uuid2 = second_inv_data['investigatorMutate'][
+            'investigator']['uuid']
+
+        test_result = self.full_mutation_test(
+            create_query=create_content_inv,
+            edit_query=edit_content_inv,
+            delete_query=delete_content_inv,
+            one_query=one_content_inv,
+            query_edge_name='allContentInvestigators',
+            mutation_edge_name='contentInvestigatorMutate',
+            node_name='contentInv',
+            edition_key='inv',
+            value_key={'uuid': inv_uuid2},
+            extras={
+                'content_uuid': content_uuid,
+                'inv_uuid': inv_uuid,
+                'inv_uuid_2': inv_uuid2
+            }
+        )
+
+        # clean up of auxiliar entities
+        self.run_query(delete_investigator.format(uuid=inv_uuid))
+        self.run_query(delete_investigator.format(uuid=inv_uuid2))
+        self.run_query(delete_content.format(uuid=content_uuid))
+
+        assert test_result
+
 
 class TestContentItemQuery(GraphTest):
     """Test class that encapsulates all content items graphql query tests."""
@@ -196,6 +237,46 @@ class TestContentItemQuery(GraphTest):
         ))
         self.run_query(delete_content.format(uuid=content_uuid))
         self.run_query(delete_item.format(uuid=item_uuid))
+
+    def test_content_item_full_mutation(self):
+        """This test creates, updates and finally deletes a content through the
+        grapql queries.
+        """
+        content_data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = content_data['contentMutate']['content']['uuid']
+
+        first_item_data, status = self.run_query(create_item.format())
+        assert status == 200
+        item_uuid = first_item_data['itemMutate']['item']['uuid']
+
+        second_item_data, status = self.run_query(create_item.format())
+        assert status == 200
+        item_uuid2 = second_item_data['itemMutate']['item']['uuid']
+
+        test_result = self.full_mutation_test(
+            create_query=create_content_item,
+            edit_query=edit_content_item,
+            delete_query=delete_content_item,
+            one_query=one_content_item,
+            query_edge_name='allContentItems',
+            mutation_edge_name='contentItemMutate',
+            node_name='contentItem',
+            edition_key='item',
+            value_key={'uuid': item_uuid2},
+            extras={
+                'content_uuid': content_uuid,
+                'item_uuid': item_uuid,
+                'item_uuid_2': item_uuid2
+            }
+        )
+
+        # clean up of auxiliar entities
+        self.run_query(delete_item.format(uuid=item_uuid))
+        self.run_query(delete_item.format(uuid=item_uuid2))
+        self.run_query(delete_content.format(uuid=content_uuid))
+
+        assert test_result
 
 
 class TestContentSpellQuery(GraphTest):
@@ -229,6 +310,46 @@ class TestContentSpellQuery(GraphTest):
         self.run_query(delete_content.format(uuid=content_uuid))
         self.run_query(delete_spell.format(uuid=spell_uuid))
 
+    def test_content_spell_full_mutation(self):
+        """This test creates, updates and finally deletes a content through the
+        grapql queries.
+        """
+        content_data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = content_data['contentMutate']['content']['uuid']
+
+        first_spell_data, status = self.run_query(create_spell.format())
+        assert status == 200
+        spell_uuid = first_spell_data['spellMutate']['spell']['uuid']
+
+        second_spell_data, status = self.run_query(create_spell.format())
+        assert status == 200
+        spell_uuid2 = second_spell_data['spellMutate']['spell']['uuid']
+
+        test_result = self.full_mutation_test(
+            create_query=create_content_spell,
+            edit_query=edit_content_spell,
+            delete_query=delete_content_spell,
+            one_query=one_content_spell,
+            query_edge_name='allContentSpells',
+            mutation_edge_name='contentSpellMutate',
+            node_name='contentSpell',
+            edition_key='spell',
+            value_key={'uuid': spell_uuid2},
+            extras={
+                'content_uuid': content_uuid,
+                'spell_uuid': spell_uuid,
+                'spell_uuid_2': spell_uuid2
+            }
+        )
+
+        # clean up of auxiliar entities
+        self.run_query(delete_spell.format(uuid=spell_uuid))
+        self.run_query(delete_spell.format(uuid=spell_uuid2))
+        self.run_query(delete_content.format(uuid=content_uuid))
+
+        assert test_result
+
 
 class TestContentWeaponQuery(GraphTest):
     """Test class that encapsulates all content weapon graphql query tests."""
@@ -260,6 +381,46 @@ class TestContentWeaponQuery(GraphTest):
         ))
         self.run_query(delete_content.format(uuid=content_uuid))
         self.run_query(delete_weapon.format(uuid=weapon_uuid))
+
+    def test_content_weapon_full_mutation(self):
+        """This test creates, updates and finally deletes a content through the
+        grapql queries.
+        """
+        content_data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = content_data['contentMutate']['content']['uuid']
+
+        first_weapon_data, status = self.run_query(create_weapon.format())
+        assert status == 200
+        weapon_uuid = first_weapon_data['weaponMutate']['weapon']['uuid']
+
+        second_weapon_data, status = self.run_query(create_weapon.format())
+        assert status == 200
+        weapon_uuid2 = second_weapon_data['weaponMutate']['weapon']['uuid']
+
+        test_result = self.full_mutation_test(
+            create_query=create_content_weapon,
+            edit_query=edit_content_weapon,
+            delete_query=delete_content_weapon,
+            one_query=one_content_weapon,
+            query_edge_name='allContentWeapons',
+            mutation_edge_name='contentWeaponMutate',
+            node_name='contentWeapon',
+            edition_key='weapon',
+            value_key={'uuid': weapon_uuid2},
+            extras={
+                'content_uuid': content_uuid,
+                'weapon_uuid': weapon_uuid,
+                'weapon_uuid_2': weapon_uuid2
+            }
+        )
+
+        # clean up of auxiliar entities
+        self.run_query(delete_weapon.format(uuid=weapon_uuid))
+        self.run_query(delete_weapon.format(uuid=weapon_uuid2))
+        self.run_query(delete_content.format(uuid=content_uuid))
+
+        assert test_result
 
 
 class TestContentManiaQuery(GraphTest):
@@ -293,6 +454,46 @@ class TestContentManiaQuery(GraphTest):
         self.run_query(delete_content.format(uuid=content_uuid))
         self.run_query(delete_mania.format(uuid=mania_uuid))
 
+    def test_content_mania_full_mutation(self):
+        """This test creates, updates and finally deletes a content through the
+        grapql queries.
+        """
+        content_data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = content_data['contentMutate']['content']['uuid']
+
+        first_mania_data, status = self.run_query(create_mania.format())
+        assert status == 200
+        mania_uuid = first_mania_data['maniaMutate']['mania']['uuid']
+
+        second_mania_data, status = self.run_query(create_mania.format())
+        assert status == 200
+        mania_uuid2 = second_mania_data['maniaMutate']['mania']['uuid']
+
+        test_result = self.full_mutation_test(
+            create_query=create_content_mania,
+            edit_query=edit_content_mania,
+            delete_query=delete_content_mania,
+            one_query=one_content_mania,
+            query_edge_name='allContentManias',
+            mutation_edge_name='contentManiaMutate',
+            node_name='contentMania',
+            edition_key='mania',
+            value_key={'uuid': mania_uuid2},
+            extras={
+                'content_uuid': content_uuid,
+                'mania_uuid': mania_uuid,
+                'mania_uuid_2': mania_uuid2
+            }
+        )
+
+        # clean up of auxiliar entities
+        self.run_query(delete_mania.format(uuid=mania_uuid))
+        self.run_query(delete_mania.format(uuid=mania_uuid2))
+        self.run_query(delete_content.format(uuid=content_uuid))
+
+        assert test_result
+
 
 class TestContentPhobiaQuery(GraphTest):
     """Test class that encapsulates all content phobia graphql query tests."""
@@ -324,3 +525,43 @@ class TestContentPhobiaQuery(GraphTest):
         ))
         self.run_query(delete_content.format(uuid=content_uuid))
         self.run_query(delete_phobia.format(uuid=phobia_uuid))
+
+    def test_content_phobia_full_mutation(self):
+        """This test creates, updates and finally deletes a content through the
+        grapql queries.
+        """
+        content_data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = content_data['contentMutate']['content']['uuid']
+
+        first_phobia_data, status = self.run_query(create_phobia.format())
+        assert status == 200
+        phobia_uuid = first_phobia_data['phobiaMutate']['phobia']['uuid']
+
+        second_phobia_data, status = self.run_query(create_phobia.format())
+        assert status == 200
+        phobia_uuid2 = second_phobia_data['phobiaMutate']['phobia']['uuid']
+
+        test_result = self.full_mutation_test(
+            create_query=create_content_phobia,
+            edit_query=edit_content_phobia,
+            delete_query=delete_content_phobia,
+            one_query=one_content_phobia,
+            query_edge_name='allContentPhobias',
+            mutation_edge_name='contentPhobiaMutate',
+            node_name='contentPhobia',
+            edition_key='phobia',
+            value_key={'uuid': phobia_uuid2},
+            extras={
+                'content_uuid': content_uuid,
+                'phobia_uuid': phobia_uuid,
+                'phobia_uuid_2': phobia_uuid2
+            }
+        )
+
+        # clean up of auxiliar entities
+        self.run_query(delete_phobia.format(uuid=phobia_uuid))
+        self.run_query(delete_phobia.format(uuid=phobia_uuid2))
+        self.run_query(delete_content.format(uuid=content_uuid))
+
+        assert test_result
