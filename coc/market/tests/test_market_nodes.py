@@ -1,10 +1,13 @@
-from market.tests.queries import (all_content, all_content_tags,
-                                  create_content, create_content_tag,
-                                  delete_content, delete_content_tag,
-                                  edit_content, edit_content_tag, one_content,
-                                  one_content_tag)
+from market.tests.queries import (all_content, all_content_invs,
+                                  all_content_tags, create_content,
+                                  create_content_inv, create_content_tag,
+                                  delete_content, delete_content_inv,
+                                  delete_content_tag, edit_content,
+                                  edit_content_inv, edit_content_tag,
+                                  one_content, one_content_inv, one_content_tag)
 
-from creator.tests.graphql.queries import create_tag, delete_tag
+from creator.tests.graphql.queries import (create_investigator, create_tag,
+                                           delete_investigator, delete_tag)
 from creator.tests.graphql.constants import GraphTest
 
 
@@ -110,3 +113,35 @@ class TestContentTagQuery(GraphTest):
         self.run_query(delete_content.format(uuid=content_uuid))
 
         assert test_result
+
+
+class TestContentInvQuery(GraphTest):
+    """Test class that encapsulates all content tag graphql query tests."""
+    def test_content_inv_query_node(self):
+        """Test acquisitions of a full list of contents or by a single uuid."""
+        # Build content and content tag to be looked for
+        data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = data['contentMutate']['content']['uuid']
+        inv_data, status = self.run_query(create_investigator.format())
+        inv_uuid = inv_data['investigatorMutate']['investigator']['uuid']
+        coninv, status = self.run_query(query=create_content_inv.format(
+            content_uuid=content_uuid,
+            inv_uuid=inv_uuid
+        ))
+        assert status == 200
+        content_inv_uuid = coninv['contentInvestigatorMutate'][
+            'contentInv']['uuid']
+
+        assert self.full_research_test(
+            all_content_invs, one_content_inv, 'allContentInvestigators'
+        )
+
+        # clean up auxiliar entities
+        self.run_query(delete_content_inv.format(
+            uuid=content_inv_uuid,
+            content_uuid=content_uuid,
+            inv_uuid=inv_uuid
+        ))
+        self.run_query(delete_content.format(uuid=content_uuid))
+        self.run_query(delete_investigator.format(uuid=inv_uuid))

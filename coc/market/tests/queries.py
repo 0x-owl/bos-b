@@ -1,3 +1,5 @@
+# Content
+
 all_content = """
 query{
   allContents{
@@ -63,6 +65,8 @@ mutation{{
   }}
 }}
 """
+
+# ContentTag
 
 all_content_tags = """
 query{
@@ -166,27 +170,25 @@ mutation{{
 }}
 """
 
+# ContentInv
+
 all_content_invs = """
-query{{
-  allContentInvestigators{{
-    edges{{
-      node{{
-        uuid
-        content{{
-          uuid,
-          title,
-          user{{
-            username
-          }}
-        }}
-        investigator{{
-          uuid,
-          name
-        }}
-      }}
-    }}
-  }}
-}}
+query{
+  allContentInvestigators{
+    edges{
+      node{
+        uuid,
+        content{
+          title
+        },
+        inv{
+          name,
+          uuid
+        }
+      }
+    }
+  }
+}
 """
 
 one_content_inv = """
@@ -202,7 +204,7 @@ query{{
             username
           }}
         }}
-        investigator{{
+        inv{{
           uuid,
           name
         }}
@@ -211,6 +213,64 @@ query{{
   }}
 }}
 """
+
+create_content_inv = """
+mutation{{
+    contentInvestigatorMutate(input:{{
+        method: "CREATE",
+        content: "{content_uuid}",
+        inv: "{inv_uuid}"
+    }}){{
+        contentInv{{
+            uuid
+        }}
+    }}
+}}
+"""
+
+edit_content_inv = """
+mutation{{
+    contentInvestigatorMutate(input:{{
+        method: "UPDATE",
+        content: "{content_uuid}",
+        inv: "{inv_uuid_2}",
+        uuid: "{uuid}"
+    }}){{
+        contentInv{{
+            uuid,
+            content{{
+                uuid
+            }},
+            inv{{
+                uuid
+            }}
+        }}
+    }}
+}}
+"""
+
+delete_content_inv = """
+mutation{{
+    contentInvestigatorMutate(input:{{
+        method: "DELETE",
+        content: "{content_uuid}",
+        inv: "{inv_uuid}",
+        uuid: "{uuid}"
+    }}){{
+        contentInv{{
+            uuid,
+            content{{
+                uuid
+            }},
+            inv{{
+                uuid
+            }}
+        }}
+    }}
+}}
+"""
+
+# ContentItems
 
 all_content_items = """
 query{{

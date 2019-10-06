@@ -2,7 +2,8 @@ from market.schema_nodes import (ContentInvestigatorNode, ContentItemlNode,
                                  ContentManiaNode, ContentNode,
                                  ContentPhobiaNode, ContentSpellNode,
                                  ContentTagNode, ContentWeaponNode)
-from market.schema_mutations import ContentMutation, ContentTagMutation
+from market.schema_mutations import (ContentInvestigatorMutation,
+                                     ContentMutation, ContentTagMutation)
 
 from graphene import relay
 from graphene_django.filter import DjangoFilterConnectionField
@@ -38,3 +39,4 @@ class Query(object):
 class Mutation(object):
     content_mutate = ContentMutation.Field()
     content_tag_mutate = ContentTagMutation.Field()
+    content_investigator_mutate = ContentInvestigatorMutation.Field()
