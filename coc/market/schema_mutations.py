@@ -1,10 +1,10 @@
-from copy import copy
 from coc.utils import mutation_flow
-from creator.models import Tag, Investigator
+from creator.models import Investigator, Item, Spell, Tag
 
-from market.models import Content, ContentInvestigator, ContentTag
-from market.schema_nodes import (ContentInvestigatorNode, ContentNode,
-                                 ContentTagNode)
+from market.models import (Content, ContentInvestigator, ContentItem,
+                           ContentSpell, ContentTag)
+from market.schema_nodes import (ContentInvestigatorNode, ContentItemNode,
+                                 ContentNode, ContentSpellNode, ContentTagNode)
 
 from graphene import ClientIDMutation, Field, Int, String
 from django.contrib.auth.models import User
@@ -105,5 +105,71 @@ class ContentInvestigatorMutation(ClientIDMutation):
             method,
             input_,
             'content_inv'
+        )
+        return ret
+
+
+class ContentItemMutation(ClientIDMutation):
+    content_item = Field(ContentItemNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        content = String()
+        item = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        item = Item.objects.get(uuid=input_.get('item', ''))
+        content = Content.objects.get(uuid=input_.get('content', ''))
+        input_['item'] = item
+        input_['content'] = content
+        method = input_.pop('method')
+        ret = mutation_flow(
+            ContentItemMutation,
+            ContentItem,
+            method,
+            input_,
+            'content_item'
+        )
+        return ret
+
+
+class ContentSpellMutation(ClientIDMutation):
+    content_spell = Field(ContentSpellNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        content = String()
+        spell = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        spell = Spell.objects.get(uuid=input_.get('spell', ''))
+        content = Content.objects.get(uuid=input_.get('content', ''))
+        input_['spell'] = spell
+        input_['content'] = content
+        method = input_.pop('method')
+        ret = mutation_flow(
+            ContentSpellMutation,
+            ContentSpell,
+            method,
+            input_,
+            'content_spell'
         )
         return ret

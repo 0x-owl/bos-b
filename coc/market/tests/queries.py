@@ -273,26 +273,23 @@ mutation{{
 # ContentItems
 
 all_content_items = """
-query{{
-  allContentItems{{
-    edges{{
-      node{{
+query{
+  allContentItems{
+    edges{
+      node{
         uuid,
-        content{{
+        item{
           uuid,
           title
-        }},
-        item{{
+        },
+        content{
           uuid,
-          title,
-          user{{
-            username
-          }}
-        }}
-      }}
-    }}
-  }}
-}}
+          title
+        }
+      }
+    }
+  }
+}
 """
 
 one_content_item = """
@@ -318,25 +315,85 @@ query{{
 }}
 """
 
+
+create_content_item = """
+mutation{{
+    contentItemMutate(input:{{
+        method: "CREATE",
+        content: "{content_uuid}",
+        item: "{item_uuid}"
+    }}){{
+        contentItem{{
+            uuid
+        }}
+    }}
+}}
+"""
+
+edit_content_item = """
+mutation{{
+    contentItemMutate(input:{{
+        method: "UPDATE",
+        content: "{content_uuid}",
+        item: "{item_uuid_2}",
+        uuid: "{uuid}"
+    }}){{
+        contentItem{{
+            uuid,
+            content{{
+                uuid
+            }},
+            item{{
+                uuid
+            }}
+        }}
+    }}
+}}
+"""
+
+delete_content_item = """
+mutation{{
+    contentItemMutate(input:{{
+        method: "DELETE",
+        content: "{content_uuid}",
+        item: "{item_uuid}",
+        uuid: "{uuid}"
+    }}){{
+        contentItem{{
+            uuid,
+            content{{
+                uuid
+            }},
+            item{{
+                uuid
+            }}
+        }}
+    }}
+}}
+"""
+
+# ContentSpell
+
+
 all_content_spells = """
-query{{
-  allContentSpells{{
-    edges{{
-      node{{
+query{
+  allContentSpells{
+    edges{
+      node{
         uuid,
-        content{{
+        content{
           uuid,
           title
-        }},
-        spell{{
+        },
+        spell{
           name,
           alternativeNames,
           uuid
-        }}
-      }}
-    }}
-  }}
-}}
+        }
+      }
+    }
+  }
+}
 """
 
 one_content_spell = """
@@ -359,6 +416,64 @@ query{{
   }}
 }}
 """
+
+create_content_spell = """
+mutation{{
+    contentSpellMutate(input:{{
+        method: "CREATE",
+        content: "{content_uuid}",
+        spell: "{spell_uuid}"
+    }}){{
+        contentSpell{{
+            uuid
+        }}
+    }}
+}}
+"""
+
+edit_content_spell = """
+mutation{{
+    contentSpellMutate(input:{{
+        method: "UPDATE",
+        content: "{content_uuid}",
+        spell: "{spell_uuid_2}",
+        uuid: "{uuid}"
+    }}){{
+        contentSpell{{
+            uuid,
+            content{{
+                uuid
+            }},
+            spell{{
+                uuid
+            }}
+        }}
+    }}
+}}
+"""
+
+delete_content_spell = """
+mutation{{
+    contentSpellMutate(input:{{
+        method: "DELETE",
+        content: "{content_uuid}",
+        spell: "{spell_uuid}",
+        uuid: "{uuid}"
+    }}){{
+        contentSpell{{
+            uuid,
+            content{{
+                uuid
+            }},
+            spell{{
+                uuid
+            }}
+        }}
+    }}
+}}
+"""
+
+# ContentWeapons
 
 all_content_weapons = """
 query{{

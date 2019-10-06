@@ -59,7 +59,7 @@ class ContentSpellNode(DjangoObjectType):
         interfaces = (relay.Node, )
 
 
-class ContentItemlNode(DjangoObjectType):
+class ContentItemNode(DjangoObjectType):
     class Meta:
         model = ContentItem
         filter_fields = {

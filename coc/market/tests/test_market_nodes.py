@@ -1,13 +1,24 @@
 from market.tests.queries import (all_content, all_content_invs,
+                                  all_content_items, all_content_spells,
                                   all_content_tags, create_content,
-                                  create_content_inv, create_content_tag,
+                                  create_content_inv, create_content_item,
+                                  create_content_spell, create_content_tag,
                                   delete_content, delete_content_inv,
+                                  delete_content_item, delete_content_spell,
                                   delete_content_tag, edit_content,
-                                  edit_content_inv, edit_content_tag,
-                                  one_content, one_content_inv, one_content_tag)
+                                  edit_content_inv, edit_content_item,
+                                  edit_content_spell, edit_content_tag,
+                                  one_content, one_content_inv,
+                                  one_content_item, one_content_spell,
+                                  one_content_tag)
 
-from creator.tests.graphql.queries import (create_investigator, create_tag,
-                                           delete_investigator, delete_tag)
+from creator.tests.graphql.queries import (create_investigator, create_item,
+                                           create_mania, create_phobia,
+                                           create_spell, create_tag,
+                                           create_weapon, delete_investigator,
+                                           delete_item, delete_mania,
+                                           delete_phobia, delete_spell,
+                                           delete_tag, delete_weapon)
 from creator.tests.graphql.constants import GraphTest
 
 
@@ -116,7 +127,8 @@ class TestContentTagQuery(GraphTest):
 
 
 class TestContentInvQuery(GraphTest):
-    """Test class that encapsulates all content tag graphql query tests."""
+    """Test class that encapsulates all content investigator graphql query
+    tests."""
     def test_content_inv_query_node(self):
         """Test acquisitions of a full list of contents or by a single uuid."""
         # Build content and content tag to be looked for
@@ -145,3 +157,67 @@ class TestContentInvQuery(GraphTest):
         ))
         self.run_query(delete_content.format(uuid=content_uuid))
         self.run_query(delete_investigator.format(uuid=inv_uuid))
+
+
+class TestContentItemQuery(GraphTest):
+    """Test class that encapsulates all content items graphql query tests."""
+    def test_content_item_query_node(self):
+        """Test acquisitions of a full list of contents or by a single uuid."""
+        # Build content and content tag to be looked for
+        data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = data['contentMutate']['content']['uuid']
+        item_data, status = self.run_query(create_item.format())
+        item_uuid = item_data['itemMutate']['item']['uuid']
+        con_item, status = self.run_query(query=create_content_item.format(
+            content_uuid=content_uuid,
+            item_uuid=item_uuid
+        ))
+        assert status == 200
+        content_item_uuid = con_item['contentItemMutate'][
+            'contentItem']['uuid']
+
+        assert self.full_research_test(
+            all_content_items, one_content_item, 'allContentItems'
+        )
+
+        # clean up auxiliar entities
+        self.run_query(delete_content_item.format(
+            uuid=content_item_uuid,
+            content_uuid=content_uuid,
+            item_uuid=item_uuid
+        ))
+        self.run_query(delete_content.format(uuid=content_uuid))
+        self.run_query(delete_item.format(uuid=item_uuid))
+
+
+class TestContentSpellQuery(GraphTest):
+    """Test class that encapsulates all content spell graphql query tests."""
+    def test_content_item_query_node(self):
+        """Test acquisitions of a full list of contents or by a single uuid."""
+        # Build content and content tag to be looked for
+        data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = data['contentMutate']['content']['uuid']
+        spell_data, status = self.run_query(create_spell.format())
+        spell_uuid = spell_data['spellMutate']['spell']['uuid']
+        con_item, status = self.run_query(query=create_content_spell.format(
+            content_uuid=content_uuid,
+            spell_uuid=spell_uuid
+        ))
+        assert status == 200
+        content_spell_uuid = con_item['contentSpellMutate'][
+            'contentSpell']['uuid']
+
+        assert self.full_research_test(
+            all_content_spells, one_content_spell, 'allContentSpells'
+        )
+
+        # clean up auxiliar entities
+        self.run_query(delete_content_spell.format(
+            uuid=content_spell_uuid,
+            content_uuid=content_uuid,
+            spell_uuid=spell_uuid
+        ))
+        self.run_query(delete_content.format(uuid=content_uuid))
+        self.run_query(delete_spell.format(uuid=spell_uuid))
