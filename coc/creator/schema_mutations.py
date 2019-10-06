@@ -1,10 +1,12 @@
 from coc.utils import mutation_flow
 
 from creator.models import (Investigator, Item, Mania, Occupation, Phobia,
-                            Portrait, Skills, Spell, Tag, Weapon)
+                            PhobiaInvestigator, Portrait, Skills, Spell, Tag,
+                            Weapon)
 from creator.schema_nodes import (InvestigatorNode, ItemNode, ManiaNode,
-                                  OccupationNode, PhobiaNode, SkillNode,
-                                  SpellNode, TagNode, UserNode, WeaponNode)
+                                  OccupationNode, PhobiaNode, PhobiaInvNode,
+                                  SkillNode, SpellNode, TagNode, UserNode,
+                                  WeaponNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
                       relay)
@@ -324,3 +326,37 @@ class PhobiaMutation(ClientIDMutation):
         )
         return ret
 
+class PhobiaInvMutation(ClientIDMutation):
+    phobiaInv = Field(PhobiaInvNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        investigator = Int()
+        phobia = Int()
+        duration = Int()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        method = input_.pop('method')
+        input_['investigator'] = Investigator.objects.filter(
+            pk=input_.get('investigator')).first()
+        input_['phobia'] = Phobia.objects.filter(
+            pk=input_.get('phobia')
+        ).first()
+        ret = mutation_flow(
+            PhobiaInvMutation,
+            PhobiaInvestigator,
+            method,
+            input_,
+            'phobiaInv'
+        )
+
+        return ret

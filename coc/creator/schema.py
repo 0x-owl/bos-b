@@ -1,12 +1,14 @@
 from creator.models import Investigator
 from creator.schema_nodes import (InvestigatorNode, ItemNode, ManiaNode,
-                                  OccupationNode, PhobiaNode, PortraitNode,
-                                  SkillNode, SpellNode, TagNode, UserNode,
+                                  OccupationNode, PhobiaNode, PhobiaInvNode,
+                                  PortraitNode, SkillNode, SpellNode, TagNode,
+                                  UserNode,
                                   WeaponNode)
 from creator.schema_mutations import (InvestigatorMutation, ItemMutation,
                                       ManiaMutation, OccupationMutation,
-                                      PhobiaMutation, SkillMutation,
-                                      SpellMutation, TagMutation, WeaponMutation)
+                                      PhobiaMutation, PhobiaInvMutation,
+                                      SkillMutation, SpellMutation,
+                                      TagMutation, WeaponMutation)
 from creator.helpers.random_investigator import random_inv
 
 from graphene import Field, relay
@@ -47,6 +49,9 @@ class Query(object):
     all_phobias = DjangoFilterConnectionField(PhobiaNode)
     phobia = relay.Node.Field(PhobiaNode)
 
+    all_phobiasInv = DjangoFilterConnectionField(PhobiaInvNode)
+    phobiaInv = relay.Node.Field(PhobiaInvNode)
+
     random_investigator = Field(InvestigatorNode)
 
     def resolve_random_investigator(self, info):
@@ -65,3 +70,4 @@ class Mutation(object):
     weapon_mutate = WeaponMutation.Field()
     mania_mutate = ManiaMutation.Field()
     phobia_mutate = PhobiaMutation.Field()
+    phobiaInv_mutate = PhobiaInvMutation.Field()

@@ -851,3 +851,91 @@ mutation{{
     }}
 }}
 """
+
+all_phobiasInv = """
+query{
+  allPhobiasinv{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_phobiaInv = """
+{{
+  allPhobiasinv(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_phobiaInv = """
+mutation{{
+  phobiaInvMutate(
+    input: {{
+      method: "CREATE", investigator: 1, duration: 10, phobia: 4
+      }})
+  {{
+    phobiaInv{{
+      uuid,
+      investigator{{
+        name
+      }},
+      phobia{{
+        title
+      }},
+      duration
+    }}
+  }}
+}}
+"""
+
+delete_phobiaInv = """
+mutation{{
+  phobiaInvMutate(
+    input: {{
+      method: "DELETE", uuid: "{uuid}"
+      }})
+  {{
+    phobiaInv{{
+      uuid,
+      investigator{{
+        name
+      }},
+      phobia{{
+        title
+      }},
+      duration
+    }}
+  }}
+}}
+"""
+
+edit_phobiaInv = """
+mutation{{
+  phobiaInvMutate(
+    input: {{
+      method: "UPDATE", uuid: "{uuid}",
+      investigator: 1, phobia: 25, duration: 40
+      }})
+  {{
+    phobiaInv{{
+      uuid,
+      investigator{{
+        name
+      }},
+      phobia{{
+        title
+      }},
+      duration
+    }}
+  }}
+}}
+"""
