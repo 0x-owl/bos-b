@@ -1,6 +1,7 @@
 from json import loads
 from creator.models import (Investigator, Item, Mania, Occupation, Phobia,
-                            Portrait, Skills, Spell, Tag, Weapon)
+                            PhobiaInvestigator, Portrait, Skills, Spell, Tag,
+                            Weapon)
 
 from graphene import ObjectType, String, relay
 from graphene_django.types import DjangoObjectType
@@ -138,5 +139,17 @@ class PhobiaNode(DjangoObjectType):
         filter_fields = {
             'uuid': ['exact'],
             'title': ['exact', 'icontains', 'istartswith']
+        }
+        interfaces = (relay.Node, )
+
+
+class PhobiaInvNode(DjangoObjectType):
+    class Meta:
+        model = PhobiaInvestigator
+        filter_fields = {
+            'uuid': ['exact'],
+            'investigator': ['exact'],
+            'phobia': ['exact'],
+            'duration': ['exact', 'gt', 'lt', 'gte', 'lte']
         }
         interfaces = (relay.Node, )

@@ -6,24 +6,26 @@ from random import choice
 
 from creator.tests.graphql.queries import (all_investigators, all_items,
                                            all_manias, all_occ, all_phobias,
-                                           all_skills, all_spells, all_tags,
-                                           all_weapons, create_investigator,
-                                           create_item, create_mania,
-                                           create_occ, create_phobia,
+                                           all_phobiasInv, all_skills,
+                                           all_spells, all_tags, all_weapons,
+                                           create_investigator, create_item,
+                                           create_mania, create_occ,
+                                           create_phobia, create_phobiaInv,
                                            create_skill, create_spell,
                                            create_tag, create_weapon,
                                            delete_investigator, delete_item,
                                            delete_mania, delete_occ,
-                                           delete_phobia, delete_skill,
-                                           delete_spell, delete_tag,
-                                           delete_weapon, edit_investigator,
-                                           edit_item, edit_mania, edit_occ,
-                                           edit_phobia, edit_skill, edit_spell,
-                                           edit_tag, edit_weapon,
+                                           delete_phobia, delete_phobiaInv,
+                                           delete_skill, delete_spell,
+                                           delete_tag, delete_weapon,
+                                           edit_investigator, edit_item,
+                                           edit_mania, edit_occ, edit_phobia,
+                                           edit_phobiaInv, edit_skill,
+                                           edit_spell, edit_tag, edit_weapon,
                                            one_investigator, one_item,
                                            one_mania, one_occ, one_phobia,
-                                           one_skill, one_spell, one_tag,
-                                           one_weapon)
+                                           one_phobiaInv, one_skill, one_spell,
+                                           one_tag, one_weapon)
 from creator.tests.graphql.constants import GraphTest
 
 
@@ -252,14 +254,14 @@ class TestManiaQuery(GraphTest):
 
 class TestPhobiaQuery(GraphTest):
     """Test class that encapsulates all phobias graphql query tests."""
-    def test_manias_query_node(self):
+    def test_phobias_query_node(self):
         """Test acquisitions of a full list of phobias or by a single uuid.
         """
         assert self.full_research_test(
             all_phobias, one_phobia, 'allPhobias'
         )
 
-    def test_manias_full_mutation(self):
+    def test_phobias_full_mutation(self):
         """This tests creates, updates and finally deletes a phobia
         through the graphql queries.
         """
@@ -276,3 +278,29 @@ class TestPhobiaQuery(GraphTest):
             extras={}
         )
 
+
+class TestPhobiaInvQuery(GraphTest):
+    """Test class that encapsulates all phobias graphql query tests."""
+    def test_phobiasInv_query_node(self):
+        """Test acquisitions of a full list of phobias or by a single uuid.
+        """
+        assert self.full_research_test(
+            all_phobiasInv, one_phobiaInv, 'allPhobiasinv'
+        )
+
+    def test_phobiasInv_full_mutation(self):
+        """This tests creates, updates and finally deletes a phobia
+        through the graphql queries.
+        """
+        assert self.full_mutation_test(
+            create_query=create_phobiaInv,
+            edit_query=edit_phobiaInv,
+            delete_query=delete_phobiaInv,
+            one_query=one_phobiaInv,
+            query_edge_name="allPhobiasinv",
+            mutation_edge_name="phobiaInvMutate",
+            node_name="phobiaInv",
+            edition_key="duration",
+            value_key=40,
+            extras={}
+        )

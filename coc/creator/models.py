@@ -626,5 +626,5 @@ class PhobiaInvestigator(Model):
     def __str__(self):
         """String representation of the object."""
         title = '{} - {} - {}'.format(
-            self.phobias.title, self.investigator.name, self.duration)
+            self.phobia.title, self.investigator.name, self.duration)
         return title
