@@ -1,17 +1,22 @@
 from market.tests.queries import (all_content, all_content_invs,
-                                  all_content_items, all_content_spells,
+                                  all_content_items, all_content_manias,
+                                  all_content_phobias, all_content_spells,
                                   all_content_tags, all_content_weapons,
                                   create_content, create_content_inv,
-                                  create_content_item, create_content_spell,
+                                  create_content_item, create_content_mania,
+                                  create_content_phobia, create_content_spell,
                                   create_content_tag, create_content_weapon,
                                   delete_content, delete_content_inv,
-                                  delete_content_item, delete_content_spell,
+                                  delete_content_item, delete_content_mania,
+                                  delete_content_phobia, delete_content_spell,
                                   delete_content_tag, delete_content_weapon,
                                   edit_content, edit_content_inv,
-                                  edit_content_item, edit_content_spell,
+                                  edit_content_item, edit_content_mania,
+                                  edit_content_phobia, edit_content_spell,
                                   edit_content_tag, edit_content_weapon,
                                   one_content, one_content_inv,
-                                  one_content_item, one_content_spell,
+                                  one_content_item, one_content_mania,
+                                  one_content_phobia, one_content_spell,
                                   one_content_tag, one_content_weapon)
 
 from creator.tests.graphql.queries import (create_investigator, create_item,
@@ -255,3 +260,67 @@ class TestContentWeaponQuery(GraphTest):
         ))
         self.run_query(delete_content.format(uuid=content_uuid))
         self.run_query(delete_weapon.format(uuid=weapon_uuid))
+
+
+class TestContentManiaQuery(GraphTest):
+    """Test class that encapsulates all content mania graphql query tests."""
+    def test_content_mania_query_node(self):
+        """Test acquisitions of a full list of contents or by a single uuid."""
+        # Build content and content tag to be looked for
+        data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = data['contentMutate']['content']['uuid']
+        mania_data, status = self.run_query(create_mania.format())
+        mania_uuid = mania_data['maniaMutate']['mania']['uuid']
+        con_mania, status = self.run_query(query=create_content_mania.format(
+            content_uuid=content_uuid,
+            mania_uuid=mania_uuid
+        ))
+        assert status == 200
+        content_mania_uuid = con_mania['contentManiaMutate'][
+            'contentMania']['uuid']
+
+        assert self.full_research_test(
+            all_content_manias, one_content_mania, 'allContentManias'
+        )
+
+        # clean up auxiliar entities
+        self.run_query(delete_content_mania.format(
+            uuid=content_mania_uuid,
+            content_uuid=content_uuid,
+            mania_uuid=mania_uuid
+        ))
+        self.run_query(delete_content.format(uuid=content_uuid))
+        self.run_query(delete_mania.format(uuid=mania_uuid))
+
+
+class TestContentPhobiaQuery(GraphTest):
+    """Test class that encapsulates all content phobia graphql query tests."""
+    def test_content_phobia_query_node(self):
+        """Test acquisitions of a full list of contents or by a single uuid."""
+        # Build content and content tag to be looked for
+        data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = data['contentMutate']['content']['uuid']
+        phobia_data, status = self.run_query(create_phobia.format())
+        phobia_uuid = phobia_data['phobiaMutate']['phobia']['uuid']
+        con_phobia, status = self.run_query(query=create_content_phobia.format(
+            content_uuid=content_uuid,
+            phobia_uuid=phobia_uuid
+        ))
+        assert status == 200
+        content_phobia_uuid = con_phobia['contentPhobiaMutate'][
+            'contentPhobia']['uuid']
+
+        assert self.full_research_test(
+            all_content_phobias, one_content_phobia, 'allContentPhobias'
+        )
+
+        # clean up auxiliar entities
+        self.run_query(delete_content_phobia.format(
+            uuid=content_phobia_uuid,
+            content_uuid=content_uuid,
+            phobia_uuid=phobia_uuid
+        ))
+        self.run_query(delete_content.format(uuid=content_uuid))
+        self.run_query(delete_phobia.format(uuid=phobia_uuid))

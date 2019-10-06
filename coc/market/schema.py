@@ -3,7 +3,8 @@ from market.schema_nodes import (ContentInvestigatorNode, ContentItemNode,
                                  ContentPhobiaNode, ContentSpellNode,
                                  ContentTagNode, ContentWeaponNode)
 from market.schema_mutations import (ContentInvestigatorMutation,
-                                     ContentItemMutation, ContentMutation,
+                                     ContentItemMutation, ContentManiaMutation,
+                                     ContentMutation, ContentPhobiaMutation,
                                      ContentSpellMutation, ContentTagMutation,
                                      ContentWeaponMutation)
 
@@ -45,3 +46,5 @@ class Mutation(object):
     content_item_mutate = ContentItemMutation.Field()
     content_spell_mutate = ContentSpellMutation.Field()
     content_weapon_mutate = ContentWeaponMutation.Field()
+    content_mania_mutate = ContentManiaMutation.Field()
+    content_phobia_mutate = ContentPhobiaMutation.Field()

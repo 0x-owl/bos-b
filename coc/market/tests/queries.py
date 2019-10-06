@@ -575,23 +575,23 @@ mutation{{
 # Content Mania
 
 all_content_manias = """
-query{{
-  allContentManias{{
-    edges{{
-      node{{
+query{
+  allContentManias{
+    edges{
+      node{
         uuid,
-        content{{
+        content{
           uuid,
           title
-        }},
-        mania{{
+        },
+        mania{
           uuid,
           title
-        }}
-      }}
-    }}
-  }}
-}}
+        }
+      }
+    }
+  }
+}
 """
 
 one_content_mania = """
@@ -614,26 +614,82 @@ query{{
 }}
 """
 
+create_content_mania = """
+mutation{{
+    contentManiaMutate(input:{{
+        method: "CREATE",
+        content: "{content_uuid}",
+        mania: "{mania_uuid}"
+    }}){{
+        contentMania{{
+            uuid
+        }}
+    }}
+}}
+"""
+
+edit_content_mania = """
+mutation{{
+    contentManiaMutate(input:{{
+        method: "UPDATE",
+        content: "{content_uuid}",
+        mania: "{mania_uuid_2}",
+        uuid: "{uuid}"
+    }}){{
+        contentMania{{
+            uuid,
+            content{{
+                uuid
+            }},
+            mania{{
+                uuid
+            }}
+        }}
+    }}
+}}
+"""
+
+delete_content_mania = """
+mutation{{
+    contentManiaMutate(input:{{
+        method: "DELETE",
+        content: "{content_uuid}",
+        mania: "{mania_uuid}",
+        uuid: "{uuid}"
+    }}){{
+        contentMania{{
+            uuid,
+            content{{
+                uuid
+            }},
+            mania{{
+                uuid
+            }}
+        }}
+    }}
+}}
+"""
+
 # ContentPhobia
 
 all_content_phobias = """
-query{{
-  allContentPhobias{{
-    edges{{
-      node{{
+query{
+  allContentPhobias{
+    edges{
+      node{
         uuid,
-        content{{
+        content{
           uuid,
           title
-        }},
-        phobia{{
+        },
+        phobia{
           uuid,
           title
-        }}
-      }}
-    }}
-  }}
-}}
+        }
+      }
+    }
+  }
+}
 """
 
 one_content_phobia = """
@@ -653,5 +709,61 @@ query{{
       }}
     }}
   }}
+}}
+"""
+
+create_content_phobia = """
+mutation{{
+    contentPhobiaMutate(input:{{
+        method: "CREATE",
+        content: "{content_uuid}",
+        phobia: "{phobia_uuid}"
+    }}){{
+        contentPhobia{{
+            uuid
+        }}
+    }}
+}}
+"""
+
+edit_content_phobia = """
+mutation{{
+    contentPhobiaMutate(input:{{
+        method: "UPDATE",
+        content: "{content_uuid}",
+        phobia: "{phobia_uuid_2}",
+        uuid: "{uuid}"
+    }}){{
+        contentPhobia{{
+            uuid,
+            content{{
+                uuid
+            }},
+            phobia{{
+                uuid
+            }}
+        }}
+    }}
+}}
+"""
+
+delete_content_phobia = """
+mutation{{
+    contentPhobiaMutate(input:{{
+        method: "DELETE",
+        content: "{content_uuid}",
+        phobia: "{phobia_uuid}",
+        uuid: "{uuid}"
+    }}){{
+        contentPhobia{{
+            uuid,
+            content{{
+                uuid
+            }},
+            phobia{{
+                uuid
+            }}
+        }}
+    }}
 }}
 """
