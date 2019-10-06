@@ -1,16 +1,18 @@
 from market.tests.queries import (all_content, all_content_invs,
                                   all_content_items, all_content_spells,
-                                  all_content_tags, create_content,
-                                  create_content_inv, create_content_item,
-                                  create_content_spell, create_content_tag,
+                                  all_content_tags, all_content_weapons,
+                                  create_content, create_content_inv,
+                                  create_content_item, create_content_spell,
+                                  create_content_tag, create_content_weapon,
                                   delete_content, delete_content_inv,
                                   delete_content_item, delete_content_spell,
-                                  delete_content_tag, edit_content,
-                                  edit_content_inv, edit_content_item,
-                                  edit_content_spell, edit_content_tag,
+                                  delete_content_tag, delete_content_weapon,
+                                  edit_content, edit_content_inv,
+                                  edit_content_item, edit_content_spell,
+                                  edit_content_tag, edit_content_weapon,
                                   one_content, one_content_inv,
                                   one_content_item, one_content_spell,
-                                  one_content_tag)
+                                  one_content_tag, one_content_weapon)
 
 from creator.tests.graphql.queries import (create_investigator, create_item,
                                            create_mania, create_phobia,
@@ -193,7 +195,7 @@ class TestContentItemQuery(GraphTest):
 
 class TestContentSpellQuery(GraphTest):
     """Test class that encapsulates all content spell graphql query tests."""
-    def test_content_item_query_node(self):
+    def test_content_spell_query_node(self):
         """Test acquisitions of a full list of contents or by a single uuid."""
         # Build content and content tag to be looked for
         data, status = self.run_query(query=create_content.format())
@@ -201,12 +203,12 @@ class TestContentSpellQuery(GraphTest):
         content_uuid = data['contentMutate']['content']['uuid']
         spell_data, status = self.run_query(create_spell.format())
         spell_uuid = spell_data['spellMutate']['spell']['uuid']
-        con_item, status = self.run_query(query=create_content_spell.format(
+        con_spell, status = self.run_query(query=create_content_spell.format(
             content_uuid=content_uuid,
             spell_uuid=spell_uuid
         ))
         assert status == 200
-        content_spell_uuid = con_item['contentSpellMutate'][
+        content_spell_uuid = con_spell['contentSpellMutate'][
             'contentSpell']['uuid']
 
         assert self.full_research_test(
@@ -221,3 +223,35 @@ class TestContentSpellQuery(GraphTest):
         ))
         self.run_query(delete_content.format(uuid=content_uuid))
         self.run_query(delete_spell.format(uuid=spell_uuid))
+
+
+class TestContentWeaponQuery(GraphTest):
+    """Test class that encapsulates all content weapon graphql query tests."""
+    def test_content_weapon_query_node(self):
+        """Test acquisitions of a full list of contents or by a single uuid."""
+        # Build content and content tag to be looked for
+        data, status = self.run_query(query=create_content.format())
+        assert status == 200
+        content_uuid = data['contentMutate']['content']['uuid']
+        weapon_data, status = self.run_query(create_weapon.format())
+        weapon_uuid = weapon_data['weaponMutate']['weapon']['uuid']
+        con_weapon, status = self.run_query(query=create_content_weapon.format(
+            content_uuid=content_uuid,
+            weapon_uuid=weapon_uuid
+        ))
+        assert status == 200
+        content_weapon_uuid = con_weapon['contentWeaponMutate'][
+            'contentWeapon']['uuid']
+
+        assert self.full_research_test(
+            all_content_weapons, one_content_weapon, 'allContentWeapons'
+        )
+
+        # clean up auxiliar entities
+        self.run_query(delete_content_weapon.format(
+            uuid=content_weapon_uuid,
+            content_uuid=content_uuid,
+            weapon_uuid=weapon_uuid
+        ))
+        self.run_query(delete_content.format(uuid=content_uuid))
+        self.run_query(delete_weapon.format(uuid=weapon_uuid))

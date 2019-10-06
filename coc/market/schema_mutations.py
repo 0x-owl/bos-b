@@ -1,10 +1,11 @@
 from coc.utils import mutation_flow
-from creator.models import Investigator, Item, Spell, Tag
+from creator.models import Investigator, Item, Spell, Tag, Weapon
 
 from market.models import (Content, ContentInvestigator, ContentItem,
-                           ContentSpell, ContentTag)
+                           ContentSpell, ContentTag, ContentWeapon)
 from market.schema_nodes import (ContentInvestigatorNode, ContentItemNode,
-                                 ContentNode, ContentSpellNode, ContentTagNode)
+                                 ContentNode, ContentSpellNode, ContentTagNode,
+                                 ContentWeaponNode)
 
 from graphene import ClientIDMutation, Field, Int, String
 from django.contrib.auth.models import User
@@ -171,5 +172,38 @@ class ContentSpellMutation(ClientIDMutation):
             method,
             input_,
             'content_spell'
+        )
+        return ret
+
+
+class ContentWeaponMutation(ClientIDMutation):
+    content_weapon = Field(ContentWeaponNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        content = String()
+        weapon = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        weapon = Weapon.objects.get(uuid=input_.get('weapon', ''))
+        content = Content.objects.get(uuid=input_.get('content', ''))
+        input_['weapon'] = weapon
+        input_['content'] = content
+        method = input_.pop('method')
+        ret = mutation_flow(
+            ContentWeaponMutation,
+            ContentWeapon,
+            method,
+            input_,
+            'content_weapon'
         )
         return ret

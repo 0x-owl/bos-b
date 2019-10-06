@@ -476,23 +476,23 @@ mutation{{
 # ContentWeapons
 
 all_content_weapons = """
-query{{
-  allContentWeapons{{
-    edges{{
-      node{{
+query{
+  allContentWeapons{
+    edges{
+      node{
         uuid,
-        content{{
+        content{
           uuid,
           title
-        }},
-        weapon{{
+        },
+        weapon{
           uuid,
           title
-        }}
-      }}
-    }}
-  }}
-}}
+        }
+      }
+    }
+  }
+}
 """
 
 one_content_weapon = """
@@ -514,6 +514,65 @@ query{{
   }}
 }}
 """
+
+
+create_content_weapon = """
+mutation{{
+    contentWeaponMutate(input:{{
+        method: "CREATE",
+        content: "{content_uuid}",
+        weapon: "{weapon_uuid}"
+    }}){{
+        contentWeapon{{
+            uuid
+        }}
+    }}
+}}
+"""
+
+edit_content_weapon = """
+mutation{{
+    contentWeaponMutate(input:{{
+        method: "UPDATE",
+        content: "{content_uuid}",
+        weapon: "{weapon_uuid_2}",
+        uuid: "{uuid}"
+    }}){{
+        contentWeapon{{
+            uuid,
+            content{{
+                uuid
+            }},
+            weapon{{
+                uuid
+            }}
+        }}
+    }}
+}}
+"""
+
+delete_content_weapon = """
+mutation{{
+    contentWeaponMutate(input:{{
+        method: "DELETE",
+        content: "{content_uuid}",
+        weapon: "{weapon_uuid}",
+        uuid: "{uuid}"
+    }}){{
+        contentWeapon{{
+            uuid,
+            content{{
+                uuid
+            }},
+            weapon{{
+                uuid
+            }}
+        }}
+    }}
+}}
+"""
+
+# Content Mania
 
 all_content_manias = """
 query{{
@@ -554,6 +613,8 @@ query{{
   }}
 }}
 """
+
+# ContentPhobia
 
 all_content_phobias = """
 query{{
