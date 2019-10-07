@@ -35,7 +35,9 @@ python3 $COC_PATH loaddata $FIXTURES_PATH/items/*
 echo "[INFO] Loading spells..."
 python3 $COC_PATH loaddata $FIXTURES_PATH/spells/*
 echo "[INFO] Flush remaining Occupation skills fixtures from previous runs..."
-rm $FIXTURES_PATH/occupation_skills/*
+rm -rf $FIXTURES_PATH/occupation_skills
+echo "[INFO] Create occupation skills folder"
+mkdir $FIXTURES_PATH/occupation_skills
 echo "[INFO] Generating Occupation Skill fixtures..."
 python3 $OCC_SKILL_SCRIPT
 echo "[INFO] Loading OccupationSkills..."
