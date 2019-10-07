@@ -414,6 +414,7 @@ class InvestigatorSkills(Model):
 
 class InvestigatorTags(Model):
     """Tags assigned to investigators."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
     tag = ForeignKey(Tag, on_delete=PROTECT)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
 
