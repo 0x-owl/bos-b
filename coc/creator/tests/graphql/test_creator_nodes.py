@@ -41,8 +41,15 @@ class TestInvestigatorQuery(GraphTest):
         """Test acquisitions of a full list of investigators or by a single
         uuid.
         """
+        data_investigator, status = self.run_query(create_investigator.format())
+        assert status == 200
+        investigator_uuid = (
+            data_investigator['investigatorMutate']['investigator']['uuid'])
+
         assert self.full_research_test(
             all_investigators, one_investigator, 'allInvestigators')
+
+        self.run_query(delete_investigator.format(uuid=investigator_uuid))
 
     def test_investigators_full_mutation(self):
         """This tests creates, updates and finally deletes an investigator
@@ -290,14 +297,49 @@ class TestPhobiaInvQuery(GraphTest):
     def test_phobiasInv_query_node(self):
         """Test acquisitions of a full list of phobias or by a single uuid.
         """
+        data_investigator, status = self.run_query(
+            create_investigator.format())
+        assert status == 200
+        investigator_uuid = (
+            data_investigator['investigatorMutate']['investigator']['uuid'])
+
+        data_phobia, status = self.run_query(create_phobia.format())
+        assert status == 200
+        phobia_uuid = (
+            data_phobia['phobiaMutate']['phobia']['uuid'])
+
+        data_phobia_inv, status = self.run_query(
+            create_phobia_inv.format(
+                investigator=investigator_uuid,
+                phobia=phobia_uuid))
+        assert status == 200
+        phobia_inv_uuid = (
+            data_phobia_inv['phobiaInvMutate']['phobiaInv']['uuid'])
+
         assert self.full_research_test(
             all_phobias_inv, one_phobia_inv, 'allPhobiasInv'
         )
+
+        # clean up auxiliar entities
+        self.run_query(delete_investigator.format(uuid=investigator_uuid))
+        self.run_query(delete_phobia_inv.format(uuid=phobia_uuid))
+        self.run_query(delete_phobia.format(uuid=phobia_inv_uuid))
 
     def test_phobiasInv_full_mutation(self):
         """This tests creates, updates and finally deletes a phobia
         through the graphql queries.
         """
+        data_investigator, status = self.run_query(
+            create_investigator.format())
+        assert status == 200
+        investigator_uuid = (
+            data_investigator['investigatorMutate']['investigator']['uuid'])
+
+        data_phobia, status = self.run_query(create_phobia.format())
+        assert status == 200
+        phobia_uuid = (
+            data_phobia['phobiaMutate']['phobia']['uuid'])
+
         assert self.full_mutation_test(
             create_query=create_phobia_inv,
             edit_query=edit_phobia_inv,
@@ -308,8 +350,12 @@ class TestPhobiaInvQuery(GraphTest):
             node_name="phobiaInv",
             edition_key="duration",
             value_key=40,
-            extras={}
+            extras={"investigator": investigator_uuid, "phobia": phobia_uuid}
         )
+
+        # clean up auxiliar entities
+        self.run_query(delete_investigator.format(uuid=investigator_uuid))
+        self.run_query(delete_phobia.format(uuid=phobia_uuid))
 
 
 class TestManiaInvQuery(GraphTest):
@@ -317,14 +363,49 @@ class TestManiaInvQuery(GraphTest):
     def test_maniasInv_query_node(self):
         """Test acquisitions of a full list of phobias or by a single uuid.
         """
+        data_investigator, status = self.run_query(
+            create_investigator.format())
+        assert status == 200
+        investigator_uuid = (
+            data_investigator['investigatorMutate']['investigator']['uuid'])
+
+        data_mania, status = self.run_query(create_mania.format())
+        assert status == 200
+        mania_uuid = (
+            data_mania['maniaMutate']['mania']['uuid'])
+
+        data_mania_inv, status = self.run_query(
+            create_mania_inv.format(
+                investigator=investigator_uuid,
+                mania=mania_uuid))
+        assert status == 200
+        mania_inv_uuid = (
+            data_mania_inv['maniaInvMutate']['maniaInv']['uuid'])
+
         assert self.full_research_test(
             all_manias_inv, one_mania_inv, 'allManiasInv'
         )
+
+        # clean up auxiliar entities
+        self.run_query(delete_investigator.format(uuid=investigator_uuid))
+        self.run_query(delete_mania.format(uuid=mania_uuid))
+        self.run_query(delete_mania_inv.format(uuid=mania_inv_uuid))
 
     def test_maniasInv_full_mutation(self):
         """This tests creates, updates and finally deletes a phobia
         through the graphql queries.
         """
+        data_investigator, status = self.run_query(
+            create_investigator.format())
+        assert status == 200
+        investigator_uuid = (
+            data_investigator['investigatorMutate']['investigator']['uuid'])
+
+        data_mania, status = self.run_query(create_mania.format())
+        assert status == 200
+        mania_uuid = (
+            data_mania['maniaMutate']['mania']['uuid'])
+
         assert self.full_mutation_test(
             create_query=create_mania_inv,
             edit_query=edit_mania_inv,
@@ -335,8 +416,12 @@ class TestManiaInvQuery(GraphTest):
             node_name="maniaInv",
             edition_key="duration",
             value_key=40,
-            extras={}
+            extras={"investigator": investigator_uuid, "mania": mania_uuid}
         )
+
+        # clean up auxiliar entities
+        self.run_query(delete_investigator.format(uuid=investigator_uuid))
+        self.run_query(delete_mania_inv.format(uuid=mania_uuid))
 
 
 class TestGameQuery(GraphTest):
