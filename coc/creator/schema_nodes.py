@@ -1,5 +1,5 @@
 from json import loads
-from creator.models import (Investigator, Item, Mania, ManiaInvestigator,
+from creator.models import (Game, Investigator, Item, Mania, ManiaInvestigator,
                             Occupation, Phobia, PhobiaInvestigator, Portrait,
                             Skills, Spell, Tag, Weapon)
 
@@ -163,5 +163,20 @@ class PhobiaInvNode(DjangoObjectType):
             'investigator': ['exact'],
             'phobia': ['exact'],
             'duration': ['exact', 'gt', 'lt', 'gte', 'lte']
+        }
+        interfaces = (relay.Node, )
+
+
+class GameNode(DjangoObjectType):
+    class Meta:
+        model = Game
+        filter_fields = {
+            'uuid': ['exact'],
+            'user': ['exact'],
+            'user__username': ['exact', 'istartswith'],
+            'user__id': ['exact'],
+            'title': ['exact', 'icontains', 'istartswith'],
+            'game_type': ['exact'],
+            'timestamp': ['icontains', 'istartswith']
         }
         interfaces = (relay.Node, )

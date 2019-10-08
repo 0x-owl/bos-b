@@ -1,14 +1,15 @@
 from creator.models import Investigator
-from creator.schema_nodes import (InvestigatorNode, ItemNode, ManiaNode,
-                                  ManiaInvNode, OccupationNode, PhobiaNode,
-                                  PhobiaInvNode, PortraitNode, SkillNode,
-                                  SpellNode, TagNode, UserNode, WeaponNode)
-from creator.schema_mutations import (InvestigatorMutation, ItemMutation,
-                                      ManiaMutation, ManiaInvMutation,
-                                      OccupationMutation, PhobiaMutation,
-                                      PhobiaInvMutation, SkillMutation,
-                                      SpellMutation, TagMutation,
-                                      WeaponMutation)
+from creator.schema_nodes import (GameNode, InvestigatorNode, ItemNode,
+                                  ManiaNode, ManiaInvNode, OccupationNode,
+                                  PhobiaNode, PhobiaInvNode, PortraitNode,
+                                  SkillNode, SpellNode, TagNode, UserNode,
+                                  WeaponNode)
+from creator.schema_mutations import (GameMutation, InvestigatorMutation,
+                                      ItemMutation, ManiaMutation,
+                                      ManiaInvMutation, OccupationMutation,
+                                      PhobiaMutation, PhobiaInvMutation,
+                                      SkillMutation, SpellMutation,
+                                      TagMutation, WeaponMutation)
 from creator.helpers.random_investigator import random_inv
 
 from graphene import Field, relay
@@ -55,6 +56,9 @@ class Query(object):
     all_phobias_inv = DjangoFilterConnectionField(PhobiaInvNode)
     phobiaInv = relay.Node.Field(PhobiaInvNode)
 
+    all_games = DjangoFilterConnectionField(GameNode)
+    game = relay.Node.Field(GameNode)
+
     random_investigator = Field(InvestigatorNode)
 
     def resolve_random_investigator(self, info):
@@ -75,3 +79,4 @@ class Mutation(object):
     mania_inv_mutate = ManiaInvMutation.Field()
     phobia_mutate = PhobiaMutation.Field()
     phobia_inv_mutate = PhobiaInvMutation.Field()
+    game_mutate = GameMutation.Field()
