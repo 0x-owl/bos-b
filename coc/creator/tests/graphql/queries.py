@@ -1026,3 +1026,86 @@ mutation{{
   }}
 }}
 """
+
+all_games = """
+query{
+  allGames{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_game = """
+{{
+  allGames(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_game = """
+mutation{{
+  gameMutate(input:{{
+    method: "CREATE",
+    title: "test",
+    gameType: "1",
+    description: "test",
+    user: 1
+  }})
+  {{
+    game{{
+      uuid,
+      title,
+      description,
+      gameType
+    }}
+  }}
+}}
+"""
+
+delete_game = """
+mutation{{
+  gameMutate(input:{{
+    uuid: "{uuid}",
+    method: "DELETE",
+    user: 1
+  }})
+  {{
+    game{{
+      uuid,
+      title,
+      description,
+      gameType
+    }}
+  }}
+}}
+"""
+
+edit_game = """
+mutation{{
+  gameMutate(input:{{
+    uuid: "{uuid}",
+    method: "UPDATE",
+    title: "test_update",
+    gameType: "1",
+    description: "test",
+    user: 1
+  }})
+  {{
+    game{{
+      uuid,
+      title,
+      description,
+      gameType
+    }}
+  }}
+}}
+"""

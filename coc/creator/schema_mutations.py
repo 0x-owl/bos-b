@@ -1,12 +1,12 @@
 from coc.utils import mutation_flow
 
-from creator.models import (Investigator, Item, Mania, ManiaInvestigator,
+from creator.models import (Game, Investigator, Item, Mania, ManiaInvestigator,
                             Occupation, Phobia, PhobiaInvestigator, Portrait,
                             Skills, Spell, Tag, Weapon)
-from creator.schema_nodes import (InvestigatorNode, ItemNode, ManiaNode,
-                                  ManiaInvNode, OccupationNode, PhobiaNode,
-                                  PhobiaInvNode, SkillNode, SpellNode, TagNode,
-                                  UserNode, WeaponNode)
+from creator.schema_nodes import (GameNode, InvestigatorNode, ItemNode,
+                                  ManiaNode, ManiaInvNode, OccupationNode,
+                                  PhobiaNode, PhobiaInvNode, SkillNode,
+                                  SpellNode, TagNode, UserNode, WeaponNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
                       relay)
@@ -394,6 +394,40 @@ class PhobiaInvMutation(ClientIDMutation):
             method,
             input_,
             'phobiaInv'
+        )
+
+        return ret
+
+
+class GameMutation(ClientIDMutation):
+    game = Field(GameNode)
+
+    class Input:
+        method = String()
+        user = Int()
+        uuid = String()
+        title = String()
+        description = String()
+        game_type = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        usr = User.objects.get(pk=input_['user'])
+        input_['user'] = usr
+        method = input_.pop('method')
+        ret = mutation_flow(
+            GameMutation,
+            Game,
+            method,
+            input_,
+            'game'
         )
 
         return ret
