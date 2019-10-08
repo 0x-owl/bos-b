@@ -880,7 +880,10 @@ create_phobia_inv = """
 mutation{{
   phobiaInvMutate(
     input: {{
-      method: "CREATE", investigator: 1, duration: 10, phobia: 4
+      method: "CREATE",
+      investigator: "{investigator}",
+      duration: 10,
+      phobia: "{phobia}"
       }})
   {{
     phobiaInv{{
@@ -901,7 +904,8 @@ delete_phobia_inv = """
 mutation{{
   phobiaInvMutate(
     input: {{
-      method: "DELETE", uuid: "{uuid}"
+      method: "DELETE",
+      uuid: "{uuid}"
       }})
   {{
     phobiaInv{{
@@ -922,8 +926,11 @@ edit_phobia_inv = """
 mutation{{
   phobiaInvMutate(
     input: {{
-      method: "UPDATE", uuid: "{uuid}",
-      investigator: 1, phobia: 25, duration: 40
+      method: "UPDATE",
+      uuid: "{uuid}",
+      investigator: "{investigator}",
+      phobia: "{phobia}",
+      duration: 40
       }})
   {{
     phobiaInv{{
@@ -968,7 +975,10 @@ create_mania_inv = """
 mutation{{
   maniaInvMutate(
     input:{{
-      method: "CREATE", mania: 10, investigator: 1, duration:10
+      method: "CREATE",
+      mania: "{mania}",
+      investigator: "{investigator}",
+      duration:10
       }})
   {{
     maniaInv{{
@@ -989,7 +999,8 @@ delete_mania_inv = """
 mutation{{
   maniaInvMutate(
     input:{{
-      method: "DELETE", uuid: "{uuid}"
+      method: "DELETE",
+      uuid: "{uuid}"
       }})
   {{
     maniaInv{{
@@ -1010,7 +1021,11 @@ edit_mania_inv = """
 mutation{{
   maniaInvMutate(
     input:{{
-      method: "UPDATE", uuid: "{uuid}", mania: 40, investigator: 1, duration:40
+      method: "UPDATE",
+      uuid: "{uuid}",
+      mania: "{mania}",
+      investigator: "{investigator}",
+      duration:40
       }})
   {{
     maniaInv{{

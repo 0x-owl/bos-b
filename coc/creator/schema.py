@@ -54,7 +54,7 @@ class Query(object):
     phobia = relay.Node.Field(PhobiaNode)
 
     all_phobias_inv = DjangoFilterConnectionField(PhobiaInvNode)
-    phobiaInv = relay.Node.Field(PhobiaInvNode)
+    phobia_inv = relay.Node.Field(PhobiaInvNode)
 
     all_games = DjangoFilterConnectionField(GameNode)
     game = relay.Node.Field(GameNode)

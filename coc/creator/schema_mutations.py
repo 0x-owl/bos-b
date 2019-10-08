@@ -304,8 +304,8 @@ class ManiaInvMutation(ClientIDMutation):
     class Input:
         method = String()
         uuid = String()
-        investigator = Int()
-        mania = Int()
+        investigator = String()
+        mania = String()
         duration = Int()
 
     @classmethod
@@ -319,9 +319,9 @@ class ManiaInvMutation(ClientIDMutation):
         input_ = kwargs.get('input')
         method = input_.pop('method')
         input_['investigator'] = Investigator.objects.filter(
-            pk=input_.get('investigator')).first()
+            uuid=input_.get('investigator')).first()
         input_['mania'] = Mania.objects.filter(
-            pk=input_.get('mania')
+            uuid=input_.get('mania')
         ).first()
         ret = mutation_flow(
             ManiaInvMutation,
@@ -369,8 +369,8 @@ class PhobiaInvMutation(ClientIDMutation):
     class Input:
         method = String()
         uuid = String()
-        investigator = Int()
-        phobia = Int()
+        investigator = String()
+        phobia = String()
         duration = Int()
 
     @classmethod
@@ -384,9 +384,9 @@ class PhobiaInvMutation(ClientIDMutation):
         input_ = kwargs.get('input')
         method = input_.pop('method')
         input_['investigator'] = Investigator.objects.filter(
-            pk=input_.get('investigator')).first()
+            uuid=input_.get('investigator')).first()
         input_['phobia'] = Phobia.objects.filter(
-            pk=input_.get('phobia')
+            uuid=input_.get('phobia')
         ).first()
         ret = mutation_flow(
             PhobiaInvMutation,
