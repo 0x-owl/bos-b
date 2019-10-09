@@ -1,7 +1,9 @@
 from json import loads
-from creator.models import (Game, Investigator, Item, Mania, ManiaInvestigator,
-                            Occupation, Phobia, PhobiaInvestigator, Portrait,
-                            Skills, Spell, Tag, Weapon)
+
+from creator.models import (Game, Investigator, InvestigatorAttribute, Item,
+                            Mania, ManiaInvestigator, Occupation, Phobia,
+                            PhobiaInvestigator, Portrait, Skills, Spell, Tag,
+                            Weapon)
 
 from graphene import ObjectType, String, relay
 from graphene_django.types import DjangoObjectType
@@ -178,5 +180,17 @@ class GameNode(DjangoObjectType):
             'title': ['exact', 'icontains', 'istartswith'],
             'game_type': ['exact'],
             'timestamp': ['icontains', 'istartswith']
+        }
+        interfaces = (relay.Node, )
+
+
+class AttrInvNode(DjangoObjectType):
+    class Meta:
+        model = InvestigatorAttribute
+        filter_fields = {
+            'uuid': ['exact'],
+            'investigator': ['exact'],
+            'attr': ['exact'],
+            'value': ['exact', 'gt', 'lt', 'gte', 'lte']
         }
         interfaces = (relay.Node, )
