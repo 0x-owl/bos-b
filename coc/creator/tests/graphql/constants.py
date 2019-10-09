@@ -94,3 +94,75 @@ class GraphTest:
         assert not data[edge_name]['edges']
 
         return True
+
+    def create_and_obtain_uuid(
+            self, query: str, model_name: str, mutation=None, uuids={}):
+        """Returns the uuid of a created entity.
+        Arguments:
+            query -- (str) creation_query
+            model_name -- (str) name of entity e.g tag
+            mutation_name -- (str-optional) overrides the default name.
+        """
+        default_mutation = f'{model_name}Mutate'
+        data, status = self.run_query(query=query.format(**uuids))
+        assert status == 200, f"Couldn't create instance query:\n {query}"
+        mutation_name = mutation if mutation is not None else default_mutation
+        uuid = data[mutation_name][model_name]['uuid']
+        return uuid
+
+    def delete_instance(self, query: str, uuids: dict):
+        """Given the deletetion query and a uuid, erase an entity.
+        Arguments:
+            query -- deletition query.
+            uuids -- uuids required to delete the instance.
+        """
+        data, status = self.run_query(query.format(**uuids))
+        return status == 200, data
+
+    def batch_instance_builder(self, models):
+        """Method that creates the entities required by a intermediate model.
+        Returns its uuids
+        Arguments:
+            models -- dictionary with each key being the model name and holds
+            the creation query and the variable name.
+            e.g:
+                {'modelx2': {
+                    'query': query,
+                    'mutation_name': mutation,
+                    'alt_name': 'modelx',
+                    'uuids': {'content_uuid': auuid}
+                    }
+                }
+                mutation_name in case it differs from default value
+                alt_name in case we need to generate two of the same kind.
+                uuids in case we need uuids for intermediate entities.
+        """
+        results = {}
+        for model in models:
+            alt_name = models[model].get('alt_name', None)
+            model_name = alt_name if alt_name is not None else model
+            query = models[model]['query']
+            mutation_name = models[model].get('mutation_name', None)
+            uuid = self.create_and_obtain_uuid(
+                query,
+                model_name,
+                mutation_name,
+                models[model].get('uuids', {})
+            )
+            results[model] = uuid
+        return results
+
+    def batch_instance_cleaner(self, targets: list):
+        """Method that deletes many objects at once.
+        Arguments:
+            targets -- list of tuples that hold the query on the first
+            index and dict of parameters on the second.
+            e.g [(delete_content, {uuid:content_uuid}),
+                 (delete_tag, {uuid: tag_uuid})]
+        """
+        deleted_list = []
+        for target in targets:
+            success, deleted = self.delete_instance(target[0], target[1])
+            assert success, f"Couldn't delete instance {target}"
+            deleted_list.append(deleted)
+        return deleted_list
