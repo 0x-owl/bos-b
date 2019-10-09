@@ -216,7 +216,7 @@ query{{
 
 create_content_inv = """
 mutation{{
-    contentInvestigatorMutate(input:{{
+    contentInvMutate(input:{{
         method: "CREATE",
         content: "{content_uuid}",
         inv: "{inv_uuid}"
@@ -230,7 +230,7 @@ mutation{{
 
 edit_content_inv = """
 mutation{{
-    contentInvestigatorMutate(input:{{
+    contentInvMutate(input:{{
         method: "UPDATE",
         content: "{content_uuid}",
         inv: "{inv_uuid_2}",
@@ -251,7 +251,7 @@ mutation{{
 
 delete_content_inv = """
 mutation{{
-    contentInvestigatorMutate(input:{{
+    contentInvMutate(input:{{
         method: "DELETE",
         content: "{content_uuid}",
         inv: "{inv_uuid}",

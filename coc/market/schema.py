@@ -42,7 +42,7 @@ class Query(object):
 class Mutation(object):
     content_mutate = ContentMutation.Field()
     content_tag_mutate = ContentTagMutation.Field()
-    content_investigator_mutate = ContentInvestigatorMutation.Field()
+    content_inv_mutate = ContentInvestigatorMutation.Field()
     content_item_mutate = ContentItemMutation.Field()
     content_spell_mutate = ContentSpellMutation.Field()
     content_weapon_mutate = ContentWeaponMutation.Field()

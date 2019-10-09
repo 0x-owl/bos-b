@@ -149,8 +149,7 @@ class TestContentInvQuery(GraphTest):
             inv_uuid=inv_uuid
         ))
         assert status == 200
-        content_inv_uuid = coninv['contentInvestigatorMutate'][
-            'contentInv']['uuid']
+        content_inv_uuid = coninv['contentInvMutate']['contentInv']['uuid']
 
         assert self.full_research_test(
             all_content_invs, one_content_inv, 'allContentInvestigators'
