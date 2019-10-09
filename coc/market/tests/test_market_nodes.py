@@ -33,14 +33,12 @@ class TestContentQuery(GraphTest):
     """Test class that encapsulates all content graphql query tests."""
     def test_content_query_node(self):
         """Test acquisitions of a full list of contents or by a single uuid."""
-        data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = data['contentMutate']['content']['uuid']
+        content_uuid = self.create_and_obtain_uuid(create_content, 'content')
         assert self.full_research_test(
             all_content, one_content, 'allContents'
         )
         # clean up
-        self.run_query(delete_content.format(uuid=content_uuid))
+        self.delete_instance(delete_content, {'uuid': content_uuid})
 
     def test_contents_full_mutation(self):
         """This test creates, updates and finally deletes a content through the
@@ -66,47 +64,44 @@ class TestContentTagQuery(GraphTest):
     def test_content_tag_query_node(self):
         """Test acquisitions of a full list of contents or by a single uuid."""
         # Build content and content tag to be looked for
-        data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = data['contentMutate']['content']['uuid']
-        tag_data, status = self.run_query(create_tag.format())
-        tag_uuid = tag_data['tagMutate']['tag']['uuid']
-
-        contag, status = self.run_query(query=create_content_tag.format(
-            content_uuid=content_uuid,
-            tag_uuid=tag_uuid
-        ))
-        assert status == 200
-        content_tag_uuid = contag['contentTagMutate']['contentTag']['uuid']
-
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'tag': {'query': create_tag},
+        })
+        content_uuid = res['content']
+        tag_uuid = res['tag']
+        content_tag_uuid = self.create_and_obtain_uuid(
+            query=create_content_tag,
+            model_name='contentTag',
+            uuids={'content_uuid': content_uuid, 'tag_uuid': tag_uuid}
+        )
         assert self.full_research_test(
             all_content_tags, one_content_tag, 'allContentTags'
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_content_tag.format(
-            uuid=content_tag_uuid,
-            content_uuid=content_uuid,
-            tag_uuid=tag_uuid
-        ))
-        self.run_query(delete_content.format(uuid=content_uuid))
-        self.run_query(delete_tag.format(uuid=tag_uuid))
+        self.batch_instance_cleaner([
+            (delete_content_tag, {
+                'uuid': content_tag_uuid,
+                'content_uuid': content_uuid,
+                'tag_uuid': tag_uuid
+                }),
+            (delete_content, {'uuid': content_uuid}),
+            (delete_tag, {'uuid': tag_uuid})
+        ])
 
     def test_content_tags_full_mutation(self):
         """This test creates, updates and finally deletes a content through the
         grapql queries.
         """
-        content_data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = content_data['contentMutate']['content']['uuid']
-
-        first_tag_data, status = self.run_query(create_tag.format())
-        assert status == 200
-        tag_uuid = first_tag_data['tagMutate']['tag']['uuid']
-
-        second_tag_data, status = self.run_query(create_tag.format())
-        assert status == 200
-        tag_uuid2 = second_tag_data['tagMutate']['tag']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'tag': {'query': create_tag},
+            'tag2': {'query': create_tag, 'alt_name': 'tag'}
+        })
+        content_uuid = res['content']
+        tag_uuid = res['tag']
+        tag_uuid2 = res['tag2']
 
         test_result = self.full_mutation_test(
             create_query=create_content_tag,
@@ -126,10 +121,11 @@ class TestContentTagQuery(GraphTest):
         )
 
         # clean up of auxiliar entities
-        self.run_query(delete_tag.format(uuid=tag_uuid))
-        self.run_query(delete_tag.format(uuid=tag_uuid2))
-        self.run_query(delete_content.format(uuid=content_uuid))
-
+        self.batch_instance_cleaner([
+            (delete_tag, {'uuid': tag_uuid}),
+            (delete_tag, {'uuid': tag_uuid2}),
+            (delete_content, {'uuid': content_uuid})
+        ])
         assert test_result
 
 
@@ -139,47 +135,47 @@ class TestContentInvQuery(GraphTest):
     def test_content_inv_query_node(self):
         """Test acquisitions of a full list of contents or by a single uuid."""
         # Build content and content tag to be looked for
-        data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = data['contentMutate']['content']['uuid']
-        inv_data, status = self.run_query(create_investigator.format())
-        inv_uuid = inv_data['investigatorMutate']['investigator']['uuid']
-        coninv, status = self.run_query(query=create_content_inv.format(
-            content_uuid=content_uuid,
-            inv_uuid=inv_uuid
-        ))
-        assert status == 200
-        content_inv_uuid = coninv['contentInvMutate']['contentInv']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'investigator': {'query': create_investigator},
+        })
+        content_uuid = res['content']
+        investigator_uuid = res['investigator']
+        content_inv_uuid = self.create_and_obtain_uuid(
+            query=create_content_inv,
+            model_name='contentInv',
+            uuids={'content_uuid': content_uuid, 'inv_uuid': investigator_uuid}
+        )
 
         assert self.full_research_test(
             all_content_invs, one_content_inv, 'allContentInvestigators'
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_content_inv.format(
-            uuid=content_inv_uuid,
-            content_uuid=content_uuid,
-            inv_uuid=inv_uuid
-        ))
-        self.run_query(delete_content.format(uuid=content_uuid))
-        self.run_query(delete_investigator.format(uuid=inv_uuid))
+        self.batch_instance_cleaner([
+            (delete_content_inv, {
+                'uuid': content_inv_uuid,
+                'content_uuid': content_uuid,
+                'inv_uuid': investigator_uuid
+                }),
+            (delete_content, {'uuid': content_uuid}),
+            (delete_investigator, {'uuid': investigator_uuid})
+        ])
 
     def test_content_inv_full_mutation(self):
         """This test creates, updates and finally deletes a content through the
         grapql queries.
         """
-        content_data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = content_data['contentMutate']['content']['uuid']
-
-        first_inv_data, status = self.run_query(create_investigator.format())
-        assert status == 200
-        inv_uuid = first_inv_data['investigatorMutate']['investigator']['uuid']
-
-        second_inv_data, status = self.run_query(create_investigator.format())
-        assert status == 200
-        inv_uuid2 = second_inv_data['investigatorMutate'][
-            'investigator']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'investigator': {'query': create_investigator},
+            'investigator2': {
+                'query': create_investigator,
+                'alt_name': 'investigator'}
+        })
+        content_uuid = res['content']
+        inv_uuid = res['investigator']
+        inv_uuid2 = res['investigator2']
 
         test_result = self.full_mutation_test(
             create_query=create_content_inv,
@@ -199,10 +195,11 @@ class TestContentInvQuery(GraphTest):
         )
 
         # clean up of auxiliar entities
-        self.run_query(delete_investigator.format(uuid=inv_uuid))
-        self.run_query(delete_investigator.format(uuid=inv_uuid2))
-        self.run_query(delete_content.format(uuid=content_uuid))
-
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': inv_uuid}),
+            (delete_investigator, {'uuid': inv_uuid2}),
+            (delete_content, {'uuid': content_uuid})
+        ])
         assert test_result
 
 
@@ -211,47 +208,46 @@ class TestContentItemQuery(GraphTest):
     def test_content_item_query_node(self):
         """Test acquisitions of a full list of contents or by a single uuid."""
         # Build content and content tag to be looked for
-        data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = data['contentMutate']['content']['uuid']
-        item_data, status = self.run_query(create_item.format())
-        item_uuid = item_data['itemMutate']['item']['uuid']
-        con_item, status = self.run_query(query=create_content_item.format(
-            content_uuid=content_uuid,
-            item_uuid=item_uuid
-        ))
-        assert status == 200
-        content_item_uuid = con_item['contentItemMutate'][
-            'contentItem']['uuid']
-
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'item': {'query': create_item},
+        })
+        content_uuid = res['content']
+        item_uuid = res['item']
+        content_item_uuid = self.create_and_obtain_uuid(
+            query=create_content_item,
+            model_name='contentItem',
+            uuids={'content_uuid': content_uuid, 'item_uuid': item_uuid}
+        )
         assert self.full_research_test(
             all_content_items, one_content_item, 'allContentItems'
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_content_item.format(
-            uuid=content_item_uuid,
-            content_uuid=content_uuid,
-            item_uuid=item_uuid
-        ))
-        self.run_query(delete_content.format(uuid=content_uuid))
-        self.run_query(delete_item.format(uuid=item_uuid))
+        self.batch_instance_cleaner([
+            (delete_content_item, {
+                'uuid': content_item_uuid,
+                'content_uuid': content_uuid,
+                'item_uuid': item_uuid
+            }),
+            (delete_content, {'uuid': content_uuid}),
+            (delete_item, {'uuid': item_uuid})
+        ])
 
     def test_content_item_full_mutation(self):
         """This test creates, updates and finally deletes a content through the
         grapql queries.
         """
-        content_data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = content_data['contentMutate']['content']['uuid']
-
-        first_item_data, status = self.run_query(create_item.format())
-        assert status == 200
-        item_uuid = first_item_data['itemMutate']['item']['uuid']
-
-        second_item_data, status = self.run_query(create_item.format())
-        assert status == 200
-        item_uuid2 = second_item_data['itemMutate']['item']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'item': {'query': create_item},
+            'item2': {
+                'query': create_item,
+                'alt_name': 'item'}
+        })
+        content_uuid = res['content']
+        item_uuid = res['item']
+        item_uuid2 = res['item2']
 
         test_result = self.full_mutation_test(
             create_query=create_content_item,
@@ -271,9 +267,11 @@ class TestContentItemQuery(GraphTest):
         )
 
         # clean up of auxiliar entities
-        self.run_query(delete_item.format(uuid=item_uuid))
-        self.run_query(delete_item.format(uuid=item_uuid2))
-        self.run_query(delete_content.format(uuid=content_uuid))
+        self.batch_instance_cleaner([
+            (delete_item, {'uuid': item_uuid}),
+            (delete_item, {'uuid': item_uuid2}),
+            (delete_content, {'uuid': content_uuid})
+        ])
 
         assert test_result
 
@@ -283,47 +281,47 @@ class TestContentSpellQuery(GraphTest):
     def test_content_spell_query_node(self):
         """Test acquisitions of a full list of contents or by a single uuid."""
         # Build content and content tag to be looked for
-        data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = data['contentMutate']['content']['uuid']
-        spell_data, status = self.run_query(create_spell.format())
-        spell_uuid = spell_data['spellMutate']['spell']['uuid']
-        con_spell, status = self.run_query(query=create_content_spell.format(
-            content_uuid=content_uuid,
-            spell_uuid=spell_uuid
-        ))
-        assert status == 200
-        content_spell_uuid = con_spell['contentSpellMutate'][
-            'contentSpell']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'spell': {'query': create_spell},
+        })
+        content_uuid = res['content']
+        spell_uuid = res['spell']
+        content_spell_uuid = self.create_and_obtain_uuid(
+            query=create_content_spell,
+            model_name='contentSpell',
+            uuids={'content_uuid': content_uuid, 'spell_uuid': spell_uuid}
+        )
 
         assert self.full_research_test(
             all_content_spells, one_content_spell, 'allContentSpells'
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_content_spell.format(
-            uuid=content_spell_uuid,
-            content_uuid=content_uuid,
-            spell_uuid=spell_uuid
-        ))
-        self.run_query(delete_content.format(uuid=content_uuid))
-        self.run_query(delete_spell.format(uuid=spell_uuid))
+        self.batch_instance_cleaner([
+            (delete_content_spell, {
+                'uuid': content_spell_uuid,
+                'content_uuid': content_uuid,
+                'spell_uuid': spell_uuid
+            }),
+            (delete_content, {'uuid': content_uuid}),
+            (delete_spell, {'uuid': spell_uuid})
+        ])
 
     def test_content_spell_full_mutation(self):
         """This test creates, updates and finally deletes a content through the
         grapql queries.
         """
-        content_data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = content_data['contentMutate']['content']['uuid']
-
-        first_spell_data, status = self.run_query(create_spell.format())
-        assert status == 200
-        spell_uuid = first_spell_data['spellMutate']['spell']['uuid']
-
-        second_spell_data, status = self.run_query(create_spell.format())
-        assert status == 200
-        spell_uuid2 = second_spell_data['spellMutate']['spell']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'spell': {'query': create_spell},
+            'spell2': {
+                'query': create_spell,
+                'alt_name': 'spell'}
+        })
+        content_uuid = res['content']
+        spell_uuid = res['spell']
+        spell_uuid2 = res['spell2']
 
         test_result = self.full_mutation_test(
             create_query=create_content_spell,
@@ -343,9 +341,11 @@ class TestContentSpellQuery(GraphTest):
         )
 
         # clean up of auxiliar entities
-        self.run_query(delete_spell.format(uuid=spell_uuid))
-        self.run_query(delete_spell.format(uuid=spell_uuid2))
-        self.run_query(delete_content.format(uuid=content_uuid))
+        self.batch_instance_cleaner([
+            (delete_spell, {'uuid': spell_uuid}),
+            (delete_spell, {'uuid': spell_uuid2}),
+            (delete_content, {'uuid': content_uuid})
+        ])
 
         assert test_result
 
@@ -355,47 +355,47 @@ class TestContentWeaponQuery(GraphTest):
     def test_content_weapon_query_node(self):
         """Test acquisitions of a full list of contents or by a single uuid."""
         # Build content and content tag to be looked for
-        data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = data['contentMutate']['content']['uuid']
-        weapon_data, status = self.run_query(create_weapon.format())
-        weapon_uuid = weapon_data['weaponMutate']['weapon']['uuid']
-        con_weapon, status = self.run_query(query=create_content_weapon.format(
-            content_uuid=content_uuid,
-            weapon_uuid=weapon_uuid
-        ))
-        assert status == 200
-        content_weapon_uuid = con_weapon['contentWeaponMutate'][
-            'contentWeapon']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'weapon': {'query': create_weapon},
+        })
+        content_uuid = res['content']
+        weapon_uuid = res['weapon']
+        content_weapon_uuid = self.create_and_obtain_uuid(
+            query=create_content_weapon,
+            model_name='contentWeapon',
+            uuids={'content_uuid': content_uuid, 'weapon_uuid': weapon_uuid}
+        )
 
         assert self.full_research_test(
             all_content_weapons, one_content_weapon, 'allContentWeapons'
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_content_weapon.format(
-            uuid=content_weapon_uuid,
-            content_uuid=content_uuid,
-            weapon_uuid=weapon_uuid
-        ))
-        self.run_query(delete_content.format(uuid=content_uuid))
-        self.run_query(delete_weapon.format(uuid=weapon_uuid))
+        self.batch_instance_cleaner([
+            (delete_content_weapon, {
+                'uuid': content_weapon_uuid,
+                'content_uuid': content_uuid,
+                'weapon_uuid': weapon_uuid
+            }),
+            (delete_content, {'uuid': content_uuid}),
+            (delete_weapon, {'uuid': weapon_uuid})
+        ])
 
     def test_content_weapon_full_mutation(self):
         """This test creates, updates and finally deletes a content through the
         grapql queries.
         """
-        content_data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = content_data['contentMutate']['content']['uuid']
-
-        first_weapon_data, status = self.run_query(create_weapon.format())
-        assert status == 200
-        weapon_uuid = first_weapon_data['weaponMutate']['weapon']['uuid']
-
-        second_weapon_data, status = self.run_query(create_weapon.format())
-        assert status == 200
-        weapon_uuid2 = second_weapon_data['weaponMutate']['weapon']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'weapon': {'query': create_weapon},
+            'weapon2': {
+                'query': create_weapon,
+                'alt_name': 'weapon'}
+        })
+        content_uuid = res['content']
+        weapon_uuid = res['weapon']
+        weapon_uuid2 = res['weapon2']
 
         test_result = self.full_mutation_test(
             create_query=create_content_weapon,
@@ -415,10 +415,11 @@ class TestContentWeaponQuery(GraphTest):
         )
 
         # clean up of auxiliar entities
-        self.run_query(delete_weapon.format(uuid=weapon_uuid))
-        self.run_query(delete_weapon.format(uuid=weapon_uuid2))
-        self.run_query(delete_content.format(uuid=content_uuid))
-
+        self.batch_instance_cleaner([
+            (delete_weapon, {'uuid': weapon_uuid}),
+            (delete_weapon, {'uuid': weapon_uuid2}),
+            (delete_content, {'uuid': content_uuid})
+        ])
         assert test_result
 
 
@@ -427,47 +428,47 @@ class TestContentManiaQuery(GraphTest):
     def test_content_mania_query_node(self):
         """Test acquisitions of a full list of contents or by a single uuid."""
         # Build content and content tag to be looked for
-        data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = data['contentMutate']['content']['uuid']
-        mania_data, status = self.run_query(create_mania.format())
-        mania_uuid = mania_data['maniaMutate']['mania']['uuid']
-        con_mania, status = self.run_query(query=create_content_mania.format(
-            content_uuid=content_uuid,
-            mania_uuid=mania_uuid
-        ))
-        assert status == 200
-        content_mania_uuid = con_mania['contentManiaMutate'][
-            'contentMania']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'mania': {'query': create_mania},
+        })
+        content_uuid = res['content']
+        mania_uuid = res['mania']
+        content_mania_uuid = self.create_and_obtain_uuid(
+            query=create_content_mania,
+            model_name='contentMania',
+            uuids={'content_uuid': content_uuid, 'mania_uuid': mania_uuid}
+        )
 
         assert self.full_research_test(
             all_content_manias, one_content_mania, 'allContentManias'
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_content_mania.format(
-            uuid=content_mania_uuid,
-            content_uuid=content_uuid,
-            mania_uuid=mania_uuid
-        ))
-        self.run_query(delete_content.format(uuid=content_uuid))
-        self.run_query(delete_mania.format(uuid=mania_uuid))
+        self.batch_instance_cleaner([
+            (delete_content_mania, {
+                'uuid': content_mania_uuid,
+                'content_uuid': content_uuid,
+                'mania_uuid': mania_uuid
+            }),
+            (delete_content, {'uuid': content_uuid}),
+            (delete_mania, {'uuid': mania_uuid})
+        ])
 
     def test_content_mania_full_mutation(self):
         """This test creates, updates and finally deletes a content through the
         grapql queries.
         """
-        content_data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = content_data['contentMutate']['content']['uuid']
-
-        first_mania_data, status = self.run_query(create_mania.format())
-        assert status == 200
-        mania_uuid = first_mania_data['maniaMutate']['mania']['uuid']
-
-        second_mania_data, status = self.run_query(create_mania.format())
-        assert status == 200
-        mania_uuid2 = second_mania_data['maniaMutate']['mania']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'mania': {'query': create_mania},
+            'mania2': {
+                'query': create_mania,
+                'alt_name': 'mania'}
+        })
+        content_uuid = res['content']
+        mania_uuid = res['mania']
+        mania_uuid2 = res['mania2']
 
         test_result = self.full_mutation_test(
             create_query=create_content_mania,
@@ -487,9 +488,11 @@ class TestContentManiaQuery(GraphTest):
         )
 
         # clean up of auxiliar entities
-        self.run_query(delete_mania.format(uuid=mania_uuid))
-        self.run_query(delete_mania.format(uuid=mania_uuid2))
-        self.run_query(delete_content.format(uuid=content_uuid))
+        self.batch_instance_cleaner([
+            (delete_mania, {'uuid': mania_uuid}),
+            (delete_mania, {'uuid': mania_uuid2}),
+            (delete_content, {'uuid': content_uuid})
+        ])
 
         assert test_result
 
@@ -499,47 +502,48 @@ class TestContentPhobiaQuery(GraphTest):
     def test_content_phobia_query_node(self):
         """Test acquisitions of a full list of contents or by a single uuid."""
         # Build content and content tag to be looked for
-        data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = data['contentMutate']['content']['uuid']
-        phobia_data, status = self.run_query(create_phobia.format())
-        phobia_uuid = phobia_data['phobiaMutate']['phobia']['uuid']
-        con_phobia, status = self.run_query(query=create_content_phobia.format(
-            content_uuid=content_uuid,
-            phobia_uuid=phobia_uuid
-        ))
-        assert status == 200
-        content_phobia_uuid = con_phobia['contentPhobiaMutate'][
-            'contentPhobia']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'phobia': {'query': create_phobia},
+        })
+        content_uuid = res['content']
+        phobia_uuid = res['phobia']
+        content_phobia_uuid = self.create_and_obtain_uuid(
+            query=create_content_phobia,
+            model_name='contentPhobia',
+            uuids={'content_uuid': content_uuid, 'phobia_uuid': phobia_uuid}
+        )
 
         assert self.full_research_test(
             all_content_phobias, one_content_phobia, 'allContentPhobias'
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_content_phobia.format(
-            uuid=content_phobia_uuid,
-            content_uuid=content_uuid,
-            phobia_uuid=phobia_uuid
-        ))
-        self.run_query(delete_content.format(uuid=content_uuid))
-        self.run_query(delete_phobia.format(uuid=phobia_uuid))
+        self.batch_instance_cleaner([
+            (delete_content_phobia, {
+                'uuid': content_phobia_uuid,
+                'content_uuid': content_uuid,
+                'phobia_uuid': phobia_uuid
+            }),
+            (delete_content, {'uuid': content_uuid}),
+            (delete_phobia, {'uuid': phobia_uuid})
+        ])
 
     def test_content_phobia_full_mutation(self):
         """This test creates, updates and finally deletes a content through the
         grapql queries.
         """
-        content_data, status = self.run_query(query=create_content.format())
-        assert status == 200
-        content_uuid = content_data['contentMutate']['content']['uuid']
+        res = self.batch_instance_builder({
+            'content': {'query': create_content},
+            'phobia': {'query': create_phobia},
+            'phobia2': {
+                'query': create_phobia,
+                'alt_name': 'phobia'}
+        })
+        content_uuid = res['content']
+        phobia_uuid = res['phobia']
+        phobia_uuid2 = res['phobia2']
 
-        first_phobia_data, status = self.run_query(create_phobia.format())
-        assert status == 200
-        phobia_uuid = first_phobia_data['phobiaMutate']['phobia']['uuid']
-
-        second_phobia_data, status = self.run_query(create_phobia.format())
-        assert status == 200
-        phobia_uuid2 = second_phobia_data['phobiaMutate']['phobia']['uuid']
 
         test_result = self.full_mutation_test(
             create_query=create_content_phobia,
@@ -559,8 +563,10 @@ class TestContentPhobiaQuery(GraphTest):
         )
 
         # clean up of auxiliar entities
-        self.run_query(delete_phobia.format(uuid=phobia_uuid))
-        self.run_query(delete_phobia.format(uuid=phobia_uuid2))
-        self.run_query(delete_content.format(uuid=content_uuid))
+        self.batch_instance_cleaner([
+            (delete_phobia, {'uuid': phobia_uuid}),
+            (delete_phobia, {'uuid': phobia_uuid2}),
+            (delete_content, {'uuid': content_uuid})
+        ])
 
         assert test_result
