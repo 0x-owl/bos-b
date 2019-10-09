@@ -187,7 +187,7 @@ class TestContentInvQuery(GraphTest):
             delete_query=delete_content_inv,
             one_query=one_content_inv,
             query_edge_name='allContentInvestigators',
-            mutation_edge_name='contentInvestigatorMutate',
+            mutation_edge_name='contentInvMutate',
             node_name='contentInv',
             edition_key='inv',
             value_key={'uuid': inv_uuid2},
