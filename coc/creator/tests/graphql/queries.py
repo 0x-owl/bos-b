@@ -1042,6 +1042,100 @@ mutation{{
 }}
 """
 
+all_skills_inv = """
+query{
+  allSkillsInv{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_skill_inv = """
+{{
+  allSkillsInv(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_skill_inv = """
+mutation{{
+  skillInvMutate(input:{{
+    method: "CREATE",
+    investigator: "{investigator}",
+    skill: "{skill}",
+    category: "1",
+    value: 30
+  }})
+  {{
+    skillInv{{
+      skill{{
+        title
+      }},
+      category,
+      value,
+      uuid
+    }}
+  }}
+}}
+"""
+
+delete_skill_inv = """
+mutation{{
+  skillInvMutate(input:{{
+    method: "DELETE",
+    uuid: "{uuid}"
+  }})
+  {{
+    skillInv{{
+      uuid,
+      investigator{{
+        name
+      }},
+      skill{{
+        title
+      }},
+      category,
+      value
+    }}
+  }}
+}}
+"""
+
+edit_skill_inv = """
+mutation{{
+  skillInvMutate(input:{{
+    method: "UPDATE",
+    uuid: "{uuid}",
+    investigator: "{investigator}",
+    skill: "{skill}",
+    category: "2",
+    value: 33
+  }})
+  {{
+    skillInv{{
+      uuid,
+      investigator{{
+        name
+      }},
+      skill{{
+        title
+      }},
+      category,
+      value
+    }}
+  }}
+}}
+"""
+
 all_games = """
 query{
   allGames{

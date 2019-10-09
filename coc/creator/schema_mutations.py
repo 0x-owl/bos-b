@@ -1,14 +1,15 @@
 from coc.utils import mutation_flow
 
-from creator.models import (Game, Investigator, InvestigatorAttribute, Item,
-                            Mania, ManiaInvestigator, Occupation, Phobia,
-                            PhobiaInvestigator, Portrait, Skills, Spell, Tag,
-                            Weapon)
+from creator.models import (Game, Investigator, InvestigatorAttribute,
+                            InvestigatorSkills, Item, Mania, ManiaInvestigator,
+                            Occupation, Phobia, PhobiaInvestigator, Portrait,
+                            Skills, Spell, Tag, Weapon)
+
 from creator.schema_nodes import (AttrInvNode, GameNode, InvestigatorNode,
                                   ItemNode, ManiaNode, ManiaInvNode,
                                   OccupationNode, PhobiaNode, PhobiaInvNode,
-                                  SkillNode, SpellNode, TagNode, UserNode,
-                                  WeaponNode)
+                                  SkillNode, SkillInvNode, SpellNode, TagNode,
+                                  UserNode, WeaponNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
                       relay)
@@ -395,6 +396,43 @@ class PhobiaInvMutation(ClientIDMutation):
             method,
             input_,
             'phobiaInv'
+        )
+
+        return ret
+
+
+class SkillInvMutation(ClientIDMutation):
+    skillInv = Field(SkillInvNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        investigator = String()
+        skill = String()
+        value = Int()
+        category = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        method = input_.pop('method')
+        input_['investigator'] = Investigator.objects.filter(
+            uuid=input_.get('investigator')).first()
+        input_['skill'] = Skills.objects.filter(
+            uuid=input_.get('skill')
+        ).first()
+        ret = mutation_flow(
+            SkillInvMutation,
+            InvestigatorSkills,
+            method,
+            input_,
+            'skillInv'
         )
 
         return ret
