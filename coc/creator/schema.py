@@ -3,15 +3,16 @@ from creator.models import Investigator
 from creator.schema_nodes import (AttrInvNode, GameNode, InvestigatorNode,
                                   ItemNode, ManiaNode, ManiaInvNode,
                                   OccupationNode, PhobiaNode, PhobiaInvNode,
-                                  PortraitNode, SkillNode, SpellNode, TagNode,
-                                  UserNode, WeaponNode)
+                                  PortraitNode, SkillNode, SkillInvNode,
+                                  SpellNode, TagNode, UserNode, WeaponNode)
+
 from creator.schema_mutations import (AttrInvMutation, GameMutation,
                                       InvestigatorMutation, ItemMutation,
                                       ManiaMutation, ManiaInvMutation,
                                       OccupationMutation, PhobiaMutation,
                                       PhobiaInvMutation, SkillMutation,
-                                      SpellMutation, TagMutation,
-                                      WeaponMutation)
+                                      SkillInvMutation, SpellMutation,
+                                      TagMutation, WeaponMutation)
 
 from creator.helpers.random_investigator import random_inv
 
@@ -65,6 +66,9 @@ class Query(object):
     all_attrs_inv = DjangoFilterConnectionField(AttrInvNode)
     attr_inv = relay.Node.Field(AttrInvNode)
 
+    all_skills_inv = DjangoFilterConnectionField(SkillInvNode)
+    skill_inv = relay.Node.Field(SkillInvNode)
+
     random_investigator = Field(InvestigatorNode)
 
     def resolve_random_investigator(self, info):
@@ -85,5 +89,6 @@ class Mutation(object):
     mania_inv_mutate = ManiaInvMutation.Field()
     phobia_mutate = PhobiaMutation.Field()
     phobia_inv_mutate = PhobiaInvMutation.Field()
+    skill_inv_mutate = SkillInvMutation.Field()
     game_mutate = GameMutation.Field()
     attr_inv_mutate = AttrInvMutation.Field()
