@@ -1,12 +1,14 @@
 from coc.utils import mutation_flow
 
-from creator.models import (Game, Investigator, Item, Mania, ManiaInvestigator,
-                            Occupation, Phobia, PhobiaInvestigator, Portrait,
-                            Skills, Spell, Tag, Weapon)
-from creator.schema_nodes import (GameNode, InvestigatorNode, ItemNode,
-                                  ManiaNode, ManiaInvNode, OccupationNode,
-                                  PhobiaNode, PhobiaInvNode, SkillNode,
-                                  SpellNode, TagNode, UserNode, WeaponNode)
+from creator.models import (Game, Investigator, InvestigatorAttribute, Item,
+                            Mania, ManiaInvestigator, Occupation, Phobia,
+                            PhobiaInvestigator, Portrait, Skills, Spell, Tag,
+                            Weapon)
+from creator.schema_nodes import (AttrInvNode, GameNode, InvestigatorNode,
+                                  ItemNode, ManiaNode, ManiaInvNode,
+                                  OccupationNode, PhobiaNode, PhobiaInvNode,
+                                  SkillNode, SpellNode, TagNode, UserNode,
+                                  WeaponNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
                       relay)
@@ -246,7 +248,6 @@ class WeaponMutation(ClientIDMutation):
         uses_per_round = String()
         mal_function = Int()
 
-
     @classmethod
     def mutate(cls, *args, **kwargs):
         """Generates mutation which is an instance of the Node class which
@@ -428,6 +429,38 @@ class GameMutation(ClientIDMutation):
             method,
             input_,
             'game'
+        )
+        return ret
+
+
+class AttrInvMutation(ClientIDMutation):
+    attrInv = Field(AttrInvNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        investigator = String()
+        attr = Int()
+        value = Int()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        method = input_.pop('method')
+        input_['investigator'] = Investigator.objects.filter(
+            uuid=input_.get('investigator')).first()
+        ret = mutation_flow(
+            AttrInvMutation,
+            InvestigatorAttribute,
+            method,
+            input_,
+            'attrInv'
         )
 
         return ret

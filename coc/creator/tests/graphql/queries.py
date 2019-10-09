@@ -1124,3 +1124,89 @@ mutation{{
   }}
 }}
 """
+
+all_attrs_inv = """
+query{
+  allAttrsInv{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_attr_inv = """
+{{
+  allAttrsInv(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_attr_inv = """
+mutation{{
+  attrInvMutate(input:{{
+    method: "CREATE",
+    investigator: "{investigator}",
+    attr: 1,
+    value: 20
+  }})
+  {{
+    attrInv{{
+      uuid,
+      investigator{{
+        name
+      }},
+      attr,
+      value
+    }}
+  }}
+}}
+"""
+
+delete_attr_inv = """
+mutation{{
+  attrInvMutate(input:{{
+    method: "DELETE",
+    uuid: "{uuid}"
+  }})
+  {{
+    attrInv{{
+      uuid,
+      investigator{{
+        name
+      }},
+      attr,
+      value
+    }}
+  }}
+}}
+"""
+
+edit_attr_inv = """
+mutation{{
+  attrInvMutate(input:{{
+    method: "UPDATE",
+    uuid: "{uuid}",
+    investigator: "{investigator}",
+    attr: 4,
+    value: 40
+  }})
+  {{
+    attrInv{{
+      uuid,
+      investigator{{
+        name
+      }},
+      attr,
+      value
+    }}
+  }}
+}}
+"""

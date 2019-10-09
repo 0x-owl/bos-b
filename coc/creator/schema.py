@@ -1,15 +1,18 @@
 from creator.models import Investigator
-from creator.schema_nodes import (GameNode, InvestigatorNode, ItemNode,
-                                  ManiaNode, ManiaInvNode, OccupationNode,
-                                  PhobiaNode, PhobiaInvNode, PortraitNode,
-                                  SkillNode, SpellNode, TagNode, UserNode,
-                                  WeaponNode)
-from creator.schema_mutations import (GameMutation, InvestigatorMutation,
-                                      ItemMutation, ManiaMutation,
-                                      ManiaInvMutation, OccupationMutation,
-                                      PhobiaMutation, PhobiaInvMutation,
-                                      SkillMutation, SpellMutation,
-                                      TagMutation, WeaponMutation)
+
+from creator.schema_nodes import (AttrInvNode, GameNode, InvestigatorNode,
+                                  ItemNode, ManiaNode, ManiaInvNode,
+                                  OccupationNode, PhobiaNode, PhobiaInvNode,
+                                  PortraitNode, SkillNode, SpellNode, TagNode,
+                                  UserNode, WeaponNode)
+from creator.schema_mutations import (AttrInvMutation, GameMutation,
+                                      InvestigatorMutation, ItemMutation,
+                                      ManiaMutation, ManiaInvMutation,
+                                      OccupationMutation, PhobiaMutation,
+                                      PhobiaInvMutation, SkillMutation,
+                                      SpellMutation, TagMutation,
+                                      WeaponMutation)
+
 from creator.helpers.random_investigator import random_inv
 
 from graphene import Field, relay
@@ -59,6 +62,9 @@ class Query(object):
     all_games = DjangoFilterConnectionField(GameNode)
     game = relay.Node.Field(GameNode)
 
+    all_attrs_inv = DjangoFilterConnectionField(AttrInvNode)
+    attr_inv = relay.Node.Field(AttrInvNode)
+
     random_investigator = Field(InvestigatorNode)
 
     def resolve_random_investigator(self, info):
@@ -80,3 +86,4 @@ class Mutation(object):
     phobia_mutate = PhobiaMutation.Field()
     phobia_inv_mutate = PhobiaInvMutation.Field()
     game_mutate = GameMutation.Field()
+    attr_inv_mutate = AttrInvMutation.Field()
