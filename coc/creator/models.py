@@ -418,6 +418,7 @@ class InvestigatorTags(Model):
     tag = ForeignKey(Tag, on_delete=PROTECT)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
 
+
     class Meta:
         verbose_name_plural = 'investigator tags'
 
