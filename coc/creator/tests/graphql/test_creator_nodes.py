@@ -530,9 +530,29 @@ class TestTagInvQuery(GraphTest):
     def test_tags_inv_query_node(self):
         """Test acquisitions of a full list of tags or by a single uuid.
         """
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'tag': {'query': create_tag}
+        })
+        investigator_uuid = res['investigator']
+        tag_uuid = res['tag']
+        tag_inv_uuid = self.create_and_obtain_uuid(
+            query=create_tag_inv,
+            model_name='tagInv',
+            uuids={
+                'investigator_uuid': investigator_uuid,
+                'tag_uuid': tag_uuid
+            }
+        )
         assert self.full_research_test(
             all_tags_inv, one_tag_inv, 'allTagsInv'
         )
+        # clean up of auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_tag_inv, {'uuid': tag_inv_uuid}),
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_tag, {'uuid': tag_uuid}),
+        ])
 
     def test_tags_inv_full_mutation(self):
         """This tag_1tests creates, updates and finally deletes a tag
