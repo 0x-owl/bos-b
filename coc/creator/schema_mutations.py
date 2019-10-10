@@ -11,7 +11,7 @@ from creator.schema_nodes import (AttrInvNode, DiaryInvNode, GameNode,
                                   ManiaInvNode, OccupationNode, PhobiaNode,
                                   PhobiaInvNode, SkillNode, SkillInvNode,
                                   SpellNode, TagNode, TagInvNode, UserNode,
-                                  WeaponNode)
+                                  WeaponNode, UserNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
                       relay)
@@ -570,5 +570,52 @@ class AttrInvMutation(ClientIDMutation):
             input_,
             'attrInv'
         )
+
+        return ret
+
+
+class UserMutation(ClientIDMutation):
+    user = Field(UserNode)
+
+    class Input:
+        method = String()
+        username = String()
+        first_name = String()
+        last_name = String()
+        email = String()
+        password = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        method = input_.pop('method')
+        ret = None
+        # Before update flow
+        if method == 'UPDATE':
+            users = User.objects.filter(username=input_['username'])
+            user = users.first()
+            password = user.password
+            users.update(**input_)
+            user = users.first()
+            if password != input_['password']:
+                user.set_password(input_['password'])
+                user.save()
+                user = user
+            ret = UserMutation(user=user)
+        elif method == 'CREATE':
+            user = User(**input_)
+            user.set_password(input_['password'])
+            user.save()
+            ret = UserMutation(user=user)
+        elif method == 'DELETE':
+            user = User.objects.get(username=input_['username'])
+            user.delete()
+            ret = UserMutation(user=user)
 
         return ret
