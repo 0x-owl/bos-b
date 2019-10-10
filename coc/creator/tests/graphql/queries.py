@@ -1042,6 +1042,92 @@ mutation{{
 }}
 """
 
+all_diarys_inv = """
+query{
+  allDiarysInv{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_diary_inv = """
+{{
+  allDiarysInv(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_diary_inv = """
+mutation{{
+  diaryInvMutate(input:{{
+    method: "CREATE",
+    investigator: "{investigator_uuid}",
+    title: "test_1",
+    notes: "test_1"
+  }})
+  {{
+    diaryInv{{
+      investigator{{
+        name
+      }},
+      title,
+      notes,
+      uuid
+    }}
+  }}
+}}
+"""
+
+delete_diary_inv = """
+mutation{{
+  diaryInvMutate(input:{{
+    method: "DELETE",
+    uuid: "{uuid}"
+  }})
+  {{
+    diaryInv{{
+      investigator{{
+        name
+      }},
+      title,
+      notes,
+      uuid
+    }}
+  }}
+}}
+"""
+
+edit_diary_inv = """
+mutation{{
+  diaryInvMutate(input:{{
+    method: "UPDATE",
+    uuid: "{uuid}"
+    investigator: "{investigator_uuid}",
+    title: "test",
+    notes: "test"
+  }})
+  {{
+    diaryInv{{
+      investigator{{
+        name
+      }},
+      title,
+      notes,
+      uuid
+    }}
+  }}
+}}
+"""
+
 all_skills_inv = """
 query{
   allSkillsInv{
