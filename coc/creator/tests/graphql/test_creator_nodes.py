@@ -4,21 +4,23 @@ and a seeded database, either locally or remotely for them to work.
 """
 from random import choice
 
-from creator.tests.graphql.queries import (all_games, all_attrs_inv,
-                                           all_investigators, all_items,
-                                           all_manias, all_manias_inv, all_occ,
+from creator.tests.graphql.queries import (all_attrs_inv, all_diarys_inv,
+                                           all_games, all_investigators,
+                                           all_items, all_manias,
+                                           all_manias_inv, all_occ,
                                            all_phobias, all_phobias_inv,
                                            all_skills, all_skills_inv,
                                            all_spells, all_tags, all_tags_inv,
                                            all_weapons, create_attr_inv,
-                                           create_game, create_investigator,
-                                           create_item, create_mania,
-                                           create_mania_inv, create_occ,
-                                           create_phobia, create_phobia_inv,
-                                           create_skill, create_skill_inv,
-                                           create_spell, create_tag,
-                                           create_tag_inv, create_weapon,
-                                           delete_attr_inv, delete_game,
+                                           create_diary_inv, create_game,
+                                           create_investigator, create_item,
+                                           create_mania, create_mania_inv,
+                                           create_occ, create_phobia,
+                                           create_phobia_inv, create_skill,
+                                           create_skill_inv, create_spell,
+                                           create_tag, create_tag_inv,
+                                           create_weapon, delete_attr_inv,
+                                           delete_diary_inv, delete_game,
                                            delete_investigator, delete_item,
                                            delete_mania, delete_mania_inv,
                                            delete_occ, delete_phobia,
@@ -26,13 +28,14 @@ from creator.tests.graphql.queries import (all_games, all_attrs_inv,
                                            delete_skill_inv, delete_spell,
                                            delete_tag, delete_tag_inv,
                                            delete_weapon, edit_attr_inv,
-                                           edit_game, edit_investigator,
-                                           edit_item, edit_mania,
-                                           edit_mania_inv, edit_occ,
-                                           edit_phobia, edit_phobia_inv,
-                                           edit_skill, edit_skill_inv,
-                                           edit_spell, edit_tag, edit_tag_inv,
-                                           edit_weapon, one_attr_inv,
+                                           edit_diary_inv, edit_game,
+                                           edit_investigator, edit_item,
+                                           edit_mania, edit_mania_inv,
+                                           edit_occ, edit_phobia,
+                                           edit_phobia_inv, edit_skill,
+                                           edit_skill_inv, edit_spell,
+                                           edit_tag, edit_tag_inv, edit_weapon,
+                                           one_attr_inv, one_diary_inv,
                                            one_game, one_investigator,
                                            one_item, one_mania, one_mania_inv,
                                            one_occ, one_phobia, one_phobia_inv,
@@ -465,6 +468,63 @@ class TestGameQuery(GraphTest):
         )
 
 
+class TestDiaryInvQuery(GraphTest):
+    """Test class that encapsulates all diary-inv graphql query tests."""
+    def test_diarysInv_query_node(self):
+        """Test acquisitions of a full list of diary-inv or by a single uuid.
+        """
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator}
+        })
+        investigator_uuid = res['investigator']
+        diary_inv_uuid = self.create_and_obtain_uuid(
+            query=create_diary_inv,
+            model_name='diaryInv',
+            uuids={'investigator_uuid': investigator_uuid}
+        )
+
+        assert self.full_research_test(
+            all_diarys_inv, one_diary_inv, 'allDiarysInv'
+        )
+
+        # clean up auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_diary_inv, {'uuid': diary_inv_uuid})
+        ])
+
+    def test_diarysInv_full_mutation(self):
+        """This tests creates, updates and finally deletes a diary-inv
+        through the graphql queries.
+        """
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator}
+        })
+        investigator_uuid = res['investigator']
+
+        assert self.full_mutation_test(
+            create_query=create_diary_inv,
+            edit_query=edit_diary_inv,
+            delete_query=delete_diary_inv,
+            one_query=one_diary_inv,
+            query_edge_name="allDiarysInv",
+            mutation_edge_name="diaryInvMutate",
+            node_name="diaryInv",
+            edition_key="title",
+            value_key="test",
+            extras={
+                "investigator_uuid": investigator_uuid
+            }
+        )
+
+        # clean up of auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid})
+        ])
+
+
 class TestTagInvQuery(GraphTest):
     """Test class that encapsulates all tags graphql query tests."""
     def test_tags_inv_query_node(self):
@@ -527,7 +587,6 @@ class TestSkillInvQuery(GraphTest):
         assert status == 200
         investigator_uuid = (
             data_investigator['investigatorMutate']['investigator']['uuid'])
-
         data_skill, status = self.run_query(
             create_skill.format())
         assert status == 200
@@ -635,4 +694,5 @@ class TestAttrInvQuery(GraphTest):
             extras={"investigator": investigator_uuid}
         )
 
+        # clean up of auxiliar entities
         self.run_query(delete_investigator.format(uuid=investigator_uuid))

@@ -1,20 +1,20 @@
 from creator.models import Investigator
 
-from creator.schema_nodes import (AttrInvNode, GameNode, InvestigatorNode,
-                                  ItemNode, ManiaNode, ManiaInvNode,
-                                  OccupationNode, PhobiaNode, PhobiaInvNode,
-                                  PortraitNode, SkillNode, SkillInvNode,
-                                  SpellNode, TagNode, TagInvNode, UserNode,
-                                  WeaponNode)
+from creator.schema_nodes import (AttrInvNode, DiaryInvNode, GameNode,
+                                  InvestigatorNode, ItemNode, ManiaNode,
+                                  ManiaInvNode, OccupationNode, PhobiaNode,
+                                  PhobiaInvNode, PortraitNode, SkillNode,
+                                  SkillInvNode, SpellNode, TagNode, TagInvNode,
+                                  UserNode, WeaponNode)
 
-from creator.schema_mutations import (AttrInvMutation, GameMutation,
-                                      InvestigatorMutation, ItemMutation,
-                                      ManiaMutation, ManiaInvMutation,
-                                      OccupationMutation, PhobiaMutation,
-                                      PhobiaInvMutation, SkillMutation,
-                                      SkillInvMutation, SpellMutation,
-                                      TagMutation, TagInvMutation,
-                                      WeaponMutation)
+from creator.schema_mutations import (AttrInvMutation, DiaryInvMutation,
+                                      GameMutation, InvestigatorMutation,
+                                      ItemMutation, ManiaMutation,
+                                      ManiaInvMutation, OccupationMutation,
+                                      PhobiaMutation, PhobiaInvMutation,
+                                      SkillMutation, SkillInvMutation,
+                                      SpellMutation, TagMutation,
+                                      TagInvMutation, WeaponMutation)
 
 from creator.helpers.random_investigator import random_inv
 
@@ -74,6 +74,9 @@ class Query(object):
     all_tags_inv = DjangoFilterConnectionField(TagInvNode)
     tag_inv = relay.Node.Field(TagInvNode)
 
+    all_diarys_inv = DjangoFilterConnectionField(DiaryInvNode)
+    diary_inv = relay.Node.Field(DiaryInvNode)
+
     random_investigator = Field(InvestigatorNode)
 
     def resolve_random_investigator(self, info):
@@ -94,6 +97,7 @@ class Mutation(object):
     mania_inv_mutate = ManiaInvMutation.Field()
     phobia_mutate = PhobiaMutation.Field()
     phobia_inv_mutate = PhobiaInvMutation.Field()
+    diary_inv_mutate = DiaryInvMutation.Field()
     tag_inv_mutate = TagInvMutation.Field()
     skill_inv_mutate = SkillInvMutation.Field()
     game_mutate = GameMutation.Field()
