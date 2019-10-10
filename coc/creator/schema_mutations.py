@@ -1,15 +1,16 @@
 from coc.utils import mutation_flow
 
 from creator.models import (Game, Investigator, InvestigatorAttribute,
-                            InvestigatorSkills, Item, Mania, ManiaInvestigator,
-                            Occupation, Phobia, PhobiaInvestigator, Portrait,
-                            Skills, Spell, Tag, Weapon)
+                            InvestigatorSkills, InvestigatorTags, Item, Mania,
+                            ManiaInvestigator, Occupation, Phobia,
+                            PhobiaInvestigator, Portrait, Skills, Spell, Tag,
+                            Weapon)
 
 from creator.schema_nodes import (AttrInvNode, GameNode, InvestigatorNode,
                                   ItemNode, ManiaNode, ManiaInvNode,
                                   OccupationNode, PhobiaNode, PhobiaInvNode,
                                   SkillNode, SkillInvNode, SpellNode, TagNode,
-                                  UserNode, WeaponNode)
+                                  TagInvNode, UserNode, WeaponNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
                       relay)
@@ -396,6 +397,41 @@ class PhobiaInvMutation(ClientIDMutation):
             method,
             input_,
             'phobiaInv'
+        )
+
+        return ret
+
+
+class TagInvMutation(ClientIDMutation):
+    tag_inv = Field(TagInvNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        tag = String()
+        investigator = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        method = input_.pop('method')
+        input_['investigator'] = Investigator.objects.filter(
+            uuid=input_.get('investigator')).first()
+        input_['tag'] = Tag.objects.filter(
+            uuid=input_.get('tag')
+        ).first()
+        ret = mutation_flow(
+            TagInvMutation,
+            InvestigatorTags,
+            method,
+            input_,
+            'tag_inv'
         )
 
         return ret

@@ -1136,6 +1136,90 @@ mutation{{
 }}
 """
 
+all_tags_inv = """
+query{
+  allTagsInv{
+    edges{
+      node{
+        uuid,
+        investigator{
+          name
+        },
+        tag{
+          title
+        }
+      }
+    }
+  }
+}
+"""
+
+one_tag_inv = """
+{{
+  allTagsInv(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_tag_inv = """
+mutation{{
+  tagInvMutate(
+    input:{{
+      method: "CREATE",
+      investigator: "{investigator_uuid}",
+      tag: "{tag_uuid}"
+    }})
+  {{
+    tagInv{{
+      uuid
+    }}
+  }}
+}}
+"""
+
+delete_tag_inv = """
+mutation{{
+  tagInvMutate(
+    input:{{
+      method: "DELETE",
+      uuid: "{uuid}",
+    }})
+  {{
+    tagInv{{
+      uuid
+    }}
+  }}
+}}
+"""
+
+edit_tag_inv = """
+mutation{{
+  tagInvMutate(
+    input:{{
+      method: "UPDATE",
+      investigator: "{investigator_uuid}",
+      tag: "{tag_uuid_2}",
+      uuid: "{uuid}"
+    }})
+  {{
+    tagInv{{
+      uuid,
+      tag{{
+        uuid
+      }},
+      investigator{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
 all_games = """
 query{
   allGames{
