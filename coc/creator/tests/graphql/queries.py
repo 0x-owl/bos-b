@@ -1042,6 +1042,191 @@ mutation{{
 }}
 """
 
+all_campaigns_inv = """
+query{
+  allCampaignsInv{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_campaign_inv = """
+{{
+  allCampaignsInv(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_campaign_inv = """
+mutation{{
+  campaignInvMutate(
+    input:{{
+      method:"CREATE",
+      investigator: "{investigator_uuid}",
+      campaign: "{campaign_uuid}"
+  }})
+  {{
+    campaignInv{{
+      uuid,
+      investigator{{
+        uuid
+      }},
+      timestamp,
+      campaign{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+delete_campaign_inv = """
+mutation{{
+  campaignInvMutate(
+    input:{{
+      method:"DELETE",
+      uuid: "{uuid}"
+  }})
+  {{
+    campaignInv{{
+      uuid,
+      investigator{{
+        uuid
+      }},
+      timestamp,
+      campaign{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+edit_campaign_inv = """
+mutation{{
+  campaignInvMutate(
+    input:{{
+      method:"UPDATE",
+      uuid: "{uuid}",
+      investigator: "{investigator_uuid}",
+      campaign: "{campaign_uuid2}"
+  }})
+  {{
+    campaignInv{{
+      uuid,
+      investigator{{
+        uuid
+      }},
+      timestamp,
+      campaign{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+all_inventorys_inv = """
+query{
+  allInventorysInv{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_inventory_inv = """
+{{
+  allInventorysInv(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_inventory_inv = """
+mutation{{
+  inventoryInvMutate(input:{{
+    method: "CREATE",
+    stock: 3,
+    investigator: "{investigator_uuid}",
+    item: "{item_uuid}"
+  }})
+  {{
+    inventoryInv{{
+      investigator{{
+        uuid
+      }},
+      item{{
+        uuid
+      }},
+      stock,
+      uuid
+    }}
+  }}
+}}
+"""
+
+delete_inventory_inv = """
+mutation{{
+  inventoryInvMutate(input:{{
+    method: "DELETE",
+    uuid: "{uuid}"
+  }})
+  {{
+    inventoryInv{{
+      investigator{{
+        uuid
+      }},
+      item{{
+        uuid
+      }},
+      stock,
+      uuid
+    }}
+  }}
+}}
+"""
+
+edit_inventory_inv = """
+mutation{{
+  inventoryInvMutate(input:{{
+    method: "UPDATE",
+    stock: 10,
+    uuid: "{uuid}",
+    investigator: "{investigator_uuid}",
+    item: "{item_uuid2}"
+  }})
+  {{
+    inventoryInv{{
+      investigator{{
+        uuid
+      }},
+      item{{
+        uuid
+      }},
+      stock,
+      uuid
+    }}
+  }}
+}}
+"""
+
 all_diarys_inv = """
 query{
   allDiarysInv{

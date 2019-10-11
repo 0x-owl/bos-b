@@ -1,6 +1,7 @@
 from json import loads
 
-from creator.models import (Game, Investigator, InvestigatorAttribute,
+from creator.models import (CampaignInvestigator, Game, Inventory,
+                            Investigator, InvestigatorAttribute,
                             InvestigatorsDiary, InvestigatorSkills,
                             InvestigatorTags, Item, Mania, ManiaInvestigator,
                             Occupation, Phobia, PhobiaInvestigator, Portrait,
@@ -166,6 +167,30 @@ class PhobiaInvNode(DjangoObjectType):
             'investigator': ['exact'],
             'phobia': ['exact'],
             'duration': ['exact', 'gt', 'lt', 'gte', 'lte']
+        }
+        interfaces = (relay.Node, )
+
+
+class CampaignInvNode(DjangoObjectType):
+    class Meta:
+        model = CampaignInvestigator
+        filter_fields = {
+            'uuid': ['exact'],
+            'campaign': ['exact'],
+            'investigator': ['exact'],
+            'timestamp': ['icontains', 'istartswith']
+        }
+        interfaces = (relay.Node, )
+
+
+class InventoryInvNode(DjangoObjectType):
+    class Meta:
+        model = Inventory
+        filter_fields = {
+            'uuid': ['exact'],
+            'investigator': ['exact'],
+            'item': ['exact'],
+            'stock': ['exact', 'gt', 'lt', 'gte', 'lte']
         }
         interfaces = (relay.Node, )
 
