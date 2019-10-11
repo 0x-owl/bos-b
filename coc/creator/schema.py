@@ -7,6 +7,7 @@ from creator.schema_nodes import (AttrInvNode, CampaignInvNode, DiaryInvNode,
                                   PortraitNode, SkillInvNode, SkillNode,
                                   SpellNode, TagInvNode, TagNode, UserNode,
                                   WeaponNode)
+
 from creator.schema_mutations import (AttrInvMutation, CampaignInvMutation,
                                       DiaryInvMutation, GameMutation,
                                       InventoryInvMutation,

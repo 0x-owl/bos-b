@@ -471,6 +471,42 @@ class InventoryInvMutation(ClientIDMutation):
         return ret
 
 
+class InventoryInvMutation(ClientIDMutation):
+    inventory_inv = Field(InventoryInvNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        investigator = String()
+        item = String()
+        stock = Int()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        method = input_.pop('method')
+        input_['investigator'] = Investigator.objects.filter(
+            uuid=input_.get('investigator')).first()
+        input_['item'] = Item.objects.filter(
+            uuid=input_.get('item')
+        ).first()
+        ret = mutation_flow(
+            InventoryInvMutation,
+            Inventory,
+            method,
+            input_,
+            'inventory_inv'
+        )
+
+        return ret
+
+
 class DiaryInvMutation(ClientIDMutation):
     diary_inv = Field(DiaryInvNode)
 
