@@ -1,17 +1,18 @@
 from coc.utils import mutation_flow
 
-from creator.models import (Game, Investigator, InvestigatorAttribute,
+from creator.models import (CampaignInvestigator, Game, Inventory,
+                            Investigator, InvestigatorAttribute,
                             InvestigatorsDiary, InvestigatorSkills,
                             InvestigatorTags, Item, Mania, ManiaInvestigator,
                             Occupation, Phobia, PhobiaInvestigator, Portrait,
                             Skills, Spell, Tag, Weapon)
 
-from creator.schema_nodes import (AttrInvNode, DiaryInvNode, GameNode,
-                                  InvestigatorNode, ItemNode, ManiaNode,
-                                  ManiaInvNode, OccupationNode, PhobiaNode,
-                                  PhobiaInvNode, SkillNode, SkillInvNode,
-                                  SpellNode, TagNode, TagInvNode, UserNode,
-                                  WeaponNode, UserNode)
+from creator.schema_nodes import (AttrInvNode, CampaignInvNode, DiaryInvNode,
+                                  GameNode, InventoryInvNode, InvestigatorNode,
+                                  ItemNode, ManiaNode, ManiaInvNode,
+                                  OccupationNode, PhobiaNode, PhobiaInvNode,
+                                  SkillNode, SkillInvNode, SpellNode, TagNode,
+                                  TagInvNode, UserNode, WeaponNode, UserNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
                       relay)
@@ -334,7 +335,6 @@ class ManiaInvMutation(ClientIDMutation):
             input_,
             'maniaInv'
         )
-
         return ret
 
 
@@ -398,6 +398,74 @@ class PhobiaInvMutation(ClientIDMutation):
             method,
             input_,
             'phobiaInv'
+        )
+        return ret
+
+
+class CampaignInvMutation(ClientIDMutation):
+    campaign_inv = Field(CampaignInvNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        investigator = String()
+        campaign = String()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        method = input_.pop('method')
+        input_['investigator'] = Investigator.objects.filter(
+            uuid=input_.get('investigator')).first()
+        input_['campaign'] = Game.objects.filter(
+            uuid=input_.get('campaign')).first()
+        ret = mutation_flow(
+            CampaignInvMutation,
+            CampaignInvestigator,
+            method,
+            input_,
+            'campaign_inv'
+        )
+        return ret
+
+
+class InventoryInvMutation(ClientIDMutation):
+    inventory_inv = Field(InventoryInvNode)
+
+    class Input:
+        method = String()
+        uuid = String()
+        investigator = String()
+        item = String()
+        stock = Int()
+
+    @classmethod
+    def mutate(cls, *args, **kwargs):
+        """Generates mutation which is an instance of the Node class which
+        results in a instance of our model.
+        Arguments:
+            input -- (dict) dictionary that has the keys corresponding to the
+            Input class (title, user).
+        """
+        input_ = kwargs.get('input')
+        method = input_.pop('method')
+        input_['investigator'] = Investigator.objects.filter(
+            uuid=input_.get('investigator')).first()
+        input_['item'] = Item.objects.filter(
+            uuid=input_.get('item')
+        ).first()
+        ret = mutation_flow(
+            InventoryInvMutation,
+            Inventory,
+            method,
+            input_,
+            'inventory_inv'
         )
 
         return ret
