@@ -92,7 +92,7 @@ class TestInvestigatorQuery(GraphTest):
 
 
 class TestSkillQuery(GraphTest):
-    """Test class that encapsulates all skillsa graphql query tests."""
+    """Test class that encapsulates all skills graphql query tests."""
     def test_skills_query_node(self):
         """Test acquisitions of a full list of skills or by a single
         uuid.
@@ -179,13 +179,20 @@ class TestWeaponQuery(GraphTest):
     def test_items_query_node(self):
         """Test acquisitions of a full list of weapons or by a single uuid.
         """
-        data_weapon, status = self.run_query(create_weapon.format())
-        assert status == 200
-        weapon_uuid = data_weapon['weaponMutate']['weapon']['uuid']
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'weapon': {'query': create_weapon}
+        })
+        weapon_uuid = res['weapon']
+
         assert self.full_research_test(
             all_weapons, one_weapon, 'allWeapons'
         )
-        self.run_query(delete_weapon.format(uuid=weapon_uuid))
+
+        # clean up auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_weapon, {'uuid': weapon_uuid})
+        ])
 
     def test_weapon_full_mutation(self):
         """This tests creates, updates and finally deletes a weapon
@@ -458,15 +465,20 @@ class TestGameQuery(GraphTest):
     def test_game_query_node(self):
         """Test acquisitions of a full list of games or by a single uuid.
         """
-        data_game, status = self.run_query(create_game.format())
-        assert status == 200
-        game_uuid = data_game['gameMutate']['game']['uuid']
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'game': {'query': create_game}
+        })
+        game_uuid = res['game']
 
         assert self.full_research_test(
             all_games, one_game, 'allGames'
         )
 
-        self.run_query(delete_game.format(uuid=game_uuid))
+        # clean up auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_game, {'uuid': game_uuid})
+        ])
 
     def test_game_full_mutation(self):
         """This tests creates, updates and finally deletes a game
@@ -692,9 +704,11 @@ class TestDiaryInvQuery(GraphTest):
 
 
 class TestTagInvQuery(GraphTest):
-    """Test class that encapsulates all tags graphql query tests."""
+    """Test class that encapsulates all tags-investigator graphql query tests.
+    """
     def test_tags_inv_query_node(self):
-        """Test acquisitions of a full list of tags or by a single uuid.
+        """Test acquisitions of a full list of tags-investigator or by a single
+        uuid.
         """
         res = self.batch_instance_builder({
             'investigator': {'query': create_investigator},
@@ -710,9 +724,11 @@ class TestTagInvQuery(GraphTest):
                 'tag_uuid': tag_uuid
             }
         )
+
         assert self.full_research_test(
             all_tags_inv, one_tag_inv, 'allTagsInv'
         )
+
         # clean up of auxiliar entities
         self.batch_instance_cleaner([
             (delete_tag_inv, {'uuid': tag_inv_uuid}),
@@ -721,8 +737,8 @@ class TestTagInvQuery(GraphTest):
         ])
 
     def test_tags_inv_full_mutation(self):
-        """This tag_1tests creates, updates and finally deletes a tag
-        through the graphql queries.
+        """This tag_1tests creates, updates and finally deletes a
+        tag-investigator through the graphql queries.
         """
         # Build content and content tag to be looked for
         res = self.batch_instance_builder({
@@ -764,55 +780,48 @@ class TestTagInvQuery(GraphTest):
 
 
 class TestSkillInvQuery(GraphTest):
-    """Test class that encapsulates all skills_inv graphql query tests."""
+    """Test class that encapsulates all skills-inv graphql query tests."""
     def test_skills_inv_query_node(self):
-        """Test acquisitions of a full list of skills_inv or by a single uuid.
+        """Test acquisitions of a full list of skills-inv or by a single uuid.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_skill, status = self.run_query(
-            create_skill.format())
-        assert status == 200
-        skill_uuid = (
-            data_skill['skillMutate']['skill']['uuid'])
-
-        data_skill_inv, status = self.run_query(
-            create_skill_inv.format(
-                investigator=investigator_uuid,
-                skill=skill_uuid
-            ))
-        assert status == 200
-        skill_inv_uuid = (
-            data_skill_inv['skillInvMutate']['skillInv']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'skill': {'query': create_skill}
+        })
+        investigator_uuid = res['investigator']
+        skill_uuid = res['skill']
+        skill_inv_uuid = self.create_and_obtain_uuid(
+            query=create_skill_inv,
+            model_name='skillInv',
+            uuids={
+                'investigator_uuid': investigator_uuid,
+                'skill_uuid': skill_uuid
+            }
+        )
 
         assert self.full_research_test(
             all_skills_inv, one_skill_inv, 'allSkillsInv'
         )
 
-        # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_skill.format(uuid=skill_uuid))
-        self.run_query(delete_skill_inv.format(uuid=skill_inv_uuid))
+        # clean up of auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_skill, {'uuid': skill_uuid}),
+            (delete_skill_inv, {'uuid': skill_inv_uuid}),
+        ])
 
     def test_skills_inv_full_mutation(self):
         """This tests creates, updates and finally deletes a skills_inv
         through the graphql queries.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_skill, status = self.run_query(
-            create_skill.format())
-        assert status == 200
-        skill_uuid = (
-            data_skill['skillMutate']['skill']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'skill': {'query': create_skill}
+        })
+        investigator_uuid = res['investigator']
+        skill_uuid = res['skill']
 
         assert self.full_mutation_test(
             create_query=create_skill_inv,
@@ -825,49 +834,55 @@ class TestSkillInvQuery(GraphTest):
             edition_key="value",
             value_key=33,
             extras={
-                "investigator": investigator_uuid,
-                "skill": skill_uuid
+                "investigator_uuid": investigator_uuid,
+                "skill_uuid": skill_uuid
             }
         )
 
-        # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_skill.format(uuid=skill_uuid))
+        # clean up of auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_skill, {'uuid': skill_uuid})
+        ])
 
 
 class TestAttrInvQuery(GraphTest):
-    """Test class that encapsulates all attr_inv graphql query tests."""
+    """Test class that encapsulates all attr-inv graphql query tests."""
     def test_attrs_inv_query_node(self):
-        """Test acquisitions of a full list of attr_inv or by a single uuid.
+        """Test acquisitions of a full list of attr-inv or by a single uuid.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_attr_inv, status = self.run_query(
-            create_attr_inv.format(investigator=investigator_uuid))
-        assert status == 200
-        attr_inv_uuid = (
-            data_attr_inv['attrInvMutate']['attrInv']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator}
+        })
+        investigator_uuid = res['investigator']
+        attr_inv_uuid = self.create_and_obtain_uuid(
+            query=create_attr_inv,
+            model_name='attrInv',
+            uuids={
+                'investigator_uuid': investigator_uuid
+            }
+        )
 
         assert self.full_research_test(
             all_attrs_inv, one_attr_inv, 'allAttrsInv'
         )
 
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_attr_inv.format(uuid=attr_inv_uuid))
+        # clean up of auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_attr_inv, {'uuid': attr_inv_uuid})
+        ])
 
     def test_attrs_inv_full_mutation(self):
         """This tests creates, updates and finally deletes a phobia
         through the graphql queries.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator}
+        })
+        investigator_uuid = res['investigator']
 
         assert self.full_mutation_test(
             create_query=create_attr_inv,
@@ -879,8 +894,10 @@ class TestAttrInvQuery(GraphTest):
             node_name="attrInv",
             edition_key="value",
             value_key=40,
-            extras={"investigator": investigator_uuid}
+            extras={"investigator_uuid": investigator_uuid}
         )
 
         # clean up of auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid})
+        ])
