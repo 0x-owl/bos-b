@@ -58,16 +58,19 @@ class TestInvestigatorQuery(GraphTest):
         """Test acquisitions of a full list of investigators or by a single
         uuid.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator}
+        })
+        investigator_uuid = res['investigator']
 
         assert self.full_research_test(
             all_investigators, one_investigator, 'allInvestigators')
 
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
+        # clean up auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid})
+        ])
 
     def test_investigators_full_mutation(self):
         """This tests creates, updates and finally deletes an investigator
@@ -311,52 +314,52 @@ class TestPhobiaQuery(GraphTest):
 
 
 class TestPhobiaInvQuery(GraphTest):
-    """Test class that encapsulates all phobias graphql query tests."""
+    """Test class that encapsulates all phobia-investigator graphql query
+    tests.
+    """
     def test_phobiasInv_query_node(self):
-        """Test acquisitions of a full list of phobias or by a single uuid.
+        """Test acquisitions of a full list of phobia-investigator or by a
+        single uuid.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_phobia, status = self.run_query(create_phobia.format())
-        assert status == 200
-        phobia_uuid = (
-            data_phobia['phobiaMutate']['phobia']['uuid'])
-
-        data_phobia_inv, status = self.run_query(
-            create_phobia_inv.format(
-                investigator=investigator_uuid,
-                phobia=phobia_uuid))
-        assert status == 200
-        phobia_inv_uuid = (
-            data_phobia_inv['phobiaInvMutate']['phobiaInv']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'phobia': {'query': create_phobia}
+        })
+        investigator_uuid = res['investigator']
+        phobia_uuid = res['phobia']
+        phobia_inv_uuid = self.create_and_obtain_uuid(
+            query=create_phobia_inv,
+            model_name='phobiaInv',
+            uuids={
+                'investigator_uuid': investigator_uuid,
+                'phobia_uuid': phobia_uuid
+            }
+        )
 
         assert self.full_research_test(
             all_phobias_inv, one_phobia_inv, 'allPhobiasInv'
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_phobia_inv.format(uuid=phobia_uuid))
-        self.run_query(delete_phobia.format(uuid=phobia_inv_uuid))
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_phobia, {'uuid': phobia_uuid}),
+            (delete_phobia_inv, {'uuid': phobia_inv_uuid})
+        ])
+
 
     def test_phobiasInv_full_mutation(self):
-        """This tests creates, updates and finally deletes a phobia
-        through the graphql queries.
+        """This tests creates, updates and finally deletes a
+        phobia-investigator through the graphql queries.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_phobia, status = self.run_query(create_phobia.format())
-        assert status == 200
-        phobia_uuid = (
-            data_phobia['phobiaMutate']['phobia']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'phobia': {'query': create_phobia}
+        })
+        investigator_uuid = res['investigator']
+        phobia_uuid = res['phobia']
 
         assert self.full_mutation_test(
             create_query=create_phobia_inv,
@@ -368,61 +371,64 @@ class TestPhobiaInvQuery(GraphTest):
             node_name="phobiaInv",
             edition_key="duration",
             value_key=40,
-            extras={"investigator": investigator_uuid, "phobia": phobia_uuid}
+            extras={
+                "investigator_uuid": investigator_uuid,
+                "phobia_uuid": phobia_uuid
+            }
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_phobia.format(uuid=phobia_uuid))
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_phobia, {'uuid': phobia_uuid})
+        ])
 
 
 class TestManiaInvQuery(GraphTest):
-    """Test class that encapsulates all phobias graphql query tests."""
+    """Test class that encapsulates all mania-investigator graphql query tests.
+    """
     def test_maniasInv_query_node(self):
-        """Test acquisitions of a full list of phobias or by a single uuid.
+        """Test acquisitions of a full list of mania-investigator or by a
+        single uuid.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_mania, status = self.run_query(create_mania.format())
-        assert status == 200
-        mania_uuid = (
-            data_mania['maniaMutate']['mania']['uuid'])
-
-        data_mania_inv, status = self.run_query(
-            create_mania_inv.format(
-                investigator=investigator_uuid,
-                mania=mania_uuid))
-        assert status == 200
-        mania_inv_uuid = (
-            data_mania_inv['maniaInvMutate']['maniaInv']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'mania': {'query': create_mania}
+        })
+        investigator_uuid = res['investigator']
+        mania_uuid = res['mania']
+        mania_inv_uuid = self.create_and_obtain_uuid(
+            query=create_mania_inv,
+            model_name='maniaInv',
+            uuids={
+                'investigator_uuid': investigator_uuid,
+                'mania_uuid': mania_uuid
+            }
+        )
 
         assert self.full_research_test(
             all_manias_inv, one_mania_inv, 'allManiasInv'
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_mania.format(uuid=mania_uuid))
-        self.run_query(delete_mania_inv.format(uuid=mania_inv_uuid))
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_mania, {'uuid': mania_uuid}),
+            (delete_mania_inv, {'uuid': mania_inv_uuid})
+        ])
 
     def test_maniasInv_full_mutation(self):
-        """This tests creates, updates and finally deletes a phobia
+        """This tests creates, updates and finally deletes a mania-investigator
         through the graphql queries.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_mania, status = self.run_query(create_mania.format())
-        assert status == 200
-        mania_uuid = (
-            data_mania['maniaMutate']['mania']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'mania': {'query': create_mania}
+        })
+        investigator_uuid = res['investigator']
+        mania_uuid = res['mania']
 
         assert self.full_mutation_test(
             create_query=create_mania_inv,
@@ -434,12 +440,17 @@ class TestManiaInvQuery(GraphTest):
             node_name="maniaInv",
             edition_key="duration",
             value_key=40,
-            extras={"investigator": investigator_uuid, "mania": mania_uuid}
+            extras={
+                "investigator_uuid": investigator_uuid,
+                "mania_uuid": mania_uuid
+            }
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_mania_inv.format(uuid=mania_uuid))
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_mania, {'uuid': mania_uuid})
+        ])
 
 
 class TestGameQuery(GraphTest):
