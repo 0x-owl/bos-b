@@ -881,9 +881,9 @@ mutation{{
   phobiaInvMutate(
     input: {{
       method: "CREATE",
-      investigator: "{investigator}",
+      investigator: "{investigator_uuid}",
       duration: 10,
-      phobia: "{phobia}"
+      phobia: "{phobia_uuid}"
       }})
   {{
     phobiaInv{{
@@ -928,8 +928,8 @@ mutation{{
     input: {{
       method: "UPDATE",
       uuid: "{uuid}",
-      investigator: "{investigator}",
-      phobia: "{phobia}",
+      investigator: "{investigator_uuid}",
+      phobia: "{phobia_uuid}",
       duration: 40
       }})
   {{
@@ -976,8 +976,8 @@ mutation{{
   maniaInvMutate(
     input:{{
       method: "CREATE",
-      mania: "{mania}",
-      investigator: "{investigator}",
+      mania: "{mania_uuid}",
+      investigator: "{investigator_uuid}",
       duration:10
       }})
   {{
@@ -1023,8 +1023,8 @@ mutation{{
     input:{{
       method: "UPDATE",
       uuid: "{uuid}",
-      mania: "{mania}",
-      investigator: "{investigator}",
+      mania: "{mania_uuid}",
+      investigator: "{investigator_uuid}",
       duration:40
       }})
   {{

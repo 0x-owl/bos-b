@@ -304,7 +304,7 @@ class ManiaMutation(ClientIDMutation):
 
 
 class ManiaInvMutation(ClientIDMutation):
-    maniaInv = Field(ManiaInvNode)
+    mania_inv = Field(ManiaInvNode)
 
     class Input:
         method = String()
@@ -333,7 +333,7 @@ class ManiaInvMutation(ClientIDMutation):
             ManiaInvestigator,
             method,
             input_,
-            'maniaInv'
+            'mania_inv'
         )
         return ret
 
@@ -368,7 +368,7 @@ class PhobiaMutation(ClientIDMutation):
 
 
 class PhobiaInvMutation(ClientIDMutation):
-    phobiaInv = Field(PhobiaInvNode)
+    phobia_inv = Field(PhobiaInvNode)
 
     class Input:
         method = String()
@@ -397,7 +397,7 @@ class PhobiaInvMutation(ClientIDMutation):
             PhobiaInvestigator,
             method,
             input_,
-            'phobiaInv'
+            'phobia_inv'
         )
         return ret
 
