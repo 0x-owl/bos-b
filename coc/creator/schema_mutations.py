@@ -576,7 +576,7 @@ class TagInvMutation(ClientIDMutation):
 
 
 class SkillInvMutation(ClientIDMutation):
-    skillInv = Field(SkillInvNode)
+    skill_inv = Field(SkillInvNode)
 
     class Input:
         method = String()
@@ -606,7 +606,7 @@ class SkillInvMutation(ClientIDMutation):
             InvestigatorSkills,
             method,
             input_,
-            'skillInv'
+            'skill_inv'
         )
 
         return ret
@@ -646,7 +646,7 @@ class GameMutation(ClientIDMutation):
 
 
 class AttrInvMutation(ClientIDMutation):
-    attrInv = Field(AttrInvNode)
+    attr_inv = Field(AttrInvNode)
 
     class Input:
         method = String()
@@ -672,7 +672,7 @@ class AttrInvMutation(ClientIDMutation):
             InvestigatorAttribute,
             method,
             input_,
-            'attrInv'
+            'attr_inv'
         )
 
         return ret
