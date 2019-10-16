@@ -601,7 +601,7 @@ mutation{{
 # Weapons
 
 all_weapons = """
-{
+query{
   allWeapons{
     edges{
       node{
@@ -852,6 +852,8 @@ mutation{{
 }}
 """
 
+# Phobias-Investigator
+
 all_phobias_inv = """
 query{
   allPhobiasInv{
@@ -946,6 +948,8 @@ mutation{{
   }}
 }}
 """
+
+# Manias-Investigator
 
 all_manias_inv = """
 query{
@@ -1042,6 +1046,8 @@ mutation{{
 }}
 """
 
+# Campaigns-Investigator
+
 all_campaigns_inv = """
 query{
   allCampaignsInv{
@@ -1135,6 +1141,8 @@ mutation{{
 }}
 """
 
+# Inventorys-Investigator
+
 all_inventorys_inv = """
 query{
   allInventorysInv{
@@ -1227,6 +1235,8 @@ mutation{{
 }}
 """
 
+# Diarys-Investigator
+
 all_diarys_inv = """
 query{
   allDiarysInv{
@@ -1313,6 +1323,8 @@ mutation{{
 }}
 """
 
+# Skills-Investigator
+
 all_skills_inv = """
 query{
   allSkillsInv{
@@ -1341,8 +1353,8 @@ create_skill_inv = """
 mutation{{
   skillInvMutate(input:{{
     method: "CREATE",
-    investigator: "{investigator}",
-    skill: "{skill}",
+    investigator: "{investigator_uuid}",
+    skill: "{skill_uuid}",
     category: "1",
     value: 30
   }})
@@ -1386,8 +1398,8 @@ mutation{{
   skillInvMutate(input:{{
     method: "UPDATE",
     uuid: "{uuid}",
-    investigator: "{investigator}",
-    skill: "{skill}",
+    investigator: "{investigator_uuid}",
+    skill: "{skill_uuid}",
     category: "2",
     value: 33
   }})
@@ -1406,6 +1418,8 @@ mutation{{
   }}
 }}
 """
+
+# Tags-Investigator
 
 all_tags_inv = """
 query{
@@ -1491,6 +1505,8 @@ mutation{{
 }}
 """
 
+# Games
+
 all_games = """
 query{
   allGames{
@@ -1574,6 +1590,8 @@ mutation{{
 }}
 """
 
+# Attributes-Investigator
+
 all_attrs_inv = """
 query{
   allAttrsInv{
@@ -1602,7 +1620,7 @@ create_attr_inv = """
 mutation{{
   attrInvMutate(input:{{
     method: "CREATE",
-    investigator: "{investigator}",
+    investigator: "{investigator_uuid}",
     attr: 1,
     value: 20
   }})
@@ -1643,7 +1661,7 @@ mutation{{
   attrInvMutate(input:{{
     method: "UPDATE",
     uuid: "{uuid}",
-    investigator: "{investigator}",
+    investigator: "{investigator_uuid}",
     attr: 4,
     value: 40
   }})
