@@ -23,10 +23,11 @@ def random_names(gender, decade, amount_of_names, amount_of_surnames):
     names_list = []
     surnames_list = [surname['last_name'] for surname in last_names]
 
-    random_surname = choice(surnames_list)
+    random_surname = choice(surnames_list).capitalize()
 
     if amount_of_surnames == 2:
-        random_surname = random_surname + ' ' + choice(surnames_list)
+        random_surname = random_surname + ' ' + choice(
+            surnames_list).capitalize()
 
     for name in first_names:
         if name['decade'] == decade and name['gender'] == gender:
