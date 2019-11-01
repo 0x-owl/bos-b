@@ -2,24 +2,26 @@
 
 python3 creator/helpers/scripts/occ_skill_seeder.py"
 """
+import django
 from os import environ, path
 from json import dumps, loads
 
 from django.core.wsgi import get_wsgi_application
-
 environ.setdefault("DJANGO_SETTINGS_MODULE", "coc.settings")
 APPS = [
+    'django.contrib.contenttypes',
     'django.contrib.admin',
     'django.contrib.auth',
-    'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'creator',
     'market'
 ]
+django.setup()
 environ.setdefault("INSTALLED_APPS", str(APPS))
-get_wsgi_application()
+app = get_wsgi_application()
+
 
 from creator.models import Occupation, Skills
 
