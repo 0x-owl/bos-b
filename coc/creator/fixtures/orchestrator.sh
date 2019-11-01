@@ -17,7 +17,6 @@ echo "[INFO] Flush market migrations just in case..."
 rm -rf $MARKET_PATH
 
 echo "[INFO] Apply migrations..."
-python3 $COC_PATH makemigrations
 python3 $COC_PATH migrate
 
 echo "[INFO] Creating super user..."
@@ -26,7 +25,7 @@ echo "[INFO] Input  password for root user..."
 python3 $COC_PATH changepassword root
 
 echo "[INFO] Apply project migrations..."
-python3 $COC_PATH makemigrations creator
+python3 $COC_PATH makemigrations creator market
 python3 $COC_PATH migrate
 
 echo "[INFO] Loading core entities..."
@@ -38,7 +37,7 @@ python3 $COC_PATH loaddata $FIXTURES_PATH/spells/*
 echo "[INFO] Flush remaining Occupation skills fixtures from previous runs..."
 rm -rf $FIXTURES_PATH/occupation_skills
 echo "[INFO] Create occupation skills folder"
-mkdir $FIXTURES_PATH/occupation_skills
+mkdir -p $FIXTURES_PATH/occupation_skills
 echo "[INFO] Generating Occupation Skill fixtures..."
 python3 $OCC_SKILL_SCRIPT
 echo "[INFO] Loading OccupationSkills..."

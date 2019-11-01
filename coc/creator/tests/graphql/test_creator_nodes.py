@@ -4,15 +4,18 @@ and a seeded database, either locally or remotely for them to work.
 """
 from random import choice
 
-from creator.tests.graphql.queries import (all_attrs_inv, all_diarys_inv,
-                                           all_games, all_investigators,
-                                           all_items, all_manias,
-                                           all_manias_inv, all_occ,
+from creator.tests.graphql.queries import (all_attrs_inv, all_campaigns_inv,
+                                           all_diarys_inv, all_games,
+                                           all_inventorys_inv,
+                                           all_investigators, all_items,
+                                           all_manias, all_manias_inv, all_occ,
                                            all_phobias, all_phobias_inv,
                                            all_skills, all_skills_inv,
                                            all_spells, all_tags, all_tags_inv,
                                            all_weapons, create_attr_inv,
+                                           create_campaign_inv,
                                            create_diary_inv, create_game,
+                                           create_inventory_inv,
                                            create_investigator, create_item,
                                            create_mania, create_mania_inv,
                                            create_occ, create_phobia,
@@ -20,7 +23,9 @@ from creator.tests.graphql.queries import (all_attrs_inv, all_diarys_inv,
                                            create_skill_inv, create_spell,
                                            create_tag, create_tag_inv,
                                            create_weapon, delete_attr_inv,
+                                           delete_campaign_inv,
                                            delete_diary_inv, delete_game,
+                                           delete_inventory_inv,
                                            delete_investigator, delete_item,
                                            delete_mania, delete_mania_inv,
                                            delete_occ, delete_phobia,
@@ -28,15 +33,17 @@ from creator.tests.graphql.queries import (all_attrs_inv, all_diarys_inv,
                                            delete_skill_inv, delete_spell,
                                            delete_tag, delete_tag_inv,
                                            delete_weapon, edit_attr_inv,
-                                           edit_diary_inv, edit_game,
+                                           edit_campaign_inv, edit_diary_inv,
+                                           edit_game, edit_inventory_inv,
                                            edit_investigator, edit_item,
                                            edit_mania, edit_mania_inv,
                                            edit_occ, edit_phobia,
                                            edit_phobia_inv, edit_skill,
                                            edit_skill_inv, edit_spell,
                                            edit_tag, edit_tag_inv, edit_weapon,
-                                           one_attr_inv, one_diary_inv,
-                                           one_game, one_investigator,
+                                           one_attr_inv, one_campaign_inv,
+                                           one_diary_inv, one_game,
+                                           one_inventory_inv, one_investigator,
                                            one_item, one_mania, one_mania_inv,
                                            one_occ, one_phobia, one_phobia_inv,
                                            one_skill, one_skill_inv, one_spell,
@@ -51,16 +58,19 @@ class TestInvestigatorQuery(GraphTest):
         """Test acquisitions of a full list of investigators or by a single
         uuid.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator}
+        })
+        investigator_uuid = res['investigator']
 
         assert self.full_research_test(
             all_investigators, one_investigator, 'allInvestigators')
 
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
+        # clean up auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid})
+        ])
 
     def test_investigators_full_mutation(self):
         """This tests creates, updates and finally deletes an investigator
@@ -82,7 +92,7 @@ class TestInvestigatorQuery(GraphTest):
 
 
 class TestSkillQuery(GraphTest):
-    """Test class that encapsulates all skillsa graphql query tests."""
+    """Test class that encapsulates all skills graphql query tests."""
     def test_skills_query_node(self):
         """Test acquisitions of a full list of skills or by a single
         uuid.
@@ -169,13 +179,20 @@ class TestWeaponQuery(GraphTest):
     def test_items_query_node(self):
         """Test acquisitions of a full list of weapons or by a single uuid.
         """
-        data_weapon, status = self.run_query(create_weapon.format())
-        assert status == 200
-        weapon_uuid = data_weapon['weaponMutate']['weapon']['uuid']
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'weapon': {'query': create_weapon}
+        })
+        weapon_uuid = res['weapon']
+
         assert self.full_research_test(
             all_weapons, one_weapon, 'allWeapons'
         )
-        self.run_query(delete_weapon.format(uuid=weapon_uuid))
+
+        # clean up auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_weapon, {'uuid': weapon_uuid})
+        ])
 
     def test_weapon_full_mutation(self):
         """This tests creates, updates and finally deletes a weapon
@@ -304,52 +321,52 @@ class TestPhobiaQuery(GraphTest):
 
 
 class TestPhobiaInvQuery(GraphTest):
-    """Test class that encapsulates all phobias graphql query tests."""
+    """Test class that encapsulates all phobia-investigator graphql query
+    tests.
+    """
     def test_phobiasInv_query_node(self):
-        """Test acquisitions of a full list of phobias or by a single uuid.
+        """Test acquisitions of a full list of phobia-investigator or by a
+        single uuid.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_phobia, status = self.run_query(create_phobia.format())
-        assert status == 200
-        phobia_uuid = (
-            data_phobia['phobiaMutate']['phobia']['uuid'])
-
-        data_phobia_inv, status = self.run_query(
-            create_phobia_inv.format(
-                investigator=investigator_uuid,
-                phobia=phobia_uuid))
-        assert status == 200
-        phobia_inv_uuid = (
-            data_phobia_inv['phobiaInvMutate']['phobiaInv']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'phobia': {'query': create_phobia}
+        })
+        investigator_uuid = res['investigator']
+        phobia_uuid = res['phobia']
+        phobia_inv_uuid = self.create_and_obtain_uuid(
+            query=create_phobia_inv,
+            model_name='phobiaInv',
+            uuids={
+                'investigator_uuid': investigator_uuid,
+                'phobia_uuid': phobia_uuid
+            }
+        )
 
         assert self.full_research_test(
             all_phobias_inv, one_phobia_inv, 'allPhobiasInv'
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_phobia_inv.format(uuid=phobia_uuid))
-        self.run_query(delete_phobia.format(uuid=phobia_inv_uuid))
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_phobia, {'uuid': phobia_uuid}),
+            (delete_phobia_inv, {'uuid': phobia_inv_uuid})
+        ])
+
 
     def test_phobiasInv_full_mutation(self):
-        """This tests creates, updates and finally deletes a phobia
-        through the graphql queries.
+        """This tests creates, updates and finally deletes a
+        phobia-investigator through the graphql queries.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_phobia, status = self.run_query(create_phobia.format())
-        assert status == 200
-        phobia_uuid = (
-            data_phobia['phobiaMutate']['phobia']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'phobia': {'query': create_phobia}
+        })
+        investigator_uuid = res['investigator']
+        phobia_uuid = res['phobia']
 
         assert self.full_mutation_test(
             create_query=create_phobia_inv,
@@ -361,61 +378,64 @@ class TestPhobiaInvQuery(GraphTest):
             node_name="phobiaInv",
             edition_key="duration",
             value_key=40,
-            extras={"investigator": investigator_uuid, "phobia": phobia_uuid}
+            extras={
+                "investigator_uuid": investigator_uuid,
+                "phobia_uuid": phobia_uuid
+            }
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_phobia.format(uuid=phobia_uuid))
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_phobia, {'uuid': phobia_uuid})
+        ])
 
 
 class TestManiaInvQuery(GraphTest):
-    """Test class that encapsulates all phobias graphql query tests."""
+    """Test class that encapsulates all mania-investigator graphql query tests.
+    """
     def test_maniasInv_query_node(self):
-        """Test acquisitions of a full list of phobias or by a single uuid.
+        """Test acquisitions of a full list of mania-investigator or by a
+        single uuid.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_mania, status = self.run_query(create_mania.format())
-        assert status == 200
-        mania_uuid = (
-            data_mania['maniaMutate']['mania']['uuid'])
-
-        data_mania_inv, status = self.run_query(
-            create_mania_inv.format(
-                investigator=investigator_uuid,
-                mania=mania_uuid))
-        assert status == 200
-        mania_inv_uuid = (
-            data_mania_inv['maniaInvMutate']['maniaInv']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'mania': {'query': create_mania}
+        })
+        investigator_uuid = res['investigator']
+        mania_uuid = res['mania']
+        mania_inv_uuid = self.create_and_obtain_uuid(
+            query=create_mania_inv,
+            model_name='maniaInv',
+            uuids={
+                'investigator_uuid': investigator_uuid,
+                'mania_uuid': mania_uuid
+            }
+        )
 
         assert self.full_research_test(
             all_manias_inv, one_mania_inv, 'allManiasInv'
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_mania.format(uuid=mania_uuid))
-        self.run_query(delete_mania_inv.format(uuid=mania_inv_uuid))
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_mania, {'uuid': mania_uuid}),
+            (delete_mania_inv, {'uuid': mania_inv_uuid})
+        ])
 
     def test_maniasInv_full_mutation(self):
-        """This tests creates, updates and finally deletes a phobia
+        """This tests creates, updates and finally deletes a mania-investigator
         through the graphql queries.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_mania, status = self.run_query(create_mania.format())
-        assert status == 200
-        mania_uuid = (
-            data_mania['maniaMutate']['mania']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'mania': {'query': create_mania}
+        })
+        investigator_uuid = res['investigator']
+        mania_uuid = res['mania']
 
         assert self.full_mutation_test(
             create_query=create_mania_inv,
@@ -427,12 +447,17 @@ class TestManiaInvQuery(GraphTest):
             node_name="maniaInv",
             edition_key="duration",
             value_key=40,
-            extras={"investigator": investigator_uuid, "mania": mania_uuid}
+            extras={
+                "investigator_uuid": investigator_uuid,
+                "mania_uuid": mania_uuid
+            }
         )
 
         # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_mania_inv.format(uuid=mania_uuid))
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_mania, {'uuid': mania_uuid})
+        ])
 
 
 class TestGameQuery(GraphTest):
@@ -440,15 +465,20 @@ class TestGameQuery(GraphTest):
     def test_game_query_node(self):
         """Test acquisitions of a full list of games or by a single uuid.
         """
-        data_game, status = self.run_query(create_game.format())
-        assert status == 200
-        game_uuid = data_game['gameMutate']['game']['uuid']
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'game': {'query': create_game}
+        })
+        game_uuid = res['game']
 
         assert self.full_research_test(
             all_games, one_game, 'allGames'
         )
 
-        self.run_query(delete_game.format(uuid=game_uuid))
+        # clean up auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_game, {'uuid': game_uuid})
+        ])
 
     def test_game_full_mutation(self):
         """This tests creates, updates and finally deletes a game
@@ -466,6 +496,154 @@ class TestGameQuery(GraphTest):
             value_key="test_update",
             extras={}
         )
+
+
+class TestCampaignInvQuery(GraphTest):
+    """Test class that encapsulates all campaign-inv graphql query tests."""
+    def test_campaign_inv_query_node(self):
+        """Test acquisitions of a full list of campaign-inv or by a single
+        uuid.
+        """
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'game': {'query': create_game}
+        })
+        investigator_uuid = res['investigator']
+        campaign_uuid = res['game']
+        campaign_inv_uuid = self.create_and_obtain_uuid(
+            query=create_campaign_inv,
+            model_name='campaignInv',
+            uuids={
+                'investigator_uuid': investigator_uuid,
+                'campaign_uuid': campaign_uuid
+            }
+        )
+
+        assert self.full_research_test(
+            all_campaigns_inv, one_campaign_inv, 'allCampaignsInv'
+        )
+
+        # clean up auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_game, {'uuid': campaign_uuid}),
+            (delete_campaign_inv, {'uuid': campaign_inv_uuid})
+        ])
+
+    def test_campaign_inv_full_mutation(self):
+        """This tests creates, updates and finally deletes a campaign-inv
+        through the graphql queries.
+        """
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'game': {'query': create_game},
+            'game2': {
+                'query': create_game,
+                'alt_name': 'game'}
+        })
+        investigator_uuid = res['investigator']
+        campaign_uuid = res['game']
+        campaign_uuid2 = res['game2']
+
+        assert self.full_mutation_test(
+            create_query=create_campaign_inv,
+            edit_query=edit_campaign_inv,
+            delete_query=delete_campaign_inv,
+            one_query=one_campaign_inv,
+            query_edge_name="allCampaignsInv",
+            mutation_edge_name="campaignInvMutate",
+            node_name="campaignInv",
+            edition_key="campaign",
+            value_key={'uuid': campaign_uuid2},
+            extras={
+                'investigator_uuid': investigator_uuid,
+                'campaign_uuid': campaign_uuid,
+                'campaign_uuid2': campaign_uuid2
+            }
+        )
+
+        # clean up auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_game, {'uuid': campaign_uuid}),
+            (delete_game, {'uuid': campaign_uuid2})
+        ])
+
+
+class TestInventoryInvQuery(GraphTest):
+    """Test class that encapsulates all inventory-inv graphql query tests."""
+    def test_inventorysInv_query_node(self):
+        """Test acquisitions of a full list of inventory-inv or by a single
+        uuid.
+        """
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'item': {'query': create_item}
+        })
+        investigator_uuid = res['investigator']
+        item_uuid = res['item']
+        inventory_inv_uuid = self.create_and_obtain_uuid(
+            query=create_inventory_inv,
+            model_name='inventoryInv',
+            uuids={
+                'investigator_uuid': investigator_uuid,
+                'item_uuid': item_uuid
+            }
+        )
+
+        assert self.full_research_test(
+            all_inventorys_inv, one_inventory_inv, 'allInventorysInv'
+        )
+
+        # clean up auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_item, {'uuid': item_uuid}),
+            (delete_inventory_inv, {'uuid': inventory_inv_uuid})
+        ])
+
+    def test_inventorysInv_full_mutation(self):
+        """This tests creates, updates and finally deletes a inventory-inv
+        through the graphql queries.
+        """
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'item': {'query': create_item},
+            'item2': {
+                'query': create_item,
+                'alt_name': 'item'}
+        })
+        investigator_uuid = res['investigator']
+        item_uuid = res['item']
+        item_uuid2 = res['item2']
+
+        assert self.full_mutation_test(
+            create_query=create_inventory_inv,
+            edit_query=edit_inventory_inv,
+            delete_query=delete_inventory_inv,
+            one_query=one_inventory_inv,
+            query_edge_name="allInventorysInv",
+            mutation_edge_name="inventoryInvMutate",
+            node_name="inventoryInv",
+            edition_key="item",
+            value_key={'uuid': item_uuid2},
+            extras={
+                "investigator_uuid": investigator_uuid,
+                "item_uuid": item_uuid,
+                "item_uuid2": item_uuid2
+            }
+        )
+
+        # clean up auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_item, {'uuid': item_uuid}),
+            (delete_item, {'uuid': item_uuid2})
+        ])
 
 
 class TestDiaryInvQuery(GraphTest):
@@ -526,9 +704,11 @@ class TestDiaryInvQuery(GraphTest):
 
 
 class TestTagInvQuery(GraphTest):
-    """Test class that encapsulates all tags graphql query tests."""
+    """Test class that encapsulates all tags-investigator graphql query tests.
+    """
     def test_tags_inv_query_node(self):
-        """Test acquisitions of a full list of tags or by a single uuid.
+        """Test acquisitions of a full list of tags-investigator or by a single
+        uuid.
         """
         res = self.batch_instance_builder({
             'investigator': {'query': create_investigator},
@@ -544,9 +724,11 @@ class TestTagInvQuery(GraphTest):
                 'tag_uuid': tag_uuid
             }
         )
+
         assert self.full_research_test(
             all_tags_inv, one_tag_inv, 'allTagsInv'
         )
+
         # clean up of auxiliar entities
         self.batch_instance_cleaner([
             (delete_tag_inv, {'uuid': tag_inv_uuid}),
@@ -555,8 +737,8 @@ class TestTagInvQuery(GraphTest):
         ])
 
     def test_tags_inv_full_mutation(self):
-        """This tag_1tests creates, updates and finally deletes a tag
-        through the graphql queries.
+        """This tag_1tests creates, updates and finally deletes a
+        tag-investigator through the graphql queries.
         """
         # Build content and content tag to be looked for
         res = self.batch_instance_builder({
@@ -598,53 +780,48 @@ class TestTagInvQuery(GraphTest):
 
 
 class TestSkillInvQuery(GraphTest):
-    """Test class that encapsulates all skills_inv graphql query tests."""
+    """Test class that encapsulates all skills-inv graphql query tests."""
     def test_skills_inv_query_node(self):
-        """Test acquisitions of a full list of skills_inv or by a single uuid.
+        """Test acquisitions of a full list of skills-inv or by a single uuid.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-        data_skill, status = self.run_query(
-            create_skill.format())
-        assert status == 200
-        skill_uuid = (
-            data_skill['skillMutate']['skill']['uuid'])
-
-        data_skill_inv, status = self.run_query(
-            create_skill_inv.format(
-                investigator=investigator_uuid,
-                skill=skill_uuid
-            ))
-        assert status == 200
-        skill_inv_uuid = (
-            data_skill_inv['skillInvMutate']['skillInv']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'skill': {'query': create_skill}
+        })
+        investigator_uuid = res['investigator']
+        skill_uuid = res['skill']
+        skill_inv_uuid = self.create_and_obtain_uuid(
+            query=create_skill_inv,
+            model_name='skillInv',
+            uuids={
+                'investigator_uuid': investigator_uuid,
+                'skill_uuid': skill_uuid
+            }
+        )
 
         assert self.full_research_test(
             all_skills_inv, one_skill_inv, 'allSkillsInv'
         )
 
-        # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_skill.format(uuid=skill_uuid))
-        self.run_query(delete_skill_inv.format(uuid=skill_inv_uuid))
+        # clean up of auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_skill, {'uuid': skill_uuid}),
+            (delete_skill_inv, {'uuid': skill_inv_uuid}),
+        ])
 
     def test_skills_inv_full_mutation(self):
         """This tests creates, updates and finally deletes a skills_inv
         through the graphql queries.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-        data_skill, status = self.run_query(
-            create_skill.format())
-        assert status == 200
-        skill_uuid = (
-            data_skill['skillMutate']['skill']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator},
+            'skill': {'query': create_skill}
+        })
+        investigator_uuid = res['investigator']
+        skill_uuid = res['skill']
 
         assert self.full_mutation_test(
             create_query=create_skill_inv,
@@ -657,49 +834,55 @@ class TestSkillInvQuery(GraphTest):
             edition_key="value",
             value_key=33,
             extras={
-                "investigator": investigator_uuid,
-                "skill": skill_uuid
+                "investigator_uuid": investigator_uuid,
+                "skill_uuid": skill_uuid
             }
         )
 
-        # clean up auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_skill.format(uuid=skill_uuid))
+        # clean up of auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_skill, {'uuid': skill_uuid})
+        ])
 
 
 class TestAttrInvQuery(GraphTest):
-    """Test class that encapsulates all attr_inv graphql query tests."""
+    """Test class that encapsulates all attr-inv graphql query tests."""
     def test_attrs_inv_query_node(self):
-        """Test acquisitions of a full list of attr_inv or by a single uuid.
+        """Test acquisitions of a full list of attr-inv or by a single uuid.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
-
-        data_attr_inv, status = self.run_query(
-            create_attr_inv.format(investigator=investigator_uuid))
-        assert status == 200
-        attr_inv_uuid = (
-            data_attr_inv['attrInvMutate']['attrInv']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator}
+        })
+        investigator_uuid = res['investigator']
+        attr_inv_uuid = self.create_and_obtain_uuid(
+            query=create_attr_inv,
+            model_name='attrInv',
+            uuids={
+                'investigator_uuid': investigator_uuid
+            }
+        )
 
         assert self.full_research_test(
             all_attrs_inv, one_attr_inv, 'allAttrsInv'
         )
 
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
-        self.run_query(delete_attr_inv.format(uuid=attr_inv_uuid))
+        # clean up of auxiliar entities
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid}),
+            (delete_attr_inv, {'uuid': attr_inv_uuid})
+        ])
 
     def test_attrs_inv_full_mutation(self):
         """This tests creates, updates and finally deletes a phobia
         through the graphql queries.
         """
-        data_investigator, status = self.run_query(
-            create_investigator.format())
-        assert status == 200
-        investigator_uuid = (
-            data_investigator['investigatorMutate']['investigator']['uuid'])
+        # Build content and content tag to be looked for
+        res = self.batch_instance_builder({
+            'investigator': {'query': create_investigator}
+        })
+        investigator_uuid = res['investigator']
 
         assert self.full_mutation_test(
             create_query=create_attr_inv,
@@ -711,8 +894,10 @@ class TestAttrInvQuery(GraphTest):
             node_name="attrInv",
             edition_key="value",
             value_key=40,
-            extras={"investigator": investigator_uuid}
+            extras={"investigator_uuid": investigator_uuid}
         )
 
         # clean up of auxiliar entities
-        self.run_query(delete_investigator.format(uuid=investigator_uuid))
+        self.batch_instance_cleaner([
+            (delete_investigator, {'uuid': investigator_uuid})
+        ])

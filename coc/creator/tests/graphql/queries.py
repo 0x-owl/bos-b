@@ -601,7 +601,7 @@ mutation{{
 # Weapons
 
 all_weapons = """
-{
+query{
   allWeapons{
     edges{
       node{
@@ -852,6 +852,8 @@ mutation{{
 }}
 """
 
+# Phobias-Investigator
+
 all_phobias_inv = """
 query{
   allPhobiasInv{
@@ -881,9 +883,9 @@ mutation{{
   phobiaInvMutate(
     input: {{
       method: "CREATE",
-      investigator: "{investigator}",
+      investigator: "{investigator_uuid}",
       duration: 10,
-      phobia: "{phobia}"
+      phobia: "{phobia_uuid}"
       }})
   {{
     phobiaInv{{
@@ -928,8 +930,8 @@ mutation{{
     input: {{
       method: "UPDATE",
       uuid: "{uuid}",
-      investigator: "{investigator}",
-      phobia: "{phobia}",
+      investigator: "{investigator_uuid}",
+      phobia: "{phobia_uuid}",
       duration: 40
       }})
   {{
@@ -946,6 +948,8 @@ mutation{{
   }}
 }}
 """
+
+# Manias-Investigator
 
 all_manias_inv = """
 query{
@@ -976,8 +980,8 @@ mutation{{
   maniaInvMutate(
     input:{{
       method: "CREATE",
-      mania: "{mania}",
-      investigator: "{investigator}",
+      mania: "{mania_uuid}",
+      investigator: "{investigator_uuid}",
       duration:10
       }})
   {{
@@ -1023,8 +1027,8 @@ mutation{{
     input:{{
       method: "UPDATE",
       uuid: "{uuid}",
-      mania: "{mania}",
-      investigator: "{investigator}",
+      mania: "{mania_uuid}",
+      investigator: "{investigator_uuid}",
       duration:40
       }})
   {{
@@ -1041,6 +1045,197 @@ mutation{{
   }}
 }}
 """
+
+# Campaigns-Investigator
+
+all_campaigns_inv = """
+query{
+  allCampaignsInv{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_campaign_inv = """
+{{
+  allCampaignsInv(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_campaign_inv = """
+mutation{{
+  campaignInvMutate(
+    input:{{
+      method:"CREATE",
+      investigator: "{investigator_uuid}",
+      campaign: "{campaign_uuid}"
+  }})
+  {{
+    campaignInv{{
+      uuid,
+      investigator{{
+        uuid
+      }},
+      timestamp,
+      campaign{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+delete_campaign_inv = """
+mutation{{
+  campaignInvMutate(
+    input:{{
+      method:"DELETE",
+      uuid: "{uuid}"
+  }})
+  {{
+    campaignInv{{
+      uuid,
+      investigator{{
+        uuid
+      }},
+      timestamp,
+      campaign{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+edit_campaign_inv = """
+mutation{{
+  campaignInvMutate(
+    input:{{
+      method:"UPDATE",
+      uuid: "{uuid}",
+      investigator: "{investigator_uuid}",
+      campaign: "{campaign_uuid2}"
+  }})
+  {{
+    campaignInv{{
+      uuid,
+      investigator{{
+        uuid
+      }},
+      timestamp,
+      campaign{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+# Inventorys-Investigator
+
+all_inventorys_inv = """
+query{
+  allInventorysInv{
+    edges{
+      node{
+        uuid
+      }
+    }
+  }
+}
+"""
+
+one_inventory_inv = """
+{{
+  allInventorysInv(uuid: "{uuid}"){{
+    edges{{
+      node{{
+        uuid
+      }}
+    }}
+  }}
+}}
+"""
+
+create_inventory_inv = """
+mutation{{
+  inventoryInvMutate(input:{{
+    method: "CREATE",
+    stock: 3,
+    investigator: "{investigator_uuid}",
+    item: "{item_uuid}"
+  }})
+  {{
+    inventoryInv{{
+      investigator{{
+        uuid
+      }},
+      item{{
+        uuid
+      }},
+      stock,
+      uuid
+    }}
+  }}
+}}
+"""
+
+delete_inventory_inv = """
+mutation{{
+  inventoryInvMutate(input:{{
+    method: "DELETE",
+    uuid: "{uuid}"
+  }})
+  {{
+    inventoryInv{{
+      investigator{{
+        uuid
+      }},
+      item{{
+        uuid
+      }},
+      stock,
+      uuid
+    }}
+  }}
+}}
+"""
+
+edit_inventory_inv = """
+mutation{{
+  inventoryInvMutate(input:{{
+    method: "UPDATE",
+    stock: 10,
+    uuid: "{uuid}",
+    investigator: "{investigator_uuid}",
+    item: "{item_uuid2}"
+  }})
+  {{
+    inventoryInv{{
+      investigator{{
+        uuid
+      }},
+      item{{
+        uuid
+      }},
+      stock,
+      uuid
+    }}
+  }}
+}}
+"""
+
+# Diarys-Investigator
 
 all_diarys_inv = """
 query{
@@ -1128,6 +1323,8 @@ mutation{{
 }}
 """
 
+# Skills-Investigator
+
 all_skills_inv = """
 query{
   allSkillsInv{
@@ -1156,8 +1353,8 @@ create_skill_inv = """
 mutation{{
   skillInvMutate(input:{{
     method: "CREATE",
-    investigator: "{investigator}",
-    skill: "{skill}",
+    investigator: "{investigator_uuid}",
+    skill: "{skill_uuid}",
     category: "1",
     value: 30
   }})
@@ -1201,8 +1398,8 @@ mutation{{
   skillInvMutate(input:{{
     method: "UPDATE",
     uuid: "{uuid}",
-    investigator: "{investigator}",
-    skill: "{skill}",
+    investigator: "{investigator_uuid}",
+    skill: "{skill_uuid}",
     category: "2",
     value: 33
   }})
@@ -1221,6 +1418,8 @@ mutation{{
   }}
 }}
 """
+
+# Tags-Investigator
 
 all_tags_inv = """
 query{
@@ -1306,6 +1505,8 @@ mutation{{
 }}
 """
 
+# Games
+
 all_games = """
 query{
   allGames{
@@ -1389,6 +1590,8 @@ mutation{{
 }}
 """
 
+# Attributes-Investigator
+
 all_attrs_inv = """
 query{
   allAttrsInv{
@@ -1417,7 +1620,7 @@ create_attr_inv = """
 mutation{{
   attrInvMutate(input:{{
     method: "CREATE",
-    investigator: "{investigator}",
+    investigator: "{investigator_uuid}",
     attr: 1,
     value: 20
   }})
@@ -1458,7 +1661,7 @@ mutation{{
   attrInvMutate(input:{{
     method: "UPDATE",
     uuid: "{uuid}",
-    investigator: "{investigator}",
+    investigator: "{investigator_uuid}",
     attr: 4,
     value: 40
   }})
