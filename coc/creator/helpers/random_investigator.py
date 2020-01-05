@@ -111,9 +111,9 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
             max_points -= val
         else:
             record = inv_skill.first()
-            # Remember not to surpass the 99 limit
+            # Remember not to surpass the 90 limit
             val = amount(max_points, record.value)
-            if (record.value + val) < 100:
+            if (record.value + val) < 90:
                 record.value += val
                 record.save()
                 max_points -= val
@@ -142,9 +142,9 @@ def free_point_assigner(max_points: int, skills: list, inv: Investigator):
             max_points -= val
         else:
             record = inv_skill.first()
-            # Remember not to surpass the 99 limit
+            # Remember not to surpass the 90 limit
             val = amount(max_points, record.value)
-            if (record.value + val) < 100:
+            if (record.value + val) < 90:
                 record.value += val
                 record.save()
                 max_points -= val
