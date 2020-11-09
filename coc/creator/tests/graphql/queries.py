@@ -24,6 +24,56 @@ one_investigator = """
 }}
 """
 
+all_relevant_data_from_investigator = """
+query {{
+	allInvestigators(uuid: "{uuid}"){{
+	  	edges {{
+			node {{
+			  	uuid,
+			  	name,
+			  	age,
+				player,
+				birthplace,
+				residence,
+				sex,
+				occupation{{
+				  uuid,
+				  title,
+				  creditRatingMin,
+				  creditRatingMax
+				}}
+			  	investigatorattributeSet {{
+					edges {{
+					  	node {{
+							uuid,
+							attr,
+							value
+					  	}}
+					}}
+			  	}},
+				luck,
+				sanity,
+				significantPeople,
+				ideologies,
+				traits,
+			  	investigatorskillsSet {{
+					edges {{
+					  	node {{
+							uuid,
+						  	skill{{
+						    	title
+						  	}},
+				    		value
+				  		}}
+					}}
+			  	}}
+			}}
+		}}
+	}}
+}}
+"""
+
+
 create_investigator = """
 mutation{{
   investigatorMutate(
