@@ -32,7 +32,7 @@ def renamer(instance, filename) -> str:
         fname_clean = 'portraits/{0}/{1}.jpg'.format(
             instance.investigator.uuid, now)
     else:
-        fname_clean = 'portraits/{0}/{1}.jpg'.format(
+        fname_clean = 'items/{0}/{1}.jpg'.format(
             instance.item.uuid, now)
     return fname_clean
 

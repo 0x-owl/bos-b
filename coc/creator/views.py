@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from creator.models import Investigator, Skills, InvestigatorSkills
+from creator.models import Investigator, Skills, InvestigatorSkills, Portrait
 
 from json import dumps
 # Create your views here.
@@ -12,6 +12,10 @@ def get_investigator_data(request, inv):
     investigator = Investigator.objects.get(
         uuid=inv
     )
+    portrait = Portrait.objects.get(
+        investigator=investigator
+    )
+    
     res = {
         'name': investigator.name,
         'sex': investigator.sex,
@@ -19,6 +23,7 @@ def get_investigator_data(request, inv):
         'birthplace': investigator.birthplace,
         'residence': investigator.residence,
         'size': investigator.size,
+        'portrait': portrait.portrait.url,
         'occupation': {
             'title': investigator.occupation.title,
             'credit_rating_min': investigator.occupation.credit_rating_min,
@@ -40,18 +45,21 @@ def get_investigator_data(request, inv):
             'magic_points': investigator.magic_points,
             'move_rate': investigator.move,
             'build': investigator.build[1],
-            'modifier': investigator.build[0]
+            'modifier': investigator.build[0],
+            'luck': investigator.luck
         },
     }
-    skills_dict = {}
+    skills = []
     inv_skills = InvestigatorSkills.objects.filter(
         investigator=investigator
     )
     for skill in inv_skills:
-        skills_dict[skill.skill.title] = {
-            'value': skill.value,
-            'category': skill.category
-        }
-    res['skills'] = skills_dict
-
-    return HttpResponse(dumps(res))
+        skills.append(
+            (
+                skill.skill.title,
+                skill.value,
+                skill.category
+            )
+        )
+    res['skills'] = skills
+    return render(request, 'character_sheet.html', {'investigator': res})

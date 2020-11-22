@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Character Sheet V0.0.0</title>
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+        <!-- Milligram CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+        <!-- You should properly set the path from the main file. -->
+    </head>
+    <body>
+        <h1 style="text-align: center">Investigator</h1>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    Name: {{investigator.name}}<br>
+                    Age: {{investigator.age}}<br>
+                    Sex: {{investigator.sex}}<br>
+                    Birthplace: {{investigator.birthplace}}<br>
+                    Residence: {{investigator.residence}}<br>
+                    Occupation: {{investigator.occupation.title}}<br>
+                </div>
+                <div class="column column-offset-50">   
+                    <img style="height: 200px; width: 200px" src="{{investigator.portrait }}" alt="Investigator portrait">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="column">
+                    Health: {{investigator.attributes.health}}//{{investigator.attributes.max_health}}
+                </div>
+                <div class="column column-offset-50">
+                    Sanity: {{investigator.attributes.sanity}} // 99
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="column">
+                    Magic Points: {{investigator.attributes.magic_points}} // 24
+                </div>
+                <div class="column column-offset-50">
+                    Luck: {{investigator.attributes.luck}} // 99
+                </div>             
+            </div>
+            <hr>
+            <h4 style="text-align: center"> Attributes </h4>
+            <div class="row">
+                <div class="column">
+                    <div class="row">
+                        STR: <b>{{investigator.attributes.str}}</b>
+                    </div>
+                    <div class="row">
+                        CON: <b>{{investigator.attributes.con}}</b>
+                    </div>
+                    <div class="row">
+                        SIZ: <b>{{investigator.attributes.size}}</b>
+                    </div>
+                </div>
+                <div class="column column-offset-25">
+                    <div class="row">
+                        DEX: <b>{{investigator.attributes.dex}}</b>
+                    </div>
+                    <div class="row">
+                        APP: <b>{{investigator.attributes.app}}</b>
+                    </div>
+                    <div class="row">
+                        INT: <b>{{investigator.attributes.int}}</b>
+                    </div>
+                </div>
+                <div class="column column-offset-25">
+                    <div class="row">
+                        POW: <b>{{investigator.attributes.pow}}</b>
+                    </div>
+                    <div class="row">
+                        EDU: <b>{{investigator.attributes.edu}}</b>
+                    </div>
+                    <div class="row">
+                        MOV: <b>{{investigator.attributes.move_rate}}</b>
+                    </div>
+                </div>        
+            </div>
+            <hr>
+            <div class="row">
+                <div class="column">
+                    Build: <b>{{investigator.attributes.build}}</b>
+                </div>
+                <div class="column column-offset-50">
+                    Damage Bonus: <b>{{investigator.attributes.modifier}}</b>
+                </div>
+            </div>
+            <hr>
+            <h4 style="text-align: center"> Skills</h4>
+            <div class="row">
+                <div class="column">
+                    {% for skill in investigator.skills|slice:"0:5" %}
+                        <p><u>{{skill.0}}</u>: <b>{{skill.1}}</b></p>
+                    {% endfor %}
+                </div>
+                <div class="column">
+                    {% for skill in investigator.skills|slice:"5:10" %}
+                        <p><u>{{skill.0}}</u>: <b>{{skill.1}}</b></p>
+                    {% endfor %}
+                </div>
+                <div class="column">
+                    {% for skill in investigator.skills|slice:"10:" %}
+                        <p><u>{{skill.0}}</u>: <b>{{skill.1}}</b></p>
+                    {% endfor %}
+                </div>
+            </div>       
+        </div>
+    </body>
+</html>
