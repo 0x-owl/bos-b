@@ -13,7 +13,7 @@ def obtain_attribute_value(inv, inv_attr, attr, attribute_name):
     attr_value = filter(lambda x: x[0] == attribute_name, attr.items())
     attr_value = attr_value.__next__()[1]
     attr = inv_attr.objects.filter(
-        investigator_id=inv.id, attr=attr_value).first().value
+        investigator_id=inv.id, attr=attr_value).first()
     return attr
 
 

@@ -172,7 +172,7 @@ def random_inv():
     load_investigator_attributes(inv)
     # Load derivative statuses
     inv.health = inv.max_health
-    inv.sanity = inv.power
+    inv.sanity = inv.power.value
     inv.save()
     # Obtain skills and occupations related to the investigator occupation.
     occ_skills = OccupationSkills.objects.filter(occupation=inv.occupation)

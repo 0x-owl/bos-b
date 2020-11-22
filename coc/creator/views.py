@@ -1,6 +1,7 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
+from creator.helpers.random_investigator import random_inv
 from creator.models import Investigator, Skills, InvestigatorSkills, Portrait
 
 from json import dumps
@@ -12,9 +13,9 @@ def get_investigator_data(request, inv):
     investigator = Investigator.objects.get(
         uuid=inv
     )
-    portrait = Portrait.objects.get(
+    portrait = Portrait.objects.filter(
         investigator=investigator
-    )
+    ).first()
     
     res = {
         'name': investigator.name,
@@ -23,7 +24,7 @@ def get_investigator_data(request, inv):
         'birthplace': investigator.birthplace,
         'residence': investigator.residence,
         'size': investigator.size,
-        'portrait': portrait.portrait.url,
+        'portrait': portrait.portrait.url if portrait is not None else "",
         'occupation': {
             'title': investigator.occupation.title,
             'credit_rating_min': investigator.occupation.credit_rating_min,
@@ -58,8 +59,15 @@ def get_investigator_data(request, inv):
             (
                 skill.skill.title,
                 skill.value,
+                skill.half_value,
+                skill.fifth_value,
                 skill.category
             )
         )
     res['skills'] = skills
     return render(request, 'character_sheet.html', {'investigator': res})
+
+
+def generate_random_investigator(request):
+    inv = random_inv()
+    return redirect(get_investigator_data, inv=inv)

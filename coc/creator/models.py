@@ -259,7 +259,7 @@ class Investigator(Model):
     @property
     def max_health(self):
         """Health property."""
-        health = (self.size + self.constitution) // 10
+        health = (self.size.value + self.constitution.value) // 10
         return health
 
     @property
@@ -271,9 +271,9 @@ class Investigator(Model):
     @property
     def move(self):
         """Move rate property, affected by certain conditions."""
-        if self.strength >= self.size or self.dexterity >= self.size:
+        if self.strength.value >= self.size.value or self.dexterity.value >= self.size.value:
             mov = 8
-        elif self.strength > self.size and self.dexterity > self.size:
+        elif self.strength.value > self.size.value and self.dexterity.value > self.size.value:
             mov = 9
         else:
             mov = 7
@@ -286,7 +286,7 @@ class Investigator(Model):
     @property
     def build(self):
         "default=self.power""Build attribute property."""
-        amount = self.strength + self.size
+        amount = self.strength.value + self.size.value
         res = ()
         if amount <= 64:
             res = ('-2', -2)
@@ -311,7 +311,7 @@ class Investigator(Model):
     @property
     def free_skill_points(self):
         """Obtain the amount of free skill points an investigator has."""
-        return self.intelligence * 2
+        return self.intelligence.value * 2
 
     @property
     def occupation_skill_points(self):
@@ -339,7 +339,7 @@ class Investigator(Model):
 
     def init_sanity(self):
         """Sanity property, start."""
-        self.sanity = self.power
+        self.sanity = self.power.value
         self.save()
         ret = 'Sanity was initialized'
         return ret
@@ -375,7 +375,9 @@ class InvestigatorAttribute(Model):
     @property
     def fifth_value(self):
         """Return fifth of attribute value."""
-        return self.value // 5
+        val = self.value // 5
+        val = val if val != 0 else 1
+        return val
 
     def __str__(self):
         """String representation of the object."""
@@ -400,7 +402,9 @@ class InvestigatorSkills(Model):
     @property
     def fifth_value(self):
         """Return fifth of attribute value."""
-        return self.value // 5
+        val = self.value // 5
+        val = val if val != 0 else 1
+        return val
 
     class Meta:
         verbose_name_plural = 'investigator skills'

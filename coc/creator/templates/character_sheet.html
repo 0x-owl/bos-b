@@ -14,7 +14,14 @@
         <!-- You should properly set the path from the main file. -->
     </head>
     <body>
-        <h1 style="text-align: center">Investigator</h1>
+        <div class="row">
+            <div class="column">
+                <h1 style="text-align: center">Investigator</h1>
+            </div>
+            <div class="column column-offset-50">
+                <a style="margin-top: 10px" class="button" href="random"> Generate Random Investigator</a>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="column">
@@ -30,59 +37,124 @@
                 </div>
             </div>
             <hr>
-            <div class="row">
-                <div class="column">
-                    Health: {{investigator.attributes.health}}//{{investigator.attributes.max_health}}
-                </div>
-                <div class="column column-offset-50">
-                    Sanity: {{investigator.attributes.sanity}} // 99
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="column">
-                    Magic Points: {{investigator.attributes.magic_points}} // 24
-                </div>
-                <div class="column column-offset-50">
-                    Luck: {{investigator.attributes.luck}} // 99
-                </div>             
-            </div>
-            <hr>
             <h4 style="text-align: center"> Attributes </h4>
             <div class="row">
                 <div class="column">
                     <div class="row">
-                        STR: <b>{{investigator.attributes.str}}</b>
+                        <div class="column">
+                            STR:
+                        </div>
+                        <div style="text-align: right" class="column">
+                            <b>{{investigator.attributes.str.value}}</b>|
+                            <b>{{investigator.attributes.str.half_value}}</b>|
+                            <b>{{investigator.attributes.str.fifth_value|stringformat:"02d"}}</b>
+                        </div>
                     </div>
                     <div class="row">
-                        CON: <b>{{investigator.attributes.con}}</b>
+                        <div class="column">
+                            CON:
+                        </div>
+                        <div style="text-align: right" class="column">
+                            <b>{{investigator.attributes.con.value}}</b>|
+                            <b>{{investigator.attributes.con.half_value}}</b>|
+                            <b>{{investigator.attributes.con.fifth_value|stringformat:"02d"}}</b>
+                        </div>
                     </div>
                     <div class="row">
-                        SIZ: <b>{{investigator.attributes.size}}</b>
+                        <div class="column">
+                            SIZ:
+                        </div>
+                        <div style="text-align: right" class="column">
+                            <b>{{investigator.attributes.size.value}}</b>|
+                            <b>{{investigator.attributes.size.half_value}}</b>|
+                            <b>{{investigator.attributes.size.fifth_value|stringformat:"02d"}}</b>
+                        </div>
                     </div>
                 </div>
-                <div class="column column-offset-25">
+                <div class="column">
                     <div class="row">
-                        DEX: <b>{{investigator.attributes.dex}}</b>
+                        <div class="column">
+                            DEX:
+                        </div>
+                        <div style="text-align: right" class="column">
+                            <b>{{investigator.attributes.dex.value}}</b>|
+                            <b>{{investigator.attributes.dex.half_value}}</b>|
+                            <b>{{investigator.attributes.dex.fifth_value|stringformat:"02d"}}</b>
+                        </div>
                     </div>
                     <div class="row">
-                        APP: <b>{{investigator.attributes.app}}</b>
+                        <div class="column">
+                            APP:
+                        </div>
+                        <div style="text-align: right" class="column">
+                            <b>{{investigator.attributes.app.value}}</b>|
+                            <b>{{investigator.attributes.app.half_value}}</b>|
+                            <b>{{investigator.attributes.app.fifth_value|stringformat:"02d"}}</b>
+                        </div>
                     </div>
                     <div class="row">
-                        INT: <b>{{investigator.attributes.int}}</b>
+                        <div class="column">
+                            INT:
+                        </div>
+                        <div style="text-align: right" class="column">
+                            <b>{{investigator.attributes.int.value}}</b>|
+                            <b>{{investigator.attributes.int.half_value}}</b>|
+                            <b>{{investigator.attributes.int.fifth_value|stringformat:"02d"}}</b>
+                        </div>
                     </div>
                 </div>
-                <div class="column column-offset-25">
+                <div class="column">
                     <div class="row">
-                        POW: <b>{{investigator.attributes.pow}}</b>
+                        <div class="column">
+                            POW:
+                        </div>
+                        <div style="text-align: right" class="column">
+                            <b>{{investigator.attributes.pow.value}}</b>|
+                            <b>{{investigator.attributes.pow.half_value}}</b>|
+                            <b>{{investigator.attributes.pow.fifth_value|stringformat:"02d"}}</b>
+                        </div>
                     </div>
                     <div class="row">
-                        EDU: <b>{{investigator.attributes.edu}}</b>
+                        <div class="column">
+                            EDU:
+                        </div>
+                        <div style="text-align: right" class="column">
+                            <b>{{investigator.attributes.edu.value}}</b>|
+                            <b>{{investigator.attributes.edu.half_value}}</b>|
+                            <b>{{investigator.attributes.edu.fifth_value|stringformat:"02d"}}</b>
+                        </div>
                     </div>
                     <div class="row">
-                        MOV: <b>{{investigator.attributes.move_rate}}</b>
+                        <div class="column">
+                            MOV:
+                        </div>
+                        <div style="text-align: right" class="column"> 
+                            <b>{{investigator.attributes.move_rate}}</b>
+                        </div>
                     </div>
-                </div>        
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="column">
+                    <label for="health">Health:</label>
+                    <input type="number" name="health" id="health" value="{{investigator.attributes.health}}" max="{{investigator.attributes.max_health}}">
+                </div>
+                <div class="column column-offset-50">
+                    <label for="san">Sanity:</label>
+                    <input type="number" name="san" id="san" value="{{investigator.attributes.sanity}}" max="99">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="column">
+                    <label for="mp">Magic Points:</label>
+                    <input id="mp" name="mp" type="number" value="{{investigator.attributes.magic_points}}" max="{{investigator.attributes.magic_points}}" min="0">
+                </div>
+                <div class="column column-offset-50">
+                    <label for="luck">Luck:</label>
+                    <input id="luck" name="luck" type="number" value="{{investigator.attributes.luck}}" min="0" max="99">
+                </div>             
             </div>
             <hr>
             <div class="row">
@@ -95,20 +167,47 @@
             </div>
             <hr>
             <h4 style="text-align: center"> Skills</h4>
-            <div class="row">
+            <div style="font-size: 15px;" class="row">
                 <div class="column">
                     {% for skill in investigator.skills|slice:"0:5" %}
-                        <p><u>{{skill.0}}</u>: <b>{{skill.1}}</b></p>
+                    <div class="row">
+                        <div class="column">
+                            {{skill.0}}:
+                        </div>
+                        <div style="text-align: right" class="column">
+                            <b>{{skill.1|stringformat:"02d"}}</b>|
+                            <b>{{skill.2|stringformat:"02d"}}</b>|
+                            <b>{{skill.3|stringformat:"02d"}}</b>
+                        </div>
+                    </div>
                     {% endfor %}
                 </div>
                 <div class="column">
                     {% for skill in investigator.skills|slice:"5:10" %}
-                        <p><u>{{skill.0}}</u>: <b>{{skill.1}}</b></p>
+                        <div class="row">
+                            <div class="column">
+                                {{skill.0}}:
+                            </div>
+                            <div style="text-align: right" class="column">
+                                <b>{{skill.1|stringformat:"02d"}}</b>|
+                                <b>{{skill.2|stringformat:"02d"}}</b>|
+                                <b>{{skill.3|stringformat:"02d"}}</b>
+                            </div>
+                        </div>
                     {% endfor %}
                 </div>
                 <div class="column">
                     {% for skill in investigator.skills|slice:"10:" %}
-                        <p><u>{{skill.0}}</u>: <b>{{skill.1}}</b></p>
+                        <div class="row">
+                            <div class="column">
+                                {{skill.0}}:
+                            </div>
+                            <div style="text-align: right" class="column">
+                                <b>{{skill.1|stringformat:"02d"}}</b>|
+                                <b>{{skill.2|stringformat:"02d"}}</b>|
+                                <b>{{skill.3|stringformat:"02d"}}</b>
+                            </div>
+                        </div>
                     {% endfor %}
                 </div>
             </div>       
