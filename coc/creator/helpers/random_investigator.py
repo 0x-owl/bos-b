@@ -1,4 +1,4 @@
-from random import randint, choice
+from random import randint, choice, shuffle
 
 from django.contrib.auth.models import User
 
@@ -66,12 +66,9 @@ def load_investigator_attributes(inv: Investigator):
 
 def amount(points_available: int, limit: int):
     """Recursively find an adequate value."""
-    val = randint(1, 99 - limit)
-    if (points_available - val) >= 0:
-        ret = val
-    else:
-        ret = amount(points_available, limit)
-    return ret
+    limit = min(points_available, 90-limit)
+    val = randint(1, limit)
+    return val
 
 
 def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
@@ -80,7 +77,7 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
     compulsory_skills = [sk for sk in occ_skills if sk.category == '1']
     skills_used = {}
     for comp_skill in compulsory_skills:
-        val = 5
+        val = 20
         record = InvestigatorSkills(
             investigator=inv,
             skill=comp_skill.skill,
@@ -88,11 +85,11 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
             category=comp_skill.category
         )
         max_points -= val
-        record.save()
         skills_used[comp_skill.skill.uuid] = record
 
-    while max_points > 0:
-        occ_skill = occ_skill_picker(occ_skills, inv)
+    occ_skills = list(occ_skills)
+    shuffle(occ_skills)
+    for occ_skill in occ_skills:
         # If not create a new record else update the new one.
         if occ_skill.skill.uuid not in list(skills_used.keys()):
             # Remember not to surpass 99 limit
@@ -105,7 +102,9 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
             )
             max_points -= val
             skills_used[occ_skill.skill.uuid] = record
-            record.save()
+            if max_points == 0:
+                break
+
         else:
             record = skills_used[occ_skill.skill.uuid]
             # Remember not to surpass the 90 limit
@@ -113,17 +112,18 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
             if (record.value + val) < 90:
                 record.value += val
                 max_points -= val
-                record.save()
+            if max_points == 0:
+                break
+    
+    return skills_used
 
-    for skill in skills_used:
-        skills_used[skill].save()
 
-
-def free_point_assigner(max_points: int, skills: list, inv: Investigator):
+def free_point_assigner(max_points: int, skills: list, inv: Investigator, skills_assigned: dict):
     """Assign points to any skill."""
-    skills_used = {}
-    while max_points > 0:
-        skill = free_skill_picker(skills)
+    skills_used = skills_assigned
+    skills = list(skills)
+    shuffle(skills)
+    for skill in skills:
         # If not create a new record else update the new one.
         if skill.uuid not in list(skills_used.keys()):
             # Remember not to surpass 99 limit
@@ -136,7 +136,8 @@ def free_point_assigner(max_points: int, skills: list, inv: Investigator):
             )
             max_points -= val
             skills_used[skill.uuid] = record
-            record.save()
+            if max_points == 0:
+                break
         else:
             record = skills_used[skill.uuid]
             # Remember not to surpass the 90 limit
@@ -144,8 +145,9 @@ def free_point_assigner(max_points: int, skills: list, inv: Investigator):
             if (record.value + val) < 90:
                 record.value += val
                 max_points -= val
-                record.save()
-
+                if max_points == 0:
+                    break
+    return skills_used
 
 def random_inv():
     """Main wrapper."""
@@ -179,9 +181,13 @@ def random_inv():
     if occ_skills   :
         proff_points = inv.occupation_skill_points
         # Assign points to occupation skills
-        occ_point_assigner(proff_points, occ_skills, inv)
+        skills_assigned = occ_point_assigner(
+            proff_points, occ_skills, inv)
         free_skills = Skills.objects.all()
-        free_point_assigner(inv.free_skill_points, free_skills, inv)
+        skills_assigned = free_point_assigner(
+            inv.free_skill_points, free_skills, inv, skills_assigned)
+        for skill in skills_assigned:
+            skills_assigned[skill].save()
     else:
         raise Exception(
             f"No occupation skills for occupation {inv.occupation}"
