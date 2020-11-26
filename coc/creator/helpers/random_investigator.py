@@ -21,34 +21,6 @@ def calc_proff_points(attribute: int, mod: int, inv: Investigator):
     return res
 
 
-def occ_skill_picker(occ_skills: list, inv: Investigator):
-    """Pick a random skill from an occupation skill list."""
-    choice_ = randint(0, len(occ_skills)-1)
-    skill_pick = occ_skills[choice_]
-    ret = None
-    current_skills_cat = InvestigatorSkills.objects.filter(
-        category=skill_pick.category,
-        investigator=inv
-    )
-    if skill_pick.optional:
-        if len(current_skills_cat) < skill_pick.limit:
-            ret = skill_pick
-        else:
-            return occ_skill_picker(occ_skills, inv)
-    else:
-        ret = skill_pick
-    return ret
-
-
-def free_skill_picker(skills: list):
-    """Pick a random skill from an occupation skill list."""
-    choice_ = randint(0, len(skills)-1)
-    skill_pick = skills[choice_]
-    ret = skill_pick
-
-    return ret
-
-
 def load_investigator_attributes(inv: Investigator):
     """Seed an investigator with attributes."""
     # Obtain list of attibutes with their ids.
@@ -118,7 +90,8 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
     return skills_used
 
 
-def free_point_assigner(max_points: int, skills: list, inv: Investigator, skills_assigned: dict):
+def free_point_assigner(max_points: int, skills: list,
+                        inv: Investigator, skills_assigned: dict):
     """Assign points to any skill."""
     skills_used = skills_assigned
     skills = list(skills)
