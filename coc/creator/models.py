@@ -271,10 +271,10 @@ class Investigator(Model):
     @property
     def move(self):
         """Move rate property, affected by certain conditions."""
-        if self.strength.value >= self.size.value or self.dexterity.value >= self.size.value:
-            mov = 8
-        elif self.strength.value > self.size.value and self.dexterity.value > self.size.value:
+        if self.strength.value > self.size.value and self.dexterity.value > self.size.value:
             mov = 9
+        elif self.strength.value >= self.size.value or self.dexterity.value >= self.size.value:
+            mov = 8
         else:
             mov = 7
 
