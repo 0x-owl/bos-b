@@ -178,6 +178,31 @@
                 "free_skills_limit": 1
         },
         {
+                "occupation": "Antique Dealer",
+                "proffesional_skills": [
+                        "Accounting",
+                        "Appraise",
+                        "Drive Auto",
+                        "History",
+                        "Library Use",
+                        "Navigate"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Fast Talk",
+                        "Intimidate",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 0
+        },
+        {
                 "occupation": "Antiquarian [Lovecraftian]",
                 "proffesional_skills": [
                         "Appraise",
