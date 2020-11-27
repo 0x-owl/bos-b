@@ -904,7 +904,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Criminal (freelance/solo)",
+        "title":"Criminal (freelance-solo)",
         "description":"Criminals come in all shapes, sizes and shades of grey. Some are merely opportunistic ‘jacks of all trades’, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises; this latter group could include bank robbers, cat burglars, forgers and confdence tricksters. The criminal either works for someone, usually an organized ‘mob’ or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men and armed robbers. Whether bootleggers, cornerboys or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confdence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, ﬂeecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are Criminals come in all shapes, sizes and shades of grey. Some are merely opportunistic ‘jacks of all trades’, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises; this latter group could include bank robbers, cat burglars, forgers and confdence tricksters.The criminal either works for someone,usually an organized ‘mob’ or crime family, orworks solo, perhaps occasionally teamingup with others when the reward is worththe effort and risk. Freelance thugsmight work as muggers, stickup menand armed robbers. Whether bootleggers, cornerboys or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confdence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, ﬂeecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are",
         "suggested_contacts":"Other petty criminals, street-level law enforcement.",
         "credit_rating_min":5,
@@ -1750,7 +1750,7 @@
     "fields": 
     {
     	"user":1,
-        "title":"Gangster’s Moll [Classic]",
+        "title":"Gangster Moll [Classic]",
         "description":"The female companion of a professional criminal. Sometimes known a ‘gun moll’ (e.g.. Bonnie Parker of Bonnie and Clyde infamy). the moll is expected to do as she’s told and live at the beck and call of her mobster boyfriend; however in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry.",
         "suggested_contacts":"Gangsters, law enforcement, local businesses.",
         "credit_rating_min":10,

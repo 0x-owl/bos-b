@@ -759,7 +759,7 @@
                 "free_skills_limit": 0
         },
         {
-                "occupation": "Criminal (freelance/solo)",
+                "occupation": "Criminal (freelance-solo)",
                 "proffesional_skills": [     
                         "Appraise",
                         "Stealth",
@@ -810,7 +810,7 @@
                 "free_skills_limit": 1
         },
         {
-                "occupation": "Gangster's Moll [Classic]",
+                "occupation": "Gangster Moll [Classic]",
                 "proffesional_skills": [
                         "Art & Craft(Any)",
                         "Drive Auto",
