@@ -835,5 +835,14 @@
       "user":1,
       "default_value":1
     }
+  },
+  {
+    "model": "creator.Skills",
+    "fields": {
+      "title": "Credit Rating",
+      "description":"Item acquisition capabilities, it has a minimum and maximum value which is assigned based on the occupation.",
+      "user":1,
+      "default_value":1
+    }
   }
 ]
