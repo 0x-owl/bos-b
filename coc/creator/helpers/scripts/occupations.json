@@ -759,6 +759,34 @@
                 "free_skills_limit": 0
         },
         {
+                "occupation": "Criminal (freelance/solo)",
+                "proffesional_skills": [     
+                        "Appraise",
+                        "Stealth",
+                        "Psychology",
+                        "Spot Hidden"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk"
+                ],
+                "interpersonal_limit": 1,
+                "combat_skills": ["Fighting", "Firearms"],
+                "combat_limit": 1,
+                "proffesionalt_skills": [
+                        "Art & Craft(Acting)",
+                        "Disguise"
+                ],
+                "professionalt_limit": 1,
+                "misc_skills": [
+                        "Locksmith",
+                        "Mechanical Repair"
+                ],
+                "misc_limit": 1,
+                "free_skills_limit": 1
+        },
+        {
                 "occupation": "Gun Moll [Classic]",
                 "proffesional_skills": [
                         "Art & Craft(Any)",
