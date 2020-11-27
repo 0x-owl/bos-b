@@ -1,10 +1,13 @@
+'''
+random investigator generator module.
+'''
 from random import randint, choice, shuffle
 
 from django.contrib.auth.models import User
 
 from creator.enums import Attribute
 from creator.models import (Investigator, InvestigatorAttribute,
-                            InvestigatorSkills, Occupation, OccupationAttribute,
+                            InvestigatorSkills, Occupation,
                             OccupationSkills, Skills)
 from creator.helpers.model_helpers import attribute_roller, roller_stats
 
@@ -48,7 +51,6 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
     # Assing profession points
     compulsory_skills = [sk for sk in occ_skills if sk.category == '1']
     skills_used = {}
-    
     # set credit rating as a separate skill
     credit_rating_skill = Skills.objects.filter(
         title="Credit Rating"
@@ -57,14 +59,14 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
         inv.occupation.credit_rating_min,
         inv.occupation.credit_rating_max
     )
-    cr = InvestigatorSkills(
+    credit_rating = InvestigatorSkills(
         investigator=inv,
         skill=credit_rating_skill,
         value=cr_value,
         category="1"
     )
-    cr.save()
-    skills_used[credit_rating_skill.uuid] = cr
+    credit_rating.save()
+    skills_used[credit_rating_skill.uuid] = credit_rating
 
     for comp_skill in compulsory_skills:
         val = 20
@@ -104,7 +106,6 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
                 max_points -= val
             if max_points == 0:
                 break
-    
     return skills_used
 
 
@@ -138,7 +139,6 @@ def free_point_assigner(max_points: int, skills: list,
                     max_points -= val
         else:
             break
-                    
     return skills_used
 
 def random_inv():
