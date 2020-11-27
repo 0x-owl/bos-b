@@ -1,10 +1,9 @@
-# Call of Cthulhu character creator
+# Book of Shadows - Backend
 
 ## Introduction
 
-CoC character creator intends to be a web app that allow users to create
-investigators for edition v7, either entering the values manually or randomizing
-the fields. 
+Book of shadows backend is a Python3, Django application with a GraphQL exposed API
+that holds the logic of the Call of Cthulhu V7 edition game from Chaosium. 
 
 ## Progress
 
@@ -12,11 +11,9 @@ Currently the project is in development. The alpha version of the project will
 cover:
 
 - Registration (Based on an OAuth solution)
-- Investigator creation
-- Sharing, Downloading, Exporting the character sheet
-- Random generator
-- Support for 20s, 50s, 90s and 00s sheets
+- Investigator CMS
+- Exporting the character sheet as a PDF
+- Random generator (Currently supports only general aspects of the sheet)
 - Items bank (Done)
 - Inventory bank (Done)
 - Spells bank (Done)
-
