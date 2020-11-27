@@ -782,6 +782,29 @@
                 "free_skills_limit": 1
         },
         {
+                "occupation": "Gangster's Moll [Classic]",
+                "proffesional_skills": [
+                        "Art & Craft(Any)",
+                        "Drive Auto",
+                        "Listen",
+                        "Stealth"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": ["Fighting(Brawl)", "Firearms(Handgun)"],
+                "combat_limit": 1,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
                 "occupation": "Fence",
                 "proffesional_skills": [
                         "Accounting",
@@ -2287,6 +2310,54 @@
         },
         {
                 "occupation": "Prostitute",
+                "proffesional_skills": [
+                        "Art & Craft(Any)",
+                        "Dodge",
+                        "Psychology",
+                        "Sleight of Hand",
+                        "Stealth"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Flapper [Classic]",
+                "proffesional_skills": [
+                        "Art & Craft(Any)",
+                        "Dodge",
+                        "Psychology",
+                        "Sleight of Hand",
+                        "Stealth"
+                ],
+                "interpersonal_skills": [
+                        "Charm",
+                        "Intimidate",
+                        "Fast Talk",
+                        "Persuade"
+                ],
+                "interpersonal_limit": 2,
+                "combat_skills": [],
+                "combat_limit": 0,
+                "proffesionalt_skills": [],
+                "professionalt_limit": 0,
+                "misc_skills": [],
+                "misc_limit": 0,
+                "free_skills_limit": 1
+        },
+        {
+                "occupation": "Hooker",
                 "proffesional_skills": [
                         "Art & Craft(Any)",
                         "Dodge",
