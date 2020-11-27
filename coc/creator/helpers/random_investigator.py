@@ -97,29 +97,30 @@ def free_point_assigner(max_points: int, skills: list,
     skills = list(skills)
     shuffle(skills)
     for skill in skills:
-        # If not create a new record else update the new one.
-        if skill.uuid not in list(skills_used.keys()):
-            # Remember not to surpass 99 limit
-            val = amount(max_points, skill.default_value)
-            record = InvestigatorSkills(
-                investigator=inv,
-                skill=skill,
-                value=skill.default_value + val,
-                category='4'
-            )
-            max_points -= val
-            skills_used[skill.uuid] = record
-            if max_points == 0:
-                break
-        else:
-            record = skills_used[skill.uuid]
-            # Remember not to surpass the 90 limit
-            val = amount(max_points, record.value)
-            if (record.value + val) < 90:
-                record.value += val
+        if max_points:
+            # If not create a new record else update the new one.
+            if skill.uuid not in list(skills_used.keys()):
+                # Remember not to surpass 99 limit
+                val = amount(max_points, skill.default_value)
+                record = InvestigatorSkills(
+                    investigator=inv,
+                    skill=skill,
+                    value=skill.default_value + val,
+                    category='4'
+                )
                 max_points -= val
-                if max_points == 0:
-                    break
+                skills_used[skill.uuid] = record
+
+            else:
+                record = skills_used[skill.uuid]
+                # Remember not to surpass the 90 limit
+                val = amount(max_points, record.value)
+                if (record.value + val) < 90:
+                    record.value += val
+                    max_points -= val
+        else:
+            break
+                    
     return skills_used
 
 def random_inv():
