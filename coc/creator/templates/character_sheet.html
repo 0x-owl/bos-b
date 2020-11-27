@@ -31,6 +31,8 @@
                     Birthplace: {{investigator.birthplace}}<br>
                     Residence: {{investigator.residence}}<br>
                     Occupation: {{investigator.occupation.title}}<br>
+                    Credit Rating Min: {{investigator.occupation.credit_rating_min}}<br>
+                    Credit Rating Max {{investigator.occupation.credit_rating_max}}<br>
                 </div>
                 <div class="column column-offset-50">   
                     <img style="height: 200px; width: 200px" src="{{investigator.portrait }}" alt="Investigator portrait">
@@ -169,7 +171,7 @@
             <h4 style="text-align: center"> Skills</h4>
             <div style="font-size: 15px;" class="row">
                 <div class="column">
-                    {% for skill in investigator.skills|slice:"0:5" %}
+                    {% for skill in investigator.skills|slice:"0:10" %}
                     <div class="row">
                         <div class="column">
                             {{skill.0}}:
@@ -183,7 +185,7 @@
                     {% endfor %}
                 </div>
                 <div class="column">
-                    {% for skill in investigator.skills|slice:"5:10" %}
+                    {% for skill in investigator.skills|slice:"10:20" %}
                         <div class="row">
                             <div class="column">
                                 {{skill.0}}:
@@ -197,7 +199,7 @@
                     {% endfor %}
                 </div>
                 <div class="column">
-                    {% for skill in investigator.skills|slice:"10:" %}
+                    {% for skill in investigator.skills|slice:"20:" %}
                         <div class="row">
                             <div class="column">
                                 {{skill.0}}:

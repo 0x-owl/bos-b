@@ -37,7 +37,7 @@ def load_investigator_attributes(inv: Investigator):
 
 
 def amount(points_available: int, limit: int):
-    """Recursively find an adequate value."""
+    """Generate an adequate random value for the points assignment."""
     limit = min(points_available, 90-limit)
     val = randint(1, limit)
     return val
@@ -48,6 +48,24 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
     # Assing profession points
     compulsory_skills = [sk for sk in occ_skills if sk.category == '1']
     skills_used = {}
+    
+    # set credit rating as a separate skill
+    credit_rating_skill = Skills.objects.filter(
+        title="Credit Rating"
+    )[0]
+    cr_value = randint(
+        inv.occupation.credit_rating_min,
+        inv.occupation.credit_rating_max
+    )
+    cr = InvestigatorSkills(
+        investigator=inv,
+        skill=credit_rating_skill,
+        value=cr_value,
+        category="1"
+    )
+    cr.save()
+    skills_used[credit_rating_skill.uuid] = cr
+
     for comp_skill in compulsory_skills:
         val = 20
         record = InvestigatorSkills(
