@@ -3,7 +3,7 @@ random investigator generator module.
 '''
 from random import randint, choice, shuffle
 
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 
 from creator.enums import Attribute
 from creator.models import (Investigator, InvestigatorAttribute,
@@ -12,6 +12,9 @@ from creator.models import (Investigator, InvestigatorAttribute,
 from creator.helpers.model_helpers import attribute_roller, roller_stats
 
 from creator.helpers.random_name import random_names
+
+
+User = get_user_model()
 
 
 def calc_proff_points(attribute: int, mod: int, inv: Investigator):

@@ -7,13 +7,16 @@ from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
                               Model, OneToOneField, PROTECT,
                               PositiveIntegerField, SET_NULL, TextField,
                               UUIDField)
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 
 from creator.enums import Attribute, ItemCategory, SpellCategory
 from creator.constants import GAME_TYPE, GENDER, SKILL_TYPES
 from creator.helpers.model_helpers import (attribute_roller,
                                            obtain_attribute_value, renamer,
                                            roller_stats)
+
+
+User = get_user_model()
 
 # Create your models here.
 class Tag(Model):
