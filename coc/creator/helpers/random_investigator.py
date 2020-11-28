@@ -71,8 +71,8 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
     credit_rating.save()
     skills_used[credit_rating_skill.uuid] = credit_rating
 
-    for comp_skill in compulsory_skills:
-        val = 10
+    val = max_points // len(compulsory_skills)
+    for comp_skill in compulsory_skills: 
         record = InvestigatorSkills(
             investigator=inv,
             skill=comp_skill.skill,
