@@ -71,7 +71,7 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
     credit_rating.save()
     skills_used[credit_rating_skill.uuid] = credit_rating
 
-    val = max_points // len(compulsory_skills)
+    val = (max_points // 2) // len(compulsory_skills)
     for comp_skill in compulsory_skills: 
         record = InvestigatorSkills(
             investigator=inv,
@@ -86,29 +86,28 @@ def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
     shuffle(occ_skills)
     for occ_skill in occ_skills:
         # If not create a new record else update the new one.
-        if occ_skill.skill.uuid not in list(skills_used.keys()):
-            # Remember not to surpass 99 limit
-            val = amount(max_points, occ_skill.skill.default_value)
-            record = InvestigatorSkills(
-                investigator=inv,
-                skill=occ_skill.skill,
-                value=occ_skill.skill.default_value + val,
-                category=occ_skill.category
-            )
-            max_points -= val
-            skills_used[occ_skill.skill.uuid] = record
-            if max_points == 0:
-                break
-
-        else:
-            record = skills_used[occ_skill.skill.uuid]
-            # Remember not to surpass the 90 limit
-            val = amount(max_points, record.value)
-            if (record.value + val) < 90:
-                record.value += val
+        if max_points:
+            if occ_skill.skill.uuid not in list(skills_used.keys()):
+                # Remember not to surpass 99 limit
+                val = amount(max_points, occ_skill.skill.default_value)
+                record = InvestigatorSkills(
+                    investigator=inv,
+                    skill=occ_skill.skill,
+                    value=occ_skill.skill.default_value + val,
+                    category=occ_skill.category
+                )
                 max_points -= val
-            if max_points == 0:
-                break
+                skills_used[occ_skill.skill.uuid] = record
+
+            else:
+                record = skills_used[occ_skill.skill.uuid]
+                # Remember not to surpass the 90 limit
+                val = amount(max_points, record.value)
+                if (record.value + val) < 90:
+                    record.value += val
+                    max_points -= val
+        else:
+            break
     return skills_used
 
 
