@@ -6,7 +6,7 @@ from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
                               FloatField, ForeignKey, ImageField, IntegerField,
                               Model, OneToOneField, PROTECT,
                               PositiveIntegerField, SET_NULL, TextField,
-                              UUIDField)
+                              UUIDField, JSONField)
 from django.contrib.auth import get_user_model
 
 from creator.enums import Attribute, ItemCategory, SpellCategory
@@ -19,6 +19,15 @@ from creator.helpers.model_helpers import (attribute_roller,
 User = get_user_model()
 
 # Create your models here.
+class Year(Model):
+    """Year class."""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
+    year = PositiveIntegerField()
+
+    def __str__(self):
+        return self.year
+
+
 class Tag(Model):
     """Tag class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
@@ -71,32 +80,16 @@ class SpellTag(Model):
 
 class Skills(Model):
     """Skills class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    title = CharField(max_length=50)
-    description = TextField(blank=True)
-    user = ForeignKey(User, on_delete=CASCADE)
-    default_value = PositiveIntegerField(default=0)
+    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
+    skills = JSONField()
+    year = ForeignKey(Year, on_delete=CASCADE)
 
     class Meta:
         verbose_name_plural = 'skills'
 
     def __str__(self):
         """String representation of the object."""
-        return self.title
-
-
-class SkillTags(Model):
-    """Tags assigned to skills."""
-    tag = ForeignKey(Tag, on_delete=PROTECT)
-    skills = ForeignKey(Skills, on_delete=CASCADE)
-
-    class Meta:
-        verbose_name_plural = 'skill tags'
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {}'.format(self.tag.title, self.skills.title)
-        return title
+        return self.year.year
 
 
 class Occupation(Model):
@@ -108,44 +101,12 @@ class Occupation(Model):
     suggested_contacts = TextField()
     credit_rating_min = PositiveIntegerField()
     credit_rating_max = PositiveIntegerField()
-
+    skills = JSONField()
+    points = JSONField()
+    
     def __str__(self):
         """String representation of the object."""
         return self.title
-
-
-class OccupationAttribute(Model):
-    """Relation between occupation and attribute."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    occupation = ForeignKey(Occupation, on_delete=CASCADE)
-    attr = EnumField(Attribute)
-    modifier = PositiveIntegerField()
-    optional = BooleanField(default=False)
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {} - {}'.format(
-            self.occupation.title, self.attr, self.modifier)
-        return title
-
-
-class OccupationSkills(Model):
-    """Skills relation with Occupation."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    occupation = ForeignKey(Occupation, on_delete=CASCADE)
-    skill = ForeignKey(Skills, on_delete=PROTECT)
-    optional = BooleanField(default=False)
-    limit = PositiveIntegerField(default=0)
-    category = CharField(max_length=1, choices=SKILL_TYPES)
-
-    class Meta:
-        verbose_name_plural = 'occupation skills'
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {} - {}'.format(
-            self.occupation.title, self.skill.title, self.category)
-        return title
 
 
 class OccupationTags(Model):
@@ -164,7 +125,7 @@ class OccupationTags(Model):
 
 class Investigator(Model):
     """Investigators class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     user = ForeignKey(User, on_delete=CASCADE)
     name = CharField(max_length=50)
     player = CharField(max_length=50)
@@ -172,8 +133,19 @@ class Investigator(Model):
     residence = CharField(max_length=80)
     birthplace = CharField(max_length=80)
     age = PositiveIntegerField(default=18)
+    # Attributes
+    strength = PositiveIntegerField()
+    dexterity = PositiveIntegerField()
+    constitution = PositiveIntegerField()
+    power = PositiveIntegerField()
+    size = PositiveIntegerField()
+    education = PositiveIntegerField()
+    intelligence = PositiveIntegerField()
+    appearance = PositiveIntegerField()
+    # Composition
     occupation = ForeignKey(
         Occupation, on_delete=SET_NULL, default=None, null=True)
+    skills = JSONField()
     ideologies = TextField(blank=True)
     description = TextField(blank=True)
     traits = TextField(blank=True)
@@ -187,82 +159,9 @@ class Investigator(Model):
     health = IntegerField(default=0)
 
     @property
-    def dexterity(self):
-        """Dexterity attribute property that obtains the value for the
-        investigator.
-        """
-        dex = obtain_attribute_value(
-            self, InvestigatorAttribute, Attribute, 'DEX')
-        return dex
-
-    @property
-    def strength(self):
-        """Strength attribute property that obtains the value for the
-        investigator.
-        """
-        str_ = obtain_attribute_value(
-            self, InvestigatorAttribute, Attribute, 'STR')
-
-        return str_
-
-    @property
-    def constitution(self):
-        """Constitution attribute property that obtains the value for the
-        investigator.
-        """
-        con = obtain_attribute_value(
-            self, InvestigatorAttribute, Attribute, 'CON')
-        return con
-
-    @property
-    def power(self):
-        """Power attribute property that obtains the value for the
-        investigator.
-        """
-        pow_ = obtain_attribute_value(
-            self, InvestigatorAttribute, Attribute, 'POW')
-        return pow_
-
-    @property
-    def size(self):
-        """Size attribute property that obtains the value for the
-        investigator.
-        """
-        siz = obtain_attribute_value(
-            self, InvestigatorAttribute, Attribute, 'SIZ')
-        return siz
-
-    @property
-    def education(self):
-        """Education attribute property that obtains the value for the
-        investigator.
-        """
-        edu = obtain_attribute_value(
-            self, InvestigatorAttribute, Attribute, 'EDU')
-        return edu
-
-    @property
-    def intelligence(self):
-        """Intelligence attribute property that obtains the value for the
-        investigator.
-        """
-        int_ = obtain_attribute_value(
-            self, InvestigatorAttribute, Attribute, 'INT')
-        return int_
-
-    @property
-    def appearance(self):
-        """Appearance attribute property that obtains the value for the
-        investigator.
-        """
-        app = obtain_attribute_value(
-            self, InvestigatorAttribute, Attribute, 'APP')
-        return app
-
-    @property
     def max_health(self):
         """Health property."""
-        health = (self.size.value + self.constitution.value) // 10
+        health = (self.size + self.constitution) // 10
         return health
 
     @property
@@ -272,11 +171,26 @@ class Investigator(Model):
         return mp
 
     @property
+    def attributes_detail(self):
+        """Return attributes with their, full, half, fifth values."""
+        attributes = {
+            'STR': (self.strength, self.strength // 2, self.strength // 5),
+            'DEX': (self.dexterity, self.dexterity // 2, self.dexterity // 5),
+            'CON': (self.constitution, self.constitution // 2, self.constitution // 5),
+            'POW': (self.power, self.power // 2, self.power // 5),
+            'SIZ': (self.size, self.size // 2, self.size // 5),
+            'EDU': (self.education, self.education // 2, self.education // 5),
+            'INT': (self.intelligence, self.intelligence // 2, self.intelligence // 5),
+            'APP': (self.appearance, self.appearance // 2, self.appearance // 5)
+        }
+        return attributes
+
+    @property
     def move(self):
         """Move rate property, affected by certain conditions."""
-        if self.strength.value > self.size.value and self.dexterity.value > self.size.value:
+        if self.strength > self.size and self.dexterity > self.size:
             mov = 9
-        elif self.strength.value >= self.size.value or self.dexterity.value >= self.size.value:
+        elif self.strength >= self.size or self.dexterity >= self.size:
             mov = 8
         else:
             mov = 7
@@ -314,35 +228,19 @@ class Investigator(Model):
     @property
     def free_skill_points(self):
         """Obtain the amount of free skill points an investigator has."""
-        return self.intelligence.value * 2
+        return self.intelligence * 2
 
     @property
     def occupation_skill_points(self):
+        # RE DO
         """Based on the occupation obtain the amount of free skill points."""
         skill_points = 0
-        # Obtain a list of the occupation attributes.
-        occ_attr = [occ for occ in OccupationAttribute.objects.filter(
-                    occupation__uuid=self.occupation.uuid)]
-        # Generate a diccionary with the investigators attribute data.
-        inv_attr = {reg.attr: reg.value for reg in
-                    InvestigatorAttribute.objects.filter(
-                        investigator_id=self.id)}
-        optionals = [0]
-        # Iterate through the occupation attributes and add the skill points if
-        # they are compulsory, if not check the the bigger of the optionals and
-        # add it to the accumulator.
-        for attr in occ_attr:
-            if not attr.optional:
-                skill_points += inv_attr[attr.attr] * attr.modifier
-            else:
-                optionals.append(inv_attr[attr.attr] * attr.modifier)
-        skill_points += max(optionals)
 
         return skill_points
 
     def init_sanity(self):
         """Sanity property, start."""
-        self.sanity = self.power.value
+        self.sanity = self.power
         self.save()
         ret = 'Sanity was initialized'
         return ret
@@ -361,62 +259,6 @@ class Portrait(Model):
     def __str__(self):
         """String representation of the object."""
         return self.investigator.name
-
-
-class InvestigatorAttribute(Model):
-    """Relation between investigator and its attributes."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    investigator = ForeignKey(Investigator, on_delete=CASCADE)
-    attr = EnumField(Attribute)
-    value = PositiveIntegerField()
-
-    @property
-    def half_value(self):
-        """Return half of attribute value."""
-        return self.value // 2
-
-    @property
-    def fifth_value(self):
-        """Return fifth of attribute value."""
-        val = self.value // 5
-        val = val if val != 0 else 1
-        return val
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {} - {}'.format(
-            self.investigator.name, self.attr, self.value)
-        return title
-
-
-class InvestigatorSkills(Model):
-    """Skills relation with investigator class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    investigator = ForeignKey(Investigator, on_delete=CASCADE)
-    skill = ForeignKey(Skills, on_delete=PROTECT)
-    value = PositiveIntegerField(default=0)
-    category = CharField(max_length=1, choices=SKILL_TYPES)
-
-    @property
-    def half_value(self):
-        """Return half of attribute value."""
-        return self.value // 2
-
-    @property
-    def fifth_value(self):
-        """Return fifth of attribute value."""
-        val = self.value // 5
-        val = val if val != 0 else 1
-        return val
-
-    class Meta:
-        verbose_name_plural = 'investigator skills'
-
-    def __str__(self):
-        """String representation of the object."""
-        title = '{} - {} - {}'.format(
-            self.investigator.name, self.skill.title, self.value)
-        return title
 
 
 class InvestigatorTags(Model):
