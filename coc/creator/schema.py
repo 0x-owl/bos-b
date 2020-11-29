@@ -1,25 +1,25 @@
 from creator.models import Investigator
 
-from creator.schema_nodes import (AttrInvNode, CampaignInvNode, DiaryInvNode,
+from creator.schema_nodes import (CampaignInvNode, DiaryInvNode,
                                   GameNode, InventoryInvNode, InvestigatorNode,
                                   ItemNode, ManiaInvNode, ManiaNode,
                                   OccupationNode, PhobiaInvNode, PhobiaNode,
-                                  PortraitNode, SkillInvNode, SkillNode,
+                                  PortraitNode, SkillNode,
                                   SpellNode, TagInvNode, TagNode, UserNode,
                                   WeaponNode)
 
-from creator.schema_mutations import (AttrInvMutation, CampaignInvMutation,
+from creator.schema_mutations import (CampaignInvMutation,
                                       DiaryInvMutation, GameMutation,
                                       InventoryInvMutation,
                                       InvestigatorMutation, ItemMutation,
                                       ManiaInvMutation, ManiaMutation,
                                       OccupationMutation, PhobiaInvMutation,
-                                      PhobiaMutation, SkillInvMutation,
+                                      PhobiaMutation,
                                       SkillMutation, SpellMutation,
                                       TagInvMutation, TagMutation,
                                       UserMutation, WeaponMutation)
 
-from creator.helpers.random_investigator import random_inv
+# from creator.helpers.random_investigator import random_inv
 
 from graphene import Field, relay
 from graphene_django.filter import DjangoFilterConnectionField
@@ -71,12 +71,6 @@ class Query(object):
     all_games = DjangoFilterConnectionField(GameNode)
     game = relay.Node.Field(GameNode)
 
-    all_attrs_inv = DjangoFilterConnectionField(AttrInvNode)
-    attr_inv = relay.Node.Field(AttrInvNode)
-
-    all_skills_inv = DjangoFilterConnectionField(SkillInvNode)
-    skill_inv = relay.Node.Field(SkillInvNode)
-
     all_tags_inv = DjangoFilterConnectionField(TagInvNode)
     tag_inv = relay.Node.Field(TagInvNode)
 
@@ -89,21 +83,15 @@ class Query(object):
     all_users = DjangoFilterConnectionField(UserNode)
     user = relay.Node.Field(UserNode)
 
-    all_users = DjangoFilterConnectionField(UserNode)
-    user = relay.Node.Field(UserNode)
-
-    all_users = DjangoFilterConnectionField(UserNode)
-    user = relay.Node.Field(UserNode)
-
     all_inventorys_inv = DjangoFilterConnectionField(InventoryInvNode)
     inventory_inv = relay.Node.Field(InventoryInvNode)
 
-    random_investigator = Field(InvestigatorNode)
+    # random_investigator = Field(InvestigatorNode)
 
-    def resolve_random_investigator(self, info):
-        inv_uuid = random_inv()
-        inv = Investigator.objects.get(uuid=inv_uuid)
-        return inv
+    # def resolve_random_investigator(self, info):
+    #     inv_uuid = random_inv()
+    #     inv = Investigator.objects.get(uuid=inv_uuid)
+    #     return inv
 
 
 class Mutation(object):
@@ -122,7 +110,5 @@ class Mutation(object):
     inventory_inv_mutate = InventoryInvMutation.Field()
     diary_inv_mutate = DiaryInvMutation.Field()
     tag_inv_mutate = TagInvMutation.Field()
-    skill_inv_mutate = SkillInvMutation.Field()
     game_mutate = GameMutation.Field()
-    attr_inv_mutate = AttrInvMutation.Field()
     user_mutate = UserMutation.Field()

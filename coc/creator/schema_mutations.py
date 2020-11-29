@@ -1,17 +1,17 @@
 from coc.utils import mutation_flow
 
 from creator.models import (CampaignInvestigator, Game, Inventory,
-                            Investigator, InvestigatorAttribute,
-                            InvestigatorsDiary, InvestigatorSkills,
+                            Investigator,
+                            InvestigatorsDiary,
                             InvestigatorTags, Item, Mania, ManiaInvestigator,
                             Occupation, Phobia, PhobiaInvestigator, Portrait,
                             Skills, Spell, Tag, Weapon)
 
-from creator.schema_nodes import (AttrInvNode, CampaignInvNode, DiaryInvNode,
+from creator.schema_nodes import (CampaignInvNode, DiaryInvNode,
                                   GameNode, InventoryInvNode, InvestigatorNode,
                                   ItemNode, ManiaNode, ManiaInvNode,
                                   OccupationNode, PhobiaNode, PhobiaInvNode,
-                                  SkillNode, SkillInvNode, SpellNode, TagNode,
+                                  SkillNode, SpellNode, TagNode,
                                   TagInvNode, UserNode, WeaponNode, UserNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
@@ -575,43 +575,6 @@ class TagInvMutation(ClientIDMutation):
         return ret
 
 
-class SkillInvMutation(ClientIDMutation):
-    skill_inv = Field(SkillInvNode)
-
-    class Input:
-        method = String()
-        uuid = String()
-        investigator = String()
-        skill = String()
-        value = Int()
-        category = String()
-
-    @classmethod
-    def mutate(cls, *args, **kwargs):
-        """Generates mutation which is an instance of the Node class which
-        results in a instance of our model.
-        Arguments:
-            input -- (dict) dictionary that has the keys corresponding to the
-            Input class (title, user).
-        """
-        input_ = kwargs.get('input')
-        method = input_.pop('method')
-        input_['investigator'] = Investigator.objects.filter(
-            uuid=input_.get('investigator')).first()
-        input_['skill'] = Skills.objects.filter(
-            uuid=input_.get('skill')
-        ).first()
-        ret = mutation_flow(
-            SkillInvMutation,
-            InvestigatorSkills,
-            method,
-            input_,
-            'skill_inv'
-        )
-
-        return ret
-
-
 class GameMutation(ClientIDMutation):
     game = Field(GameNode)
 
@@ -642,39 +605,6 @@ class GameMutation(ClientIDMutation):
             input_,
             'game'
         )
-        return ret
-
-
-class AttrInvMutation(ClientIDMutation):
-    attr_inv = Field(AttrInvNode)
-
-    class Input:
-        method = String()
-        uuid = String()
-        investigator = String()
-        attr = Int()
-        value = Int()
-
-    @classmethod
-    def mutate(cls, *args, **kwargs):
-        """Generates mutation which is an instance of the Node class which
-        results in a instance of our model.
-        Arguments:
-            input -- (dict) dictionary that has the keys corresponding to the
-            Input class (title, user).
-        """
-        input_ = kwargs.get('input')
-        method = input_.pop('method')
-        input_['investigator'] = Investigator.objects.filter(
-            uuid=input_.get('investigator')).first()
-        ret = mutation_flow(
-            AttrInvMutation,
-            InvestigatorAttribute,
-            method,
-            input_,
-            'attr_inv'
-        )
-
         return ret
 
 

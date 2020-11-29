@@ -1,8 +1,8 @@
 from json import loads
 
 from creator.models import (CampaignInvestigator, Game, Inventory,
-                            Investigator, InvestigatorAttribute,
-                            InvestigatorsDiary, InvestigatorSkills,
+                            Investigator,
+                            InvestigatorsDiary,
                             InvestigatorTags, Item, Mania, ManiaInvestigator,
                             Occupation, Phobia, PhobiaInvestigator, Portrait,
                             Skills, Spell, Tag, Weapon)
@@ -82,11 +82,7 @@ class SkillNode(DjangoObjectType):
         model = Skills
         filter_fields = {
             'uuid': ['exact'],
-            'user': ['exact'],
-            'user__username': ['exact', 'istartswith'],
-            'user__id': ['exact'],
-            'title': ['exact', 'icontains', 'istartswith'],
-            'default_value': ['exact'],
+            'year': ['exact']
         }
         interfaces = (relay.Node, )
 
@@ -218,19 +214,6 @@ class TagInvNode(DjangoObjectType):
         interfaces = (relay.Node, )
 
 
-class SkillInvNode(DjangoObjectType):
-    class Meta:
-        model = InvestigatorSkills
-        filter_fields = {
-            'uuid': ['exact'],
-            'investigator': ['exact'],
-            'skill': ['exact'],
-            'value': ['exact', 'gt', 'lt', 'gte', 'lte'],
-            'category': ['exact']
-        }
-        interfaces = (relay.Node, )
-
-
 class GameNode(DjangoObjectType):
     class Meta:
         model = Game
@@ -242,17 +225,5 @@ class GameNode(DjangoObjectType):
             'title': ['exact', 'icontains', 'istartswith'],
             'game_type': ['exact'],
             'timestamp': ['icontains', 'istartswith']
-        }
-        interfaces = (relay.Node, )
-
-
-class AttrInvNode(DjangoObjectType):
-    class Meta:
-        model = InvestigatorAttribute
-        filter_fields = {
-            'uuid': ['exact'],
-            'investigator': ['exact'],
-            'attr': ['exact'],
-            'value': ['exact', 'gt', 'lt', 'gte', 'lte']
         }
         interfaces = (relay.Node, )

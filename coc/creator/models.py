@@ -1,7 +1,5 @@
 from uuid import uuid4
 
-from django_enumfield.enum import EnumField
-
 from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
                               FloatField, ForeignKey, ImageField, IntegerField,
                               Model, OneToOneField, PROTECT,
@@ -9,7 +7,7 @@ from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
                               UUIDField, JSONField)
 from django.contrib.auth import get_user_model
 
-from creator.enums import Attribute, ItemCategory, SpellCategory
+from creator.categories import ITEM_CATEGORIES, SPELL_CATEGORIES
 from creator.constants import GAME_TYPE, GENDER, SKILL_TYPES
 from creator.helpers.model_helpers import (attribute_roller,
                                            obtain_attribute_value, renamer,
@@ -19,15 +17,6 @@ from creator.helpers.model_helpers import (attribute_roller,
 User = get_user_model()
 
 # Create your models here.
-class Year(Model):
-    """Year class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
-    year = PositiveIntegerField()
-
-    def __str__(self):
-        return self.year
-
-
 class Tag(Model):
     """Tag class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
@@ -60,7 +49,9 @@ class SpellType(Model):
     """Association Spell with its category."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     spell = ForeignKey(Spell, on_delete=CASCADE)
-    spell_type = EnumField(SpellCategory)
+    spell_type = PositiveIntegerField(
+            choices=SPELL_CATEGORIES
+        )
 
     def __str__(self):
         title = '{} - {}'.format(self.spell.name, self.spell_type)
@@ -82,14 +73,14 @@ class Skills(Model):
     """Skills class."""
     uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     skills = JSONField()
-    year = ForeignKey(Year, on_delete=CASCADE)
+    year = PositiveIntegerField()
 
     class Meta:
         verbose_name_plural = 'skills'
 
     def __str__(self):
         """String representation of the object."""
-        return self.year.year
+        return str(self.year)
 
 
 class Occupation(Model):
@@ -310,7 +301,9 @@ class Item(Model):
     user = ForeignKey(User, on_delete=CASCADE)
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     title = CharField(max_length=50)
-    item_type = EnumField(ItemCategory)
+    item_type = PositiveIntegerField(
+        choices=ITEM_CATEGORIES
+    )
     description = TextField(blank=True)
     price = FloatField(default=0)
 
