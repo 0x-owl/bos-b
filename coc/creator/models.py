@@ -7,8 +7,7 @@ from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
                               UUIDField, JSONField)
 from django.contrib.auth import get_user_model
 
-from creator.categories import ITEM_CATEGORIES, SPELL_CATEGORIES
-from creator.constants import GAME_TYPE, GENDER, SKILL_TYPES
+from creator.constants import GAME_TYPE, GENDER, SKILL_TYPES, ITEM_CATEGORIES, SPELL_CATEGORIES
 from creator.helpers.model_helpers import (attribute_roller,
                                            obtain_attribute_value, renamer,
                                            roller_stats)
