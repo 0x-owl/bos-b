@@ -221,11 +221,24 @@ class Investigator(Model):
 
     @property
     def occupation_skill_points(self):
-        # RE DO
         """Based on the occupation obtain the amount of free skill points."""
         skill_points = 0
+        occupation_points_formula = self.occupation.points
+        inv_attrs = self.attributes_detail
+        mandatories = occupation_points_formula['mandatory_attributes']
+        optionals = occupation_points_formula['optional_attributes']
+        for mandatory in mandatories:
+            skill_points += inv_attrs[mandatory][0] * mandatories[mandatory]
+        
+        max_optional = 0
+        for optional in optionals:
+            value = inv_attrs[optional][0] * optionals[optional]
+            max_optional = value if value > max_optional else max_optional
+        
+        skill_points += max_optional
 
         return skill_points
+
 
     def init_sanity(self):
         """Sanity property, start."""

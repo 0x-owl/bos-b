@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
-# from creator.helpers.random_investigator import random_inv
+from creator.helpers.random_investigator import random_inv
 from creator.models import Investigator, Skills, Portrait
 
 from json import dumps
@@ -68,6 +68,6 @@ def get_investigator_data(request, inv):
     return render(request, 'character_sheet.html', {'investigator': res})
 
 
-# def generate_random_investigator(request):
-#     inv = random_inv()
-#     return redirect(get_investigator_data, inv=inv)
+def generate_random_investigator(request):
+    inv = random_inv()
+    return redirect(get_investigator_data, inv=inv)
