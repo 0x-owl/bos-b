@@ -14,52 +14,34 @@ from creator.helpers.random_name import random_names
 User = get_user_model()
 
 
-def calc_proff_points(attribute: int, mod: int, inv: Investigator):
-    """Calculate the amount of points that correspond to certain attribute"""
-
-    return res
-
-
 def amount(points_available: int, limit: int):
     """Generate an adequate random value for the points assignment."""
-    limit = min(points_available, 90-limit)
+    limit = min(points_available, 91-limit)
     val = randint(1, limit)
     return val
 
 
-def occ_point_assigner(max_points: int, occ_skills: list, inv: Investigator):
+def occ_point_assigner(max_points: int, skills: dict, inv: Investigator):
     """Assign points for the skills related to occupations."""
     # Assing profession points
-    compulsory_skills = [sk for sk in occ_skills if sk.category == '1']
-    skills_used = {}
-    # set credit rating as a separate skill
-    credit_rating_skill = Skills.objects.filter(
-        title="Credit Rating"
-    )[0]
-    cr_value = randint(
+    compulsory_skills = skills['skill_profession']
+    skills_used = ['Credit Rating']
+    inv.skills[comp_skill]['Credit Rating']['value'] = randint(
         inv.occupation.credit_rating_min,
         inv.occupation.credit_rating_max
     )
-    credit_rating = InvestigatorSkills(
-        investigator=inv,
-        skill=credit_rating_skill,
-        value=cr_value,
-        category="1"
-    )
-    credit_rating.save()
-    skills_used[credit_rating_skill.uuid] = credit_rating
+    inv.save()
+    skills_used['Credit Rating'] = credit_rating
 
     val = (max_points // 2) // len(compulsory_skills)
-    for comp_skill in compulsory_skills: 
-        record = InvestigatorSkills(
-            investigator=inv,
-            skill=comp_skill.skill,
-            value=comp_skill.skill.default_value + val,
-            category=comp_skill.category
-        )
+    for comp_skill in compulsory_skills:
+        inv.skills[comp_skill]['value'] = inv.skills[
+            comp_skill]['default_value'] + val
         max_points -= val
-        skills_used[comp_skill.skill.uuid] = record
-
+        skills_used.append(comp_skill)
+        inv.save()
+    # TODO: mandatories base value covered now grab all by their
+    # list respecting the limit
     occ_skills = list(occ_skills)
     shuffle(occ_skills)
     for occ_skill in occ_skills:
@@ -128,6 +110,7 @@ def random_inv():
     genders = [('M', 'male'), ('F', 'female')]
     gender_pick = choice(genders)
     name = random_names(gender_pick[1], "20'", 1, 1)
+    skills = Skills.objects.filter(year=1920).first()['skills']
     attrs = {
         "user": User.objects.get(pk=1),
         "name": name,
@@ -138,26 +121,25 @@ def random_inv():
         "age": randint(15, 90),
         "occupation": occ,
         "ideologies": "Atheist",
-        "sanity": roller_stats(3),
-        "luck": roller_stats(3)
+        "luck": roller_stats(3),
+        "skills": skills
     }
     inv = Investigator(**attrs)
     inv.save()
-    load_investigator_attributes(inv)
     # Load derivative statuses
     inv.health = inv.max_health
-    inv.sanity = inv.power.value
+    inv.sanity = inv.power
     inv.save()
     # Obtain skills and occupations related to the investigator occupation.
-    occ_skills = OccupationSkills.objects.filter(occupation=inv.occupation)
-    if occ_skills   :
+    if occ_skills:
         proff_points = inv.occupation_skill_points
         # Assign points to occupation skills
+
         skills_assigned = occ_point_assigner(
-            proff_points, occ_skills, inv)
-        free_skills = Skills.objects.all()
-        skills_assigned = free_point_assigner(
-            inv.free_skill_points, free_skills, inv, skills_assigned)
+            proff_points, inv.occupation.skills, inv)
+
+        skills_assigned = point_assigner(
+            inv.free_skill_points, inv.skills, inv)
         for skill in skills_assigned:
             skills_assigned[skill].save()
     else:
