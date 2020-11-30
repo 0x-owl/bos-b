@@ -66,9 +66,6 @@ class OccupationNode(DjangoObjectType):
         model = Occupation
         filter_fields = {
             'uuid': ['exact'],
-            'user': ['exact'],
-            'user__username': ['exact', 'istartswith'],
-            'user__id': ['exact'],
             'title': ['exact', 'icontains', 'istartswith'],
             'suggested_contacts': ['icontains'],
             'credit_rating_min': ['exact', 'gt', 'lt', 'gte', 'lte'],

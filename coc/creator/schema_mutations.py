@@ -89,7 +89,6 @@ class OccupationMutation(ClientIDMutation):
 
     class Input:
         method = String()
-        user = Int()
         uuid = String()
         title = String()
         description = String()
@@ -106,8 +105,6 @@ class OccupationMutation(ClientIDMutation):
             Input class (title, user).
         """
         input_ = kwargs.get('input')
-        usr = User.objects.get(pk=input_['user'])
-        input_['user'] = usr
         method = input_.pop('method')
         ret = mutation_flow(
             OccupationMutation,

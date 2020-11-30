@@ -85,8 +85,7 @@ class Skills(Model):
 
 class Occupation(Model):
     """Occupation class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
-    user = ForeignKey(User, on_delete=CASCADE)
+    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     title = CharField(max_length=50)
     description = TextField(blank=True)
     suggested_contacts = TextField()
