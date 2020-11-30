@@ -123,14 +123,14 @@ class Investigator(Model):
     birthplace = CharField(max_length=80)
     age = PositiveIntegerField(default=18)
     # Attributes
-    strength = PositiveIntegerField()
-    dexterity = PositiveIntegerField()
-    constitution = PositiveIntegerField()
-    power = PositiveIntegerField()
-    size = PositiveIntegerField()
-    education = PositiveIntegerField()
-    intelligence = PositiveIntegerField()
-    appearance = PositiveIntegerField()
+    strength = PositiveIntegerField(default=roller_stats(3))
+    dexterity = PositiveIntegerField(default=roller_stats(3))
+    constitution = PositiveIntegerField(default=roller_stats(3))
+    power = PositiveIntegerField(default=roller_stats(3))
+    size = PositiveIntegerField(default=roller_stats(2))
+    education = PositiveIntegerField(default=roller_stats(2))
+    intelligence = PositiveIntegerField(default=roller_stats(2))
+    appearance = PositiveIntegerField(default=roller_stats(3))
     # Composition
     occupation = ForeignKey(
         Occupation, on_delete=SET_NULL, default=None, null=True)

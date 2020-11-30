@@ -6,7 +6,7 @@ from random import randint, choice, shuffle
 from django.contrib.auth import get_user_model
 
 from creator.models import (Investigator, Occupation, Skills)
-from creator.helpers.model_helpers import attribute_roller, roller_stats
+from creator.helpers.model_helpers import roller_stats
 
 from creator.helpers.random_name import random_names
 
@@ -16,27 +16,8 @@ User = get_user_model()
 
 def calc_proff_points(attribute: int, mod: int, inv: Investigator):
     """Calculate the amount of points that correspond to certain attribute"""
-    inv_attrs = InvestigatorAttribute.objects.filter(
-        attr=attribute,
-        investigator=inv
-    ).first()
-    res = inv_attrs.value * mod
+
     return res
-
-
-def load_investigator_attributes(inv: Investigator):
-    """Seed an investigator with attributes."""
-    # Obtain list of attibutes with their ids.
-    attrs = Attribute.items()
-
-    # Seed attributes
-    for attr in attrs:
-        inv_attr = InvestigatorAttribute(
-            investigator=inv,
-            attr=attr[1],
-            value=attribute_roller(attr[1])
-        )
-        inv_attr.save()
 
 
 def amount(points_available: int, limit: int):

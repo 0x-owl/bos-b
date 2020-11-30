@@ -46,12 +46,3 @@ def roller_stats(dsix: int = 3) -> int:
     else:
         stat *= 5
     return stat
-
-
-def attribute_roller(attribute: int) -> int:
-    """Given a attribute roll for it."""
-    if attribute in [5, 6, 8]:
-        val = roller_stats(2)
-    else:
-        val = roller_stats()
-    return val
