@@ -171,7 +171,7 @@
             <h4 style="text-align: center"> Skills</h4>
             <div style="font-size: 15px;" class="row">
                 <div class="column">
-                    {% for skill in investigator.skills|slice:"0:31" %}
+                    {% for skill in investigator.skills|slice:":29" %}
                         <div class="row">
                             <div class="column">
                                 {{skill.0}}:
@@ -185,7 +185,7 @@
                     {% endfor %}
                 </div>
                 <div class="column">
-                    {% for skill in investigator.skills|slice:"31:63" %}
+                    {% for skill in investigator.skills|slice:"29:58" %}
                         <div class="row">
                             <div class="column">
                                 {{skill.0}}:
@@ -199,7 +199,7 @@
                     {% endfor %}
                 </div>
                 <div class="column">
-                    {% for skill in investigator.skills|slice:"63:" %}
+                    {% for skill in investigator.skills|slice:"58:" %}
                         <div class="row">
                             <div class="column">
                                 {{skill.0}}:

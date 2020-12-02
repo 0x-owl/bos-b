@@ -54,7 +54,7 @@ def get_investigator_data(request, inv):
             investigator.skills[skill]['value'] // 5
         ))
     res['skills'] = skills_sanitized
-    
+    print(len(skills_sanitized) // 3)
 
     return render(request, 'character_sheet.html', {'investigator': res})
 
