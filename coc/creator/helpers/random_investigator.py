@@ -23,7 +23,7 @@ def amount(points_available: int, limit: int):
     return val
 
 
-def get_occupation_skills(investigator: Investigator):
+def get_occupation_skills(inv: Investigator):
     """Based on the investigators occupation determine the list of skills."""
     # Generate list of skills
     occupation_skills = []
@@ -49,8 +49,7 @@ def occ_point_assigner(max_points: int, inv: Investigator):
     occupation_skills = get_occupation_skills(inv)
     val = (max_points // 2) // len(occupation_skills)
     for occ_skill in occupation_skills:
-        inv.skills[comp_skill]['value'] = inv.skills[
-            comp_skill]['value'] + val
+        inv.skills[occ_skill]['value'] += val
         max_points -= val
 
     shuffle(occupation_skills)
@@ -89,11 +88,12 @@ def free_point_assigner(max_points: int, inv: Investigator):
 def random_inv():
     """Main wrapper."""
     # Pick a random occupation
-    occ = Occupation.objects.get(pk=randint(1, 117))
+    occupations = Occupation.objects.all()
+    occupation = choice(occupations)
     genders = [('M', 'male'), ('F', 'female')]
     gender_pick = choice(genders)
     name = random_names(gender_pick[1], "20'", 1, 1)
-    skills = Skills.objects.filter(year=1920).first()['skills']
+    skills = Skills.objects.filter(year=1920).first().skills
     attrs = {
         "user": User.objects.get(pk=1),
         "name": name,
@@ -102,7 +102,7 @@ def random_inv():
         "residence": "Providence",
         "birthplace": "Misissippi",
         "age": randint(15, 90),
-        "occupation": occ,
+        "occupation": occupation,
         "ideologies": "Atheist",
         "luck": roller_stats(3),
         "skills": skills
@@ -113,16 +113,10 @@ def random_inv():
     inv.health = inv.max_health
     inv.sanity = inv.power
     inv.save()
-    # Obtain skills and occupations related to the investigator occupation.
-    if occ_skills:
-        proff_points = inv.occupation_skill_points
-        # Assign points to occupation skills
-        occ_point_assigner(proff_points, inv)
-        # Assign free skill points
-        free_point_assigner(inv.free_skill_points, inv)
-    else:
-        raise Exception(
-            f"No occupation skills for occupation {inv.occupation}"
-        )
+    # Assign points to occupation skills
+    proff_points = inv.occupation_skill_points
+    occ_point_assigner(proff_points, inv)
+    # Assign free skill points
+    free_point_assigner(inv.free_skill_points, inv)
 
     return inv.uuid

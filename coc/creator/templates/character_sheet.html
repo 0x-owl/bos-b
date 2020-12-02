@@ -47,9 +47,9 @@
                             STR:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.str.value}}</b>|
-                            <b>{{investigator.attributes.str.half_value}}</b>|
-                            <b>{{investigator.attributes.str.fifth_value|stringformat:"02d"}}</b>
+                            <b>{{investigator.attributes.attrs.STR.0}}</b>|
+                            <b>{{investigator.attributes.attrs.STR.1}}</b>|
+                            <b>{{investigator.attributes.attrs.STR.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -57,9 +57,9 @@
                             CON:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.con.value}}</b>|
-                            <b>{{investigator.attributes.con.half_value}}</b>|
-                            <b>{{investigator.attributes.con.fifth_value|stringformat:"02d"}}</b>
+                            <b>{{investigator.attributes.attrs.CON.0}}</b>|
+                            <b>{{investigator.attributes.attrs.CON.1}}</b>|
+                            <b>{{investigator.attributes.attrs.CON.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -67,9 +67,9 @@
                             SIZ:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.size.value}}</b>|
-                            <b>{{investigator.attributes.size.half_value}}</b>|
-                            <b>{{investigator.attributes.size.fifth_value|stringformat:"02d"}}</b>
+                            <b>{{investigator.attributes.attrs.SIZ.0}}</b>|
+                            <b>{{investigator.attributes.attrs.SIZ.1}}</b>|
+                            <b>{{investigator.attributes.attrs.SIZ.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                 </div>
@@ -79,9 +79,9 @@
                             DEX:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.dex.value}}</b>|
-                            <b>{{investigator.attributes.dex.half_value}}</b>|
-                            <b>{{investigator.attributes.dex.fifth_value|stringformat:"02d"}}</b>
+                            <b>{{investigator.attributes.attrs.DEX.0}}</b>|
+                            <b>{{investigator.attributes.attrs.DEX.1}}</b>|
+                            <b>{{investigator.attributes.attrs.DEX.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -89,9 +89,9 @@
                             APP:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.app.value}}</b>|
-                            <b>{{investigator.attributes.app.half_value}}</b>|
-                            <b>{{investigator.attributes.app.fifth_value|stringformat:"02d"}}</b>
+                            <b>{{investigator.attributes.attrs.APP.0}}</b>|
+                            <b>{{investigator.attributes.attrs.APP.1}}</b>|
+                            <b>{{investigator.attributes.attrs.APP.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -99,9 +99,9 @@
                             INT:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.int.value}}</b>|
-                            <b>{{investigator.attributes.int.half_value}}</b>|
-                            <b>{{investigator.attributes.int.fifth_value|stringformat:"02d"}}</b>
+                            <b>{{investigator.attributes.attrs.INT.0}}</b>|
+                            <b>{{investigator.attributes.attrs.INT.1}}</b>|
+                            <b>{{investigator.attributes.attrs.INT.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                 </div>
@@ -111,9 +111,9 @@
                             POW:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.pow.value}}</b>|
-                            <b>{{investigator.attributes.pow.half_value}}</b>|
-                            <b>{{investigator.attributes.pow.fifth_value|stringformat:"02d"}}</b>
+                            <b>{{investigator.attributes.attrs.POW.0}}</b>|
+                            <b>{{investigator.attributes.attrs.POW.1}}</b>|
+                            <b>{{investigator.attributes.attrs.POW.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -121,9 +121,9 @@
                             EDU:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.edu.value}}</b>|
-                            <b>{{investigator.attributes.edu.half_value}}</b>|
-                            <b>{{investigator.attributes.edu.fifth_value|stringformat:"02d"}}</b>
+                            <b>{{investigator.attributes.attrs.EDU.0}}</b>|
+                            <b>{{investigator.attributes.attrs.EDU.1}}</b>|
+                            <b>{{investigator.attributes.attrs.EDU.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -171,21 +171,7 @@
             <h4 style="text-align: center"> Skills</h4>
             <div style="font-size: 15px;" class="row">
                 <div class="column">
-                    {% for skill in investigator.skills|slice:"0:10" %}
-                    <div class="row">
-                        <div class="column">
-                            {{skill.0}}:
-                        </div>
-                        <div style="text-align: right" class="column">
-                            <b>{{skill.1|stringformat:"02d"}}</b>|
-                            <b>{{skill.2|stringformat:"02d"}}</b>|
-                            <b>{{skill.3|stringformat:"02d"}}</b>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-                <div class="column">
-                    {% for skill in investigator.skills|slice:"10:20" %}
+                    {% for skill in investigator.skills|slice:"0:31" %}
                         <div class="row">
                             <div class="column">
                                 {{skill.0}}:
@@ -199,7 +185,21 @@
                     {% endfor %}
                 </div>
                 <div class="column">
-                    {% for skill in investigator.skills|slice:"20:" %}
+                    {% for skill in investigator.skills|slice:"31:63" %}
+                        <div class="row">
+                            <div class="column">
+                                {{skill.0}}:
+                            </div>
+                            <div style="text-align: right" class="column">
+                                <b>{{skill.1|stringformat:"02d"}}</b>|
+                                <b>{{skill.2|stringformat:"02d"}}</b>|
+                                <b>{{skill.3|stringformat:"02d"}}</b>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="column">
+                    {% for skill in investigator.skills|slice:"63:" %}
                         <div class="row">
                             <div class="column">
                                 {{skill.0}}:

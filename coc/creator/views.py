@@ -32,13 +32,7 @@ def get_investigator_data(request, inv):
             'contacts': investigator.occupation.suggested_contacts,
         },
         'attributes': {
-            'dex': investigator.dexterity,
-            'str': investigator.strength,
-            'con': investigator.constitution,
-            'app': investigator.appearance,
-            'int': investigator.intelligence,
-            'pow': investigator.power,
-            'edu': investigator.education,
+            'attrs': investigator.attributes_detail,
             'size': investigator.size,
             'sanity': investigator.sanity,
             'max_health': investigator.max_health,
@@ -48,23 +42,20 @@ def get_investigator_data(request, inv):
             'build': investigator.build[1],
             'modifier': investigator.build[0],
             'luck': investigator.luck
-        },
+        }
     }
-    skills = []
-    inv_skills = InvestigatorSkills.objects.filter(
-        investigator=investigator
-    )
-    for skill in inv_skills:
-        skills.append(
-            (
-                skill.skill.title,
-                skill.value,
-                skill.half_value,
-                skill.fifth_value,
-                skill.category
-            )
-        )
-    res['skills'] = skills
+    skills = sorted(investigator.skills)
+    skills_sanitized = []
+    for skill in skills:
+        skills_sanitized.append((
+            skill,
+            investigator.skills[skill]['value'],
+            investigator.skills[skill]['value'] // 2,
+            investigator.skills[skill]['value'] // 5
+        ))
+    res['skills'] = skills_sanitized
+    
+
     return render(request, 'character_sheet.html', {'investigator': res})
 
 

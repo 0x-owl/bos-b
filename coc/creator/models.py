@@ -190,7 +190,7 @@ class Investigator(Model):
     @property
     def build(self):
         "default=self.power""Build attribute property."""
-        amount = self.strength.value + self.size.value
+        amount = self.strength + self.size
         res = ()
         if amount <= 64:
             res = ('-2', -2)
