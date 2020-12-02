@@ -67,6 +67,8 @@ def occ_point_assigner(max_points: int, inv: Investigator):
         inv.occupation.credit_rating_max
     )
 
+    inv.skills['Language(Own)']['value'] = inv.education
+    inv.skills['Dodge']['value'] = inv.dexterity // 2
     inv.save()
 
 
