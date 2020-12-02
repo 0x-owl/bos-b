@@ -111,6 +111,15 @@ def random_inv():
     }
     inv = Investigator(**attrs)
     inv.save()
+    # Produce attributes
+    inv.strength = roller_stats(3)
+    inv.dexterity = roller_stats(3)
+    inv.constitution = roller_stats(3)
+    inv.power = roller_stats(3)
+    inv.size = roller_stats(2)
+    inv.education = roller_stats(2)
+    inv.intelligence = roller_stats(2)
+    inv.appearance = roller_stats(3)
     # Load derivative statuses
     inv.health = inv.max_health
     inv.sanity = inv.power
