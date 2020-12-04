@@ -28,17 +28,29 @@ def get_occupation_skills(inv: Investigator):
     # Generate list of skills
     occupation_skills = []
     for stype in skill_types:
-        skills_by_category = inv.occupation.skills.get(
-            f'skill_{stype}', [])
+        skills_key = f'skill_{stype}'
+        limit_key = f'limit_{stype}'
         limit = inv.occupation.skills.get(
-            f'limit_{stype}', None)
-        if limit is None or limit == 0:            
-            occupation_skills.extend(skills_by_category)
-        else:
-            for _ in range(limit):
-                occupation_skills.append(
-                    choice(skills_by_category)
+            limit_key, None)
+        # determine if a limit of choice has been set
+        if limit is not None:
+            if stype == 'free':
+                skills_by_category = inv.skills
+            else:
+                skills_by_category = inv.occupation.skills.get(
+                    skills_key, [])
+            # limit 0 means not limit of choice
+            if limit == 0:
+                occupation_skills.extend(skills_by_category)
+            else:
+                for _ in range(limit):
+                    occupation_skills.append(
+                        choice(skills_by_category)
                 )
+        else:
+            # none means the category is non existant so we can skip
+            continue
+            
     return occupation_skills
 
 
