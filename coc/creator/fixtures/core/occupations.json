@@ -3142,7 +3142,13 @@
         "skills": {
           "skill_combat": [
             "Fighting(Brawl)",
-            "Firearms"
+            "Firearms(Bow)",
+            "Firearms(Flamethrower)",
+            "Firearms(Handgun)",
+            "Firearms(Heavy Weapons)",
+            "Firearms(Machine Gun)",
+            "Firearms(Rifle/Shotgun)",
+            "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
           "skill_profession": [
