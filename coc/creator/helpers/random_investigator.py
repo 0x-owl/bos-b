@@ -35,7 +35,7 @@ def get_occupation_skills(inv: Investigator):
         # determine if a limit of choice has been set
         if limit is not None:
             if stype == 'free':
-                skills_by_category = inv.skills
+                skills_by_category = list(inv.skills.keys())
             else:
                 skills_by_category = inv.occupation.skills.get(
                     skills_key, [])
