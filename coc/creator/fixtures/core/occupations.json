@@ -264,9 +264,24 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
-            "Persuade"
+            "Persuade",
+            "Fast talk"
           ],
-          "limit_interpersonal": 1
+          "limit_interpersonal": 1,
+          "skill_misc": [
+            "Art & Craft(Acting)",
+            "Art & Craft(Animal Handling)",
+            "Art & Craft(Farming)",
+            "Art & Craft(Fine Art)",
+            "Art & Craft(Forgery)",
+            "Art & Craft(Instrument)",
+            "Art & Craft(Literature)",
+            "Art & Craft(Photography)",
+            "Art & Craft(Technical Drawing)",
+            "Art & Craft(Typing)",
+            "Art & Craft(Short Hand)"
+          ],
+          "limit_misc": 1
         },
         "points": {
           "mandatory_attributes": {
@@ -297,7 +312,8 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
-            "Persuade"
+            "Persuade",
+            "Fast talk"
           ],
           "limit_interpersonal": 2
         },
