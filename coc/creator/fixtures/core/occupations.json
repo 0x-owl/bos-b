@@ -336,13 +336,31 @@
         "skills": {
           "skill_profession": [
             "Appraise",
+            "Archaeology",
             "History",
             "Language(Other)",
             "Library Use",
             "Mechanical Repair",
             "Spot Hidden"
           ],
-          "limit_profession": 0
+          "limit_profession": 0,
+          "skill_professionalt":[
+            "Science(Astronomy)",
+            "Science(Biology)",
+            "Science(Botany)",
+            "Science(Chemistry)",
+            "Science(Cryptography)",
+            "Science(Forensics)",
+            "Science(Geology)",
+            "Science(Mathematics)",
+            "Science(Meterology)",
+            "Science(Pharmacy)",
+            "Science(Physics)",
+            "Science(Zoology)",
+            "Science(Engineering)",
+            "Navigate"
+          ],
+          "limit_professionalt": 1
         },
         "points": {
           "mandatory_attributes": {
@@ -398,7 +416,8 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
-            "Persuade"
+            "Persuade",
+            "Fast talk"
           ],
           "limit_interpersonal": 1,
           "skill_professionalt": [
@@ -415,7 +434,12 @@
             "Art & Craft(Short Hand)"
           ],
           "limit_professionalt": 1,
-          "limit_free": 2
+          "limit_free": 2,
+          "skill_misc": [
+            "History",
+            "Natural World"
+          ],
+          "limit_misc": 1
         },
         "points": {
           "mandatory_attributes": {
@@ -449,6 +473,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -486,17 +511,19 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
         },
         "points": {
           "mandatory_attributes": {
-            "EDU": 2,
+            "EDU": 2
+          },
+          "optional_attributes": {
             "STR": 2,
             "DEX": 2
-          },
-          "optional_attributes": {}
+          }
         }
       }
     },
@@ -518,7 +545,12 @@
             "Art & Craft(Literature)",
             "Psychology"
           ],
-          "limit_profession": 0
+          "limit_profession": 0,
+          "skill_professionalt": [
+            "Natural World",
+            "Occult"
+          ],
+          "limit_professionalt": 1
         },
         "points": {
           "mandatory_attributes": {
