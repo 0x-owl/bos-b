@@ -581,6 +581,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -604,17 +605,18 @@
         "credit_rating_max": 50,
         "skills": {
           "skill_profession": [
-            "Science(Biology)",
             "Natural World",
             "Navigate",
-            "Spot Hidden",
             "Stealth",
             "Track"
           ],
-          "limit_profession": 0,
           "skill_misc": [
             "Language(Other)",
             "Survival"
+          ],
+          "skill_professionalt": [
+            "Listen",
+            "Spot Hidden"
           ],
           "skill_combat": [
             "Firearms(Bow)",
@@ -625,6 +627,13 @@
             "Firearms(Rifle/Shotgun)",
             "Firearms(Submachine Gun)"
           ],
+          "skills_science": [
+            "Science(Biology)",
+            "Science(Botany)"
+          ],
+          "limit_science": 1,
+          "limit_profession": 0,
+          "limit_professionalt": 1,
           "limit_combat": 1,
           "limit_misc": 1
         },
@@ -653,12 +662,14 @@
             "Drive Auto",
             "History",
             "Language(Other)",
-            "Library Use"
+            "Library Use",
+            "Language(Own)"
           ],
           "limit_profession": 0,
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -710,9 +721,15 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
-          "limit_interpersonal": 1
+          "limit_interpersonal": 1,
+          "skill_professionalt": [
+            "Electronics",
+            "Electrical Repair"
+          ],
+          "limit_professionalt": 1
         },
         "points": {
           "mandatory_attributes": {
@@ -737,6 +754,7 @@
           "skill_profession": [
             "Fighting(Brawl)",
             "Dodge",
+            "Jump",
             "Intimidate",
             "Psychology",
             "Spot Hidden"
@@ -769,6 +787,11 @@
             "Psychology",
             "Spot Hidden"
           ],
+          "skill_misc": [
+            "Accounting",
+            "Appraise"
+          ],
+          "limit_misc": 1,
           "skill_professionalt": [
             "Art & Craft(Acting)",
             "Art & Craft(Animal Handling)",
@@ -807,6 +830,7 @@
           "skill_profession": [
             "Accounting",
             "History",
+            "Listen",
             "Language(Other)",
             "Library Use",
             "Psychology"
@@ -815,6 +839,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -875,6 +900,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1,
@@ -919,10 +945,16 @@
             "Dodge",
             "Jump",
             "Ride",
+            "Survival",
             "Throw",
             "Track"
           ],
-          "limit_profession": 0
+          "limit_profession": 0,
+          "skill_professionalt": [
+            "First Aid",
+            "Natural World"
+          ],
+          "limit_professionalt": 1
         },
         "points": {
           "mandatory_attributes": {
@@ -951,7 +983,21 @@
             "Spot Hidden"
           ],
           "limit_profession": 0,
-          "limit_free": 2
+          "limit_free": 2,
+          "skill_professionalt": [
+            "Art & Craft(Acting)",
+            "Art & Craft(Animal Handling)",
+            "Art & Craft(Farming)",
+            "Art & Craft(Fine Art)",
+            "Art & Craft(Forgery)",
+            "Art & Craft(Instrument)",
+            "Art & Craft(Literature)",
+            "Art & Craft(Photography)",
+            "Art & Craft(Technical Drawing)",
+            "Art & Craft(Typing)",
+            "Art & Craft(Short Hand)"
+          ],
+          "limit_professionalt": 2
         },
         "points": {
           "mandatory_attributes": {
@@ -1025,6 +1071,7 @@
           "limit_free": 1,
           "skill_profession": [
             "Drive Auto",
+            "Intimidate",
             "Locksmith",
             "Operate Heavy Machinery"
           ],
@@ -1048,6 +1095,11 @@
             "Firearms(Rifle/Shotgun)",
             "Firearms(Submachine Gun)"
           ],
+          "skill_misc": [
+            "Electrical Repair",
+            "Mechanical Repair"
+          ],
+          "limit_misc": 1,
           "limit_combat": 1,
           "limit_profession": 0
         },
@@ -1102,6 +1154,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -1133,7 +1186,12 @@
             "Spot Hidden",
             "Stealth"
           ],
-          "limit_profession": 0
+          "limit_profession": 0,
+          "skill_professionalt": [
+            "Electrical Repair",
+            "Mechanical Repair"
+          ],
+          "limit_professionalt": 1
         },
         "points": {
           "mandatory_attributes": {
@@ -1153,40 +1211,24 @@
         "credit_rating_min": 10,
         "credit_rating_max": 65,
         "skills": {
-          "skill_combat": [
-            "Fighting(Axe)",
-            "Fighting(Brawl)",
-            "Fighting(Chainsaw)",
-            "Fighting(Flail)",
-            "Fighting(Garrote)",
-            "Fighting(Spear)",
-            "Fighting(Sword)",
-            "Fighting(Whip)",
-            "Firearms(Bow)",
-            "Firearms(Flamethrower)",
-            "Firearms(Handgun)",
-            "Firearms(Heavy Weapons)",
-            "Firearms(Machine Gun)",
-            "Firearms(Rifle/Shotgun)",
-            "Firearms(Submachine Gun)"
-          ],
-          "limit_combat": 1,
           "skill_profession": [
             "Appraise",
+            "Art & Craft(Acting)",
             "Psychology",
-            "Spot Hidden",
-            "Stealth"
+            "Listen",
+            "Sleight of Hand"
           ],
           "limit_profession": 0,
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1,
           "skill_misc": [
-            "Locksmith",
-            "Mechanical Repair"
+            "Law",
+            "Language(Other)"
           ],
           "limit_misc": 1
         },
@@ -1226,7 +1268,11 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_free": 1,
+          "skill_professionalt":[
+            "Art & Craft(Acting)",
+            "Disguise"
+          ],
+          "limit_professionalt": 1,
           "skill_profession": [
             "Appraise",
             "Psychology",
@@ -1236,6 +1282,7 @@
           "limit_profession": 0,
           "skill_interpersonal": [
             "Charm",
+            "Fast talk",
             "Intimidate"
           ],
           "limit_interpersonal": 1,
@@ -1278,6 +1325,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -1307,15 +1355,10 @@
             "Art & Craft(Forgery)",
             "History",
             "Library Use",
-            "Spot Hidden"
+            "Spot Hidden",
+            "Sleight of Hand"
           ],
-          "limit_profession": 0,
-          "skill_interpersonal": [
-            "Charm",
-            "Intimidate",
-            "Persuade"
-          ],
-          "limit_interpersonal": 1
+          "limit_profession": 0
         },
         "points": {
           "mandatory_attributes": {
@@ -1366,6 +1409,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -1401,6 +1445,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -1439,12 +1484,14 @@
             "History",
             "Occult",
             "Psychology",
-            "Stealth"
+            "Stealth",
+            "Hypnosis"
           ],
           "limit_profession": 0,
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -1482,12 +1529,17 @@
             "Art & Craft(Forgery)",
             "Art & Craft(Instrument)",
             "Art & Craft(Literature)",
-            "Art & Craft(Photography)",
             "Art & Craft(Technical Drawing)",
             "Art & Craft(Typing)",
             "Art & Craft(Short Hand)"
           ],
-          "limit_professionalt": 1
+          "limit_professionalt": 1,
+          "limit_free": 1,
+          "skill_misc": [
+            "Computer Use",
+            "Library Use"
+          ],
+          "limit_misc": 1
         },
         "points": {
           "mandatory_attributes": {
@@ -1528,6 +1580,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "skill_combat": [
@@ -1595,6 +1648,7 @@
             "Science(Biology)",
             "First Aid",
             "Medicine",
+            "Language(Other)",
             "Science(Pharmacy)",
             "Psychology"
           ],
@@ -1629,6 +1683,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1,
@@ -1667,6 +1722,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -1701,6 +1757,7 @@
           "limit_profession": 0,
           "skill_interpersonal": [
             "Charm",
+            "Fast talk",
             "Intimidate",
             "Persuade"
           ],
