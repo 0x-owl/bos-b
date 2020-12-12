@@ -5,15 +5,12 @@ from random import randint, choice, shuffle
 
 from django.contrib.auth import get_user_model
 
-from creator.constants import SKILL_TYPES
 from creator.helpers.model_helpers import roller_stats
 from creator.helpers.random_name import random_names
 from creator.models import (Investigator, Occupation, Skills)
 
 
 User = get_user_model()
-
-skill_types = [skill[1].lower() for skill in SKILL_TYPES]
 
 
 def amount(points_available: int, limit: int):
@@ -27,30 +24,28 @@ def get_occupation_skills(inv: Investigator):
     """Based on the investigators occupation determine the list of skills."""
     # Generate list of skills
     occupation_skills = []
+    # assign the mandatories
+    occupation_skills.extend(inv.occupation.skills.get('basics'))
+    # assign extra categories with their limits
+    skill_types = [
+        category.replace("limit_", "") for category
+        in list(inv.occupation.skills.keys()) if 'limit' in category
+    ]
     for stype in skill_types:
-        skills_key = f'skill_{stype}'
         limit_key = f'limit_{stype}'
-        limit = inv.occupation.skills.get(
-            limit_key, None)
-        # determine if a limit of choice has been set
-        if limit is not None:
-            if stype == 'free':
-                skills_by_category = list(inv.skills.keys())
-            else:
-                skills_by_category = inv.occupation.skills.get(
-                    skills_key, [])
-            # limit 0 means not limit of choice
-            if limit == 0:
-                occupation_skills.extend(skills_by_category)
-            else:
-                for _ in range(limit):
-                    occupation_skills.append(
-                        choice(skills_by_category)
-                )
+        limit = inv.occupation.skills.get(limit_key)
+        if stype == 'free':
+            skills_by_category = list(inv.skills.keys())
         else:
-            # none means the category is non existant so we can skip
-            continue
-            
+            skills_key = f'skill_{stype}'
+            skills_by_category = inv.occupation.skills.get(
+                skills_key, []
+            )
+        for _ in range(limit):
+            occupation_skills.append(
+                choice(skills_by_category)
+            )
+                
     return occupation_skills
 
 
@@ -70,7 +65,7 @@ def occ_point_assigner(max_points: int, inv: Investigator):
         skill = inv.skills[occ_skill]
         base_value = skill.get('value')
         val = amount(max_points, base_value)
-        if (base_value + val) < 90:
+        if (base_value + val) < 90 and (max_points - val) >= 0:
             inv.skills[occ_skill]['value'] += val
             max_points -= val
 
@@ -93,7 +88,7 @@ def free_point_assigner(max_points: int, inv: Investigator):
             continue
         base_value = inv.skills[skill]['value']
         val = amount(max_points, base_value)
-        if (base_value + val) < 90:
+        if (base_value + val) < 90 and (max_points - val) >= 0:
             inv.skills[skill]['value'] += val
             max_points -= val
     inv.save()

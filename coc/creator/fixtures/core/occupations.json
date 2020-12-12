@@ -8,7 +8,7 @@
         "credit_rating_min": 30,
         "credit_rating_max": 70,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Law",
             "Library Use",
@@ -16,7 +16,7 @@
             "Persuade",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 2
         },
         "points": {
@@ -36,7 +36,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 20,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Climb",
             "Dodge",
             "Jump",
@@ -44,7 +44,7 @@
             "Swim",
             "Throw"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 2
         },
         "points": {
@@ -65,13 +65,13 @@
         "credit_rating_min": 9,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Art & Craft(Acting)",
             "Disguise",
             "History",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Fighting(Axe)",
             "Fighting(Brawl)",
@@ -110,13 +110,13 @@
         "credit_rating_min": 20,
         "credit_rating_max": 90,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Art & Craft(Acting)",
             "Disguise",
             "Drive Auto",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 2,
           "skill_interpersonal": [
             "Charm",
@@ -144,7 +144,7 @@
         "credit_rating_min": 20,
         "credit_rating_max": 45,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Fighting(Brawl)",
             "Law",
             "Library Use",
@@ -162,7 +162,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -191,7 +191,7 @@
         "credit_rating_min": 10,
         "credit_rating_max": 60,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Science(Biology)",
             "Science(Chemistry)",
             "Language(Other)",
@@ -200,8 +200,7 @@
             "Listen",
             "Psychoanalysis",
             "Psychology"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -221,7 +220,7 @@
         "credit_rating_max": 40,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Jump",
             "Listen",
             "Natural World",
@@ -229,8 +228,7 @@
             "Stealth",
             "Track",
             "Science(Zoology)"
-          ],
-          "limit_profession": 0
+          ]          
         },
         "points": {
           "mandatory_attributes": {
@@ -253,14 +251,14 @@
         "credit_rating_max": 70,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Appraise",
             "History",
             "Language(Other)",
             "Library Use",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -300,7 +298,7 @@
         "credit_rating_min": 30,
         "credit_rating_max": 50,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Appraise",
             "Drive Auto",
@@ -308,7 +306,6 @@
             "Library Use",
             "Navigate"
           ],
-          "limit_profession": 0,
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -334,7 +331,7 @@
         "credit_rating_min": 10,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Appraise",
             "Archaeology",
             "History",
@@ -343,7 +340,6 @@
             "Mechanical Repair",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
           "skill_professionalt":[
             "Science(Astronomy)",
             "Science(Biology)",
@@ -379,7 +375,7 @@
         "credit_rating_min": 30,
         "credit_rating_max": 70,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Language(Own)",
             "Law",
@@ -387,8 +383,7 @@
             "Persuade",
             "Psychology",
             "Art & Craft(Technical Drawing)"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -407,12 +402,12 @@
         "credit_rating_min": 9,
         "credit_rating_max": 50,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Language(Other)",
             "Psychology",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -461,7 +456,7 @@
         "credit_rating_min": 8,
         "credit_rating_max": 20,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Fighting(Brawl)",
             "Dodge",
             "First Aid",
@@ -469,7 +464,7 @@
             "Psychology",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -499,7 +494,7 @@
         "credit_rating_max": 70,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Fighting(Brawl)",
             "Climb",
             "Jump",
@@ -507,7 +502,7 @@
             "Swim",
             "Throw"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -537,7 +532,7 @@
         "credit_rating_max": 30,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "History",
             "Language(Other)",
             "Language(Own)",
@@ -545,7 +540,7 @@
             "Art & Craft(Literature)",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Natural World",
             "Occult"
@@ -570,14 +565,14 @@
         "credit_rating_max": 25,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Fighting(Brawl)",
             "Listen",
             "Psychology",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -604,7 +599,7 @@
         "credit_rating_min": 20,
         "credit_rating_max": 50,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Natural World",
             "Navigate",
             "Stealth",
@@ -632,7 +627,7 @@
             "Science(Botany)"
           ],
           "limit_science": 1,
-          "limit_profession": 0,
+          
           "limit_professionalt": 1,
           "limit_combat": 1,
           "limit_misc": 1
@@ -656,7 +651,7 @@
         "credit_rating_min": 20,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Appraise",
             "Drive Auto",
@@ -665,7 +660,7 @@
             "Library Use",
             "Language(Own)"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -709,7 +704,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "skill_profession": [
+          "basics": [
             "Drive Auto",
             "Law",
             "Natural World",
@@ -717,7 +712,7 @@
             "Stealth",
             "Track"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -751,7 +746,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 60,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Fighting(Brawl)",
             "Dodge",
             "Jump",
@@ -759,7 +754,7 @@
             "Psychology",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 2
         },
         "points": {
@@ -780,7 +775,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "First Aid",
             "Language(Other)",
             "Listen",
@@ -806,7 +801,7 @@
             "Art & Craft(Short Hand)"
           ],
           "limit_professionalt": 1,
-          "limit_profession": 0,
+          
           "limit_free": 2
         },
         "points": {
@@ -827,7 +822,7 @@
         "credit_rating_max": 60,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "History",
             "Listen",
@@ -835,7 +830,7 @@
             "Library Use",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -861,7 +856,7 @@
         "credit_rating_min": 10,
         "credit_rating_max": 70,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Computer Use",
             "Electrical Repair",
             "Electronics",
@@ -869,7 +864,7 @@
             "Science(Mathematics)",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 2
         },
         "points": {
@@ -889,14 +884,14 @@
         "credit_rating_min": 10,
         "credit_rating_max": 70,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Computer Use",
             "Electrical Repair",
             "Electronics",
             "Library Use",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -941,7 +936,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "skill_profession": [
+          "basics": [
             "Dodge",
             "Jump",
             "Ride",
@@ -949,7 +944,7 @@
             "Throw",
             "Track"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "First Aid",
             "Natural World"
@@ -976,13 +971,13 @@
         "credit_rating_min": 10,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Mechanical Repair",
             "Natural World",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 2,
           "skill_professionalt": [
             "Art & Craft(Acting)",
@@ -1017,7 +1012,7 @@
         "credit_rating_min": 30,
         "credit_rating_max": 60,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Disguise",
             "Electrical Repair",
             "Locksmith",
@@ -1045,8 +1040,7 @@
             "Firearms(Rifle/Shotgun)",
             "Firearms(Submachine Gun)"
           ],
-          "limit_combat": 1,
-          "limit_profession": 0
+          "limit_combat": 1
         },
         "points": {
           "mandatory_attributes": {
@@ -1069,7 +1063,7 @@
         "credit_rating_max": 75,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Drive Auto",
             "Intimidate",
             "Locksmith",
@@ -1100,8 +1094,7 @@
             "Mechanical Repair"
           ],
           "limit_misc": 1,
-          "limit_combat": 1,
-          "limit_profession": 0
+          "limit_combat": 1
         },
         "points": {
           "mandatory_attributes": {
@@ -1123,7 +1116,7 @@
         "credit_rating_min": 5,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Drive Auto",
             "Psychology",
             "Spot Hidden",
@@ -1150,7 +1143,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -1177,7 +1170,7 @@
         "credit_rating_min": 5,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Appraise",
             "Climb",
             "Listen",
@@ -1186,7 +1179,7 @@
             "Spot Hidden",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Electrical Repair",
             "Mechanical Repair"
@@ -1211,14 +1204,14 @@
         "credit_rating_min": 10,
         "credit_rating_max": 65,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Appraise",
             "Art & Craft(Acting)",
             "Psychology",
             "Listen",
             "Sleight of Hand"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -1273,13 +1266,13 @@
             "Disguise"
           ],
           "limit_professionalt": 1,
-          "skill_profession": [
+          "basics": [
             "Appraise",
             "Psychology",
             "Spot Hidden",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Fast talk",
@@ -1317,12 +1310,12 @@
             "Firearms(Handgun)"
           ],
           "limit_combat": 1,
-          "skill_profession": [
+          "basics": [
             "Drive Auto",
             "Listen",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Art & Craft(Acting)",
             "Art & Craft(Animal Handling)",
@@ -1365,7 +1358,7 @@
         "credit_rating_max": 40,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Appraise",
             "Art & Craft(Forgery)",
@@ -1373,7 +1366,7 @@
             "Library Use",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -1401,7 +1394,7 @@
         "credit_rating_max": 60,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Appraise",
             "Art & Craft(Forgery)",
@@ -1409,8 +1402,7 @@
             "Library Use",
             "Spot Hidden",
             "Sleight of Hand"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -1429,7 +1421,7 @@
         "credit_rating_min": 20,
         "credit_rating_max": 60,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Listen",
             "Navigate",
             "Psychology",
@@ -1446,7 +1438,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -1474,7 +1466,7 @@
         "credit_rating_min": 3,
         "credit_rating_max": 10,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Climb",
             "Jump",
             "Sleight of Hand",
@@ -1502,7 +1494,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -1531,13 +1523,13 @@
         "credit_rating_min": 30,
         "credit_rating_max": 60,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Occult",
             "Psychology",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 2,
           "skill_interpersonal": [
             "Charm",
@@ -1576,7 +1568,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "skill_profession": [
+          "basics": [
             "Drive Auto",
             "History",
             "Occult",
@@ -1584,7 +1576,7 @@
             "Stealth",
             "Hypnosis"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -1610,14 +1602,14 @@
         "credit_rating_min": 20,
         "credit_rating_max": 60,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Mechanical Repair",
             "Art & Craft(Photography)",
             "Psychology",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Art & Craft(Acting)",
             "Art & Craft(Animal Handling)",
@@ -1655,7 +1647,7 @@
         "credit_rating_min": 50,
         "credit_rating_max": 99,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Language(Other)",
             "Ride"
           ],
@@ -1673,7 +1665,7 @@
             "Art & Craft(Short Hand)"
           ],
           "limit_professionalt": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -1712,7 +1704,7 @@
         "credit_rating_max": 30,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Science(Biology)",
             "Diving",
             "First Aid",
@@ -1720,8 +1712,7 @@
             "Spot Hidden",
             "Swim",
             "Pilot(Boat)"
-          ],
-          "limit_profession": 0
+          ]    
         },
         "points": {
           "mandatory_attributes": {
@@ -1741,7 +1732,7 @@
         "credit_rating_min": 30,
         "credit_rating_max": 80,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Science(Biology)",
             "First Aid",
             "Medicine",
@@ -1749,7 +1740,7 @@
             "Science(Pharmacy)",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 2
         },
         "points": {
@@ -1769,14 +1760,14 @@
         "credit_rating_min": 0,
         "credit_rating_max": 5,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Climb",
             "Jump",
             "Listen",
             "Navigate",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -1808,14 +1799,14 @@
         "credit_rating_max": 40,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Drive Auto",
             "Listen",
             "Mechanical Repair",
             "Navigate",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -1843,7 +1834,7 @@
         "credit_rating_max": 20,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Drive Auto",
             "Listen",
@@ -1851,7 +1842,7 @@
             "Navigate",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Fast talk",
@@ -1880,15 +1871,14 @@
         "credit_rating_max": 30,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Drive Auto",
             "Electrical Repair",
             "Mechanical Repair",
             "Navigate",
             "Spot Hidden"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -1909,14 +1899,14 @@
         "credit_rating_max": 30,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "History",
             "Language(Own)",
             "Psychology",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -1942,7 +1932,7 @@
         "credit_rating_min": 50,
         "credit_rating_max": 90,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Charm",
             "History",
             "Intimidate",
@@ -1951,8 +1941,7 @@
             "Listen",
             "Persuade",
             "Psychology"
-          ],
-          "limit_profession": 0
+          ]     
         },
         "points": {
           "mandatory_attributes": {
@@ -1973,7 +1962,7 @@
         "credit_rating_max": 60,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Electrical Repair",
             "Library Use",
             "Mechanical Repair",
@@ -1981,8 +1970,7 @@
             "Science(Physics)",
             "Art & Craft(Technical Drawing)",
             "Science(Engineering)"
-          ],
-          "limit_profession": 0
+          ] 
         },
         "points": {
           "mandatory_attributes": {
@@ -2001,7 +1989,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 70,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Disguise",
             "Listen",
             "Psychology"
@@ -2020,7 +2008,7 @@
             "Art & Craft(Short Hand)"
           ],
           "limit_professionalt": 1,
-          "limit_profession": 0,
+          
           "limit_free": 2,
           "skill_interpersonal": [
             "Charm",
@@ -2048,7 +2036,7 @@
         "credit_rating_min": 55,
         "credit_rating_max": 80,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "History",
             "Jump",
             "Language(Other)",
@@ -2056,7 +2044,7 @@
             "Navigate",
             "Survival"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Climb",
             "Swim"
@@ -2095,7 +2083,7 @@
         "credit_rating_max": 30,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Drive Auto",
             "Art & Craft(Farming)",
             "Mechanical Repair",
@@ -2103,7 +2091,7 @@
             "Operate Heavy Machinery",
             "Track"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -2133,7 +2121,7 @@
         "credit_rating_max": 40,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Fighting(Brawl)",
             "Drive Auto",
             "Law",
@@ -2150,8 +2138,7 @@
             "Firearms(Rifle/Shotgun)",
             "Firearms(Submachine Gun)"
           ],
-          "limit_combat": 1,
-          "limit_profession": 0
+          "limit_combat": 1          
         },
         "points": {
           "mandatory_attributes": {
@@ -2170,7 +2157,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Climb",
             "Dodge",
             "Drive Auto",
@@ -2179,8 +2166,7 @@
             "Mechanical Repair",
             "Operate Heavy Machinery",
             "Throw"
-          ],
-          "limit_profession": 0
+          ]          
         },
         "points": {
           "mandatory_attributes": {
@@ -2203,13 +2189,13 @@
         "credit_rating_max": 30,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Dodge",
             "Psychology",
             "Sleight of Hand",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -2250,14 +2236,14 @@
         "credit_rating_max": 40,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "History",
             "Language(Other)",
             "Language(Own)",
             "Listen",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -2283,7 +2269,7 @@
         "credit_rating_min": 40,
         "credit_rating_max": 60,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Science(Biology)",
             "Science(Forensics)",
             "Language(Other)",
@@ -2292,8 +2278,7 @@
             "Persuade",
             "Science(Pharmacy)",
             "Spot Hidden"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -2312,7 +2297,7 @@
         "credit_rating_min": 8,
         "credit_rating_max": 50,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Art & Craft(Acting)",
             "Listen",
@@ -2320,7 +2305,7 @@
             "Sleight of Hand",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -2349,7 +2334,7 @@
         "credit_rating_min": 60,
         "credit_rating_max": 95,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Law",
             "Listen",
             "Psychology",
@@ -2376,7 +2361,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -2403,7 +2388,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 20,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Drive Auto",
             "Psychology"
           ],
@@ -2428,7 +2413,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_profession": 0,
+          
           "limit_free": 2,
           "skill_interpersonal": [
             "Charm",
@@ -2463,12 +2448,12 @@
             "Firearms(Handgun)"
           ],
           "limit_combat": 1,
-          "skill_profession": [
+          "basics": [
             "Drive Auto",
             "Listen",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Art & Craft(Acting)",
             "Art & Craft(Animal Handling)",
@@ -2509,7 +2494,7 @@
         "credit_rating_min": 40,
         "credit_rating_max": 90,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "History",
             "Language(Other)",
             "Navigate",
@@ -2530,7 +2515,7 @@
             "Art & Craft(Short Hand)"
           ],
           "limit_professionalt": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -2558,14 +2543,14 @@
         "credit_rating_max": 5,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Climb",
             "Jump",
             "Listen",
             "Navigate",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_misc": [
             "Locksmith",
             "Sleight of Hand"
@@ -2607,7 +2592,7 @@
         "credit_rating_max": 50,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Dodge",
             "Psychology",
             "Sleight of Hand",
@@ -2627,7 +2612,7 @@
             "Art & Craft(Short Hand)"
           ],
           "limit_professionalt": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -2653,7 +2638,7 @@
         "credit_rating_min": 6,
         "credit_rating_max": 15,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Fighting(Brawl)",
             "Electrical Repair",
             "First Aid",
@@ -2662,7 +2647,7 @@
             "Psychology",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -2689,14 +2674,14 @@
         "credit_rating_min": 9,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "History",
             "Language(Own)",
             "Library Use",
             "Psychology",
             "Art & Craft(Photography)"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -2723,7 +2708,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Art & Craft(Acting)",
             "History",
             "Language(Own)",
@@ -2732,7 +2717,7 @@
             "Spot Hidden",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -2758,7 +2743,7 @@
         "credit_rating_min": 50,
         "credit_rating_max": 80,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "History",
             "Intimidate",
             "Law",
@@ -2767,8 +2752,7 @@
             "Language(Own)",
             "Persuade",
             "Psychology"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -2803,13 +2787,13 @@
           ],
           "limit_misc": 2,
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Science(Chemistry)",
             "Electrical Repair",
             "Language(Other)",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Library Use",
             "Computer Use"
@@ -2834,7 +2818,7 @@
         "credit_rating_max": 30,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Drive Auto",
             "Electrical Repair",
             "First Aid",
@@ -2852,8 +2836,7 @@
             "Fighting(Sword)",
             "Fighting(Whip)"
           ],
-          "limit_professionalt": 1,
-          "limit_profession": 0
+          "limit_professionalt": 1 
         },
         "points": {
           "mandatory_attributes": {
@@ -2875,7 +2858,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Fighting(Chainsaw)",
             "Dodge",
             "Climb",
@@ -2884,7 +2867,7 @@
             "Mechanical Repair",
             "Throw"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Natural World",
             "Science(Biology)",
@@ -2913,7 +2896,7 @@
         "credit_rating_max": 30,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Climb",
             "Science(Geology)",
             "Jump",
@@ -2921,8 +2904,7 @@
             "Operate Heavy Machinery",
             "Spot Hidden",
             "Stealth"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -2944,13 +2926,12 @@
         "credit_rating_min": 30,
         "credit_rating_max": 80,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Law",
             "Library Use",
             "Psychology"
           ],
-          "limit_profession": 0,
           "limit_free": 2,
           "skill_interpersonal": [
             "Charm",
@@ -2977,13 +2958,13 @@
         "credit_rating_min": 9,
         "credit_rating_max": 35,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Language(Other)",
             "Language(Own)",
             "Library Use"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 4
         },
         "points": {
@@ -3003,14 +2984,14 @@
         "credit_rating_min": 9,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Climb",
             "Drive Auto",
             "Electrical Repair",
             "Mechanical Repair",
             "Operate Heavy Machinery"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Art & Craft(Acting)",
             "Art & Craft(Animal Handling)",
@@ -3045,7 +3026,7 @@
         "credit_rating_max": 70,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "First Aid",
             "Navigate",
@@ -3061,7 +3042,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3090,7 +3071,7 @@
         "credit_rating_min": 0,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "First Aid",
             "Mechanical Repair",
             "Medicine",
@@ -3110,7 +3091,7 @@
             "Art & Craft(Short Hand)"
           ],
           "limit_professionalt": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3138,7 +3119,7 @@
         "credit_rating_min": 30,
         "credit_rating_max": 60,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Climb",
             "First Aid",
             "Jump",
@@ -3147,8 +3128,7 @@
             "Navigate",
             "Survival",
             "Track"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -3170,7 +3150,7 @@
         "credit_rating_min": 10,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Appraise",
             "Archaeology",
@@ -3179,8 +3159,7 @@
             "Library Use",
             "Occult",
             "Spot Hidden"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -3199,12 +3178,12 @@
         "credit_rating_min": 9,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Art & Craft(Instrument)",
             "Listen",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3234,7 +3213,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Science(Biology)",
             "Science(Chemistry)",
             "First Aid",
@@ -3243,7 +3222,6 @@
             "Psychology",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3270,7 +3248,7 @@
         "credit_rating_max": 65,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Anthropology",
             "Science(Astronomy)",
             "History",
@@ -3278,7 +3256,7 @@
             "Library Use",
             "Occult"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3304,7 +3282,7 @@
         "credit_rating_min": 5,
         "credit_rating_max": 20,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "First Aid",
             "Listen",
             "Natural World",
@@ -3322,8 +3300,7 @@
             "Firearms(Rifle/Shotgun)",
             "Firearms(Submachine Gun)"
           ],
-          "limit_combat": 1,
-          "limit_profession": 0
+          "limit_combat": 1
         },
         "points": {
           "mandatory_attributes": {
@@ -3346,7 +3323,7 @@
         "credit_rating_max": 30,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Anthropology",
             "History",
             "Language(Other)",
@@ -3354,8 +3331,7 @@
             "Occult",
             "Art & Craft(Photography)",
             "Psychology"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -3374,7 +3350,7 @@
         "credit_rating_min": 35,
         "credit_rating_max": 75,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Science(Chemistry)",
             "First Aid",
@@ -3383,7 +3359,7 @@
             "Science(Pharmacy)",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3409,14 +3385,14 @@
         "credit_rating_min": 9,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Science(Chemistry)",
             "Art & Craft(Photography)",
             "Psychology",
             "Spot Hidden",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3443,14 +3419,14 @@
         "credit_rating_min": 10,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Science(Chemistry)",
             "Climb",
             "Language(Other)",
             "Art & Craft(Photography)",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3478,7 +3454,7 @@
         "credit_rating_max": 60,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Electrical Repair",
             "Listen",
@@ -3486,8 +3462,7 @@
             "Navigate",
             "Spot Hidden",
             "Pilot(Aircraft)"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -3506,7 +3481,7 @@
         "credit_rating_min": 20,
         "credit_rating_max": 70,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Science(Astronomy)",
             "Electrical Repair",
             "Mechanical Repair",
@@ -3514,7 +3489,6 @@
             "Operate Heavy Machinery",
             "Pilot(Aircraft)"
           ],
-          "limit_profession": 0,
           "limit_free": 2
         },
         "points": {
@@ -3536,7 +3510,7 @@
         "credit_rating_max": 50,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Law",
             "Listen",
             "Psychology",
@@ -3552,7 +3526,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3586,7 +3560,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Fighting(Brawl)",
             "First Aid",
             "Law",
@@ -3608,7 +3582,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3638,7 +3612,7 @@
         "credit_rating_max": 30,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Disguise",
             "Law",
             "Library Use",
@@ -3646,7 +3620,7 @@
             "Psychology",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3675,13 +3649,13 @@
         "credit_rating_min": 20,
         "credit_rating_max": 70,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Language(Other)",
             "Language(Own)",
             "Library Use",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 4
         },
         "points": {
@@ -3702,7 +3676,7 @@
         "credit_rating_max": 10,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Climb",
             "First Aid",
             "Science(Geology)",
@@ -3710,8 +3684,7 @@
             "Mechanical Repair",
             "Navigate",
             "Spot Hidden"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -3734,13 +3707,13 @@
         "credit_rating_max": 50,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Dodge",
             "Psychology",
             "Sleight of Hand",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Art & Craft(Acting)",
             "Art & Craft(Animal Handling)",
@@ -3781,7 +3754,7 @@
         "credit_rating_min": 30,
         "credit_rating_max": 80,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Science(Biology)",
             "Science(Chemistry)",
             "Language(Other)",
@@ -3790,8 +3763,7 @@
             "Persuade",
             "Psychoanalysis",
             "Psychology"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -3810,7 +3782,7 @@
         "credit_rating_min": 10,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Library Use",
             "Listen",
@@ -3818,7 +3790,7 @@
             "Psychoanalysis",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 2
         },
         "points": {
@@ -3838,7 +3810,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "History",
             "Language(Other)",
             "Library Use",
@@ -3851,7 +3823,7 @@
             "Persuade"
           ],
           "limit_interpersonal": 1,
-          "limit_profession": 0,
+          
           "limit_free": 3
         },
         "points": {
@@ -3871,7 +3843,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "First Aid",
             "Mechanical Repair",
             "Natural World",
@@ -3880,7 +3852,7 @@
             "Swim",
             "Pilot(Boat)"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3909,7 +3881,7 @@
         "credit_rating_min": 20,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "First Aid",
             "Mechanical Repair",
             "Natural World",
@@ -3918,7 +3890,7 @@
             "Swim",
             "Pilot(Boat)"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -3948,13 +3920,13 @@
         "credit_rating_max": 40,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Drive Auto",
             "Listen",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Stealth",
             "Sleight of Hand"
@@ -4001,12 +3973,12 @@
             "Science(Engineering)"
           ],
           "limit_professionalt": 3,
-          "skill_profession": [
+          "basics": [
             "Language(Other)",
             "Language(Own)",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -4038,12 +4010,12 @@
         "credit_rating_max": 30,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Language(Own)",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Art & Craft(Short Hand)",
             "Art & Craft(Typing)"
@@ -4082,7 +4054,7 @@
         "credit_rating_min": 20,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Electrical Repair",
             "Listen",
@@ -4090,7 +4062,7 @@
             "Psychology",
             "Spot Hidden"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -4119,7 +4091,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Dodge",
             "Stealth",
             "Survival"
@@ -4151,7 +4123,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_profession": 0,
+          
           "skill_misc": [
             "Climb",
             "Swim"
@@ -4178,7 +4150,7 @@
         "credit_rating_min": 20,
         "credit_rating_max": 60,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Language(Other)",
             "Listen",
             "Psychology",
@@ -4200,7 +4172,7 @@
             "Firearms(Submachine Gun)"
           ],
           "limit_combat": 1,
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -4229,11 +4201,11 @@
         "credit_rating_min": 5,
         "credit_rating_max": 10,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Library Use",
             "Listen"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Science(Astronomy)",
             "Science(Biology)",
@@ -4273,7 +4245,7 @@
         "credit_rating_min": 10,
         "credit_rating_max": 50,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Climb",
             "Dodge",
             "First Aid",
@@ -4296,7 +4268,7 @@
             "Fighting(Whip)"
           ],
           "limit_professionalt": 1,
-          "limit_profession": 0,
+          
           "skill_misc": [
             "Diving",
             "Drive Auto",
@@ -4338,7 +4310,7 @@
             "Throw"
           ],
           "limit_combat": 1,
-          "skill_profession": [
+          "basics": [
             "Climb",
             "Listen",
             "Natural World",
@@ -4346,8 +4318,7 @@
             "Spot Hidden",
             "Survival",
             "Swim"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
@@ -4369,7 +4340,7 @@
         "credit_rating_min": 20,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Science(Biology)",
             "Science(Chemistry)",
@@ -4378,7 +4349,7 @@
             "Occult",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -4404,7 +4375,7 @@
         "credit_rating_min": 5,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Fighting(Brawl)",
             "Law",
@@ -4412,7 +4383,7 @@
             "Operate Heavy Machinery",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -4439,13 +4410,13 @@
         "credit_rating_max": 20,
         "skills": {
           "limit_free": 1,
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Dodge",
             "Listen",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Art & Craft(Acting)",
             "Art & Craft(Animal Handling)",
@@ -4488,13 +4459,13 @@
         "credit_rating_min": 9,
         "credit_rating_max": 20,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Language(Own)",
             "Law",
             "Listen"
           ],
-          "limit_profession": 0,
+          
           "skill_professionalt": [
             "Library Use",
             "Computer Use"
@@ -4526,13 +4497,13 @@
         "credit_rating_min": 20,
         "credit_rating_max": 80,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Language(Other)",
             "Law",
             "Psychology"
           ],
-          "limit_profession": 0,
+          
           "limit_free": 2,
           "skill_interpersonal": [
             "Charm",
@@ -4559,12 +4530,12 @@
         "credit_rating_min": 0,
         "credit_rating_max": 30,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "History",
             "Psychology",
             "Stealth"
           ],
-          "limit_profession": 0,
+          
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
@@ -4594,7 +4565,7 @@
         "credit_rating_min": 9,
         "credit_rating_max": 40,
         "skills": {
-          "skill_profession": [
+          "basics": [
             "Accounting",
             "Art & Craft(Animal Handling)",
             "Dodge",
@@ -4603,8 +4574,7 @@
             "Natural World",
             "Science(Pharmacy)",
             "Science(Zoology)"
-          ],
-          "limit_profession": 0
+          ]
         },
         "points": {
           "mandatory_attributes": {
