@@ -1306,6 +1306,58 @@
     {
       "model": "creator.Occupation",
       "fields": {
+        "title": "Gun Moll [Classic]",
+        "description": "A female professional criminal. While many are fiercely independent, some are at the beck and call of mobster boyfriends--however, in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry.",
+        "suggested_contacts": "Gangsters, law enforcement, local businesses.",
+        "credit_rating_min": 10,
+        "credit_rating_max": 80,
+        "skills": {
+          "skill_combat": [
+            "Fighting(Brawl)",
+            "Firearms(Handgun)"
+          ],
+          "limit_combat": 1,
+          "skill_profession": [
+            "Drive Auto",
+            "Listen",
+            "Stealth"
+          ],
+          "limit_profession": 0,
+          "skill_professionalt": [
+            "Art & Craft(Acting)",
+            "Art & Craft(Animal Handling)",
+            "Art & Craft(Farming)",
+            "Art & Craft(Fine Art)",
+            "Art & Craft(Forgery)",
+            "Art & Craft(Instrument)",
+            "Art & Craft(Literature)",
+            "Art & Craft(Photography)",
+            "Art & Craft(Technical Drawing)",
+            "Art & Craft(Typing)",
+            "Art & Craft(Short Hand)"
+          ],
+          "limit_professionalt": 1,
+          "skill_interpersonal": [
+            "Charm",
+            "Intimidate",
+            "Persuade",
+            "Fast talk"
+          ],
+          "limit_interpersonal": 2,
+          "limit_free": 1
+        },
+        "points": {
+          "mandatory_attributes": {
+            "EDU": 2,
+            "APP": 2
+          },
+          "optional_attributes": {}
+        }
+      }
+    },
+    {
+      "model": "creator.Occupation",
+      "fields": {
         "title": "Fence",
         "description": "Criminals come in all shapes, sizes and shades of grey. Some are merely opportunistic \\u2018jacks of all trades\\u2019, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises; this latter group could include bank robbers, cat burglars, forgers and confdence tricksters. The criminal either works for someone, usually an organized \\u2018mob\\u2019 or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men and armed robbers. Whether bootleggers, cornerboys or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confdence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, \\ufb02eecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are Criminals come in all shapes, sizes and shades of grey. Some are merely opportunistic \\u2018jacks of all trades\\u2019, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises; this latter group could include bank robbers, cat burglars, forgers and confdence tricksters.The criminal either works for someone,usually an organized \\u2018mob\\u2019 or crime family, orworks solo, perhaps occasionally teamingup with others when the reward is worththe effort and risk. Freelance thugsmight work as muggers, stickup menand armed robbers. Whether bootleggers, cornerboys or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confdence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, \\ufb02eecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are",
         "suggested_contacts": "Organized crime, trade contacts, black market and legitimate buyers.",
@@ -1365,6 +1417,51 @@
             "EDU": 4
           },
           "optional_attributes": {}
+        }
+      }
+    },
+    {
+      "model": "creator.Occupation",
+      "fields": {
+        "title": "Smuggler",
+        "description": "",
+        "suggested_contacts": "Organized crime, Coast Guard, U.S. Customs officials",
+        "credit_rating_min": 20,
+        "credit_rating_max": 60,
+        "skills": {
+          "skill_profession": [
+            "Listen",
+            "Navigate",
+            "Psychology",
+            "Sleight of Hand",
+            "Spot Hidden"
+          ],
+          "skill_combat": [
+            "Firearms(Bow)",
+            "Firearms(Flamethrower)",
+            "Firearms(Handgun)",
+            "Firearms(Heavy Weapons)",
+            "Firearms(Machine Gun)",
+            "Firearms(Rifle/Shotgun)",
+            "Firearms(Submachine Gun)"
+          ],
+          "limit_combat": 1,
+          "limit_profession": 0,
+          "skill_interpersonal": [
+            "Charm",
+            "Intimidate",
+            "Persuade"
+          ],
+          "limit_interpersonal": 1
+        },
+        "points": {
+          "mandatory_attributes": {
+            "EDU": 2
+          },
+          "optional_attributes": {
+            "APP": 2,
+            "DEX": 2
+          }
         }
       }
     },
@@ -1823,6 +1920,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -1848,6 +1946,7 @@
             "Charm",
             "History",
             "Intimidate",
+            "Fast talk",
             "Language(Own)",
             "Listen",
             "Persuade",
@@ -1926,6 +2025,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -1957,6 +2057,11 @@
             "Survival"
           ],
           "limit_profession": 0,
+          "skill_professionalt": [
+            "Climb",
+            "Swim"
+          ],
+          "limit_professionalt": 1,
           "skill_combat": [
             "Firearms(Bow)",
             "Firearms(Flamethrower)",
@@ -2002,6 +2107,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -2155,6 +2261,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -2217,6 +2324,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -2272,6 +2380,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -2324,6 +2433,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -2424,6 +2534,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -2455,6 +2566,11 @@
             "Stealth"
           ],
           "limit_profession": 0,
+          "skill_misc": [
+            "Locksmith",
+            "Sleight of Hand"
+          ],
+          "limit_misc": 1,
           "skill_professionalt": [
             "Art & Craft(Acting)",
             "Art & Craft(Animal Handling)",
@@ -2550,6 +2666,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -2576,12 +2693,14 @@
             "History",
             "Language(Own)",
             "Library Use",
-            "Psychology"
+            "Psychology",
+            "Art & Craft(Photography)"
           ],
           "limit_profession": 0,
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1,
@@ -2617,6 +2736,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -2639,21 +2759,16 @@
         "credit_rating_max": 80,
         "skills": {
           "skill_profession": [
-            "Fighting(Brawl)",
-            "Electrical Repair",
-            "First Aid",
-            "Listen",
-            "Mechanical Repair",
-            "Psychology",
-            "Stealth"
-          ],
-          "limit_profession": 0,
-          "skill_interpersonal": [
-            "Charm",
+            "History",
             "Intimidate",
-            "Persuade"
+            "Law",
+            "Library Use",
+            "Listen",
+            "Language(Own)",
+            "Persuade",
+            "Psychology"
           ],
-          "limit_interpersonal": 1
+          "limit_profession": 0
         },
         "points": {
           "mandatory_attributes": {
@@ -2695,18 +2810,59 @@
             "Spot Hidden"
           ],
           "limit_profession": 0,
-          "skill_interpersonal": [
-            "Charm",
-            "Intimidate",
-            "Persuade"
+          "skill_professionalt": [
+            "Library Use",
+            "Computer Use"
           ],
-          "limit_interpersonal": 1
+          "limit_professionalt": 1
         },
         "points": {
           "mandatory_attributes": {
             "EDU": 4
           },
           "optional_attributes": {}
+        }
+      }
+    },
+    {
+      "model": "creator.Occupation",
+      "fields": {
+        "title": "Laborer Unskilled",
+        "description": "",
+        "suggested_contacts": "Other workers and supervisors within their industry",
+        "credit_rating_min": 9,
+        "credit_rating_max": 30,
+        "skills": {
+          "limit_free": 1,
+          "skill_profession": [
+            "Drive Auto",
+            "Electrical Repair",
+            "First Aid",
+            "Mechanical Repair",
+            "Operate Heavy Machinery",
+            "Throw"
+          ],
+          "skill_professionalt": [
+            "Fighting(Axe)",
+            "Fighting(Brawl)",
+            "Fighting(Chainsaw)",
+            "Fighting(Flail)",
+            "Fighting(Garrote)",
+            "Fighting(Spear)",
+            "Fighting(Sword)",
+            "Fighting(Whip)"
+          ],
+          "limit_professionalt": 1,
+          "limit_profession": 0
+        },
+        "points": {
+          "mandatory_attributes": {
+            "EDU": 2
+          },
+          "optional_attributes": {
+            "STR": 2,
+            "DEX": 2
+          }
         }
       }
     },
@@ -2722,20 +2878,28 @@
           "skill_profession": [
             "Fighting(Chainsaw)",
             "Dodge",
+            "Climb",
             "First Aid",
             "Jump",
             "Mechanical Repair",
             "Throw"
           ],
-          "limit_profession": 0
+          "limit_profession": 0,
+          "skill_professionalt": [
+            "Natural World",
+            "Science(Biology)",
+            "Science(Botany)"
+          ],
+          "limit_professionalt": 1
         },
         "points": {
           "mandatory_attributes": {
-            "EDU": 2,
+            "EDU": 2
+          },
+          "optional_attributes": {
             "STR": 2,
             "DEX": 2
-          },
-          "optional_attributes": {}
+          }
         }
       }
     },
@@ -2751,6 +2915,7 @@
           "limit_free": 1,
           "skill_profession": [
             "Climb",
+            "Science(Geology)",
             "Jump",
             "Mechanical Repair",
             "Operate Heavy Machinery",
@@ -2761,11 +2926,12 @@
         },
         "points": {
           "mandatory_attributes": {
-            "EDU": 2,
+            "EDU": 2
+          },
+          "optional_attributes": {
             "STR": 2,
             "DEX": 2
-          },
-          "optional_attributes": {}
+          }
         }
       }
     },
@@ -2789,6 +2955,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -2898,6 +3065,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -2946,6 +3114,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1,
@@ -3004,6 +3173,7 @@
           "skill_profession": [
             "Accounting",
             "Appraise",
+            "Archaeology",
             "History",
             "Language(Other)",
             "Library Use",
@@ -3038,6 +3208,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1,
@@ -3076,6 +3247,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -3110,6 +3282,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -3154,11 +3327,12 @@
         },
         "points": {
           "mandatory_attributes": {
-            "EDU": 2,
+            "EDU": 2
+          },
+          "optional_attributes": {
             "STR": 2,
             "DEX": 2
-          },
-          "optional_attributes": {}
+          }
         }
       }
     },
@@ -3197,8 +3371,8 @@
         "title": "Pharmacist",
         "description": "Pharmacists have long been more closely regulated than physicians. They are licensed by individual states, most of them requiring a high school education and three years of pharmacy school. A pharmacist may be employed in a hospital or a drug store, or perhaps they own a dispensary.",
         "suggested_contacts": "Local community, local physicians, hospitals and patients. Access to all manner of chemicals and drugs.",
-        "credit_rating_min": 30,
-        "credit_rating_max": 60,
+        "credit_rating_min": 35,
+        "credit_rating_max": 75,
         "skills": {
           "skill_profession": [
             "Accounting",
@@ -3213,6 +3387,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -3245,6 +3420,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1,
@@ -3278,6 +3454,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1,
@@ -3302,6 +3479,7 @@
         "skills": {
           "limit_free": 1,
           "skill_profession": [
+            "Accounting",
             "Electrical Repair",
             "Listen",
             "Mechanical Repair",
@@ -3378,9 +3556,15 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
-          "limit_interpersonal": 1
+          "limit_interpersonal": 1,
+          "skill_professionalt": [
+            "Art & Craft(Acting)",
+            "Disguise"
+          ],
+          "limit_professionalt": 1
         },
         "points": {
           "mandatory_attributes": {
@@ -3409,6 +3593,11 @@
             "Psychology",
             "Spot Hidden"
           ],
+          "skill_professionalt": [
+            "Ride",
+            "Drive Auto"
+          ],
+          "limit_professionalt": 1,
           "skill_combat": [
             "Firearms(Bow)",
             "Firearms(Flamethrower)",
@@ -3423,6 +3612,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -3460,6 +3650,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -3536,6 +3727,54 @@
     {
       "model": "creator.Occupation",
       "fields": {
+        "title": "Prostitute",
+        "description": "Depending on circumstance, bredding, and background, a prostitute may be a high-rolling expensive call girl, male gigolo or streetwalker. Often driven by cricumstance, many dream of a way out. A few work completely independently; however, for most, they are lured and kept in the business by ruthless pimps whose only concern is cash.",
+        "suggested_contacts": "Stree scene, police, possibly organized crime, personal clientele",
+        "credit_rating_min": 5,
+        "credit_rating_max": 50,
+        "skills": {
+          "limit_free": 1,
+          "skill_profession": [
+            "Dodge",
+            "Psychology",
+            "Sleight of Hand",
+            "Stealth"
+          ],
+          "limit_profession": 0,
+          "skill_professionalt": [
+            "Art & Craft(Acting)",
+            "Art & Craft(Animal Handling)",
+            "Art & Craft(Farming)",
+            "Art & Craft(Fine Art)",
+            "Art & Craft(Forgery)",
+            "Art & Craft(Instrument)",
+            "Art & Craft(Literature)",
+            "Art & Craft(Photography)",
+            "Art & Craft(Technical Drawing)",
+            "Art & Craft(Typing)",
+            "Art & Craft(Short Hand)"
+          ],
+          "limit_professionalt": 1,
+          "skill_interpersonal": [
+            "Charm",
+            "Intimidate",
+            "Fast talk",
+            "Persuade"
+          ],
+          "limit_interpersonal": 2
+        },
+        "points": {
+          "mandatory_attributes": {
+            "EDU": 2,
+            "APP": 2
+          },
+          "optional_attributes": {}
+        }
+      }
+    },
+    {
+      "model": "creator.Occupation",
+      "fields": {
         "title": "Psychiatrist",
         "description": "In the modern era a psychiatrist is a physician specialized in the diagnosis and treatment of mental disorders. Psychiatrists are trained in psychopharmacological treatment and are authorized to prescribe psychiatric medication, as well as order electroencephalograms and computed brainimaging studies. At the turn of the twentieth century, psychoanalytic theories were still relatively new and aimed at attempting to explain phenomena that until recently have been considered to be biological in nature. As such, psychiatrists sought to establish their medical credentials, and differing perspectives of diagnosing and treating mental disorders began to be introduced. Until the 1930s, any physician could request being listed in the Directory of the American Medical Association as a specialist in psychiatry.",
         "suggested_contacts": "Others in the feld of mental illness, physicians and possibly legal professions.",
@@ -3556,7 +3795,7 @@
         },
         "points": {
           "mandatory_attributes": {
-            "EDU": 2
+            "EDU": 4
           },
           "optional_attributes": {}
         }
@@ -3605,6 +3844,13 @@
             "Library Use",
             "Spot Hidden"
           ],
+          "skill_interpersonal": [
+            "Charm",
+            "Intimidate",
+            "Fast talk",
+            "Persuade"
+          ],
+          "limit_interpersonal": 1,
           "limit_profession": 0,
           "limit_free": 3
         },
@@ -3638,6 +3884,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -3675,6 +3922,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -3707,9 +3955,15 @@
             "Psychology"
           ],
           "limit_profession": 0,
+          "skill_professionalt": [
+            "Stealth",
+            "Sleight of Hand"
+          ],
+          "limit_professionalt": 1,
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -3732,14 +3986,31 @@
         "credit_rating_min": 9,
         "credit_rating_max": 50,
         "skills": {
+          "skill_professionalt": [
+            "Science(Astronomy)",
+            "Science(Biology)",
+            "Science(Botany)",
+            "Science(Cryptography)",
+            "Science(Forensics)",
+            "Science(Geology)",
+            "Science(Mathematics)",
+            "Science(Meterology)",
+            "Science(Pharmacy)",
+            "Science(Physics)",
+            "Science(Zoology)",
+            "Science(Engineering)"
+          ],
+          "limit_professionalt": 3,
           "skill_profession": [
             "Language(Other)",
-            "Language(Own)"
+            "Language(Own)",
+            "Spot Hidden"
           ],
           "limit_profession": 0,
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1,
@@ -3773,9 +4044,15 @@
             "Psychology"
           ],
           "limit_profession": 0,
+          "skill_professionalt": [
+            "Art & Craft(Short Hand)",
+            "Art & Craft(Typing)"
+          ],
+          "limit_professionalt": 1,
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2,
@@ -3817,6 +4094,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -3846,6 +4124,12 @@
             "Stealth",
             "Survival"
           ],
+          "skill_optional": [
+            "First Aid",
+            "Mechanical Repair",
+            "Language(Other)"
+          ],
+          "limit_optional": 2,
           "skill_professionalt": [
             "Fighting(Axe)",
             "Fighting(Brawl)",
@@ -3901,6 +4185,11 @@
             "Sleight of Hand",
             "Stealth"
           ],
+          "skill_professionalt": [
+            "Art & Craft(Acting)",
+            "Disguise"
+          ],
+          "limit_professionalt": 1,
           "skill_combat": [
             "Firearms(Bow)",
             "Firearms(Flamethrower)",
@@ -3915,6 +4204,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -3944,6 +4234,26 @@
             "Listen"
           ],
           "limit_profession": 0,
+          "skill_professionalt": [
+            "Science(Astronomy)",
+            "Science(Biology)",
+            "Science(Botany)",
+            "Science(Cryptography)",
+            "Science(Forensics)",
+            "Science(Geology)",
+            "Science(Mathematics)",
+            "Science(Meterology)",
+            "Science(Pharmacy)",
+            "Science(Physics)",
+            "Science(Zoology)",
+            "Science(Engineering)"
+          ],
+          "limit_professionalt": 3,
+          "skill_misc": [
+            "Language(Other)",
+            "Language(Own)"
+          ],
+          "limit_misc": 1,
           "limit_free": 2
         },
         "points": {
@@ -3970,6 +4280,11 @@
             "Jump",
             "Swim"
           ],
+          "skill_optional": [
+            "Electrical Repair",
+            "Mechanical Repair"
+          ],
+          "limit_optional": 1,
           "skill_professionalt": [
             "Fighting(Axe)",
             "Fighting(Brawl)",
@@ -3993,11 +4308,12 @@
         },
         "points": {
           "mandatory_attributes": {
-            "EDU": 2,
+            "EDU": 2
+          },
+          "optional_attributes": {
             "STR": 2,
             "DEX": 2
-          },
-          "optional_attributes": {}
+          }
         }
       }
     },
@@ -4035,11 +4351,12 @@
         },
         "points": {
           "mandatory_attributes": {
-            "EDU": 2,
+            "EDU": 2
+          },
+          "optional_attributes": {
             "STR": 2,
             "DEX": 2
-          },
-          "optional_attributes": {}
+          }
         }
       }
     },
@@ -4065,6 +4382,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1
@@ -4098,6 +4416,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -4144,6 +4463,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -4175,9 +4495,15 @@
             "Listen"
           ],
           "limit_profession": 0,
+          "skill_professionalt": [
+            "Library Use",
+            "Computer Use"
+          ],
+          "limit_professionalt": 1,
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 1,
@@ -4211,6 +4537,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2
@@ -4241,6 +4568,7 @@
           "skill_interpersonal": [
             "Charm",
             "Intimidate",
+            "Fast talk",
             "Persuade"
           ],
           "limit_interpersonal": 2,
@@ -4263,7 +4591,7 @@
         "title": "Zookeeper",
         "description": "Zookeepers are responsible for the feeding and care of the animals in their charge; groundskeepers and attendants take care of other chores. Often the zookeeper is specialized in a particular breed of animal. The Zookeeper is able to use the Medicine skill on animals.",
         "suggested_contacts": "Scientists, environmentalists.",
-        "credit_rating_min": 20,
+        "credit_rating_min": 9,
         "credit_rating_max": 40,
         "skills": {
           "skill_profession": [
@@ -4282,189 +4610,6 @@
           "mandatory_attributes": {
             "EDU": 4
           },
-          "optional_attributes": {}
-        }
-      }
-    },
-    {
-      "model": "creator.Occupation",
-      "fields": {
-        "title": "Gun Moll [Classic]",
-        "description": "A female professional criminal. While many are fiercely independent, some are at the beck and call of mobster boyfriends--however, in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry.",
-        "suggested_contacts": "Gangsters, law enforcement, local businesses.",
-        "credit_rating_min": 10,
-        "credit_rating_max": 80,
-        "skills": {
-          "skill_combat": [
-            "Fighting(Brawl)",
-            "Firearms(Handgun)"
-          ],
-          "limit_combat": 1,
-          "skill_profession": [
-            "Drive Auto",
-            "Listen",
-            "Stealth"
-          ],
-          "limit_profession": 0,
-          "skill_professionalt": [
-            "Art & Craft(Acting)",
-            "Art & Craft(Animal Handling)",
-            "Art & Craft(Farming)",
-            "Art & Craft(Fine Art)",
-            "Art & Craft(Forgery)",
-            "Art & Craft(Instrument)",
-            "Art & Craft(Literature)",
-            "Art & Craft(Photography)",
-            "Art & Craft(Technical Drawing)",
-            "Art & Craft(Typing)",
-            "Art & Craft(Short Hand)"
-          ],
-          "limit_professionalt": 1,
-          "skill_interpersonal": [
-            "Charm",
-            "Intimidate",
-            "Persuade"
-          ],
-          "limit_interpersonal": 2,
-          "limit_free": 1
-        },
-        "points": {
-          "mandatory_attributes": {
-            "EDU": 2,
-            "APP": 2
-          },
-          "optional_attributes": {}
-        }
-      }
-    },
-    {
-      "model": "creator.Occupation",
-      "fields": {
-        "title": "Smuggler",
-        "description": "",
-        "suggested_contacts": "Organized crime, Coast Guard, U.S. Customs officials",
-        "credit_rating_min": 20,
-        "credit_rating_max": 60,
-        "skills": {
-          "skill_profession": [
-            "Listen",
-            "Navigate",
-            "Psychology",
-            "Sleight of Hand",
-            "Spot Hidden"
-          ],
-          "skill_combat": [
-            "Firearms(Bow)",
-            "Firearms(Flamethrower)",
-            "Firearms(Handgun)",
-            "Firearms(Heavy Weapons)",
-            "Firearms(Machine Gun)",
-            "Firearms(Rifle/Shotgun)",
-            "Firearms(Submachine Gun)"
-          ],
-          "limit_combat": 1,
-          "limit_profession": 0,
-          "skill_interpersonal": [
-            "Charm",
-            "Intimidate",
-            "Persuade"
-          ],
-          "limit_interpersonal": 1
-        },
-        "points": {
-          "mandatory_attributes": {
-            "EDU": 2
-          },
-          "optional_attributes": {
-            "APP": 2,
-            "DEX": 2
-          }
-        }
-      }
-    },
-    {
-      "model": "creator.Occupation",
-      "fields": {
-        "title": "Laborer Unskilled",
-        "description": "",
-        "suggested_contacts": "Other workers and supervisors within their industry",
-        "credit_rating_min": 9,
-        "credit_rating_max": 30,
-        "skills": {
-          "limit_free": 1,
-          "skill_profession": [
-            "Drive Auto",
-            "Electrical Repair",
-            "First Aid",
-            "Mechanical Repair",
-            "Operate Heavy Machinery",
-            "Throw"
-          ],
-          "skill_professionalt": [
-            "Fighting(Axe)",
-            "Fighting(Brawl)",
-            "Fighting(Chainsaw)",
-            "Fighting(Flail)",
-            "Fighting(Garrote)",
-            "Fighting(Spear)",
-            "Fighting(Sword)",
-            "Fighting(Whip)"
-          ],
-          "limit_professionalt": 1,
-          "limit_profession": 0
-        },
-        "points": {
-          "mandatory_attributes": {
-            "EDU": 2,
-            "APP": 2
-          },
-          "optional_attributes": {
-            "STR": 2,
-            "DEX": 2
-          }
-        }
-      }
-    },
-    {
-      "model": "creator.Occupation",
-      "fields": {
-        "title": "Prostitute",
-        "description": "",
-        "suggested_contacts": "Other workers and supervisors within their industry",
-        "credit_rating_min": 9,
-        "credit_rating_max": 30,
-        "skills": {
-          "limit_free": 1,
-          "skill_profession": [
-            "Dodge",
-            "Psychology",
-            "Sleight of Hand",
-            "Stealth"
-          ],
-          "limit_profession": 0,
-          "skill_professionalt": [
-            "Art & Craft(Acting)",
-            "Art & Craft(Animal Handling)",
-            "Art & Craft(Farming)",
-            "Art & Craft(Fine Art)",
-            "Art & Craft(Forgery)",
-            "Art & Craft(Instrument)",
-            "Art & Craft(Literature)",
-            "Art & Craft(Photography)",
-            "Art & Craft(Technical Drawing)",
-            "Art & Craft(Typing)",
-            "Art & Craft(Short Hand)"
-          ],
-          "limit_professionalt": 1,
-          "skill_interpersonal": [
-            "Charm",
-            "Intimidate",
-            "Persuade"
-          ],
-          "limit_interpersonal": 2
-        },
-        "points": {
-          "mandatory_attributes": {},
           "optional_attributes": {}
         }
       }
