@@ -39,12 +39,19 @@ def get_occupation_skills(inv: Investigator):
         else:
             skills_key = f'skill_{stype}'
             skills_by_category = inv.occupation.skills.get(
-                skills_key, []
+                skills_key
             )
         for _ in range(limit):
-            occupation_skills.append(
-                choice(skills_by_category)
-            )
+            if skills_by_category is not None:
+                occupation_skills.append(
+                    choice(skills_by_category)
+                )
+            else:
+                msg = "Occupation: {} has no skills at category {}".format(
+                    inv.occupation.title,
+                    stype
+                )
+                raise Exception(msg)
                 
     return occupation_skills
 
