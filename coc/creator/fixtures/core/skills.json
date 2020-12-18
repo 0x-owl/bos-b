@@ -358,6 +358,38 @@
           "Credit Rating": {
             "value": 1,
             "description": "Item acquisition capabilities, it has a minimum and maximum value which is assigned based on the occupation."
+          },
+          "Art & Craft(Cook)": {
+            "value": 1,
+            "description": ""
+          },
+          "Art & Craft(Tailor)": {
+            "value": 1,
+            "description": ""
+          },
+          "Art & Craft(Barber)": {
+            "value": 1,
+            "description": ""
+          },
+          "Art & Craft(Singer)": {
+            "value": 1,
+            "description": ""
+          },
+          "Art & Craft(Comedian)": {
+            "value": 1,
+            "description": ""
+          },
+          "Art & Craft(Welding)": {
+            "value": 1,
+            "description": ""
+          },
+          "Art & Craft(Plumbing)": {
+            "value": 1,
+            "description": ""
+          },
+          "Art & Craft(Carpintery)": {
+            "value": 1,
+            "description": ""
           }
         },
         "year": "1920"
