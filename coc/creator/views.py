@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 from creator.helpers.random_investigator import random_inv
-from creator.models import Investigator, Skills, Portrait
+from creator.models import Investigator, Skills, Portrait, Inventory
 
 from json import dumps
 # Create your views here.
@@ -44,6 +44,7 @@ def get_investigator_data(request, inv):
             'luck': investigator.luck
         }
     }
+    # Retrieve skills
     skills = sorted(investigator.skills)
     skills_sanitized = []
     for skill in skills:
@@ -55,6 +56,14 @@ def get_investigator_data(request, inv):
         ))
     res['skills'] = skills_sanitized
 
+    # Retrieve "inventory"
+    weapons = Inventory.objects.filter(
+        investigator=investigator, item__item_type = 3)
+
+    items = Inventory.objects.filter(
+        investigator=investigator,
+        item__item_type__in=[1,2,4])
+    print(items)
     return render(request, 'character_sheet.html', {'investigator': res})
 
 
