@@ -23,6 +23,7 @@
             </div>
         </div>
         <div class="container">
+            <!-- Basic Info -->
             <div class="row">
                 <div class="column">
                     Name: {{investigator.name}}<br>
@@ -39,6 +40,7 @@
                 </div>
             </div>
             <hr>
+            <!-- Attributes -->
             <h4 style="text-align: center"> Attributes </h4>
             <div class="row">
                 <div class="column">
@@ -137,6 +139,7 @@
                 </div>
             </div>
             <hr>
+            <!-- Derivative attributes -->
             <div class="row">
                 <div class="column">
                     <label for="health">Health:</label>
@@ -159,6 +162,7 @@
                 </div>             
             </div>
             <hr>
+            <!-- Build + DMG Bonus-->
             <div class="row">
                 <div class="column">
                     Build: <b>{{investigator.attributes.build}}</b>
@@ -168,6 +172,7 @@
                 </div>
             </div>
             <hr>
+            <!-- Skill -->
             <h4 style="text-align: center"> Skills</h4>
             <div style="font-size: 15px;" class="row">
                 <div class="column">
@@ -212,7 +217,38 @@
                         </div>
                     {% endfor %}
                 </div>
-            </div>       
+            </div>
+            <hr>
+            <!-- Weapons -->
+            <h4 style="text-align: center"> Attributes </h4>
+            <table>
+                <thead>
+                    <th>Weapon</th>
+                    <th>Regular</th>
+                    <th>Hard</th>
+                    <th>Extreme</th>
+                    <th>Damage</th>
+                    <th>Range</th>
+                    <th>Attacks</th>
+                    <th>Ammo</th>
+                    <th>Malf</th>
+                </thead>
+                <tbody>
+                    {% for weapon in investigator.weapons %}
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>      
         </div>
     </body>
 </html>
