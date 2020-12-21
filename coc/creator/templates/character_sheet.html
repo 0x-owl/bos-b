@@ -248,7 +248,30 @@
                         </tr>
                     {% endfor %}
                 </tbody>
-            </table>      
+            </table>
+            <hr>
+            <!-- Gear & Posession -->
+            <h4 style="text-align: center"> Gear & Posessions </h4>
+            <div class="row">
+                <div class="column">
+                    <table>
+                        <thead>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                        </thead>
+                        <tbody>
+                            {% for gear in investigator.gear %}
+                                <tr>
+                                    <td>{{gear.item.title}}</td>
+                                    <td>{{gear.item.price}}</td>
+                                    <td>{{gear.stock}}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>      
         </div>
     </body>
 </html>

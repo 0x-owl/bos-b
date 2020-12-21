@@ -62,8 +62,9 @@ def get_investigator_data(request, inv):
 
     items = Inventory.objects.filter(
         investigator=investigator,
-        item__item_type__in=[1,2,4])
-    print(items)
+        item__item_type__in=[1,2,4]
+    )
+    res['gear'] = items
     return render(request, 'character_sheet.html', {'investigator': res})
 
 
