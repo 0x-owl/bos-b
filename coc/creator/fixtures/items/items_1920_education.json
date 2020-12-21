@@ -1,8 +1,7 @@
 [
   {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"College Tuition (Semester)",
         "item_type":2,
         "description":"Education - 1920's",
@@ -11,8 +10,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Student Room & Board (Year)",
         "item_type":2,
         "description":"Education - 1920's",
@@ -22,7 +20,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Text Books (Semester)",
         "item_type":2,
         "description":"Education - 1920's",

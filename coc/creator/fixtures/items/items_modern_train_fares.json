@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Train Fares 50 Miles",
         "item_type":2,
         "description":"Train Fares - Modern Day",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Train Fares 100 Miles",
         "item_type":2,
         "description":"Train Fares - Modern Day",
@@ -22,7 +20,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Train Fares 500 Miles",
         "item_type":2,
         "description":"Train Fares - Modern Day",

@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Mechanic’s Tool Chest (255 pc.)",
         "item_type":4,
         "description":"Tools - Modern Day",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"60-gallon Air Compressor",
         "item_type":4,
         "description":"Tools - Modern Day",
@@ -22,7 +20,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Welder’s Kit",
         "item_type":4,
         "description":"Tools - Modern Day",
@@ -32,7 +29,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Lock-picking Tools",
         "item_type":4,
         "description":"Tools - Modern Day",

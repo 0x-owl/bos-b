@@ -1,8 +1,7 @@
 [
   {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Aspirin (12 Pills)",
         "item_type":2,
         "description":"Medical Equipment - 1920's",
@@ -11,8 +10,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Epsom Salts /l",
         "item_type":2,
         "description":"Medical Equipment - 1920's",
@@ -21,8 +19,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Indigestion Medicine",
         "item_type":2,
         "description":"Medical Equipment - 1920's",
@@ -31,8 +28,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Laxative Nature's Remedy",
         "item_type":2,
         "description":"Medical Equipment - 1920's",
@@ -41,8 +37,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Medical Case",
         "item_type":4,
         "description":"Medical Equipment - 1920's",
@@ -51,8 +46,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Forceps",
         "item_type":2,
         "description":"Medical Equipment - 1920's",
@@ -61,8 +55,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Scalpel Set",
         "item_type":2,
         "description":"Medical Equipment - 1920's",
@@ -71,8 +64,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Hypodermic Syringes",
         "item_type":2,
         "description":"Medical Equipment - 1920's",
@@ -81,8 +73,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Atomizer",
         "item_type":2,
         "description":"Medical Equipment - 1920's",
@@ -91,8 +82,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Gauze Bandages (Five Yards)",
         "item_type":2,
         "description":"Medical Equipment - 1920's",
@@ -101,8 +91,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Clinical Thermometer",
         "item_type":2,
         "description":"Medical Equipment - 1920's",
@@ -111,8 +100,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Alcohol (Half-gallon)",
         "item_type":2,
         "description":"Medical Equipment - 1920's",

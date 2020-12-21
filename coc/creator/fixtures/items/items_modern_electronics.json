@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"CB Radio w/Police Scanner",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Three-band Walkie Talkie",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -22,7 +20,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Radar Scanner",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -32,7 +29,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"35mm SLR Digital Camera",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -42,7 +38,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Pocket One-use Camera",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -52,7 +47,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Metal Detector",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -62,7 +56,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Geiger Counter",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -72,7 +65,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Motion Detector Alarm Set",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -82,7 +74,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Wireless Perimeter Alarm",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -92,7 +83,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Telephonic Voice Changer",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -102,7 +92,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Pen Camcorder",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -112,7 +101,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Telephone Bug Detector",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -122,7 +110,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Bug Sweep Kit",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -132,7 +119,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Body Worn Spy Camera",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -142,7 +128,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Covert Digital Recorder",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -152,7 +137,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Listening Device",
         "item_type":4,
         "description":"Electronics - Modern Day",
@@ -162,7 +146,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Night Vision Goggles",
         "item_type":4,
         "description":"Electronics - Modern Day",

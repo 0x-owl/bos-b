@@ -1,8 +1,7 @@
 [
   {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Average Hotel",
         "item_type":2,
         "description":"Lodging - 1920's",
@@ -11,8 +10,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Average Hotel (With Service, Per Week)",
         "item_type":2,
         "description":"Lodging - 1920's",
@@ -21,8 +19,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Good Hotel",
         "item_type":2,
         "description":"Lodging - 1920's",
@@ -31,8 +28,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Good Hotel (With Service, Per Week)",
         "item_type":2,
         "description":"Lodging - 1920's",
@@ -41,8 +37,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Luxury Hotel",
         "item_type":2,
         "description":"Lodging - 1920's",
@@ -51,8 +46,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"YMCA, Furnished Room",
         "item_type":2,
         "description":"Lodging - 1920's",
@@ -61,8 +55,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"House (Rent per Year)",
         "item_type":2,
         "description":"Lodging - 1920's",
@@ -71,8 +64,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"House (Rent per Month)",
         "item_type":2,
         "description":"Lodging - 1920's",
@@ -81,8 +73,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Summer House (Rent for Season)",
         "item_type":2,
         "description":"Lodging - 1920's",
@@ -91,8 +82,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Flat (Rent per Week)",
         "item_type":2,
         "description":"Lodging - 1920's",
@@ -101,8 +91,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Apartment, Average (Rent per Week)",
         "item_type":2,
         "description":"Lodging - 1920's",
@@ -111,8 +100,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Apartment, Good (Rent per Week)",
         "item_type":2,
         "description":"Lodging - 1920's",

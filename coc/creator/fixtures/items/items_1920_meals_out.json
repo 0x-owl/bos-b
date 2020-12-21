@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Chicken, Dinner /perso",
         "item_type":2,
         "description":"Meals out - 1920's",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Breakfast",
         "item_type":2,
         "description":"Meals out - 1920's",
@@ -21,8 +19,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Lunch",
         "item_type":2,
         "description":"Meals out - 1920's",
@@ -31,8 +28,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Dinner",
         "item_type":2,
         "description":"Meals out - 1920's",

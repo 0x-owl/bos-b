@@ -307,7 +307,6 @@ class TagDiary(Model):
 
 class Item(Model):
     """Item class."""
-    user = ForeignKey(User, on_delete=CASCADE)
     uuid = UUIDField(unique=True, default=uuid4, editable=False)
     title = CharField(max_length=50)
     item_type = PositiveIntegerField(

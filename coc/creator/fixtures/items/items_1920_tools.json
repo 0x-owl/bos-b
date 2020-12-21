@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Tool Outfit (40 Tools)",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Hand Drill (Plus 8 Bits)",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -22,7 +20,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Large Steel Pulley",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -32,7 +29,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Padlock",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -42,7 +38,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Rope (50 Feet)",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -52,7 +47,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Light Chain (per Foot)",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -62,7 +56,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Watchmaker’s Tool Kit",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -72,7 +65,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Crowbar",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -82,7 +74,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Handsaw",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -92,7 +83,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Gasoline Blowtorch",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -102,7 +92,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Electricians Gloves",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -112,7 +101,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Lineman's Tool Belt & Safety Strap",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -122,7 +110,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Lineman's Climbers",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -132,7 +119,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Jewelers 48-Piece Tool Set",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -142,7 +128,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Rotary Tool Grinder",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -152,7 +137,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Waterproof Match Case",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -162,7 +146,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Steel Row Boat (Seats 4)",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -172,7 +155,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Shovel",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -182,7 +164,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"2 HP Motor for Row Boats",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -192,7 +173,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Home Tool Set in Box",
         "item_type":4,
         "description":"Tools - 1920's",
@@ -202,7 +182,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Canvas and Wood Canoe",
         "item_type":4,
         "description":"Tools - 1920's",

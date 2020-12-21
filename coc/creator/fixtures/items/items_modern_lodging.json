@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Economy Motel",
         "item_type":2,
         "description":"Lodging - Modern Day",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Average Hotel",
         "item_type":2,
         "description":"Lodging - Modern Day",
@@ -22,7 +20,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Average Hotel Per week (with Service)",
         "item_type":2,
         "description":"Lodging - Modern Day",
@@ -32,7 +29,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Good Hotel",
         "item_type":2,
         "description":"Lodging - Modern Day",
@@ -42,7 +38,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Grand Hotel",
         "item_type":2,
         "description":"Lodging - Modern Day",
@@ -52,7 +47,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"House (Rent per Year)",
         "item_type":2,
         "description":"Lodging - Modern Day",
@@ -62,7 +56,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Apartment (Rent per Week)",
         "item_type":2,
         "description":"Lodging - Modern Day",

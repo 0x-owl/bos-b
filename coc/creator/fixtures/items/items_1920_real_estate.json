@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Country House (13 Rooms, 2 Barns)",
         "item_type":2,
         "description":"Real Estate - 1920's",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Large House (10 Rooms)",
         "item_type":2,
         "description":"Real Estate - 1920's",
@@ -22,7 +20,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"House (6 Rooms)",
         "item_type":2,
         "description":"Real Estate - 1920's",
@@ -32,7 +29,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Average House (8 Rooms)",
         "item_type":2,
         "description":"Real Estate - 1920's",
@@ -42,7 +38,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Bungalow (4 Rooms)",
         "item_type":2,
         "description":"Real Estate - 1920's",
@@ -52,7 +47,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"The Clyde (6 Rooms)",
         "item_type":2,
         "description":"Real Estate - 1920's",
@@ -62,7 +56,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"The Columbine (8 Rooms)",
         "item_type":2,
         "description":"Real Estate - 1920's",
@@ -72,7 +65,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"The Honor (9 Rooms)",
         "item_type":2,
         "description":"Real Estate - 1920's",
@@ -82,7 +74,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"The Atlanta(24 Apartment Rooms)",
         "item_type":2,
         "description":"Real Estate - 1920's",

@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Bacon, sugar cured /lb",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Beef, Pot Roast /l",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -22,7 +20,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Bologna & Frankfurters /l",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -32,7 +29,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Butter, Brookfield Creamery /l",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -42,7 +38,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Carrots /bunc",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -52,7 +47,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Cookies, Fig Bars /l",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -62,7 +56,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Corn",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -72,7 +65,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Eggs /doze",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -82,7 +74,7 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
+        
         "title":"Ham, smoked calf /lb",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -92,7 +84,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Lamb, Leg /lb",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -102,7 +93,7 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
+        
         "title":"Lard, Swift's Pure /l",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -112,7 +103,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Lettuce",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -122,7 +112,7 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
+        
         "title":"Oil, Olive, Imported /half gallo",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -132,7 +122,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Peaches /basket ",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -142,7 +131,7 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
+        
         "title":"Oranges /doze",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -152,7 +141,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Town Peas /2 quart",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -162,7 +150,7 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
+        
         "title":"Potatoes /4 quart",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -172,7 +160,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Prunes, California /2 lb",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -182,7 +169,7 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
+        
         "title":"Rice /3 lb",
         "item_type":2,
         "description":"Food & Beverages - 1920's",
@@ -192,7 +179,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Tomatoes /no 2 ca",
         "item_type":2,
         "description":"Food & Beverages - 1920's",

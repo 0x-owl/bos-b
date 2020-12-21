@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Handle Bag (8 Lbs.)",
         "item_type":2,
         "description":"Luggage - 1920's",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Suitcase (15 Lbs.)",
         "item_type":2,
         "description":"Luggage - 1920's",
@@ -21,8 +19,7 @@
     },
     {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Steamer Trunk (55 Lbs.)",
         "item_type":2,
         "description":"Luggage - 1920's",
@@ -32,7 +29,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Wardrobe Trunk (95 Lbs.)",
         "item_type":2,
         "description":"Luggage - 1920's",
@@ -42,7 +38,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Wardrobe Trunk (115 Lbs.)",
         "item_type":2,
         "description":"Luggage - 1920's",
@@ -52,7 +47,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Luggage, black patent leather",
         "item_type":2,
         "description":"Luggage - 1920's",

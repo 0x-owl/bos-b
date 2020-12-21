@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Oxford Dress Shoes",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Lace-bottom Breeches",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -22,7 +20,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Leather Work Shoes",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -32,7 +29,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Slacks, white flannel",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -42,7 +38,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Shirt, percale",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -52,7 +47,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Broadcloth Dress Shirt",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -62,7 +56,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Men’s Clothing Shaker Sweater",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -72,7 +65,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Worsted Wool Dress Suit",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -82,7 +74,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Wool Golf Cap",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -92,7 +83,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Cashmere Dress Suit",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -102,7 +92,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Straw Hat",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -112,7 +101,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Suit, mohair",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -122,7 +110,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Padded Leather Football Helmet",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -132,7 +119,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Corduroy Norfolk Suit",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -142,7 +128,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Sweatshirt",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -152,7 +137,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Union suit, Forest Mills",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -162,7 +146,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Sealskin Fur Cap",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -172,7 +155,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Outdoor Coat",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -182,7 +164,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Silk Four-in-hand Tie",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -192,7 +173,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Dog Fur Overcoat",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -202,7 +182,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Necktie, silk",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -212,7 +191,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Chesterfield Overcoat",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -222,7 +200,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Batwing Bow Tie",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -232,7 +209,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Felt Fedora",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -242,7 +218,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Sock Garters",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -252,7 +227,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Cotton Union Suit",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -262,7 +236,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Cufflinks",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -272,7 +245,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Leather Belt",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -282,7 +254,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Suspenders",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -292,7 +263,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Hiking Boots",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -302,7 +272,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Shoes with cleats",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -312,7 +281,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Bathing Suit",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",
@@ -322,7 +290,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Canvas Bathing Shoes",
         "item_type":2,
         "description":"Men’s Clothing - 1920's",

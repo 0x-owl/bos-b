@@ -1,8 +1,7 @@
 [
   {
     "model": "creator.Item",
-    "fields": {
-        "user": 1,
+    "fields": {        
         "title":"Fan 'G-E Whiz'",
         "item_type":2,
         "description":"Household Goods - 1920's",
@@ -11,8 +10,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Hard Rubber Syringe",
         "item_type":2,
         "description":"Household Goods - 1920's",
@@ -21,8 +19,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Bed Pan",
         "item_type":2,
         "description":"Household Goods - 1920's",
@@ -31,8 +28,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Wheel Chair",
         "item_type":2,
         "description":"Household Goods - 1920's",
@@ -41,8 +37,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Maple Crutches",
         "item_type":2,
         "description":"Household Goods - 1920's",
@@ -51,8 +46,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Adhesive Plaster",
         "item_type":2,
         "description":"Household Goods - 1920's",
@@ -61,8 +55,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Metal Arch Supports",
         "item_type":2,
         "description":"Household Goods - 1920's",
@@ -71,8 +64,7 @@
     },
     {
       "model": "creator.Item",
-      "fields": {
-          "user": 1,
+      "fields": {          
         "title":"Leather Ankle Supports (Pair)",
         "item_type":2,
         "description":"Household Goods - 1920's",

@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Sea Voyage First Class (One-way)",
         "item_type":2,
         "description":"Sea Voyage (U.S / England) - Modern Day",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Sea Voyage Standard Class (One-way)",
         "item_type":2,
         "description":"Sea Voyage (U.S / England) - Modern Day",
@@ -22,7 +20,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Sea Voyage Freight",
         "item_type":2,
         "description":"Sea Voyage (U.S / England) - Modern Day",

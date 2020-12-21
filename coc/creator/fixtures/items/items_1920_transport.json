@@ -2,7 +2,6 @@
   {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Norton Motorcycle",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -12,7 +11,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Buick Model D-45",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -22,7 +20,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Cadillac Type 55",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -32,7 +29,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Chevrolet Capitol",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -42,7 +38,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Chrysler Model F-58",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -52,7 +47,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Dodge Model S/1",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -62,7 +56,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Duesenberg J",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -72,7 +65,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Ford Model T",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -82,7 +74,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Ford Model A",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -92,7 +83,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Hudson Super Six Series J",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -102,7 +92,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Oldsmobile 43-AT",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -112,7 +101,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Packard Twin Six Touring",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -122,7 +110,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Pierce-Arrow",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -132,7 +119,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Pontiac 6-28 Sedan",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -142,7 +128,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Studebaker Stnd./Dictator",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -152,7 +137,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Chevrolet Roadster",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -162,7 +146,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Hudson Coach (7 Passenger)",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -172,7 +155,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Studebaker Touring (5 Passenger)",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -182,7 +164,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"1920 Chevrolet F.B Coupe (Used)",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -192,7 +173,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"1917 Buick (Used)",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -202,7 +182,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Chevrolet Pickup Truck",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -212,7 +191,6 @@
     {
       "model": "creator.Item",
       "fields": {
-          "user": 1,
         "title":"Dodge 1/2 Ton Truck",
         "item_type":2,
         "description":"Transport - 1920's",
@@ -222,7 +200,6 @@
     {
     "model": "creator.Item",
     "fields": {
-        "user": 1,
         "title":"Ford Model TT Truck",
         "item_type":2,
         "description":"Transport - 1920's",
