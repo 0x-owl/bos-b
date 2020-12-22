@@ -26,22 +26,22 @@
             <!-- Basic Info -->
             <div class="row">
                 <div class="column">
-                    Name: {{investigator.name}}<br>
-                    Age: {{investigator.age}}<br>
-                    Sex: {{investigator.sex}}<br>
-                    Birthplace: {{investigator.birthplace}}<br>
-                    Residence: {{investigator.residence}}<br>
-                    Occupation: {{investigator.occupation.title}}<br>
-                    Credit Rating Min: {{investigator.occupation.credit_rating_min}}<br>
-                    Credit Rating Max: {{investigator.occupation.credit_rating_max}}<br>
+                    Name: {{res.inv.name}}<br>
+                    Age: {{res.inv.age}}<br>
+                    Sex: {{res.inv.sex}}<br>
+                    Birthplace: {{res.inv.birthplace}}<br>
+                    Residence: {{res.inv.residence}}<br>
+                    Occupation: {{res.inv.occupation.title}}<br>
+                    Credit Rating Min: {{res.inv.occupation.credit_rating_min}}<br>
+                    Credit Rating Max: {{res.inv.occupation.credit_rating_max}}<br>
                 </div>
                 <div class="column column-offset-50">   
-                    <img style="height: 200px; width: 200px" src="{{investigator.portrait }}" alt="Investigator portrait">
+                    <img style="height: 200px; width: 200px" src="{{res.portrait }}" alt="Investigator portrait">
                 </div>
             </div>
             <hr>
             <!-- Attributes -->
-            <h4 style="text-align: center"> Attributes </h4>
+            <h4 style="text-align: center; border: 1px solid grey;"> Attributes </h4>
             <div class="row">
                 <div class="column">
                     <div class="row">
@@ -49,9 +49,9 @@
                             STR:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.attrs.STR.0}}</b>|
-                            <b>{{investigator.attributes.attrs.STR.1}}</b>|
-                            <b>{{investigator.attributes.attrs.STR.2|stringformat:"02d"}}</b>
+                            <b>{{res.attributes.STR.0}}</b>|
+                            <b>{{res.attributes.STR.1}}</b>|
+                            <b>{{res.attributes.STR.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -59,9 +59,9 @@
                             CON:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.attrs.CON.0}}</b>|
-                            <b>{{investigator.attributes.attrs.CON.1}}</b>|
-                            <b>{{investigator.attributes.attrs.CON.2|stringformat:"02d"}}</b>
+                            <b>{{res.attributes.CON.0}}</b>|
+                            <b>{{res.attributes.CON.1}}</b>|
+                            <b>{{res.attributes.CON.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -69,9 +69,9 @@
                             SIZ:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.attrs.SIZ.0}}</b>|
-                            <b>{{investigator.attributes.attrs.SIZ.1}}</b>|
-                            <b>{{investigator.attributes.attrs.SIZ.2|stringformat:"02d"}}</b>
+                            <b>{{res.attributes.SIZ.0}}</b>|
+                            <b>{{res.attributes.SIZ.1}}</b>|
+                            <b>{{res.attributes.SIZ.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                 </div>
@@ -81,9 +81,9 @@
                             DEX:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.attrs.DEX.0}}</b>|
-                            <b>{{investigator.attributes.attrs.DEX.1}}</b>|
-                            <b>{{investigator.attributes.attrs.DEX.2|stringformat:"02d"}}</b>
+                            <b>{{res.attributes.DEX.0}}</b>|
+                            <b>{{res.attributes.DEX.1}}</b>|
+                            <b>{{res.attributes.DEX.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -91,9 +91,9 @@
                             APP:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.attrs.APP.0}}</b>|
-                            <b>{{investigator.attributes.attrs.APP.1}}</b>|
-                            <b>{{investigator.attributes.attrs.APP.2|stringformat:"02d"}}</b>
+                            <b>{{res.attributes.APP.0}}</b>|
+                            <b>{{res.attributes.APP.1}}</b>|
+                            <b>{{res.attributes.APP.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -101,9 +101,9 @@
                             INT:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.attrs.INT.0}}</b>|
-                            <b>{{investigator.attributes.attrs.INT.1}}</b>|
-                            <b>{{investigator.attributes.attrs.INT.2|stringformat:"02d"}}</b>
+                            <b>{{res.attributes.INT.0}}</b>|
+                            <b>{{res.attributes.INT.1}}</b>|
+                            <b>{{res.attributes.INT.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                 </div>
@@ -113,9 +113,9 @@
                             POW:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.attrs.POW.0}}</b>|
-                            <b>{{investigator.attributes.attrs.POW.1}}</b>|
-                            <b>{{investigator.attributes.attrs.POW.2|stringformat:"02d"}}</b>
+                            <b>{{res.attributes.POW.0}}</b>|
+                            <b>{{res.attributes.POW.1}}</b>|
+                            <b>{{res.attributes.POW.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -123,9 +123,9 @@
                             EDU:
                         </div>
                         <div style="text-align: right" class="column">
-                            <b>{{investigator.attributes.attrs.EDU.0}}</b>|
-                            <b>{{investigator.attributes.attrs.EDU.1}}</b>|
-                            <b>{{investigator.attributes.attrs.EDU.2|stringformat:"02d"}}</b>
+                            <b>{{res.attributes.EDU.0}}</b>|
+                            <b>{{res.attributes.EDU.1}}</b>|
+                            <b>{{res.attributes.EDU.2|stringformat:"02d"}}</b>
                         </div>
                     </div>
                     <div class="row">
@@ -133,7 +133,7 @@
                             MOV:
                         </div>
                         <div style="text-align: right" class="column"> 
-                            <b>{{investigator.attributes.move_rate}}</b>
+                            <b>{{res.inv.move}}</b>
                         </div>
                     </div>
                 </div>
@@ -143,40 +143,40 @@
             <div class="row">
                 <div class="column">
                     <label for="health">Health:</label>
-                    <input type="number" name="health" id="health" value="{{investigator.attributes.health}}" max="{{investigator.attributes.max_health}}">
+                    <input type="number" name="health" id="health" value="{{res.inv.health}}" max="{{res.inv.max_health}}">
                 </div>
                 <div class="column column-offset-50">
                     <label for="san">Sanity:</label>
-                    <input type="number" name="san" id="san" value="{{investigator.attributes.sanity}}" max="99">
+                    <input type="number" name="san" id="san" value="{{res.inv.sanity}}" max="99">
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="column">
                     <label for="mp">Magic Points:</label>
-                    <input id="mp" name="mp" type="number" value="{{investigator.attributes.magic_points}}" max="{{investigator.attributes.magic_points}}" min="0">
+                    <input id="mp" name="mp" type="number" value="{{res.inv.magic_points}}" max="{{res.attributes.magic_points}}" min="0">
                 </div>
                 <div class="column column-offset-50">
                     <label for="luck">Luck:</label>
-                    <input id="luck" name="luck" type="number" value="{{investigator.attributes.luck}}" min="0" max="99">
+                    <input id="luck" name="luck" type="number" value="{{res.inv.luck}}" min="0" max="99">
                 </div>             
             </div>
             <hr>
             <!-- Build + DMG Bonus-->
             <div class="row">
                 <div class="column">
-                    Build: <b>{{investigator.attributes.build}}</b>
+                    Build: <b>{{res.inv.build.1}}</b>
                 </div>
                 <div class="column column-offset-50">
-                    Damage Bonus: <b>{{investigator.attributes.modifier}}</b>
+                    Damage Bonus: <b>{{res.inv.build.0}}</b>
                 </div>
             </div>
             <hr>
             <!-- Skill -->
-            <h4 style="text-align: center"> Skills</h4>
+            <h4 style="text-align: center; border: 1px solid grey;"> Skills</h4>
             <div style="font-size: 15px;" class="row">
                 <div class="column">
-                    {% for skill in investigator.skills|slice:":29" %}
+                    {% for skill in res.skills|slice:":29" %}
                         <div class="row">
                             <div class="column">
                                 {{skill.0}}:
@@ -190,7 +190,7 @@
                     {% endfor %}
                 </div>
                 <div class="column">
-                    {% for skill in investigator.skills|slice:"29:58" %}
+                    {% for skill in res.skills|slice:"29:58" %}
                         <div class="row">
                             <div class="column">
                                 {{skill.0}}:
@@ -204,7 +204,7 @@
                     {% endfor %}
                 </div>
                 <div class="column">
-                    {% for skill in investigator.skills|slice:"58:" %}
+                    {% for skill in res.skills|slice:"58:" %}
                         <div class="row">
                             <div class="column">
                                 {{skill.0}}:
@@ -220,7 +220,7 @@
             </div>
             <hr>
             <!-- Weapons -->
-            <h4 style="text-align: center"> Weapons </h4>
+            <h4 style="text-align: center; border: 1px solid grey;"> Weapons </h4>
             <table>
                 <thead>
                     <th>Weapon</th>
@@ -234,7 +234,7 @@
                     <th>Malf</th>
                 </thead>
                 <tbody>
-                    {% for weapon in investigator.weapons %}
+                    {% for weapon in res.inv.weapons %}
                         <tr>
                             <td></td>
                             <td></td>
@@ -250,8 +250,40 @@
                 </tbody>
             </table>
             <hr>
+            <!-- Backstory -->
+            <h4 style="text-align: center; border: 1px solid grey;">Backstory</h4>
+            <div class="row">
+                <div class="column">
+                    <b>Personal Description:</b>
+                    <p>{{res.inv.description}}</p>
+                    <b>Ideolofy/Beliefs:</b>
+                    <p>{{res.inv.ideologies}}</p>
+                    <b>Signficant People:</b>
+                    <p>{{res.inv.significant_people}}</p>
+                    <b>Meaningful Locations:</b>
+                    <p>{{res.inv.meaningful_locations}}</p>
+                    <b>Treasured Possesions:</b>
+                    <p>{{res.inv.treasured_posessions}}</p>
+                </div>
+                <div class="column">
+                    <b>Traits:</b>
+                    <p>{{res.inv.traits}}</p>
+                    <b>Injuries & Scars:</b>
+                    <p>{{res.inv.injure_scars}}</p>
+                    <b>Phobias & Manias:</b>
+                    <p>{{res.phobias}}</p>
+                    <p>{{res.manias}}</p>
+                    <b>Arcane: Spells, Tomes & Artifacts:</b>
+                    <p>{{res.arcane.spells}}</p>
+                    <p>{{res.arcane.tomes}}</p>
+                    <p>{{res.arcane.artifacts}}</p>
+                    <b>Encounters with strange entities:</b>
+                    <p>{{res.inv.encounters_with_strange_entities}}</p>
+                </div>
+            </div>
+            <hr>
             <!-- Gear & Posession -->
-            <h4 style="text-align: center"> Gear & Posessions </h4>
+            <h4 style="text-align: center; border: 1px solid grey;"> Gear & Posessions </h4>
             <div class="row">
                 <div class="column">
                     <table>
@@ -261,7 +293,7 @@
                             <th>Stock</th>
                         </thead>
                         <tbody>
-                            {% for gear in investigator.gear %}
+                            {% for gear in res.gear %}
                                 <tr>
                                     <td>{{gear.item.title}}</td>
                                     <td>{{gear.item.price}}</td>
@@ -272,10 +304,6 @@
                     </table>
                 </div>
             </div>
-            <hr>
-            <!-- Backstory -->
-            <h4 style="text-align: center">Backstory</h4>
-            
         </div>
     </body>
 </html>

@@ -18,31 +18,9 @@ def get_investigator_data(request, inv):
     ).first()
     
     res = {
-        'name': investigator.name,
-        'sex': investigator.sex,
-        'age': investigator.age,
-        'birthplace': investigator.birthplace,
-        'residence': investigator.residence,
-        'size': investigator.size,
         'portrait': portrait.portrait.url if portrait is not None else "",
-        'occupation': {
-            'title': investigator.occupation.title,
-            'credit_rating_min': investigator.occupation.credit_rating_min,
-            'credit_rating_max': investigator.occupation.credit_rating_max,
-            'contacts': investigator.occupation.suggested_contacts,
-        },
-        'attributes': {
-            'attrs': investigator.attributes_detail,
-            'size': investigator.size,
-            'sanity': investigator.sanity,
-            'max_health': investigator.max_health,
-            'health': investigator.health,
-            'magic_points': investigator.magic_points,
-            'move_rate': investigator.move,
-            'build': investigator.build[1],
-            'modifier': investigator.build[0],
-            'luck': investigator.luck
-        }
+        'attributes': investigator.attributes_detail,
+        "inv": investigator
     }
     # Retrieve skills
     skills = sorted(investigator.skills)
@@ -65,7 +43,7 @@ def get_investigator_data(request, inv):
         item__item_type__in=[1,2,4]
     )
     res['gear'] = items
-    return render(request, 'character_sheet.html', {'investigator': res})
+    return render(request, 'character_sheet.html', {'res': res})
 
 
 def generate_random_investigator(request):
