@@ -53,8 +53,8 @@ def get_investigator_data(request, inv):
     phobias = PhobiaInvestigator.objects.filter(
         investigator=investigator
     )
-    res['manias'] = manias if manias else []
-    res['phobias'] = phobias if phobias else []
+    res['manias'] = manias
+    res['phobias'] = phobias
     # Retrieve arcane
     artifacts = Inventory.objects.filter(
         investigator=investigator,

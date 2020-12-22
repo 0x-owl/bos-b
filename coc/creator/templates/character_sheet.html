@@ -282,8 +282,16 @@
                         {% endfor %}
                     </ul>
                     <b>Arcane: Spells, Tomes & Artifacts:</b>
-                    <p>{{res.arcane.spells}}</p>
-                    <p>{{res.arcane.artifacts}}</p>
+                    <ul>
+                        {% for spell in res.arcane.spells %}
+                            <li>{{spell}}</li>
+                        {% endfor %}
+                    </ul>
+                    <ul>
+                        {% for artifact in res.arcane.artifacts %}
+                            <li>{{artifact}}</li>
+                        {% endfor %}
+                    </ul>
                     <b>Encounters with strange entities:</b>
                     <p>{{res.investigator.encounters_with_strange_entities}}</p>
                 </div>
