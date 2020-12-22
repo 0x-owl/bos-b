@@ -26,14 +26,14 @@
             <!-- Basic Info -->
             <div class="row">
                 <div class="column">
-                    Name: {{res.inv.name}}<br>
-                    Age: {{res.inv.age}}<br>
-                    Sex: {{res.inv.sex}}<br>
-                    Birthplace: {{res.inv.birthplace}}<br>
-                    Residence: {{res.inv.residence}}<br>
-                    Occupation: {{res.inv.occupation.title}}<br>
-                    Credit Rating Min: {{res.inv.occupation.credit_rating_min}}<br>
-                    Credit Rating Max: {{res.inv.occupation.credit_rating_max}}<br>
+                    Name: {{res.investigator.name}}<br>
+                    Age: {{res.investigator.age}}<br>
+                    Sex: {{res.investigator.sex}}<br>
+                    Birthplace: {{res.investigator.birthplace}}<br>
+                    Residence: {{res.investigator.residence}}<br>
+                    Occupation: {{res.investigator.occupation.title}}<br>
+                    Credit Rating Min: {{res.investigator.occupation.credit_rating_min}}<br>
+                    Credit Rating Max: {{res.investigator.occupation.credit_rating_max}}<br>
                 </div>
                 <div class="column column-offset-50">   
                     <img style="height: 200px; width: 200px" src="{{res.portrait }}" alt="Investigator portrait">
@@ -133,7 +133,7 @@
                             MOV:
                         </div>
                         <div style="text-align: right" class="column"> 
-                            <b>{{res.inv.move}}</b>
+                            <b>{{res.investigator.move}}</b>
                         </div>
                     </div>
                 </div>
@@ -143,32 +143,32 @@
             <div class="row">
                 <div class="column">
                     <label for="health">Health:</label>
-                    <input type="number" name="health" id="health" value="{{res.inv.health}}" max="{{res.inv.max_health}}">
+                    <input type="number" name="health" id="health" value="{{res.investigator.health}}" max="{{res.investigator.max_health}}">
                 </div>
                 <div class="column column-offset-50">
                     <label for="san">Sanity:</label>
-                    <input type="number" name="san" id="san" value="{{res.inv.sanity}}" max="99">
+                    <input type="number" name="san" id="san" value="{{res.investigator.sanity}}" max="99">
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="column">
                     <label for="mp">Magic Points:</label>
-                    <input id="mp" name="mp" type="number" value="{{res.inv.magic_points}}" max="{{res.attributes.magic_points}}" min="0">
+                    <input id="mp" name="mp" type="number" value="{{res.investigator.magic_points}}" max="{{res.attributes.magic_points}}" min="0">
                 </div>
                 <div class="column column-offset-50">
                     <label for="luck">Luck:</label>
-                    <input id="luck" name="luck" type="number" value="{{res.inv.luck}}" min="0" max="99">
+                    <input id="luck" name="luck" type="number" value="{{res.investigator.luck}}" min="0" max="99">
                 </div>             
             </div>
             <hr>
             <!-- Build + DMG Bonus-->
             <div class="row">
                 <div class="column">
-                    Build: <b>{{res.inv.build.1}}</b>
+                    Build: <b>{{res.investigator.build.1}}</b>
                 </div>
                 <div class="column column-offset-50">
-                    Damage Bonus: <b>{{res.inv.build.0}}</b>
+                    Damage Bonus: <b>{{res.investigator.build.0}}</b>
                 </div>
             </div>
             <hr>
@@ -234,7 +234,7 @@
                     <th>Malf</th>
                 </thead>
                 <tbody>
-                    {% for weapon in res.inv.weapons %}
+                    {% for weapon in res.investigator.weapons %}
                         <tr>
                             <td></td>
                             <td></td>
@@ -255,30 +255,37 @@
             <div class="row">
                 <div class="column">
                     <b>Personal Description:</b>
-                    <p>{{res.inv.description}}</p>
+                    <p>{{res.investigator.description}}</p>
                     <b>Ideolofy/Beliefs:</b>
-                    <p>{{res.inv.ideologies}}</p>
+                    <p>{{res.investigator.ideologies}}</p>
                     <b>Signficant People:</b>
-                    <p>{{res.inv.significant_people}}</p>
+                    <p>{{res.investigator.significant_people}}</p>
                     <b>Meaningful Locations:</b>
-                    <p>{{res.inv.meaningful_locations}}</p>
+                    <p>{{res.investigator.meaningful_locations}}</p>
                     <b>Treasured Possesions:</b>
-                    <p>{{res.inv.treasured_posessions}}</p>
+                    <p>{{res.investigator.treasured_posessions}}</p>
                 </div>
                 <div class="column">
                     <b>Traits:</b>
-                    <p>{{res.inv.traits}}</p>
+                    <p>{{res.investigator.traits}}</p>
                     <b>Injuries & Scars:</b>
-                    <p>{{res.inv.injure_scars}}</p>
+                    <p>{{res.investigator.injure_scars}}</p>
                     <b>Phobias & Manias:</b>
-                    <p>{{res.phobias}}</p>
-                    <p>{{res.manias}}</p>
+                    <ul>
+                        {% for phobia in res.phobias %}
+                            <li>{{phobia}}</li>
+                        {% endfor %}
+                    </ul>
+                    <ul>
+                        {% for mania in res.manias %}
+                            <li>{{mania}}</li>
+                        {% endfor %}
+                    </ul>
                     <b>Arcane: Spells, Tomes & Artifacts:</b>
                     <p>{{res.arcane.spells}}</p>
-                    <p>{{res.arcane.tomes}}</p>
                     <p>{{res.arcane.artifacts}}</p>
                     <b>Encounters with strange entities:</b>
-                    <p>{{res.inv.encounters_with_strange_entities}}</p>
+                    <p>{{res.investigator.encounters_with_strange_entities}}</p>
                 </div>
             </div>
             <hr>
