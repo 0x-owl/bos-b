@@ -10,13 +10,6 @@ GAME_TYPE = (
     ('2', 'Campaign')
 )
 
-DECADES = (
-    ('20', "20's"),
-    ('50', "50's"),
-    ('90', "90's"),
-    ('00', "00's"),
-    ('99999', "No end")
-)
 
 TAG_FIELDS = {
     'id': Int(),
@@ -50,5 +43,7 @@ ITEM_CATEGORIES = [
     (1, 'MAGIC'),
     (2, 'CONSUMABLE'),
     (3, 'WEAPON'),
-    (4, 'TOOL')
+    (4, 'TOOL'),
+    (5, 'VEHICLE'),
+    (6, 'MISC')
 ]
