@@ -1,5 +1,7 @@
 [
-    {
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Air Travel Av Ticket Price (per 10 Miles)",
@@ -7,8 +9,11 @@
         "price": 2,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Air Travel International (per 100 Miles)",
@@ -16,8 +21,11 @@
         "price": 18,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Surplus Trainer Biplane",
@@ -25,8 +33,11 @@
         "price": 300,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Travel Air 2000 Biplane",
@@ -34,8 +45,11 @@
         "price": 3000,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Telegraph Outfit",
@@ -43,8 +57,11 @@
         "price": 4.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Newspaper",
@@ -52,8 +69,11 @@
         "price": 0.05,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Desk Phone (Bridging Type)",
@@ -61,8 +81,11 @@
         "price": 15.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "For 12 Words",
@@ -70,8 +93,11 @@
         "price": 0.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Postcard",
@@ -79,8 +105,11 @@
         "price": 0.2,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Per Additional Word",
@@ -88,8 +117,11 @@
         "price": 0.02,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "International per Word",
@@ -97,8 +129,11 @@
         "price": 1.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Postage per Ounce / 16m",
@@ -106,8 +141,11 @@
         "price": 0.02,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "College Tuition (Semester)",
@@ -115,8 +153,11 @@
         "price": 480,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Student Room & Board (Year)",
@@ -124,8 +165,11 @@
         "price": 520,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Text Books (Semester)",
@@ -133,8 +177,11 @@
         "price": 30,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Movie Ticket Seated",
@@ -142,8 +189,11 @@
         "price": 0.15,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Professional Baseball Ticket",
@@ -151,8 +201,11 @@
         "price": 1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Concert Hall Public Seating",
@@ -160,8 +213,11 @@
         "price": 4,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Concert Hall Box",
@@ -169,8 +225,11 @@
         "price": 10,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "4-string Jazz Banjo",
@@ -178,8 +237,11 @@
         "price": 7.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Brass Saxophone",
@@ -187,8 +249,11 @@
         "price": 69.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cabinet Phonograph",
@@ -196,8 +261,11 @@
         "price": 98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Phonograph Records",
@@ -205,8 +273,11 @@
         "price": 0.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Film 24 Exposures",
@@ -214,8 +285,11 @@
         "price": 0.38,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Film Developing Kit",
@@ -223,8 +297,11 @@
         "price": 4.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Kodak Folding No.1 Camera",
@@ -232,8 +309,11 @@
         "price": 28,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Eastman Commercial Camera",
@@ -241,8 +321,11 @@
         "price": 140,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Movie Camera & Projector",
@@ -250,8 +333,11 @@
         "price": 335,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Portable Radio Receiver",
@@ -259,8 +345,11 @@
         "price": 65,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Accordion",
@@ -268,8 +357,11 @@
         "price": 8.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Ukulele (Kit)",
@@ -277,8 +369,11 @@
         "price": 2.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Guitar (Kit)",
@@ -286,8 +381,11 @@
         "price": 9.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Violin (Kit)",
@@ -295,8 +393,11 @@
         "price": 14.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Army Bugle",
@@ -304,8 +405,11 @@
         "price": 3.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Parlor Organ",
@@ -313,8 +417,11 @@
         "price": 127,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Player Piano",
@@ -322,8 +429,11 @@
         "price": 447,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bacon, sugar cured /lb",
@@ -331,8 +441,11 @@
         "price": 0.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Beef, Pot Roast /l",
@@ -340,8 +453,11 @@
         "price": 0.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bologna & Frankfurters /l",
@@ -349,8 +465,11 @@
         "price": 0.19,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Butter, Brookfield Creamery /l",
@@ -358,8 +477,11 @@
         "price": 0.43,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Carrots /bunc",
@@ -367,8 +489,11 @@
         "price": 0.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cookies, Fig Bars /l",
@@ -376,8 +501,11 @@
         "price": 0.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Corn",
@@ -385,8 +513,11 @@
         "price": 0.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Eggs /doze",
@@ -394,8 +525,11 @@
         "price": 0.13,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Ham, smoked calf /lb",
@@ -403,8 +537,11 @@
         "price": 0.13,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Lamb, Leg /lb",
@@ -412,8 +549,11 @@
         "price": 0.4,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Lard, Swift's Pure /l",
@@ -421,8 +561,11 @@
         "price": 0.17,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Lettuce",
@@ -430,8 +573,11 @@
         "price": 0.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Oil, Olive, Imported /half gallo",
@@ -439,8 +585,11 @@
         "price": 2.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Peaches /basket ",
@@ -448,8 +597,11 @@
         "price": 0.15,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Oranges /doze",
@@ -457,8 +609,11 @@
         "price": 0.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Town Peas /2 quart",
@@ -466,8 +621,11 @@
         "price": 0.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Potatoes /4 quart",
@@ -475,8 +633,11 @@
         "price": 0.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Prunes, California /2 lb",
@@ -484,8 +645,11 @@
         "price": 0.24,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Rice /3 lb",
@@ -493,8 +657,11 @@
         "price": 0.2,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Tomatoes /no 2 ca",
@@ -502,8 +669,11 @@
         "price": 0.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Lamp Glass Shade",
@@ -511,8 +681,11 @@
         "price": 5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Dinnerware 52 Pieces",
@@ -520,8 +693,11 @@
         "price": 19.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Refrigerator",
@@ -529,8 +705,11 @@
         "price": 49.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Gas Range",
@@ -538,8 +717,11 @@
         "price": 77,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Vacuum cleaner",
@@ -547,8 +729,11 @@
         "price": 48,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Washing machine",
@@ -556,8 +741,11 @@
         "price": 125,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bedroom Set walnut finish",
@@ -565,8 +753,11 @@
         "price": 199,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Rocking Chair",
@@ -574,8 +765,11 @@
         "price": 25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Desk",
@@ -583,8 +777,11 @@
         "price": 80,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Dining Room Set walnut finish",
@@ -592,8 +789,11 @@
         "price": 295,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Living Room Setupholstered mohair",
@@ -601,8 +801,11 @@
         "price": 395,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Rug oriental",
@@ -610,8 +813,11 @@
         "price": 50,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Fan 'G-E Whiz'",
@@ -619,8 +825,11 @@
         "price": 10,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Hard Rubber Syringe",
@@ -628,8 +837,11 @@
         "price": 0.69,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bed Pan",
@@ -637,8 +849,11 @@
         "price": 1.79,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Wheel Chair",
@@ -646,8 +861,11 @@
         "price": 39.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Maple Crutches",
@@ -655,8 +873,11 @@
         "price": 1.59,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Adhesive Plaster",
@@ -664,8 +885,11 @@
         "price": 0.29,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Metal Arch Supports",
@@ -673,8 +897,11 @@
         "price": 1.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Leather Ankle Supports (Pair)",
@@ -682,8 +909,11 @@
         "price": 0.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Average Hotel",
@@ -691,8 +921,11 @@
         "price": 4.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Average Hotel (With Service, Per Week)",
@@ -700,8 +933,11 @@
         "price": 10,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Good Hotel",
@@ -709,8 +945,11 @@
         "price": 9,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Good Hotel (With Service, Per Week)",
@@ -718,8 +957,11 @@
         "price": 24,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Luxury Hotel",
@@ -727,8 +969,11 @@
         "price": 30,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "YMCA, Furnished Room",
@@ -736,8 +981,11 @@
         "price": 5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "House (Rent per Year)",
@@ -745,8 +993,11 @@
         "price": 1000,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "House (Rent per Month)",
@@ -754,8 +1005,11 @@
         "price": 55,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Summer House (Rent for Season)",
@@ -763,8 +1017,11 @@
         "price": 350,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Flat (Rent per Week)",
@@ -772,8 +1029,11 @@
         "price": 12.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Apartment, Average (Rent per Week)",
@@ -781,8 +1041,11 @@
         "price": 10,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Apartment, Good (Rent per Week)",
@@ -790,8 +1053,11 @@
         "price": 40,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Handle Bag (8 Lbs.)",
@@ -799,8 +1065,11 @@
         "price": 7.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Suitcase (15 Lbs.)",
@@ -808,8 +1077,11 @@
         "price": 9.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Steamer Trunk (55 Lbs.)",
@@ -817,8 +1089,11 @@
         "price": 12,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Wardrobe Trunk (95 Lbs.)",
@@ -826,8 +1101,11 @@
         "price": 54.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Wardrobe Trunk (115 Lbs.)",
@@ -835,8 +1113,11 @@
         "price": 79.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Luggage, black patent leather",
@@ -844,8 +1125,11 @@
         "price": 12.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Chicken, Dinner /perso",
@@ -853,8 +1137,11 @@
         "price": 2.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Breakfast",
@@ -862,8 +1149,11 @@
         "price": 0.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Lunch",
@@ -871,8 +1161,11 @@
         "price": 0.65,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Dinner",
@@ -880,8 +1173,11 @@
         "price": 1.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Aspirin (12 Pills)",
@@ -889,8 +1185,11 @@
         "price": 0.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Epsom Salts /l",
@@ -898,8 +1197,11 @@
         "price": 0.09,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Indigestion Medicine",
@@ -907,8 +1209,11 @@
         "price": 0.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Laxative Nature's Remedy",
@@ -916,8 +1221,11 @@
         "price": 0.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Medical Case",
@@ -925,8 +1233,11 @@
         "price": 10.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Forceps",
@@ -934,8 +1245,11 @@
         "price": 3.59,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Scalpel Set",
@@ -943,8 +1257,11 @@
         "price": 1.39,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Hypodermic Syringes",
@@ -952,8 +1269,11 @@
         "price": 12.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Atomizer",
@@ -961,8 +1281,11 @@
         "price": 1.39,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Gauze Bandages (Five Yards)",
@@ -970,8 +1293,11 @@
         "price": 0.69,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Clinical Thermometer",
@@ -979,8 +1305,11 @@
         "price": 0.69,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Alcohol (Half-gallon)",
@@ -988,8 +1317,11 @@
         "price": 0.2,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Oxford Dress Shoes",
@@ -997,8 +1329,11 @@
         "price": 6.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Lace-bottom Breeches",
@@ -1006,8 +1341,11 @@
         "price": 4.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Leather Work Shoes",
@@ -1015,8 +1353,11 @@
         "price": 4.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Slacks, white flannel",
@@ -1024,8 +1365,11 @@
         "price": 8,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Shirt, percale",
@@ -1033,8 +1377,11 @@
         "price": 1.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Broadcloth Dress Shirt",
@@ -1042,8 +1389,11 @@
         "price": 1.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Men\\u2019s Clothing Shaker Sweater",
@@ -1051,8 +1401,11 @@
         "price": 7.69,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Worsted Wool Dress Suit",
@@ -1060,8 +1413,11 @@
         "price": 17.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Wool Golf Cap",
@@ -1069,8 +1425,11 @@
         "price": 0.79,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cashmere Dress Suit",
@@ -1078,8 +1437,11 @@
         "price": 18.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Straw Hat",
@@ -1087,8 +1449,11 @@
         "price": 1.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Suit, mohair",
@@ -1096,8 +1461,11 @@
         "price": 13.85,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Padded Leather Football Helmet",
@@ -1105,8 +1473,11 @@
         "price": 3.65,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Corduroy Norfolk Suit",
@@ -1114,8 +1485,11 @@
         "price": 9.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Sweatshirt",
@@ -1123,8 +1497,11 @@
         "price": 0.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Union suit, Forest Mills",
@@ -1132,8 +1509,11 @@
         "price": 0.69,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Sealskin Fur Cap",
@@ -1141,8 +1521,11 @@
         "price": 16.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Outdoor Coat",
@@ -1150,8 +1533,11 @@
         "price": 35,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Silk Four-in-hand Tie",
@@ -1159,8 +1545,11 @@
         "price": 0.96,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Dog Fur Overcoat",
@@ -1168,8 +1557,11 @@
         "price": 37.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Necktie, silk",
@@ -1177,8 +1569,11 @@
         "price": 0.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Chesterfield Overcoat",
@@ -1186,8 +1581,11 @@
         "price": 19.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Batwing Bow Tie",
@@ -1195,8 +1593,11 @@
         "price": 0.55,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Felt Fedora",
@@ -1204,8 +1605,11 @@
         "price": 4.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Sock Garters",
@@ -1213,8 +1617,11 @@
         "price": 0.39,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cotton Union Suit",
@@ -1222,8 +1629,11 @@
         "price": 1.48,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cufflinks",
@@ -1231,8 +1641,11 @@
         "price": 0.4,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Leather Belt",
@@ -1240,8 +1653,11 @@
         "price": 1.35,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Suspenders",
@@ -1249,8 +1665,11 @@
         "price": 0.79,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Hiking Boots",
@@ -1258,8 +1677,11 @@
         "price": 7.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Shoes with cleats",
@@ -1267,8 +1689,11 @@
         "price": 5.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bathing Suit",
@@ -1276,8 +1701,11 @@
         "price": 3.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Canvas Bathing Shoes",
@@ -1285,8 +1713,11 @@
         "price": 0.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Handcuffs",
@@ -1294,8 +1725,11 @@
         "price": 3.35,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Extra Handcuff Key",
@@ -1303,8 +1737,11 @@
         "price": 0.28,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Police Whistle",
@@ -1312,8 +1749,11 @@
         "price": 0.3,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Dictaphone",
@@ -1321,8 +1761,11 @@
         "price": 39.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Wire Recorder",
@@ -1330,8 +1773,11 @@
         "price": 129.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Wristwatch",
@@ -1339,8 +1785,11 @@
         "price": 5.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Gold Pocket Watch",
@@ -1348,8 +1797,11 @@
         "price": 35.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Self-filling Fountain Pen",
@@ -1357,8 +1809,11 @@
         "price": 1.8,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Mechanical Pencil",
@@ -1366,8 +1821,11 @@
         "price": 0.85,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Writing Tablet",
@@ -1375,8 +1833,11 @@
         "price": 0.2,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Straightjacket",
@@ -1384,8 +1845,11 @@
         "price": 9.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Sketch Pad",
@@ -1393,8 +1857,11 @@
         "price": 0.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Harris Typewrite",
@@ -1402,8 +1869,11 @@
         "price": 66.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Complete Diving Suit",
@@ -1411,8 +1881,11 @@
         "price": 1200,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Remington Typewriter",
@@ -1420,8 +1893,11 @@
         "price": 40,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Pocket Microscope",
@@ -1429,8 +1905,11 @@
         "price": 0.58,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "110x Desk Microscope",
@@ -1438,8 +1917,11 @@
         "price": 17.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Floor Safe (3-Foot high, 950 Lbs.)",
@@ -1447,8 +1929,11 @@
         "price": 62.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Turkish Water Pipe",
@@ -1456,8 +1941,11 @@
         "price": 0.99,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Cigarettes (per Pack)",
@@ -1465,8 +1953,11 @@
         "price": 0.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Umbrella",
@@ -1474,8 +1965,11 @@
         "price": 1.79,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Box of Cigars",
@@ -1483,8 +1977,11 @@
         "price": 2.29,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Unabridged Dictionary",
@@ -1492,8 +1989,11 @@
         "price": 6.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "10-volume Encyclopedia",
@@ -1501,8 +2001,11 @@
         "price": 49,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Wet Sponge Respirator",
@@ -1510,8 +2013,11 @@
         "price": 1.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "3-Lens Pocket Magnifying Glass (7x to 30x)",
@@ -1519,8 +2025,11 @@
         "price": 1.68,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Bible",
@@ -1528,8 +2037,11 @@
         "price": 3.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Briefcase",
@@ -1537,8 +2049,11 @@
         "price": 1.48,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Globe on Stand",
@@ -1546,8 +2061,11 @@
         "price": 9.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Folding Writing Desk",
@@ -1555,8 +2073,11 @@
         "price": 16.65,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Glass-Door Oak Bookcase (200 Book)",
@@ -1564,8 +2085,11 @@
         "price": 24.65,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Baby Buggy",
@@ -1573,8 +2097,11 @@
         "price": 34.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Watchmaker's Eye Glass",
@@ -1582,8 +2109,11 @@
         "price": 0.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Chemical Fire Extinguisher",
@@ -1591,8 +2121,11 @@
         "price": 13.85,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Flare (Disposable)",
@@ -1600,8 +2133,11 @@
         "price": 0.27,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Telescope",
@@ -1609,8 +2145,11 @@
         "price": 3.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Field Glasses (3x to 6x)",
@@ -1618,8 +2157,11 @@
         "price": 23,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Cooking Kit",
@@ -1627,8 +2169,11 @@
         "price": 8.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Binoculars",
@@ -1636,8 +2181,11 @@
         "price": 28.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Camp Stove",
@@ -1645,8 +2193,11 @@
         "price": 6.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Jeweled Compass",
@@ -1654,8 +2205,11 @@
         "price": 3.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Vacuum Bottle",
@@ -1663,8 +2217,11 @@
         "price": 0.89,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Compass with Lid",
@@ -1672,8 +2229,11 @@
         "price": 2.85,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Folding Bathtub",
@@ -1681,8 +2241,11 @@
         "price": 6.79,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Hunting Knife",
@@ -1690,8 +2253,11 @@
         "price": 2.35,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Waterproof Blanket (58 x 96 Inches)",
@@ -1699,8 +2265,11 @@
         "price": 5.06,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Heavy 2-Blade Pocket Knife",
@@ -1708,8 +2277,11 @@
         "price": 1.2,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Folding Camp Bed",
@@ -1717,8 +2289,11 @@
         "price": 3.65,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Hand Axe",
@@ -1726,8 +2301,11 @@
         "price": 0.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Carbide Lamp (300\\u2019 Beam)",
@@ -1735,8 +2313,11 @@
         "price": 2.59,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Small Live Animal Trap",
@@ -1744,8 +2325,11 @@
         "price": 2.48,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Can of Carbide (Two Pounds)",
@@ -1753,8 +2337,11 @@
         "price": 0.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Coil Spring Animal Trap",
@@ -1762,8 +2349,11 @@
         "price": 5.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Searchlight",
@@ -1771,8 +2361,11 @@
         "price": 5.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Bear Trap",
@@ -1780,8 +2373,11 @@
         "price": 11.43,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Gasoline Lantern (Built-in Pump)",
@@ -1789,8 +2385,11 @@
         "price": 6.59,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Collapsible Fishing Rod and Tackle Se",
@@ -1798,8 +2397,11 @@
         "price": 9.35,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Kerosene Lantern",
@@ -1807,8 +2409,11 @@
         "price": 1.39,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Hemp Twine",
@@ -1816,8 +2421,11 @@
         "price": 0.27,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Dark Lantern",
@@ -1825,8 +2433,11 @@
         "price": 1.68,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Pedometer",
@@ -1834,8 +2445,11 @@
         "price": 1.7,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Electric Torch",
@@ -1843,8 +2457,11 @@
         "price": 2.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Heavy Canvas Shoulder Bag",
@@ -1852,8 +2469,11 @@
         "price": 3.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Batterie",
@@ -1861,8 +2481,11 @@
         "price": 0.6,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Pen Light",
@@ -1870,8 +2493,11 @@
         "price": 1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Make-up Kit",
@@ -1879,8 +2505,11 @@
         "price": 4.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Men\\u2019s Toilet Set (10 pieces)",
@@ -1888,8 +2517,11 @@
         "price": 9.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Women\\u2019s Toilet Set (15 pieces)",
@@ -1897,8 +2529,11 @@
         "price": 22.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Hair Colorator",
@@ -1906,8 +2541,11 @@
         "price": 0.79,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Curling Iron, Wavette",
@@ -1915,8 +2553,11 @@
         "price": 2.19,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Hair Brush",
@@ -1924,8 +2565,11 @@
         "price": 0.89,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Hair net, Zephyr (4)",
@@ -1933,8 +2577,11 @@
         "price": 0.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Mouthwash, Listerine",
@@ -1942,8 +2589,11 @@
         "price": 0.79,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Shampoo, Coconut Oil",
@@ -1951,8 +2601,11 @@
         "price": 0.5,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Soap (12 Cakes)",
@@ -1960,8 +2613,11 @@
         "price": 1.39,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Talcum powder",
@@ -1969,8 +2625,11 @@
         "price": 0.19,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Toothpaste, Pepsodent",
@@ -1978,8 +2637,11 @@
         "price": 0.39,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Country House (13 Rooms, 2 Barns)",
@@ -1987,8 +2649,11 @@
         "price": 20000,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Large House (10 Rooms)",
@@ -1996,8 +2661,11 @@
         "price": 7000,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "House (6 Rooms)",
@@ -2005,8 +2673,11 @@
         "price": 4000,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Average House (8 Rooms)",
@@ -2014,8 +2685,11 @@
         "price": 2900,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bungalow (4 Rooms)",
@@ -2023,8 +2697,11 @@
         "price": 3100,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "The Clyde (6 Rooms)",
@@ -2032,8 +2709,11 @@
         "price": 1175,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "The Columbine (8 Rooms)",
@@ -2041,8 +2721,11 @@
         "price": 2135,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "The Honor (9 Rooms)",
@@ -2050,8 +2733,11 @@
         "price": 3278,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "The Atlanta(24 Apartment Rooms)",
@@ -2059,8 +2745,11 @@
         "price": 4492,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "First Class (One\\u2013way)",
@@ -2068,8 +2757,11 @@
         "price": 120,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "First Class (Round-trip)",
@@ -2077,8 +2769,11 @@
         "price": 200,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Steerage",
@@ -2086,8 +2781,11 @@
         "price": 35,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "4-Man Hot Air Balloon",
@@ -2095,8 +2793,11 @@
         "price": 1800,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Streetcar Fare",
@@ -2104,8 +2805,11 @@
         "price": 0.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bus Fare",
@@ -2113,8 +2817,11 @@
         "price": 0.05,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Rotgut Gin (Shot)",
@@ -2122,8 +2829,11 @@
         "price": 0.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cocktail",
@@ -2131,8 +2841,11 @@
         "price": 0.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Wine (Glass)",
@@ -2140,8 +2853,11 @@
         "price": 0.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Beer (Glass)",
@@ -2149,8 +2865,11 @@
         "price": 0.2,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Whiskey (Glass)",
@@ -2158,8 +2877,11 @@
         "price": 0.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Coca-Cola (12 oz.)",
@@ -2167,8 +2889,11 @@
         "price": 0.05,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "150 Clay Marbles",
@@ -2176,8 +2901,11 @@
         "price": 0.15,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "25 Glass Marbles",
@@ -2185,8 +2913,11 @@
         "price": 0.33,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Baseball Mitt",
@@ -2194,8 +2925,11 @@
         "price": 5.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Baseball Bat",
@@ -2203,8 +2937,11 @@
         "price": 1.3,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Baseball Catcher's Pads & Mask Set",
@@ -2212,8 +2949,11 @@
         "price": 14.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Baseball",
@@ -2221,8 +2961,11 @@
         "price": 0.55,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Basketball",
@@ -2230,8 +2973,11 @@
         "price": 6.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Rugby Football",
@@ -2239,8 +2985,11 @@
         "price": 4.15,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Roller Skates",
@@ -2248,8 +2997,11 @@
         "price": 1.65,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Tennis Racket & Balls (3-pack)",
@@ -2257,8 +3009,11 @@
         "price": 4.82,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Beginner Golf Set w/ Bag",
@@ -2266,8 +3021,11 @@
         "price": 9.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Pro Steel Golf Club",
@@ -2275,8 +3033,11 @@
         "price": 6.15,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "6.15 /S 60m",
@@ -2284,8 +3045,11 @@
         "price": 5.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Boxing Gloves",
@@ -2293,8 +3057,11 @@
         "price": 3.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Dumbbells five pound (Pair)",
@@ -2302,8 +3069,11 @@
         "price": 1.68,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bamboo Vaulting Pole 12 foot",
@@ -2311,8 +3081,11 @@
         "price": 7.4,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Playing Cards",
@@ -2320,8 +3093,11 @@
         "price": 0.59,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Ouija Board",
@@ -2329,8 +3105,11 @@
         "price": 0.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Dominoes",
@@ -2338,8 +3117,11 @@
         "price": 0.59,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Chess Set",
@@ -2347,8 +3129,11 @@
         "price": 1.39,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bicycle",
@@ -2356,8 +3141,11 @@
         "price": 23.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Croquet Set",
@@ -2365,8 +3153,11 @@
         "price": 2.3,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Billiard Cue",
@@ -2374,8 +3165,11 @@
         "price": 1.99,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Mahjong Set",
@@ -2383,8 +3177,11 @@
         "price": 1.8,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "7 x 7 foot Tent",
@@ -2392,8 +3189,11 @@
         "price": 11.48,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "12 x 16 foot Tent",
@@ -2401,8 +3201,11 @@
         "price": 28.15,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "16 x 24 foot Tent",
@@ -2410,8 +3213,11 @@
         "price": 53.48,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "24 x 36 foot Tarpaulin",
@@ -2419,8 +3225,11 @@
         "price": 39.35,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "7 x 7 foot Car Tent",
@@ -2428,8 +3237,11 @@
         "price": 12.8,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "13.5 inch Iron Tent Stakes (Dozen",
@@ -2437,8 +3249,11 @@
         "price": 1.15,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Auto Bed",
@@ -2446,8 +3261,11 @@
         "price": 8.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Canteen (1 Quart)",
@@ -2455,8 +3273,11 @@
         "price": 1.69,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Insulated Tank (5 Gallons)",
@@ -2464,8 +3285,11 @@
         "price": 3.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Water Bag (1 Gallon) ",
@@ -2473,8 +3297,11 @@
         "price": 0.8,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Water Bag (2 Gallon) ",
@@ -2482,8 +3309,11 @@
         "price": 1.04,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Water Bag (5 Gallon) ",
@@ -2491,8 +3321,11 @@
         "price": 2.06,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Tool Outfit (40 Tools)",
@@ -2500,8 +3333,11 @@
         "price": 14.9,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Hand Drill (Plus 8 Bits)",
@@ -2509,8 +3345,11 @@
         "price": 6.15,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Large Steel Pulley",
@@ -2518,8 +3357,11 @@
         "price": 1.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Padlock",
@@ -2527,8 +3369,11 @@
         "price": 0.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Rope (50 Feet)",
@@ -2536,8 +3381,11 @@
         "price": 8.6,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Light Chain (per Foot)",
@@ -2545,8 +3393,11 @@
         "price": 0.1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Watchmaker\\u2019s Tool Kit",
@@ -2554,8 +3405,11 @@
         "price": 7.74,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Crowbar",
@@ -2563,8 +3417,11 @@
         "price": 2.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Handsaw",
@@ -2572,8 +3429,11 @@
         "price": 1.65,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Gasoline Blowtorch",
@@ -2581,8 +3441,11 @@
         "price": 4.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Electricians Gloves",
@@ -2590,8 +3453,11 @@
         "price": 1.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Lineman's Tool Belt & Safety Strap",
@@ -2599,8 +3465,11 @@
         "price": 3.33,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Lineman's Climbers",
@@ -2608,8 +3477,11 @@
         "price": 2.52,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Jewelers 48-Piece Tool Set",
@@ -2617,8 +3489,11 @@
         "price": 15.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Rotary Tool Grinder",
@@ -2626,8 +3501,11 @@
         "price": 6.9,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Waterproof Match Case",
@@ -2635,8 +3513,11 @@
         "price": 0.48,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Steel Row Boat (Seats 4)",
@@ -2644,8 +3525,11 @@
         "price": 35.2,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Shovel",
@@ -2653,8 +3537,11 @@
         "price": 0.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "2 HP Motor for Row Boats",
@@ -2662,8 +3549,11 @@
         "price": 79.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Home Tool Set in Box",
@@ -2671,8 +3561,11 @@
         "price": 14.9,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Canvas and Wood Canoe",
@@ -2680,8 +3573,11 @@
         "price": 75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "50 Miles",
@@ -2689,8 +3585,11 @@
         "price": 2,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "100 Miles",
@@ -2698,8 +3597,11 @@
         "price": 3,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "500 Miles",
@@ -2707,8 +3609,11 @@
         "price": 6,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Norton Motorcycle",
@@ -2716,8 +3621,11 @@
         "price": 95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Buick Model D-45",
@@ -2725,8 +3633,11 @@
         "price": 1020,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cadillac Type 55",
@@ -2734,8 +3645,11 @@
         "price": 2240,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Chevrolet Capitol",
@@ -2743,8 +3657,11 @@
         "price": 695,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Chrysler Model F-58",
@@ -2752,8 +3669,11 @@
         "price": 1045,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Dodge Model S/1",
@@ -2761,8 +3681,11 @@
         "price": 985,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Duesenberg J",
@@ -2770,8 +3693,11 @@
         "price": 20000,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Ford Model T",
@@ -2779,8 +3705,11 @@
         "price": 360,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Ford Model A",
@@ -2788,8 +3717,11 @@
         "price": 450,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Hudson Super Six Series J",
@@ -2797,8 +3729,11 @@
         "price": 1750,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Oldsmobile 43-AT",
@@ -2806,8 +3741,11 @@
         "price": 1345,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Packard Twin Six Touring",
@@ -2815,8 +3753,11 @@
         "price": 2950,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Pierce-Arrow",
@@ -2824,8 +3765,11 @@
         "price": 6000,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Pontiac 6-28 Sedan",
@@ -2833,8 +3777,11 @@
         "price": 745,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Studebaker Stnd./Dictator",
@@ -2842,8 +3789,11 @@
         "price": 995,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Chevrolet Roadster",
@@ -2851,8 +3801,11 @@
         "price": 570,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Hudson Coach (7 Passenger)",
@@ -2860,8 +3813,11 @@
         "price": 1450,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Studebaker Touring (5 Passenger)",
@@ -2869,8 +3825,11 @@
         "price": 995,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "1920 Chevrolet F.B Coupe (Used)",
@@ -2878,8 +3837,11 @@
         "price": 300,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "1917 Buick (Used)",
@@ -2887,8 +3849,11 @@
         "price": 75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Chevrolet Pickup Truck",
@@ -2896,8 +3861,11 @@
         "price": 545,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Dodge 1/2 Ton Truck",
@@ -2905,8 +3873,11 @@
         "price": 1085,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Ford Model TT Truck",
@@ -2914,8 +3885,11 @@
         "price": 490,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bentley 3-Litre, England",
@@ -2923,8 +3897,11 @@
         "price": 9000,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "BMW Dixi Germany",
@@ -2932,8 +3909,11 @@
         "price": 1225,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Citroen C3 France",
@@ -2941,8 +3921,11 @@
         "price": 800,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Hispano-Suiza Alfonso Spain",
@@ -2950,8 +3933,11 @@
         "price": 4000,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Lancia Lambda 214 Italy",
@@ -2959,8 +3945,11 @@
         "price": 4050,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Mercedes-Benz SS Germany",
@@ -2968,8 +3957,11 @@
         "price": 7750,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Renault AX France",
@@ -2977,8 +3969,11 @@
         "price": 500,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Silver Ghost",
@@ -2986,8 +3981,11 @@
         "price": 6750,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Phantom I",
@@ -2995,8 +3993,11 @@
         "price": 10800,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Tire",
@@ -3004,8 +4005,11 @@
         "price": 10.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Tire Repair Kit",
@@ -3013,8 +4017,11 @@
         "price": 0.32,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Tire Snow Chains",
@@ -3022,8 +4029,11 @@
         "price": 4.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Jack",
@@ -3031,8 +4041,11 @@
         "price": 1,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Auto Battery",
@@ -3040,8 +4053,11 @@
         "price": 14.15,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Radiator",
@@ -3049,8 +4065,11 @@
         "price": 8.69,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Replacement Headlamp",
@@ -3058,8 +4077,11 @@
         "price": 0.3,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Portable Air Pump",
@@ -3067,8 +4089,11 @@
         "price": 3.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Auto Spot Light",
@@ -3076,8 +4101,11 @@
         "price": 2.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Auto Luggage Carrier",
@@ -3085,8 +4113,11 @@
         "price": 1.35,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Chic Designer Dress",
@@ -3094,8 +4125,11 @@
         "price": 90,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Silk Crepe Frock",
@@ -3103,8 +4137,11 @@
         "price": 13.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Silk Taffeta Frock",
@@ -3112,8 +4149,11 @@
         "price": 10.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Satin Charmeuse",
@@ -3121,8 +4161,11 @@
         "price": 10.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Gingham Dress",
@@ -3130,8 +4173,11 @@
         "price": 2.59,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "French Repp Dress",
@@ -3139,8 +4185,11 @@
         "price": 10.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Pleated Skirt, silk",
@@ -3148,8 +4197,11 @@
         "price": 7.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Blouse, cotton",
@@ -3157,8 +4209,11 @@
         "price": 1.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Worsted Wool Sweater",
@@ -3166,8 +4221,11 @@
         "price": 9.48,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cotton Crepe Negligee",
@@ -3175,8 +4233,11 @@
         "price": 0.88,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Spike-heeled Parisian Shoes",
@@ -3184,8 +4245,11 @@
         "price": 4.45,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Leather One-strap Slippers",
@@ -3193,8 +4257,11 @@
         "price": 0.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Snug Velour Hat",
@@ -3202,8 +4269,11 @@
         "price": 4.44,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Satin Turban-style Hat",
@@ -3211,8 +4281,11 @@
         "price": 3.69,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Rayon Elastic Corset",
@@ -3220,8 +4293,11 @@
         "price": 2.59,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Embroidered Costume Slip",
@@ -3229,8 +4305,11 @@
         "price": 1.59,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Silk Hose (3 pairs)",
@@ -3238,8 +4317,11 @@
         "price": 2.25,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bloomers, silk",
@@ -3247,8 +4329,11 @@
         "price": 4.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Tweed Jacket, fully lined",
@@ -3256,8 +4341,11 @@
         "price": 3.95,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Velour Coat with Fur Trim",
@@ -3265,8 +4353,11 @@
         "price": 39.75,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Brown Fox Fur Coat",
@@ -3274,8 +4365,11 @@
         "price": 198,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Belted Rain Coat, cotton",
@@ -3283,8 +4377,11 @@
         "price": 3.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Belted Rain Coat, Schappe silk",
@@ -3292,8 +4389,11 @@
         "price": 8.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Silk Handbag",
@@ -3301,8 +4401,11 @@
         "price": 4.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Dress Hair Comb",
@@ -3310,8 +4413,11 @@
         "price": 0.98,
         "age": "1920's"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Khaki Jean Material",
@@ -3319,8 +4425,11 @@
         "price": 1.79,
         "age": "Outdoor Shirt"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "All Wool Tweed or Linen",
@@ -3328,8 +4437,11 @@
         "price": 2.98,
         "age": "Outdoor Shirt"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Khaki Jean Material",
@@ -3337,8 +4449,11 @@
         "price": 1.79,
         "age": "Outdoor Knee-Length Knickers"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Grey Wool Tweed",
@@ -3346,8 +4461,11 @@
         "price": 2.98,
         "age": "Outdoor Knee-Length Knickers"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "White Linen",
@@ -3355,8 +4473,11 @@
         "price": 2.98,
         "age": "Outdoor Knee-Length Knickers"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Khaki Leggings (Ankle to knee)",
@@ -3364,8 +4485,11 @@
         "price": 0.98,
         "age": "Outdoor Knee-Length Knickers"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Outdoor Boots",
@@ -3373,8 +4497,11 @@
         "price": 2.59,
         "age": "Outdoor Knee-Length Knickers"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bathing Suit",
@@ -3382,8 +4509,11 @@
         "price": 4.95,
         "age": "Outdoor Knee-Length Knickers"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bathing Cap",
@@ -3391,8 +4521,11 @@
         "price": 0.4,
         "age": "Outdoor Knee-Length Knickers"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Canvas Bathing Shoes",
@@ -3400,8 +4533,11 @@
         "price": 0.54,
         "age": "Outdoor Knee-Length Knickers"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Shoes, Pumps",
@@ -3409,8 +4545,11 @@
         "price": 1.29,
         "age": "Outdoor Knee-Length Knickers"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Air Travel ticket price (per 10 Miles)",
@@ -3418,8 +4557,11 @@
         "price": 9.8,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Air Travel international (per 100 Miles",
@@ -3427,8 +4569,11 @@
         "price": 28,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Local Telephone Service",
@@ -3436,8 +4581,11 @@
         "price": 20,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cordless Phone",
@@ -3445,8 +4593,11 @@
         "price": 50,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cell Phone",
@@ -3454,8 +4605,11 @@
         "price": 50,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cheap PC System",
@@ -3463,8 +4617,11 @@
         "price": 100,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Laptop",
@@ -3472,8 +4629,11 @@
         "price": 400,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Good PC System",
@@ -3481,8 +4641,11 @@
         "price": 1500,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Good Laptop",
@@ -3490,8 +4653,11 @@
         "price": 1300,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Tablet",
@@ -3499,8 +4665,11 @@
         "price": 400,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Email Monitoring Software",
@@ -3508,8 +4677,11 @@
         "price": 200,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "CB Radio w/Police Scanner",
@@ -3517,8 +4689,11 @@
         "price": 90,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Three-band Walkie Talkie",
@@ -3526,8 +4701,11 @@
         "price": 35,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Radar Scanner",
@@ -3535,8 +4713,11 @@
         "price": 40,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "35mm SLR Digital Camera",
@@ -3544,8 +4725,11 @@
         "price": 450,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Pocket One-use Camera",
@@ -3553,8 +4737,11 @@
         "price": 10,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Metal Detector",
@@ -3562,8 +4749,11 @@
         "price": 240,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Geiger Counter",
@@ -3571,8 +4761,11 @@
         "price": 400,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Motion Detector Alarm Set",
@@ -3580,8 +4773,11 @@
         "price": 200,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Wireless Perimeter Alarm",
@@ -3589,8 +4785,11 @@
         "price": 260,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Telephonic Voice Changer",
@@ -3598,8 +4797,11 @@
         "price": 60,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Pen Camcorder",
@@ -3607,8 +4809,11 @@
         "price": 250,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Telephone Bug Detector",
@@ -3616,8 +4821,11 @@
         "price": 400,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Bug Sweep Kit",
@@ -3625,8 +4833,11 @@
         "price": 900,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Body Worn Spy Camera",
@@ -3634,8 +4845,11 @@
         "price": 200,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Covert Digital Recorder",
@@ -3643,8 +4857,11 @@
         "price": 300,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Listening Device",
@@ -3652,8 +4869,11 @@
         "price": 200,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Night Vision Goggles",
@@ -3661,8 +4881,11 @@
         "price": 600,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Plasma Television",
@@ -3670,8 +4893,11 @@
         "price": 1000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "3D Television",
@@ -3679,8 +4905,11 @@
         "price": 2000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Movie Ticket",
@@ -3688,8 +4917,11 @@
         "price": 10,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Popular Concert Ticket",
@@ -3697,8 +4929,11 @@
         "price": 50,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Pro Football Ticket (Bad Seat)",
@@ -3706,8 +4941,11 @@
         "price": 55,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Ballet Ticket (Bad Seat)",
@@ -3715,8 +4953,11 @@
         "price": 65,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Economy Motel",
@@ -3724,8 +4965,11 @@
         "price": 40,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Average Hotel",
@@ -3733,8 +4977,11 @@
         "price": 90,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Average Hotel Per week (with Service)",
@@ -3742,8 +4989,11 @@
         "price": 500,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Good Hotel",
@@ -3751,8 +5001,11 @@
         "price": 200,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Grand Hotel",
@@ -3760,8 +5013,11 @@
         "price": 600,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "House (Rent per Year)",
@@ -3769,8 +5025,11 @@
         "price": 20000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Apartment (Rent per Week)",
@@ -3778,8 +5037,11 @@
         "price": 350,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Carryon Upright (5 Lbs.)",
@@ -3787,8 +5049,11 @@
         "price": 90,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Good Book Bag (15 oz.)",
@@ -3796,8 +5061,11 @@
         "price": 60,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Duffel Bag (5 Lbs.)",
@@ -3805,8 +5073,11 @@
         "price": 30,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Medical Case",
@@ -3814,8 +5085,11 @@
         "price": 100,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Disposable Respirator",
@@ -3823,8 +5097,11 @@
         "price": 30,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Complete First Aid Kit",
@@ -3832,8 +5109,11 @@
         "price": 60,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Emergency Burn Kit",
@@ -3841,8 +5121,11 @@
         "price": 160,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Portable Oxygen Unit",
@@ -3850,8 +5133,11 @@
         "price": 70,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Tailored Silk Suit",
@@ -3859,8 +5145,11 @@
         "price": 1000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Wool Pinstripe Suit",
@@ -3868,8 +5157,11 @@
         "price": 350,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Rayon-blend 2-piece Suit",
@@ -3877,8 +5169,11 @@
         "price": 200,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Baggy Jogging Suit",
@@ -3886,8 +5181,11 @@
         "price": 50,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Leather Bomber Jacket",
@@ -3895,8 +5193,11 @@
         "price": 200,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Trench-coat leather",
@@ -3904,8 +5205,11 @@
         "price": 250,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Oversized Twill Shirt",
@@ -3913,8 +5217,11 @@
         "price": 35,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Double-pleated Pants",
@@ -3922,8 +5229,11 @@
         "price": 36,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Crew Neck Cotton Sweater",
@@ -3931,8 +5241,11 @@
         "price": 35,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Nylon Swim Trunks",
@@ -3940,8 +5253,11 @@
         "price": 15,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Pocket Vest",
@@ -3949,8 +5265,11 @@
         "price": 60,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bulletproof Vest",
@@ -3958,8 +5277,11 @@
         "price": 600,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Good Hiking Boots",
@@ -3967,8 +5289,11 @@
         "price": 200,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Jeans",
@@ -3976,8 +5301,11 @@
         "price": 40,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Leather Docksider Shoes",
@@ -3985,8 +5313,11 @@
         "price": 50,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cross-trainer Shoes",
@@ -3994,8 +5325,11 @@
         "price": 100,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Silk Tie",
@@ -4003,8 +5337,11 @@
         "price": 35,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Thermal Underwear",
@@ -4012,8 +5349,11 @@
         "price": 15,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "BMW Motorcycle",
@@ -4021,8 +5361,11 @@
         "price": 23000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Ducati Streetfighter Motorcycle",
@@ -4030,8 +5373,11 @@
         "price": 13000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Rolls Royce Ghost Sedan",
@@ -4039,8 +5385,11 @@
         "price": 260000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Aston Martin DB9",
@@ -4048,8 +5397,11 @@
         "price": 200500,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Cadillac SUV",
@@ -4057,8 +5409,11 @@
         "price": 62000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "BMW 1 Series",
@@ -4066,8 +5421,11 @@
         "price": 38000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Chevrolet Corvette (Convertible)",
@@ -4075,8 +5433,11 @@
         "price": 54000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Dodge SUV",
@@ -4084,8 +5445,11 @@
         "price": 33000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Toyota Prius",
@@ -4093,8 +5457,11 @@
         "price": 27000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Ford Focus",
@@ -4102,8 +5469,11 @@
         "price": 16500,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "4-person Cook Set",
@@ -4111,8 +5481,11 @@
         "price": 25,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Propane Camp Stove",
@@ -4120,8 +5493,11 @@
         "price": 60,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Portable Chemical Toilet",
@@ -4129,8 +5505,11 @@
         "price": 110,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Poly/Cotton Sleeping Bag",
@@ -4138,8 +5517,11 @@
         "price": 30,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "\\u201cSurvival\\u201d Knife",
@@ -4147,8 +5529,11 @@
         "price": 65,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Swiss Army Knife",
@@ -4156,8 +5541,11 @@
         "price": 30,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Machete cheap",
@@ -4165,8 +5553,11 @@
         "price": 20,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "10.5mm Dry Rope (50 m)",
@@ -4174,8 +5565,11 @@
         "price": 250,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "G.P.S Handheld",
@@ -4183,8 +5577,11 @@
         "price": 260,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Climbing Gear (1 person)",
@@ -4192,8 +5589,11 @@
         "price": 2000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Touring Kayak (1 person)",
@@ -4201,8 +5601,11 @@
         "price": 1000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Scuba Gear good",
@@ -4210,8 +5613,11 @@
         "price": 2500,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Signal Gun",
@@ -4219,8 +5625,11 @@
         "price": 100,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Polar Sleeping Bag",
@@ -4228,8 +5637,11 @@
         "price": 200,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Stabilized Binoculars",
@@ -4237,8 +5649,11 @@
         "price": 1300,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "6-watt Fluorescent Lamp",
@@ -4246,8 +5661,11 @@
         "price": 30,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Sea Voyage First Class (One-way)",
@@ -4255,8 +5673,11 @@
         "price": 3500,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Sea Voyage Standard Class (One-way)",
@@ -4264,8 +5685,11 @@
         "price": 1600,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Sea Voyage Freight",
@@ -4273,8 +5697,11 @@
         "price": 1400,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "3-room Family Tent",
@@ -4282,8 +5709,11 @@
         "price": 70,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "3 person Geodesic Tent",
@@ -4291,8 +5721,11 @@
         "price": 300,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Winnebago RV",
@@ -4300,8 +5733,11 @@
         "price": 120000,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Electrical Generator (1500 Watts)",
@@ -4309,8 +5745,11 @@
         "price": 200,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Mechanic\\u2019s Tool Chest (255 pc.)",
@@ -4318,8 +5757,11 @@
         "price": 500,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "60-gallon Air Compressor",
@@ -4327,8 +5769,11 @@
         "price": 600,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Welder\\u2019s Kit",
@@ -4336,8 +5781,11 @@
         "price": 1400,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 4,
       "properties": {
         "title": "Lock-picking Tools",
@@ -4345,8 +5793,11 @@
         "price": 90,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Train Fares 50 Miles",
@@ -4354,8 +5805,11 @@
         "price": 6.25,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Train Fares 100 Miles",
@@ -4363,8 +5817,11 @@
         "price": 12.5,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Train Fares 500 Miles",
@@ -4372,8 +5829,11 @@
         "price": 62.5,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Designer Dress worn once",
@@ -4381,8 +5841,11 @@
         "price": 500,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Fine Silk Side-drape Dress",
@@ -4390,8 +5853,11 @@
         "price": 400,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Acrylic 2-piece Dress",
@@ -4399,8 +5865,11 @@
         "price": 150,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Woven Rayon Coat Dress",
@@ -4408,8 +5877,11 @@
         "price": 90,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Dacron Pleat-front Pants",
@@ -4417,8 +5889,11 @@
         "price": 25,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Stonewashed Jeans",
@@ -4426,8 +5901,11 @@
         "price": 35,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Leather Motorcycle Jacket",
@@ -4435,8 +5913,11 @@
         "price": 260,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Button Polo Sweater",
@@ -4444,8 +5925,11 @@
         "price": 35,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Wool-blend Swing Coat",
@@ -4453,8 +5937,11 @@
         "price": 190,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Fashion Print Challis Skirt",
@@ -4462,8 +5949,11 @@
         "price": 50,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Fashion Pumps",
@@ -4471,8 +5961,11 @@
         "price": 100,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Fashion Boots",
@@ -4480,8 +5973,11 @@
         "price": 160,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Good Hiking Boots",
@@ -4489,8 +5985,11 @@
         "price": 200,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Shoulder Bag",
@@ -4498,8 +5997,11 @@
         "price": 350,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Spandex Bicycle Shorts",
@@ -4507,8 +6009,11 @@
         "price": 20,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Pocket Vest",
@@ -4516,8 +6021,11 @@
         "price": 60,
         "age": "Modern Day"
       }
-    },
-    {
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
       "category": 2,
       "properties": {
         "title": "Bulletproof Vest",
@@ -4526,4 +6034,5 @@
         "age": "Modern Day"
       }
     }
-  ]
+  }
+]

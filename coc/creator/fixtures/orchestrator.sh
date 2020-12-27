@@ -25,7 +25,7 @@ echo "[INFO] Input  password for root user..."
 python3 $COC_PATH changepassword root
 
 echo "[INFO] Apply project migrations..."
-python3 $COC_PATH makemigrations creator market
+python3 $COC_PATH makemigrations creator
 python3 $COC_PATH migrate
 
 echo "[INFO] Loading core entities..."
