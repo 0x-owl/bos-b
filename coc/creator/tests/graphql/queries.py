@@ -635,19 +635,19 @@ query{{
 """
 
 create_mania = """
-mutation{{
+mutation{
   maniaMutate(
-    input:{{
+    input:{
       method: "CREATE",
       title: "test-mania",
       description: "sample description"
-    }}){{
-      mania{{
+    }){
+      mania{
         uuid
         title
-      }}
-    }}
-}}
+      }
+    }
+}
 """
 
 edit_mania = """
@@ -713,19 +713,19 @@ query{{
 """
 
 create_phobia = """
-mutation{{
+mutation{
   phobiaMutate(
-    input:{{
+    input:{
       method: "CREATE",
       title: "test-phobia",
       description: "sample description"
-    }}){{
-      phobia{{
+    }){
+      phobia{
         uuid
         title
-      }}
-    }}
-}}
+      }
+    }
+}
 """
 
 edit_phobia = """
