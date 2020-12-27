@@ -14,7 +14,7 @@ from creator.helpers.model_helpers import renamer, roller_stats
 User = get_user_model()
 
 # Create your models here.
-class BaseModel(BaseModel):
+class BaseModel(Model):
     uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     created = DateTimeField(auto_now_add=True)
     modified = DateTimeField(default=None)

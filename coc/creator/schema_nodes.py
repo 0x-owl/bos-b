@@ -155,8 +155,7 @@ class CampaignInvNode(DjangoObjectType):
         filter_fields = {
             'uuid': ['exact'],
             'campaign': ['exact'],
-            'investigator': ['exact'],
-            'timestamp': ['icontains', 'istartswith']
+            'investigator': ['exact']
         }
         interfaces = (relay.Node, )
 
@@ -179,8 +178,7 @@ class DiaryInvNode(DjangoObjectType):
         filter_fields = {
             'uuid': ['exact'],
             'investigator': ['exact'],
-            'title': ['exact', 'icontains', 'istartswith'],
-            'timestamp': ['icontains', 'istartswith']
+            'title': ['exact', 'icontains', 'istartswith']
         }
         interfaces = (relay.Node, )
 
@@ -205,7 +203,6 @@ class GameNode(DjangoObjectType):
             'user__username': ['exact', 'istartswith'],
             'user__id': ['exact'],
             'title': ['exact', 'icontains', 'istartswith'],
-            'game_type': ['exact'],
-            'timestamp': ['icontains', 'istartswith']
+            'game_type': ['exact']
         }
         interfaces = (relay.Node, )
