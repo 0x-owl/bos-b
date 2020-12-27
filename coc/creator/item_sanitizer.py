@@ -18,13 +18,12 @@ environ.setdefault("INSTALLED_APPS", str(APPS))
 app = get_wsgi_application()
 
 
-from coc.creator.models import Item
-from coc.creator.constants import ITEM_CATEGORIES
+from creator.models import Item
+from creator.constants import ITEM_CATEGORIES
 from json import dumps
 
 
 def fixture_creator(item):
-    age = item.description.splite(' - ')[-1]
     item = {
         "model": "creator.Item",
         "fields": {
@@ -43,9 +42,9 @@ categories = dict(ITEM_CATEGORIES)
 items = Item.objects.all()
 
 for category in categories:
-    items = Item.objects.filter(category=category)
+    items = list(Item.objects.filter(category=category))
     if items:
-        with open(f'items_{categories[category].lower()}.json', 'w') as fixture:
+        with open(f'coc/creator/fixtures/items/items_{categories[category].lower()}.json', 'w') as fixture:
             fixture.write('[\n')
             last_item = items.pop(-1)
             for item in items:
