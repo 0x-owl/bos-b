@@ -530,11 +530,8 @@ query{{
         suggestedContacts,
         creditRatingMin,
         creditRatingMax,
-        id,
-        user{{
-          id,
-          username
-        }}
+        skills,
+        points
       }}
     }}
   }}
@@ -542,27 +539,30 @@ query{{
 """
 
 create_occ = """
-mutation{{
+mutation{
   occupationMutate(
-    input:{{
+    input:{
       method: "CREATE",
       title:"test-occuation-create",
-      user:1,
       description:"Created occupation",
       suggestedContacts:"test",
       creditRatingMin:20,
-      creditRatingMax:40
-    }}){{
-    occupation{{
+      creditRatingMax:40,
+      skills: "{\\"test_skill\\": {\\"test\\": \\"test2\\"}}",
+      points: "{\\"test_points\\": {\\"points\\": \\"points2\\"}}"
+    }){
+    occupation{
       uuid,
       title,
       description,
       suggestedContacts,
       creditRatingMin,
-      creditRatingMax
-    }}
-  }}
-}}
+      creditRatingMax,
+      skills,
+      points
+    }
+  }
+}
 """
 
 edit_occ = """
@@ -571,7 +571,6 @@ mutation{{
     input:{{
       method: "UPDATE",
       uuid: "{uuid}",
-      user: 1,
       title: "Test-2",
       description: "Update test",
       suggestedContacts: "test, test2",
@@ -585,10 +584,6 @@ mutation{{
       suggestedContacts,
       creditRatingMin,
       creditRatingMax,
-      user{{
-        id,
-        username
-      }}
     }}
   }}
 }}
@@ -599,8 +594,7 @@ mutation{{
   occupationMutate(
     input:{{
       method: "DELETE",
-      uuid: "{uuid}",
-      user: 1
+      uuid: "{uuid}"
     }}){{
     occupation{{
       uuid,

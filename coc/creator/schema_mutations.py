@@ -90,6 +90,8 @@ class OccupationMutation(ClientIDMutation):
         suggested_contacts = String()
         credit_rating_min = Float()
         credit_rating_max = Float()
+        skills = JSONString()
+        points = JSONString()
 
     @classmethod
     def mutate(cls, *args, **kwargs):
