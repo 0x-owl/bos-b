@@ -1,6 +1,6 @@
 from os import environ
 from random import choice
-
+from json import loads
 from requests import session
 
 
@@ -73,16 +73,31 @@ class GraphTest:
         edge_name = kwargs['query_edge_name']
         node_name = kwargs['node_name']
         mutation_name = kwargs['mutation_edge_name']
-        data, status = self.run_query(kwargs['create_query'].format(
-            **kwargs['extras']))
+        
+        query = kwargs['create_query']
+        if kwargs['extras']:
+            query.format(**kwargs['extras'])
+        data, status = self.run_query(query)
         assert status == 200
         node_uuid = data[mutation_name][node_name]['uuid']
         # Update node
-        data, status = self.run_query(kwargs['edit_query'].format(
-            uuid=node_uuid, **kwargs['extras']))
+        query = kwargs['edit_query']
+        if kwargs['extras']:
+            query.format(**kwargs['extras'])
+        data, status = self.run_query(query.format(uuid=node_uuid))
         assert status == 200
         node = data[kwargs['mutation_edge_name']][node_name]
-        assert node[kwargs['edition_key']] == kwargs['value_key']
+ 
+        if '-' in kwargs['edition_key']:
+            # this means is a nested key inside a json field
+            parts = kwargs['edition_key'].split('-')
+            chunk = ''
+            last_chunk = parts.pop(-1)
+            for part in parts:
+                chunk = loads(node[part])
+            assert chunk[last_chunk] == kwargs['value_key']
+        else:
+            assert node[kwargs['edition_key']] == kwargs['value_key']
         # Clean the db from the generated test node
         data, status = self.run_query(kwargs['delete_query'].format(
             uuid=node_uuid, **kwargs['extras']))

@@ -29,8 +29,8 @@ def mutation_flow(mutation, model, method, input_, field):
             else:
                 log.error('Two or more entities have the same uuid!')
                 ret = mutation(**{field: mutations.first()})
-    else:
-        mutate = model(**input_)
+    else: 
+        mutate = model(**input_) 
         mutate.save()
         ret = mutation(**{field: mutate})
 

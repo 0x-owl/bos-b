@@ -374,11 +374,9 @@ one_item = """
   allItems(uuid: "{uuid}"){{
     edges{{
       node{{
-        title,
-        price,
-        description,
-        itemType,
-        id
+        uuid,
+        category,
+        properties
       }}
     }}
   }}
@@ -389,54 +387,46 @@ search_item = """
 {{
   item(id: "{uuid}"){{
     uuid,
-    title,
-    price,
-    description,
-    itemType
+    category,
+    properties {{
+      title,
+      price,
+      description
+    }}
   }}
 }}
 """
 
 create_item = """
-mutation{{
+mutation{
   itemMutate(
-    input:{{
-      user: 1,
+    input:{
       method: "CREATE",
-      title: "test-item-create",
-      itemType: 2,
-      description: "Created item",
-      price: 25.6
-    }}){{
-    item{{
+      category: 2,
+      properties: "{\\"title\\": \\"test-item-create\\",\\"description\\": \\"Created item\\",\\"price\\": 25.6}"
+    }){
+    item{
       uuid,
-      title,
-      itemType,
-      description,
-      price
-    }}
-  }}
-}}
+      category,
+      properties
+    }
+  }
+}
 """
 
 edit_item = """
 mutation{{
   itemMutate(
       input:{{
-        user: 1,
         method: "UPDATE",
         uuid: "{uuid}",
-        title: "Test-2",
-        description: "TestUpdate",
-        itemType: 4,
-        price: 5
+        category: 4,
+        properties: "{{\\"title\\": \\"Test-2\\", \\"description\\": \\"TestUpdate\\"}}"
       }}){{
     item{{
       uuid,
-      title,
-      itemType,
-      description,
-      price
+      category,
+      properties
     }}
   }}
 }}
@@ -446,16 +436,13 @@ delete_item = """
 mutation{{
   itemMutate(
       input:{{
-        user: 1,
         method: "DELETE",
         uuid: "{uuid}"
       }}){{
     item{{
       uuid,
-      title,
-      itemType,
-      description,
-      price
+      category,
+      properties
     }}
   }}
 }}
@@ -642,105 +629,6 @@ mutation{{
       suggestedContacts,
       creditRatingMin,
       creditRatingMax
-    }}
-  }}
-}}
-"""
-
-
-# Weapons
-
-all_weapons = """
-query{
-  allWeapons{
-    edges{
-      node{
-        uuid
-      }
-    }
-  }
-}
-"""
-
-one_weapon = """
-{{
-  allWeapons(uuid: "{uuid}"){{
-    edges{{
-      node{{
-        title,
-        price,
-        description,
-        itemType,
-        id,
-        damage
-      }}
-    }}
-  }}
-}}
-"""
-
-create_weapon = """
-mutation{{
-  weaponMutate(
-    input:{{
-      user: 1,
-      method: "CREATE",
-      title: "test-weapon-create",
-      itemType: 3,
-      description: "Created weapon",
-      price: 25.6,
-      damage: "1d6",
-      malFunction: 100,
-      baseRange: "100ft"
-    }}){{
-    weapon{{
-      uuid,
-      title,
-      itemType,
-      description,
-      price,
-      damage
-    }}
-  }}
-}}
-"""
-
-edit_weapon = """
-mutation{{
-  weaponMutate(
-      input:{{
-        user: 1,
-        method: "UPDATE",
-        uuid: "{uuid}",
-        title: "Test-2",
-        description: "TestUpdate",
-        price: 5
-      }}){{
-    weapon{{
-      uuid,
-      title,
-      itemType,
-      description,
-      price
-    }}
-  }}
-}}
-"""
-
-delete_weapon = """
-mutation{{
-  weaponMutate(
-      input:{{
-        user: 1,
-        method: "DELETE",
-        uuid: "{uuid}"
-      }}){{
-    weapon{{
-      uuid,
-      title,
-      itemType,
-      description,
-      price
     }}
   }}
 }}

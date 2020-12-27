@@ -12,7 +12,7 @@ from creator.tests.graphql.queries import (all_attrs_inv, all_campaigns_inv,
                                            all_phobias, all_phobias_inv,
                                            all_skills, all_skills_inv,
                                            all_spells, all_tags, all_tags_inv,
-                                           all_weapons, create_attr_inv,
+                                           create_attr_inv,
                                            create_campaign_inv,
                                            create_diary_inv, create_game,
                                            create_inventory_inv,
@@ -22,7 +22,7 @@ from creator.tests.graphql.queries import (all_attrs_inv, all_campaigns_inv,
                                            create_phobia_inv, create_skill,
                                            create_skill_inv, create_spell,
                                            create_tag, create_tag_inv,
-                                           create_weapon, delete_attr_inv,
+                                           delete_attr_inv,
                                            delete_campaign_inv,
                                            delete_diary_inv, delete_game,
                                            delete_inventory_inv,
@@ -32,7 +32,7 @@ from creator.tests.graphql.queries import (all_attrs_inv, all_campaigns_inv,
                                            delete_phobia_inv, delete_skill,
                                            delete_skill_inv, delete_spell,
                                            delete_tag, delete_tag_inv,
-                                           delete_weapon, edit_attr_inv,
+                                           edit_attr_inv,
                                            edit_campaign_inv, edit_diary_inv,
                                            edit_game, edit_inventory_inv,
                                            edit_investigator, edit_item,
@@ -40,14 +40,14 @@ from creator.tests.graphql.queries import (all_attrs_inv, all_campaigns_inv,
                                            edit_occ, edit_phobia,
                                            edit_phobia_inv, edit_skill,
                                            edit_skill_inv, edit_spell,
-                                           edit_tag, edit_tag_inv, edit_weapon,
+                                           edit_tag, edit_tag_inv,
                                            one_attr_inv, one_campaign_inv,
                                            one_diary_inv, one_game,
                                            one_inventory_inv, one_investigator,
                                            one_item, one_mania, one_mania_inv,
                                            one_occ, one_phobia, one_phobia_inv,
                                            one_skill, one_skill_inv, one_spell,
-                                           one_tag, one_tag_inv, one_weapon)
+                                           one_tag, one_tag_inv)
 
 from creator.tests.graphql.constants import GraphTest
 
@@ -168,45 +168,7 @@ class TestItemQuery(GraphTest):
             query_edge_name="allItems",
             mutation_edge_name="itemMutate",
             node_name="item",
-            edition_key="description",
-            value_key="TestUpdate",
-            extras={}
-        )
-
-
-class TestWeaponQuery(GraphTest):
-    """Test class that encapsulates all weapons graphql query tests."""
-    def test_items_query_node(self):
-        """Test acquisitions of a full list of weapons or by a single uuid.
-        """
-        # Build content and content tag to be looked for
-        res = self.batch_instance_builder({
-            'weapon': {'query': create_weapon}
-        })
-        weapon_uuid = res['weapon']
-
-        assert self.full_research_test(
-            all_weapons, one_weapon, 'allWeapons'
-        )
-
-        # clean up auxiliar entities
-        self.batch_instance_cleaner([
-            (delete_weapon, {'uuid': weapon_uuid})
-        ])
-
-    def test_weapon_full_mutation(self):
-        """This tests creates, updates and finally deletes a weapon
-        through the graphql queries.
-        """
-        assert self.full_mutation_test(
-            create_query=create_weapon,
-            edit_query=edit_weapon,
-            delete_query=delete_weapon,
-            one_query=one_weapon,
-            query_edge_name="allWeapons",
-            mutation_edge_name="weaponMutate",
-            node_name="weapon",
-            edition_key="description",
+            edition_key="properties-description",
             value_key="TestUpdate",
             extras={}
         )

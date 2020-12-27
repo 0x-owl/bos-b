@@ -68,8 +68,6 @@ class ItemMutation(ClientIDMutation):
             Input class (title, user).
         """
         input_ = kwargs.get('input')
-        usr = User.objects.get(pk=input_['user'])
-        input_['user'] = usr
         method = input_.pop('method')
         ret = mutation_flow(
             ItemMutation,
