@@ -35,7 +35,7 @@
                     Credit Rating Min: {{res.investigator.occupation.credit_rating_min}}<br>
                     Credit Rating Max: {{res.investigator.occupation.credit_rating_max}}<br>
                 </div>
-                <div class="column column-offset-50">   
+                <div class="column column-offset-25">   
                     <img style="height: 200px; width: 200px" src="{{res.portrait }}" alt="Investigator portrait">
                 </div>
             </div>
@@ -310,8 +310,8 @@
                         <tbody>
                             {% for gear in res.gear %}
                                 <tr>
-                                    <td>{{gear.item.title}}</td>
-                                    <td>{{gear.item.price}}</td>
+                                    <td>{{gear.item.properties.title}}</td>
+                                    <td>{{gear.item.properties.price}}</td>
                                     <td>{{gear.stock}}</td>
                                 </tr>
                             {% endfor %}

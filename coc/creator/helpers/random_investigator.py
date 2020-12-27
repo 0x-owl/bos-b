@@ -146,7 +146,7 @@ def random_inv():
     # Assign a weapon
     # Create an inventory
     # assign random items (consumables or tools)
-    items = Item.objects.filter(item_category=[2, 4])
+    items = Item.objects.filter(category__in=[2, 4])
     for _ in range(5):
         inventory = Inventory(
             investigator=inv,

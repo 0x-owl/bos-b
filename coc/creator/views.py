@@ -39,11 +39,11 @@ def get_investigator_data(request, inv):
 
     # Retrieve "inventory"
     weapons = Inventory.objects.filter(
-        investigator=investigator, item__item_type = 3)
+        investigator=investigator, item__category = 3)
 
     items = Inventory.objects.filter(
         investigator=investigator,
-        item__item_type__in=[2,4]
+        item__category__in=[2,4]
     )
     res['gear'] = items
     # Retrieve manias and phobias
@@ -58,7 +58,7 @@ def get_investigator_data(request, inv):
     # Retrieve arcane
     artifacts = Inventory.objects.filter(
         investigator=investigator,
-        item__item_type=1
+        item__category=1
 
     )
     spells = SpellInvestigator.objects.filter(
