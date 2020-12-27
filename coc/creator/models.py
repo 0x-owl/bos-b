@@ -1,3 +1,5 @@
+import django
+
 from uuid import uuid4
 
 from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
@@ -9,16 +11,15 @@ from django.contrib.auth import get_user_model
 
 from creator.constants import GAME_TYPE, GENDER, ITEM_CATEGORIES, SPELL_CATEGORIES
 from creator.helpers.model_helpers import renamer, roller_stats
-from django.utils.timezone import now
 
 User = get_user_model()
 
 # Create your models here.
 class BaseModel(Model):
     uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
-    created = DateTimeField(default=now())
-    modified = DateTimeField(default=None)
-    deleted = DateTimeField(default=None)
+    created = DateTimeField(default=django.utils.timezone.now, editable=False)
+    modified = DateTimeField(auto_now=True, null=True)
+    deleted = DateTimeField(default=None, null=True)
 
     class Meta:
         abstract=True
