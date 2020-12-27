@@ -322,7 +322,8 @@ mutation{{
     tagMutate(
         input: {{
             uuid: "{uuid}",
-            method: "DELETE"
+            method: "DELETE",
+            user: 1
           }}){{
         tag{{
             uuid,
