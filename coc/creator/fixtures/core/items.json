@@ -1,0 +1,4529 @@
+[
+    {
+      "category": 2,
+      "properties": {
+        "title": "Air Travel Av Ticket Price (per 10 Miles)",
+        "description": "Air Travel - 1920's",
+        "price": 2,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Air Travel International (per 100 Miles)",
+        "description": "Air Travel - 1920's",
+        "price": 18,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Surplus Trainer Biplane",
+        "description": "Air Travel - 1920's",
+        "price": 300,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Travel Air 2000 Biplane",
+        "description": "Air Travel - 1920's",
+        "price": 3000,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Telegraph Outfit",
+        "description": "Communications - 1920's",
+        "price": 4.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Newspaper",
+        "description": "Communications - 1920's",
+        "price": 0.05,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Desk Phone (Bridging Type)",
+        "description": "Communications - 1920's",
+        "price": 15.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "For 12 Words",
+        "description": "Communications - 1920's",
+        "price": 0.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Postcard",
+        "description": "Communications - 1920's",
+        "price": 0.2,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Per Additional Word",
+        "description": "Communications - 1920's",
+        "price": 0.02,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "International per Word",
+        "description": "Communications - 1920's",
+        "price": 1.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Postage per Ounce / 16m",
+        "description": "Communications - 1920's",
+        "price": 0.02,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "College Tuition (Semester)",
+        "description": "Education - 1920's",
+        "price": 480,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Student Room & Board (Year)",
+        "description": "Education - 1920's",
+        "price": 520,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Text Books (Semester)",
+        "description": "Education - 1920's",
+        "price": 30,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Movie Ticket Seated",
+        "description": "Entertainment - 1920's",
+        "price": 0.15,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Professional Baseball Ticket",
+        "description": "Entertainment - 1920's",
+        "price": 1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Concert Hall Public Seating",
+        "description": "Entertainment - 1920's",
+        "price": 4,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Concert Hall Box",
+        "description": "Entertainment - 1920's",
+        "price": 10,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "4-string Jazz Banjo",
+        "description": "Entertainment - 1920's",
+        "price": 7.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Brass Saxophone",
+        "description": "Entertainment - 1920's",
+        "price": 69.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cabinet Phonograph",
+        "description": "Entertainment - 1920's",
+        "price": 98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Phonograph Records",
+        "description": "Entertainment - 1920's",
+        "price": 0.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Film 24 Exposures",
+        "description": "Entertainment - 1920's",
+        "price": 0.38,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Film Developing Kit",
+        "description": "Entertainment - 1920's",
+        "price": 4.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Kodak Folding No.1 Camera",
+        "description": "Entertainment - 1920's",
+        "price": 28,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Eastman Commercial Camera",
+        "description": "Entertainment - 1920's",
+        "price": 140,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Movie Camera & Projector",
+        "description": "Entertainment - 1920's",
+        "price": 335,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Portable Radio Receiver",
+        "description": "Entertainment - 1920's",
+        "price": 65,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Accordion",
+        "description": "Entertainment - 1920's",
+        "price": 8.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Ukulele (Kit)",
+        "description": "Entertainment - 1920's",
+        "price": 2.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Guitar (Kit)",
+        "description": "Entertainment - 1920's",
+        "price": 9.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Violin (Kit)",
+        "description": "Entertainment - 1920's",
+        "price": 14.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Army Bugle",
+        "description": "Entertainment - 1920's",
+        "price": 3.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Parlor Organ",
+        "description": "Entertainment - 1920's",
+        "price": 127,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Player Piano",
+        "description": "Entertainment - 1920's",
+        "price": 447,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bacon, sugar cured /lb",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Beef, Pot Roast /l",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bologna & Frankfurters /l",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.19,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Butter, Brookfield Creamery /l",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.43,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Carrots /bunc",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cookies, Fig Bars /l",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Corn",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Eggs /doze",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.13,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Ham, smoked calf /lb",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.13,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Lamb, Leg /lb",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.4,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Lard, Swift's Pure /l",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.17,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Lettuce",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Oil, Olive, Imported /half gallo",
+        "description": "Food & Beverages - 1920's",
+        "price": 2.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Peaches /basket ",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.15,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Oranges /doze",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Town Peas /2 quart",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Potatoes /4 quart",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Prunes, California /2 lb",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.24,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Rice /3 lb",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.2,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Tomatoes /no 2 ca",
+        "description": "Food & Beverages - 1920's",
+        "price": 0.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Lamp Glass Shade",
+        "description": "Furniture - 1920's",
+        "price": 5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Dinnerware 52 Pieces",
+        "description": "Furniture - 1920's",
+        "price": 19.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Refrigerator",
+        "description": "Furniture - 1920's",
+        "price": 49.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Gas Range",
+        "description": "Furniture - 1920's",
+        "price": 77,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Vacuum cleaner",
+        "description": "Furniture - 1920's",
+        "price": 48,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Washing machine",
+        "description": "Furniture - 1920's",
+        "price": 125,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bedroom Set walnut finish",
+        "description": "Furniture - 1920's",
+        "price": 199,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Rocking Chair",
+        "description": "Furniture - 1920's",
+        "price": 25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Desk",
+        "description": "Furniture - 1920's",
+        "price": 80,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Dining Room Set walnut finish",
+        "description": "Furniture - 1920's",
+        "price": 295,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Living Room Setupholstered mohair",
+        "description": "Furniture - 1920's",
+        "price": 395,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Rug oriental",
+        "description": "Furniture - 1920's",
+        "price": 50,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Fan 'G-E Whiz'",
+        "description": "Household Goods - 1920's",
+        "price": 10,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Hard Rubber Syringe",
+        "description": "Household Goods - 1920's",
+        "price": 0.69,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bed Pan",
+        "description": "Household Goods - 1920's",
+        "price": 1.79,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Wheel Chair",
+        "description": "Household Goods - 1920's",
+        "price": 39.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Maple Crutches",
+        "description": "Household Goods - 1920's",
+        "price": 1.59,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Adhesive Plaster",
+        "description": "Household Goods - 1920's",
+        "price": 0.29,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Metal Arch Supports",
+        "description": "Household Goods - 1920's",
+        "price": 1.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Leather Ankle Supports (Pair)",
+        "description": "Household Goods - 1920's",
+        "price": 0.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Average Hotel",
+        "description": "Lodging - 1920's",
+        "price": 4.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Average Hotel (With Service, Per Week)",
+        "description": "Lodging - 1920's",
+        "price": 10,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Good Hotel",
+        "description": "Lodging - 1920's",
+        "price": 9,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Good Hotel (With Service, Per Week)",
+        "description": "Lodging - 1920's",
+        "price": 24,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Luxury Hotel",
+        "description": "Lodging - 1920's",
+        "price": 30,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "YMCA, Furnished Room",
+        "description": "Lodging - 1920's",
+        "price": 5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "House (Rent per Year)",
+        "description": "Lodging - 1920's",
+        "price": 1000,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "House (Rent per Month)",
+        "description": "Lodging - 1920's",
+        "price": 55,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Summer House (Rent for Season)",
+        "description": "Lodging - 1920's",
+        "price": 350,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Flat (Rent per Week)",
+        "description": "Lodging - 1920's",
+        "price": 12.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Apartment, Average (Rent per Week)",
+        "description": "Lodging - 1920's",
+        "price": 10,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Apartment, Good (Rent per Week)",
+        "description": "Lodging - 1920's",
+        "price": 40,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Handle Bag (8 Lbs.)",
+        "description": "Luggage - 1920's",
+        "price": 7.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Suitcase (15 Lbs.)",
+        "description": "Luggage - 1920's",
+        "price": 9.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Steamer Trunk (55 Lbs.)",
+        "description": "Luggage - 1920's",
+        "price": 12,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Wardrobe Trunk (95 Lbs.)",
+        "description": "Luggage - 1920's",
+        "price": 54.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Wardrobe Trunk (115 Lbs.)",
+        "description": "Luggage - 1920's",
+        "price": 79.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Luggage, black patent leather",
+        "description": "Luggage - 1920's",
+        "price": 12.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Chicken, Dinner /perso",
+        "description": "Meals out - 1920's",
+        "price": 2.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Breakfast",
+        "description": "Meals out - 1920's",
+        "price": 0.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Lunch",
+        "description": "Meals out - 1920's",
+        "price": 0.65,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Dinner",
+        "description": "Meals out - 1920's",
+        "price": 1.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Aspirin (12 Pills)",
+        "description": "Medical Equipment - 1920's",
+        "price": 0.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Epsom Salts /l",
+        "description": "Medical Equipment - 1920's",
+        "price": 0.09,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Indigestion Medicine",
+        "description": "Medical Equipment - 1920's",
+        "price": 0.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Laxative Nature's Remedy",
+        "description": "Medical Equipment - 1920's",
+        "price": 0.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Medical Case",
+        "description": "Medical Equipment - 1920's",
+        "price": 10.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Forceps",
+        "description": "Medical Equipment - 1920's",
+        "price": 3.59,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Scalpel Set",
+        "description": "Medical Equipment - 1920's",
+        "price": 1.39,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Hypodermic Syringes",
+        "description": "Medical Equipment - 1920's",
+        "price": 12.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Atomizer",
+        "description": "Medical Equipment - 1920's",
+        "price": 1.39,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Gauze Bandages (Five Yards)",
+        "description": "Medical Equipment - 1920's",
+        "price": 0.69,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Clinical Thermometer",
+        "description": "Medical Equipment - 1920's",
+        "price": 0.69,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Alcohol (Half-gallon)",
+        "description": "Medical Equipment - 1920's",
+        "price": 0.2,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Oxford Dress Shoes",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 6.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Lace-bottom Breeches",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 4.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Leather Work Shoes",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 4.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Slacks, white flannel",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 8,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Shirt, percale",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 1.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Broadcloth Dress Shirt",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 1.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Men\\u2019s Clothing Shaker Sweater",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 7.69,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Worsted Wool Dress Suit",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 17.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Wool Golf Cap",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 0.79,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cashmere Dress Suit",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 18.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Straw Hat",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 1.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Suit, mohair",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 13.85,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Padded Leather Football Helmet",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 3.65,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Corduroy Norfolk Suit",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 9.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Sweatshirt",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 0.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Union suit, Forest Mills",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 0.69,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Sealskin Fur Cap",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 16.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Outdoor Coat",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 35,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Silk Four-in-hand Tie",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 0.96,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Dog Fur Overcoat",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 37.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Necktie, silk",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 0.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Chesterfield Overcoat",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 19.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Batwing Bow Tie",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 0.55,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Felt Fedora",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 4.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Sock Garters",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 0.39,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cotton Union Suit",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 1.48,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cufflinks",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 0.4,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Leather Belt",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 1.35,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Suspenders",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 0.79,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Hiking Boots",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 7.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Shoes with cleats",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 5.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bathing Suit",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 3.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Canvas Bathing Shoes",
+        "description": "Men\\u2019s Clothing - 1920's",
+        "price": 0.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Handcuffs",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 3.35,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Extra Handcuff Key",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 0.28,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Police Whistle",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 0.3,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Dictaphone",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 39.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Wire Recorder",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 129.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Wristwatch",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 5.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Gold Pocket Watch",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 35.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Self-filling Fountain Pen",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 1.8,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Mechanical Pencil",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 0.85,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Writing Tablet",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 0.2,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Straightjacket",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 9.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Sketch Pad",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 0.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Harris Typewrite",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 66.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Complete Diving Suit",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 1200,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Remington Typewriter",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 40,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Pocket Microscope",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 0.58,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "110x Desk Microscope",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 17.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Floor Safe (3-Foot high, 950 Lbs.)",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 62.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Turkish Water Pipe",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 0.99,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Cigarettes (per Pack)",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 0.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Umbrella",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 1.79,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Box of Cigars",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 2.29,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Unabridged Dictionary",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 6.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "10-volume Encyclopedia",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 49,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Wet Sponge Respirator",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 1.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "3-Lens Pocket Magnifying Glass (7x to 30x)",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 1.68,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Bible",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 3.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Briefcase",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 1.48,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Globe on Stand",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 9.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Folding Writing Desk",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 16.65,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Glass-Door Oak Bookcase (200 Book)",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 24.65,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Baby Buggy",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 34.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Watchmaker's Eye Glass",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 0.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Chemical Fire Extinguisher",
+        "description": "Miscellaneous Investigator Tools - 1920's",
+        "price": 13.85,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Flare (Disposable)",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 0.27,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Telescope",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 3.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Field Glasses (3x to 6x)",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 23,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Cooking Kit",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 8.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Binoculars",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 28.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Camp Stove",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 6.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Jeweled Compass",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 3.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Vacuum Bottle",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 0.89,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Compass with Lid",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 2.85,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Folding Bathtub",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 6.79,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Hunting Knife",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 2.35,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Waterproof Blanket (58 x 96 Inches)",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 5.06,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Heavy 2-Blade Pocket Knife",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 1.2,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Folding Camp Bed",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 3.65,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Hand Axe",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 0.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Carbide Lamp (300\\u2019 Beam)",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 2.59,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Small Live Animal Trap",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 2.48,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Can of Carbide (Two Pounds)",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 0.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Coil Spring Animal Trap",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 5.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Searchlight",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 5.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Bear Trap",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 11.43,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Gasoline Lantern (Built-in Pump)",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 6.59,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Collapsible Fishing Rod and Tackle Se",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 9.35,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Kerosene Lantern",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 1.39,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Hemp Twine",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 0.27,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Dark Lantern",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 1.68,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Pedometer",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 1.7,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Electric Torch",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 2.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Heavy Canvas Shoulder Bag",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 3.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Batterie",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 0.6,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Pen Light",
+        "description": "Outdoor & Travel Gear - 1920's",
+        "price": 1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Make-up Kit",
+        "description": "Personal Care - 1920's",
+        "price": 4.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Men\\u2019s Toilet Set (10 pieces)",
+        "description": "Personal Care - 1920's",
+        "price": 9.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Women\\u2019s Toilet Set (15 pieces)",
+        "description": "Personal Care - 1920's",
+        "price": 22.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Hair Colorator",
+        "description": "Personal Care - 1920's",
+        "price": 0.79,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Curling Iron, Wavette",
+        "description": "Personal Care - 1920's",
+        "price": 2.19,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Hair Brush",
+        "description": "Personal Care - 1920's",
+        "price": 0.89,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Hair net, Zephyr (4)",
+        "description": "Personal Care - 1920's",
+        "price": 0.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Mouthwash, Listerine",
+        "description": "Personal Care - 1920's",
+        "price": 0.79,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Shampoo, Coconut Oil",
+        "description": "Personal Care - 1920's",
+        "price": 0.5,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Soap (12 Cakes)",
+        "description": "Personal Care - 1920's",
+        "price": 1.39,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Talcum powder",
+        "description": "Personal Care - 1920's",
+        "price": 0.19,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Toothpaste, Pepsodent",
+        "description": "Personal Care - 1920's",
+        "price": 0.39,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Country House (13 Rooms, 2 Barns)",
+        "description": "Real Estate - 1920's",
+        "price": 20000,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Large House (10 Rooms)",
+        "description": "Real Estate - 1920's",
+        "price": 7000,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "House (6 Rooms)",
+        "description": "Real Estate - 1920's",
+        "price": 4000,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Average House (8 Rooms)",
+        "description": "Real Estate - 1920's",
+        "price": 2900,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bungalow (4 Rooms)",
+        "description": "Real Estate - 1920's",
+        "price": 3100,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "The Clyde (6 Rooms)",
+        "description": "Real Estate - 1920's",
+        "price": 1175,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "The Columbine (8 Rooms)",
+        "description": "Real Estate - 1920's",
+        "price": 2135,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "The Honor (9 Rooms)",
+        "description": "Real Estate - 1920's",
+        "price": 3278,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "The Atlanta(24 Apartment Rooms)",
+        "description": "Real Estate - 1920's",
+        "price": 4492,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "First Class (One\\u2013way)",
+        "description": "Sea Voyage (U.S / England) - 1920's",
+        "price": 120,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "First Class (Round-trip)",
+        "description": "Sea Voyage (U.S / England) - 1920's",
+        "price": 200,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Steerage",
+        "description": "Sea Voyage (U.S / England) - 1920's",
+        "price": 35,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "4-Man Hot Air Balloon",
+        "description": "Sea Voyage (U.S / England) - 1920's",
+        "price": 1800,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Streetcar Fare",
+        "description": "Sea Voyage (U.S / England) - 1920's",
+        "price": 0.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bus Fare",
+        "description": "Sea Voyage (U.S / England) - 1920's",
+        "price": 0.05,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Rotgut Gin (Shot)",
+        "description": "Speakeasy Prices - 1920's",
+        "price": 0.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cocktail",
+        "description": "Speakeasy Prices - 1920's",
+        "price": 0.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Wine (Glass)",
+        "description": "Speakeasy Prices - 1920's",
+        "price": 0.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Beer (Glass)",
+        "description": "Speakeasy Prices - 1920's",
+        "price": 0.2,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Whiskey (Glass)",
+        "description": "Speakeasy Prices - 1920's",
+        "price": 0.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Coca-Cola (12 oz.)",
+        "description": "Speakeasy Prices - 1920's",
+        "price": 0.05,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "150 Clay Marbles",
+        "description": "Sports & Games - 1920's",
+        "price": 0.15,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "25 Glass Marbles",
+        "description": "Sports & Games - 1920's",
+        "price": 0.33,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Baseball Mitt",
+        "description": "Sports & Games - 1920's",
+        "price": 5.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Baseball Bat",
+        "description": "Sports & Games - 1920's",
+        "price": 1.3,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Baseball Catcher's Pads & Mask Set",
+        "description": "Sports & Games - 1920's",
+        "price": 14.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Baseball",
+        "description": "Sports & Games - 1920's",
+        "price": 0.55,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Basketball",
+        "description": "Sports & Games - 1920's",
+        "price": 6.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Rugby Football",
+        "description": "Sports & Games - 1920's",
+        "price": 4.15,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Roller Skates",
+        "description": "Sports & Games - 1920's",
+        "price": 1.65,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Tennis Racket & Balls (3-pack)",
+        "description": "Sports & Games - 1920's",
+        "price": 4.82,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Beginner Golf Set w/ Bag",
+        "description": "Sports & Games - 1920's",
+        "price": 9.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Pro Steel Golf Club",
+        "description": "Sports & Games - 1920's",
+        "price": 6.15,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "6.15 /S 60m",
+        "description": "Sports & Games - 1920's",
+        "price": 5.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Boxing Gloves",
+        "description": "Sports & Games - 1920's",
+        "price": 3.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Dumbbells five pound (Pair)",
+        "description": "Sports & Games - 1920's",
+        "price": 1.68,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bamboo Vaulting Pole 12 foot",
+        "description": "Sports & Games - 1920's",
+        "price": 7.4,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Playing Cards",
+        "description": "Sports & Games - 1920's",
+        "price": 0.59,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Ouija Board",
+        "description": "Sports & Games - 1920's",
+        "price": 0.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Dominoes",
+        "description": "Sports & Games - 1920's",
+        "price": 0.59,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Chess Set",
+        "description": "Sports & Games - 1920's",
+        "price": 1.39,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bicycle",
+        "description": "Sports & Games - 1920's",
+        "price": 23.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Croquet Set",
+        "description": "Sports & Games - 1920's",
+        "price": 2.3,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Billiard Cue",
+        "description": "Sports & Games - 1920's",
+        "price": 1.99,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Mahjong Set",
+        "description": "Sports & Games - 1920's",
+        "price": 1.8,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "7 x 7 foot Tent",
+        "description": "Tents - 1920's",
+        "price": 11.48,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "12 x 16 foot Tent",
+        "description": "Tents - 1920's",
+        "price": 28.15,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "16 x 24 foot Tent",
+        "description": "Tents - 1920's",
+        "price": 53.48,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "24 x 36 foot Tarpaulin",
+        "description": "Tents - 1920's",
+        "price": 39.35,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "7 x 7 foot Car Tent",
+        "description": "Tents - 1920's",
+        "price": 12.8,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "13.5 inch Iron Tent Stakes (Dozen",
+        "description": "Tents - 1920's",
+        "price": 1.15,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Auto Bed",
+        "description": "Tents - 1920's",
+        "price": 8.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Canteen (1 Quart)",
+        "description": "Tents - 1920's",
+        "price": 1.69,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Insulated Tank (5 Gallons)",
+        "description": "Tents - 1920's",
+        "price": 3.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Water Bag (1 Gallon) ",
+        "description": "Tents - 1920's",
+        "price": 0.8,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Water Bag (2 Gallon) ",
+        "description": "Tents - 1920's",
+        "price": 1.04,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Water Bag (5 Gallon) ",
+        "description": "Tents - 1920's",
+        "price": 2.06,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Tool Outfit (40 Tools)",
+        "description": "Tools - 1920's",
+        "price": 14.9,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Hand Drill (Plus 8 Bits)",
+        "description": "Tools - 1920's",
+        "price": 6.15,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Large Steel Pulley",
+        "description": "Tools - 1920's",
+        "price": 1.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Padlock",
+        "description": "Tools - 1920's",
+        "price": 0.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Rope (50 Feet)",
+        "description": "Tools - 1920's",
+        "price": 8.6,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Light Chain (per Foot)",
+        "description": "Tools - 1920's",
+        "price": 0.1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Watchmaker\\u2019s Tool Kit",
+        "description": "Tools - 1920's",
+        "price": 7.74,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Crowbar",
+        "description": "Tools - 1920's",
+        "price": 2.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Handsaw",
+        "description": "Tools - 1920's",
+        "price": 1.65,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Gasoline Blowtorch",
+        "description": "Tools - 1920's",
+        "price": 4.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Electricians Gloves",
+        "description": "Tools - 1920's",
+        "price": 1.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Lineman's Tool Belt & Safety Strap",
+        "description": "Tools - 1920's",
+        "price": 3.33,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Lineman's Climbers",
+        "description": "Tools - 1920's",
+        "price": 2.52,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Jewelers 48-Piece Tool Set",
+        "description": "Tools - 1920's",
+        "price": 15.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Rotary Tool Grinder",
+        "description": "Tools - 1920's",
+        "price": 6.9,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Waterproof Match Case",
+        "description": "Tools - 1920's",
+        "price": 0.48,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Steel Row Boat (Seats 4)",
+        "description": "Tools - 1920's",
+        "price": 35.2,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Shovel",
+        "description": "Tools - 1920's",
+        "price": 0.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "2 HP Motor for Row Boats",
+        "description": "Tools - 1920's",
+        "price": 79.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Home Tool Set in Box",
+        "description": "Tools - 1920's",
+        "price": 14.9,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Canvas and Wood Canoe",
+        "description": "Tools - 1920's",
+        "price": 75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "50 Miles",
+        "description": "Train Fares - 1920's",
+        "price": 2,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "100 Miles",
+        "description": "Train Fares - 1920's",
+        "price": 3,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "500 Miles",
+        "description": "Train Fares - 1920's",
+        "price": 6,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Norton Motorcycle",
+        "description": "Transport - 1920's",
+        "price": 95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Buick Model D-45",
+        "description": "Transport - 1920's",
+        "price": 1020,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cadillac Type 55",
+        "description": "Transport - 1920's",
+        "price": 2240,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Chevrolet Capitol",
+        "description": "Transport - 1920's",
+        "price": 695,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Chrysler Model F-58",
+        "description": "Transport - 1920's",
+        "price": 1045,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Dodge Model S/1",
+        "description": "Transport - 1920's",
+        "price": 985,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Duesenberg J",
+        "description": "Transport - 1920's",
+        "price": 20000,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Ford Model T",
+        "description": "Transport - 1920's",
+        "price": 360,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Ford Model A",
+        "description": "Transport - 1920's",
+        "price": 450,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Hudson Super Six Series J",
+        "description": "Transport - 1920's",
+        "price": 1750,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Oldsmobile 43-AT",
+        "description": "Transport - 1920's",
+        "price": 1345,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Packard Twin Six Touring",
+        "description": "Transport - 1920's",
+        "price": 2950,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Pierce-Arrow",
+        "description": "Transport - 1920's",
+        "price": 6000,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Pontiac 6-28 Sedan",
+        "description": "Transport - 1920's",
+        "price": 745,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Studebaker Stnd./Dictator",
+        "description": "Transport - 1920's",
+        "price": 995,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Chevrolet Roadster",
+        "description": "Transport - 1920's",
+        "price": 570,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Hudson Coach (7 Passenger)",
+        "description": "Transport - 1920's",
+        "price": 1450,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Studebaker Touring (5 Passenger)",
+        "description": "Transport - 1920's",
+        "price": 995,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "1920 Chevrolet F.B Coupe (Used)",
+        "description": "Transport - 1920's",
+        "price": 300,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "1917 Buick (Used)",
+        "description": "Transport - 1920's",
+        "price": 75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Chevrolet Pickup Truck",
+        "description": "Transport - 1920's",
+        "price": 545,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Dodge 1/2 Ton Truck",
+        "description": "Transport - 1920's",
+        "price": 1085,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Ford Model TT Truck",
+        "description": "Transport - 1920's",
+        "price": 490,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bentley 3-Litre, England",
+        "description": "Non-U.S Vehicles - 1920's",
+        "price": 9000,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "BMW Dixi Germany",
+        "description": "Non-U.S Vehicles - 1920's",
+        "price": 1225,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Citroen C3 France",
+        "description": "Non-U.S Vehicles - 1920's",
+        "price": 800,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Hispano-Suiza Alfonso Spain",
+        "description": "Non-U.S Vehicles - 1920's",
+        "price": 4000,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Lancia Lambda 214 Italy",
+        "description": "Non-U.S Vehicles - 1920's",
+        "price": 4050,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Mercedes-Benz SS Germany",
+        "description": "Non-U.S Vehicles - 1920's",
+        "price": 7750,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Renault AX France",
+        "description": "Non-U.S Vehicles - 1920's",
+        "price": 500,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Silver Ghost",
+        "description": "Non-U.S Vehicles - 1920's",
+        "price": 6750,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Phantom I",
+        "description": "Non-U.S Vehicles - 1920's",
+        "price": 10800,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Tire",
+        "description": "Vehicle Accessories - 1920's",
+        "price": 10.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Tire Repair Kit",
+        "description": "Vehicle Accessories - 1920's",
+        "price": 0.32,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Tire Snow Chains",
+        "description": "Vehicle Accessories - 1920's",
+        "price": 4.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Jack",
+        "description": "Vehicle Accessories - 1920's",
+        "price": 1,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Auto Battery",
+        "description": "Vehicle Accessories - 1920's",
+        "price": 14.15,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Radiator",
+        "description": "Vehicle Accessories - 1920's",
+        "price": 8.69,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Replacement Headlamp",
+        "description": "Vehicle Accessories - 1920's",
+        "price": 0.3,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Portable Air Pump",
+        "description": "Vehicle Accessories - 1920's",
+        "price": 3.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Auto Spot Light",
+        "description": "Vehicle Accessories - 1920's",
+        "price": 2.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Auto Luggage Carrier",
+        "description": "Vehicle Accessories - 1920's",
+        "price": 1.35,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Chic Designer Dress",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 90,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Silk Crepe Frock",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 13.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Silk Taffeta Frock",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 10.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Satin Charmeuse",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 10.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Gingham Dress",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 2.59,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "French Repp Dress",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 10.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Pleated Skirt, silk",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 7.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Blouse, cotton",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 1.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Worsted Wool Sweater",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 9.48,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cotton Crepe Negligee",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 0.88,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Spike-heeled Parisian Shoes",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 4.45,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Leather One-strap Slippers",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 0.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Snug Velour Hat",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 4.44,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Satin Turban-style Hat",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 3.69,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Rayon Elastic Corset",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 2.59,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Embroidered Costume Slip",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 1.59,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Silk Hose (3 pairs)",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 2.25,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bloomers, silk",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 4.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Tweed Jacket, fully lined",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 3.95,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Velour Coat with Fur Trim",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 39.75,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Brown Fox Fur Coat",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 198,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Belted Rain Coat, cotton",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 3.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Belted Rain Coat, Schappe silk",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 8.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Silk Handbag",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 4.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Dress Hair Comb",
+        "description": "Women\\u2019s Clothing - 1920's",
+        "price": 0.98,
+        "age": "1920's"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Khaki Jean Material",
+        "description": "Women\\u2019s Clothing - Outdoor Shirt",
+        "price": 1.79,
+        "age": "Outdoor Shirt"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "All Wool Tweed or Linen",
+        "description": "Women\\u2019s Clothing - Outdoor Shirt",
+        "price": 2.98,
+        "age": "Outdoor Shirt"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Khaki Jean Material",
+        "description": "Women\\u2019s Clothing - Outdoor Knee-Length Knickers",
+        "price": 1.79,
+        "age": "Outdoor Knee-Length Knickers"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Grey Wool Tweed",
+        "description": "Women\\u2019s Clothing - Outdoor Knee-Length Knickers",
+        "price": 2.98,
+        "age": "Outdoor Knee-Length Knickers"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "White Linen",
+        "description": "Women\\u2019s Clothing - Outdoor Knee-Length Knickers",
+        "price": 2.98,
+        "age": "Outdoor Knee-Length Knickers"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Khaki Leggings (Ankle to knee)",
+        "description": "Women\\u2019s Clothing - Outdoor Knee-Length Knickers",
+        "price": 0.98,
+        "age": "Outdoor Knee-Length Knickers"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Outdoor Boots",
+        "description": "Women\\u2019s Clothing - Outdoor Knee-Length Knickers",
+        "price": 2.59,
+        "age": "Outdoor Knee-Length Knickers"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bathing Suit",
+        "description": "Women\\u2019s Clothing - Outdoor Knee-Length Knickers",
+        "price": 4.95,
+        "age": "Outdoor Knee-Length Knickers"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bathing Cap",
+        "description": "Women\\u2019s Clothing - Outdoor Knee-Length Knickers",
+        "price": 0.4,
+        "age": "Outdoor Knee-Length Knickers"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Canvas Bathing Shoes",
+        "description": "Women\\u2019s Clothing - Outdoor Knee-Length Knickers",
+        "price": 0.54,
+        "age": "Outdoor Knee-Length Knickers"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Shoes, Pumps",
+        "description": "Women\\u2019s Clothing - Outdoor Knee-Length Knickers",
+        "price": 1.29,
+        "age": "Outdoor Knee-Length Knickers"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Air Travel ticket price (per 10 Miles)",
+        "description": "Air Travel - Modern Day",
+        "price": 9.8,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Air Travel international (per 100 Miles",
+        "description": "Air Travel - Modern Day",
+        "price": 28,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Local Telephone Service",
+        "description": "Communications - Modern Day",
+        "price": 20,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cordless Phone",
+        "description": "Communications - Modern Day",
+        "price": 50,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cell Phone",
+        "description": "Communications - Modern Day",
+        "price": 50,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cheap PC System",
+        "description": "Computers - Modern Day",
+        "price": 100,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Laptop",
+        "description": "Computers - Modern Day",
+        "price": 400,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Good PC System",
+        "description": "Computers - Modern Day",
+        "price": 1500,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Good Laptop",
+        "description": "Computers - Modern Day",
+        "price": 1300,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Tablet",
+        "description": "Computers - Modern Day",
+        "price": 400,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Email Monitoring Software",
+        "description": "Computers - Modern Day",
+        "price": 200,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "CB Radio w/Police Scanner",
+        "description": "Electronics - Modern Day",
+        "price": 90,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Three-band Walkie Talkie",
+        "description": "Electronics - Modern Day",
+        "price": 35,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Radar Scanner",
+        "description": "Electronics - Modern Day",
+        "price": 40,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "35mm SLR Digital Camera",
+        "description": "Electronics - Modern Day",
+        "price": 450,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Pocket One-use Camera",
+        "description": "Electronics - Modern Day",
+        "price": 10,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Metal Detector",
+        "description": "Electronics - Modern Day",
+        "price": 240,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Geiger Counter",
+        "description": "Electronics - Modern Day",
+        "price": 400,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Motion Detector Alarm Set",
+        "description": "Electronics - Modern Day",
+        "price": 200,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Wireless Perimeter Alarm",
+        "description": "Electronics - Modern Day",
+        "price": 260,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Telephonic Voice Changer",
+        "description": "Electronics - Modern Day",
+        "price": 60,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Pen Camcorder",
+        "description": "Electronics - Modern Day",
+        "price": 250,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Telephone Bug Detector",
+        "description": "Electronics - Modern Day",
+        "price": 400,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Bug Sweep Kit",
+        "description": "Electronics - Modern Day",
+        "price": 900,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Body Worn Spy Camera",
+        "description": "Electronics - Modern Day",
+        "price": 200,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Covert Digital Recorder",
+        "description": "Electronics - Modern Day",
+        "price": 300,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Listening Device",
+        "description": "Electronics - Modern Day",
+        "price": 200,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Night Vision Goggles",
+        "description": "Electronics - Modern Day",
+        "price": 600,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Plasma Television",
+        "description": "Entertainment - Modern Day",
+        "price": 1000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "3D Television",
+        "description": "Entertainment - Modern Day",
+        "price": 2000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Movie Ticket",
+        "description": "Entertainment - Modern Day",
+        "price": 10,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Popular Concert Ticket",
+        "description": "Entertainment - Modern Day",
+        "price": 50,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Pro Football Ticket (Bad Seat)",
+        "description": "Entertainment - Modern Day",
+        "price": 55,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Ballet Ticket (Bad Seat)",
+        "description": "Entertainment - Modern Day",
+        "price": 65,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Economy Motel",
+        "description": "Lodging - Modern Day",
+        "price": 40,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Average Hotel",
+        "description": "Lodging - Modern Day",
+        "price": 90,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Average Hotel Per week (with Service)",
+        "description": "Lodging - Modern Day",
+        "price": 500,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Good Hotel",
+        "description": "Lodging - Modern Day",
+        "price": 200,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Grand Hotel",
+        "description": "Lodging - Modern Day",
+        "price": 600,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "House (Rent per Year)",
+        "description": "Lodging - Modern Day",
+        "price": 20000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Apartment (Rent per Week)",
+        "description": "Lodging - Modern Day",
+        "price": 350,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Carryon Upright (5 Lbs.)",
+        "description": "Luggage - Modern Day",
+        "price": 90,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Good Book Bag (15 oz.)",
+        "description": "Luggage - Modern Day",
+        "price": 60,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Duffel Bag (5 Lbs.)",
+        "description": "Luggage - Modern Day",
+        "price": 30,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Medical Case",
+        "description": "Medical Equipment - Modern Day",
+        "price": 100,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Disposable Respirator",
+        "description": "Medical Equipment - Modern Day",
+        "price": 30,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Complete First Aid Kit",
+        "description": "Medical Equipment - Modern Day",
+        "price": 60,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Emergency Burn Kit",
+        "description": "Medical Equipment - Modern Day",
+        "price": 160,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Portable Oxygen Unit",
+        "description": "Medical Equipment - Modern Day",
+        "price": 70,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Tailored Silk Suit",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 1000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Wool Pinstripe Suit",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 350,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Rayon-blend 2-piece Suit",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 200,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Baggy Jogging Suit",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 50,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Leather Bomber Jacket",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 200,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Trench-coat leather",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 250,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Oversized Twill Shirt",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 35,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Double-pleated Pants",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 36,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Crew Neck Cotton Sweater",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 35,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Nylon Swim Trunks",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 15,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Pocket Vest",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 60,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bulletproof Vest",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 600,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Good Hiking Boots",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 200,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Jeans",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 40,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Leather Docksider Shoes",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 50,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cross-trainer Shoes",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 100,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Silk Tie",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 35,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Thermal Underwear",
+        "description": "Men\\u2019s Clothing - Modern Day",
+        "price": 15,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "BMW Motorcycle",
+        "description": "Motor Vehicles - Modern Day",
+        "price": 23000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Ducati Streetfighter Motorcycle",
+        "description": "Motor Vehicles - Modern Day",
+        "price": 13000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Rolls Royce Ghost Sedan",
+        "description": "Motor Vehicles - Modern Day",
+        "price": 260000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Aston Martin DB9",
+        "description": "Motor Vehicles - Modern Day",
+        "price": 200500,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Cadillac SUV",
+        "description": "Motor Vehicles - Modern Day",
+        "price": 62000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "BMW 1 Series",
+        "description": "Motor Vehicles - Modern Day",
+        "price": 38000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Chevrolet Corvette (Convertible)",
+        "description": "Motor Vehicles - Modern Day",
+        "price": 54000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Dodge SUV",
+        "description": "Motor Vehicles - Modern Day",
+        "price": 33000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Toyota Prius",
+        "description": "Motor Vehicles - Modern Day",
+        "price": 27000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Ford Focus",
+        "description": "Motor Vehicles - Modern Day",
+        "price": 16500,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "4-person Cook Set",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 25,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Propane Camp Stove",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 60,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Portable Chemical Toilet",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 110,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Poly/Cotton Sleeping Bag",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 30,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "\\u201cSurvival\\u201d Knife",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 65,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Swiss Army Knife",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 30,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Machete cheap",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 20,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "10.5mm Dry Rope (50 m)",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 250,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "G.P.S Handheld",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 260,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Climbing Gear (1 person)",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 2000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Touring Kayak (1 person)",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 1000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Scuba Gear good",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 2500,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Signal Gun",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 100,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Polar Sleeping Bag",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 200,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Stabilized Binoculars",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 1300,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "6-watt Fluorescent Lamp",
+        "description": "Outdoor & Travel Gear - Modern Day",
+        "price": 30,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Sea Voyage First Class (One-way)",
+        "description": "Sea Voyage (U.S / England) - Modern Day",
+        "price": 3500,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Sea Voyage Standard Class (One-way)",
+        "description": "Sea Voyage (U.S / England) - Modern Day",
+        "price": 1600,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Sea Voyage Freight",
+        "description": "Sea Voyage (U.S / England) - Modern Day",
+        "price": 1400,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "3-room Family Tent",
+        "description": "Tents and Campers - Modern Day",
+        "price": 70,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "3 person Geodesic Tent",
+        "description": "Tents and Campers - Modern Day",
+        "price": 300,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Winnebago RV",
+        "description": "Tents and Campers - Modern Day",
+        "price": 120000,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Electrical Generator (1500 Watts)",
+        "description": "Tents and Campers - Modern Day",
+        "price": 200,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Mechanic\\u2019s Tool Chest (255 pc.)",
+        "description": "Tools - Modern Day",
+        "price": 500,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "60-gallon Air Compressor",
+        "description": "Tools - Modern Day",
+        "price": 600,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Welder\\u2019s Kit",
+        "description": "Tools - Modern Day",
+        "price": 1400,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 4,
+      "properties": {
+        "title": "Lock-picking Tools",
+        "description": "Tools - Modern Day",
+        "price": 90,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Train Fares 50 Miles",
+        "description": "Train Fares - Modern Day",
+        "price": 6.25,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Train Fares 100 Miles",
+        "description": "Train Fares - Modern Day",
+        "price": 12.5,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Train Fares 500 Miles",
+        "description": "Train Fares - Modern Day",
+        "price": 62.5,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Designer Dress worn once",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 500,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Fine Silk Side-drape Dress",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 400,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Acrylic 2-piece Dress",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 150,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Woven Rayon Coat Dress",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 90,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Dacron Pleat-front Pants",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 25,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Stonewashed Jeans",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 35,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Leather Motorcycle Jacket",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 260,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Button Polo Sweater",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 35,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Wool-blend Swing Coat",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 190,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Fashion Print Challis Skirt",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 50,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Fashion Pumps",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 100,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Fashion Boots",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 160,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Good Hiking Boots",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 200,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Shoulder Bag",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 350,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Spandex Bicycle Shorts",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 20,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Pocket Vest",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 60,
+        "age": "Modern Day"
+      }
+    },
+    {
+      "category": 2,
+      "properties": {
+        "title": "Bulletproof Vest",
+        "description": "Women\\u2019s Clothing - Modern Day",
+        "price": 600,
+        "age": "Modern Day"
+      }
+    }
+  ]
