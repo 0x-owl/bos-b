@@ -20,6 +20,9 @@ class BaseModel(Model):
     modified = DateTimeField(default=None)
     deleted = DateTimeField(default=None)
 
+    class Meta:
+        abstract=True
+
 
 class Tag(BaseModel):
     """Tag class."""
