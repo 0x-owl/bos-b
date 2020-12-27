@@ -77,6 +77,7 @@ class GraphTest:
         query = kwargs['create_query']
         if kwargs['extras']:
             query.format(**kwargs['extras'])
+        print(query)
         data, status = self.run_query(query)
         assert status == 200
         node_uuid = data[mutation_name][node_name]['uuid']
@@ -94,7 +95,10 @@ class GraphTest:
             chunk = ''
             last_chunk = parts.pop(-1)
             for part in parts:
-                chunk = loads(node[part])
+                if not isinstance(chunk, dict):
+                    chunk = loads(node[part])
+                else:
+                    chunk = chunk[part.strip()]
             assert chunk[last_chunk] == kwargs['value_key']
         else:
             assert node[kwargs['edition_key']] == kwargs['value_key']

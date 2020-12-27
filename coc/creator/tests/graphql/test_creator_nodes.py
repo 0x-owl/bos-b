@@ -106,8 +106,8 @@ class TestSkillQuery(GraphTest):
             query_edge_name="allSkills",
             mutation_edge_name="skillMutate",
             node_name="skill",
-            edition_key="title",
-            value_key="Test-2",
+            edition_key="skills-Test Skill-title",
+            value_key="test_skill2",
             extras={}
         )
 

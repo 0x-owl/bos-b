@@ -229,7 +229,7 @@ mutation{{
       method: "UPDATE",
       uuid: "{uuid}",
       year: "FutureX2",
-      skills: "{{\\"test_skill\\":{{\\"title\\": \\"test_skill2\\"}}}}"
+      skills: "{{\\"Test Skill\\":{{\\"title\\": \\"test_skill2\\"}}}}"
   }}){{
     skill{{
       uuid,

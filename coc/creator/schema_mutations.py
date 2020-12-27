@@ -118,10 +118,8 @@ class SkillMutation(ClientIDMutation):
     class Input:
         method = String()
         uuid = String()
-        user = Int()
-        title = String()
-        description = String()
-        default_value = Int()
+        year = String()
+        skills = JSONString()
 
     @classmethod
     def mutate(cls, *args, **kwargs):
@@ -132,7 +130,6 @@ class SkillMutation(ClientIDMutation):
             Input class (title, user).
         """
         input_ = kwargs.get('input')
-        input_['user'] = User.objects.filter(pk=input_.get('user')).first()
         method = input_.pop('method')
         ret = mutation_flow(
             SkillMutation,
