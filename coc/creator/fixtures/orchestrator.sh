@@ -2,7 +2,6 @@
 
 COC_PATH=$(pwd)"/coc/manage.py"
 FIXTURES_PATH=$(pwd)"/coc/creator/fixtures"
-OCC_SKILL_SCRIPT=$(pwd)"/coc/creator/helpers/scripts/occ_skill_seeder.py"
 DATABASE_PATH=$(pwd)"/coc/db.sqlite3"
 CREATOR_PATH=$(pwd)"/coc/creator/migrations"
 MARKET_PATH=$(pwd)"/coc/market/migrations"
