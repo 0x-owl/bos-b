@@ -15,7 +15,7 @@ from creator.schema_nodes import (CampaignInvNode, DiaryInvNode,
                                   TagInvNode, UserNode, UserNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
-                      relay)
+                      relay, JSONString)
 from django.contrib.auth.models import User
 
 
@@ -55,12 +55,9 @@ class ItemMutation(ClientIDMutation):
 
     class Input:
         method = String()
-        user = Int()
         uuid = String()
-        title = String()
-        item_type = Int()
-        description = String()
-        price = Float()
+        category = Int()
+        properties = JSONString()
 
     @classmethod
     def mutate(cls, *args, **kwargs):
