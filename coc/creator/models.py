@@ -17,7 +17,7 @@ User = get_user_model()
 class BaseModel(Model):
     uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     created = DateTimeField(auto_now_add=True)
-    modified = DateTimeField(default=None)
+    modified = DateTimeField(auto_now=True)
     deleted = DateTimeField(default=None)
 
     class Meta:
