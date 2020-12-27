@@ -7,7 +7,7 @@ from django.contrib.auth import get_user_model
 
 from creator.helpers.model_helpers import roller_stats
 from creator.helpers.random_name import random_names
-from creator.models import (Investigator, Occupation, Skills)
+from creator.models import (Investigator, Occupation, Skills, Inventory, Item, Weapon)
 
 
 User = get_user_model()
@@ -143,5 +143,22 @@ def random_inv():
     occ_point_assigner(proff_points, inv)
     # Assign free skill points
     free_point_assigner(inv.free_skill_points, inv)
-
+    # Assign a weapon
+    weapons = Weapon.objects.all()
+    # Create an inventory
+    # TODO: Remove after resolution of #122
+    if weapons:
+        inventory = Inventory(
+            investigator=inv,
+            item=choice(weapons)
+        )
+        inventory.save()
+    # assign random items (consumables or tools)
+    items = Item.objects.filter(item_type__in=[2, 4])
+    for _ in range(5):
+        inventory = Inventory(
+            investigator=inv,
+            item=choice(items)
+        )
+        inventory.save()
     return inv.uuid

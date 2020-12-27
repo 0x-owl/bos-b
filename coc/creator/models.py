@@ -436,3 +436,10 @@ class PhobiaInvestigator(Model):
         title = '{} - {} - {}'.format(
             self.phobia.title, self.investigator.name, self.duration)
         return title
+
+
+class SpellInvestigator(Model):
+    """Spell  Investigator Relationship"""
+    uuid = UUIDField(unique=True, default=uuid4, editable=False)
+    investigator = ForeignKey(Investigator, on_delete=CASCADE)
+    spell = ForeignKey(Spell, on_delete=CASCADE)
