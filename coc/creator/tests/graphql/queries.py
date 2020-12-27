@@ -196,9 +196,9 @@ one_skill = """
     allSkills(uuid: "{uuid}"){{
         edges{{
             node{{
-                title,
-                description,
-                defaultValue
+                uuid,
+                skills,
+                year
             }}
         }}
     }}
@@ -206,27 +206,20 @@ one_skill = """
 """
 
 create_skill = """
-mutation{{
+mutation{
   skillMutate(
-    input:{{
+    input:{
       method: "CREATE",
-      user: 1,
-      title: "Test",
-      description: "Created skill",
-      defaultValue: 1
-    }}){{
-    skill{{
+      year: "Future",
+      skills: "{\\"test_skill\\":{\\"title\\": \\"test_skill\\"}}"
+    }){
+    skill{
       uuid,
-      user{{
-        username,
-        id
-      }}
-      title,
-      description,
-      defaultValue
-    }}
-  }}
-}}
+      year,
+      skills
+    }
+  }
+}
 """
 
 edit_skill = """
@@ -235,20 +228,13 @@ mutation{{
     input:{{
       method: "UPDATE",
       uuid: "{uuid}",
-      user: 1,
-      title: "Test-2",
-      description: "Update test",
-      defaultValue: 0
+      year: "FutureX2",
+      skills: "{{\\"test_skill\\":{{\\"title\\": \\"test_skill2\\"}}}}"
   }}){{
     skill{{
       uuid,
-      user{{
-        username,
-        id
-      }}
-      title,
-      description,
-      defaultValue
+      year,
+      skills
     }}
   }}
 }}
@@ -259,18 +245,12 @@ mutation{{
   skillMutate(
     input:{{
       uuid: "{uuid}",
-      method: "DELETE",
-      user: 1
+      method: "DELETE"
     }}){{
     skill{{
       uuid,
-      user{{
-        username,
-        id
-      }}
-      title,
-      description,
-      defaultValue
+      year,
+      skills
     }}
   }}
 }}
@@ -1261,102 +1241,6 @@ mutation{{
 }}
 """
 
-# Skills-Investigator
-
-all_skills_inv = """
-query{
-  allSkillsInv{
-    edges{
-      node{
-        uuid
-      }
-    }
-  }
-}
-"""
-
-one_skill_inv = """
-{{
-  allSkillsInv(uuid: "{uuid}"){{
-    edges{{
-      node{{
-        uuid
-      }}
-    }}
-  }}
-}}
-"""
-
-create_skill_inv = """
-mutation{{
-  skillInvMutate(input:{{
-    method: "CREATE",
-    investigator: "{investigator_uuid}",
-    skill: "{skill_uuid}",
-    category: "1",
-    value: 30
-  }})
-  {{
-    skillInv{{
-      skill{{
-        title
-      }},
-      category,
-      value,
-      uuid
-    }}
-  }}
-}}
-"""
-
-delete_skill_inv = """
-mutation{{
-  skillInvMutate(input:{{
-    method: "DELETE",
-    uuid: "{uuid}"
-  }})
-  {{
-    skillInv{{
-      uuid,
-      investigator{{
-        name
-      }},
-      skill{{
-        title
-      }},
-      category,
-      value
-    }}
-  }}
-}}
-"""
-
-edit_skill_inv = """
-mutation{{
-  skillInvMutate(input:{{
-    method: "UPDATE",
-    uuid: "{uuid}",
-    investigator: "{investigator_uuid}",
-    skill: "{skill_uuid}",
-    category: "2",
-    value: 33
-  }})
-  {{
-    skillInv{{
-      uuid,
-      investigator{{
-        name
-      }},
-      skill{{
-        title
-      }},
-      category,
-      value
-    }}
-  }}
-}}
-"""
-
 # Tags-Investigator
 
 all_tags_inv = """
@@ -1528,90 +1412,4 @@ mutation{{
 }}
 """
 
-# Attributes-Investigator
 
-all_attrs_inv = """
-query{
-  allAttrsInv{
-    edges{
-      node{
-        uuid
-      }
-    }
-  }
-}
-"""
-
-one_attr_inv = """
-{{
-  allAttrsInv(uuid: "{uuid}"){{
-    edges{{
-      node{{
-        uuid
-      }}
-    }}
-  }}
-}}
-"""
-
-create_attr_inv = """
-mutation{{
-  attrInvMutate(input:{{
-    method: "CREATE",
-    investigator: "{investigator_uuid}",
-    attr: 1,
-    value: 20
-  }})
-  {{
-    attrInv{{
-      uuid,
-      investigator{{
-        name
-      }},
-      attr,
-      value
-    }}
-  }}
-}}
-"""
-
-delete_attr_inv = """
-mutation{{
-  attrInvMutate(input:{{
-    method: "DELETE",
-    uuid: "{uuid}"
-  }})
-  {{
-    attrInv{{
-      uuid,
-      investigator{{
-        name
-      }},
-      attr,
-      value
-    }}
-  }}
-}}
-"""
-
-edit_attr_inv = """
-mutation{{
-  attrInvMutate(input:{{
-    method: "UPDATE",
-    uuid: "{uuid}",
-    investigator: "{investigator_uuid}",
-    attr: 4,
-    value: 40
-  }})
-  {{
-    attrInv{{
-      uuid,
-      investigator{{
-        name
-      }},
-      attr,
-      value
-    }}
-  }}
-}}
-"""

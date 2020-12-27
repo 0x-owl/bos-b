@@ -4,25 +4,22 @@ and a seeded database, either locally or remotely for them to work.
 """
 from random import choice
 
-from creator.tests.graphql.queries import (all_attrs_inv, all_campaigns_inv,
+from creator.tests.graphql.queries import (all_campaigns_inv,
                                            all_diarys_inv, all_games,
                                            all_inventorys_inv,
                                            all_investigators, all_items,
                                            all_manias, all_manias_inv, all_occ,
                                            all_phobias, all_phobias_inv,
-                                           all_skills, all_skills_inv,
-                                           all_spells, all_tags, all_tags_inv,
-                                           create_attr_inv,
-                                           create_campaign_inv,
+                                           all_skills, all_spells, all_tags,
+                                           all_tags_inv, create_campaign_inv,
                                            create_diary_inv, create_game,
                                            create_inventory_inv,
                                            create_investigator, create_item,
                                            create_mania, create_mania_inv,
                                            create_occ, create_phobia,
                                            create_phobia_inv, create_skill,
-                                           create_skill_inv, create_spell,
-                                           create_tag, create_tag_inv,
-                                           delete_attr_inv,
+                                           create_spell, create_tag,
+                                           create_tag_inv,
                                            delete_campaign_inv,
                                            delete_diary_inv, delete_game,
                                            delete_inventory_inv,
@@ -30,23 +27,19 @@ from creator.tests.graphql.queries import (all_attrs_inv, all_campaigns_inv,
                                            delete_mania, delete_mania_inv,
                                            delete_occ, delete_phobia,
                                            delete_phobia_inv, delete_skill,
-                                           delete_skill_inv, delete_spell,
-                                           delete_tag, delete_tag_inv,
-                                           edit_attr_inv,
-                                           edit_campaign_inv, edit_diary_inv,
-                                           edit_game, edit_inventory_inv,
-                                           edit_investigator, edit_item,
-                                           edit_mania, edit_mania_inv,
+                                           delete_spell, delete_tag,
+                                           delete_tag_inv, edit_campaign_inv,
+                                           edit_diary_inv, edit_game,
+                                           edit_inventory_inv, edit_investigator,
+                                           edit_item, edit_mania, edit_mania_inv,
                                            edit_occ, edit_phobia,
                                            edit_phobia_inv, edit_skill,
-                                           edit_skill_inv, edit_spell,
-                                           edit_tag, edit_tag_inv,
-                                           one_attr_inv, one_campaign_inv,
-                                           one_diary_inv, one_game,
-                                           one_inventory_inv, one_investigator,
-                                           one_item, one_mania, one_mania_inv,
-                                           one_occ, one_phobia, one_phobia_inv,
-                                           one_skill, one_skill_inv, one_spell,
+                                           edit_spell, edit_tag, edit_tag_inv,
+                                           one_campaign_inv, one_diary_inv,
+                                           one_game, one_inventory_inv,
+                                           one_investigator, one_item, one_mania,
+                                           one_mania_inv, one_occ, one_phobia,
+                                           one_phobia_inv, one_skill, one_spell,
                                            one_tag, one_tag_inv)
 
 from creator.tests.graphql.constants import GraphTest
@@ -739,127 +732,3 @@ class TestTagInvQuery(GraphTest):
         ])
 
         assert test_result
-
-
-class TestSkillInvQuery(GraphTest):
-    """Test class that encapsulates all skills-inv graphql query tests."""
-    def test_skills_inv_query_node(self):
-        """Test acquisitions of a full list of skills-inv or by a single uuid.
-        """
-        # Build content and content tag to be looked for
-        res = self.batch_instance_builder({
-            'investigator': {'query': create_investigator},
-            'skill': {'query': create_skill}
-        })
-        investigator_uuid = res['investigator']
-        skill_uuid = res['skill']
-        skill_inv_uuid = self.create_and_obtain_uuid(
-            query=create_skill_inv,
-            model_name='skillInv',
-            uuids={
-                'investigator_uuid': investigator_uuid,
-                'skill_uuid': skill_uuid
-            }
-        )
-
-        assert self.full_research_test(
-            all_skills_inv, one_skill_inv, 'allSkillsInv'
-        )
-
-        # clean up of auxiliar entities
-        self.batch_instance_cleaner([
-            (delete_investigator, {'uuid': investigator_uuid}),
-            (delete_skill, {'uuid': skill_uuid}),
-            (delete_skill_inv, {'uuid': skill_inv_uuid}),
-        ])
-
-    def test_skills_inv_full_mutation(self):
-        """This tests creates, updates and finally deletes a skills_inv
-        through the graphql queries.
-        """
-        # Build content and content tag to be looked for
-        res = self.batch_instance_builder({
-            'investigator': {'query': create_investigator},
-            'skill': {'query': create_skill}
-        })
-        investigator_uuid = res['investigator']
-        skill_uuid = res['skill']
-
-        assert self.full_mutation_test(
-            create_query=create_skill_inv,
-            edit_query=edit_skill_inv,
-            delete_query=delete_skill_inv,
-            one_query=one_skill_inv,
-            query_edge_name="allSkillsInv",
-            mutation_edge_name="skillInvMutate",
-            node_name="skillInv",
-            edition_key="value",
-            value_key=33,
-            extras={
-                "investigator_uuid": investigator_uuid,
-                "skill_uuid": skill_uuid
-            }
-        )
-
-        # clean up of auxiliar entities
-        self.batch_instance_cleaner([
-            (delete_investigator, {'uuid': investigator_uuid}),
-            (delete_skill, {'uuid': skill_uuid})
-        ])
-
-
-class TestAttrInvQuery(GraphTest):
-    """Test class that encapsulates all attr-inv graphql query tests."""
-    def test_attrs_inv_query_node(self):
-        """Test acquisitions of a full list of attr-inv or by a single uuid.
-        """
-        # Build content and content tag to be looked for
-        res = self.batch_instance_builder({
-            'investigator': {'query': create_investigator}
-        })
-        investigator_uuid = res['investigator']
-        attr_inv_uuid = self.create_and_obtain_uuid(
-            query=create_attr_inv,
-            model_name='attrInv',
-            uuids={
-                'investigator_uuid': investigator_uuid
-            }
-        )
-
-        assert self.full_research_test(
-            all_attrs_inv, one_attr_inv, 'allAttrsInv'
-        )
-
-        # clean up of auxiliar entities
-        self.batch_instance_cleaner([
-            (delete_investigator, {'uuid': investigator_uuid}),
-            (delete_attr_inv, {'uuid': attr_inv_uuid})
-        ])
-
-    def test_attrs_inv_full_mutation(self):
-        """This tests creates, updates and finally deletes a phobia
-        through the graphql queries.
-        """
-        # Build content and content tag to be looked for
-        res = self.batch_instance_builder({
-            'investigator': {'query': create_investigator}
-        })
-        investigator_uuid = res['investigator']
-
-        assert self.full_mutation_test(
-            create_query=create_attr_inv,
-            edit_query=edit_attr_inv,
-            delete_query=delete_attr_inv,
-            one_query=one_attr_inv,
-            query_edge_name="allAttrsInv",
-            mutation_edge_name="attrInvMutate",
-            node_name="attrInv",
-            edition_key="value",
-            value_key=40,
-            extras={"investigator_uuid": investigator_uuid}
-        )
-
-        # clean up of auxiliar entities
-        self.batch_instance_cleaner([
-            (delete_investigator, {'uuid': investigator_uuid})
-        ])

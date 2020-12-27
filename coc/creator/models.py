@@ -77,14 +77,14 @@ class SpellTag(BaseModel):
 class Skills(BaseModel):
     """Skills class."""
     skills = JSONField()
-    year = PositiveIntegerField()
+    year = CharField(max_length=50)
 
     class Meta:
         verbose_name_plural = 'skills'
 
     def __str__(self):
         """String representation of the object."""
-        return str(self.year)
+        return self.year
 
 
 class Occupation(BaseModel):
