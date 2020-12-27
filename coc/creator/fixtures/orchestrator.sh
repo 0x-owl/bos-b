@@ -30,7 +30,5 @@ python3 $COC_PATH migrate
 
 echo "[INFO] Loading core entities..."
 python3 $COC_PATH loaddata $FIXTURES_PATH/core/*
-echo "[INFO] Loading items..."
-python3 $COC_PATH loaddata $FIXTURES_PATH/items/*
 echo "[INFO] Loading spells..."
 python3 $COC_PATH loaddata $FIXTURES_PATH/spells/*
