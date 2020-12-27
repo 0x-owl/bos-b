@@ -84,10 +84,10 @@ class GraphTest:
         query = kwargs['edit_query']
         if kwargs['extras']:
             query.format(**kwargs['extras'])
-        data, status = self.run_query(query.format(uuid=node_uuid))
+        query = query.format(uuid=node_uuid)
+        data, status = self.run_query(query)
         assert status == 200
         node = data[kwargs['mutation_edge_name']][node_name]
- 
         if '-' in kwargs['edition_key']:
             # this means is a nested key inside a json field
             parts = kwargs['edition_key'].split('-')
@@ -102,15 +102,18 @@ class GraphTest:
         else:
             assert node[kwargs['edition_key']] == kwargs['value_key']
         # Clean the db from the generated test node
-        data, status = self.run_query(kwargs['delete_query'].format(
-            uuid=node_uuid, **kwargs['extras']))
+        query = kwargs['delete_query'].format(
+            uuid=node_uuid
+        )
+        if kwargs['extras']:
+            query.format(**kwargs['extras'])
+        data, status = self.run_query(query)
         assert status == 200
         # Make sure the node no longer exists
-        data, status = self.run_query(kwargs['one_query'].format(
-            uuid=node_uuid))
+        query = kwargs['one_query'].format(uuid=node_uuid)
+        data, status = self.run_query(query)
         assert status == 200
         assert not data[edge_name]['edges']
-
         return True
 
     def create_and_obtain_uuid(
