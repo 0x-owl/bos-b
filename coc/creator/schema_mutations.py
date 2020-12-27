@@ -5,14 +5,14 @@ from creator.models import (CampaignInvestigator, Game, Inventory,
                             InvestigatorsDiary,
                             InvestigatorTags, Item, Mania, ManiaInvestigator,
                             Occupation, Phobia, PhobiaInvestigator, Portrait,
-                            Skills, Spell, Tag, Weapon)
+                            Skills, Spell, Tag)
 
 from creator.schema_nodes import (CampaignInvNode, DiaryInvNode,
                                   GameNode, InventoryInvNode, InvestigatorNode,
                                   ItemNode, ManiaNode, ManiaInvNode,
                                   OccupationNode, PhobiaNode, PhobiaInvNode,
                                   SkillNode, SpellNode, TagNode,
-                                  TagInvNode, UserNode, WeaponNode, UserNode)
+                                  TagInvNode, UserNode, UserNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
                       relay)
@@ -229,44 +229,6 @@ class SpellMutation(ClientIDMutation):
             method,
             input_,
             'spell'
-        )
-        return ret
-
-
-class WeaponMutation(ClientIDMutation):
-    weapon = Field(WeaponNode)
-
-    class Input:
-        method = String()
-        user = Int()
-        uuid = String()
-        title = String()
-        item_type = Int()
-        description = String()
-        price = Float()
-        damage = String()
-        base_range = String()
-        uses_per_round = String()
-        mal_function = Int()
-
-    @classmethod
-    def mutate(cls, *args, **kwargs):
-        """Generates mutation which is an instance of the Node class which
-        results in a instance of our model.
-        Arguments:
-            input -- (dict) dictionary that has the keys corresponding to the
-            Input class (title, user).
-        """
-        input_ = kwargs.get('input')
-        usr = User.objects.get(pk=input_['user'])
-        input_['user'] = usr
-        method = input_.pop('method')
-        ret = mutation_flow(
-            WeaponMutation,
-            Weapon,
-            method,
-            input_,
-            'weapon'
         )
         return ret
 

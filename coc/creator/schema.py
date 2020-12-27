@@ -5,8 +5,7 @@ from creator.schema_nodes import (CampaignInvNode, DiaryInvNode,
                                   ItemNode, ManiaInvNode, ManiaNode,
                                   OccupationNode, PhobiaInvNode, PhobiaNode,
                                   PortraitNode, SkillNode,
-                                  SpellNode, TagInvNode, TagNode, UserNode,
-                                  WeaponNode)
+                                  SpellNode, TagInvNode, TagNode, UserNode)
 
 from creator.schema_mutations import (CampaignInvMutation,
                                       DiaryInvMutation, GameMutation,
@@ -17,7 +16,7 @@ from creator.schema_mutations import (CampaignInvMutation,
                                       PhobiaMutation,
                                       SkillMutation, SpellMutation,
                                       TagInvMutation, TagMutation,
-                                      UserMutation, WeaponMutation)
+                                      UserMutation)
 
 # from creator.helpers.random_investigator import random_inv
 
@@ -49,9 +48,6 @@ class Query(object):
 
     all_spells = DjangoFilterConnectionField(SpellNode)
     spell = relay.Node.Field(SpellNode)
-
-    all_weapons = DjangoFilterConnectionField(WeaponNode)
-    weapon = relay.Node.Field(WeaponNode)
 
     all_manias = DjangoFilterConnectionField(ManiaNode)
     mania = relay.Node.Field(ManiaNode)
@@ -101,7 +97,6 @@ class Mutation(object):
     skill_mutate = SkillMutation.Field()
     investigator_mutate = InvestigatorMutation.Field()
     spell_mutate = SpellMutation.Field()
-    weapon_mutate = WeaponMutation.Field()
     mania_mutate = ManiaMutation.Field()
     mania_inv_mutate = ManiaInvMutation.Field()
     phobia_mutate = PhobiaMutation.Field()

@@ -5,7 +5,7 @@ from creator.models import (CampaignInvestigator, Game, Inventory,
                             InvestigatorsDiary,
                             InvestigatorTags, Item, Mania, ManiaInvestigator,
                             Occupation, Phobia, PhobiaInvestigator, Portrait,
-                            Skills, Spell, Tag, Weapon)
+                            Skills, Spell, Tag)
 
 from graphene import ObjectType, String, relay
 from graphene_django.types import DjangoObjectType
@@ -41,22 +41,7 @@ class ItemNode(DjangoObjectType):
         model = Item
         filter_fields = {
             'uuid': ['exact'],
-            'title': ['exact', 'icontains', 'istartswith'],
-            'item_type': ['exact'],
-            'price': ['exact', 'gt', 'lt', 'gte', 'lte']
-        }
-        interfaces = (relay.Node, )
-
-
-class WeaponNode(DjangoObjectType):
-    class Meta:
-        model = Weapon
-        filter_fields = {
-            'uuid': ['exact'],
-            'title': ['exact', 'icontains', 'istartswith'],
-            'item_type': ['exact'],
-            'price': ['exact', 'gt', 'lt', 'gte', 'lte'],
-            'damage': ['exact', 'icontains', 'istartswith'],
+            'category': ['exact'],
         }
         interfaces = (relay.Node, )
 

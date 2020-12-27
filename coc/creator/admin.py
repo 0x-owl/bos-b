@@ -3,8 +3,7 @@ from creator.models import (CampaignInvestigator, Game, Inventory,
                             InvestigatorsDiary, Item, ItemImage, ItemTag, Mania,
                             ManiaInvestigator, Occupation, OccupationTags, Phobia,
                             PhobiaInvestigator, Portrait, Skills,
-                            Spell, SpellTag, SpellType, Tag, TagDiary, Weapon,
-                            WeaponImage, WeaponSkill, WeaponTag)
+                            Spell, SpellTag, SpellType, Tag, TagDiary)
 
 from django.contrib import admin
 
@@ -30,7 +29,3 @@ admin.site.register(Spell)
 admin.site.register(SpellTag)
 admin.site.register(Tag)
 admin.site.register(TagDiary)
-admin.site.register(Weapon)
-admin.site.register(WeaponImage)
-admin.site.register(WeaponSkill)
-admin.site.register(WeaponTag)
