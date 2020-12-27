@@ -14,9 +14,15 @@ from creator.helpers.model_helpers import renamer, roller_stats
 User = get_user_model()
 
 # Create your models here.
-class Tag(Model):
-    """Tag class."""
+class BaseModel(BaseModel):
     uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
+    created = DateTimeField(auto_now_add=True)
+    modified = DateTimeField(default=None)
+    deleted = DateTimeField(default=None)
+
+
+class Tag(BaseModel):
+    """Tag class."""
     title = CharField(max_length=50)
     user = ForeignKey(User, on_delete=CASCADE)
 
@@ -25,9 +31,8 @@ class Tag(Model):
         return '#{}'.format(self.title)
 
 
-class Spell(Model):
+class Spell(BaseModel):
     """Spell class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     user = ForeignKey(User, on_delete=CASCADE)
     name = CharField(max_length=50)
     alternative_names = TextField(blank=True)
@@ -42,9 +47,8 @@ class Spell(Model):
         return self.name
 
 
-class SpellType(Model):
+class SpellType(BaseModel):
     """Association Spell with its category."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     spell = ForeignKey(Spell, on_delete=CASCADE)
     spell_type = PositiveIntegerField(
             choices=SPELL_CATEGORIES
@@ -55,9 +59,8 @@ class SpellType(Model):
         return title
 
 
-class SpellTag(Model):
+class SpellTag(BaseModel):
     """Tags assigned to the Spell."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     tag = ForeignKey(Tag, on_delete=PROTECT)
     spell = ForeignKey(Spell, on_delete=CASCADE)
 
@@ -67,9 +70,8 @@ class SpellTag(Model):
         return title
 
 
-class Skills(Model):
+class Skills(BaseModel):
     """Skills class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     skills = JSONField()
     year = PositiveIntegerField()
 
@@ -81,9 +83,8 @@ class Skills(Model):
         return str(self.year)
 
 
-class Occupation(Model):
+class Occupation(BaseModel):
     """Occupation class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     title = CharField(max_length=50)
     description = TextField(blank=True)
     suggested_contacts = TextField()
@@ -97,9 +98,8 @@ class Occupation(Model):
         return self.title
 
 
-class OccupationTags(Model):
+class OccupationTags(BaseModel):
     """Tags assigned to occupations."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     tag = ForeignKey(Tag, on_delete=PROTECT)
     occupation = ForeignKey(Occupation, on_delete=CASCADE)
 
@@ -112,9 +112,8 @@ class OccupationTags(Model):
         return title
 
 
-class Investigator(Model):
+class Investigator(BaseModel):
     """Investigators class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     user = ForeignKey(User, on_delete=CASCADE)
     name = CharField(max_length=50)
     player = CharField(max_length=50)
@@ -252,9 +251,8 @@ class Investigator(Model):
         return '{} - {}'.format(self.player, self.name)
 
 
-class Portrait(Model):
+class Portrait(BaseModel):
     """Investigators picture class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     investigator = OneToOneField(Investigator, on_delete=CASCADE)
     portrait = ImageField(upload_to=renamer)
 
@@ -263,12 +261,10 @@ class Portrait(Model):
         return self.investigator.name
 
 
-class InvestigatorTags(Model):
+class InvestigatorTags(BaseModel):
     """Tags assigned to investigators."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     tag = ForeignKey(Tag, on_delete=PROTECT)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
-
 
     class Meta:
         verbose_name_plural = 'investigator tags'
@@ -279,10 +275,9 @@ class InvestigatorTags(Model):
         return title
 
 
-class InvestigatorsDiary(Model):
+class InvestigatorsDiary(BaseModel):
     """Investigators diary"""
     title = CharField(max_length=30, blank=True, null=True)
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     notes = TextField(blank=True)
     timestamp = DateTimeField(auto_now_add=True)
@@ -295,9 +290,8 @@ class InvestigatorsDiary(Model):
         return title
 
 
-class TagDiary(Model):
+class TagDiary(BaseModel):
     """Tag assigned to the Diary"""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     diary = ForeignKey(InvestigatorsDiary, on_delete=CASCADE)
     tag = ForeignKey(Tag, on_delete=PROTECT)
 
@@ -307,9 +301,8 @@ class TagDiary(Model):
         return title
 
 
-class Item(Model):
+class Item(BaseModel):
     """Item class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     category = PositiveIntegerField(
         choices=ITEM_CATEGORIES
     )
@@ -320,9 +313,8 @@ class Item(Model):
         return f"{self.properties['title']}-{self.properties['age']}"
 
 
-class ItemTag(Model):
+class ItemTag(BaseModel):
     """Tags assigned to the Item."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     tag = ForeignKey(Tag, on_delete=PROTECT)
     item = ForeignKey(Item, on_delete=CASCADE)
 
@@ -332,9 +324,8 @@ class ItemTag(Model):
         return title
 
 
-class ItemImage(Model):
+class ItemImage(BaseModel):
     """Items image."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     item = OneToOneField(Item, on_delete=CASCADE)
     image = ImageField(upload_to=renamer)
 
@@ -343,9 +334,8 @@ class ItemImage(Model):
         return self.item.title
 
 
-class Inventory(Model):
+class Inventory(BaseModel):
     """Inventory class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     item = ForeignKey(Item, on_delete=CASCADE, null=True, blank=True)
     stock = PositiveIntegerField(default=1)
@@ -359,13 +349,11 @@ class Inventory(Model):
         return title
 
 
-class Game(Model):
+class Game(BaseModel):
     """Game class."""
     title = CharField(max_length=80)
     description = TextField()
     user = ForeignKey(User, on_delete=CASCADE)
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
-    timestamp = DateTimeField(auto_now_add=True)
     game_type = CharField(max_length=1, choices=GAME_TYPE)
 
     def __str__(self):
@@ -373,9 +361,8 @@ class Game(Model):
         return self.title
 
 
-class CampaignInvestigator(Model):
+class CampaignInvestigator(BaseModel):
     """Campaign Investigator Relationship"""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     campaign = ForeignKey(Game, on_delete=CASCADE)
     timestamp = DateTimeField(auto_now_add=True)
@@ -386,9 +373,8 @@ class CampaignInvestigator(Model):
         return title
 
 
-class Mania(Model):
+class Mania(BaseModel):
     """Manias class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     title = CharField(max_length=50)
     description = TextField()
 
@@ -397,9 +383,8 @@ class Mania(Model):
         return self.title
 
 
-class ManiaInvestigator(Model):
+class ManiaInvestigator(BaseModel):
     """Manias  Investigator Relationship"""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     mania = ForeignKey(Mania, on_delete=CASCADE)
     # Undefined limit 999999
@@ -412,9 +397,8 @@ class ManiaInvestigator(Model):
         return title
 
 
-class Phobia(Model):
+class Phobia(BaseModel):
     """Phobias class."""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     title = CharField(max_length=50)
     description = TextField()
 
@@ -423,9 +407,8 @@ class Phobia(Model):
         return self.title
 
 
-class PhobiaInvestigator(Model):
+class PhobiaInvestigator(BaseModel):
     """Phobias  Investigator Relationship"""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     phobia = ForeignKey(Phobia, on_delete=CASCADE)
     # Undefined limit 999999
@@ -438,8 +421,7 @@ class PhobiaInvestigator(Model):
         return title
 
 
-class SpellInvestigator(Model):
+class SpellInvestigator(BaseModel):
     """Spell  Investigator Relationship"""
-    uuid = UUIDField(unique=True, default=uuid4, editable=False)
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     spell = ForeignKey(Spell, on_delete=CASCADE)
