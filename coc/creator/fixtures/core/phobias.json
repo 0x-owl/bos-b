@@ -507,7 +507,7 @@
     "model": "creator.Phobia",
     "fields": {
       "title": "Phagophobia",
-      "description": "Fear of swallowgin, of eating or of being eaten."
+      "description": "Fear of swallowing, of eating or of being eaten."
     }
   },
   {
