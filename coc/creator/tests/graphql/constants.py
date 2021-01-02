@@ -141,7 +141,6 @@ class GraphTest:
         """
         if uuids:
             query = query.format(**uuids)
-        print(query)
         data, status = self.run_query(query)
         return status == 200, data
 
