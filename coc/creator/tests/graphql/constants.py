@@ -76,16 +76,17 @@ class GraphTest:
         
         query = kwargs['create_query']
         if kwargs['extras']:
-            query.format(**kwargs['extras'])
+            query = query.format(**kwargs['extras'])
         data, status = self.run_query(query)
         assert status == 200
         node_uuid = data[mutation_name][node_name]['uuid']
         # Update node
         query = kwargs['edit_query']
         if kwargs['extras']:
-            query.format(**kwargs['extras'])
-        query = query.format(uuid=node_uuid)
-        print(query)
+            kwargs['extras']['uuid'] = node_uuid
+            query = query.format(**kwargs['extras'])
+        else:
+            query = query.format(uuid=node_uuid)
         data, status = self.run_query(query)
         assert status == 200
         node = data[kwargs['mutation_edge_name']][node_name]
@@ -106,8 +107,6 @@ class GraphTest:
         query = kwargs['delete_query'].format(
             uuid=node_uuid
         )
-        if kwargs['extras']:
-            query.format(**kwargs['extras'])
         data, status = self.run_query(query)
         assert status == 200
         # Make sure the node no longer exists
