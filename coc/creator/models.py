@@ -194,7 +194,7 @@ class Investigator(BaseModel):
 
     @property
     def build(self):
-        "default=self.power""Build attribute property."""
+        """Build attribute property."""
         amount = self.strength + self.size
         res = ()
         if amount <= 64:

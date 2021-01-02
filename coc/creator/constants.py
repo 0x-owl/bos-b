@@ -42,8 +42,9 @@ SPELL_CATEGORIES = [
 ITEM_CATEGORIES = [
     (1, 'MAGIC'),
     (2, 'CONSUMABLE'),
-    (3, 'WEAPON'),
-    (4, 'TOOL'),
-    (5, 'VEHICLE'),
-    (6, 'MISC')
+    (3, 'WEAPONS'),
+    (4, 'AMMO'),
+    (5, 'TOOL'),
+    (6, 'VEHICLE'),
+    (7, 'MISC')
 ]
