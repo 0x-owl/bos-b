@@ -431,9 +431,9 @@ query{{
 """
 
 create_spell = """
-mutation{{
+mutation{
   spellMutate(
-    input:{{
+    input:{
         method: "CREATE",
         notes: "test",
         name: "tester spell",
@@ -441,14 +441,14 @@ mutation{{
         cost: "1D6 Sanity",
         castingTime: "Immediate",
         user: 1
-    }}){{
-    spell{{
+    }){
+    spell{
       uuid,
       notes,
       name
-    }}
-  }}
-}}
+    }
+  }
+}
 """
 
 delete_spell = """
