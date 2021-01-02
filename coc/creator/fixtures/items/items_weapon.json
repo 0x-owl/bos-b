@@ -1,0 +1,27 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "",
+                "description": "",
+                "price": 2,
+                "age": "1920's"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "",
+                "description": "",
+                "price": 2,
+                "age": "Modern"
+            }
+        }
+    }
+],
+[]
