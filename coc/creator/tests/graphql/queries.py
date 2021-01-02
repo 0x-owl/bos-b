@@ -1324,23 +1324,23 @@ one_game = """
 """
 
 create_game = """
-mutation{{
-  gameMutate(input:{{
+mutation{
+  gameMutate(input:{
     method: "CREATE",
     title: "test",
     gameType: "1",
     description: "test",
     user: 1
-  }})
-  {{
-    game{{
+  })
+  {
+    game{
       uuid,
       title,
       description,
       gameType
-    }}
-  }}
-}}
+    }
+  }
+}
 """
 
 delete_game = """
