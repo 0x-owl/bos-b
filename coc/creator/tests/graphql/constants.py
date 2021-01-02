@@ -125,7 +125,9 @@ class GraphTest:
             mutation_name -- (str-optional) overrides the default name.
         """
         default_mutation = f'{model_name}Mutate'
-        data, status = self.run_query(query=query.format(**uuids))
+        if uuids:
+            query = query.format(**uuids)
+        data, status = self.run_query(query=query)
         assert status == 200, f"Couldn't create instance query:\n {query}"
         mutation_name = mutation if mutation is not None else default_mutation
         uuid = data[mutation_name][model_name]['uuid']
@@ -137,7 +139,10 @@ class GraphTest:
             query -- deletition query.
             uuids -- uuids required to delete the instance.
         """
-        data, status = self.run_query(query.format(**uuids))
+        if uuids:
+            query = query.format(**uuids)
+        print(query)
+        data, status = self.run_query(query)
         return status == 200, data
 
     def batch_instance_builder(self, models):

@@ -146,14 +146,27 @@ class InvestigatorMutation(ClientIDMutation):
     investigator = Field(InvestigatorNode)
 
     class Input:
+        method = String()
         uuid = String()
+        user = Int()
         name = String()
         player = String()
         sex = String()
         residence = String()
         birthplace = String()
         age = Int()
+        # Attributes
+        strength = Int()
+        dexterity = Int()
+        constitution = Int()
+        power = Int()
+        size = Int()
+        education = Int()
+        intelligence = Int()
+        appearance = Int()
+        # Composition
         occupation = Int()
+        skills = JSONString()
         ideologies = String()
         description = String()
         traits = String()
@@ -162,8 +175,9 @@ class InvestigatorMutation(ClientIDMutation):
         meaningful_locations = String()
         treasured_possessions = String()
         encounters_with_strange_entities = String()
-        method = String()
-        user = Int()
+        sanity = Int()
+        luck = Int()
+        health = Int()
 
     @classmethod
     def mutate(cls, *args, **kwargs):

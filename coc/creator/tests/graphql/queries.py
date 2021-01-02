@@ -36,37 +36,12 @@ query {{
 				birthplace,
 				residence,
 				sex,
-				occupation{{
-				  uuid,
-				  title,
-				  creditRatingMin,
-				  creditRatingMax
-				}}
-			  	investigatorattributeSet {{
-					edges {{
-					  	node {{
-							uuid,
-							attr,
-							value
-					  	}}
-					}}
-			  	}},
+				occupation,
 				luck,
 				sanity,
 				significantPeople,
 				ideologies,
-				traits,
-			  	investigatorskillsSet {{
-					edges {{
-					  	node {{
-							uuid,
-						  	skill{{
-						    	title
-						  	}},
-				    		value
-				  		}}
-					}}
-			  	}}
+				traits
 			}}
 		}}
 	}}
@@ -75,18 +50,21 @@ query {{
 
 
 create_investigator = """
-mutation{{
+mutation{
   investigatorMutate(
-    input: {{
+    input: {
       user:1, name: "Test", player: "Test",
       sex: "M", residence: "Capital", birthplace: "Capital", age: 23,
-      occupation: 7, ideologies: "prueba", description: "prueba",
-      traits: "prueba", injureScars: "prueba", significantPeople:
-      "prueba", treasuredPossessions: "prueba",
-      encountersWithStrangeEntities: "prueba",
-      meaningfulLocations: "prueba", method: "CREATE"
-    }}){{
-    investigator{{
+      occupation: 7, ideologies: "test", description: "test",
+      traits: "test", injureScars: "test", significantPeople:
+      "test", treasuredPossessions: "test",
+      encountersWithStrangeEntities: "test",
+      meaningfulLocations: "test", method: "CREATE",
+      strength: 80, dexterity: 80, constitution: 80,
+      intelligence: 80, appearance: 80, size: 80, power: 80,
+      skills: "{\\"title\\": \\"Skill\\"}"
+    }){
+    investigator{
         uuid,
         name,
         player,
@@ -94,9 +72,9 @@ mutation{{
         residence,
         birthplace,
         age,
-        occupation{{
+        occupation{
           title
-        }}
+        }
         ideologies,
         description,
         traits,
@@ -105,9 +83,9 @@ mutation{{
         significantPeople,
         treasuredPossessions,
         encountersWithStrangeEntities
-      }}
-  }}
-}}
+      }
+  }
+}
 
 """
 
@@ -125,9 +103,9 @@ mutation{{
         residence,
         birthplace,
         age,
-        occupation{{
+        occupation {{
           title
-        }}
+        }},
         ideologies,
         description,
         traits,
@@ -147,11 +125,12 @@ mutation{{
     input: {{
       uuid: "{uuid}", user:1, name: "Test", player: "TestUpdate", sex: "M",
       residence: "Capital", birthplace: "Capital", age: 23,
-      occupation: 7, ideologies: "prueba", description: "prueba",
-      traits: "prueba", injureScars: "prueba", significantPeople:
-      "prueba", treasuredPossessions: "prueba",
-      encountersWithStrangeEntities: "prueba156",
-      meaningfulLocations: "prueba", method: "UPDATE"
+      occupation: 7, ideologies: "test", description: "test",
+      traits: "test", injureScars: "test", significantPeople:
+      "test", treasuredPossessions: "test",
+      encountersWithStrangeEntities: "test156",
+      meaningfulLocations: "test", method: "UPDATE",
+      "
     }}){{
     investigator{{
         uuid,
