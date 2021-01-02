@@ -4,43 +4,7 @@ and a seeded database, either locally or remotely for them to work.
 """
 from random import choice
 
-from creator.tests.graphql.queries import (all_campaigns_inv,
-                                           all_diarys_inv, all_games,
-                                           all_inventorys_inv,
-                                           all_investigators, all_items,
-                                           all_manias, all_manias_inv, all_occ,
-                                           all_phobias, all_phobias_inv,
-                                           all_skills, all_spells, all_tags,
-                                           all_tags_inv, create_campaign_inv,
-                                           create_diary_inv, create_game,
-                                           create_inventory_inv,
-                                           create_investigator, create_item,
-                                           create_mania, create_mania_inv,
-                                           create_occ, create_phobia,
-                                           create_phobia_inv, create_skill,
-                                           create_spell, create_tag,
-                                           create_tag_inv,
-                                           delete_campaign_inv,
-                                           delete_diary_inv, delete_game,
-                                           delete_inventory_inv,
-                                           delete_investigator, delete_item,
-                                           delete_mania, delete_mania_inv,
-                                           delete_occ, delete_phobia,
-                                           delete_phobia_inv, delete_skill,
-                                           delete_spell, delete_tag,
-                                           delete_tag_inv, edit_campaign_inv,
-                                           edit_diary_inv, edit_game,
-                                           edit_inventory_inv, edit_investigator,
-                                           edit_item, edit_mania, edit_mania_inv,
-                                           edit_occ, edit_phobia,
-                                           edit_phobia_inv, edit_skill,
-                                           edit_spell, edit_tag, edit_tag_inv,
-                                           one_campaign_inv, one_diary_inv,
-                                           one_game, one_inventory_inv,
-                                           one_investigator, one_item, one_mania,
-                                           one_mania_inv, one_occ, one_phobia,
-                                           one_phobia_inv, one_skill, one_spell,
-                                           one_tag, one_tag_inv)
+from creator.tests.graphql.queries import *
 
 from creator.tests.graphql.constants import GraphTest
 

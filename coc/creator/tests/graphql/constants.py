@@ -85,6 +85,7 @@ class GraphTest:
         if kwargs['extras']:
             query.format(**kwargs['extras'])
         query = query.format(uuid=node_uuid)
+        print(query)
         data, status = self.run_query(query)
         assert status == 200
         node = data[kwargs['mutation_edge_name']][node_name]

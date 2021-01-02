@@ -129,8 +129,7 @@ mutation{{
       traits: "test", injureScars: "test", significantPeople:
       "test", treasuredPossessions: "test",
       encountersWithStrangeEntities: "test156",
-      meaningfulLocations: "test", method: "UPDATE",
-      "
+      meaningfulLocations: "test", method: "UPDATE"
     }}){{
     investigator{{
         uuid,
