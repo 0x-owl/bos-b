@@ -3,161 +3,161 @@
     "model": "creator.Mania",
     "fields": {
       "title": "Ablutomania",
-      "description": "compulsion for washing oneself."
+      "description": "Compulsion for washing oneself."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Aboulomania",
-      "description": "pathological indecisiveness."
+      "description": "Pathological indecisiveness."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Achluomania",
-      "description": "an excessive liking for darkness."
+      "description": "An excessive liking for darkness."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Acromaniaheights",
-      "description": "compulsion for high places."
+      "description": "Compulsion for high places."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Agathomania",
-      "description": "pathological kindness."
+      "description": "Pathological kindness."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Agromania",
-      "description": "intense desire to be in open spaces."
+      "description": "Intense desire to be in open spaces."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Aichmomania",
-      "description": "obsession with sharp or pointed objects."
+      "description": "Obsession with sharp or pointed objects."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Ailuromania",
-      "description": "abnormal fondness for cats."
+      "description": "Abnormal fondness for cats."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Algomania",
-      "description": "obsession with pain."
+      "description": "Obsession with pain."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Alliomania",
-      "description": "obsession with garlic."
+      "description": "Obsession with garlic."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Amaxomania",
-      "description": "obsession with being in vehicles."
+      "description": "Obsession with being in vehicles."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Amenomania",
-      "description": "irrational cheerfulness."
+      "description": "Irrational cheerfulness."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Anthomania",
-      "description": "obsession with flowers."
+      "description": "Obsession with flowers."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Arithmomania",
-      "description": "obsessive preoccupation with numbers."
+      "description": "Obsessive preoccupation with numbers."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Asoticamania",
-      "description": "impulsive or reckless spending."
+      "description": "Impulsive or reckless spending."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Automania",
-      "description": "an excessive liking for solitude."
+      "description": "An excessive liking for solitude."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Balletomania",
-      "description": "abnormal fondness for ballet."
+      "description": "Abnormal fondness for ballet."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Bibliokleptomania",
-      "description": "compulsion for stealing books."
+      "description": "Compulsion for stealing books."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Bibliomania",
-      "description": "obsession with books and/or reading."
+      "description": "Obsession with books and/or reading."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Bruxomania",
-      "description": "compulsion for grinding teeth."
+      "description": "Compulsion for grinding teeth."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Cacodemomania",
-      "description": "pathological belief that one is inhabited by an evil spirit."
+      "description": "Pathological belief that one is inhabited by an evil spirit."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Callomania",
-      "description": "obsession with one’s own beauty."
+      "description": "Obsession with one’s own beauty."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Cartacoethes",
-      "description": "uncontrollable compulsion to see maps everywhere."
+      "description": "Uncontrollable compulsion to see maps everywhere."
     }
   },
   {
@@ -171,119 +171,119 @@
     "model": "creator.Mania",
     "fields": {
       "title": "Cheimatomania",
-      "description": "abnormal desire for cold and/or cold things."
+      "description": "Abnormal desire for cold and/or cold things."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Choreomania",
-      "description": "dancing mania or uncontrollable frenzy."
+      "description": "Dancing mania or uncontrollable frenzy."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Clinomania",
-      "description": "excessive desire to stay in bed."
+      "description": "Excessive desire to stay in bed."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Coimetromania",
-      "description": "obsession with cemeteries."
+      "description": "Obsession with cemeteries."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Coloromania",
-      "description": "obsession with a specific color."
+      "description": "Obsession with a specific color."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Coulromania",
-      "description": "obsession with clowns."
+      "description": "Obsession with clowns."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Countermania",
-      "description": "compulsion to experience fearful situations."
+      "description": "Compulsion to experience fearful situations."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Dacnomania",
-      "description": "obsession with killing."
+      "description": "Obsession with killing."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Demonomania",
-      "description": "pathological belief that one is possessed by demons."
+      "description": "Pathological belief that one is possessed by demons."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Dermatillomania",
-      "description": "compulsion for picking at one’s skin."
+      "description": "Compulsion for picking at one’s skin."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Dikemania",
-      "description": "obsession to see justice done."
+      "description": "Obsession to see justice done."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Dipsomania",
-      "description": "abnormal craving for alcohol."
+      "description": "Abnormal craving for alcohol."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Doramania",
-      "description": "obsession with owning furs."
+      "description": "Obsession with owning furs."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Doromania",
-      "description": "obsession with giving gifts."
+      "description": "Obsession with giving gifts."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Drapetomania",
-      "description": "compulsion for running away."
+      "description": "Compulsion for running away."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Ecdemiomania",
-      "description": "compulsion for wandering."
+      "description": "Compulsion for wandering."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Egomania",
-      "description": "irrational self-centered attitude or self-worship."
+      "description": "Irrational self-centered attitude or self-worship."
     }
   },
   {
@@ -297,406 +297,406 @@
     "model": "creator.Mania",
     "fields": {
       "title": "Enosimania",
-      "description": "pathological belief that one has sinned."
+      "description": "Pathological belief that one has sinned."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Epistemomania",
-      "description": "obsession for acquiring knowledge."
+      "description": "Obsession for acquiring knowledge."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Eremiomania",
-      "description": "compulsion for stillness."
+      "description": "Compulsion for stillness."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Etheromania",
-      "description": "craving for ether"
+      "description": "Craving for ether"
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Gamomania",
-      "description": "obsession with issuing odd marriage proposals."
+      "description": "Obsession with issuing odd marriage proposals."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Geliomania",
-      "description": "uncontrollable compulsion to laugh."
+      "description": "Uncontrollable compulsion to laugh."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Goetomania",
-      "description": "obsession with witches and witchcraft."
+      "description": "Obsession with witches and witchcraft."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Graphomania",
-      "description": "obsession with writing everything down."
+      "description": "Obsession with writing everything down."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Gymnomania",
-      "description": "compulsion with nudity."
+      "description": "Compulsion with nudity."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Habromania",
-      "description": "abnormal tendency to create pleasant delusions (in spite of reality)."
+      "description": "Abnormal tendency to create pleasant delusions (in spite of reality)."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Helminthomania",
-      "description": "an excessive liking for worms."
+      "description": "An excessive liking for worms."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Hoplomania",
-      "description": "obsession with firearms."
+      "description": "Obsession with firearms."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Hydromania",
-      "description": "irrational craving for water."
+      "description": "Irrational craving for water."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Ichthyomania",
-      "description": "obsession with fish."
+      "description": "Obsession with fish."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Iconomania",
-      "description": "obsession with icons or portraits."
+      "description": "Obsession with icons or portraits."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Idolomania",
-      "description": "obsession or devotion to an idol."
+      "description": "Obsession or devotion to an idol."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Infomania",
-      "description": "excessive devotion to accumulating facts"
+      "description": "Excessive devotion to accumulating facts"
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Klazomania",
-      "description": "irrational compulsion to shout."
+      "description": "Irrational compulsion to shout."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Kleptomania",
-      "description": "irrational compulsion for stealing."
+      "description": "Irrational compulsion for stealing."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Ligyromania",
-      "description": "uncontrollable compulsion to make loud or shrill noises."
+      "description": "Uncontrollable compulsion to make loud or shrill noises."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Linonomania",
-      "description": "obsession with string."
+      "description": "Obsession with string."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Lotterymania",
-      "description": "an extreme desire to take part in lotteries."
+      "description": "An extreme desire to take part in lotteries."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Lypemania",
-      "description": "an abnormal tendency toward deep melancholy."
+      "description": "An abnormal tendency toward deep melancholy."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Megalithomania",
-      "description": "abnormal tendency to compose bizarre ideas when in the presence of stone circles/standing stones."
+      "description": "Abnormal tendency to compose bizarre ideas when in the presence of stone circles/standing stones."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Melomania",
-      "description": "obsession with music or a specific tune."
+      "description": "Obsession with music or a specific tune."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Metromania",
-      "description": "insatiable desire for writing verse."
+      "description": "Insatiable desire for writing verse."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Misomania",
-      "description": "hatred of everything, obsession of hating some subject or group."
+      "description": "Hatred of everything, obsession of hating some subject or group."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Monomania",
-      "description": "abnormal obsession with a single thought or idea."
+      "description": "Abnormal obsession with a single thought or idea."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Mythomania",
-      "description": "lying or exaggerating to an abnormal extent."
+      "description": "Lying or exaggerating to an abnormal extent."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Nosomania",
-      "description": "delusion of suffering from an imagined disease."
+      "description": "Delusion of suffering from an imagined disease."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Notomania",
-      "description": "compulsion to record everything (e.g. photograph)."
+      "description": "Compulsion to record everything (e.g. photograph)."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Onomamania",
-      "description": "obsession with names (people, places, things)."
+      "description": "Obsession with names (people, places, things)."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Onomatomania",
-      "description": "irresistible desire to repeat certain words."
+      "description": "Irresistible desire to repeat certain words."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Onychotillomania",
-      "description": "compulsive picking at the fingernails."
+      "description": "Compulsive picking at the fingernails."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Opsomania",
-      "description": "abnormal love for one kind of food."
+      "description": "Abnormal love for one kind of food."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Paramania",
-      "description": "an abnormal pleasure in complaining."
+      "description": "An abnormal pleasure in complaining."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Personamania",
-      "description": "compulsion to wear masks."
+      "description": "Compulsion to wear masks."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Phasmomania",
-      "description": "obsession with ghosts."
+      "description": "Obsession with ghosts."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Phonomania",
-      "description": "pathological tendency to murder."
+      "description": "Pathological tendency to murder."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Photomania",
-      "description": "pathological desire for light."
+      "description": "Pathological desire for light."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Planomania",
-      "description": "abnormal desire to disobey social norms."
+      "description": "Abnormal desire to disobey social norms."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Plutomania",
-      "description": "obsessive desire for wealth."
+      "description": "Obsessive desire for wealth."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Pseudomania",
-      "description": "irrational compulsion for lying."
+      "description": "Irrational compulsion for lying."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Pyromania",
-      "description": "compulsion for starting fires."
+      "description": "Compulsion for starting fires."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Question-Asking Mania",
-      "description": "compulsive urge to ask questions."
+      "description": "Compulsive urge to ask questions."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Rhinotillexomania",
-      "description": "compulsive nose picking."
+      "description": "Compulsive nose picking."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Scribbleomania",
-      "description": "obsession with scribbling/doodling."
+      "description": "Obsession with scribbling/doodling."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Siderodromomania",
-      "description": "intense fascination with trains and railroad travel."
+      "description": "Intense fascination with trains and railroad travel."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Sophomania",
-      "description": "the delusion that one is incredibly intelligent."
+      "description": "The delusion that one is incredibly intelligent."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Technomania",
-      "description": "obsession with new technology."
+      "description": "Obsession with new technology."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Thanatomania",
-      "description": "belief that one is cursed by death magic."
+      "description": "Belief that one is cursed by death magic."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Theomania",
-      "description": "belief that he or she is a god."
+      "description": "Belief that he or she is a god."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Titillomaniac",
-      "description": "compulsion for scratching oneself."
+      "description": "Compulsion for scratching oneself."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Tomomania",
-      "description": "irrational predilection for performing surgery."
+      "description": "Irrational predilection for performing surgery."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Trichotillomania",
-      "description": "craving for pulling out own hair."
+      "description": "Craving for pulling out own hair."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Typhlomania",
-      "description": "pathological blindness."
+      "description": "Pathological blindness."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Xenomania",
-      "description": "obsession with foreign things."
+      "description": "Obsession with foreign things."
     }
   },
   {
     "model": "creator.Mania",
     "fields": {
       "title": "Zoomania",
-      "description": "insane fondness for animals."
+      "description": "Insane fondness for animals."
     }
   }
 ]
