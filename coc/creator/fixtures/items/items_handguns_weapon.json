@@ -1,0 +1,21 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "",
+                "subcategory": "Handguns",
+                "description": "",
+                "skill": "",
+                "damage": "",
+                "base_range": "",
+                "uses_per_round": "",
+                "bullets_in_gun_mag": "",
+                "cost_20s_modern": "",
+                "malfunction": "",
+                "age": "1920's, Modern"
+            }
+        }
+    }
+]
