@@ -4,18 +4,170 @@
         "fields": {
             "category": 3,
             "properties": {
-                "title": "-",
+                "title": "AK-47 or AKM",
+                "subcategory": "Rifles",
+                "description": "",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6 + 1",
+                "base_range": "100 yards",
+                "uses_per_round": "1(2) or full auto",
+                "bullets_in_gun_mag": "30",
+                "cost_20s_modern": "-/$200",
+                "malfunction": "100",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "AK-74",
                 "subcategory": "Rifles",
                 "description": "",
                 "skill": "Firearms(Rifle)",
                 "damage": "2D6",
                 "base_range": "110 yards",
-                "uses_per_round": "-",
-                "bullets_in_gun_mag": "-",
-                "cost_20s_modern": "$25/$350",
-                "malfunction": "95",
+                "uses_per_round": "1(2) or full auto",
+                "bullets_in_gun_mag": "30",
+                "cost_20s_modern": "-/$1000",
+                "malfunction": "97",
                 "age": "Modern"
             }
         }
     },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Barrett Model 82",
+                "subcategory": "Rifles",
+                "description": "",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D10 + 1D8 + 6",
+                "base_range": "250 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "11",
+                "cost_20s_modern": "-/$3000",
+                "malfunction": "96",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "FN FAL Light Automatic",
+                "subcategory": "Rifles",
+                "description": "",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6 + 4",
+                "base_range": "110 yards",
+                "uses_per_round": "1(2) or burst 3",
+                "bullets_in_gun_mag": "20",
+                "cost_20s_modern": "-/$1500",
+                "malfunction": "97",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Galil Assault Rifle",
+                "subcategory": "Rifles",
+                "description": "",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6",
+                "base_range": "110 yards",
+                "uses_per_round": "1 or full auto",
+                "bullets_in_gun_mag": "20",
+                "cost_20s_modern": "-/$2000",
+                "malfunction": "98",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "M16A2",
+                "subcategory": "Rifles",
+                "description": "",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6",
+                "base_range": "110 yards",
+                "uses_per_round": "1(2) or burst 3",
+                "bullets_in_gun_mag": "30",
+                "cost_20s_modern": "-/-",
+                "malfunction": "97",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "M4",
+                "subcategory": "Rifles",
+                "description": "",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6",
+                "base_range": "90 yards",
+                "uses_per_round": "1 or burst 3",
+                "bullets_in_gun_mag": "30",
+                "cost_20s_modern": "-/-",
+                "malfunction": "97",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Steyr AUG",
+                "subcategory": "Rifles",
+                "description": "",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6",
+                "base_range": "110 yards",
+                "uses_per_round": "1(2) or full auto",
+                "bullets_in_gun_mag": "30",
+                "cost_20s_modern": "-/$1100",
+                "malfunction": "99",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Beretta M70/90",
+                "subcategory": "Rifles",
+                "description": "",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6",
+                "base_range": "110 yards",
+                "uses_per_round": "1 or full auto",
+                "bullets_in_gun_mag": "30",
+                "cost_20s_modern": "-/$2800",
+                "malfunction": "99",
+                "age": "Modern"
+            }
+        }
+    }
 ]
