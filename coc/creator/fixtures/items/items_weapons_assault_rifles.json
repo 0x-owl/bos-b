@@ -1,0 +1,21 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "-",
+                "subcategory": "Rifles",
+                "description": "",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6",
+                "base_range": "110 yards",
+                "uses_per_round": "-",
+                "bullets_in_gun_mag": "-",
+                "cost_20s_modern": "$25/$350",
+                "malfunction": "95",
+                "age": "Modern"
+            }
+        }
+    },
+]
