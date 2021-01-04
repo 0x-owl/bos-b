@@ -1,0 +1,40 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "20-gauge Shotgun (2B)",
+                "subcategory": "Shotguns",
+                "description": "",
+                "skill": "Firearms(Shotgun)",
+                "damage": "2D6/1D6/1D3",
+                "base_range": "10/20/50 yards",
+                "uses_per_round": "1 or 2",
+                "bullets_in_gun_mag": "2",
+                "cost_20s_modern": "$35/Rare",
+                "malfunction": "100",
+                "age": "1920's"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "16-gauge Shotgun (2B)",
+                "subcategory": "Shotguns",
+                "description": "",
+                "skill": "Firearms(Shotgun)",
+                "damage": "2D6 + 2/1D6 + 1/1D4",
+                "base_range": "10/20/50 yards",
+                "uses_per_round": "1 or 2",
+                "bullets_in_gun_mag": "2",
+                "cost_20s_modern": "$40/Rare",
+                "malfunction": "100",
+                "age": "1920's"
+            }
+        }
+    },
+]
