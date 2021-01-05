@@ -1,0 +1,46 @@
+<h4 style="text-align: center; border: 1px solid grey;"> Skills</h4>
+<div style="font-size: 15px;" class="row">
+    <div class="column">
+        {% for skill in res.skills|slice:":29" %}
+        <div class="row">
+            <div class="column">
+                {{skill.0}}:
+            </div>
+            <div style="text-align: right" class="column">
+                <b>{{skill.1|stringformat:"02d"}}</b>|
+                <b>{{skill.2|stringformat:"02d"}}</b>|
+                <b>{{skill.3|stringformat:"02d"}}</b>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="column">
+        {% for skill in res.skills|slice:"29:58" %}
+        <div class="row">
+            <div class="column">
+                {{skill.0}}:
+            </div>
+            <div style="text-align: right" class="column">
+                <b>{{skill.1|stringformat:"02d"}}</b>|
+                <b>{{skill.2|stringformat:"02d"}}</b>|
+                <b>{{skill.3|stringformat:"02d"}}</b>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="column">
+        {% for skill in res.skills|slice:"58:" %}
+        <div class="row">
+            <div class="column">
+                {{skill.0}}:
+            </div>
+            <div style="text-align: right" class="column">
+                <b>{{skill.1|stringformat:"02d"}}</b>|
+                <b>{{skill.2|stringformat:"02d"}}</b>|
+                <b>{{skill.3|stringformat:"02d"}}</b>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<hr>

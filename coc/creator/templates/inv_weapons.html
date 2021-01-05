@@ -1,0 +1,30 @@
+<h4 style="text-align: center; border: 1px solid grey;"> Weapons </h4>
+<table>
+    <thead>
+        <th>Weapon</th>
+        <th>Regular</th>
+        <th>Hard</th>
+        <th>Extreme</th>
+        <th>Damage</th>
+        <th>Range</th>
+        <th>Attacks</th>
+        <th>Ammo</th>
+        <th>Malf</th>
+    </thead>
+    <tbody>
+        {% for weapon in res.weapons %}
+        <tr>
+            <td>{{ weapon.item.properties.title }}</td>
+            <td>{{ weapon.item.properties.skill_value.0 }}</td>
+            <td>{{ weapon.item.properties.skill_value.1 }}</td>
+            <td>{{ weapon.item.properties.skill_value.2 }}</td>
+            <td>{{ weapon.item.properties.damage }}</td>
+            <td>{{ weapon.item.properties.base_range }}</td>
+            <td>{{ weapon.item.properties.uses_per_round }}</td>
+            <td>{{ weapon.item.properties.bullets_in_gun_mag }}</td>
+            <td>{{ weapon.item.properties.malfunction }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<hr>
