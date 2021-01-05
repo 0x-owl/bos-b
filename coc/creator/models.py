@@ -76,15 +76,19 @@ class SpellTag(BaseModel):
 
 class Skills(BaseModel):
     """Skills class."""
-    skills = JSONField()
+    title = CharField(max_length=50)
     year = CharField(max_length=50)
+    base_value = PositiveIntegerField(default=0)
+    description = TextField(default="")
+    uncommon = BooleanField(default=False)
+    sub_skills = JSONField()
 
     class Meta:
         verbose_name_plural = 'skills'
 
     def __str__(self):
         """String representation of the object."""
-        return self.year
+        return f"{self.title}-{self.year}"
 
 
 class Occupation(BaseModel):
