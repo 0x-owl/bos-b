@@ -40,6 +40,7 @@ def get_investigator_data(request, inv):
                 )
             )
         )
+
     res['skills'] = skills_sanitized
 
     # Retrieve "inventory"
