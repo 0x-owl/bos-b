@@ -144,8 +144,8 @@ def base_skills_generator(skills: list, inv: Investigator):
 def random_inv():
     """Main wrapper."""
     # Pick a random occupation
-    occupations = Occupation.objects.all()
-    occupation = choice(occupations)
+    occupations = Occupation.objects.filter(year="1920's", modern=False)
+    occupation = choice(list(occupations))
     genders = [('M', 'male'), ('F', 'female')]
     gender_pick = choice(genders)
     name = random_names(gender_pick[1], "20'", 1, 1)

@@ -175,8 +175,10 @@ one_skill = """
         edges{{
             node{{
                 uuid,
-                skills,
-                year
+                baseValue,
+                subSkills,
+                year,
+                uncommon
             }}
         }}
     }}
@@ -189,12 +191,15 @@ mutation{
     input:{
       method: "CREATE",
       year: "Future",
-      skills: "{\\"test_skill\\":{\\"title\\": \\"test_skill\\"}}"
+      baseValue: 10,
+      title: "Test",
+      description: "",
+      uncommon: false,
+      subSkills: "{\\"test_skill\\":{\\"title\\": \\"test_skill\\"}}"
     }){
     skill{
       uuid,
-      year,
-      skills
+      year
     }
   }
 }
@@ -207,12 +212,12 @@ mutation{{
       method: "UPDATE",
       uuid: "{uuid}",
       year: "FutureX2",
-      skills: "{{\\"Test Skill\\":{{\\"title\\": \\"test_skill2\\"}}}}"
+      subSkills: "{{\\"Test Skill\\":{{\\"title\\": \\"test_skill2\\"}}}}"
   }}){{
     skill{{
       uuid,
       year,
-      skills
+      subSkills
     }}
   }}
 }}
@@ -227,8 +232,7 @@ mutation{{
     }}){{
     skill{{
       uuid,
-      year,
-      skills
+      year
     }}
   }}
 }}

@@ -3,7 +3,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Accountant",
-      "description": "Either employed within a business or working as a freelance consultant with a portfolio of self-employed clients or businesses. Diligence and an attention to detail means that most accountants can make good researchers, being able to support investigations through the careful analysis of personal and business transactions, financial statements and other records",
+      "description": "Either employed within a business or working as a freelance consultant with a portfolio of self-employed clients or businesses. Diligence and an attention to detail means that most accountants can make good researchers, being able to support investigations through the careful analysis of personal and business transactions, financial statements, and other records.",
       "suggested_contacts": "Business associates, legal professions, financial sector (bankers, other accountants.)",
       "credit_rating_min": 30,
       "credit_rating_max": 70,
@@ -30,7 +30,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Acrobat",
-      "description": "Acrobats may be either amateur athletes competing in staged meets\\u2014possibly even the Olympics\\u2014or professionals employed with the entertainment sector (e.g. circuses, carnivals, theatrical performances.)",
+      "description": "Acrobats may be either amateur athletes competing in staged meets—possibly even the Olympics—or professionals employed with the entertainment sector (e.g. circuses, carnivals, theatrical performances)",
       "suggested_contacts": "Amateur athletic circles, sports writers, circuses and carnivals.",
       "credit_rating_min": 9,
       "credit_rating_max": 20,
@@ -58,7 +58,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Stage Actor",
-      "description": "Usually a stage or film actor. Many stage actors have a background in the classics and, considering themselves \\u201clegitimate,\\u201d have a tendency to look down upon the commercial efforts of the film industry, although by the late twentieth century this is diminished, with film actors able to command greater respect and higher fees. Movie stars and the film industry have long captured the interest of people across the world. Many stars are made \\u2018overnight\\u2019 and most of them lead \\ufb02ashy, high profile lives, ever in the media spotlight. In the 1920s, the theatrical center of the U.S. is in New York City, although there are major stages in most cities across the country. A similar situation exists in England, with touring repertory companies travelling the counties, with London the heart of theatrical shows. Touring companies travel by train, presenting new plays as well as classics by Shakespeare and others. Some companies spend considerable amounts of time touring foreign parts, such as Canada, Hawaii, Australia and Europe. With the introduction of \\u2018talkies\\u2019 in the latter part of the 1920s, many stars of the silent flms era cannot cope with the transition to sound. The arm-waving histrionics of silent actors give way to more subtle characterizations. John Garfield and Francis Bushman are forgotten for new stars such as Gary Cooper and Joan Crawford.",
+      "description": "Usually a stage or film actor. Many stage actors have a background in the classics and, considering themselves “legitimate,” have a tendency to look down upon the commercial efforts of the film industry, although by the late twentieth century this is diminished, with film actors able to command greater respect and higher fees. Movie stars and the film industry have long captured the interest of people across the world. Many stars are made overnight and most of them lead flashy, high profile lives, ever in the media spotlight. In the 1920s, the theatrical center of the U.S. is in New York City, although there are major stages in most cities across the country. A similar situation exists in England, with touring repertory companies traveling the counties, with London the heart of theatrical shows. Touring companies travel by train, presenting new plays, as well as classics by Shakespeare and others. Some companies spend considerable amounts of time touring foreign parts, such as Canada, Hawaii, Australia, and Europe. With the introduction of 'talkies' in the latter part of the 1920s, many stars of the silent films era cannot cope with the transition to sound. The arm-waving histrionics of silent actors give way to more subtle characterizations. John Garfield and Francis Bushman are forgotten for new stars, such as Gary Cooper and Joan Crawford.",
       "suggested_contacts": "Theatre industry, newspaper arts critics, actor\\u2019s guild or union.",
       "credit_rating_min": 9,
       "credit_rating_max": 40,
@@ -95,7 +95,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Film Star",
-      "description": "Usually a stage or film actor. Many stage actors have a background in the classics and, considering themselves \\u201clegitimate,\\u201d have a tendency to look down upon the commercial efforts of the film industry, although by the late twentieth century this is diminished, with film actors able to command greater respect and higher fees. Movie stars and the film industry have long captured the interest of people across the world. Many stars are made \\u2018overnight\\u2019 and most of them lead \\ufb02ashy, high profile lives, ever in the media spotlight. In the 1920s, the theatrical center of the U.S. is in New York City, although there are major stages in most cities across the country. A similar situation exists in England, with touring repertory companies travelling the counties, with London the heart of theatrical shows. Touring companies travel by train, presenting new plays as well as classics by Shakespeare and others. Some companies spend considerable amounts of time touring foreign parts, such as Canada, Hawaii, Australia and Europe. With the introduction of \\u2018talkies\\u2019 in the latter part of the 1920s, many stars of the silent flms era cannot cope with the transition to sound. The arm-waving histrionics of silent actors give way to more subtle characterizations. John Garfield and Francis Bushman are forgotten for new stars such as Gary Cooper and Joan Crawford.",
+      "description": "Usually a stage or film actor. Many stage actors have a background in the classics and, considering themselves “legitimate,” have a tendency to look down upon the commercial efforts of the film industry, although by the late twentieth century this is diminished, with film actors able to command greater respect and higher fees. Movie stars and the film industry have long captured the interest of people across the world. Many stars are made overnight and most of them lead flashy, high profile lives, ever in the media spotlight. In the 1920s, the theatrical center of the U.S. is in New York City, although there are major stages in most cities across the country. A similar situation exists in England, with touring repertory companies traveling the counties, with London the heart of theatrical shows. Touring companies travel by train, presenting new plays, as well as classics by Shakespeare and others. Some companies spend considerable amounts of time touring foreign parts, such as Canada, Hawaii, Australia, and Europe. With the introduction of 'talkies' in the latter part of the 1920s, many stars of the silent films era cannot cope with the transition to sound. The arm-waving histrionics of silent actors give way to more subtle characterizations. John Garfield and Francis Bushman are forgotten for new stars, such as Gary Cooper and Joan Crawford.",
       "suggested_contacts": "Film industry, media critics, writers.",
       "credit_rating_min": 20,
       "credit_rating_max": 90,
@@ -128,7 +128,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Agency Detective",
-      "description": "Numerous well-known detective agencies exist around the world, with probably the most famous being the Pinkerton and Burns agencies (merged into one in modern times. Large agencies employ two types of agents: security guards and operatives. Guards are uniformed patrolmen, hired by companies and individuals to protect property and people against burglars, assassins and kidnappers. Use the Uniformed Police Offcer\\u2019s description for these characters. Company Operatives are plainclothes detectives, sent out on cases requiring them to solve mysteries, prevent murders, locate missing people, etc.",
+      "description": "Numerous well-known detective agencies exist around the world, with probably the most famous being the Pinkerton and Burns agencies (merged into one in modern times). Large agencies employ two types of agents: security guards and operatives. Guards are uniformed patrolmen, hired by companies and individuals to protect property and people against burglars, assassins and kidnappers. Use the Uniformed Police Officer’s description for these characters. Company Operatives are plainclothes detectives, sent out on cases requiring them to solve mysteries, prevent murders, locate missing people, and so on.",
       "suggested_contacts": "Local law enforcement, clients.",
       "credit_rating_min": 20,
       "credit_rating_max": 45,
@@ -168,7 +168,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Alienist",
-      "description": "In the 1920s, \\u2018alienist\\u2019 is the term given for those who treat mental illness (early psychiatrists. Psychoanalysis is barely known in the U.S., and its basis in sexual life and toilet training is felt to be indecent. Psychiatry, a standard medical education augmented by behaviorism, is more common. Intellectual wars rage between alienists, psychiatrists and neurologists.",
+      "description": "In the 1920s, 'alienist' is the term given for those who treat mental illness (early psychiatrists). Psychoanalysis is barely known in the U.S., and its basis in sexual life and toilet training is felt to be indecent. Psychiatry, a standard medical education augmented by behaviorism, is more common. Intellectual wars rage between alienists, psychiatrists, and neurologists.",
       "suggested_contacts": " Others in the field of mental illness, medical doctors and occasionally detectives in law enforcement.",
       "credit_rating_min": 10,
       "credit_rating_max": 60,
@@ -197,7 +197,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Animal Trainer",
-      "description": "May be employed by film studios, a travelling circus, a horse stable or possibly working freelance. Whether training guide dogs for the blind or teaching a lion to jump through a \\ufb02aming hoop, the animal trainer usually works alone, spending long hours in close proximity with the animals in their care. An animal trainer can use the psychology skill with animals as well as people.",
+      "description": "May be employed by film studios, a travelling circus, a horse stable, or possibly working freelance. Whether training guide dogs for the blind or teaching a lion to jump through a flaming hoop, the animal trainer usually works alone, spending long hours in close proximity with the animals in their care. An animal trainer can use the Psychology skill with animals as well as people",
       "suggested_contacts": "Zoos, circus folk, patrons, actors.",
       "credit_rating_min": 10,
       "credit_rating_max": 40,
@@ -228,7 +228,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Antiquarian",
-      "description": "A person who delights in the timeless excellence of design and execution and in the power of ancient lore. Probably the most Lovecraft-like occupation available to an investigator! An independent income allows the antiquarian to explore things \\u2018old and obscure\\u2019, perhaps sharpening their focus down particular lines of enquiry based on personal preference and interest. Usually a person with an appreciative eye and a swift mind, who frequently finds mordant or contemptuous humor in the foolishness of the ignorant, the pompous, and the greedy.",
+      "description": "A person who delights in the timeless excellence of design and execution, and in the power of ancient lore. Probably the most Lovecraft-like occupation available to an investigator. An independent income allows the antiquarian to explore things old and obscure, perhaps sharpening their focus down particular lines of enquiry based on personal preference and interest. Usually a person with an appreciative eye and a swift mind, who frequently finds mordant or contemptuous humor in the foolishness of the ignorant, the pompous, and the greedy.",
       "suggested_contacts": "Booksellers, antique collectors, historical societies.",
       "credit_rating_min": 30,
       "credit_rating_max": 70,
@@ -266,7 +266,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Antique Dealer",
-      "description": "Antique dealers usually own their own shop, retail items out of their homes or go on extended buying trips, making proft on reselling to urban stores.",
+      "description": "Antique dealers usually own their own shop, retail items out of their homes, or go on extended buying trips, making a profit on reselling to urban stores.",
       "suggested_contacts": "Local historians, other antique dealers, possibly criminal fences.",
       "credit_rating_min": 30,
       "credit_rating_max": 50,
@@ -299,7 +299,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Archaeologist",
-      "description": "The study and exploration of the past. Primarily the identifcation, examination and analysis of recovered materials relating to human history. The work involves painstaking research and meticulous study, not to mention a willing attitude to getting one\\u2019s hands dirty. In the 1920s, successful archeologists became celebrities, seen as explorers and adventurers. While some used scientific methods, many were happy to apply brute force when unveiling the secrets of the past\\u2014 the use of dynamite was common. Such bullish behavior would be frowned upon in modern times.",
+      "description": "The study and exploration of the past. Primarily the identification, examination, and analysis of recovered materials relating to human history. The work involves painstaking research and meticulous study, not to mention a willing attitude to getting one’s hands dirty. In the 1920s, successful archaeologists became celebrities, seen as explorers and adventurers. While some used scientific methods, many were happy to apply brute force when unveiling the secrets of the past— the use of dynamite was sometimes common. Such bullish behavior would be frowned upon in modern times.",
       "suggested_contacts": " Patrons, museums, universities.",
       "credit_rating_min": 10,
       "credit_rating_max": 40,
@@ -332,7 +332,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Architect",
-      "description": "Architects are trained to design and plan buildings, whether a small conversion to a private house or a multi(million dollar construction project. The architect will work closely with the project manager and oversee the construction. Architects must be aware of local planning laws, health and safety regulation and general public safety. Some may work for large firms or work freelance. A lot will depend on reputation. In the 1920s, many try and go it alone, working out of their house or a small office. Few manage to sell the grandiose designs they all nurse. Architecture may also encompass specialist areas like naval architecture and landscape architecture.",
+      "description": "Architects are trained to design and plan buildings, whether a small conversion to a private house or a multi-million dollar construction project. The architect will work closely with the project manager and oversee the construction. Architects must be aware of local planning laws, health and safety regulation, and general public safety. Some may work for large firms or work freelance. A lot will depend on reputation. In the 1920s, many try and go it alone, working out of their house or a small office. Few manage to sell the grandiose designs they all nurse. Architecture may also encompass specialist areas like naval architecture and landscape architecture. ",
       "suggested_contacts": "Local building and city engineering departments, construction firms.",
       "credit_rating_min": 30,
       "credit_rating_max": 70,
@@ -364,7 +364,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Artist",
-      "description": "May be a painter, sculptor, etc. Sometimes self(absorbed and driven with a particular vision, sometimes blessed with a great talent that is able to inspire passion and understanding. Talented or not, the artist\\u2019s ego must be hardy and strong to surmount initial obstacles and critical appraisal, and to keep them working if success arrives. Some artists care not for material enrichment, while others have a keen entrepreneurial streak.",
+      "description": "May be a painter, sculptor, etc. Sometimes self-absorbed and driven with a particular vision, sometimes blessed with a great talent that is able to inspire passion and understanding. Talented or not, the artist’s ego must be hardy and strong to surmount initial obstacles and critical appraisal, and to keep them working if success arrives. Some artists care not for material enrichment, while others have a keen entrepreneurial streak.",
       "suggested_contacts": "Art galleries, critics, wealthy patrons, the advertising industry.",
       "credit_rating_min": 9,
       "credit_rating_max": 50,
@@ -407,7 +407,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Asylum Attendant",
-      "description": "Although there are private sanitariums for those few who can afford them, the vast bulk of the mentally ill are housed in state and county facilities. Aside from a few doctors and nurses, they employ a large number of attendants, often chosen more for their strength and size rather than medical learning",
+      "description": "Although there are private sanitariums for those few who can afford them, the vast bulk of the mentally ill are housed in state and county facilities. Aside from a few doctors and nurses, they employ a large number of attendants, often chosen more for their strength and size rather than medical learning.",
       "suggested_contacts": "Medical staff, patients and relatives of patients. Access to medical records as well as drugs and other medical supplies.",
       "credit_rating_min": 8,
       "credit_rating_max": 20,
@@ -443,7 +443,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Athlete",
-      "description": "Probably plays in a professional baseball, football, cricket or basketball team. This may be a major league team with a regular salary and national attention or\\u2014particularly in the case of 1920s baseball\\u2014one of many minor league teams, some of them owned and operated by major league owners. The latter pay barely enough to keep players fed and on the team. Successful professional athletes will enjoy a certain amount of celebrity within the arena of their expertise\\u2014 more so in the present day where sporting heroes stand side by side with film stars on red carpets around the world.",
+      "description": "Probably plays in a professional baseball, football, cricket, or basketball team. This may be a major league team with a regular salary and national attention or—particularly in the case of 1920s baseball—one of many minor league teams, some of them owned and operated by major league owners. The latter pay barely enough to keep players fed and on the team. Successful professional athletes will enjoy a certain amount of celebrity within the arena of their expertise—more so in the present day where sporting heroes stand side by side with film stars on red carpets around the world.",
       "suggested_contacts": "Sports personalities, sports writers, other media stars.",
       "credit_rating_min": 9,
       "credit_rating_max": 70,
@@ -513,7 +513,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Bartender",
-      "description": "Normally not the owner of the bar, the bartender is everyone\\u2019s friend. For some it\\u2019s a career or their business, for many it's a means to an end. In the 1920s the profession is made illegal by the Prohibition Act; however, there\\u2019s no shortage of work for a bartender, as someone has to serve the drinks in the speakeasies and secret gin joints.",
+      "description": "Normally not the owner of the bar, the bartender is everyone’s friend. For some it’s a career or their business, for many it's a means to an end. In the 1920s the profession is made illegal by the Prohibition Act; however, there’s no shortage of work for a bartender, as someone has to serve the drinks in the speakeasies and secret gin joints. ",
       "suggested_contacts": "Regular customers, possibly organized crime.",
       "credit_rating_min": 8,
       "credit_rating_max": 25,
@@ -547,7 +547,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Big Game Hunter",
-      "description": "Big game hunters are skilled trackers and hunters who usually earn their living leading safaris for wealthy clients. Most are specialized in one part of the world, such as the Canadian woods, African plains, or other. Some hunters may work for the black market, capturing live exotic species for private collectors or trading in illegal or morally objectionable animal products like skins, ivory and the like\\u2014although in the 1920s such activities were more common and were permissible under most countries\\u2019 laws. Although the \\u2018great white hunter\\u2019 is the quintessential type, others may be simply local indigenous people who escort hunters through the backwoods of the Yukon in search of moose or bear.",
+      "description": "Big game hunters are skilled trackers and hunters who usually earn their living leading safaris for wealthy clients. Most are specialized in one part of the world, such as the Canadian woods, African plains, and other locales. Some hunters may work for the black market, capturing live exotic species for private collectors, or trading in illegal or morally objectionable animal products like skins, ivory, and the like—although in the 1920s such activities were more common and were permissible under most countries’ laws. Although the 'great white hunter' is the quintessential type, others may be simply local indigenous people who escort hunters through the backwoods of the Yukon in search of moose or bear.",
       "suggested_contacts": "Foreign government officials, game wardens, past (usually wealthy clients, black market gangs and traders, zoo owners)",
       "credit_rating_min": 20,
       "credit_rating_max": 50,
@@ -559,7 +559,7 @@
           "Track"
         ],
         "skill_misc": [
-          "Language(Other",
+          "Language(Other)",
           "Survival"
         ],
         "skill_professionalt": [
@@ -627,7 +627,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Bounty Hunter",
-      "description": "Bounty hunters track down and return fugitives to justice. Most often freelancers employed by Bail Bondsmen to track down bail jumpers, bounty hunters may freely cross state lines in pursuit of their quarry and may show little regard for civil rights and other technicalities when capturing their prey. Breaking and entering, threats, and physical abuse are all part of the successful bounty hunter\\u2019s bag of tricks. In modern times this may stem to illegal phone taps, computer hacking and other covert surveillance.",
+      "description": "Bounty hunters track down and return fugitives to justice. Most often, freelancers are employed by Bail Bondsmen to track down bail jumpers. Bounty hunters may freely cross state lines in pursuit of their quarry and may show little regard for civil rights and other technicalities when capturing their prey. Breaking and entering, threats, and physical abuse are all part of the successful bounty hunter’s bag of tricks. In modern times this may stem to illegal phone taps, computer hacking, and other covert surveillance.",
       "suggested_contacts": "Bail bondsmen, local police, criminal informants.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
@@ -673,7 +673,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Boxer-Wrestler",
-      "description": "Professional boxers and wrestlers are managed by individuals (promoters possibly backed by outside interests, and usually locked into contracts. Professional boxers and wrestlers work and train full-time. Amateur boxing competitions abound, a training ground for those aspiring to professional status. In addition, amateur and post-professional boxers and wrestlers can sometimes be found making a living from illegal bareknuckle fights, usually arranged by organized crime gangs or entrepreneurial locals.",
+      "description": "Professional boxers and wrestlers are managed by individuals (promoters) possibly backed by outside interests, and usually locked into contracts. Professional boxers and wrestlers work and train full-time. Amateur boxing competitions abound, a training ground for those aspiring to professional status. In addition, amateur and post-professional boxers and wrestlers can sometimes be found making a living from illegal *bare-knuckle fights, usually arranged by organized crime gangs or entrepreneurial locals.",
       "suggested_contacts": "Sports promoters, journalists, organized crime, professional trainers.",
       "credit_rating_min": 9,
       "credit_rating_max": 60,
@@ -701,7 +701,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Butler-Valet-Maid",
-      "description": "This occupation covers those who are employed in a servant capacity and includes butler, valet and lady\\u2019s maid. A butler is usually employed as a domestic servant for a large household. Traditionally the butler is charge of the dining room, wine cellar and pantry, and ranks as the highest male servant. Usually male\\u2014 a housekeeper would be the female equivalent\\u2014the butler is responsible for male servants within the household. The duties of the butler will vary to according to the requirements of his employer. A valet or lady\\u2019s maid provides personal services, such as maintaining her employer's clothes, running baths and effectively acting as personal assistant. The work might include making travel arrangements, managing their employer\\u2019s diary and organizing household finances.",
+      "description": "This occupation covers those who are employed in a servant capacity and includes butler, valet, and lady’s maid. A butler is usually employed as a domestic servant for a large household. Traditionally the butler is charge of the dining room, wine cellar and pantry, and ranks as the highest male servant. Usually male—a housekeeper would be the female equivalent—the butler is responsible for male servants within the household. The duties of the butler will vary to according to the requirements of his employer. A valet or lady’s maid provides personal services, such as maintaining her employer's clothes, running baths, and effectively acting as a personal assistant. The work might include making travel arrangements, managing their employer’s diary, and organizing household finances.",
       "suggested_contacts": "Waiting staff of other households, local businesses and household suppliers.",
       "credit_rating_min": 9,
       "credit_rating_max": 40,
@@ -736,7 +736,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Member of the Clergy",
-      "description": "The hierarchy of the church usually assigns clergy to the irrespective parishes or sends them on evangelical missions,most often to a foreign country (see Missionary). Different churches have different priorities and hierarchies: for example in the Catholic Church a priest may rise through the ranks of bishop, archbishop and cardinal, while a Methodist pastor may in turn rise to district superintendent and bishop.Many clergy (not just) Catholic Priests bear witness to confessions and, though they are not at liberty to divulge such secrets, they are free to act upon them.Some who work \\u2018in the church\\u2019 are trained in professional skills, acting as doctors, lawyers and scholars\\u2014as appropriate, use the occupation template which best describes the nature of the investigator\\u2019s work.",
+      "description": "The hierarchy of the Church usually assigns clergy to their respective parishes or sends them on evangelical missions, most often to a foreign country (see Missionary). Different churches have different priorities and hierarchies: for example, in the Catholic Church a priest may rise through the ranks of bishop, archbishop, and cardinal, while a Methodist pastor may in turn rise to district superintendent and bishop. Many clergy (not just Catholic priests) bear witness to confessions and, though they are not at liberty to divulge such secrets, they are free to act upon them. Some who work in the church are trained in professional skills, acting as doctors, lawyers, and scholars—as appropriate, use the occupation template which best describes the nature of the investigator’s work.",
       "suggested_contacts": " Church hierarchy, local congregations, community leaders.",
       "credit_rating_min": 9,
       "credit_rating_max": 60,
@@ -769,12 +769,13 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Computer Programmer-Technician-Hacker",
-      "description": "Usually designing, writing, testing, debugging and/or maintaining the source code of computer programs, the computer programmer is an expert in many different subjects, including formal logic and application platforms. May work freelance or within the confines of a software development house. The computer technician is tasked with the development and maintenance of computer systems and networks, often working alongside other office staff (such as project managers to ensure systems maintain integrity and provide desired functionality. Similar occupations may include: Database Administrator, IT Systems Manager, Multimedia Developer, Network Administrator, Software Engineer, Webmaster, etc. The computer hacker uses computers and computer networks as a means of protest to promote political ends (sometimes referred to as \\u2018hacktivists\\u2019 or for criminal gain. Illegally breaking into computers and other user accounts is required, the outcome of which could be anything from defacing web pages, doxing, swatting to email bombing designed to enact denials of service.",
+      "title": "Computer Programmer-Technician",
+      "description": "Usually designing, writing, testing, debugging, and/or maintaining the source code of computer programs, the computer programmer is an expert in many different subjects, including formal logic and application platforms. May work freelance or within the confines of a software development house. The computer technician is tasked with the development and maintenance of computer systems and networks, often working alongside other office staff (such as project managers) to ensure systems maintain integrity and provide desired functionality. Similar occupations may include: Database Administrator, IT Systems Manager, Multimedia Developer, Network Administrator, Software Engineer, Webmaster, etc. The computer hacker uses computers and computer networks as a means of protest to promote political ends (sometimes referred to as 'hacktivists') or for criminal gain. Illegally breaking into computers and other user accounts is required, the outcome of which could be anything from defacing web pages, doxing, and swatting to email bombing designed to enact denials of service.",
       "suggested_contacts": "Other IT workers, corporate workers and managers, specialized Internet web communities.",
       "credit_rating_min": 10,
       "credit_rating_max": 70,
       "modern": true,
+      "year": "Modern",
       "skills": {
         "basics": [
           "Computer Use",
@@ -798,7 +799,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Hacker",
-      "description": "Usually designing, writing, testing, debugging and/or maintaining the source code of computer programs, the computer programmer is an expert in many different subjects, including formal logic and application platforms. May work freelance or within the confines of a software development house. The computer technician is tasked with the development and maintenance of computer systems and networks, often working alongside other office staff (such as project managers to ensure systems maintain integrity and provide desired functionality. Similar occupations may include: Database Administrator, IT Systems Manager, Multimedia Developer, Network Administrator, Software Engineer, Webmaster, etc. The computer hacker uses computers and computer networks as a means of protest to promote political ends (sometimes referred to as \\u2018hacktivists\\u2019 or for criminal gain. Illegally breaking into computers and other user accounts is required, the outcome of which could be anything from defacing web pages, doxing, swatting to email bombing designed to enact denials of service.",
+      "description": "Usually designing, writing, testing, debugging, and/or maintaining the source code of computer programs, the computer programmer is an expert in many different subjects, including formal logic and application platforms. May work freelance or within the confines of a software development house. The computer technician is tasked with the development and maintenance of computer systems and networks, often working alongside other office staff (such as project managers) to ensure systems maintain integrity and provide desired functionality. Similar occupations may include: Database Administrator, IT Systems Manager, Multimedia Developer, Network Administrator, Software Engineer, Webmaster, etc. The computer hacker uses computers and computer networks as a means of protest to promote political ends (sometimes referred to as 'hacktivists') or for criminal gain. Illegally breaking into computers and other user accounts is required, the outcome of which could be anything from defacing web pages, doxing, and swatting to email bombing designed to enact denials of service.",
       "suggested_contacts": "IT workers, specialized Internet web communities, political groups, criminal enterprises.",
       "credit_rating_min": 10,
       "credit_rating_max": 70,
@@ -831,7 +832,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Cowboy-girl",
-      "description": "Cowboys work the ranges and ranches of the West. Some own their own ranches, however many are simply hired where and when work is available. Good money can also be made by those willing to risk life and limb on the rodeo circuit, travelling between events for fame and glory. During the 1920s, a few found employment in Hollywood as stuntmen and extras in westerns\\u2014for example, Wyatt Earp worked as a technical advisor to the film industry. In modern times some ranches have opened their gates to holiday makers wishing to experience \\u2018life as a cowboy\\u2019",
+      "description": "Cowboys work the ranges and ranches of the West. Some own their own ranches, however many are simply hired where and when work is available. Good money can also be made by those willing to risk life and limb on the rodeo circuit, travelling between events for fame and glory. During the 1920s, a few found employment in Hollywood as stuntmen and extras in westerns; for example, Wyatt Earp worked as a technical advisor to the film industry. In modern times some ranches have opened their gates to holidaymakers wishing to experience life as a cowboy.",
       "suggested_contacts": "Local businesspeople, state agricultural departments, rodeo promoters and entertainers",
       "credit_rating_min": 9,
       "credit_rating_max": 20,
@@ -845,10 +846,13 @@
           "Dodge",
           "Jump",
           "Ride",
-          "Survival",
           "Throw",
           "Track"
         ],
+        "skill_misc": [
+          "Survival"
+        ],
+        "limit_misc": 1,
         "skill_professionalt": [
           "First Aid",
           "Natural World"
@@ -870,7 +874,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Craftsperson",
-      "description": "May be equally termed an artisan or master craftsperson. The craftsperson is essentially skilled in the manual production of items or materials. Normally quite talented individuals, some gaining a high reputation for works of art, while others provide a needed community service. Possible trades include: furniture, jewelry, watchmaker, potter, blacksmith, textiles, calligraphy, sewing, carpentry, book binding glassblowing, toy maker, stained glass and so on.",
+      "description": "May be equally termed an artisan or master craftsperson. The craftsperson is essentially skilled in the manual production of items or materials. Normally quite talented individuals, some gaining a high reputation for works of art, while others provide a needed community service. Possible trades include: furniture, jewelry, watchmaker, potter, blacksmiMay be equally termed an artisan or master craftsperson. The craftsperson is essentially skilled in the manual production of items or materials. Normally quite talented individuals, some gaining a high reputation for works of art, while others provide a needed community service. Possible trades include: furniture, jewelry, watchmaker, potter, blacksmith, textiles, calligraphy, sewing, carpentry, book binding glassblowing, toy maker, stained glass, and so on.th, textiles, calligraphy, sewing, carpentry, book binding glassblowing, toy maker, stained glass and so on.",
       "suggested_contacts": "Local business people, other craftspersons and artists.",
       "credit_rating_min": 10,
       "credit_rating_max": 40,
@@ -1137,7 +1141,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Gun Moll",
-      "description": "A female professional criminal. While many are fiercely independent, some are at the beck and call of mobster boyfriends((however, in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry.",
+      "description": "A female professional criminal. While many are fiercely independent, some are at the beck and call of mobster boyfriends—however, in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry",
       "suggested_contacts": "Gangsters, law enforcement, local businesses.",
       "credit_rating_min": 10,
       "credit_rating_max": 80,
@@ -1213,7 +1217,7 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Forger(Counterfeiter",
+      "title": "Forger-Counterfeiter",
       "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner(boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard(earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or (unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold(blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high(risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook(up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
       "suggested_contacts": "Organized crime, businesspeople.",
       "credit_rating_min": 20,
@@ -1325,7 +1329,7 @@
     "fields": {
       "title": "Cult Leader",
       "description": "America has always generated new religions, from the New England Transcendentalists to the Children of God, as well as many others, right up to modern times. The leader is either a firmbeliever in the dogma they impart to the cult\\u2019s members or simply in it for the money and power. During the 1920s, any number of charismatic cult leaders emerge. Some espouse forms of Christianity while others incorporate Eastern mysticism and occult practices. These groups are particularly familiar to America\\u2019s West Coast but are found all around the country in different forms. The southern Bible Belt supports many traveling tent shows featuring song, dance, and gospel revival. Other countries also see such fringe religions springing up wherever there are those in need of something to believe in.",
-      "suggested_contacts": "While the majority of followers will be \\u2018regular\\u2019 people, the more charismatic the leader, the greater the possibility of celebrity followers, such as movie stars and rich widows.",
+      "suggested_contacts": "While the majority of followers will be 'regular' people, the more charismatic the leader, the greater the possibility of celebrity followers, such as movie stars and rich widows.",
       "credit_rating_min": 30,
       "credit_rating_max": 60,
       "skills": {
@@ -1362,6 +1366,7 @@
       "credit_rating_min": 20,
       "credit_rating_max": 50,
       "modern": true,
+      "year": "Modern",
       "skills": {
         "skill_combat": [
           "Fighting"
@@ -1800,8 +1805,7 @@
           "Jump",
           "Language(Other)",
           "Natural World",
-          "Navigate",
-          "Survival"
+          "Navigate"
         ],
         "skill_professionalt": [
           "Climb",
@@ -1811,7 +1815,11 @@
         "skill_combat": [
           "Firearms"
         ],
-        "limit_combat": 1
+        "limit_combat": 1,
+        "skill_misc": [
+          "Survival"
+        ],
+        "limit_misc": 1
       },
       "points": {
         "mandatory_attributes": {
@@ -1928,7 +1936,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Flapper",
-      "description": "Being a \\ufb02apper is a state of mind rather than an occupation, although some dilettantes have raised it to a fineart. Pixie haircuts, cloche hats, long strings of beads and gowns slit high up the side are de rigueur. Above all is required a distinct lack of restraint and an eagerness to \\ufb02out social norms. Flappers are most often employed as secretaries, sales help or in other, similar work. Many origins are given for the name \\ufb02apper\\u2014it most likely dates back to the early years of the 1920s, when it became fashionable to wear rubber galoshes left unbuckled to \\u2018\\ufb02ap\\u2019 while walking: however it equally could derive from the symbol of a young bird \\ufb02apping its wings while learning to \\ufb02y.",
+      "description": "Being a flapper is a state of mind rather than an occupation, although some dilettantes have raised it to a fineart. Pixie haircuts, cloche hats, long strings of beads and gowns slit high up the side are de rigueur. Above all is required a distinct lack of restraint and an eagerness to \\ufb02out social norms. Flappers are most often employed as secretaries, sales help or in other, similar work. Many origins are given for the name \\ufb02apper\\u2014it most likely dates back to the early years of the 1920s, when it became fashionable to wear rubber galoshes left unbuckled to \\u2018\\ufb02ap\\u2019 while walking: however it equally could derive from the symbol of a young bird \\ufb02apping its wings while learning to \\ufb02y.",
       "suggested_contacts": " Jazz-age society, bohemians, dilettantes, criminals.",
       "credit_rating_min": 10,
       "credit_rating_max": 30,
@@ -2183,7 +2191,7 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Gentleman(Lady",
+      "title": "Gentleman-Lady",
       "description": "A man of good breeding, courteous behavior and good conduct. Usually the term is applied to a member of the upper class who is independently wealthy (either by inheritance or regular allowance. In the 1920s, a gentleman would certainly have had at least one servant (butler, valet, chauffer and probably a country and city residence. One does not necessarily have to be rich to be a gentleman, as often family status is more important than family wealth in terms of the highest society.",
       "suggested_contacts": "Upper classes and landed gentry, politics, servants and agricultural workers.",
       "credit_rating_min": 40,
@@ -2736,9 +2744,12 @@
           "Language(Other)",
           "Listen",
           "Navigate",
-          "Survival",
           "Track"
-        ]
+        ],
+        "skill_misc": [
+          "Survival"
+        ],
+        "limit_misc": 1
       },
       "points": {
         "mandatory_attributes": {
@@ -2784,7 +2795,7 @@
     "fields": {
       "title": "Musician",
       "description": "May perform in an orchestra, group or solo, with any instrument you care to think of. Getting noticed is hard and then getting a recording contract is also difficult. Most musicians are poor and do not get noticed, eking a living by playing small venues as often as they can. A fortunate few might get regular work, such as playing a piano in a bar or hotel or within a city orchestra. For the minority, great success and wealth can be found by being in the right place at the right time, plus having a modicum of talent. The 1920s is, of course, the Jazz Age, and musicians work in small combos and dance orchestras in large and medium sized cities and towns across America. A few musicians living in large cities like Chicago or New York find steady work in their hometown, but most spend significant amounts of time on the road, touring either by bus, by automobile or by train.",
-      "suggested_contacts": "Club owners, musicians\\u2019 union, organized crime, street(level criminals.",
+      "suggested_contacts": "Club owners, musicians union, organized crime, street-level criminals.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
       "skills": {
@@ -2896,9 +2907,12 @@
           "Natural World",
           "Navigate",
           "Spot Hidden",
-          "Survival",
           "Track"
         ],
+        "skill_misc": [
+          "Survival"
+        ],
+        "limit_misc": 1,
         "skill_combat": [
           "Firearms"
         ],
@@ -3350,7 +3364,7 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Psychologist(Psychoanalyst",
+      "title": "Psychologist-Psychoanalyst",
       "description": "While commonly known for the fields of psychotherapy and counseling, this is just one branch of psychology. Other specialists include organizational psychologists who work with businesses and governments, as well as academics conducting research or teaching psychology. Clinical psychologists may work with patients, using a range of therapeutic tools. Note the distinction between a psychologist and a psychiatrist, who is a physician specialist. In the 1920s, the study of human behavior was a rather new field and primarily focused on Freudian analysis.",
       "suggested_contacts": "Psychological community, patients",
       "credit_rating_min": 10,
@@ -3411,7 +3425,7 @@
     "fields": {
       "title": "Sailor, Naval",
       "description": "Sailors may be military or commercial. Naval sailors, like their counterparts in the Army, go through an initial period of basic training. Upon graduation they are assigned rates and stations. Although many sailors serve in the traditional roles of Boatswain\\u2019s Mate or Fireman rating (ship\\u2019s engine man, the Navy also has a need for technically trained mechanics, radio operators, air controllers, etc. The highest enlisted rank is Chief Petty Offcer, which carries with it a prestige respected by even high(ranking officers. Enlistments are for a fixed number of years\\u2014in the U.S. Navy this is usually four years of active duty followed by two years of inactive reserve commitment, during which time the sailor can be called to serve in times of national emergency. Commercial sailors may work aboard a fishing vessel, charter boat or haulage tankers, carrying oil or commodities. In the U.S., charter boats work both coasts, as well as on the Great Lakes, catering to sport fisherman and vacationers. By far the greatest number of charter boats are found in Florida, on both the Gulf and ocean coasts. During Prohibition, many a charter boat captain found a lucrative trade in ferrying thirsty customers to the 3(mile limit, where foreign ships could sell alcohol. Likewise, smuggling for the bootleggers could pay well; however the risks were high.",
-      "suggested_contacts": " Military, veterans\\u2019 associations.",
+      "suggested_contacts": " Military, veterans associations.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
       "skills": {
@@ -3419,9 +3433,12 @@
           "First Aid",
           "Navigate",
           "Pilot(Boat)",
-          "Survival",
           "Swim"
         ],
+        "skill_misc": [
+          "Survival"
+        ],
+        "limit_misc": 1,
         "skill_combat": [
           "Firearms"
         ],
@@ -3488,7 +3505,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Salesperson",
-      "description": "An integral part of many businesses, salespeople work to promote and sell their employer\\u2019s goods or services. Most spend much of their time travelling, meeting and entertaining clients as much as their expenses account will allow. Some are mainly office(based, working telephones to contact potential clients, while others travel between communities to sell their wares door(to(door. The 1920s is the decade of the entrepreneur, and the traveling salesperson is a part of everyday life. Some work directly for companies and others on consignment, but most live and die by commission, using hard sales tactics to gain the confidence of a potential buyer and not caring whether their sale is affordable or not. Some are restricted to certain territories; however others are free to roam and seek out prospects wherever they might be found. Brushes, vacuum cleaners and encyclopedias are only a few of the many items that be offered door(to(door.",
+      "description": "An integral part of many businesses, salespeople work to promote and sell their employer's goods or services. Most spend much of their time travelling, meeting and entertaining clients as much as their expenses account will allow. Some are mainly office(based, working telephones to contact potential clients, while others travel between communities to sell their wares door(to(door. The 1920s is the decade of the entrepreneur, and the traveling salesperson is a part of everyday life. Some work directly for companies and others on consignment, but most live and die by commission, using hard sales tactics to gain the confidence of a potential buyer and not caring whether their sale is affordable or not. Some are restricted to certain territories; however others are free to roam and seek out prospects wherever they might be found. Brushes, vacuum cleaners and encyclopedias are only a few of the many items that be offered door(to(door.",
       "suggested_contacts": "Businesses within the same sector, favored customers.",
       "credit_rating_min": 9,
       "credit_rating_max": 40,
@@ -3609,7 +3626,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Shopkeeper",
-      "description": "The owner of a small shop, market stall or perhaps restaurant. Usually self(employed, but may be the manager running the shop on behalf of the owner. Possibly family run, with relations also working on the premises, however normally few, if any, employees. The 1920s saw many women opening their own hairdressing and millinery shops.",
+      "description": "The owner of a small shop, market stall or perhaps restaurant. Usually self-employed, but may be the manager running the shop on behalf of the owner. Possibly family run, with relations also working on the premises, however normally few, if any, employees. The 1920s saw many women opening their own hairdressing and millinery shops.",
       "suggested_contacts": "Local residents and businesses, local police, local government, customers.",
       "credit_rating_min": 20,
       "credit_rating_max": 40,
@@ -3652,9 +3669,12 @@
       "skills": {
         "basics": [
           "Dodge",
-          "Stealth",
+          "Stealth"
+        ],
+        "skill_survival": [
           "Survival"
         ],
+        "limit_survival": 1,
         "skill_optional": [
           "First Aid",
           "Mechanical Repair",
@@ -3827,9 +3847,12 @@
           "Natural World",
           "Occult",
           "Spot Hidden",
-          "Survival",
           "Swim"
-        ]
+        ],
+        "skill_professionalt": [
+          "Survival"
+        ],
+        "limit_professionalt": 1
       },
       "points": {
         "mandatory_attributes": {

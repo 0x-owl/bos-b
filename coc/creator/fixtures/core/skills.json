@@ -363,7 +363,7 @@
         "model": "creator.Skills",
         "fields": {
             "title": "Computer Use",
-            "year": "1920's",
+            "year": "Modern",
             "base_value": 5,
             "description": "This skill allows the investigator to program in various computer languages, retrieve and analyze obscure data, break into a secured system, explore a complicated network, and detect or exploit intrusions, back This skill is not needed to use computers when surfing the Internet, collecting email, or to run regular commercially available software. Pushing examples: taking longer to develop a program; using another\\u2019s code as a shortcut; using untested software (e.g. a virus) to exploit a system. Sample Consequences of failing a Pushed roll: accidentally erasing the sought-after files, or even corrupting the whole system; leaving evidence or alerting others through your actions; infesting your own computer/network with a virus. If an insane investigator fails a pushed roll, he or she is lost in cyberspace, and it will require physical intervention to get the person to stop using the computer or look away from the screen.",
             "uncommon": false,
