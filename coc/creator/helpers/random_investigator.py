@@ -101,6 +101,9 @@ def free_point_assigner(max_points: int, inv: Investigator):
     inv.save()
 
 
+def base_skills_generator(skills: list, inv: Investigator):
+    pass
+
 def random_inv():
     """Main wrapper."""
     # Pick a random occupation
@@ -109,7 +112,7 @@ def random_inv():
     genders = [('M', 'male'), ('F', 'female')]
     gender_pick = choice(genders)
     name = random_names(gender_pick[1], "20'", 1, 1)
-    skills = Skills.objects.filter(year=1920).first().skills
+    skills = list(Skills.objects.filter(year="1920's"))
     attrs = {
         "user": User.objects.get(pk=1),
         "name": name,
