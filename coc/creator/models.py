@@ -100,10 +100,14 @@ class Occupation(BaseModel):
     credit_rating_max = PositiveIntegerField()
     skills = JSONField()
     points = JSONField()
+    year = CharField(max_length=50, default="1920's")
+    lovecraftian = BooleanField(default=False)
+    classic = BooleanField(default=False)
+    modern = BooleanField(default=False)
     
     def __str__(self):
         """String representation of the object."""
-        return self.title
+        return f"{self.title}-{self.year}"
 
 
 class OccupationTags(BaseModel):

@@ -167,11 +167,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Alienist [Classic]",
+      "title": "Alienist",
       "description": "In the 1920s, \\u2018alienist\\u2019 is the term given for those who treat mental illness (early psychiatrists. Psychoanalysis is barely known in the U.S., and its basis in sexual life and toilet training is felt to be indecent. Psychiatry, a standard medical education augmented by behaviorism, is more common. Intellectual wars rage between alienists, psychiatrists and neurologists.",
       "suggested_contacts": " Others in the field of mental illness, medical doctors and occasionally detectives in law enforcement.",
       "credit_rating_min": 10,
       "credit_rating_max": 60,
+      "classic": true,
       "skills": {
         "basics": [
           "Science(Biology)",
@@ -226,11 +227,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Antiquarian [Lovecraftian]",
+      "title": "Antiquarian",
       "description": "A person who delights in the timeless excellence of design and execution and in the power of ancient lore. Probably the most Lovecraft-like occupation available to an investigator! An independent income allows the antiquarian to explore things \\u2018old and obscure\\u2019, perhaps sharpening their focus down particular lines of enquiry based on personal preference and interest. Usually a person with an appreciative eye and a swift mind, who frequently finds mordant or contemptuous humor in the foolishness of the ignorant, the pompous, and the greedy.",
       "suggested_contacts": "Booksellers, antique collectors, historical societies.",
       "credit_rating_min": 30,
       "credit_rating_max": 70,
+      "lovecraftian": true,
       "skills": {
         "limit_free": 1,
         "basics": [
@@ -296,11 +298,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Archaeologist [Lovecraftian]",
+      "title": "Archaeologist",
       "description": "The study and exploration of the past. Primarily the identifcation, examination and analysis of recovered materials relating to human history. The work involves painstaking research and meticulous study, not to mention a willing attitude to getting one\\u2019s hands dirty. In the 1920s, successful archeologists became celebrities, seen as explorers and adventurers. While some used scientific methods, many were happy to apply brute force when unveiling the secrets of the past\\u2014 the use of dynamite was common. Such bullish behavior would be frowned upon in modern times.",
       "suggested_contacts": " Patrons, museums, universities.",
       "credit_rating_min": 10,
       "credit_rating_max": 40,
+      "lovecraftian": true,
       "skills": {
         "basics": [
           "Appraise",
@@ -476,11 +479,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Author [Lovecraftian]",
+      "title": "Author",
       "description": "As distinct from the journalist, the author uses words to define and explore the human condition, especially the range of human emotions. Their labors are solitary and the rewards solipsistic: only a relative handful make much money in the present day, though in previous eras the trade once provided a regular living wage. The work habits of authors vary widely. Typically an author might spend months or years researching in preparation for a book, then withdrawing for periods of intense creation.",
       "suggested_contacts": "publishers, critics, historians, etc.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
+      "lovecraftian": true,
       "skills": {
         "limit_free": 1,
         "basics": [
@@ -765,11 +769,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Computer Programmer-Technician",
+      "title": "Computer Programmer-Technician-Hacker",
       "description": "Usually designing, writing, testing, debugging and/or maintaining the source code of computer programs, the computer programmer is an expert in many different subjects, including formal logic and application platforms. May work freelance or within the confines of a software development house. The computer technician is tasked with the development and maintenance of computer systems and networks, often working alongside other office staff (such as project managers to ensure systems maintain integrity and provide desired functionality. Similar occupations may include: Database Administrator, IT Systems Manager, Multimedia Developer, Network Administrator, Software Engineer, Webmaster, etc. The computer hacker uses computers and computer networks as a means of protest to promote political ends (sometimes referred to as \\u2018hacktivists\\u2019 or for criminal gain. Illegally breaking into computers and other user accounts is required, the outcome of which could be anything from defacing web pages, doxing, swatting to email bombing designed to enact denials of service.",
       "suggested_contacts": "Other IT workers, corporate workers and managers, specialized Internet web communities.",
       "credit_rating_min": 10,
       "credit_rating_max": 70,
+      "modern": true,
       "skills": {
         "basics": [
           "Computer Use",
@@ -1131,11 +1136,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Gun Moll [Classic]",
+      "title": "Gun Moll",
       "description": "A female professional criminal. While many are fiercely independent, some are at the beck and call of mobster boyfriends((however, in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry.",
       "suggested_contacts": "Gangsters, law enforcement, local businesses.",
       "credit_rating_min": 10,
       "credit_rating_max": 80,
+      "classic": true,
       "skills": {
         "skill_combat": [
           "Fighting(Brawl)",
@@ -1350,11 +1356,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Deprogrammer [Modern]",
+      "title": "Deprogrammer",
       "description": "Deprogramming is the act of persuading (or forcing a person to abandon their belief or allegiance to a religious or social community. Normally, the deprogrammer is hired by relatives of an individual, who has joined some form of cult, in order to break them free (usually by kidnapping and then subject them to psychological techniques to free them of their association (\\u2018conditioning\\u2019 with the cult. Less extreme deprogrammers exist, who work with those who have voluntarily left a cult. In such cases the deprogrammer effectively acts as an \\u2018exit\\u2019 counselor.",
       "suggested_contacts": "Local and federal law enforcement, criminals, religious community.",
       "credit_rating_min": 20,
       "credit_rating_max": 50,
+      "modern": true,
       "skills": {
         "skill_combat": [
           "Fighting"
@@ -1422,11 +1429,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Dilettante [Lovecraftian]",
+      "title": "Dilettante",
       "description": "Dilettantes are self-supporting, living off an inheritance, trust fund or some other source of income that does not require them to work. Usually the dilettante has enough money that specialist financial advisers are needed to take care of it. Probably well educated, though not necessarily accomplished in anything. Money frees the dilettante to be eccentric and outspoken. He or she has had plenty of time to learn how to be charming and sophisticated; what else has been done with that free time is likely to betray the dilettante\\u2019s true character and/or interests.",
       "suggested_contacts": "similar background and tastes, fraternal organizations, bohemian circles, high society at large.",
       "credit_rating_min": 50,
       "credit_rating_max": 99,
+      "lovecraftian": true,
       "skills": {
         "basics": [
           "Language(Other)",
@@ -1490,11 +1498,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Doctor of Medicine [Lovecraftian]",
+      "title": "Doctor of Medicine",
       "description": "Most likely a general practitioner, surgeon or other specialist, such as a psychiatrist or an independent medical researcher. Apart from personal goals, three aims\\u2014helping patients, gaining money and prestige, and promoting a more rational and wiser society\\u2014are common to the profession. If a general practitioner then the doctor will be based in a rural or neighborhood practice in or near a small town or city. Many physicians are employed by large urban hospitals, allowing them to specialize in areas like pathology, toxicology, orthopedics and brain surgery. Doctors may also serve as part( or full(time Medical Examiners, conducting autopsies and signing death certifcates for the city, county or state. In the U.S., physicians are licensed by individual states, most requiring a minimum of two years\\u2019 attendance at an accredited medical school. These requirements, however, are but a relatively recent development. During the 1920s, many older physicians first obtained their licenses long before such strict regulations were in effect, despite failing to have ever attended medical school.",
       "suggested_contacts": "Other physicians, medical workers, patients and ex(patients.",
       "credit_rating_min": 30,
       "credit_rating_max": 80,
+      "lovecraftian": true,
       "skills": {
         "basics": [
           "Science(Biology)",
@@ -1779,11 +1788,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Explorer [Classic]",
+      "title": "Explorer",
       "description": "In the early twentieth century there are still unknown areas of the world that some people can make a career of exploring. Scientifc grants, private donations and museum contracts, combined with newspaper, magazine, book and film rights often generate enough money to support the adventurer and this exciting lifestyle. Much of darkest Africa is still unexplored, as are great portions of the Matto Grosso in South America, the great Australian desert, the Sahara and Arabian deserts, and much of the Asian interior. Although expeditions have reached both the north and south poles, much of the surrounding territory is still unknown.",
       "suggested_contacts": "Major libraries, universities, museums, wealthy patrons, other explorers, publishers, foreign government officials, local tribes people.",
       "credit_rating_min": 55,
       "credit_rating_max": 80,
+      "classic": true,
       "skills": {
         "basics": [
           "History",
@@ -1917,11 +1927,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Flapper [Classic]",
+      "title": "Flapper",
       "description": "Being a \\ufb02apper is a state of mind rather than an occupation, although some dilettantes have raised it to a fineart. Pixie haircuts, cloche hats, long strings of beads and gowns slit high up the side are de rigueur. Above all is required a distinct lack of restraint and an eagerness to \\ufb02out social norms. Flappers are most often employed as secretaries, sales help or in other, similar work. Many origins are given for the name \\ufb02apper\\u2014it most likely dates back to the early years of the 1920s, when it became fashionable to wear rubber galoshes left unbuckled to \\u2018\\ufb02ap\\u2019 while walking: however it equally could derive from the symbol of a young bird \\ufb02apping its wings while learning to \\ufb02y.",
       "suggested_contacts": " Jazz-age society, bohemians, dilettantes, criminals.",
       "credit_rating_min": 10,
       "credit_rating_max": 30,
+      "classic": true,
       "skills": {
         "limit_free": 1,
         "basics": [
@@ -2131,11 +2142,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Gangster Moll [Classic]",
+      "title": "Gangster Moll",
       "description": "The female companion of a professional criminal. Sometimes known a \\u2018gun moll\\u2019 (e.g.. Bonnie Parker of Bonnie and Clyde infamy. the moll is expected to do as she\\u2019s told and live at the beck and call of her mobster boyfriend; however in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry.",
       "suggested_contacts": "Gangsters, law enforcement, local businesses.",
       "credit_rating_min": 10,
       "credit_rating_max": 80,
+      "classic": true,
       "skills": {
         "skill_combat": [
           "Fighting(Brawl)",
@@ -2579,11 +2591,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Librarian [Lovecraftian]",
+      "title": "Librarian",
       "description": "Librarians are most often employed by public institutions or universities, responsible for cataloguing and maintaining stock, as well as dealing with lender enquiries. In modern times, the librarian is also a keeper of electronic media and databases. Some large businesses might employ a librarian to manage a large collection, and occasionally opportunities appear to take over custodial care of a private library for a wealthy collector.",
       "suggested_contacts": "Booksellers, community groups, specialist researchers.",
       "credit_rating_min": 9,
       "credit_rating_max": 35,
+      "lovecraftian": true,
       "skills": {
         "basics": [
           "Accounting",
@@ -3036,6 +3049,7 @@
       "title": "Aviator",
       "description": "An aviator is a stunt pilot, working at carnivals or offering \\u2018daring\\u2019 leisure rides for those willing to pay. Often fame could be won by competing in organized air races, either cross(country or on fixed courses. During the twenties, Hollywood makes fair use of stunt pilots. A few aviators even find work as test pilots for the aircraft manufacturers. Many aviators learned to \\ufb02y during the Great War and as a result still hold commissions as officers in the Army, Navy, Marines, or Coast Guard. Younger pilots have either received military training during peacetime or learned on their own. American \\ufb02ying aces of the World War still in the public limelight include: Eddie Rickenbacker, presently employed by Chrysler Corporation; Tommy Hitchcock, Jr., now a star on the polo fields; and Reed Landis, son of Baseball Commissioner Kenesaw Mountain Landis.",
       "suggested_contacts": "",
+      "classic": true,
       "credit_rating_min": 30,
       "credit_rating_max": 60,
       "skills": {
@@ -3214,11 +3228,12 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Professor [Lovecraftian]",
+      "title": "Professor",
       "description": "Professors are academics employed by colleges and universities. Larger corporations may also employ such academics for research and product development. Independent scholars sometimes help support themselves by teaching part(time courses. For the most part, the occupation indicates a Ph.D.\\u2014a rank that can earn tenure at universities around the world. The professor is qualified to teach and to perform competent research, and may have a discernible academic reputation in his or her area of expertise.",
       "suggested_contacts": " Scholars, universities, libraries.",
       "credit_rating_min": 20,
       "credit_rating_max": 70,
+      "lovecraftian": true,
       "skills": {
         "basics": [
           "Language(Other)",

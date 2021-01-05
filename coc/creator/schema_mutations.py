@@ -92,6 +92,9 @@ class OccupationMutation(ClientIDMutation):
         credit_rating_max = Float()
         skills = JSONString()
         points = JSONString()
+        lovecraftian = Boolean()
+        classic = Boolean()
+        modern = Boolean()
 
     @classmethod
     def mutate(cls, *args, **kwargs):

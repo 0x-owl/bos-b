@@ -54,7 +54,10 @@ class OccupationNode(DjangoObjectType):
             'title': ['exact', 'icontains', 'istartswith'],
             'suggested_contacts': ['icontains'],
             'credit_rating_min': ['exact', 'gt', 'lt', 'gte', 'lte'],
-            'credit_rating_max': ['exact', 'gt', 'lt', 'gte', 'lte']
+            'credit_rating_max': ['exact', 'gt', 'lt', 'gte', 'lte'],
+            'lovecraftian': ['exact'],
+            'classic': ['exact'],
+            'modern': ['exact']
         }
         interfaces = (relay.Node, )
 
