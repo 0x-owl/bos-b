@@ -15,7 +15,7 @@ from creator.schema_nodes import (CampaignInvNode, DiaryInvNode,
                                   TagInvNode, UserNode, UserNode)
 
 from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
-                      relay, JSONString)
+                      relay, JSONString, Boolean)
 from django.contrib.auth.models import User
 
 
@@ -120,8 +120,12 @@ class SkillMutation(ClientIDMutation):
     class Input:
         method = String()
         uuid = String()
+        title = String()
         year = String()
-        skills = JSONString()
+        base_value = Int()
+        description = String()
+        uncommon = Boolean()
+        sub_skills = JSONString()
 
     @classmethod
     def mutate(cls, *args, **kwargs):

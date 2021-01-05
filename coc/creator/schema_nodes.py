@@ -63,6 +63,7 @@ class SkillNode(DjangoObjectType):
     class Meta:
         model = Skills
         filter_fields = {
+            'title': ['exact', 'icontains', 'istartswith'],
             'uuid': ['exact'],
             'year': ['exact']
         }
