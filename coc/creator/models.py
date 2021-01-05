@@ -19,7 +19,7 @@ class BaseModel(Model):
     uuid = UUIDField(unique=True, default=uuid4, editable=False, primary_key=True)
     created = DateTimeField(default=django.utils.timezone.now, editable=False)
     modified = DateTimeField(auto_now=True, null=True)
-    deleted = DateTimeField(default=None, null=True)
+    deleted = DateTimeField(blank=True, null=True)
 
     class Meta:
         abstract=True

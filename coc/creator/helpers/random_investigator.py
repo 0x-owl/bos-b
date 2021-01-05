@@ -178,7 +178,7 @@ def random_inv():
     inv.sanity = inv.power
     inv.save()
     # Gerenarte base skills
-    skills = list(Skills.objects.filter(year="1920's"))
+    skills = list(Skills.objects.all())
     base_skills_generator(skills, inv)
     # Assign points to occupation skills
     proff_points = inv.occupation_skill_points

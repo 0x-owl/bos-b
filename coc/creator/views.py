@@ -13,6 +13,11 @@ from creator.models import (
 from json import dumps
 # Create your views here.
 
+silouettes = [
+    "/uploads/basics/img/silouette_male.jpg",
+    "/uploads/basics/img/silouette_female.jpg"
+]
+
 def get_investigator_data(request, inv):
     '''Retrieve all information associated to an
     Investigator.'''
@@ -22,9 +27,11 @@ def get_investigator_data(request, inv):
     portrait = Portrait.objects.filter(
         investigator=investigator
     ).first()
-    
+    print(investigator.sex)
+    default_portrait = silouettes[0] if investigator.sex == 'M' else silouettes[1]
+
     res = {
-        'portrait': portrait.portrait.url if portrait is not None else "",
+        'portrait': portrait.portrait.url if portrait is not None else default_portrait,
         'attributes': investigator.attributes_detail,
         'investigator': investigator
     }

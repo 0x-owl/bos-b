@@ -9,7 +9,7 @@ db.sqlite3
 coc/creator/migrations/*
 coc/market/migrations/*
 coc/creator/fixtures/occupation_skills/*
-coc/uploads/*
+coc/uploads/portraits/*
 */.DS_Store
 .DS_Store
 # C extensions
