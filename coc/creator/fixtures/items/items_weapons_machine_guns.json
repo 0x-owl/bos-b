@@ -1,0 +1,154 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Model 1882 Gatling Gun",
+                "subcategory": "Machine Guns",
+                "description": "",
+                "skill": "Firearms(Machine Gun)",
+                "damage": "2D6 + 4",
+                "base_range": "100 yards",
+                "uses_per_round": "Full auto",
+                "bullets_in_gun_mag": "200",
+                "cost_20s_modern": "$2000/$14000",
+                "malfunction": "96",
+                "age": "1920's, Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Browning Auto Rifle M1918",
+                "subcategory": "Machine Guns",
+                "description": "",
+                "skill": "Firearms(Machine Gun)",
+                "damage": "2D6 + 4",
+                "base_range": "90 yards",
+                "uses_per_round": "1(2) or full auto",
+                "bullets_in_gun_mag": "20",
+                "cost_20s_modern": "$800/$1500",
+                "malfunction": "100",
+                "age": "1920's"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": ".30 Browning M1917A1",
+                "subcategory": "Machine Guns",
+                "description": "",
+                "skill": "Firearms(Machine Gun)",
+                "damage": "2D6 + 4",
+                "base_range": "150 yards",
+                "uses_per_round": "full auto",
+                "bullets_in_gun_mag": "250",
+                "cost_20s_modern": "$3000/$30000",
+                "malfunction": "96",
+                "age": "1920's"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Bren Gun",
+                "subcategory": "Machine Guns",
+                "description": "",
+                "skill": "Firearms(Machine Gun)",
+                "damage": "2D6 + 4",
+                "base_range": "110 yards",
+                "uses_per_round": "1 or full auto",
+                "bullets_in_gun_mag": "30/100",
+                "cost_20s_modern": "$3000/$50000",
+                "malfunction": "96",
+                "age": "1920's"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Mark I Lewis Gun",
+                "subcategory": "Machine Guns",
+                "description": "",
+                "skill": "Firearms(Machine Gun)",
+                "damage": "2D6 + 4",
+                "base_range": "110 yards",
+                "uses_per_round": "full auto",
+                "bullets_in_gun_mag": "27/97",
+                "cost_20s_modern": "$3000/$20000",
+                "malfunction": "96",
+                "age": "1920's"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Minigun",
+                "subcategory": "Submachine Guns",
+                "description": "",
+                "skill": "Firearms(Machine Gun)",
+                "damage": "2D6 + 4",
+                "base_range": "200 yards",
+                "uses_per_round": "full auto",
+                "bullets_in_gun_mag": "4000",
+                "cost_20s_modern": "-/-",
+                "malfunction": "98",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "FN Minimi, 5.56mm",
+                "subcategory": "Submachine Guns",
+                "description": "",
+                "skill": "Firearms(Machine Gun)",
+                "damage": "2D6",
+                "base_range": "110 yards",
+                "uses_per_round": "full auto",
+                "bullets_in_gun_mag": "30/200",
+                "cost_20s_modern": "-/-",
+                "malfunction": "99",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Vickers .303 Machine Gun",
+                "subcategory": "Machine Guns",
+                "description": "",
+                "skill": "Firearms(Machine Gun)",
+                "damage": "2D6 + 4",
+                "base_range": "110 yards",
+                "uses_per_round": "full auto",
+                "bullets_in_gun_mag": "250",
+                "cost_20s_modern": "-/-",
+                "malfunction": "99",
+                "age": "1920's"
+            }
+        }
+    }
+]

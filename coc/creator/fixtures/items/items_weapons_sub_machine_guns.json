@@ -1,0 +1,116 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Bergmann MP181/MP2811",
+                "subcategory": "Submachine Guns",
+                "description": "",
+                "skill": "Firearms(Submachine Gun)",
+                "damage": "1D10",
+                "base_range": "20 yards",
+                "uses_per_round": "1(2) or full auto",
+                "bullets_in_gun_mag": "20/30/32",
+                "cost_20s_modern": "$1000/$20000",
+                "malfunction": "96",
+                "age": "1920's"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Heckler & Koch MP5",
+                "subcategory": "Submachine Guns",
+                "description": "",
+                "skill": "Firearms(Submachine Gun)",
+                "damage": "1D10",
+                "base_range": "20 yards",
+                "uses_per_round": "1(2) or full auto",
+                "bullets_in_gun_mag": "15/30",
+                "cost_20s_modern": "-/-",
+                "malfunction": "97",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Ingram MAC-11",
+                "subcategory": "Submachine Guns",
+                "description": "",
+                "skill": "Firearms(Submachine Gun)",
+                "damage": "1D10",
+                "base_range": "15 yards",
+                "uses_per_round": "1(3) or full auto",
+                "bullets_in_gun_mag": "32",
+                "cost_20s_modern": "-/$750",
+                "malfunction": "96",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Skorpion Submachine Gun",
+                "subcategory": "Submachine Guns",
+                "description": "",
+                "skill": "Firearms(Submachine Gun)",
+                "damage": "1D8",
+                "base_range": "15 yards",
+                "uses_per_round": "1(3) or full auto",
+                "bullets_in_gun_mag": "20",
+                "cost_20s_modern": "-/-",
+                "malfunction": "96",
+                "age": "Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Thompson",
+                "subcategory": "Submachine Guns",
+                "description": "",
+                "skill": "Firearms(Submachine Gun)",
+                "damage": "1D10 + 2",
+                "base_range": "20 yards",
+                "uses_per_round": "1 or full auto",
+                "bullets_in_gun_mag": "20/30/50",
+                "cost_20s_modern": "$200/$1600",
+                "malfunction": "96",
+                "age": "1920's"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Uzi Submachine Gun",
+                "subcategory": "Submachine Guns",
+                "description": "",
+                "skill": "Firearms(Submachine Gun)",
+                "damage": "1D10",
+                "base_range": "20 yards",
+                "uses_per_round": "1(2) or full auto",
+                "bullets_in_gun_mag": "32",
+                "cost_20s_modern": "-/$1000",
+                "malfunction": "98",
+                "age": "Modern"
+            }
+        }
+    }
+]
