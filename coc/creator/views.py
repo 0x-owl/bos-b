@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 from creator.helpers.random_investigator import random_inv
+from creator.helpers.investigator import generate_full_half_fifth_values
 from creator.models import (
     Investigator, Skills, Portrait, Inventory, PhobiaInvestigator,
     ManiaInvestigator, SpellInvestigator
@@ -31,12 +32,14 @@ def get_investigator_data(request, inv):
     skills = sorted(investigator.skills)
     skills_sanitized = []
     for skill in skills:
-        skills_sanitized.append((
-            skill,
-            investigator.skills[skill]['value'],
-            investigator.skills[skill]['value'] // 2,
-            investigator.skills[skill]['value'] // 5
-        ))
+        skills_sanitized.append(
+            (
+                skill,
+                *generate_full_half_fifth_values(
+                    investigator.skills[skill]['value']
+                )
+            )
+        )
     res['skills'] = skills_sanitized
 
     # Retrieve "inventory"
@@ -44,10 +47,8 @@ def get_investigator_data(request, inv):
         investigator=investigator,
         item__category=3)
     for weapon in weapons:
-        weapon.item.properties['skill_value'] = (
-            investigator.skills[weapon.item.properties['skill']]['value'],
-            investigator.skills[weapon.item.properties['skill']]['value'] // 2,
-            investigator.skills[weapon.item.properties['skill']]['value'] // 5,
+        weapon.item.properties['skill_value'] = generate_full_half_fifth_values(
+            investigator.skills[weapon.item.properties['skill']]['value']
         )
     res['weapons'] = weapons
 
