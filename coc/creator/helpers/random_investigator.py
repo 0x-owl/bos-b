@@ -24,6 +24,8 @@ def get_occupation_skills(inv: Investigator):
     """Based on the investigators occupation determine the list of skills."""
     # Generate list of skills
     occupation_skills = []
+    # obtain list of all basic skills
+    all_skills = list(inv.skills.keys())
     # assign the mandatories
     occupation_skills.extend(inv.occupation.skills.get('basics'))
     # assign extra categories with their limits
@@ -35,16 +37,28 @@ def get_occupation_skills(inv: Investigator):
         limit_key = f'limit_{stype}'
         limit = inv.occupation.skills.get(limit_key)
         if stype == 'free':
-            skills_by_category = list(inv.skills.keys())
+            skills_by_category = all_skills
         else:
             skills_key = f'skill_{stype}'
-            skills_by_category = inv.occupation.skills.get(
+            skills_by_category = []
+            raw_skills = inv.occupation.skills.get(
                 skills_key
             )
+            for skill in raw_skills:
+                # validate they are skills and not skill categories
+                if skill in all_skills:
+                    skills_by_category.append(skill)
+                else:
+                    skills = [
+                        sk for sk in all_skills if skill in sk
+                    ]
+                    skills_by_category.extend(skills)
+            
         for _ in range(limit):
             if skills_by_category is not None:
+                skill = choice(skills_by_category) 
                 occupation_skills.append(
-                    choice(skills_by_category)
+                    skill
                 )
             else:
                 msg = "Occupation: {} has no skills at category {}".format(
@@ -80,7 +94,6 @@ def occ_point_assigner(max_points: int, inv: Investigator):
         inv.occupation.credit_rating_min,
         inv.occupation.credit_rating_max
     )
-
     inv.skills['Language(Own)']['value'] = inv.education
     inv.skills['Dodge']['value'] = inv.dexterity // 2
     inv.save()
@@ -102,7 +115,31 @@ def free_point_assigner(max_points: int, inv: Investigator):
 
 
 def base_skills_generator(skills: list, inv: Investigator):
-    pass
+    '''Generate a default skill dict for the investigator.'''
+    for skill in skills:
+        sub_skills = skill.sub_skills
+        if sub_skills:
+            #category skills
+            for sub_skill in sub_skills:
+                skill_name = f"{skill.title}({sub_skill})"
+                sub_skill_val = skill.sub_skills[sub_skill].get('base_value')
+                if sub_skill_val is None:
+                    inv.skills[skill_name] = {
+                        'value': skill.base_value
+                    }
+                else:
+                    inv.skills[skill_name] = {
+                        'value': sub_skill_val
+                    }
+                    
+            pass
+        else:
+            inv.skills[skill.title] = {
+                'value': skill.base_value
+            }
+    
+    inv.save()
+
 
 def random_inv():
     """Main wrapper."""
@@ -112,7 +149,6 @@ def random_inv():
     genders = [('M', 'male'), ('F', 'female')]
     gender_pick = choice(genders)
     name = random_names(gender_pick[1], "20'", 1, 1)
-    skills = list(Skills.objects.filter(year="1920's"))
     attrs = {
         "user": User.objects.get(pk=1),
         "name": name,
@@ -124,7 +160,7 @@ def random_inv():
         "occupation": occupation,
         "ideologies": "Atheist",
         "luck": roller_stats(3),
-        "skills": skills
+        "skills": {}
     }
     inv = Investigator(**attrs)
     inv.save()
@@ -141,6 +177,9 @@ def random_inv():
     inv.health = inv.max_health
     inv.sanity = inv.power
     inv.save()
+    # Gerenarte base skills
+    skills = list(Skills.objects.filter(year="1920's"))
+    base_skills_generator(skills, inv)
     # Assign points to occupation skills
     proff_points = inv.occupation_skill_points
     occ_point_assigner(proff_points, inv)

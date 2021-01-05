@@ -4,7 +4,7 @@
     "fields": {
       "title": "Accountant",
       "description": "Either employed within a business or working as a freelance consultant with a portfolio of self-employed clients or businesses. Diligence and an attention to detail means that most accountants can make good researchers, being able to support investigations through the careful analysis of personal and business transactions, financial statements and other records",
-      "suggested_contacts": "Business associates, legal professions, financial sector -bankers, other accountants.",
+      "suggested_contacts": "Business associates, legal professions, financial sector (bankers, other accountants.)",
       "credit_rating_min": 30,
       "credit_rating_max": 70,
       "skills": {
@@ -30,7 +30,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Acrobat",
-      "description": "Acrobats may be either amateur athletes competing in staged meets\\u2014possibly even the Olympics\\u2014or professionals employed with the entertainment sector -e.g. circuses, carnivals, theatrical performances.",
+      "description": "Acrobats may be either amateur athletes competing in staged meets\\u2014possibly even the Olympics\\u2014or professionals employed with the entertainment sector (e.g. circuses, carnivals, theatrical performances.)",
       "suggested_contacts": "Amateur athletic circles, sports writers, circuses and carnivals.",
       "credit_rating_min": 9,
       "credit_rating_max": 20,
@@ -64,7 +64,7 @@
       "credit_rating_max": 40,
       "skills": {
         "basics": [
-          "Art & Craft-Acting",
+          "Art & Craft(Acting)",
           "Disguise",
           "History",
           "Psychology"
@@ -101,7 +101,7 @@
       "credit_rating_max": 90,
       "skills": {
         "basics": [
-          "Art & Craft-Acting",
+          "Art & Craft(Acting)",
           "Disguise",
           "Drive Auto",
           "Psychology"
@@ -128,13 +128,13 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Agency Detective",
-      "description": "Numerous well-known detective agencies exist around the world, with probably the most famous being the Pinkerton and Burns agencies -merged into one in modern times. Large agencies employ two types of agents: security guards and operatives. Guards are uniformed patrolmen, hired by companies and individuals to protect property and people against burglars, assassins and kidnappers. Use the Uniformed Police Offcer\\u2019s description for these characters. Company Operatives are plainclothes detectives, sent out on cases requiring them to solve mysteries, prevent murders, locate missing people, etc.",
+      "description": "Numerous well-known detective agencies exist around the world, with probably the most famous being the Pinkerton and Burns agencies (merged into one in modern times. Large agencies employ two types of agents: security guards and operatives. Guards are uniformed patrolmen, hired by companies and individuals to protect property and people against burglars, assassins and kidnappers. Use the Uniformed Police Offcer\\u2019s description for these characters. Company Operatives are plainclothes detectives, sent out on cases requiring them to solve mysteries, prevent murders, locate missing people, etc.",
       "suggested_contacts": "Local law enforcement, clients.",
       "credit_rating_min": 20,
       "credit_rating_max": 45,
       "skills": {
         "basics": [
-          "Fighting-Brawl",
+          "Fighting(Brawl)",
           "Law",
           "Library Use",
           "Psychology",
@@ -168,15 +168,15 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Alienist [Classic]",
-      "description": "In the 1920s, \\u2018alienist\\u2019 is the term given for those who treat mental illness -early psychiatrists. Psychoanalysis is barely known in the U.S., and its basis in sexual life and toilet training is felt to be indecent. Psychiatry, a standard medical education augmented by behaviorism, is more common. Intellectual wars rage between alienists, psychiatrists and neurologists.",
+      "description": "In the 1920s, \\u2018alienist\\u2019 is the term given for those who treat mental illness (early psychiatrists. Psychoanalysis is barely known in the U.S., and its basis in sexual life and toilet training is felt to be indecent. Psychiatry, a standard medical education augmented by behaviorism, is more common. Intellectual wars rage between alienists, psychiatrists and neurologists.",
       "suggested_contacts": " Others in the field of mental illness, medical doctors and occasionally detectives in law enforcement.",
       "credit_rating_min": 10,
       "credit_rating_max": 60,
       "skills": {
         "basics": [
-          "Science-Biology",
-          "Science-Chemistry",
-          "Language-Other",
+          "Science(Biology)",
+          "Science(Chemistry)",
+          "Language(Other)",
           "Law",
           "Medicine",
           "Listen",
@@ -209,7 +209,7 @@
           "Psychology",
           "Stealth",
           "Track",
-          "Science-Zoology"
+          "Science(Zoology)"
         ]
       },
       "points": {
@@ -236,7 +236,7 @@
         "basics": [
           "Appraise",
           "History",
-          "Language-Other",
+          "Language(Other)",
           "Library Use",
           "Spot Hidden"
         ],
@@ -306,7 +306,7 @@
           "Appraise",
           "Archaeology",
           "History",
-          "Language-Other",
+          "Language(Other)",
           "Library Use",
           "Mechanical Repair",
           "Spot Hidden"
@@ -329,19 +329,19 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Architect",
-      "description": "Architects are trained to design and plan buildings, whether a small conversion to a private house or a multi-million dollar construction project. The architect will work closely with the project manager and oversee the construction. Architects must be aware of local planning laws, health and safety regulation and general public safety. Some may work for large firms or work freelance. A lot will depend on reputation. In the 1920s, many try and go it alone, working out of their house or a small office. Few manage to sell the grandiose designs they all nurse. Architecture may also encompass specialist areas like naval architecture and landscape architecture.",
+      "description": "Architects are trained to design and plan buildings, whether a small conversion to a private house or a multi(million dollar construction project. The architect will work closely with the project manager and oversee the construction. Architects must be aware of local planning laws, health and safety regulation and general public safety. Some may work for large firms or work freelance. A lot will depend on reputation. In the 1920s, many try and go it alone, working out of their house or a small office. Few manage to sell the grandiose designs they all nurse. Architecture may also encompass specialist areas like naval architecture and landscape architecture.",
       "suggested_contacts": "Local building and city engineering departments, construction firms.",
       "credit_rating_min": 30,
       "credit_rating_max": 70,
       "skills": {
         "basics": [
           "Accounting",
-          "Language-Own",
+          "Language(Own)",
           "Law",
-          "Science-Mathematics",
+          "Science(Mathematics)",
           "Persuade",
           "Psychology",
-          "Art & Craft-Technical Drawing"
+          "Art & Craft(Technical Drawing)"
         ],
         "skill_professionalt": [
           "Computer Use",
@@ -361,13 +361,13 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Artist",
-      "description": "May be a painter, sculptor, etc. Sometimes self-absorbed and driven with a particular vision, sometimes blessed with a great talent that is able to inspire passion and understanding. Talented or not, the artist\\u2019s ego must be hardy and strong to surmount initial obstacles and critical appraisal, and to keep them working if success arrives. Some artists care not for material enrichment, while others have a keen entrepreneurial streak.",
+      "description": "May be a painter, sculptor, etc. Sometimes self(absorbed and driven with a particular vision, sometimes blessed with a great talent that is able to inspire passion and understanding. Talented or not, the artist\\u2019s ego must be hardy and strong to surmount initial obstacles and critical appraisal, and to keep them working if success arrives. Some artists care not for material enrichment, while others have a keen entrepreneurial streak.",
       "suggested_contacts": "Art galleries, critics, wealthy patrons, the advertising industry.",
       "credit_rating_min": 9,
       "credit_rating_max": 50,
       "skills": {
         "basics": [
-          "Language-Other",
+          "Language(Other)",
           "Psychology",
           "Spot Hidden"
         ],
@@ -410,7 +410,7 @@
       "credit_rating_max": 20,
       "skills": {
         "basics": [
-          "Fighting-Brawl",
+          "Fighting(Brawl)",
           "Dodge",
           "First Aid",
           "Listen",
@@ -447,7 +447,7 @@
       "skills": {
         "limit_free": 1,
         "basics": [
-          "Fighting-Brawl",
+          "Fighting(Brawl)",
           "Climb",
           "Jump",
           "Ride",
@@ -485,10 +485,10 @@
         "limit_free": 1,
         "basics": [
           "History",
-          "Language-Other",
-          "Language-Own",
+          "Language(Other)",
+          "Language(Own)",
           "Library Use",
-          "Art & Craft-Literature",
+          "Art & Craft(Literature)",
           "Psychology"
         ],
         "skill_professionalt": [
@@ -517,7 +517,7 @@
         "limit_free": 1,
         "basics": [
           "Accounting",
-          "Fighting-Brawl",
+          "Fighting(Brawl)",
           "Listen",
           "Psychology",
           "Spot Hidden"
@@ -544,7 +544,7 @@
     "fields": {
       "title": "Big Game Hunter",
       "description": "Big game hunters are skilled trackers and hunters who usually earn their living leading safaris for wealthy clients. Most are specialized in one part of the world, such as the Canadian woods, African plains, or other. Some hunters may work for the black market, capturing live exotic species for private collectors or trading in illegal or morally objectionable animal products like skins, ivory and the like\\u2014although in the 1920s such activities were more common and were permissible under most countries\\u2019 laws. Although the \\u2018great white hunter\\u2019 is the quintessential type, others may be simply local indigenous people who escort hunters through the backwoods of the Yukon in search of moose or bear.",
-      "suggested_contacts": "Foreign government officials, game wardens, past -usually wealthy clients, black market gangs and traders, zoo owners.",
+      "suggested_contacts": "Foreign government officials, game wardens, past (usually wealthy clients, black market gangs and traders, zoo owners)",
       "credit_rating_min": 20,
       "credit_rating_max": 50,
       "skills": {
@@ -555,7 +555,7 @@
           "Track"
         ],
         "skill_misc": [
-          "Language-Other",
+          "Language(Other",
           "Survival"
         ],
         "skill_professionalt": [
@@ -566,8 +566,8 @@
           "Firearms"
         ],
         "skill_science": [
-          "Science-Biology",
-          "Science-Botany"
+          "Science(Biology)",
+          "Science(Botany)"
         ],
         "limit_science": 1,
         "limit_professionalt": 1,
@@ -599,9 +599,9 @@
           "Appraise",
           "Drive Auto",
           "History",
-          "Language-Other",
+          "Language(Other)",
           "Library Use",
-          "Language-Own"
+          "Language(Own)"
         ],
         "skill_interpersonal": [
           "Charm",
@@ -669,13 +669,13 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Boxer-Wrestler",
-      "description": "Professional boxers and wrestlers are managed by individuals -promoters possibly backed by outside interests, and usually locked into contracts. Professional boxers and wrestlers work and train full-time. Amateur boxing competitions abound, a training ground for those aspiring to professional status. In addition, amateur and post-professional boxers and wrestlers can sometimes be found making a living from illegal bareknuckle fights, usually arranged by organized crime gangs or entrepreneurial locals.",
+      "description": "Professional boxers and wrestlers are managed by individuals (promoters possibly backed by outside interests, and usually locked into contracts. Professional boxers and wrestlers work and train full-time. Amateur boxing competitions abound, a training ground for those aspiring to professional status. In addition, amateur and post-professional boxers and wrestlers can sometimes be found making a living from illegal bareknuckle fights, usually arranged by organized crime gangs or entrepreneurial locals.",
       "suggested_contacts": "Sports promoters, journalists, organized crime, professional trainers.",
       "credit_rating_min": 9,
       "credit_rating_max": 60,
       "skills": {
         "basics": [
-          "Fighting-Brawl",
+          "Fighting(Brawl)",
           "Dodge",
           "Jump",
           "Intimidate",
@@ -704,7 +704,7 @@
       "skills": {
         "basics": [
           "First Aid",
-          "Language-Other",
+          "Language(Other)",
           "Listen",
           "Psychology",
           "Spot Hidden"
@@ -732,7 +732,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Member of the Clergy",
-      "description": "The hierarchy of the church usually assigns clergy to the irrespective parishes or sends them on evangelical missions,most often to a foreign country -see Missionary. Different churches have different priorities and hierarchies: for example in the Catholic Church a priest may rise through the ranks of bishop, archbishop and cardinal, while a Methodist pastor may in turn rise to district superintendent and bishop.Many clergy -not just Catholic Priests bear witness to confessions and, though they are not at liberty to divulge such secrets, they are free to act upon them.Some who work \\u2018in the church\\u2019 are trained in professional skills, acting as doctors, lawyers and scholars\\u2014as appropriate, use the occupation template which best describes the nature of the investigator\\u2019s work.",
+      "description": "The hierarchy of the church usually assigns clergy to the irrespective parishes or sends them on evangelical missions,most often to a foreign country (see Missionary). Different churches have different priorities and hierarchies: for example in the Catholic Church a priest may rise through the ranks of bishop, archbishop and cardinal, while a Methodist pastor may in turn rise to district superintendent and bishop.Many clergy (not just) Catholic Priests bear witness to confessions and, though they are not at liberty to divulge such secrets, they are free to act upon them.Some who work \\u2018in the church\\u2019 are trained in professional skills, acting as doctors, lawyers and scholars\\u2014as appropriate, use the occupation template which best describes the nature of the investigator\\u2019s work.",
       "suggested_contacts": " Church hierarchy, local congregations, community leaders.",
       "credit_rating_min": 9,
       "credit_rating_max": 60,
@@ -742,7 +742,7 @@
           "Accounting",
           "History",
           "Listen",
-          "Language-Other",
+          "Language(Other)",
           "Library Use",
           "Psychology"
         ],
@@ -766,7 +766,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Computer Programmer-Technician",
-      "description": "Usually designing, writing, testing, debugging and/or maintaining the source code of computer programs, the computer programmer is an expert in many different subjects, including formal logic and application platforms. May work freelance or within the confines of a software development house. The computer technician is tasked with the development and maintenance of computer systems and networks, often working alongside other office staff -such as project managers to ensure systems maintain integrity and provide desired functionality. Similar occupations may include: Database Administrator, IT Systems Manager, Multimedia Developer, Network Administrator, Software Engineer, Webmaster, etc. The computer hacker uses computers and computer networks as a means of protest to promote political ends -sometimes referred to as \\u2018hacktivists\\u2019 or for criminal gain. Illegally breaking into computers and other user accounts is required, the outcome of which could be anything from defacing web pages, doxing, swatting to email bombing designed to enact denials of service.",
+      "description": "Usually designing, writing, testing, debugging and/or maintaining the source code of computer programs, the computer programmer is an expert in many different subjects, including formal logic and application platforms. May work freelance or within the confines of a software development house. The computer technician is tasked with the development and maintenance of computer systems and networks, often working alongside other office staff (such as project managers to ensure systems maintain integrity and provide desired functionality. Similar occupations may include: Database Administrator, IT Systems Manager, Multimedia Developer, Network Administrator, Software Engineer, Webmaster, etc. The computer hacker uses computers and computer networks as a means of protest to promote political ends (sometimes referred to as \\u2018hacktivists\\u2019 or for criminal gain. Illegally breaking into computers and other user accounts is required, the outcome of which could be anything from defacing web pages, doxing, swatting to email bombing designed to enact denials of service.",
       "suggested_contacts": "Other IT workers, corporate workers and managers, specialized Internet web communities.",
       "credit_rating_min": 10,
       "credit_rating_max": 70,
@@ -776,7 +776,7 @@
           "Electrical Repair",
           "Electronics",
           "Library Use",
-          "Science-Mathematics",
+          "Science(Mathematics",
           "Spot Hidden"
         ],
         "limit_free": 2
@@ -793,7 +793,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Hacker",
-      "description": "Usually designing, writing, testing, debugging and/or maintaining the source code of computer programs, the computer programmer is an expert in many different subjects, including formal logic and application platforms. May work freelance or within the confines of a software development house. The computer technician is tasked with the development and maintenance of computer systems and networks, often working alongside other office staff -such as project managers to ensure systems maintain integrity and provide desired functionality. Similar occupations may include: Database Administrator, IT Systems Manager, Multimedia Developer, Network Administrator, Software Engineer, Webmaster, etc. The computer hacker uses computers and computer networks as a means of protest to promote political ends -sometimes referred to as \\u2018hacktivists\\u2019 or for criminal gain. Illegally breaking into computers and other user accounts is required, the outcome of which could be anything from defacing web pages, doxing, swatting to email bombing designed to enact denials of service.",
+      "description": "Usually designing, writing, testing, debugging and/or maintaining the source code of computer programs, the computer programmer is an expert in many different subjects, including formal logic and application platforms. May work freelance or within the confines of a software development house. The computer technician is tasked with the development and maintenance of computer systems and networks, often working alongside other office staff (such as project managers to ensure systems maintain integrity and provide desired functionality. Similar occupations may include: Database Administrator, IT Systems Manager, Multimedia Developer, Network Administrator, Software Engineer, Webmaster, etc. The computer hacker uses computers and computer networks as a means of protest to promote political ends (sometimes referred to as \\u2018hacktivists\\u2019 or for criminal gain. Illegally breaking into computers and other user accounts is required, the outcome of which could be anything from defacing web pages, doxing, swatting to email bombing designed to enact denials of service.",
       "suggested_contacts": "IT workers, specialized Internet web communities, political groups, criminal enterprises.",
       "credit_rating_min": 10,
       "credit_rating_max": 70,
@@ -895,7 +895,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Assassin",
-      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner-boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or -unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold-blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high-risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook-up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
+      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner(boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard(earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or (unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold(blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high(risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook(up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
       "suggested_contacts": "Few, mostly underworld; people prefer not to know them too well. The best will have earned a formidable reputation on the street.",
       "credit_rating_min": 30,
       "credit_rating_max": 60,
@@ -932,8 +932,8 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Bank Robber",
-      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner-boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or -unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold-blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high-risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook-up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
-      "suggested_contacts": "Other gang members -current and retired, criminal freelancers, organized crime.",
+      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner(boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard(earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or (unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold(blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high(risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook(up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
+      "suggested_contacts": "Other gang members (current and retired, criminal freelancers, organized crime.",
       "credit_rating_min": 5,
       "credit_rating_max": 75,
       "skills": {
@@ -973,7 +973,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Bootlegger-Thug",
-      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner-boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or -unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold-blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high-risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook-up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
+      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner(boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard(earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or (unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold(blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high(risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook(up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
       "suggested_contacts": "Organized crime, street-level law enforcement, local traders.",
       "credit_rating_min": 5,
       "credit_rating_max": 30,
@@ -1013,7 +1013,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Burglar",
-      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner-boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or -unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold-blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high-risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook-up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
+      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner(boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard(earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or (unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold(blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high(risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook(up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
       "suggested_contacts": "Fences, other burglars.",
       "credit_rating_min": 5,
       "credit_rating_max": 40,
@@ -1046,14 +1046,14 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Conman",
-      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner-boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or -unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold-blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high-risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook-up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
+      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner(boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard(earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or (unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold(blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high(risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook(up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
       "suggested_contacts": "Other confidence artists, freelance criminals.",
       "credit_rating_min": 10,
       "credit_rating_max": 65,
       "skills": {
         "basics": [
           "Appraise",
-          "Art & Craft-Acting",
+          "Art & Craft(Acting)",
           "Psychology",
           "Listen",
           "Sleight of Hand"
@@ -1067,7 +1067,7 @@
         "limit_interpersonal": 2,
         "skill_misc": [
           "Law",
-          "Language-Other"
+          "Language(Other)"
         ],
         "limit_misc": 1
       },
@@ -1083,8 +1083,8 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Criminal -freelance-solo",
-      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner-boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or -unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold-blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high-risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook-up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
+      "title": "Criminal (freelance-solo)",
+      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner(boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard(earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or (unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold(blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high(risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook(up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
       "suggested_contacts": "Other petty criminals, street-level law enforcement.",
       "credit_rating_min": 5,
       "credit_rating_max": 65,
@@ -1095,7 +1095,7 @@
         ],
         "limit_combat": 1,
         "skill_professionalt": [
-          "Art & Craft-Acting",
+          "Art & Craft(Acting)",
           "Disguise"
         ],
         "limit_professionalt": 1,
@@ -1132,14 +1132,14 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Gun Moll [Classic]",
-      "description": "A female professional criminal. While many are fiercely independent, some are at the beck and call of mobster boyfriends--however, in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry.",
+      "description": "A female professional criminal. While many are fiercely independent, some are at the beck and call of mobster boyfriends((however, in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry.",
       "suggested_contacts": "Gangsters, law enforcement, local businesses.",
       "credit_rating_min": 10,
       "credit_rating_max": 80,
       "skills": {
         "skill_combat": [
-          "Fighting-Brawl",
-          "Firearms-Handgun"
+          "Fighting(Brawl)",
+          "Firearms(Handgun)"
         ],
         "limit_combat": 1,
         "basics": [
@@ -1173,7 +1173,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Fence",
-      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner-boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or -unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold-blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high-risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook-up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
+      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner(boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard(earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or (unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold(blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high(risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook(up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
       "suggested_contacts": "Organized crime, trade contacts, black market and legitimate buyers.",
       "credit_rating_min": 20,
       "credit_rating_max": 40,
@@ -1182,7 +1182,7 @@
         "basics": [
           "Accounting",
           "Appraise",
-          "Art & Craft-Forgery",
+          "Art & Craft(Forgery)",
           "History",
           "Library Use",
           "Spot Hidden"
@@ -1207,8 +1207,8 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Forger-Counterfeiter",
-      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner-boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or -unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold-blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high-risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook-up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
+      "title": "Forger(Counterfeiter",
+      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner(boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard(earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or (unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold(blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high(risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook(up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
       "suggested_contacts": "Organized crime, businesspeople.",
       "credit_rating_min": 20,
       "credit_rating_max": 60,
@@ -1217,7 +1217,7 @@
         "basics": [
           "Accounting",
           "Appraise",
-          "Art & Craft-Forgery",
+          "Art & Craft(Forgery)",
           "History",
           "Library Use",
           "Spot Hidden",
@@ -1236,7 +1236,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Smuggler",
-      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner-boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or -unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold-blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high-risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook-up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
+      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner(boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard(earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or (unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold(blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high(risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook(up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
       "suggested_contacts": "Organized crime, Coast Guard, U.S. Customs officials",
       "credit_rating_min": 20,
       "credit_rating_max": 60,
@@ -1275,7 +1275,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Street Punk",
-      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner-boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard-earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or -unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold-blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high-risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook-up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
+      "description": "Criminals come in all shapes, sizes, and shades of grey. Some are merely opportunistic jacks of all trades, such as pickpockets and thugs, while others are highly specialized, spending time researching and planning focused criminal enterprises. This latter group could include bank robbers, cat burglars, forgers, and confidence tricksters. The criminal either works for someone, usually an organized 'mob' or crime family, or works solo, perhaps occasionally teaming up with others when the reward is worth the effort and risk. Freelance thugs might work as muggers, stickup men, and armed robbers. Whether bootleggers, corner(boys, or thugs, these are the soldiers of organized crime. They are supported by criminal organizations and they are the ones usually expected to take the fall for the gangsters above them. Their silence and loyalty is expected and rewarded. Confidence tricksters are usually smooth talkers. Working alone or in a team, they descend on wealthy individuals or communities, fleecing their targets of their hard(earned savings. Some schemes are elaborate, involving teams of scam men and rented buildings; others are simple affairs, transactions requiring only one con man and no more than a few minutes. A fence is someone who trades in stolen property, usually taking in stolen goods and then selling them onto other criminals or (unwitting legitimate customers. Principally a middleman between thieves and buyers, the fence either takes a cut of the profit or, more usually, buys the stolen goods at a very low price. Forgers are the artists of the criminal world, specializing in forging official documents, deeds and transfers, and providing phony signatures. Beginners work manufacturing fake ID's for petty criminals, while the best engrave plates for counterfeiting currency. Hit men are the cold(blooded killers of the underworld. Usually hired from somewhere out of town, they arrive, do their work, then quickly disappear. It's strictly business. Often sociopaths, who seem to lack the ability to empathize with other human beings. Many follow strict codes of behavior. In spite of this, many marry, raise children, and in all other ways behave like model citizens. Smuggling is always a lucrative and high(risk business. The smuggler usually has a public profession, such as boat captain, pilot, or businessman, allowing them to transport illicit products to a needy market. Street punks are typically young street hoods, possibly looking for a chance to hook(up with real gangsters. Experience is probably limited to stealing cars, shoplifting, mugging, and burglary.",
       "suggested_contacts": "Petty criminals, other punks, the local fence, maybe the local gangster, certainly the local police.",
       "credit_rating_min": 3,
       "credit_rating_max": 10,
@@ -1351,7 +1351,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Deprogrammer [Modern]",
-      "description": "Deprogramming is the act of persuading -or forcing a person to abandon their belief or allegiance to a religious or social community. Normally, the deprogrammer is hired by relatives of an individual, who has joined some form of cult, in order to break them free -usually by kidnapping and then subject them to psychological techniques to free them of their association -\\u2018conditioning\\u2019 with the cult. Less extreme deprogrammers exist, who work with those who have voluntarily left a cult. In such cases the deprogrammer effectively acts as an \\u2018exit\\u2019 counselor.",
+      "description": "Deprogramming is the act of persuading (or forcing a person to abandon their belief or allegiance to a religious or social community. Normally, the deprogrammer is hired by relatives of an individual, who has joined some form of cult, in order to break them free (usually by kidnapping and then subject them to psychological techniques to free them of their association (\\u2018conditioning\\u2019 with the cult. Less extreme deprogrammers exist, who work with those who have voluntarily left a cult. In such cases the deprogrammer effectively acts as an \\u2018exit\\u2019 counselor.",
       "suggested_contacts": "Local and federal law enforcement, criminals, religious community.",
       "credit_rating_min": 20,
       "credit_rating_max": 50,
@@ -1388,7 +1388,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Designer",
-      "description": "Designers work in many fields, from fashion to furniture and most points in-between. The designer may work freelance, for a design house or for a business designing consumer products, processes, laws, games and graphics and so on. The investigator\\u2019s particular design specialty might in\\ufb02uence the choice of skills\\u2014adjust the skills as appropriate.",
+      "description": "Designers work in many fields, from fashion to furniture and most points in(between. The designer may work freelance, for a design house or for a business designing consumer products, processes, laws, games and graphics and so on. The investigator\\u2019s particular design specialty might in\\ufb02uence the choice of skills\\u2014adjust the skills as appropriate.",
       "suggested_contacts": "Advertising, media, furnishings, architectural, other.",
       "credit_rating_min": 20,
       "credit_rating_max": 60,
@@ -1396,7 +1396,7 @@
         "basics": [
           "Accounting",
           "Mechanical Repair",
-          "Art & Craft-Photography",
+          "Art & Craft(Photography)",
           "Psychology",
           "Spot Hidden"
         ],
@@ -1429,7 +1429,7 @@
       "credit_rating_max": 99,
       "skills": {
         "basics": [
-          "Language-Other",
+          "Language(Other)",
           "Ride"
         ],
         "skill_professionalt": [
@@ -1469,13 +1469,13 @@
       "skills": {
         "limit_free": 1,
         "basics": [
-          "Science-Biology",
+          "Science(Biology)",
           "Diving",
           "First Aid",
           "Mechanical Repair",
           "Spot Hidden",
           "Swim",
-          "Pilot-Boat"
+          "Pilot(Boat)"
         ]
       },
       "points": {
@@ -1491,17 +1491,17 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Doctor of Medicine [Lovecraftian]",
-      "description": "Most likely a general practitioner, surgeon or other specialist, such as a psychiatrist or an independent medical researcher. Apart from personal goals, three aims\\u2014helping patients, gaining money and prestige, and promoting a more rational and wiser society\\u2014are common to the profession. If a general practitioner then the doctor will be based in a rural or neighborhood practice in or near a small town or city. Many physicians are employed by large urban hospitals, allowing them to specialize in areas like pathology, toxicology, orthopedics and brain surgery. Doctors may also serve as part- or full-time Medical Examiners, conducting autopsies and signing death certifcates for the city, county or state. In the U.S., physicians are licensed by individual states, most requiring a minimum of two years\\u2019 attendance at an accredited medical school. These requirements, however, are but a relatively recent development. During the 1920s, many older physicians first obtained their licenses long before such strict regulations were in effect, despite failing to have ever attended medical school.",
-      "suggested_contacts": "Other physicians, medical workers, patients and ex-patients.",
+      "description": "Most likely a general practitioner, surgeon or other specialist, such as a psychiatrist or an independent medical researcher. Apart from personal goals, three aims\\u2014helping patients, gaining money and prestige, and promoting a more rational and wiser society\\u2014are common to the profession. If a general practitioner then the doctor will be based in a rural or neighborhood practice in or near a small town or city. Many physicians are employed by large urban hospitals, allowing them to specialize in areas like pathology, toxicology, orthopedics and brain surgery. Doctors may also serve as part( or full(time Medical Examiners, conducting autopsies and signing death certifcates for the city, county or state. In the U.S., physicians are licensed by individual states, most requiring a minimum of two years\\u2019 attendance at an accredited medical school. These requirements, however, are but a relatively recent development. During the 1920s, many older physicians first obtained their licenses long before such strict regulations were in effect, despite failing to have ever attended medical school.",
+      "suggested_contacts": "Other physicians, medical workers, patients and ex(patients.",
       "credit_rating_min": 30,
       "credit_rating_max": 80,
       "skills": {
         "basics": [
-          "Science-Biology",
+          "Science(Biology)",
           "First Aid",
           "Medicine",
-          "Language-Other",
-          "Science-Pharmacy",
+          "Language(Other)",
+          "Science(Pharmacy)",
           "Psychology"
         ],
         "limit_free": 2
@@ -1555,8 +1555,8 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Chauffeur",
-      "description": "Professional drivers may work for a company, private individual or possibly have their own cab or rig. Taxi drivers may work for large or small companies, or possibly have their own cab and license -medallion in the US. Cab companies are usually set up so that drivers rent cabs and dispatcher service from the company, technically making the drivers freelance operators. Taxis are required to be fitted with approved meters, periodically checked by the city\\u2019s taxi board. Drivers are usually required to obtain a special license that includes a background check by the police detective bureau. A chauffeur is either directly employed by an individual or firm, or works for an agency that hires both car and chauffeur out for single engagements or on a retainer basis.",
-      "suggested_contacts": "Successful business people -criminals included, political representatives.",
+      "description": "Professional drivers may work for a company, private individual or possibly have their own cab or rig. Taxi drivers may work for large or small companies, or possibly have their own cab and license (medallion in the US. Cab companies are usually set up so that drivers rent cabs and dispatcher service from the company, technically making the drivers freelance operators. Taxis are required to be fitted with approved meters, periodically checked by the city\\u2019s taxi board. Drivers are usually required to obtain a special license that includes a background check by the police detective bureau. A chauffeur is either directly employed by an individual or firm, or works for an agency that hires both car and chauffeur out for single engagements or on a retainer basis.",
+      "suggested_contacts": "Successful business people (criminals included, political representatives.)",
       "credit_rating_min": 10,
       "credit_rating_max": 40,
       "skills": {
@@ -1589,8 +1589,8 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Driver",
-      "description": "Professional drivers may work for a company, private individual or possibly have their own cab or rig. Taxi drivers may work for large or small companies, or possibly have their own cab and license -medallion in the US. Cab companies are usually set up so that drivers rent cabs and dispatcher service from the company, technically making the drivers freelance operators. Taxis are required to be fitted with approved meters, periodically checked by the city\\u2019s taxi board. Drivers are usually required to obtain a special license that includes a background check by the police detective bureau. A chauffeur is either directly employed by an individual or firm, or works for an agency that hires both car and chauffeur out for single engagements or on a retainer basis.",
-      "suggested_contacts": "Successful business people -criminals included, political representatives.",
+      "description": "Professional drivers may work for a company, private individual or possibly have their own cab or rig. Taxi drivers may work for large or small companies, or possibly have their own cab and license (medallion in the US. Cab companies are usually set up so that drivers rent cabs and dispatcher service from the company, technically making the drivers freelance operators. Taxis are required to be fitted with approved meters, periodically checked by the city\\u2019s taxi board. Drivers are usually required to obtain a special license that includes a background check by the police detective bureau. A chauffeur is either directly employed by an individual or firm, or works for an agency that hires both car and chauffeur out for single engagements or on a retainer basis.",
+      "suggested_contacts": "Successful business people (criminals included, political representatives.)",
       "credit_rating_min": 9,
       "credit_rating_max": 20,
       "skills": {
@@ -1625,7 +1625,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Taxi Driver",
-      "description": "Professional drivers may work for a company, private individual or possibly have their own cab or rig. Taxi drivers may work for large or small companies, or possibly have their own cab and license -medallion in the US. Cab companies are usually set up so that drivers rent cabs and dispatcher service from the company, technically making the drivers freelance operators. Taxis are required to be fitted with approved meters, periodically checked by the city\\u2019s taxi board. Drivers are usually required to obtain a special license that includes a background check by the police detective bureau. A chauffeur is either directly employed by an individual or firm, or works for an agency that hires both car and chauffeur out for single engagements or on a retainer basis.",
+      "description": "Professional drivers may work for a company, private individual or possibly have their own cab or rig. Taxi drivers may work for large or small companies, or possibly have their own cab and license (medallion in the US. Cab companies are usually set up so that drivers rent cabs and dispatcher service from the company, technically making the drivers freelance operators. Taxis are required to be fitted with approved meters, periodically checked by the city\\u2019s taxi board. Drivers are usually required to obtain a special license that includes a background check by the police detective bureau. A chauffeur is either directly employed by an individual or firm, or works for an agency that hires both car and chauffeur out for single engagements or on a retainer basis.",
       "suggested_contacts": "Street scene, possibly a notable customer now and then.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
@@ -1654,8 +1654,8 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Editor",
-      "description": "Editors work assigning with reporters stories, writing newspaper and magazine editorials, dealing with crises and meeting deadlines. Occasionally they edit. Large newspapers have many editors, including managing editors who aremore involved with business operations than news. Other editors specialize in fashion, sports or some other area. Small newspapers may have only a single editor who, in fact, may also be the owner as well as the only full-time employee.",
-      "suggested_contacts": "News industry, local government, specialists -e.g. fashion designers, sports, business, publishers.",
+      "description": "Editors work assigning with reporters stories, writing newspaper and magazine editorials, dealing with crises and meeting deadlines. Occasionally they edit. Large newspapers have many editors, including managing editors who aremore involved with business operations than news. Other editors specialize in fashion, sports or some other area. Small newspapers may have only a single editor who, in fact, may also be the owner as well as the only full(time employee.",
+      "suggested_contacts": "News industry, local government, specialists (e.g. fashion designers, sports, business, publishers.",
       "credit_rating_min": 10,
       "credit_rating_max": 30,
       "skills": {
@@ -1663,7 +1663,7 @@
         "basics": [
           "Accounting",
           "History",
-          "Language-Own",
+          "Language(Own)",
           "Psychology",
           "Spot Hidden"
         ],
@@ -1687,7 +1687,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Elected Official",
-      "description": "Popularly elected officials enjoy prestige commensurate with their position. Small-town mayors and township supervisors find their in\\ufb02uence extends little beyond their municipality\\u2019s borders. Often these jobs are part-time, paying but small compensation. The mayors of big cities are well paid, however, often ruling their cities like little kingdoms and wielding more in\\ufb02uence and power than the governor of their respective state. Local Representatives and Senators elected to state houses enjoy a fair amount of respect, particularly with the business community and often at a statewide level. Governors are responsible for entire states and have connections across the country. Federal positions carry the most clout. States send a number of Representatives to Congress based upon population count, and the House seats over 400 members, each elected to a two-year term. Each state, regardless of size, also sends two Senators to Washington. Elected to six-year terms and numbering less than a hundred, Senators hold considerably more in\\ufb02uence than Representatives, and some elder senators receive nearly as much respect as the President. In the United Kingdom, Members of Parliament are popularly elected every four to five years. Representatives in the House of Lords are unelected, receiving their memberships through either birth or appointment.",
+      "description": "Popularly elected officials enjoy prestige commensurate with their position. Small(town mayors and township supervisors find their in\\ufb02uence extends little beyond their municipality\\u2019s borders. Often these jobs are part(time, paying but small compensation. The mayors of big cities are well paid, however, often ruling their cities like little kingdoms and wielding more in\\ufb02uence and power than the governor of their respective state. Local Representatives and Senators elected to state houses enjoy a fair amount of respect, particularly with the business community and often at a statewide level. Governors are responsible for entire states and have connections across the country. Federal positions carry the most clout. States send a number of Representatives to Congress based upon population count, and the House seats over 400 members, each elected to a two(year term. Each state, regardless of size, also sends two Senators to Washington. Elected to six(year terms and numbering less than a hundred, Senators hold considerably more in\\ufb02uence than Representatives, and some elder senators receive nearly as much respect as the President. In the United Kingdom, Members of Parliament are popularly elected every four to five years. Representatives in the House of Lords are unelected, receiving their memberships through either birth or appointment.",
       "suggested_contacts": "Political operatives, government, news media, business, foreign governments, possibly organized crime.",
       "credit_rating_min": 50,
       "credit_rating_max": 90,
@@ -1697,7 +1697,7 @@
           "History",
           "Intimidate",
           "Fast talk",
-          "Language-Own",
+          "Language(Own)",
           "Listen",
           "Persuade",
           "Psychology"
@@ -1727,9 +1727,9 @@
           "Library Use",
           "Mechanical Repair",
           "Operate Heavy Machinery",
-          "Science-Physics",
-          "Art & Craft-Technical Drawing",
-          "Science-Engineering"
+          "Science(Physics)",
+          "Art & Craft(Technical Drawing)",
+          "Science(Engineering)"
         ]
       },
       "points": {
@@ -1745,7 +1745,7 @@
     "fields": {
       "title": "Entertainer",
       "description": "This occupation might include clown, singer, dancer, comedian, juggler, musician or anyone else who earns a living in front of an audience. These people love to be seen, love to show what they do best and love the consequent applause. Previously to the 1920s, this profession lacked respect; however the money that Hollywood stars can make in the 1920s changes most minds, and by the present day such a background is generally felt to be an advantage.",
-      "suggested_contacts": "Vaudeville, theatre, film industry, entertainment critics, organized crime, and television -for modern-day.",
+      "suggested_contacts": "Vaudeville, theatre, film industry, entertainment critics, organized crime, and television (for modern(day.",
       "credit_rating_min": 9,
       "credit_rating_max": 70,
       "skills": {
@@ -1788,7 +1788,7 @@
         "basics": [
           "History",
           "Jump",
-          "Language-Other",
+          "Language(Other)",
           "Natural World",
           "Navigate",
           "Survival"
@@ -1819,7 +1819,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Farmer",
-      "description": "An agricultural worker who might own the land on which they raise crops or livestock, or who is employed to do the same. Rigorous and demanding, the life of the farmer is suited to those who enjoy manual labor and outdoor activities. The 1920s are the first decade where the urban population of the U.S. outnumbers the rural population. Independent farmers find themselves squeezed between competition from corporate-controlled farms and \\ufb02uctuating commodity markets\\u2014a situation still common in contemporary times.",
+      "description": "An agricultural worker who might own the land on which they raise crops or livestock, or who is employed to do the same. Rigorous and demanding, the life of the farmer is suited to those who enjoy manual labor and outdoor activities. The 1920s are the first decade where the urban population of the U.S. outnumbers the rural population. Independent farmers find themselves squeezed between competition from corporate(controlled farms and \\ufb02uctuating commodity markets\\u2014a situation still common in contemporary times.",
       "suggested_contacts": "Local bank, local Politicians, state agricultural department.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
@@ -1827,7 +1827,7 @@
         "limit_free": 1,
         "basics": [
           "Drive Auto",
-          "Art & Craft-Farming",
+          "Art & Craft(Farming)",
           "Mechanical Repair",
           "Natural World",
           "Operate Heavy Machinery",
@@ -1863,7 +1863,7 @@
       "skills": {
         "limit_free": 1,
         "basics": [
-          "Fighting-Brawl",
+          "Fighting(Brawl)",
           "Drive Auto",
           "Law",
           "Persuade",
@@ -1954,7 +1954,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Foreign Correspondent",
-      "description": "Foreign correspondents are the elite of news reporters. They work on salary, enjoy expense accounts and travel the globe. In the 1920s, the correspondent may work for a large newspaper, a radio network or a national newsgroup. Modern-day reporters might also work freelance or be employed to file reports for a television network, an Internet news provider or international news agency. The work can be very varied, often exciting and sometimes hazardous as natural disasters, political upheaval and war are the primary focus of the foreign correspondent.",
+      "description": "Foreign correspondents are the elite of news reporters. They work on salary, enjoy expense accounts and travel the globe. In the 1920s, the correspondent may work for a large newspaper, a radio network or a national newsgroup. Modern(day reporters might also work freelance or be employed to file reports for a television network, an Internet news provider or international news agency. The work can be very varied, often exciting and sometimes hazardous as natural disasters, political upheaval and war are the primary focus of the foreign correspondent.",
       "suggested_contacts": "National or worldwide news industry, foreign governments, military.",
       "credit_rating_min": 10,
       "credit_rating_max": 40,
@@ -1962,8 +1962,8 @@
         "limit_free": 1,
         "basics": [
           "History",
-          "Language-Other",
-          "Language-Own",
+          "Language(Other)",
+          "Language(Own)",
           "Listen",
           "Psychology"
         ],
@@ -1993,13 +1993,13 @@
       "credit_rating_max": 60,
       "skills": {
         "basics": [
-          "Science-Biology",
-          "Science-Forensics",
-          "Language-Other",
+          "Science(Biology)",
+          "Science(Forensics)",
+          "Language(Other)",
           "Library Use",
           "Medicine",
           "Persuade",
-          "Science-Pharmacy",
+          "Science(Pharmacy)",
           "Spot Hidden"
         ]
       },
@@ -2015,14 +2015,14 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Gambler",
-      "description": "Gamblers are the dandies of the criminal world. Sharp dressers, they usually possess some bags of charm, either earthy or sophisticated. Whether frequenting the racetrack, card table or casino, such individuals often base their life upon chance. More sophisticated gamblers probably frequent the illegal casinos operated by organized crime. A few are known as poker players and are often involved in lengthy, high-stakes games where they may even be backed by outside investors. The lowest frequent alleys and dives, playing craps with loaded dice, or hustling in pool halls.",
+      "description": "Gamblers are the dandies of the criminal world. Sharp dressers, they usually possess some bags of charm, either earthy or sophisticated. Whether frequenting the racetrack, card table or casino, such individuals often base their life upon chance. More sophisticated gamblers probably frequent the illegal casinos operated by organized crime. A few are known as poker players and are often involved in lengthy, high(stakes games where they may even be backed by outside investors. The lowest frequent alleys and dives, playing craps with loaded dice, or hustling in pool halls.",
       "suggested_contacts": "Bookies, organized crime, street scene.",
       "credit_rating_min": 8,
       "credit_rating_max": 50,
       "skills": {
         "basics": [
           "Accounting",
-          "Art & Craft-Acting",
+          "Art & Craft(Acting)",
           "Listen",
           "Psychology",
           "Sleight of Hand",
@@ -2132,14 +2132,14 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Gangster Moll [Classic]",
-      "description": "The female companion of a professional criminal. Sometimes known a \\u2018gun moll\\u2019 -e.g.. Bonnie Parker of Bonnie and Clyde infamy. the moll is expected to do as she\\u2019s told and live at the beck and call of her mobster boyfriend; however in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry.",
+      "description": "The female companion of a professional criminal. Sometimes known a \\u2018gun moll\\u2019 (e.g.. Bonnie Parker of Bonnie and Clyde infamy. the moll is expected to do as she\\u2019s told and live at the beck and call of her mobster boyfriend; however in reality this could easily be the other way around, with the moll working her boyfriend for all she can before skedaddling with all the cash and furs she can carry.",
       "suggested_contacts": "Gangsters, law enforcement, local businesses.",
       "credit_rating_min": 10,
       "credit_rating_max": 80,
       "skills": {
         "skill_combat": [
-          "Fighting-Brawl",
-          "Firearms-Handgun"
+          "Fighting(Brawl)",
+          "Firearms(Handgun)"
         ],
         "limit_combat": 1,
         "basics": [
@@ -2171,18 +2171,18 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Gentleman-Lady",
-      "description": "A man of good breeding, courteous behavior and good conduct. Usually the term is applied to a member of the upper class who is independently wealthy -either by inheritance or regular allowance. In the 1920s, a gentleman would certainly have had at least one servant -butler, valet, chauffer and probably a country and city residence. One does not necessarily have to be rich to be a gentleman, as often family status is more important than family wealth in terms of the highest society.",
+      "title": "Gentleman(Lady",
+      "description": "A man of good breeding, courteous behavior and good conduct. Usually the term is applied to a member of the upper class who is independently wealthy (either by inheritance or regular allowance. In the 1920s, a gentleman would certainly have had at least one servant (butler, valet, chauffer and probably a country and city residence. One does not necessarily have to be rich to be a gentleman, as often family status is more important than family wealth in terms of the highest society.",
       "suggested_contacts": "Upper classes and landed gentry, politics, servants and agricultural workers.",
       "credit_rating_min": 40,
       "credit_rating_max": 90,
       "skills": {
         "basics": [
           "History",
-          "Language-Other",
+          "Language(Other)",
           "Navigate",
           "Ride",
-          "Firearms-Rifle/Shotgun"
+          "Firearms(Rifle/Shotgun)"
         ],
         "skill_professionalt": [
           "Art & Craft"
@@ -2209,7 +2209,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Hobo",
-      "description": "Although there are people out of work and, as always, alcoholics lying in the gutters, the true hobo forms a separate breed. While drifters tend to only work when forced to, hobos are essentially \\u2018workers who wander\\u2019. Riding the rails continually, on the move from one town to another, they are penniless poets and vagabonds\\u2014explorers of the road, adventurers and thieves. However, life on the road or rails is dangerous. Aside of the problems of being poor and having no home, the hobo faces hostility from the police, close-knit communities and railroad staff. Jumping trains in the dark is no easy feat and many a hobo has lost a foot or hand from getting caught between train cars.",
+      "description": "Although there are people out of work and, as always, alcoholics lying in the gutters, the true hobo forms a separate breed. While drifters tend to only work when forced to, hobos are essentially \\u2018workers who wander\\u2019. Riding the rails continually, on the move from one town to another, they are penniless poets and vagabonds\\u2014explorers of the road, adventurers and thieves. However, life on the road or rails is dangerous. Aside of the problems of being poor and having no home, the hobo faces hostility from the police, close(knit communities and railroad staff. Jumping trains in the dark is no easy feat and many a hobo has lost a foot or hand from getting caught between train cars.",
       "suggested_contacts": "Other hobos, a few friendly railroad guards, soft touches in numerous towns.",
       "credit_rating_min": 0,
       "credit_rating_max": 5,
@@ -2247,7 +2247,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Hooker",
-      "description": "Depending on circumstance, breeding and background, a prostitute may be a high-rolling expensive call girl, brothel whore or streetwalker. Often driven by circumstance, many dream of a way out. A few work completely independently; however for most, they are lured and kept in the business by ruthless pimps whose only concern is cash.",
+      "description": "Depending on circumstance, breeding and background, a prostitute may be a high(rolling expensive call girl, brothel whore or streetwalker. Often driven by circumstance, many dream of a way out. A few work completely independently; however for most, they are lured and kept in the business by ruthless pimps whose only concern is cash.",
       "suggested_contacts": "Street scene, police, possibly organized crime, personal clientele.",
       "credit_rating_min": 5,
       "credit_rating_max": 50,
@@ -2289,7 +2289,7 @@
       "credit_rating_max": 15,
       "skills": {
         "basics": [
-          "Fighting-Brawl",
+          "Fighting(Brawl)",
           "Electrical Repair",
           "First Aid",
           "Listen",
@@ -2318,17 +2318,17 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Investigative Journalist",
-      "description": "Uses words to report and comment upon topics and incidents of the day, writing as many words in a day as an author may in a week. Journalists work for newspapers, magazines, radio, television and Internet news services. The best investigative journalists report, but keep themselves independent of the corruption and self-serving they witness. That reality overwhelms the worst, who eventually forfeit any sensibility except the power of their words. Reporters work in the news and media industries, either freelance or for a newspaper, magazine, website or news agency. Most work outside of the office, interviewing witnesses, checking records and gathering stories. Some are assigned to specific beats like the police station, the sports scene or business. Others cover social events and garden club meetings. Reporters carry \\u2018press passes\\u2019, but these are of little value other than to identify an individual as employed by their respective employer -usually a newspaper. The real work is similar to that of a private detective, and some reporters may resort to subterfuge to gain the information they want.",
+      "description": "Uses words to report and comment upon topics and incidents of the day, writing as many words in a day as an author may in a week. Journalists work for newspapers, magazines, radio, television and Internet news services. The best investigative journalists report, but keep themselves independent of the corruption and self(serving they witness. That reality overwhelms the worst, who eventually forfeit any sensibility except the power of their words. Reporters work in the news and media industries, either freelance or for a newspaper, magazine, website or news agency. Most work outside of the office, interviewing witnesses, checking records and gathering stories. Some are assigned to specific beats like the police station, the sports scene or business. Others cover social events and garden club meetings. Reporters carry \\u2018press passes\\u2019, but these are of little value other than to identify an individual as employed by their respective employer (usually a newspaper. The real work is similar to that of a private detective, and some reporters may resort to subterfuge to gain the information they want.",
       "suggested_contacts": "News industry, politicians, street level crime or law enforcement.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
       "skills": {
         "basics": [
           "History",
-          "Language-Own",
+          "Language(Own)",
           "Library Use",
           "Psychology",
-          "Art & Craft-Photography"
+          "Art & Craft(Photography)"
         ],
         "skill_interpersonal": [
           "Charm",
@@ -2351,15 +2351,15 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Reporter",
-      "description": "Uses words to report and comment upon topics and incidents of the day, writing as many words in a day as an author may in a week. Journalists work for newspapers, magazines, radio, television and Internet news services. The best investigative journalists report, but keep themselves independent of the corruption and self-serving they witness. That reality overwhelms the worst, who eventually forfeit any sensibility except the power of their words. Reporters work in the news and media industries, either freelance or for a newspaper, magazine, website or news agency. Most work outside of the office, interviewing witnesses, checking records and gathering stories. Some are assigned to specific beats like the police station, the sports scene or business. Others cover social events and garden club meetings. Reporters carry \\u2018press passes\\u2019, but these are of little value other than to identify an individual as employed by their respective employer -usually a newspaper. The real work is similar to that of a private detective, and some reporters may resort to subterfuge to gain the information they want.",
+      "description": "Uses words to report and comment upon topics and incidents of the day, writing as many words in a day as an author may in a week. Journalists work for newspapers, magazines, radio, television and Internet news services. The best investigative journalists report, but keep themselves independent of the corruption and self(serving they witness. That reality overwhelms the worst, who eventually forfeit any sensibility except the power of their words. Reporters work in the news and media industries, either freelance or for a newspaper, magazine, website or news agency. Most work outside of the office, interviewing witnesses, checking records and gathering stories. Some are assigned to specific beats like the police station, the sports scene or business. Others cover social events and garden club meetings. Reporters carry \\u2018press passes\\u2019, but these are of little value other than to identify an individual as employed by their respective employer (usually a newspaper. The real work is similar to that of a private detective, and some reporters may resort to subterfuge to gain the information they want.",
       "suggested_contacts": "News and media industries, political organizations and government, business, law enforcement, street criminals, high society.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
       "skills": {
         "basics": [
-          "Art & Craft-Acting",
+          "Art & Craft(Acting)",
           "History",
-          "Language-Own",
+          "Language(Own)",
           "Listen",
           "Psychology",
           "Spot Hidden",
@@ -2385,7 +2385,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Judge",
-      "description": "An official who presides over court legal proceedings, either alone or within a group of peers. Judges are either appointed or elected, sometimes for a term of specified length, other times for life. While some are appointed without ever having practiced law, most judges are licensed attorneys whether they sit on the smallest bench in a far-off Western town or on the bench of the Federal Supreme Court.",
+      "description": "An official who presides over court legal proceedings, either alone or within a group of peers. Judges are either appointed or elected, sometimes for a term of specified length, other times for life. While some are appointed without ever having practiced law, most judges are licensed attorneys whether they sit on the smallest bench in a far(off Western town or on the bench of the Federal Supreme Court.",
       "suggested_contacts": "Legal connections, possibly organized crime.",
       "credit_rating_min": 50,
       "credit_rating_max": 80,
@@ -2396,7 +2396,7 @@
           "Law",
           "Library Use",
           "Listen",
-          "Language-Own",
+          "Language(Own)",
           "Persuade",
           "Psychology"
         ]
@@ -2413,7 +2413,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Laboratory Assistant",
-      "description": "Working in a scientific environment, the assistant -or technician performs laboratory and administrative tasks under the supervision of a lead scientist. Tasks are varied and dependent on the scientific discipline of the lead scientist or laboratory, but could include: sampling, testing, recording and analyzing results, setting up or performing experiments, preparing specimens and samples, administering the day-to-day work of the laboratory and ensuring health and safety polices are adhered to.",
+      "description": "Working in a scientific environment, the assistant (or technician) performs laboratory and administrative tasks under the supervision of a lead scientist. Tasks are varied and dependent on the scientific discipline of the lead scientist or laboratory, but could include: sampling, testing, recording and analyzing results, setting up or performing experiments, preparing specimens and samples, administering the day(to(day work of the laboratory and ensuring health and safety polices are adhered to.",
       "suggested_contacts": "Universities, scientists, librarians.",
       "credit_rating_min": 10,
       "credit_rating_max": 30,
@@ -2424,9 +2424,9 @@
         "limit_misc": 2,
         "limit_free": 1,
         "basics": [
-          "Science-Chemistry",
+          "Science(Chemistry)",
           "Electrical Repair",
-          "Language-Other",
+          "Language(Other)",
           "Spot Hidden"
         ],
         "skill_professionalt": [
@@ -2487,7 +2487,7 @@
       "credit_rating_max": 30,
       "skills": {
         "basics": [
-          "Fighting-Chainsaw",
+          "Fighting(Chainsaw)",
           "Dodge",
           "Climb",
           "First Aid",
@@ -2497,8 +2497,8 @@
         ],
         "skill_professionalt": [
           "Natural World",
-          "Science-Biology",
-          "Science-Botany"
+          "Science(Biology)",
+          "Science(Botany)"
         ],
         "limit_professionalt": 1
       },
@@ -2525,7 +2525,7 @@
         "limit_free": 1,
         "basics": [
           "Climb",
-          "Science-Geology",
+          "Science(Geology)",
           "Jump",
           "Mechanical Repair",
           "Operate Heavy Machinery",
@@ -2587,8 +2587,8 @@
       "skills": {
         "basics": [
           "Accounting",
-          "Language-Other",
-          "Language-Own",
+          "Language(Other)",
+          "Language(Own)",
           "Library Use"
         ],
         "limit_free": 4
@@ -2635,7 +2635,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Military Officer",
-      "description": "Officers are command rank and most commissions demand some sort of higher education. All armed services have established officer training programs that may include university education\\u2014in the U.S. most major universities provide cadet training programs, allowing simultaneous training for the military while attending school. Upon graduation the cadet is promoted to the rank of Army or Marine Second Lieutenant or Naval Ensign, and assigned to a station. Usually such recruits owe the government four years\\u2019 active service, after which time they may return to civilian life. Many of the officers trained this way hold professional commissions and serve as doctors, lawyers or engineers. Those looking for a life\\u2019s career in the military may try to get themselves appointed to one of the military academies: the U.S. Army\\u2019s West Point or the Navy\\u2019s Annapolis, for example. Graduating from one of these schools earns the officer respect. Once out of school, some officers opt for special training, such as air pilot. Occasionally, an experienced and exceptionally worthy enlisted man is promoted to Warrant Offcer. Although technically at the bottom of the officers\\u2019 list of ranks, the time and experience required to achieve this promotion carry a respect and reverence far exceeding that of any junior or middle-grade officer. Most commissions are for life. Even a long-retired officer has the right to call himself Captain or General.",
+      "description": "Officers are command rank and most commissions demand some sort of higher education. All armed services have established officer training programs that may include university education\\u2014in the U.S. most major universities provide cadet training programs, allowing simultaneous training for the military while attending school. Upon graduation the cadet is promoted to the rank of Army or Marine Second Lieutenant or Naval Ensign, and assigned to a station. Usually such recruits owe the government four years\\u2019 active service, after which time they may return to civilian life. Many of the officers trained this way hold professional commissions and serve as doctors, lawyers or engineers. Those looking for a life\\u2019s career in the military may try to get themselves appointed to one of the military academies: the U.S. Army\\u2019s West Point or the Navy\\u2019s Annapolis, for example. Graduating from one of these schools earns the officer respect. Once out of school, some officers opt for special training, such as air pilot. Occasionally, an experienced and exceptionally worthy enlisted man is promoted to Warrant Offcer. Although technically at the bottom of the officers\\u2019 list of ranks, the time and experience required to achieve this promotion carry a respect and reverence far exceeding that of any junior or middle(grade officer. Most commissions are for life. Even a long(retired officer has the right to call himself Captain or General.",
       "suggested_contacts": "Military, federal government.",
       "credit_rating_min": 20,
       "credit_rating_max": 70,
@@ -2674,7 +2674,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Missionary",
-      "description": "Missionaries visit remote corners of the globe dispensing the word of God to \\u201cunfortunate primitives\\u201d or lost souls in more civilized locales. May be Catholic, Protestant, Islamic or from another branch of faith, such as the Church of the Latter-Day Saints, who specialize in two-year proselytizing missions to urban areas, including parts of the U.S. and Europe. Sometimes a missionary may be independent of all except his or her own vision, or may be backed by some organization other than a church. Christian and Islamic proselytizers and Buddhist and Hindu teachers can be encountered worldwide in all eras.",
+      "description": "Missionaries visit remote corners of the globe dispensing the word of God to \\u201cunfortunate primitives\\u201d or lost souls in more civilized locales. May be Catholic, Protestant, Islamic or from another branch of faith, such as the Church of the Latter(Day Saints, who specialize in two(year proselytizing missions to urban areas, including parts of the U.S. and Europe. Sometimes a missionary may be independent of all except his or her own vision, or may be backed by some organization other than a church. Christian and Islamic proselytizers and Buddhist and Hindu teachers can be encountered worldwide in all eras.",
       "suggested_contacts": "Church hierarchy, foreign officials.",
       "credit_rating_min": 0,
       "credit_rating_max": 30,
@@ -2711,7 +2711,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Mountain Climber",
-      "description": "Mountain climbing as a sport became popular in the 19th century. Most climbers are weekend and vacation sportsmen; only a few have the reputations needed to attract the financing and sponsorship required for major climbs. By the 1920s, all the major American and Alpine peaks had been conquered. After lengthy negotiations with the Tibetans, climbers were finally been granted access to the highest peaks of the Himalayas. Regular assaults on Mt. Everest, the last unconquered peak in the world, were routinely covered by radio and newspapers. Expeditions in 1921, 1922 and 1924 all failed to reach the summit and resulted in the deaths of thirteen people. In the modern day, mountaineering -or Alpinism as often termed by Europeans, may be sport, recreation or a profession. If a profession, this could include climbing instructors, guides, athletes or rescue services.",
+      "description": "Mountain climbing as a sport became popular in the 19th century. Most climbers are weekend and vacation sportsmen; only a few have the reputations needed to attract the financing and sponsorship required for major climbs. By the 1920s, all the major American and Alpine peaks had been conquered. After lengthy negotiations with the Tibetans, climbers were finally been granted access to the highest peaks of the Himalayas. Regular assaults on Mt. Everest, the last unconquered peak in the world, were routinely covered by radio and newspapers. Expeditions in 1921, 1922 and 1924 all failed to reach the summit and resulted in the deaths of thirteen people. In the modern day, mountaineering (or Alpinism as often termed by Europeans, may be sport, recreation or a profession. If a profession, this could include climbing instructors, guides, athletes or rescue services.",
       "suggested_contacts": "Other climbers, environmentalists, patrons, sponsors, local rescue or law enforcement, park rangers, sports clubs.",
       "credit_rating_min": 30,
       "credit_rating_max": 60,
@@ -2720,7 +2720,7 @@
           "Climb",
           "First Aid",
           "Jump",
-          "Language-Other",
+          "Language(Other)",
           "Listen",
           "Navigate",
           "Survival",
@@ -2752,7 +2752,7 @@
           "Appraise",
           "Archaeology",
           "History",
-          "Language-Other",
+          "Language(Other)",
           "Library Use",
           "Occult",
           "Spot Hidden"
@@ -2771,12 +2771,12 @@
     "fields": {
       "title": "Musician",
       "description": "May perform in an orchestra, group or solo, with any instrument you care to think of. Getting noticed is hard and then getting a recording contract is also difficult. Most musicians are poor and do not get noticed, eking a living by playing small venues as often as they can. A fortunate few might get regular work, such as playing a piano in a bar or hotel or within a city orchestra. For the minority, great success and wealth can be found by being in the right place at the right time, plus having a modicum of talent. The 1920s is, of course, the Jazz Age, and musicians work in small combos and dance orchestras in large and medium sized cities and towns across America. A few musicians living in large cities like Chicago or New York find steady work in their hometown, but most spend significant amounts of time on the road, touring either by bus, by automobile or by train.",
-      "suggested_contacts": "Club owners, musicians\\u2019 union, organized crime, street-level criminals.",
+      "suggested_contacts": "Club owners, musicians\\u2019 union, organized crime, street(level criminals.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
       "skills": {
         "basics": [
-          "Art & Craft-Instrument",
+          "Art & Craft(Instrument)",
           "Listen",
           "Psychology"
         ],
@@ -2804,14 +2804,14 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Nurse",
-      "description": "Nurses are trained healthcare assistants, usually working in hospitals, nursing homes or with General Practitioners. Generally, a nurse will assist an individual, sick or well, with activities contributing to health or recovery -or to peaceful death that a person might perform unaided if they had the necessary strength, will or knowledge.",
+      "description": "Nurses are trained healthcare assistants, usually working in hospitals, nursing homes or with General Practitioners. Generally, a nurse will assist an individual, sick or well, with activities contributing to health or recovery (or to peaceful death that a person might perform unaided if they had the necessary strength, will or knowledge.",
       "suggested_contacts": "Hospital workers, physicians, community workers.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
       "skills": {
         "basics": [
-          "Science-Biology",
-          "Science-Chemistry",
+          "Science(Biology)",
+          "Science(Chemistry)",
           "First Aid",
           "Listen",
           "Medicine",
@@ -2846,9 +2846,9 @@
         "limit_free": 1,
         "basics": [
           "Anthropology",
-          "Science-Astronomy",
+          "Science(Astronomy)",
           "History",
-          "Language-Other",
+          "Language(Other)",
           "Library Use",
           "Occult"
         ],
@@ -2872,7 +2872,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Outdoorsman-Outdoorswoman",
-      "description": "The outdoor enthusiast spends much of his or her time living in the wilderness, often alone for long periods. Commonly skilled in hunting and fishing, and able to be self-sufficient in all but the harshest of environments. May be specialized in hiking, fishing, cross-country skiing, canoeing, climbing and camping. The outsdoorsman might work as a wilderness guide or ranger for a national park or outward bound center, or they may be financially independent, allowing them enjoy such a lifestyle without regard for paid employment, perhaps living as a hermit and only returning to civilization when the need arises.",
+      "description": "The outdoor enthusiast spends much of his or her time living in the wilderness, often alone for long periods. Commonly skilled in hunting and fishing, and able to be self(sufficient in all but the harshest of environments. May be specialized in hiking, fishing, cross(country skiing, canoeing, climbing and camping. The outsdoorsman might work as a wilderness guide or ranger for a national park or outward bound center, or they may be financially independent, allowing them enjoy such a lifestyle without regard for paid employment, perhaps living as a hermit and only returning to civilization when the need arises.",
       "suggested_contacts": " Local people and native folk, traders.",
       "credit_rating_min": 5,
       "credit_rating_max": 20,
@@ -2915,10 +2915,10 @@
         "basics": [
           "Anthropology",
           "History",
-          "Language-Other",
+          "Language(Other)",
           "Library Use",
           "Occult",
-          "Art & Craft-Photography",
+          "Art & Craft(Photography)",
           "Psychology"
         ]
       },
@@ -2941,11 +2941,11 @@
       "skills": {
         "basics": [
           "Accounting",
-          "Science-Chemistry",
+          "Science(Chemistry)",
           "First Aid",
-          "Language-Other",
+          "Language(Other)",
           "Library Use",
-          "Science-Pharmacy",
+          "Science(Pharmacy)",
           "Psychology"
         ],
         "skill_interpersonal": [
@@ -2969,13 +2969,13 @@
     "fields": {
       "title": "Photographer",
       "description": "Photography as an art form has been around a long time, with most photographers working freelance, for an advertising firm, or in a portrait studio, taking pictures of families. Others are employed in the newspaper, media and film industries. The elite of photographers are drawn from the worlds of art, journalism and wildlife conservation. In each of these arenas a photographer may find fame, recognition and financial reward. Photojournalists are essentially reporters who use cameras, but who are also expected to write prose to accompany an image. In the 1920s, newsreels came into being; heavy, bulky 35mm film equipment was hauled around the globe in search of exciting news stories, sporting events and bathing beauty pageants. A newsreel team usually numbers three, one of them an actual reporter who writes the copy while the other two handle the camera, lights, etc. Voiceovers are done at a home studio, based on the written copy.",
-      "suggested_contacts": "Advertising industry, local clients -including political organizations and newspapers.",
+      "suggested_contacts": "Advertising industry, local clients (including political organizations and newspapers).",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
       "skills": {
         "basics": [
-          "Science-Chemistry",
-          "Art & Craft-Photography",
+          "Science(Chemistry)",
+          "Art & Craft(Photography)",
           "Psychology",
           "Spot Hidden",
           "Stealth"
@@ -3002,15 +3002,15 @@
     "fields": {
       "title": "Photojournalist",
       "description": "Photography as an art form has been around a long time, with most photographers working freelance, for an advertising firm, or in a portrait studio, taking pictures of families. Others are employed in the newspaper, media and film industries. The elite of photographers are drawn from the worlds of art, journalism and wildlife conservation. In each of these arenas a photographer may find fame, recognition and financial reward. Photojournalists are essentially reporters who use cameras, but who are also expected to write prose to accompany an image. In the 1920s, newsreels came into being; heavy, bulky 35mm film equipment was hauled around the globe in search of exciting news stories, sporting events and bathing beauty pageants. A newsreel team usually numbers three, one of them an actual reporter who writes the copy while the other two handle the camera, lights, etc. Voiceovers are done at a home studio, based on the written copy.",
-      "suggested_contacts": "News industry, film industry -1920s, foreign governments and authorities.",
+      "suggested_contacts": "News industry, film industry (1920s, foreign governments and authorities.)",
       "credit_rating_min": 10,
       "credit_rating_max": 30,
       "skills": {
         "basics": [
-          "Science-Chemistry",
+          "Science(Chemistry)",
           "Climb",
-          "Language-Other",
-          "Art & Craft-Photography",
+          "Language(Other)",
+          "Art & Craft(Photography)",
           "Psychology"
         ],
         "skill_interpersonal": [
@@ -3034,7 +3034,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Aviator",
-      "description": "An aviator is a stunt pilot, working at carnivals or offering \\u2018daring\\u2019 leisure rides for those willing to pay. Often fame could be won by competing in organized air races, either cross-country or on fixed courses. During the twenties, Hollywood makes fair use of stunt pilots. A few aviators even find work as test pilots for the aircraft manufacturers. Many aviators learned to \\ufb02y during the Great War and as a result still hold commissions as officers in the Army, Navy, Marines, or Coast Guard. Younger pilots have either received military training during peacetime or learned on their own. American \\ufb02ying aces of the World War still in the public limelight include: Eddie Rickenbacker, presently employed by Chrysler Corporation; Tommy Hitchcock, Jr., now a star on the polo fields; and Reed Landis, son of Baseball Commissioner Kenesaw Mountain Landis.",
+      "description": "An aviator is a stunt pilot, working at carnivals or offering \\u2018daring\\u2019 leisure rides for those willing to pay. Often fame could be won by competing in organized air races, either cross(country or on fixed courses. During the twenties, Hollywood makes fair use of stunt pilots. A few aviators even find work as test pilots for the aircraft manufacturers. Many aviators learned to \\ufb02y during the Great War and as a result still hold commissions as officers in the Army, Navy, Marines, or Coast Guard. Younger pilots have either received military training during peacetime or learned on their own. American \\ufb02ying aces of the World War still in the public limelight include: Eddie Rickenbacker, presently employed by Chrysler Corporation; Tommy Hitchcock, Jr., now a star on the polo fields; and Reed Landis, son of Baseball Commissioner Kenesaw Mountain Landis.",
       "suggested_contacts": "",
       "credit_rating_min": 30,
       "credit_rating_max": 60,
@@ -3047,7 +3047,7 @@
           "Mechanical Repair",
           "Navigate",
           "Spot Hidden",
-          "Pilot-Aircraft"
+          "Pilot(Aircraft)"
         ]
       },
       "points": {
@@ -3062,18 +3062,18 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Pilot",
-      "description": "Professional aviators may be employed by business, for example the U.S. Mail, or work as pilots for a large or small commercial passenger line. In the U.S. there was no national regulation of pilots until the passing of the Air Commerce Act of 1926, after which time pilots\\u2019 licenses were required. Thus, many in this period work at carnivals, stunting, selling rides or offering local air-taxi services in and out of small airports. Some pilots actively serve in the military. Many aviators learned to \\ufb02y during their service and as a result still hold commissions as officers in the armed forces.",
+      "description": "Professional aviators may be employed by business, for example the U.S. Mail, or work as pilots for a large or small commercial passenger line. In the U.S. there was no national regulation of pilots until the passing of the Air Commerce Act of 1926, after which time pilots\\u2019 licenses were required. Thus, many in this period work at carnivals, stunting, selling rides or offering local air(taxi services in and out of small airports. Some pilots actively serve in the military. Many aviators learned to \\ufb02y during their service and as a result still hold commissions as officers in the armed forces.",
       "suggested_contacts": "Old military contacts, commercial cabin crew, mechanics, airfield staff, carnival entertainers.",
       "credit_rating_min": 20,
       "credit_rating_max": 70,
       "skills": {
         "basics": [
-          "Science-Astronomy",
+          "Science(Astronomy)",
           "Electrical Repair",
           "Mechanical Repair",
           "Navigate",
           "Operate Heavy Machinery",
-          "Pilot-Aircraft"
+          "Pilot(Aircraft)"
         ],
         "limit_free": 2
       },
@@ -3114,7 +3114,7 @@
         ],
         "limit_interpersonal": 1,
         "skill_professionalt": [
-          "Art & Craft-Acting",
+          "Art & Craft(Acting)",
           "Disguise"
         ],
         "limit_professionalt": 1
@@ -3140,7 +3140,7 @@
       "credit_rating_max": 30,
       "skills": {
         "basics": [
-          "Fighting-Brawl",
+          "Fighting(Brawl)",
           "First Aid",
           "Law",
           "Psychology",
@@ -3178,7 +3178,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Private Investigator",
-      "description": "The private eye usually acts in non-police situations, gathering information and evidence for private clients in impending civil cases, tracking down \\ufb02eeing spouses or business partners, or acting as an agent for private defense attorneys in criminal cases. Like any professional, the private eye separates his or her personal feelings from the job at hand, and cheerfully works for the guilty and innocent alike, as long as the fee is paid. The private investigator may have been a member of a police force in the past, using those connections to his or her advantage in the present; however this is not always the case. In most locales, the private investigator must be licensed and, if later proven to be guilty of illegal activity, the license may be revoked\\u2014effectively ending the detective\\u2019s career.",
+      "description": "The private eye usually acts in non(police situations, gathering information and evidence for private clients in impending civil cases, tracking down \\ufb02eeing spouses or business partners, or acting as an agent for private defense attorneys in criminal cases. Like any professional, the private eye separates his or her personal feelings from the job at hand, and cheerfully works for the guilty and innocent alike, as long as the fee is paid. The private investigator may have been a member of a police force in the past, using those connections to his or her advantage in the present; however this is not always the case. In most locales, the private investigator must be licensed and, if later proven to be guilty of illegal activity, the license may be revoked\\u2014effectively ending the detective\\u2019s career.",
       "suggested_contacts": "Law enforcement, clients.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
@@ -3188,7 +3188,7 @@
           "Disguise",
           "Law",
           "Library Use",
-          "Art & Craft-Photography",
+          "Art & Craft(Photography)",
           "Psychology",
           "Spot Hidden"
         ],
@@ -3215,14 +3215,14 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Professor [Lovecraftian]",
-      "description": "Professors are academics employed by colleges and universities. Larger corporations may also employ such academics for research and product development. Independent scholars sometimes help support themselves by teaching part-time courses. For the most part, the occupation indicates a Ph.D.\\u2014a rank that can earn tenure at universities around the world. The professor is qualified to teach and to perform competent research, and may have a discernible academic reputation in his or her area of expertise.",
+      "description": "Professors are academics employed by colleges and universities. Larger corporations may also employ such academics for research and product development. Independent scholars sometimes help support themselves by teaching part(time courses. For the most part, the occupation indicates a Ph.D.\\u2014a rank that can earn tenure at universities around the world. The professor is qualified to teach and to perform competent research, and may have a discernible academic reputation in his or her area of expertise.",
       "suggested_contacts": " Scholars, universities, libraries.",
       "credit_rating_min": 20,
       "credit_rating_max": 70,
       "skills": {
         "basics": [
-          "Language-Other",
-          "Language-Own",
+          "Language(Other)",
+          "Language(Own)",
           "Library Use",
           "Psychology"
         ],
@@ -3249,7 +3249,7 @@
         "basics": [
           "Climb",
           "First Aid",
-          "Science-Geology",
+          "Science(Geology)",
           "History",
           "Mechanical Repair",
           "Navigate",
@@ -3271,7 +3271,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Prostitute",
-      "description": "Depending on circumstance, breeding, and background, a prostitute may be a high-rolling expensive call girl, male gigolo or streetwalker. Often driven by circumstance, many dream of a way out. A few work completely independently; however, for most, they are lured and kept in the business by ruthless pimps whose only concern is cash.",
+      "description": "Depending on circumstance, breeding, and background, a prostitute may be a high(rolling expensive call girl, male gigolo or streetwalker. Often driven by circumstance, many dream of a way out. A few work completely independently; however, for most, they are lured and kept in the business by ruthless pimps whose only concern is cash.",
       "suggested_contacts": "Street scene, police, possibly organized crime, personal clientele",
       "credit_rating_min": 5,
       "credit_rating_max": 50,
@@ -3314,9 +3314,9 @@
       "credit_rating_max": 80,
       "skills": {
         "basics": [
-          "Science-Biology",
-          "Science-Chemistry",
-          "Language-Other",
+          "Science(Biology)",
+          "Science(Chemistry)",
+          "Language(Other)",
           "Listen",
           "Medicine",
           "Persuade",
@@ -3335,7 +3335,7 @@
   {
     "model": "creator.Occupation",
     "fields": {
-      "title": "Psychologist-Psychoanalyst",
+      "title": "Psychologist(Psychoanalyst",
       "description": "While commonly known for the fields of psychotherapy and counseling, this is just one branch of psychology. Other specialists include organizational psychologists who work with businesses and governments, as well as academics conducting research or teaching psychology. Clinical psychologists may work with patients, using a range of therapeutic tools. Note the distinction between a psychologist and a psychiatrist, who is a physician specialist. In the 1920s, the study of human behavior was a rather new field and primarily focused on Freudian analysis.",
       "suggested_contacts": "Psychological community, patients",
       "credit_rating_min": 10,
@@ -3370,7 +3370,7 @@
       "skills": {
         "basics": [
           "History",
-          "Language-Other",
+          "Language(Other)",
           "Library Use",
           "Spot Hidden"
         ],
@@ -3395,7 +3395,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Sailor, Naval",
-      "description": "Sailors may be military or commercial. Naval sailors, like their counterparts in the Army, go through an initial period of basic training. Upon graduation they are assigned rates and stations. Although many sailors serve in the traditional roles of Boatswain\\u2019s Mate or Fireman rating -ship\\u2019s engine man, the Navy also has a need for technically trained mechanics, radio operators, air controllers, etc. The highest enlisted rank is Chief Petty Offcer, which carries with it a prestige respected by even high-ranking officers. Enlistments are for a fixed number of years\\u2014in the U.S. Navy this is usually four years of active duty followed by two years of inactive reserve commitment, during which time the sailor can be called to serve in times of national emergency. Commercial sailors may work aboard a fishing vessel, charter boat or haulage tankers, carrying oil or commodities. In the U.S., charter boats work both coasts, as well as on the Great Lakes, catering to sport fisherman and vacationers. By far the greatest number of charter boats are found in Florida, on both the Gulf and ocean coasts. During Prohibition, many a charter boat captain found a lucrative trade in ferrying thirsty customers to the 3-mile limit, where foreign ships could sell alcohol. Likewise, smuggling for the bootleggers could pay well; however the risks were high.",
+      "description": "Sailors may be military or commercial. Naval sailors, like their counterparts in the Army, go through an initial period of basic training. Upon graduation they are assigned rates and stations. Although many sailors serve in the traditional roles of Boatswain\\u2019s Mate or Fireman rating (ship\\u2019s engine man, the Navy also has a need for technically trained mechanics, radio operators, air controllers, etc. The highest enlisted rank is Chief Petty Offcer, which carries with it a prestige respected by even high(ranking officers. Enlistments are for a fixed number of years\\u2014in the U.S. Navy this is usually four years of active duty followed by two years of inactive reserve commitment, during which time the sailor can be called to serve in times of national emergency. Commercial sailors may work aboard a fishing vessel, charter boat or haulage tankers, carrying oil or commodities. In the U.S., charter boats work both coasts, as well as on the Great Lakes, catering to sport fisherman and vacationers. By far the greatest number of charter boats are found in Florida, on both the Gulf and ocean coasts. During Prohibition, many a charter boat captain found a lucrative trade in ferrying thirsty customers to the 3(mile limit, where foreign ships could sell alcohol. Likewise, smuggling for the bootleggers could pay well; however the risks were high.",
       "suggested_contacts": " Military, veterans\\u2019 associations.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
@@ -3403,7 +3403,7 @@
         "basics": [
           "First Aid",
           "Navigate",
-          "Pilot-Boat",
+          "Pilot(Boat)",
           "Survival",
           "Swim"
         ],
@@ -3436,7 +3436,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Sailor, Commercial",
-      "description": "Sailors may be military or commercial. Naval sailors, like their counterparts in the Army, go through an initial period of basic training. Upon graduation they are assigned rates and stations. Although many sailors serve in the traditional roles of Boatswain\\u2019s Mate or Fireman rating -ship\\u2019s engine man, the Navy also has a need for technically trained mechanics, radio operators, air controllers, etc. The highest enlisted rank is Chief Petty Offcer, which carries with it a prestige respected by even high-ranking officers. Enlistments are for a fixed number of years\\u2014in the U.S. Navy this is usually four years of active duty followed by two years of inactive reserve commitment, during which time the sailor can be called to serve in times of national emergency. Commercial sailors may work aboard a fishing vessel, charter boat or haulage tankers, carrying oil or commodities. In the U.S., charter boats work both coasts, as well as on the Great Lakes, catering to sport fisherman and vacationers. By far the greatest number of charter boats are found in Florida, on both the Gulf and ocean coasts. During Prohibition, many a charter boat captain found a lucrative trade in ferrying thirsty customers to the 3-mile limit, where foreign ships could sell alcohol. Likewise, smuggling for the bootleggers could pay well; however the risks were high.",
+      "description": "Sailors may be military or commercial. Naval sailors, like their counterparts in the Army, go through an initial period of basic training. Upon graduation they are assigned rates and stations. Although many sailors serve in the traditional roles of Boatswain\\u2019s Mate or Fireman rating (ship\\u2019s engine man, the Navy also has a need for technically trained mechanics, radio operators, air controllers, etc. The highest enlisted rank is Chief Petty Offcer, which carries with it a prestige respected by even high(ranking officers. Enlistments are for a fixed number of years\\u2014in the U.S. Navy this is usually four years of active duty followed by two years of inactive reserve commitment, during which time the sailor can be called to serve in times of national emergency. Commercial sailors may work aboard a fishing vessel, charter boat or haulage tankers, carrying oil or commodities. In the U.S., charter boats work both coasts, as well as on the Great Lakes, catering to sport fisherman and vacationers. By far the greatest number of charter boats are found in Florida, on both the Gulf and ocean coasts. During Prohibition, many a charter boat captain found a lucrative trade in ferrying thirsty customers to the 3(mile limit, where foreign ships could sell alcohol. Likewise, smuggling for the bootleggers could pay well; however the risks were high.",
       "suggested_contacts": "Coast Guard, smugglers, organized crime.",
       "credit_rating_min": 20,
       "credit_rating_max": 40,
@@ -3448,7 +3448,7 @@
           "Navigate",
           "Spot Hidden",
           "Swim",
-          "Pilot-Boat"
+          "Pilot(Boat)"
         ],
         "skill_interpersonal": [
           "Charm",
@@ -3473,7 +3473,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Salesperson",
-      "description": "An integral part of many businesses, salespeople work to promote and sell their employer\\u2019s goods or services. Most spend much of their time travelling, meeting and entertaining clients as much as their expenses account will allow. Some are mainly office-based, working telephones to contact potential clients, while others travel between communities to sell their wares door-to-door. The 1920s is the decade of the entrepreneur, and the traveling salesperson is a part of everyday life. Some work directly for companies and others on consignment, but most live and die by commission, using hard sales tactics to gain the confidence of a potential buyer and not caring whether their sale is affordable or not. Some are restricted to certain territories; however others are free to roam and seek out prospects wherever they might be found. Brushes, vacuum cleaners and encyclopedias are only a few of the many items that be offered door-to-door.",
+      "description": "An integral part of many businesses, salespeople work to promote and sell their employer\\u2019s goods or services. Most spend much of their time travelling, meeting and entertaining clients as much as their expenses account will allow. Some are mainly office(based, working telephones to contact potential clients, while others travel between communities to sell their wares door(to(door. The 1920s is the decade of the entrepreneur, and the traveling salesperson is a part of everyday life. Some work directly for companies and others on consignment, but most live and die by commission, using hard sales tactics to gain the confidence of a potential buyer and not caring whether their sale is affordable or not. Some are restricted to certain territories; however others are free to roam and seek out prospects wherever they might be found. Brushes, vacuum cleaners and encyclopedias are only a few of the many items that be offered door(to(door.",
       "suggested_contacts": "Businesses within the same sector, favored customers.",
       "credit_rating_min": 9,
       "credit_rating_max": 40,
@@ -3511,7 +3511,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Scientist",
-      "description": "Natural philosophers who delve reality in the pursuit of knowledge. Where science is applied to creating useful items, one might employ an engineer, but if one wishes to expand the bounds of what is possible, one will require scientists. Scientists are employed by businesses and universities to carry out research. Although specializing in one field of science, any scientist worth his of her salt will be well-versed in several branches of science. A scientist will also have a good command of their own language, having done higher degrees and probably a Ph.D.",
+      "description": "Natural philosophers who delve reality in the pursuit of knowledge. Where science is applied to creating useful items, one might employ an engineer, but if one wishes to expand the bounds of what is possible, one will require scientists. Scientists are employed by businesses and universities to carry out research. Although specializing in one field of science, any scientist worth his of her salt will be well(versed in several branches of science. A scientist will also have a good command of their own language, having done higher degrees and probably a Ph.D.",
       "suggested_contacts": "Other scientists and academics, universities, their employers and former employers.",
       "credit_rating_min": 9,
       "credit_rating_max": 50,
@@ -3521,8 +3521,8 @@
         ],
         "limit_professionalt": 3,
         "basics": [
-          "Language-Other",
-          "Language-Own",
+          "Language(Other)",
+          "Language(Own)",
           "Spot Hidden"
         ],
         "skill_interpersonal": [
@@ -3550,7 +3550,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Secretary",
-      "description": "A position that ranges from high-paid private executive assistant to the typing pool. The work concerns supporting executives and managers with a range of communication and organizational skills. Being at the hub of the business, most secretaries know more about the inner workings and operations of the business than their bosses do. During the 1920s, secretarial work was mainly concerned with correspondence, such as typing dictated letters, organizing document fling systems and arranging meetings for their bosses. In some cases, the secretary pretty much \\u2018ran\\u2019 their manager\\u2019s lives, organizing their vacations, buying presents for their children and wives, and generally covering their bosses\\u2019 back.",
+      "description": "A position that ranges from high(paid private executive assistant to the typing pool. The work concerns supporting executives and managers with a range of communication and organizational skills. Being at the hub of the business, most secretaries know more about the inner workings and operations of the business than their bosses do. During the 1920s, secretarial work was mainly concerned with correspondence, such as typing dictated letters, organizing document fling systems and arranging meetings for their bosses. In some cases, the secretary pretty much \\u2018ran\\u2019 their manager\\u2019s lives, organizing their vacations, buying presents for their children and wives, and generally covering their bosses\\u2019 back.",
       "suggested_contacts": "Other office workers, senior executives in client firms.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
@@ -3558,12 +3558,12 @@
         "limit_free": 1,
         "basics": [
           "Accounting",
-          "Language-Own",
+          "Language(Own)",
           "Psychology"
         ],
         "skill_professionalt": [
-          "Art & Craft-Short Hand",
-          "Art & Craft-Typing"
+          "Art & Craft(Short Hand)",
+          "Art & Craft(Typing)"
         ],
         "limit_professionalt": 1,
         "skill_interpersonal": [
@@ -3594,7 +3594,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Shopkeeper",
-      "description": "The owner of a small shop, market stall or perhaps restaurant. Usually self-employed, but may be the manager running the shop on behalf of the owner. Possibly family run, with relations also working on the premises, however normally few, if any, employees. The 1920s saw many women opening their own hairdressing and millinery shops.",
+      "description": "The owner of a small shop, market stall or perhaps restaurant. Usually self(employed, but may be the manager running the shop on behalf of the owner. Possibly family run, with relations also working on the premises, however normally few, if any, employees. The 1920s saw many women opening their own hairdressing and millinery shops.",
       "suggested_contacts": "Local residents and businesses, local police, local government, customers.",
       "credit_rating_min": 20,
       "credit_rating_max": 40,
@@ -3630,7 +3630,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Soldier-Marine",
-      "description": "This refers to the enlisted ranks of the Army and Marines and includes the lowest ranks of private up through gunnery sergeant -in U.S. terms. Although technically outranked by even the freshest of second lieutenants, veteran sergeants are respected by even the highest-ranking officers. In the U.S., standard enlistment is for six years, including four years\\u2019 active duty and two in standby -inactive reserve. All enlisted persons receive basic training\\u2014\\u201cboot camp\\u201d\\u2014where raw recruits are taught how to march, shoot and salute. Upon graduation from basic training, most are assigned to the infantry, although the army also needs soldiers for artillery and the tank corps. A few are trained for noncombat roles such as air controller, mechanic, clerk, or even officer\\u2019s steward. Marines, while technically part of the Navy, are similar to soldiers in background, training and skills.",
+      "description": "This refers to the enlisted ranks of the Army and Marines and includes the lowest ranks of private up through gunnery sergeant (in U.S. terms. Although technically outranked by even the freshest of second lieutenants, veteran sergeants are respected by even the highest(ranking officers. In the U.S., standard enlistment is for six years, including four years\\u2019 active duty and two in standby (inactive reserve. All enlisted persons receive basic training\\u2014\\u201cboot camp\\u201d\\u2014where raw recruits are taught how to march, shoot and salute. Upon graduation from basic training, most are assigned to the infantry, although the army also needs soldiers for artillery and the tank corps. A few are trained for noncombat roles such as air controller, mechanic, clerk, or even officer\\u2019s steward. Marines, while technically part of the Navy, are similar to soldiers in background, training and skills.",
       "suggested_contacts": "Military, veterans associations.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
@@ -3643,7 +3643,7 @@
         "skill_optional": [
           "First Aid",
           "Mechanical Repair",
-          "Language-Other"
+          "Language(Other)"
         ],
         "limit_optional": 2,
         "skill_professionalt": [
@@ -3681,14 +3681,14 @@
       "credit_rating_max": 60,
       "skills": {
         "basics": [
-          "Language-Other",
+          "Language(Other)",
           "Listen",
           "Psychology",
           "Sleight of Hand",
           "Stealth"
         ],
         "skill_professionalt": [
-          "Art & Craft-Acting",
+          "Art & Craft(Acting)",
           "Disguise"
         ],
         "limit_professionalt": 1,
@@ -3719,7 +3719,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Student-Intern",
-      "description": "May be a student enrolled at a college or university, or the employee of a company receiving minimal compensation but valuable on-the-job training.",
+      "description": "May be a student enrolled at a college or university, or the employee of a company receiving minimal compensation but valuable on(the(job training.",
       "suggested_contacts": "Academics and other students, while interns may also know business people.",
       "credit_rating_min": 5,
       "credit_rating_max": 10,
@@ -3733,8 +3733,8 @@
         ],
         "limit_professionalt": 3,
         "skill_misc": [
-          "Language-Other",
-          "Language-Own"
+          "Language(Other)",
+          "Language(Own)"
         ],
         "limit_misc": 1,
         "limit_free": 2
@@ -3751,7 +3751,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Stuntman",
-      "description": "The film and television industry employs stuntmen and women to simulate falls from buildings, car crashes and other catastrophes. Stunt performers will usually be trained in fighting techniques and stage combat. There is always risk in the performance of all stunt work, and health and safety is a key element. In modern times, stunt performers will largely be members of a union where they have had to prove their credentials -such as advanced driver\\u2019s license, diver\\u2019s license and so on. All television and film work will be supervised by a stunt director. However, in the 1920s there are no equivalent organizations nor any regulation of the industry. Accidents and fatalities are frequent.",
+      "description": "The film and television industry employs stuntmen and women to simulate falls from buildings, car crashes and other catastrophes. Stunt performers will usually be trained in fighting techniques and stage combat. There is always risk in the performance of all stunt work, and health and safety is a key element. In modern times, stunt performers will largely be members of a union where they have had to prove their credentials (such as advanced driver\\u2019s license, diver\\u2019s license and so on. All television and film work will be supervised by a stunt director. However, in the 1920s there are no equivalent organizations nor any regulation of the industry. Accidents and fatalities are frequent.",
       "suggested_contacts": "The film and television industries, various explosive and pyrotechnic firms, actors and directors.",
       "credit_rating_min": 10,
       "credit_rating_max": 50,
@@ -3775,8 +3775,8 @@
         "skill_misc": [
           "Diving",
           "Drive Auto",
-          "Pilot-Boat",
-          "Pilot-Aircraft",
+          "Pilot(Boat)",
+          "Pilot(Aircraft)",
           "Ride"
         ],
         "limit_misc": 1
@@ -3838,8 +3838,8 @@
       "skills": {
         "basics": [
           "Accounting",
-          "Science-Biology",
-          "Science-Chemistry",
+          "Science(Biology)",
+          "Science(Chemistry)",
           "Drive Auto",
           "History",
           "Occult",
@@ -3872,7 +3872,7 @@
       "skills": {
         "basics": [
           "Accounting",
-          "Fighting-Brawl",
+          "Fighting(Brawl)",
           "Law",
           "Listen",
           "Operate Heavy Machinery",
@@ -3898,7 +3898,7 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Waitress-Waiter",
-      "description": "Serves customers and clients within a hotel, bar or other drinking establishment. Traditionally low-paid, the waitress earns tips from clients by giving good service and trying to establish a rapport. A technically illegal profession during Prohibition, many job opportunities exist working in the illegal speakeasies owned by the mob.",
+      "description": "Serves customers and clients within a hotel, bar or other drinking establishment. Traditionally low(paid, the waitress earns tips from clients by giving good service and trying to establish a rapport. A technically illegal profession during Prohibition, many job opportunities exist working in the illegal speakeasies owned by the mob.",
       "suggested_contacts": "Customers, organized crime.",
       "credit_rating_min": 9,
       "credit_rating_max": 20,
@@ -3937,14 +3937,14 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Clerk-Executive",
-      "description": "This could range from the lowest-level white-collar position of a clerk to a middle or senior manager. The employer could be a small- to medium-sized locally owned business up to a large national or multinational corporation. Clerks are habitually underpaid and the work is drudgery, with those recognized as having \\u2018talent\\u2019 being earmarked for promotion someday. Middle and senior managers attract higher salaries, with greater responsibilities and say in how the business is managed day-to-day. Although unmarried white-collar workers are not infrequent, most executive types are family-oriented, with a spouse at home and children\\u2014it is often expected of them.",
+      "description": "This could range from the lowest-level white-collar position of a clerk to a middle or senior manager. The employer could be a small-to medium-sized locally owned business up to a large national or multinational corporation. Clerks are habitually underpaid and the work is drudgery, with those recognized as having \\u2018talent\\u2019 being earmarked for promotion someday. Middle and senior managers attract higher salaries, with greater responsibilities and say in how the business is managed day-to-day. Although unmarried white-collar workers are not infrequent, most executive types are family(oriented, with a spouse at home and children\\u2014it is often expected of them.",
       "suggested_contacts": "Other office workers.",
       "credit_rating_min": 9,
       "credit_rating_max": 20,
       "skills": {
         "basics": [
           "Accounting",
-          "Language-Own",
+          "Language(Own)",
           "Law",
           "Listen"
         ],
@@ -3974,14 +3974,14 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Middle-Senior Manager",
-      "description": "This could range from the lowest-level white-collar position of a clerk to a middle or senior manager. The employer could be a small- to medium-sized locally owned business up to a large national or multinational corporation. Clerks are habitually underpaid and the work is drudgery, with those recognized as having \\u2018talent\\u2019 being earmarked for promotion someday. Middle and senior managers attract higher salaries, with greater responsibilities and say in how the business is managed day-to-day. Although unmarried white-collar workers are not infrequent, most executive types are family-oriented, with a spouse at home and children\\u2014it is often expected of them.",
+      "description": "This could range from the lowest-level white-collar position of a clerk to a middle or senior manager. The employer could be a small( to medium(sized locally owned business up to a large national or multinational corporation. Clerks are habitually underpaid and the work is drudgery, with those recognized as having \\u2018talent\\u2019 being earmarked for promotion someday. Middle and senior managers attract higher salaries, with greater responsibilities and say in how the business is managed day(to(day. Although unmarried white(collar workers are not infrequent, most executive types are family(oriented, with a spouse at home and children\\u2014it is often expected of them.",
       "suggested_contacts": "Old college connections, Masons or other fraternal groups, local and federal government, media and marketing.",
       "credit_rating_min": 20,
       "credit_rating_max": 80,
       "skills": {
         "basics": [
           "Accounting",
-          "Language-Other",
+          "Language(Other)",
           "Law",
           "Psychology"
         ],
@@ -4047,13 +4047,13 @@
       "skills": {
         "basics": [
           "Accounting",
-          "Art & Craft-Animal Handling",
+          "Animal Handling",
           "Dodge",
           "First Aid",
           "Medicine",
           "Natural World",
-          "Science-Pharmacy",
-          "Science-Zoology"
+          "Science(Pharmacy)",
+          "Science(Zoology)"
         ]
       },
       "points": {
