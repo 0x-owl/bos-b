@@ -1,3 +1,5 @@
+from random import choice
+
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
@@ -39,7 +41,15 @@ def get_investigator_data(request, inv):
 
     # Retrieve "inventory"
     weapons = Inventory.objects.filter(
-        investigator=investigator, item__category = 3)
+        investigator=investigator,
+        item__category=3)
+    for weapon in weapons:
+        weapon.item.properties['skill_value'] = (
+            investigator.skills[weapon.item.properties['skill']]['value'],
+            investigator.skills[weapon.item.properties['skill']]['value'] // 2,
+            investigator.skills[weapon.item.properties['skill']]['value'] // 5,
+        )
+    res['weapons'] = weapons
 
     items = Inventory.objects.filter(
         investigator=investigator,

@@ -349,7 +349,7 @@ class Inventory(BaseModel):
 
     def __str__(self):
         """String representation of the object."""
-        title = '{} - {}'.format(self.item.title, self.investigator.name)
+        title = '{} - {}'.format(self.item.properties['title'], self.investigator.name)
         return title
 
 
