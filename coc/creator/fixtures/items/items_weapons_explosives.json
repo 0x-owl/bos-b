@@ -4,25 +4,6 @@
         "fields": {
             "category": 3,
             "properties": {
-                "title": "",
-                "subcategory": "Explosives",
-                "description": "",
-                "skill": "Throw",
-                "damage": "",
-                "base_range": "20 yards",
-                "uses_per_round": "1(2) or full auto",
-                "bullets_in_gun_mag": "20",
-                "cost_20s_modern": "$-/$-",
-                "malfunction": "96",
-                "age": "1920's, Modern"
-            }
-        }
-    },
-    {
-        "model": "creator.Item",
-        "fields": {
-            "category": 3,
-            "properties": {
                 "title": "Molotov Cocktail",
                 "subcategory": "Explosives",
                 "description": "",

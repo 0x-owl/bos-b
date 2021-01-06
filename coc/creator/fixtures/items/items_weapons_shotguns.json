@@ -86,7 +86,7 @@
                 "skill": "Firearms(Shotgun)",
                 "damage": "4D6/2D6/1D6",
                 "base_range": "10/20/50 yards",
-                "uses_per_round": "2",
+                "uses_per_round": "1 or 2",
                 "bullets_in_gun_mag": "5",
                 "cost_20s_modern": "$45/$100",
                 "malfunction": "100",

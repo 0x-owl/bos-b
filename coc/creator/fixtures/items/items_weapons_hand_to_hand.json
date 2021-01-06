@@ -251,7 +251,7 @@
         "fields": {
             "category": 3,
             "properties": {
-                "title": "Knife, small(Switch blade)",
+                "title": "Knife, Small(Switchblade)",
                 "subcategory": "Hand-to-Hand",
                 "description": "",
                 "skill": "Fighting(Brawl)",
@@ -374,7 +374,7 @@
                 "uses_per_round": "1",
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$25/$150",
-                "malfunction": "",
+                "malfunction": "-",
                 "age": "1920's, Modern"
             }
         }
@@ -389,7 +389,7 @@
                 "description": "",
                 "skill": "Throw",
                 "damage": "1D8 + half DB",
-                "base_range": "STR yards",
+                "base_range": "STR/5 yards",
                 "uses_per_round": "1",
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$1/$25",
@@ -503,12 +503,12 @@
                 "description": "",
                 "skill": "Throw",
                 "damage": "1D8 + half STR",
-                "base_range": "STR yards",
+                "base_range": "STR/5 yards",
                 "uses_per_round": "1",
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$2/$4",
-                "malfunction": "95",
-                "age": "1920's, Modern"
+                "malfunction": "-",
+                "age": "Rare"
             }
         }
     },

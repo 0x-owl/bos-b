@@ -1,0 +1,14 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 4,
+            "properties": {
+                "title": "Ammo",
+                "weapons": [],
+                "description": "Air Travel",
+                "price": 2
+            }
+        }
+    }
+]

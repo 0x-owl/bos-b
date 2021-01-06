@@ -23,7 +23,7 @@
         "fields": {
             "category": 3,
             "properties": {
-                "title": ".22 Bolt Action Rifle",
+                "title": ".22 Bolt-Action Rifle",
                 "subcategory": "Rifles",
                 "description": "",
                 "skill": "Firearms(Rifle)",
@@ -144,7 +144,7 @@
                 "damage": "2D6 + 4",
                 "base_range": "110 yards",
                 "uses_per_round": "1",
-                "bullets_in_gun_mag": "5",
+                "bullets_in_gun_mag": "10",
                 "cost_20s_modern": "$50/$300",
                 "malfunction": "100",
                 "age": "1920's, Modern"
@@ -156,7 +156,7 @@
         "fields": {
             "category": 3,
             "properties": {
-                "title": ".30-06 Bolt Action Rifle",
+                "title": ".30-06 Bolt-Action Rifle",
                 "subcategory": "Rifles",
                 "description": "",
                 "skill": "Firearms(Rifle)",
@@ -175,7 +175,7 @@
         "fields": {
             "category": 3,
             "properties": {
-                "title": ".30-06 Semi Automatic Rifle",
+                "title": ".30-06 Semi-Automatic Rifle",
                 "subcategory": "Rifles",
                 "description": "",
                 "skill": "Firearms(Rifle)",
