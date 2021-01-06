@@ -2342,6 +2342,7 @@
       "suggested_contacts": "News industry, politicians, street level crime or law enforcement.",
       "credit_rating_min": 9,
       "credit_rating_max": 30,
+      "lovecraftian": true,
       "skills": {
         "basics": [
           "History",
@@ -2866,6 +2867,7 @@
       "suggested_contacts": "Libraries, occult societies or fraternities, other occultists.",
       "credit_rating_min": 9,
       "credit_rating_max": 65,
+      "lovecraftian": true,
       "skills": {
         "limit_free": 1,
         "basics": [
@@ -3118,10 +3120,11 @@
     "model": "creator.Occupation",
     "fields": {
       "title": "Police Detective",
-      "description": "The plainclothes branch of police agencies, detectives examine crime scenes, gather evidence, conduct interviews and try to solve homicides, major burglaries and other felonies. They work the streets, often in close cooperation with a uniformed patrol. The police detective may be a manager who coordinates staff in some important investigation, but rarely has the luxury of concentrating on a single case. In the U.S., his or her responsibilities at any one time may number in the dozens or hundreds of open cases. The detective\\u2019s crucial function is to marshal enough evidence to allow an arrest, in turn leading to a successful criminal prosecution. Detectives everywhere sort truth from lies by evidence and reconstruction. The offices of detective and prosecutor are separate, so that the evidence may be weighed independently before trial. Though present day detectives may attend police science classes, take a degree and undergo special training and civil service exams, police detectives of every era are grounded in their experiences as junior officers and ordinary patrolmen. The uniformed police officer is employed by cities and towns, by County sheriffs\\u2019 departments, and state or regional police forces. The job may be on foot, behind the wheel of a patrol car or even sitting at a desk.",
-      "suggested_contacts": "Law enforcement, street level crime, coroner\\u2019s office, judiciary, organized crime.",
+      "description": "The plain clothes branch of police agencies, detectives examine crime scenes, gather evidence, conduct interviews and try to solve homicides, major burglaries and other felonies. They work the streets, often in close cooperation with a uniformed patrol. The police detective may be a manager who coordinates staff in some important investigation, but rarely has the luxury of concentrating on a single case. In the U.S., his or her responsibilities at any one time may number in the dozens or hundreds of open cases. The detective\\u2019s crucial function is to marshal enough evidence to allow an arrest, in turn leading to a successful criminal prosecution. Detectives everywhere sort truth from lies by evidence and reconstruction. The offices of detective and prosecutor are separate, so that the evidence may be weighed independently before trial. Though present day detectives may attend police science classes, take a degree and undergo special training and civil service exams, police detectives of every era are grounded in their experiences as junior officers and ordinary patrolmen. The uniformed police officer is employed by cities and towns, by County sheriffs\\u2019 departments, and state or regional police forces. The job may be on foot, behind the wheel of a patrol car or even sitting at a desk.",
+      "suggested_contacts": "Law enforcement, street level crime, coroners office, judiciary, organized crime.",
       "credit_rating_min": 20,
       "credit_rating_max": 50,
+      "lovecraftian": true,
       "skills": {
         "limit_free": 1,
         "basics": [
