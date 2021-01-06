@@ -267,6 +267,21 @@
                 },
                 "Tropical Forest": {
                     "description": ""
+                },
+                "Sea": {
+                    "description": ""
+                },
+                "Arctic": {
+                    "description": ""
+                },
+                "Alpine": {
+                    "description": ""
+                },
+                "Savannah": {
+                    "description": ""
+                },
+                "Dry plains": {
+                    "description": ""
                 }
             }
         }
