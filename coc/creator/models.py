@@ -351,14 +351,14 @@ class Inventory(BaseModel):
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     item = ForeignKey(Item, on_delete=CASCADE, null=True, blank=True)
     stock = PositiveIntegerField(default=1)
-    properties = JSONField(default=item.properties)
+    properties = JSONField(blank=True)
 
     class Meta:
         verbose_name_plural = 'Inventories'
 
     def __str__(self):
         """String representation of the object."""
-        title = f'{self.item.properties['title']} - {self.investigator.name}'
+        title = f"{self.item.properties['title']} - {self.investigator.name}"
         return title
 
 
