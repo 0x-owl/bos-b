@@ -351,7 +351,7 @@ class Inventory(BaseModel):
     investigator = ForeignKey(Investigator, on_delete=CASCADE)
     item = ForeignKey(Item, on_delete=CASCADE, null=True, blank=True)
     stock = PositiveIntegerField(default=1)
-    properties = JSONField(blank=True)
+    properties = JSONField(default=item.properties)
 
     class Meta:
         verbose_name_plural = 'Inventories'
