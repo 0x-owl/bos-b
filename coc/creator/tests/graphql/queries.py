@@ -177,7 +177,7 @@ one_skill = """
                 uuid,
                 baseValue,
                 subSkills,
-                year,
+                era,
                 uncommon
             }}
         }}
@@ -190,7 +190,7 @@ mutation{
   skillMutate(
     input:{
       method: "CREATE",
-      year: "Future",
+      era: "Future",
       baseValue: 10,
       title: "Test",
       description: "",
@@ -199,7 +199,7 @@ mutation{
     }){
     skill{
       uuid,
-      year
+      era
     }
   }
 }
@@ -211,12 +211,12 @@ mutation{{
     input:{{
       method: "UPDATE",
       uuid: "{uuid}",
-      year: "FutureX2",
+      era: "FutureX2",
       subSkills: "{{\\"Test Skill\\":{{\\"title\\": \\"test_skill2\\"}}}}"
   }}){{
     skill{{
       uuid,
-      year,
+      era,
       subSkills
     }}
   }}
@@ -232,7 +232,7 @@ mutation{{
     }}){{
     skill{{
       uuid,
-      year
+      era
     }}
   }}
 }}
