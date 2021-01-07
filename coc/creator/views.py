@@ -50,7 +50,7 @@ def get_investigator_data(request, inv):
         investigator=investigator,
         item__category=3)
     for weapon in weapons:
-        weapon.item.properties['skill_value'] = generate_full_half_fifth_values(
+        weapon.properties['skill_value'] = generate_full_half_fifth_values(
             investigator.skills[weapon.item.properties['skill']]['value']
         )
     res['weapons'] = weapons

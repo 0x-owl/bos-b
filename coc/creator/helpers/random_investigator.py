@@ -196,16 +196,19 @@ def random_inv():
     weapon = choice(weapons)
     inventory = Inventory(
         investigator=inv,
-        item=weapon
+        item=weapon,
+        properties=weapon.properties
     )
     inventory.save()
     # Create an inventory
     # assign random items (consumables or tools)
     items = Item.objects.filter(category__in=[2, 4])
     for _ in range(5):
+        item = choice(items)
         inventory = Inventory(
             investigator=inv,
-            item=choice(items)
+            item=item,
+            properties=item.properties
         )
         inventory.save()
     return inv.uuid

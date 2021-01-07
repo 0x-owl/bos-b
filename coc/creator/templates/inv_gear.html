@@ -10,8 +10,8 @@
             <tbody>
                 {% for gear in res.gear %}
                 <tr>
-                    <td>{{gear.item.properties.title}}</td>
-                    <td>{{gear.item.properties.price}}</td>
+                    <td>{{gear.properties.title}}</td>
+                    <td>{{gear.properties.price}}</td>
                     <td>{{gear.stock}}</td>
                 </tr>
                 {% endfor %}
