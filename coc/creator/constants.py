@@ -48,3 +48,8 @@ ITEM_CATEGORIES = [
     (6, 'VEHICLE'),
     (7, 'MISC')
 ]
+
+SILOUETTES = [
+    "/uploads/basics/img/silouette_male.jpg",
+    "/uploads/basics/img/silouette_female.jpg"
+]

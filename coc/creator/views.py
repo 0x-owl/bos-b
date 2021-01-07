@@ -1,23 +1,19 @@
-from random import choice
-
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
+from random import choice
+from json import dumps
+
 from creator.helpers.random_investigator import random_inv
 from creator.helpers.investigator import generate_full_half_fifth_values
+from creator.constants import SILOUETTES as silouettes
 from creator.models import (
     Investigator, Skills, Portrait, Inventory, PhobiaInvestigator,
     ManiaInvestigator, SpellInvestigator
 )
 
-from json import dumps
+
 # Create your views here.
-
-silouettes = [
-    "/uploads/basics/img/silouette_male.jpg",
-    "/uploads/basics/img/silouette_female.jpg"
-]
-
 def get_investigator_data(request, inv):
     '''Retrieve all information associated to an
     Investigator.'''
@@ -27,7 +23,6 @@ def get_investigator_data(request, inv):
     portrait = Portrait.objects.filter(
         investigator=investigator
     ).first()
-    print(investigator.sex)
     default_portrait = silouettes[0] if investigator.sex == 'M' else silouettes[1]
 
     res = {

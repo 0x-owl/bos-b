@@ -4,6 +4,18 @@
     "fields": {
       "category": 2,
       "properties": {
+        "title": "Generic Editable Item",
+        "description": "-",
+        "price": 0,
+        "era": "Modern"
+      }
+    }
+  },
+  {
+    "model": "creator.Item",
+    "fields": {
+      "category": 2,
+      "properties": {
         "title": "Air Travel Av Ticket Price (per 10 Miles)",
         "description": "Air Travel",
         "price": 2,
