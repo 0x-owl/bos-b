@@ -14,7 +14,7 @@
                 "bullets_in_gun_mag": "30",
                 "cost_20s_modern": "-/$200",
                 "malfunction": "100",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -33,7 +33,7 @@
                 "bullets_in_gun_mag": "30",
                 "cost_20s_modern": "-/$1000",
                 "malfunction": "97",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -52,7 +52,7 @@
                 "bullets_in_gun_mag": "11",
                 "cost_20s_modern": "-/$3000",
                 "malfunction": "96",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -71,7 +71,7 @@
                 "bullets_in_gun_mag": "20",
                 "cost_20s_modern": "-/$1500",
                 "malfunction": "97",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -90,7 +90,7 @@
                 "bullets_in_gun_mag": "20",
                 "cost_20s_modern": "-/$2000",
                 "malfunction": "98",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -109,7 +109,7 @@
                 "bullets_in_gun_mag": "30",
                 "cost_20s_modern": "-/-",
                 "malfunction": "97",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -128,7 +128,7 @@
                 "bullets_in_gun_mag": "30",
                 "cost_20s_modern": "-/-",
                 "malfunction": "97",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -147,7 +147,7 @@
                 "bullets_in_gun_mag": "30",
                 "cost_20s_modern": "-/$1100",
                 "malfunction": "99",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -166,7 +166,7 @@
                 "bullets_in_gun_mag": "30",
                 "cost_20s_modern": "-/$2800",
                 "malfunction": "99",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     }

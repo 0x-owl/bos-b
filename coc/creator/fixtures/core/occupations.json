@@ -775,7 +775,7 @@
       "credit_rating_min": 10,
       "credit_rating_max": 70,
       "modern": true,
-      "year": "Modern",
+      "era": "Modern",
       "skills": {
         "basics": [
           "Computer Use",
@@ -1366,7 +1366,7 @@
       "credit_rating_min": 20,
       "credit_rating_max": 50,
       "modern": true,
-      "year": "Modern",
+      "era": "Modern",
       "skills": {
         "skill_combat": [
           "Fighting"

@@ -14,7 +14,7 @@
                 "bullets_in_gun_mag": "1",
                 "cost_20s_modern": "$7/$75",
                 "malfunction": "97",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -33,7 +33,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$1/$10",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -52,7 +52,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$5/$50",
                 "malfunction": "-",
-                "age": "1920's"
+                "era": "1920's"
             }
         }
     },
@@ -71,7 +71,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$0.05/$0.5",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -90,7 +90,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "-/$300",
                 "malfunction": "95",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -109,7 +109,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$2/$15",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -128,7 +128,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$3/$35",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -147,7 +147,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$3/$35",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -166,7 +166,7 @@
                 "bullets_in_gun_mag": "1",
                 "cost_20s_modern": "$10/$100",
                 "malfunction": "96",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -185,7 +185,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$0.5/$3",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -204,7 +204,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$3/$9",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -223,7 +223,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$4/$50",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -242,7 +242,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$2/$15",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -261,7 +261,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$2/$6",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -280,7 +280,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "-/-",
                 "malfunction": "95",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -299,7 +299,7 @@
                 "bullets_in_gun_mag": "25 squirts",
                 "cost_20s_modern": "-/$10",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -318,7 +318,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$1/$10",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -337,7 +337,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "-",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -356,7 +356,7 @@
                 "bullets_in_gun_mag": "One Use",
                 "cost_20s_modern": "$0.50/$3",
                 "malfunction": "100",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -375,7 +375,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$25/$150",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -394,7 +394,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$1/$25",
                 "malfunction": "-",
-                "age": "Rare"
+                "era": "Rare"
             }
         }
     },
@@ -413,7 +413,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$30/$75",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -432,7 +432,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$15/$100",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -451,7 +451,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$25/$100",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -470,7 +470,7 @@
                 "bullets_in_gun_mag": "Varies",
                 "cost_20s_modern": "-/$200",
                 "malfunction": "97",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -489,7 +489,7 @@
                 "bullets_in_gun_mag": "3",
                 "cost_20s_modern": "-/$400",
                 "malfunction": "95",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -508,7 +508,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$2/$4",
                 "malfunction": "-",
-                "age": "Rare"
+                "era": "Rare"
             }
         }
     },
@@ -527,7 +527,7 @@
                 "bullets_in_gun_mag": "-",
                 "cost_20s_modern": "$5/$10",
                 "malfunction": "-",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     }

@@ -124,7 +124,7 @@ class SkillMutation(ClientIDMutation):
         method = String()
         uuid = String()
         title = String()
-        year = String()
+        era = String()
         base_value = Int()
         description = String()
         uncommon = Boolean()

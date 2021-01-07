@@ -14,7 +14,7 @@
                 "bullets_in_gun_mag": "1",
                 "cost_20s_modern": "$30/$300",
                 "malfunction": "95",
-                "age": "Rare"
+                "era": "Rare"
             }
         }
     },
@@ -33,7 +33,7 @@
                 "bullets_in_gun_mag": "6",
                 "cost_20s_modern": "$25/$190",
                 "malfunction": "100",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -52,7 +52,7 @@
                 "bullets_in_gun_mag": "1",
                 "cost_20s_modern": "$12/$55",
                 "malfunction": "100",
-                "age": "1920's"
+                "era": "1920's"
             }
         }
     },
@@ -71,7 +71,7 @@
                 "bullets_in_gun_mag": "6",
                 "cost_20s_modern": "$15/$200",
                 "malfunction": "100",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -90,7 +90,7 @@
                 "bullets_in_gun_mag": "8",
                 "cost_20s_modern": "$20/$350",
                 "malfunction": "99",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -109,7 +109,7 @@
                 "bullets_in_gun_mag": "6",
                 "cost_20s_modern": "-/$425",
                 "malfunction": "100",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -128,7 +128,7 @@
                 "bullets_in_gun_mag": "6",
                 "cost_20s_modern": "$25/$200",
                 "malfunction": "100",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -147,7 +147,7 @@
                 "bullets_in_gun_mag": "8",
                 "cost_20s_modern": "$30/$375",
                 "malfunction": "99",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -166,7 +166,7 @@
                 "bullets_in_gun_mag": "15",
                 "cost_20s_modern": "-/$500",
                 "malfunction": "98",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -185,7 +185,7 @@
                 "bullets_in_gun_mag": "17",
                 "cost_20s_modern": "-/$500",
                 "malfunction": "98",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -204,7 +204,7 @@
                 "bullets_in_gun_mag": "8",
                 "cost_20s_modern": "$75/$600",
                 "malfunction": "99",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -223,7 +223,7 @@
                 "bullets_in_gun_mag": "8",
                 "cost_20s_modern": "$30/-",
                 "malfunction": "100",
-                "age": "1920's, Rare"
+                "era": "1920's, Rare"
             }
         }
     },
@@ -242,7 +242,7 @@
                 "bullets_in_gun_mag": "6",
                 "cost_20s_modern": "-/$475",
                 "malfunction": "100",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -261,7 +261,7 @@
                 "bullets_in_gun_mag": "6",
                 "cost_20s_modern": "$30/$300",
                 "malfunction": "100",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -280,7 +280,7 @@
                 "bullets_in_gun_mag": "7",
                 "cost_20s_modern": "$40/$375",
                 "malfunction": "100",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -299,7 +299,7 @@
                 "bullets_in_gun_mag": "7",
                 "cost_20s_modern": "-/$650",
                 "malfunction": "94",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     }

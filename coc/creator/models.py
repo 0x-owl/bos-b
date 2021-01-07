@@ -77,7 +77,7 @@ class SpellTag(BaseModel):
 class Skills(BaseModel):
     """Skills class."""
     title = CharField(max_length=50)
-    year = CharField(max_length=50)
+    era = CharField(max_length=50)
     base_value = PositiveIntegerField(default=0)
     description = TextField(default="")
     uncommon = BooleanField(default=False)
@@ -88,7 +88,7 @@ class Skills(BaseModel):
 
     def __str__(self):
         """String representation of the object."""
-        return f"{self.title}-{self.year}"
+        return f"{self.title}-{self.era}"
 
 
 class Occupation(BaseModel):
@@ -100,14 +100,14 @@ class Occupation(BaseModel):
     credit_rating_max = PositiveIntegerField()
     skills = JSONField()
     points = JSONField()
-    year = CharField(max_length=50, default="1920's")
+    era = CharField(max_length=50, default="1920's")
     lovecraftian = BooleanField(default=False)
     classic = BooleanField(default=False)
     modern = BooleanField(default=False)
     
     def __str__(self):
         """String representation of the object."""
-        return f"{self.title}-{self.year}"
+        return f"{self.title}-{self.era}"
 
 
 class OccupationTags(BaseModel):
@@ -322,7 +322,7 @@ class Item(BaseModel):
 
     def __str__(self):
         """String representation of the object."""
-        return f"{self.properties['title']}-{self.properties['age']}"
+        return f"{self.properties['title']}-{self.properties['era']}"
 
 
 class ItemTag(BaseModel):

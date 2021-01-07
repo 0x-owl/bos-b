@@ -68,7 +68,7 @@ class SkillNode(DjangoObjectType):
         filter_fields = {
             'title': ['exact', 'icontains', 'istartswith'],
             'uuid': ['exact'],
-            'year': ['exact']
+            'era': ['exact']
         }
         interfaces = (relay.Node, )
 

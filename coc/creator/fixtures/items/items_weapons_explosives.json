@@ -14,7 +14,7 @@
                 "bullets_in_gun_mag": "1 only",
                 "cost_20s_modern": "-/-",
                 "malfunction": "95",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -33,7 +33,7 @@
                 "bullets_in_gun_mag": "1",
                 "cost_20s_modern": "-/-",
                 "malfunction": "99",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -52,7 +52,7 @@
                 "bullets_in_gun_mag": "1 only",
                 "cost_20s_modern": "$2/$5",
                 "malfunction": "99",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -71,7 +71,7 @@
                 "bullets_in_gun_mag": "One use",
                 "cost_20s_modern": "$20/box",
                 "malfunction": "100",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -90,7 +90,7 @@
                 "bullets_in_gun_mag": "1 only",
                 "cost_20s_modern": "-/-",
                 "malfunction": "95",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -109,7 +109,7 @@
                 "bullets_in_gun_mag": "1 only",
                 "cost_20s_modern": "-/-",
                 "malfunction": "99",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -128,7 +128,7 @@
                 "bullets_in_gun_mag": "1 only",
                 "cost_20s_modern": "-/-",
                 "malfunction": "99",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -147,7 +147,7 @@
                 "bullets_in_gun_mag": "Separate",
                 "cost_20s_modern": "-/-",
                 "malfunction": "100",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     },
@@ -166,7 +166,7 @@
                 "bullets_in_gun_mag": "One use",
                 "cost_20s_modern": "-/-",
                 "malfunction": "99",
-                "age": "1920's, Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -185,7 +185,7 @@
                 "bullets_in_gun_mag": "One use",
                 "cost_20s_modern": "-/-",
                 "malfunction": "99",
-                "age": "Modern"
+                "era": "Modern"
             }
         }
     }
