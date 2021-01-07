@@ -18,6 +18,7 @@ echo "[INFO] Activate virtualenv..."
 source $(pwd)/env/bin/activate
 
 echo "[INFO] Installing requirements..."
+pip3 install wheel
 pip3 install -r $(pwd)/docker/requirements.txt
 
 echo "[INFO] Load fixtures.."
