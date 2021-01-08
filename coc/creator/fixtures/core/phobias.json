@@ -633,7 +633,7 @@
     "model": "creator.Phobia",
     "fields": {
       "title": "Teratophobia",
-      "description": "Fear of monters."
+      "description": "Fear of monsters."
     }
   },
   {
