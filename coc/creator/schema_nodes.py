@@ -104,7 +104,8 @@ class SpellNode(DjangoObjectType):
             'uuid': ['exact'],
             'name': ['exact', 'icontains', 'istartswith'],
             'cost': ['exact', 'gt', 'lt', 'gte', 'lte'],
-            'casting_time': ['exact', 'gt', 'lt', 'gte', 'lte']
+            'casting_time': ['exact', 'gt', 'lt', 'gte', 'lte'],
+            'category': ['exact']
         }
         interfaces = (relay.Node, )
 

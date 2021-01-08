@@ -224,7 +224,7 @@ class SpellMutation(ClientIDMutation):
         notes = String()
         cost = String()
         casting_time = String()
-        user = Int()
+        category = Int()
 
     @classmethod
     def mutate(cls, *args, **kwargs):
@@ -235,8 +235,6 @@ class SpellMutation(ClientIDMutation):
             Input class (title, user).
         """
         input_ = kwargs.get('input')
-        usr = User.objects.get(pk=input_['user'])
-        input_['user'] = usr
         method = input_.pop('method')
         ret = mutation_flow(
             SpellMutation,

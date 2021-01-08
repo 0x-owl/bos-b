@@ -444,7 +444,6 @@ mutation{
         description:"We may ommit this",
         cost: "1D6 Sanity",
         castingTime: "Immediate",
-        user: 1
         category: 1
     }){
     spell{
@@ -461,8 +460,7 @@ mutation{{
   spellMutate(
     input:{{
       uuid: "{uuid}",
-      method: "DELETE",
-      user: 1
+      method: "DELETE"
     }}){{
     spell{{
         uuid
@@ -477,8 +475,7 @@ mutation{{
     input:{{
         uuid: "{uuid}",
         method: "UPDATE",
-        notes: "test",
-      user: 1
+        notes: "test"
     }}){{
     spell{{
       notes
