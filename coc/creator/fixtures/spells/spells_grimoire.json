@@ -17,7 +17,7 @@
       "alternative_names": "Banish Spawn of the Seven Hells, Cast Out Demon, Curse of Awful Fire.",
       "description": "This spell sends home most trans-dimensional human or human-like intelligences that are under their own volition. It is not effective against any creature commanded by an- other intelligence. Correctly performed, the banishment is permanent and irrevocable. Each banishment is of an individual target, not of a type of monsters. \n At least three people must participate in the spell. All participants must know the spell. More participants add to the effectiveness; however, the total number of participants must be divisible by three. \n This banishment works by destroying with ritual flames a sigil representing the target. The target’s personal sigil is best, but a substitute can be prepared according to a formula described within the spell. For the spell to take effect an op- posed POW roll must be made between the caster with the highest POW and target. One bonus die is granted for each additional set of three casters. \n The spell must be performed in the open air in the middle of the night, ideally in a place of power associated with the target. This could be known haunts, its last known location or its point of entry into this dimension. The spell casters must divide their numbers: one-third remain outside a protective circle and the rest stand within.",
       "cost": "1D4+3 magic points per caster; 1D4 Sanity points each",
-      "casting_time": "variable (minimum 1 hour)",
+      "casting_time": "Variable (minimum 1 hour)",
       "category": 1
     }
   },
@@ -60,7 +60,7 @@
       "name": "Clutch of Nyogtha",
       "alternative_names": "The Vile Wrench, The Insidious Wrath of the Dark Wizard, Ye Loathsome Tickle.",
       "description": "The caster must spend 1 magic point to begin the spell and the target must be within conversational distance. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If the caster wins the roll, the target feels as though a large hand or tentacle is crushing his or her heart, losing 1D3 hit points for each combat round that the spell is in effect. While under such attack, the target is temporarily paralyzed, as though having a heart attack. In the round that the accumulated damage from this spell reduces hit points to zero, the target’s chest ruptures and bursts, and the target’s smoking heart appears in the hand of the caster.\nEach round the spell lasts, the caster must spend magic points equal to twice the number of hit points in damage. The caster must concentrate on the spell each round that it is to remain in effect and the caster must defeat the target in an opposed POW roll each round. If the caster is distracted or if the target successfully resists, the spell ends. Any damage already done remains.",
-      "cost": "1+ magic points equal to twice the damage delivered that round; 1D20 Sanity points",
+      "cost": "1 + magic points equal to twice the damage delivered that round; 1D20 Sanity points",
       "casting_time": "Instantaneous",
       "category": 3
     }
@@ -205,7 +205,7 @@
       "name": "Fist of Yog-Sothoth",
       "alternative_names": "Channel the Strength of the Opener of the Way, Smite Down Thine Enemy, The Hideous Blast of the Foul One.",
       "description": "The caster causes a massive, invisible force to hit a single target. The caster must be able to see the target.\nEach magic point invested in the spell yields 2D10 STR of force. For every 30 feet of distance that the caster stands from the target (after the first thirty feet), the caster must spend an additional magic point.\nWhen the target is struck (if a living thing), an opposed roll must be made using the spell’s STR versus the target’s CON. If successful, the target is knocked unconscious. Whether or not the target is left unconscious, the target is always pushed away from the caster for a distance in feet equal to the STR of the blow minus the target’s SIZ.\nThe spell can be used against the STR of inanimate objects such as doors or walls. Results may be obvious, but sometimes Keepers will have to determine these cases.\nFor example: The caster spends 5 magic points to hit an investigator 50 feet away. 1 magic point is spent on the range. The other 4 generate a STR of 8D10 that are rolled for a result of 57. The investigator fails a Hard CON roll (since the spells STR is over 50) and so they are knocked unconscious. The investigator has a SIZ of 45 and is bowled back 12 feet by the impact.",
-      "cost": "variable magic points; 1D6 Sanity points",
+      "cost": "Variable magic points; 1D6 Sanity points",
       "casting_time": "Instantaneous",
       "category": 3
     }
@@ -216,7 +216,7 @@
       "name": "Flesh Ward",
       "alternative_names": "",
       "description": "Grants protection against physical attack. Each magic point spent gives the caster (or the chosen target) 1D6 points of armor against non-magical attacks. This protection wears off as it blocks damage. For example, if a character had 12 points of Flesh Ward as armor and was hit for 8 points of damage, the Flesh Ward would be reduced to 4 points, yet he or she would take no damage. The spell lasts 24 hours or until the protection is used up.",
-      "cost": "variable magic points; 1D4 Sanity points",
+      "cost": "Variable magic points; 1D4 Sanity points",
       "casting_time": "5 rounds",
       "category": 14
     }
@@ -259,7 +259,7 @@
       "name": "Mental Suggestion",
       "alternative_names": "Domination of the Will, Master and Servant, Bend Quarry to Thy Power, Mesmerise, Bend Will, Shake Resolve, Govern Mind, Implant Suggestion.",
       "description": "The caster can command any being with human blood in its veins. A single target, who is visible to the unaided eye of the sorcerer, is affected. The victim carries out all that is commanded by the caster, even to self-destruction. The spell also works against Lengites, deep one hybrids, ghoul changelings, Little People, serpent folk and deep ones who have interbred with humans, but doesn’t work on nonhuman entities such as shantaks or dimensional shamblers.\nThe caster intones the spell and relates the suggestion to the target. For the spell to take effect the caster must succeed in an opposed POW roll with the target. Extreme suggestions involving death or great harm require a second opposed POW roll just before the suggestion is implemented.\nThe cost for the spell varies with the suggestion. For ordinary unthreatening suggestions (drop your sword, hand over your money and leave, etc.), the cost is 5 magic points and 1D3 Sanity points. Riskier suggestions, but not ones antithetical to the target (go to Dunwich, set fire to a building, etc.), cost 10 magic points and 2D3 Sanity points. Dangerous or suicidal suggestions (kill a companion, kidnap the President, etc.) cost 15 magic points and 3D3 Sanity points.\nIf used on an investigator the effects lasts for 1 round for each point of INT the caster possesses. If the INT of the investigator is higher than that of the caster, the caster must win another POW roll every 10 rounds. When the caster fails the spell is broken.",
-      "cost": "variable magic points and Sanity points",
+      "cost": "Variable magic points and Sanity points",
       "casting_time": "3 rounds",
       "category": 11
     }
@@ -459,7 +459,7 @@
       "deeper_magic": "If imitating an individual, the caster becomes a replica of that person, including voice and speech patterns. The caster does not need to repeat the spell to undo the warping—a simple verbal phrase is all that is required.",
       "description": "Allows the caster to change his or her physical form. The sorcerer can change to any shape and appearance, though retaining personal abilities. The form is fleshly but it can appear to be made of stone, wood, a rug, etc. Once changed into a new shape, the caster has the mobility of that shape. The caster’s STR, CON, INT, POW and DEX do not change. If emulating a person, the sorcerer’s Appearance becomes that of the individual emulated. The caster can take on only a known form. \n The caster invokes Nyarlathotep and repeats the phrases of the spell while expending 6 magic points and an additional magic point for each 5 points of SIZ to be gained or lost in the body warping. Only one alteration per casting is possible and the effect is permanent until the spell is recast to change back again. This spell cannot be cast on another being.",
       "cost": "6+ magic points; 5 POW; 2D6 Sanity points",
-      "casting_time": "1D6+4 minutes",
+      "casting_time": "1D6 + 4 minutes",
       "category": 16
     }
   },
