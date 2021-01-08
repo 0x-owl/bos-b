@@ -7,7 +7,8 @@ from django.contrib.auth import get_user_model
 
 from creator.helpers.model_helpers import roller_stats
 from creator.helpers.random_name import random_names
-from creator.models import (Investigator, Occupation, Skills, Inventory, Item)
+from creator.models import (Investigator, Occupation, Skills, Inventory, Item, Spell,
+                            SpellInvestigator)
 
 
 User = get_user_model()
@@ -215,4 +216,14 @@ def random_inv():
     )
     
     weapon_inventory.save()
+
+    if randint(1, 20) == 20:
+        spells = Spell.objects.all()
+        spell = choice(spells)
+        spell_inv = SpellInvestigator(
+            investigator=inv,
+            spell=spell
+        )
+        spell_inv.save()
+        
     return inv.uuid

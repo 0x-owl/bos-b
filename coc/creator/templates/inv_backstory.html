@@ -28,12 +28,25 @@
             <li>{{mania}}</li>
             {% endfor %}
         </ul>
-        <b>Arcane Tomes, Spells & Artifacts:</b>
-        <ul>
+        <span><b>Arcane Tomes, Spells & Artifacts:</b></span><br>
+        <span><i>Spells:</i></span>
+        <ul style="list-style-type: none;">
             {% for spell in res.arcane.spells %}
-            <li>{{spell}}</li>
+            <li>
+                <dl>
+                    <dt><u>{{spell.spell.name}}</u> ({{spell.spell.cost}})</dt>
+                    <dd>
+                        <span><b>Casting Time:</b></span> {{spell.spell.casting_time}}<br>
+                        <span><b>Desc.:</b></span> {{spell.spell.description}}<br>
+                        <span><b>Deeper Magic:</b></span>{{spell.spell.deeper_magic}}<br>
+                        <span><b>Alt Names:</b></span> <i>{{spell.spell.alternative_names}}</i>
+                    </dd>
+
+                </dl>
+            </li>
             {% endfor %}
         </ul>
+        <span><i>Artifacts:</i></span>
         <ul>
             {% for artifact in res.arcane.artifacts %}
             <li>{{artifact}}</li>
