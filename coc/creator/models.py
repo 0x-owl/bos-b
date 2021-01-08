@@ -37,7 +37,6 @@ class Tag(BaseModel):
 
 class Spell(BaseModel):
     """Spell class."""
-    user = ForeignKey(User, on_delete=CASCADE)
     name = CharField(max_length=50)
     alternative_names = TextField(blank=True)
     description = TextField()
