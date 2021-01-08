@@ -2,14 +2,15 @@
 <table>
     <thead>
         <th>Weapon</th>
-        <th>Regular</th>
+        <th>Reg.</th>
         <th>Hard</th>
-        <th>Extreme</th>
-        <th>Damage</th>
+        <th>Ext.</th>
+        <th>Dmg.</th>
         <th>Range</th>
         <th>Attacks</th>
-        <th>Ammo</th>
-        <th>Malf</th>
+        <th>Bullets in mag</th>
+        <th>Ammo.</th>
+        <th>Malf.</th>
     </thead>
     <tbody>
         {% for weapon in res.weapons %}
@@ -22,6 +23,7 @@
             <td>{{ weapon.properties.base_range }}</td>
             <td>{{ weapon.properties.uses_per_round }}</td>
             <td>{{ weapon.properties.bullets_in_gun_mag }}</td>
+            <td>{{ weapon.properties.ammo }}</td>
             <td>{{ weapon.properties.malfunction }}</td>
         </tr>
         {% endfor %}

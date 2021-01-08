@@ -185,21 +185,6 @@ def random_inv():
     occ_point_assigner(proff_points, inv)
     # Assign free skill points
     free_point_assigner(inv.free_skill_points, inv)
-    # Assign a weapon
-    weapons = Item.objects.filter(
-        category=3,
-        properties__subcategory__in=[
-            'Handguns',
-            'Hand-to-Hand'
-        ]
-    )
-    weapon = choice(weapons)
-    inventory = Inventory(
-        investigator=inv,
-        item=weapon,
-        properties=weapon.properties
-    )
-    inventory.save()
     # Create an inventory
     # assign random items (consumables or tools)
     items = Item.objects.filter(category__in=[2, 4])
@@ -211,4 +196,23 @@ def random_inv():
             properties=item.properties
         )
         inventory.save()
+    # Assign a weapon
+    weapons = Item.objects.filter(
+        category=3,
+        properties__subcategory__in=[
+            'Handguns',
+            'Hand-to-Hand'
+        ]
+    )
+
+    weapon = choice(weapons)
+    weapon_props = weapon.properties
+    weapon_props['ammo'] = weapon.properties["bullets_in_gun_mag"]
+    weapon_inventory = Inventory(
+        investigator=inv,
+        item=weapon,
+        properties=weapon_props
+    )
+    
+    weapon_inventory.save()
     return inv.uuid
