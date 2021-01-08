@@ -445,6 +445,7 @@ mutation{
         cost: "1D6 Sanity",
         castingTime: "Immediate",
         user: 1
+        category: 1
     }){
     spell{
       uuid,
@@ -1065,7 +1066,8 @@ mutation{{
     method: "CREATE",
     stock: 3,
     investigator: "{investigator_uuid}",
-    item: "{item_uuid}"
+    item: "{item_uuid}",
+    properties: ""
   }})
   {{
     inventoryInv{{
