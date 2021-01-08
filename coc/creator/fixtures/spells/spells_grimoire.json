@@ -1,557 +1,532 @@
 [
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Apportion Ka",
-        "alternative_names":"Imbue Essence, Extraction of the Will, The Deathless Breath.",
-        "description": "A portion of the caster’s life essence, or ‘ka’, is transferred into one of his or her vital organs. The enchanted organ is then removed from the caster’s body, to be hidden away for safekeeping and providing the wizard with a form of invul- nerability—as long as the enchanted organ remains safely hidden the wizard will not suffer particular attacks and may even be invulnerable to death. \n This spell was first used by followers of the Dark Pha- raoh, Nephren-Ka, who would remove a vital organ, such as the heart or liver, and lock them away in safe places. This would make the caster virtually impossible to kill, if not for the spell’s one weakness. The brain is the seat of the spell’s power and, as such, could not be removed. If the brain was destroyed, the other organs would lose their magical prop- erties and the caster would die. \n Having one’s own insides removed costs 2D10 Sanity points and the permanent loss of 5 POW per organ removed. Attacks that impale cause only normal damage (unless the head is specifically targeted). Invulnerability stems from which organ is removed; for example if the lungs are re- moved then the caster is unaffected by lack of oxygen (thus drowning and suffocation are no longer threats). Removal of vital organs may also render the caster immune to poison and so forth. \n If the caster is harmed, hit points should be reduced as usual, leading to unconsciousness but not death. Death will only occur if the brain is specifically targeted and destroyed.",
-        "cost": "10 magic points, 5 POW and 2D10 Sanity points per organ",
-        "casting_time": "1 day per organ"
+    "fields": {
+      "user": 1,
+      "name": "Apportion Ka",
+      "alternative_names": "Imbue Essence, Extraction of the Will, The Deathless Breath.",
+      "description": "A portion of the caster’s life essence, or ‘ka’, is transferred into one of his or her vital organs. The enchanted organ is then removed from the caster’s body, to be hidden away for safekeeping and providing the wizard with a form of invulnerability—as long as the enchanted organ remains safely hidden the wizard will not suffer particular attacks and may even be invulnerable to death. \n This spell was first used by followers of the Dark Pha- raoh, Nephren-Ka, who would remove a vital organ, such as the heart or liver, and lock them away in safe places. This would make the caster virtually impossible to kill, if not for the spell’s one weakness. The brain is the seat of the spell’s power and, as such, could not be removed. If the brain was destroyed, the other organs would lose their magical prop- erties and the caster would die. \n Having one’s own insides removed costs 2D10 Sanity points and the permanent loss of 5 POW per organ removed. Attacks that impale cause only normal damage (unless the head is specifically targeted). Invulnerability stems from which organ is removed; for example if the lungs are re- moved then the caster is unaffected by lack of oxygen (thus drowning and suffocation are no longer threats). Removal of vital organs may also render the caster immune to poison and so forth. \n If the caster is harmed, hit points should be reduced as usual, leading to unconsciousness but not death. Death will only occur if the brain is specifically targeted and destroyed.",
+      "cost": "10 magic points, 5 POW and 2D10 Sanity points per organ",
+      "casting_time": "1 day per organ",
+      "category": 8
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Banishment of Yde Etad",
-        "alternative_names":"Banish Spawn of the Seven Hells, Cast Out Demon, Curse of Awful Fire.",
-        "description": "This spell sends home most trans-dimensional human or human-like intelligences that are under their own volition. It is not effective against any creature commanded by an- other intelligence. Correctly performed, the banishment is permanent and irrevocable. Each banishment is of an individual target, not of a type of monsters. \n At least three people must participate in the spell. All participants must know the spell. More participants add to the effectiveness; however, the total number of participants must be divisible by three. \n This banishment works by destroying with ritual flames a sigil representing the target. The target’s personal sigil is best, but a substitute can be prepared according to a formula described within the spell. For the spell to take effect an op- posed POW roll must be made between the caster with the highest POW and target. One bonus die is granted for each additional set of three casters. \n The spell must be performed in the open air in the middle of the night, ideally in a place of power associated with the target. This could be known haunts, its last known location or its point of entry into this dimension. The spell casters must divide their numbers: one-third remain outside a protective circle and the rest stand within.",
-        "cost": "1D4+3 magic points per caster; 1D4 Sanity points each",
-        "casting_time": "variable (minimum 1 hour)"
+    "fields": {
+      "user": 1,
+      "name": "Banishment of Yde Etad",
+      "alternative_names": "Banish Spawn of the Seven Hells, Cast Out Demon, Curse of Awful Fire.",
+      "description": "This spell sends home most trans-dimensional human or human-like intelligences that are under their own volition. It is not effective against any creature commanded by an- other intelligence. Correctly performed, the banishment is permanent and irrevocable. Each banishment is of an individual target, not of a type of monsters. \n At least three people must participate in the spell. All participants must know the spell. More participants add to the effectiveness; however, the total number of participants must be divisible by three. \n This banishment works by destroying with ritual flames a sigil representing the target. The target’s personal sigil is best, but a substitute can be prepared according to a formula described within the spell. For the spell to take effect an op- posed POW roll must be made between the caster with the highest POW and target. One bonus die is granted for each additional set of three casters. \n The spell must be performed in the open air in the middle of the night, ideally in a place of power associated with the target. This could be known haunts, its last known location or its point of entry into this dimension. The spell casters must divide their numbers: one-third remain outside a protective circle and the rest stand within.",
+      "cost": "1D4+3 magic points per caster; 1D4 Sanity points each",
+      "casting_time": "variable (minimum 1 hour)",
+      "category": 1
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Cause/Cure Blindness",
-        "alternative_names": "Grant Sight, Shade of Darkness, The Pharaoh’s Curse.",
-        "description": "The target suffers complete and permanent blindness, as if by a stroke. The same spell can reverse blindness if the eyes and optic nerves are essentially intact. The spell costs 8 magic points for either version. A day of ritual is required. For the spell to take effect the caster must succeed in an opposed POW roll with the target (automatic success if the target is consenting).",
-        "cost": "8 magic points (and 2D6 Sanity points for Cause Blindness)",
-        "casting_time": "1 day"
+    "fields": {
+      "user": 1,
+      "name": "Cause/Cure Blindness",
+      "alternative_names": "Grant Sight, Shade of Darkness, The Pharaoh’s Curse.",
+      "description": "The target suffers complete and permanent blindness, as if by a stroke. The same spell can reverse blindness if the eyes and optic nerves are essentially intact. The spell costs 8 magic points for either version. A day of ritual is required. For the spell to take effect the caster must succeed in an opposed POW roll with the target (automatic success if the target is consenting).",
+      "cost": "8 magic points (and 2D6 Sanity points for Cause Blindness)",
+      "casting_time": "1 day",
+      "category": 10
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Chant of Thoth",
-        "alternative_names": "The Rite of Cerebral Acuity, The Song of Erudite Addition, The Scholars Chorus.",
-        "description": "The use of this spell increases the caster’s mental faculties, boosting his or her chance of solving a particular intellectual problem. Spending 10 magic points in the chant, grants the caster a bonus die on his or her dice roll to gain knowledge, learn a spell, translate a passage, deduce the meaning of a symbol, etc.",
-        "cost": "10 magic points; 1D4 Sanity points.",
-        "casting_time": "30 minutes"
+    "fields": {
+      "user": 1,
+      "name": "Chant of Thoth",
+      "alternative_names": "The Rite of Cerebral Acuity, The Song of Erudite Addition, The Scholars Chorus.",
+      "description": "The use of this spell increases the caster’s mental faculties, boosting his or her chance of solving a particular intellectual problem. Spending 10 magic points in the chant, grants the caster a bonus die on his or her dice roll to gain knowledge, learn a spell, translate a passage, deduce the meaning of a symbol, etc.",
+      "cost": "10 magic points; 1D4 Sanity points.",
+      "casting_time": "30 minutes",
+      "category": 6
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Cloud Memory",
-        "alternative_names": "Befuddle, Dumbfound, Mystify.",
-        "description": "The spell blocks the target’s ability to consciously remember a particular event. The caster must be able to see the target and the target must be able to receive the caster’s instructions. The spell takes effect immediately if the caster succeeds in an opposed POW roll with the target. If the caster wins, the target’s mind is mentally blocked regarding one specified incident. If the incident was terrifying, the victim may thereafter still have nightmares vaguely relating to it. If the spell fails, the event in question becomes vivid in the target’s mind.\nThe caster must know the specific event to be blocked. The caster cannot command something vague such as, “Forget what you did yesterday.” Instead, he or she must cite a certain event, such as, “Forget you were assaulted by a monster.” This spell cannot block knowledge of spells or of the Cthulhu Mythos unless the knowledge is firmly tied to a specific event, nor can it undo a Sanity loss or undo insanity.",
-        "cost": "1D6 magic points; 1D2 Sanity points",
-        "casting_time": "Instantaneous"
+    "fields": {
+      "user": 1,
+      "name": "Cloud Memory",
+      "alternative_names": "Befuddle, Dumbfound, Mystify.",
+      "description": "The spell blocks the target’s ability to consciously remember a particular event. The caster must be able to see the target and the target must be able to receive the caster’s instructions. The spell takes effect immediately if the caster succeeds in an opposed POW roll with the target. If the caster wins, the target’s mind is mentally blocked regarding one specified incident. If the incident was terrifying, the victim may thereafter still have nightmares vaguely relating to it. If the spell fails, the event in question becomes vivid in the target’s mind.\nThe caster must know the specific event to be blocked. The caster cannot command something vague such as, “Forget what you did yesterday.” Instead, he or she must cite a certain event, such as, “Forget you were assaulted by a monster.” This spell cannot block knowledge of spells or of the Cthulhu Mythos unless the knowledge is firmly tied to a specific event, nor can it undo a Sanity loss or undo insanity.",
+      "cost": "1D6 magic points; 1D2 Sanity points",
+      "casting_time": "Instantaneous",
+      "category": 11
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Clutch of Nyogtha",
-        "alternative_names": "The Vile Wrench, The Insidious Wrath of the Dark Wizard, Ye Loathsome Tickle.",
-        "description": "The caster must spend 1 magic point to begin the spell and the target must be within conversational distance. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If the caster wins the roll, the target feels as though a large hand or tentacle is crushing his or her heart, losing 1D3 hit points for each combat round that the spell is in effect. While under such attack, the target is temporarily paralyzed, as though having a heart attack. In the round that the accumulated damage from this spell reduces hit points to zero, the target’s chest ruptures and bursts, and the target’s smoking heart appears in the hand of the caster.\nEach round the spell lasts, the caster must spend magic points equal to twice the number of hit points in damage. The caster must concentrate on the spell each round that it is to remain in effect and the caster must defeat the target in an opposed POW roll each round. If the caster is distracted or if the target successfully resists, the spell ends. Any damage already done remains.",
-        "cost": "1+ magic points equal to twice the damage delivered that round; 1D20 Sanity points",
-        "casting_time": "Instantaneous"
+    "fields": {
+      "user": 1,
+      "name": "Clutch of Nyogtha",
+      "alternative_names": "The Vile Wrench, The Insidious Wrath of the Dark Wizard, Ye Loathsome Tickle.",
+      "description": "The caster must spend 1 magic point to begin the spell and the target must be within conversational distance. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If the caster wins the roll, the target feels as though a large hand or tentacle is crushing his or her heart, losing 1D3 hit points for each combat round that the spell is in effect. While under such attack, the target is temporarily paralyzed, as though having a heart attack. In the round that the accumulated damage from this spell reduces hit points to zero, the target’s chest ruptures and bursts, and the target’s smoking heart appears in the hand of the caster.\nEach round the spell lasts, the caster must spend magic points equal to twice the number of hit points in damage. The caster must concentrate on the spell each round that it is to remain in effect and the caster must defeat the target in an opposed POW roll each round. If the caster is distracted or if the target successfully resists, the spell ends. Any damage already done remains.",
+      "cost": "1+ magic points equal to twice the damage delivered that round; 1D20 Sanity points",
+      "casting_time": "Instantaneous",
+      "category": 3
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Consume Likeness",
-        "alternative_names": "The Snake Skin Cloak, The Valusian Mantle, The Gift of Yig.",
-        "description": "The caster can assume the living likeness of a person freshly dead, as seen by eye, video camera, X-ray, etc. The victim may be no more than 15 SIZ points different from the caster. For the next few days the caster consumes the victim and works the spell, expending 10 magic points every six hours and permanently sacrificing 5 POW points. The caster could consume several likenesses and thereby take on several guises. When a victim is consumed, the caster loses 1D20 Sanity points. This spell is known by many serpent people.\nOnce the spell is complete, the caster takes on the appearance of the victim at will, for as long as desired. To the keen observer, the shadow of the caster remains as his or her original (not that of the consumed). Similarly, the caster’s skills and memories remain intact—the victim’s are gone.\nUpon losing one or more hit points, the caster’s original form is resumed. To go from an assumed form to the original form takes 20 seconds. The original form must be reverted to before another form can be assumed. To go from the original to an assumed form takes 1D3 minutes.",
-        "cost": "10 magic points every 6 hours of casting; 5 POW; 1D20 Sanity points",
-        "casting_time": "several days",
-        "deeper_magic": "Casters are sometimes able to recollect memories and thoughts of those who have been consumed. This is usually a specific piece of information that was known to the unfortunate target of the spell. An additional magic point must be spent together with a roll under the caster’s POW for each additional piece of information sought."
-    }
-  },
-  
-  {
-    "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Create Barrier of Naach-Tith",
-        "alternative_names": "Great Ward of Naach-Tith, The Unseen Sphere that Entraps the Demon.",
-        "description": "The barrier provides both a physical and magical defense. Each participant in this spell loses 1D10 Sanity points and a variable number of magic points. Each magic point expended in the creation provides the barrier 3D10 points of STR. The spell takes 1 minute to cast (during which time all magic points to be used must be expended) and the resulting barrier lasts 1D4+4 hours. Anyone who knows the spell may participate in the casting and contribute magic points to the barrier.\nThe barrier is spherical in shape and about 100 yards in diameter. It can be cast around the casters to protect from harm or it can be cast to encompass a monster or enemy. Any creature bisected by the barrier’s boundary upon its creation is unharmed and thrust outside the barrier. Anything trapped should be allowed a STR roll opposed by the STR of the barrier. Multiple entrapped victims cannot combine their STR to escape. A bullet or missile can cross the barrier if the rolled damage (ignore impales) to the barrier is greater than a fifth of the barrier’s STR. If penetrating the barrier, the object does the damage rolled, as if the barrier did not exist, and the barrier is destroyed.\nA written copy of this spell is known to be in a great haunted library on a planet orbiting the star Celaeno, one of the Pleiades.",
-        "cost": "variable magic points; 1D10 Sanity points",
-        "casting_time": "1 minute",
-        "deeper_magic": "Those harnessing the knowledge and power of the Mythos are able to increase the size of the barrier to 200 yards in diameter."
+    "fields": {
+      "user": 1,
+      "name": "Consume Likeness",
+      "alternative_names": "The Snake Skin Cloak, The Valusian Mantle, The Gift of Yig.",
+      "description": "The caster can assume the living likeness of a person freshly dead, as seen by eye, video camera, X-ray, etc. The victim may be no more than 15 SIZ points different from the caster. For the next few days the caster consumes the victim and works the spell, expending 10 magic points every six hours and permanently sacrificing 5 POW points. The caster could consume several likenesses and thereby take on several guises. When a victim is consumed, the caster loses 1D20 Sanity points. This spell is known by many serpent people.\nOnce the spell is complete, the caster takes on the appearance of the victim at will, for as long as desired. To the keen observer, the shadow of the caster remains as his or her original (not that of the consumed). Similarly, the caster’s skills and memories remain intact—the victim’s are gone.\nUpon losing one or more hit points, the caster’s original form is resumed. To go from an assumed form to the original form takes 20 seconds. The original form must be reverted to before another form can be assumed. To go from the original to an assumed form takes 1D3 minutes.",
+      "cost": "10 magic points every 6 hours of casting; 5 POW; 1D20 Sanity points",
+      "casting_time": "several days",
+      "deeper_magic": "Casters are sometimes able to recollect memories and thoughts of those who have been consumed. This is usually a specific piece of information that was known to the unfortunate target of the spell. An additional magic point must be spent together with a roll under the caster’s POW for each additional piece of information sought.",
+      "category": 16
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Create Mist of R’lyeh",
-        "alternative_names": "Ye Terrible Cloud, Breath of the Dark Sea, The Dank Fog of Sailors Lost.",
-        "description": "The spell causes a dense mist to appear in an egg-shaped volume (10 x 10 x 15 feet), directly in front of the caster. The long axis of the cloud is always at right angles to the direction in which the caster faces. The spell obscures vision for 1D6+4 game rounds and then evaporates without trace.",
-        "cost": "2 magic points",
-        "casting_time": "Instantaneous"
+    "fields": {
+      "user": 1,
+      "name": "Create Barrier of Naach-Tith",
+      "alternative_names": "Great Ward of Naach-Tith, The Unseen Sphere that Entraps the Demon.",
+      "description": "The barrier provides both a physical and magical defense. Each participant in this spell loses 1D10 Sanity points and a variable number of magic points. Each magic point expended in the creation provides the barrier 3D10 points of STR. The spell takes 1 minute to cast (during which time all magic points to be used must be expended) and the resulting barrier lasts 1D4+4 hours. Anyone who knows the spell may participate in the casting and contribute magic points to the barrier.\nThe barrier is spherical in shape and about 100 yards in diameter. It can be cast around the casters to protect from harm or it can be cast to encompass a monster or enemy. Any creature bisected by the barrier’s boundary upon its creation is unharmed and thrust outside the barrier. Anything trapped should be allowed a STR roll opposed by the STR of the barrier. Multiple entrapped victims cannot combine their STR to escape. A bullet or missile can cross the barrier if the rolled damage (ignore impales) to the barrier is greater than a fifth of the barrier’s STR. If penetrating the barrier, the object does the damage rolled, as if the barrier did not exist, and the barrier is destroyed.\nA written copy of this spell is known to be in a great haunted library on a planet orbiting the star Celaeno, one of the Pleiades.",
+      "cost": "variable magic points; 1D10 Sanity points",
+      "casting_time": "1 minute",
+      "deeper_magic": "Those harnessing the knowledge and power of the Mythos are able to increase the size of the barrier to 200 yards in diameter.",
+      "category": 14
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Create Zombie",
-        "alternative_names": "Ritual of the Undying, Black Binding, The Ashen Cowl, Raising of the Dead.",
-        "description": "A ritual liquid must be poured over a corpse or into the grave where a corpse lies. The Keeper determines the ingredients of the liquid—at least one part should be difficult to obtain legally.\nThe corpse is left to mature. At the end of a week, the caster comes to the grave and intones the binding ritual. At the end of the half-hour chant, the corpse claws its way from the grave and thereafter performs the caster’s will. The zombie will perform mundane and simple tasks, such as “guard this”, “fetch that” or “kill him!”\nA zombie created in this manner continues to rot after it has risen. Thus, a wizard wishing a constant zombie servant must periodically create replacements.\nStatistics for zombies can be found in Chapter 16: Monsters, Beasts and Alien Gods.\nFor a number of variations on this spell see Spell Variations.",
-        "cost": "16 magic points; 1D6 Sanity points",
-        "casting_time": "a week"
+    "fields": {
+      "user": 1,
+      "name": "Create Mist of R’lyeh",
+      "alternative_names": "Ye Terrible Cloud, Breath of the Dark Sea, The Dank Fog of Sailors Lost.",
+      "description": "The spell causes a dense mist to appear in an egg-shaped volume (10 x 10 x 15 feet), directly in front of the caster. The long axis of the cloud is always at right angles to the direction in which the caster faces. The spell obscures vision for 1D6+4 game rounds and then evaporates without trace.",
+      "cost": "2 magic points",
+      "casting_time": "Instantaneous",
+      "category": 3
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Curse of the Putrid Husk",
-        "alternative_names": "The Insidious Nightmare, Summon Seven Devils to Afflick Thine Enemy, Wither the Mind of the Weak.",
-        "description": "This spell brings sanity wracking illusions to the victim. The victim perceives that his or her skin is visibly rotting and corrupting. The outward appearance seems to deteriorate swiftly, so that great rents and tears occur through which internal organs begin to tumble out (with the victim losing 1D10 Sanity points in the process). Thereupon the victim faints and awakens in a few minutes, whole and normal.\nFor the spell to take effect an opposed INT roll must be made between the caster and target—impose one penalty die on the target if the spell is cast at night, whilst the target is sleeping. The entire cycle of effect takes about twenty minutes, including the faint.\nThe target must be known to the caster and the caster must have as a focus some personal object belonging to the target. The experience of the spell is devastating; however, successful Psychoanalysis can help the victim come to terms with these inexplicable dreams and hallucinations and restore half of each such Sanity loss. Psychiatric drugs do little to compensate for such an attack.",
-        "cost": "5 magic points; 10 Sanity points",
-        "casting_time": "1 hour"
+    "fields": {
+      "user": 1,
+      "name": "Create Zombie",
+      "alternative_names": "Ritual of the Undying, Black Binding, The Ashen Cowl, Raising of the Dead.",
+      "description": "A ritual liquid must be poured over a corpse or into the grave where a corpse lies. The Keeper determines the ingredients of the liquid—at least one part should be difficult to obtain legally.\nThe corpse is left to mature. At the end of a week, the caster comes to the grave and intones the binding ritual. At the end of the half-hour chant, the corpse claws its way from the grave and thereafter performs the caster’s will. The zombie will perform mundane and simple tasks, such as “guard this”, “fetch that” or “kill him!”\nA zombie created in this manner continues to rot after it has risen. Thus, a wizard wishing a constant zombie servant must periodically create replacements.\nStatistics for zombies can be found in Chapter 16: Monsters, Beasts and Alien Gods.\nFor a number of variations on this spell see Spell Variations.",
+      "cost": "16 magic points; 1D6 Sanity points",
+      "casting_time": "a week",
+      "category": 12
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Death Spell",
-        "alternative_names": "Ye Dreadful Pricking, The Curse of Fiery Doom, Cthugha’s Embrace.",
-        "description": "Reserved for only the most foul of sorcerers, this spell causes the bewildered victim to burst into flame. The target must be within ten yards of the caster. For the spell to take effect the caster must succeed in an opposed POW roll with the target during each round of concentration. After 1D3 rounds of concentration, the victim’s skin forms large blisters and he or she loses 1D3 hit points. In the next round, the victim loses an additional 1D6 hit points. On the third round, the victim bursts into flames, losing 1D10 hit points then and each round thereafter. The stench of burning hair and flesh is overwhelming (all witnesses should make SAN rolls or lose 1/1D6 SAN). It is impossible to render aid, since the horrified victim burns from the inside out.",
-        "cost": "24 magic points; 3D10 Sanity points",
-        "casting_time": "1D3 rounds",
-        "deeper_magic": "Rather than cause the victim to suffer the effects of this spell in near instantaneous fashion, the caster may elect to prolong the spell over a course of days to enhance the victim’s suffering. The caster spends 34 magic points in casting this version of the spell. The caster does not need to be physically near the victim—instead the caster must possess a piece of the victim (hair, nail clipping or skin, etc.), allowing the spell to be cast from any distance. The spell begins on the following day of casting and lasts for 7 days. For the spell to take effect, an opposed POW roll must be made between the caster and the target each day. On the first day, the victim suffers a 2 hit point wound, then a 4 hit point wound on the second day. There after, the wound size increases by 2 hit points each day (6, 8, 10, 12, 14). An equal amount of Sanity is lost each day as the target begins to realize his or her terrible fate. On the day that hit points are reduced to zero, the victim’s body is consumed in a ball of flame."
+    "fields": {
+      "user": 1,
+      "name": "Curse of the Putrid Husk",
+      "alternative_names": "The Insidious Nightmare, Summon Seven Devils to Afflick Thine Enemy, Wither the Mind of the Weak.",
+      "description": "This spell brings sanity wracking illusions to the victim. The victim perceives that his or her skin is visibly rotting and corrupting. The outward appearance seems to deteriorate swiftly, so that great rents and tears occur through which internal organs begin to tumble out (with the victim losing 1D10 Sanity points in the process). Thereupon the victim faints and awakens in a few minutes, whole and normal.\nFor the spell to take effect an opposed INT roll must be made between the caster and target—impose one penalty die on the target if the spell is cast at night, whilst the target is sleeping. The entire cycle of effect takes about twenty minutes, including the faint.\nThe target must be known to the caster and the caster must have as a focus some personal object belonging to the target. The experience of the spell is devastating; however, successful Psychoanalysis can help the victim come to terms with these inexplicable dreams and hallucinations and restore half of each such Sanity loss. Psychiatric drugs do little to compensate for such an attack.",
+      "cost": "5 magic points; 10 Sanity points",
+      "casting_time": "1 hour",
+      "category": 11
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Dominate",
-        "alternative_names": "Command of the Wizard, The Chant of Possession, Baleful Influence.",
-        "description": "Bends the will of the target to that of the caster. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If successful, the target obeys the commands of the caster without exception until the next combat round concludes.\nThe spell can affect only one individual at a time and has a maximum range of 10 yards. Obviously the command or commands must be intelligible to the target and the spell may be broken if a command contradicts the target’s basic nature (such as instructing a human to fly).\nDominate can be cast and recast as many times as the caster finds possible, allowing a target to be controlled with out interruption for several minutes. Each cast of the spell has the same costs and limits. Recasting is instantaneous.",
-        "cost": "1 magic point; 1 Sanity point",
-        "casting_time": "Instantaneous"
+    "fields": {
+      "user": 1,
+      "name": "Death Spell",
+      "alternative_names": "Ye Dreadful Pricking, The Curse of Fiery Doom, Cthugha’s Embrace.",
+      "description": "Reserved for only the most foul of sorcerers, this spell causes the bewildered victim to burst into flame. The target must be within ten yards of the caster. For the spell to take effect the caster must succeed in an opposed POW roll with the target during each round of concentration. After 1D3 rounds of concentration, the victim’s skin forms large blisters and he or she loses 1D3 hit points. In the next round, the victim loses an additional 1D6 hit points. On the third round, the victim bursts into flames, losing 1D10 hit points then and each round thereafter. The stench of burning hair and flesh is overwhelming (all witnesses should make SAN rolls or lose 1/1D6 SAN). It is impossible to render aid, since the horrified victim burns from the inside out.",
+      "cost": "24 magic points; 3D10 Sanity points",
+      "casting_time": "1D3 rounds",
+      "deeper_magic": "Rather than cause the victim to suffer the effects of this spell in near instantaneous fashion, the caster may elect to prolong the spell over a course of days to enhance the victim’s suffering. The caster spends 34 magic points in casting this version of the spell. The caster does not need to be physically near the victim—instead the caster must possess a piece of the victim (hair, nail clipping or skin, etc.), allowing the spell to be cast from any distance. The spell begins on the following day of casting and lasts for 7 days. For the spell to take effect, an opposed POW roll must be made between the caster and the target each day. On the first day, the victim suffers a 2 hit point wound, then a 4 hit point wound on the second day. There after, the wound size increases by 2 hit points each day (6, 8, 10, 12, 14). An equal amount of Sanity is lost each day as the target begins to realize his or her terrible fate. On the day that hit points are reduced to zero, the victim’s body is consumed in a ball of flame.",
+      "category": 10
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Dread Curse of Azathoth",
-        "alternative_names": "Utterance of the Last Syllable, Ye Doleful Leeching, By the True Name Thy Power is Sapped.",
-        "description": "The sorcerer draws upon the energies of the Outer God to directly drain POW from a victim. By repeating the secret name of Azathoth, one can generate respect and fear in any being conversant with the Mythos, for to know the name implies that one knows the secret Last Syllable. Said alone, the Last Syllable may be directed against a foe. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If the caster is successful, the target loses 3D6 POW.",
-        "cost": "4 magic points; 1D6 Sanity points",
-        "casting_time": "1 round"
+    "fields": {
+      "user": 1,
+      "name": "Dominate",
+      "alternative_names": "Command of the Wizard, The Chant of Possession, Baleful Influence.",
+      "description": "Bends the will of the target to that of the caster. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If successful, the target obeys the commands of the caster without exception until the next combat round concludes.\nThe spell can affect only one individual at a time and has a maximum range of 10 yards. Obviously the command or commands must be intelligible to the target and the spell may be broken if a command contradicts the target’s basic nature (such as instructing a human to fly).\nDominate can be cast and recast as many times as the caster finds possible, allowing a target to be controlled with out interruption for several minutes. Each cast of the spell has the same costs and limits. Recasting is instantaneous.",
+      "cost": "1 magic point; 1 Sanity point",
+      "casting_time": "Instantaneous",
+      "category": 11
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Dust of Suleiman",
-        "alternative_names": "The Egyptian Powder, Protection of the Dead.",
-        "description": "Creates a grey-green powder that harms unnatural beings from other planes of existence. The powder requires the dust from an Egyptian mummy at least 2,000 years old; each such mummy suffices for three doses of the magic dust. The ingredients also include frankincense, sulphur, and saltpetre. An incantation must be said over the dust while it is being sprinkled.\nSprinkled over a being not of this Earth, the entity loses 1D20 hit points per dose. It takes one round to apply a dose. The powder works only on extraterrestrial and other planar beings, thus the powder would harm a dimensional shambler, Yog-Sothoth or a mi-go, but is useless against a shoggoth or a deep one.",
-        "casting_time": "1 round to apply 1 dose"
+    "fields": {
+      "user": 1,
+      "name": "Dread Curse of Azathoth",
+      "alternative_names": "Utterance of the Last Syllable, Ye Doleful Leeching, By the True Name Thy Power is Sapped.",
+      "description": "The sorcerer draws upon the energies of the Outer God to directly drain POW from a victim. By repeating the secret name of Azathoth, one can generate respect and fear in any being conversant with the Mythos, for to know the name implies that one knows the secret Last Syllable. Said alone, the Last Syllable may be directed against a foe. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If the caster is successful, the target loses 3D6 POW.",
+      "cost": "4 magic points; 1D6 Sanity points",
+      "casting_time": "1 round",
+      "category": 3
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Elder Sign",
-        "alternative_names": "The Elder Seal, The Omen Branch, The Five Points of Wisdom.",
-        "description": "The spell activates an Elder Sign. Each active Elder Sign takes a sacrifice of 10 POW to create, but costs no Sanity points. An Elder Sign may be formed into a leaden seal, carved in rock, forged in steel, etc. When made active beside an opening or Gate, it makes that path unusable to minions of the Great Old Ones and Mythos Gods, as well as to those greater beings themselves. Without the spell, the symbol itself means nothing and has no effect.\nThe writings of certain scribes apart, the Elder Sign is worthless in personal defense if the monster or minion can evade the Sign. Those wearing an Elder Sign around the neck, for instance, might gain protection for a few square inches of flesh where the Sign rests against the skin; however, the rest of the wearer’s body would be completely vulnerable.",
-        "cost": "10 POW",
-        "casting_time": "1 hour"
+    "fields": {
+      "user": 1,
+      "name": "Dust of Suleiman",
+      "alternative_names": "The Egyptian Powder, Protection of the Dead.",
+      "description": "Creates a grey-green powder that harms unnatural beings from other planes of existence. The powder requires the dust from an Egyptian mummy at least 2,000 years old; each such mummy suffices for three doses of the magic dust. The ingredients also include frankincense, sulphur, and saltpetre. An incantation must be said over the dust while it is being sprinkled.\nSprinkled over a being not of this Earth, the entity loses 1D20 hit points per dose. It takes one round to apply a dose. The powder works only on extraterrestrial and other planar beings, thus the powder would harm a dimensional shambler, Yog-Sothoth or a mi-go, but is useless against a shoggoth or a deep one.",
+      "casting_time": "1 round to apply 1 dose",
+      "category": 1
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Enthrall Victim",
-        "alternative_names": "Strike Dumb, The Silver Beguiling Tongue.",
-        "description": "The caster must be able to speak calmly with the target before the spell can take effect. After a round or so of talking, an opposed POW roll must be made between the caster and target on 1D100. If overcome, the victim stands struck, numb and dumb, until relieved from the trance by physical assault or some similarly shocking event. If the caster fails to overcome the target, he or she may try the spell the following round.",
-        "cost": "2 magic points; 1D6 Sanity points",
-        "casting_time": "1 round"
+    "fields": {
+      "user": 1,
+      "name": "Elder Sign",
+      "alternative_names": "The Elder Seal, The Omen Branch, The Five Points of Wisdom.",
+      "description": "The spell activates an Elder Sign. Each active Elder Sign takes a sacrifice of 10 POW to create, but costs no Sanity points. An Elder Sign may be formed into a leaden seal, carved in rock, forged in steel, etc. When made active beside an opening or Gate, it makes that path unusable to minions of the Great Old Ones and Mythos Gods, as well as to those greater beings themselves. Without the spell, the symbol itself means nothing and has no effect.\nThe writings of certain scribes apart, the Elder Sign is worthless in personal defense if the monster or minion can evade the Sign. Those wearing an Elder Sign around the neck, for instance, might gain protection for a few square inches of flesh where the Sign rests against the skin; however, the rest of the wearer’s body would be completely vulnerable.",
+      "cost": "10 POW",
+      "casting_time": "1 hour",
+      "category": 14
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Evil Eye",
-        "alternative_names": "Ye Rite of Ill Fortune, Dark Curse, Witches’ Hex.",
-        "description": "Casting this spell causes a victim to suffer from bad luck. Whilst the target must be within sight of the caster, the victim will not necessarily sense the Evil Eye spell’s influence, but is likely to feel an odd chill or unease when the Evil Eye is cast.\nWith a successful casting, the victim’s chance for a Luck roll is halved*. The victim must apply one penalty die to all characteristic rolls and his or her guns jam on every roll of 75% or higher. The chances for Summon/Bind spells are halved. The effects continue until the next sunrise, until the caster removes the spell or until the caster is found and blooded (hit hard enough to bleed), or until the victim dies.\n*Neither can the victim spend or gain luck points if the Optional Luck Rule is being used.",
-        "cost": "10 magic points; 1D4 Sanity points",
-        "casting_time": "1 round"
+    "fields": {
+      "user": 1,
+      "name": "Enthrall Victim",
+      "alternative_names": "Strike Dumb, The Silver Beguiling Tongue.",
+      "description": "The caster must be able to speak calmly with the target before the spell can take effect. After a round or so of talking, an opposed POW roll must be made between the caster and target on 1D100. If overcome, the victim stands struck, numb and dumb, until relieved from the trance by physical assault or some similarly shocking event. If the caster fails to overcome the target, he or she may try the spell the following round.",
+      "cost": "2 magic points; 1D6 Sanity points",
+      "casting_time": "1 round",
+      "category": 3
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Fist of Yog-Sothoth",
-        "alternative_names": "Channel the Strength of the Opener of the Way, Smite Down Thine Enemy, The Hideous Blast of the Foul One.",
-        "description": "The caster causes a massive, invisible force to hit a single target. The caster must be able to see the target.\nEach magic point invested in the spell yields 2D10 STR of force. For every 30 feet of distance that the caster stands from the target (after the first thirty feet), the caster must spend an additional magic point.\nWhen the target is struck (if a living thing), an opposed roll must be made using the spell’s STR versus the target’s CON. If successful, the target is knocked unconscious. Whether or not the target is left unconscious, the target is always pushed away from the caster for a distance in feet equal to the STR of the blow minus the target’s SIZ.\nThe spell can be used against the STR of inanimate objects such as doors or walls. Results may be obvious, but sometimes Keepers will have to determine these cases.\nFor example: The caster spends 5 magic points to hit an investigator 50 feet away. 1 magic point is spent on the range. The other 4 generate a STR of 8D10 that are rolled for a result of 57. The investigator fails a Hard CON roll (since the spells STR is over 50) and so they are knocked unconscious. The investigator has a SIZ of 45 and is bowled back 12 feet by the impact.",
-        "cost": "variable magic points; 1D6 Sanity points",
-        "casting_time": "Instantaneous"
+    "fields": {
+      "user": 1,
+      "name": "Evil Eye",
+      "alternative_names": "Ye Rite of Ill Fortune, Dark Curse, Witches’ Hex.",
+      "description": "Casting this spell causes a victim to suffer from bad luck. Whilst the target must be within sight of the caster, the victim will not necessarily sense the Evil Eye spell’s influence, but is likely to feel an odd chill or unease when the Evil Eye is cast.\nWith a successful casting, the victim’s chance for a Luck roll is halved*. The victim must apply one penalty die to all characteristic rolls and his or her guns jam on every roll of 75% or higher. The chances for Summon/Bind spells are halved. The effects continue until the next sunrise, until the caster removes the spell or until the caster is found and blooded (hit hard enough to bleed), or until the victim dies.\n*Neither can the victim spend or gain luck points if the Optional Luck Rule is being used.",
+      "cost": "10 magic points; 1D4 Sanity points",
+      "casting_time": "1 round",
+      "category": 10
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Flesh Ward",
-        "alternative_names": "",
-        "description": "Grants protection against physical attack. Each magic point spent gives the caster (or the chosen target) 1D6 points of armor against non-magical attacks. This protection wears off as it blocks damage. For example, if a character had 12 points of Flesh Ward as armor and was hit for 8 points of damage, the Flesh Ward would be reduced to 4 points, yet he or she would take no damage. The spell lasts 24 hours or until the protection is used up.",
-        "cost": "variable magic points; 1D4 Sanity points",
-        "casting_time": "5 rounds"
+    "fields": {
+      "user": 1,
+      "name": "Fist of Yog-Sothoth",
+      "alternative_names": "Channel the Strength of the Opener of the Way, Smite Down Thine Enemy, The Hideous Blast of the Foul One.",
+      "description": "The caster causes a massive, invisible force to hit a single target. The caster must be able to see the target.\nEach magic point invested in the spell yields 2D10 STR of force. For every 30 feet of distance that the caster stands from the target (after the first thirty feet), the caster must spend an additional magic point.\nWhen the target is struck (if a living thing), an opposed roll must be made using the spell’s STR versus the target’s CON. If successful, the target is knocked unconscious. Whether or not the target is left unconscious, the target is always pushed away from the caster for a distance in feet equal to the STR of the blow minus the target’s SIZ.\nThe spell can be used against the STR of inanimate objects such as doors or walls. Results may be obvious, but sometimes Keepers will have to determine these cases.\nFor example: The caster spends 5 magic points to hit an investigator 50 feet away. 1 magic point is spent on the range. The other 4 generate a STR of 8D10 that are rolled for a result of 57. The investigator fails a Hard CON roll (since the spells STR is over 50) and so they are knocked unconscious. The investigator has a SIZ of 45 and is bowled back 12 feet by the impact.",
+      "cost": "variable magic points; 1D6 Sanity points",
+      "casting_time": "Instantaneous",
+      "category": 3
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Green Decay",
-        "description": "A curse that turns an individual into a green pile of mold. A day must be spent focusing energy upon the intended target of the spell and reciting an incantation to Glaaki. In the next 24 hours the caster must personally give a green leaf to the target. At dawn on the following day, for the spell to take effect an opposed POW roll must be made between the caster and target on 1D100. If the target fails the green decay has begun.\nOver the next seven days the target effectively turns into a green mold. At first green blotches appear on the skin. These then begin to grow mold-like hairs. As the days progress, more and more of the victim’s skin grows green and the skin rots. In tandem, the victim’s organs also rot. By the sixth day the victim’s mental facilities rapidly deteriorate and movement becomes impossible. The only known cure is to find and kill the caster, which reverses the spell’s effects.\nThe only known written transcriptions of this hideous spell are within the Book of Eibon and the Revelations of Glaaki.",
-        "cost": "15 magic points; 10 POW; 2D8 Sanity points",
-        "casting_time": "1 day"
+    "fields": {
+      "user": 1,
+      "name": "Flesh Ward",
+      "alternative_names": "",
+      "description": "Grants protection against physical attack. Each magic point spent gives the caster (or the chosen target) 1D6 points of armor against non-magical attacks. This protection wears off as it blocks damage. For example, if a character had 12 points of Flesh Ward as armor and was hit for 8 points of damage, the Flesh Ward would be reduced to 4 points, yet he or she would take no damage. The spell lasts 24 hours or until the protection is used up.",
+      "cost": "variable magic points; 1D4 Sanity points",
+      "casting_time": "5 rounds",
+      "category": 14
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Implant Fear",
-        "alternative_names": "Finger of Doom, Eibon’s Jinx, The Evil Eye.",
-        "description": "This spell causes soul-chilling dread, breaking the target’s concentration and disrupting his or her actions. The caster must be able to see and point a finger at the target whilst invoking a curse.\nThe sudden unnerving costs the target 0/1D6 Sanity points and they feel compelled to retreat to a ‘safe’ place— anywhere the person would normally feel safe and secure.",
-        "cost": "12 magic points; 1D6 Sanity points",
-        "casting_time": "Instantaneous"
+    "fields": {
+      "user": 1,
+      "name": "Green Decay",
+      "description": "A curse that turns an individual into a green pile of mold. A day must be spent focusing energy upon the intended target of the spell and reciting an incantation to Glaaki. In the next 24 hours the caster must personally give a green leaf to the target. At dawn on the following day, for the spell to take effect an opposed POW roll must be made between the caster and target on 1D100. If the target fails the green decay has begun.\nOver the next seven days the target effectively turns into a green mold. At first green blotches appear on the skin. These then begin to grow mold-like hairs. As the days progress, more and more of the victim’s skin grows green and the skin rots. In tandem, the victim’s organs also rot. By the sixth day the victim’s mental facilities rapidly deteriorate and movement becomes impossible. The only known cure is to find and kill the caster, which reverses the spell’s effects.\nThe only known written transcriptions of this hideous spell are within the Book of Eibon and the Revelations of Glaaki.",
+      "cost": "15 magic points; 10 POW; 2D8 Sanity points",
+      "casting_time": "1 day",
+      "category": 10
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Melt Flesh",
-        "alternative_names": "Rite of the Dissolution, Liquefy Skin.",
-        "description": "This devilish spell heats flesh (dead or living) to its melting point in one round. If used on animate flesh, the cost is substantially higher to the caster in magic points. The victim’s flesh is melted causing horrific disfigurement (1D4 damage per 15 SIZ points affected). In certain cases, such as where the face is targeted, the victim may become blind or lose the ability to hear and possibly suffocate unless air vents can be quickly created. Seeing human flesh melt off human bones costs 1/1D6 Sanity points.",
-        "cost": "Cost (dead flesh): 1 magic point per 15 SIZ of dead flesh; 1D4 Sanity points\nCost (living flesh): 5 magic points per 15 SIZ of living flesh; 1D6 Sanity points",
-        "casting_time": "5 rounds"
+    "fields": {
+      "user": 1,
+      "name": "Implant Fear",
+      "alternative_names": "Finger of Doom, Eibon’s Jinx, The Evil Eye.",
+      "description": "This spell causes soul-chilling dread, breaking the target’s concentration and disrupting his or her actions. The caster must be able to see and point a finger at the target whilst invoking a curse.\nThe sudden unnerving costs the target 0/1D6 Sanity points and they feel compelled to retreat to a ‘safe’ place— anywhere the person would normally feel safe and secure.",
+      "cost": "12 magic points; 1D6 Sanity points",
+      "casting_time": "Instantaneous",
+      "category": 11
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Mental Suggestion",
-        "alternative_names": "Domination of the Will, Master and Servant, Bend Quarry to Thy Power, Mesmerise, Bend Will, Shake Resolve, Govern Mind, Implant Suggestion.",
-        "description": "The caster can command any being with human blood in its veins. A single target, who is visible to the unaided eye of the sorcerer, is affected. The victim carries out all that is commanded by the caster, even to self-destruction. The spell also works against Lengites, deep one hybrids, ghoul changelings, Little People, serpent folk and deep ones who have interbred with humans, but doesn’t work on nonhuman entities such as shantaks or dimensional shamblers.\nThe caster intones the spell and relates the suggestion to the target. For the spell to take effect the caster must succeed in an opposed POW roll with the target. Extreme suggestions involving death or great harm require a second opposed POW roll just before the suggestion is implemented.\nThe cost for the spell varies with the suggestion. For ordinary unthreatening suggestions (drop your sword, hand over your money and leave, etc.), the cost is 5 magic points and 1D3 Sanity points. Riskier suggestions, but not ones antithetical to the target (go to Dunwich, set fire to a building, etc.), cost 10 magic points and 2D3 Sanity points. Dangerous or suicidal suggestions (kill a companion, kidnap the President, etc.) cost 15 magic points and 3D3 Sanity points.\nIf used on an investigator the effects lasts for 1 round for each point of INT the caster possesses. If the INT of the investigator is higher than that of the caster, the caster must win another POW roll every 10 rounds. When the caster fails the spell is broken.",
-        "cost": "variable magic points and Sanity points",
-        "casting_time": "3 rounds"
+    "fields": {
+      "user": 1,
+      "name": "Melt Flesh",
+      "alternative_names": "Rite of the Dissolution, Liquefy Skin.",
+      "description": "This devilish spell heats flesh (dead or living) to its melting point in one round. If used on animate flesh, the cost is substantially higher to the caster in magic points. The victim’s flesh is melted causing horrific disfigurement (1D4 damage per 15 SIZ points affected). In certain cases, such as where the face is targeted, the victim may become blind or lose the ability to hear and possibly suffocate unless air vents can be quickly created. Seeing human flesh melt off human bones costs 1/1D6 Sanity points.",
+      "cost": "Cost (dead flesh): 1 magic point per 15 SIZ of dead flesh; 1D4 Sanity points\nCost (living flesh): 5 magic points per 15 SIZ of living flesh; 1D6 Sanity points",
+      "casting_time": "5 rounds",
+      "category": 3
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Mindblast",
-        "alternative_names": "Curse of Enfeeblement, Wave of Doom, Abyss of the Mind’s Eye.",
-        "description": "The victim of this spell suffers a terrible mental assault, causing the loss of 5 Sanity points and inducing temporary insanity. For the spell to take effect the caster must succeed in an opposed POW roll with the target.\nThe target is affected as per the rules for temporary insanity, beginning with a bout of madness, and may continue to suffer from flashbacks and/or nightmares for days following.",
-        "cost": "10 magic points; 1D3 Sanity points",
-        "casting_time": "Instantaneous"
+    "fields": {
+      "user": 1,
+      "name": "Mental Suggestion",
+      "alternative_names": "Domination of the Will, Master and Servant, Bend Quarry to Thy Power, Mesmerise, Bend Will, Shake Resolve, Govern Mind, Implant Suggestion.",
+      "description": "The caster can command any being with human blood in its veins. A single target, who is visible to the unaided eye of the sorcerer, is affected. The victim carries out all that is commanded by the caster, even to self-destruction. The spell also works against Lengites, deep one hybrids, ghoul changelings, Little People, serpent folk and deep ones who have interbred with humans, but doesn’t work on nonhuman entities such as shantaks or dimensional shamblers.\nThe caster intones the spell and relates the suggestion to the target. For the spell to take effect the caster must succeed in an opposed POW roll with the target. Extreme suggestions involving death or great harm require a second opposed POW roll just before the suggestion is implemented.\nThe cost for the spell varies with the suggestion. For ordinary unthreatening suggestions (drop your sword, hand over your money and leave, etc.), the cost is 5 magic points and 1D3 Sanity points. Riskier suggestions, but not ones antithetical to the target (go to Dunwich, set fire to a building, etc.), cost 10 magic points and 2D3 Sanity points. Dangerous or suicidal suggestions (kill a companion, kidnap the President, etc.) cost 15 magic points and 3D3 Sanity points.\nIf used on an investigator the effects lasts for 1 round for each point of INT the caster possesses. If the INT of the investigator is higher than that of the caster, the caster must win another POW roll every 10 rounds. When the caster fails the spell is broken.",
+      "cost": "variable magic points and Sanity points",
+      "casting_time": "3 rounds",
+      "category": 11
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Mind Exchange",
-        "alternative_names": "Vice Versa Incantation, Rite of Exchange, The Cloak of Another’s Flesh.",
-        "description": "Allows the caster to trade minds with another individual. The caster loses 1D3 Sanity points and must expend magic points equal to one-fifth of the target’s POW the first time the spell is cast. Thereafter, the cost goes down 1 magic point per casting until it reaches 1, where it remains. The Sanity point cost does not decrease.\nThe target must know the spell caster and love or strongly favor him or her. If that affection is somehow lost, the exchange can no longer occur. Fresh affection renews the chance. Upon arriving in another’s body, the target loses a minimum of 1/1D3 Sanity points.\nThis spell can be cast at any range. For the spell to take effect the caster must succeed in an opposed POW roll with the target, until the magic point cost for casting the spell has been reduced to 1, when an opposed POW roll is no longer required and the caster can transfer at will, using only a strong mental effort.\nThe spell caster cannot initially stay more than a few minutes inside the target’s body, but progressively is able to longer and longer. Once the cost for transfer is 1 magic point, he or she can stay there indefinitely.",
-        "cost": "10+1D6 magic points; 1D3 Sanity points",
-        "casting_time": "1 hour"
+    "fields": {
+      "user": 1,
+      "name": "Mindblast",
+      "alternative_names": "Curse of Enfeeblement, Wave of Doom, Abyss of the Mind’s Eye.",
+      "description": "The victim of this spell suffers a terrible mental assault, causing the loss of 5 Sanity points and inducing temporary insanity. For the spell to take effect the caster must succeed in an opposed POW roll with the target.\nThe target is affected as per the rules for temporary insanity, beginning with a bout of madness, and may continue to suffer from flashbacks and/or nightmares for days following.",
+      "cost": "10 magic points; 1D3 Sanity points",
+      "casting_time": "Instantaneous",
+      "category": 3
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Mind Transfer",
-        "description": "A powerful spell allowing the caster to permanently trade minds with a target, perhaps to attain longer life at the target’s expense.\nFor the spell to take effect the caster must succeed in an opposed POW roll with the target. With success, the caster loses 1D10 Sanity points and the victim loses 1D20 Sanity points. If the exchange fails, the caster must immediately cast the spell again (losing 10 more magic points) or his or her soul dissipates into eternity. Once the transfer is begun, it cannot be broken off.\nA successful casting means that the caster has permanently taken control of the target’s body. The caster’s previous body is now a hollow, dead thing. As for the mind of the target, conjecture suggests that it is expelled from the body and thus dies; however some hint that it remains inside its own body, subservient to the caster’s mind and locked in a permanent state of horrific madness.",
-        "cost": "10 magic points; 1D10 Sanity points",
-        "casting_time": "5 rounds or more",
-        "deeper_magic": "The dark will of wizards is a mighty thing, often transcending the very grave. Wizards, fearful of death or eager to ensure longevity, may prepare the Mind Transfer spell many years in advance of its casting. Such preparations usually concern some personal item (such as portrait or dairy), wherein the spell is keyed, awaiting the right conditions for it to come to fruition. Oft times the key is some future relative of the caster who, unknowingly or willingly, activates the spell."
+    "fields": {
+      "user": 1,
+      "name": "Mind Exchange",
+      "alternative_names": "Vice Versa Incantation, Rite of Exchange, The Cloak of Another’s Flesh.",
+      "description": "Allows the caster to trade minds with another individual. The caster loses 1D3 Sanity points and must expend magic points equal to one-fifth of the target’s POW the first time the spell is cast. Thereafter, the cost goes down 1 magic point per casting until it reaches 1, where it remains. The Sanity point cost does not decrease.\nThe target must know the spell caster and love or strongly favor him or her. If that affection is somehow lost, the exchange can no longer occur. Fresh affection renews the chance. Upon arriving in another’s body, the target loses a minimum of 1/1D3 Sanity points.\nThis spell can be cast at any range. For the spell to take effect the caster must succeed in an opposed POW roll with the target, until the magic point cost for casting the spell has been reduced to 1, when an opposed POW roll is no longer required and the caster can transfer at will, using only a strong mental effort.\nThe spell caster cannot initially stay more than a few minutes inside the target’s body, but progressively is able to longer and longer. Once the cost for transfer is 1 magic point, he or she can stay there indefinitely.",
+      "cost": "10+1D6 magic points; 1D3 Sanity points",
+      "casting_time": "1 hour",
+      "category": 1
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Mirror of Tarkhun Atep",
-        "alternative_names": "The Silvery Warning, Reflection of Hate, The All Seeing Eye.",
-        "description": "As a harassment or warning, the caster is able to project his or her image onto the surface of a mirror or mirroring surface that is being gazed into by the caster’s intended victim.\nThe victim can be anywhere on Earth. The caster needs a mirror large enough to see his or her head and neck. Gazing within it and keeping an image of the target in mind, he or she utters the short incantation and waits. When the target looks into a darkened window, a mirror or any other reflective surface, an image of the caster begins to form. If the caster tires before the target looks into a mirror, that loss of attention breaks the spell.\nSometimes the mirror image of the caster is looking directly into the eyes of the victim. At other times the caster is seen standing directly behind the victim in the reflection. If the victim wears glasses, images reflected from the lenses may even be resolved. The target can hear words and short phrases uttered by the caster. The caster can see through his or her mirror as well, and see the target and the target’s surroundings.",
-        "cost": "5 magic points; 1 Sanity point",
-        "casting_time": "half a day"
+    "fields": {
+      "user": 1,
+      "name": "Mind Transfer",
+      "description": "A powerful spell allowing the caster to permanently trade minds with a target, perhaps to attain longer life at the target’s expense.\nFor the spell to take effect the caster must succeed in an opposed POW roll with the target. With success, the caster loses 1D10 Sanity points and the victim loses 1D20 Sanity points. If the exchange fails, the caster must immediately cast the spell again (losing 10 more magic points) or his or her soul dissipates into eternity. Once the transfer is begun, it cannot be broken off.\nA successful casting means that the caster has permanently taken control of the target’s body. The caster’s previous body is now a hollow, dead thing. As for the mind of the target, conjecture suggests that it is expelled from the body and thus dies; however some hint that it remains inside its own body, subservient to the caster’s mind and locked in a permanent state of horrific madness.",
+      "cost": "10 magic points; 1D10 Sanity points",
+      "casting_time": "5 rounds or more",
+      "deeper_magic": "The dark will of wizards is a mighty thing, often transcending the very grave. Wizards, fearful of death or eager to ensure longevity, may prepare the Mind Transfer spell many years in advance of its casting. Such preparations usually concern some personal item (such as portrait or dairy), wherein the spell is keyed, awaiting the right conditions for it to come to fruition. Oft times the key is some future relative of the caster who, unknowingly or willingly, activates the spell.",
+      "category": 8
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Powder of Ibn-Ghazi",
-        "alternative_names": "Dust of Seeing, Witness of the Unseen, Compound of Perception.",
-        "description": "This spell makes visible magically invisible things by blowing the powder against or over the invisible thing. The powder must be compounded carefully, according to exacting instructions and involves three special ingredients and the sacrifice of 1 magic point per dose. A dose is one application of the powder. The Keeper determines the special ingredients.\nThe powder is either blown from a tube or thrown over the target. The thing that is dusted stays visible for no more than ten heartbeats.\nThat which could be made visible includes the magical lines extending from a place enchanted for the Calling of a Mythos deity, the aura around a Gate, or a creature that is normally invisible, such as a star vampire. Using the powder costs no Sanity points, but seeing what it exposes may.",
-        "cost": "1 magic point per dose",
-        "casting_time": "2 days preparation, 1 round to apply"
+    "fields": {
+      "user": 1,
+      "name": "Mirror of Tarkhun Atep",
+      "alternative_names": "The Silvery Warning, Reflection of Hate, The All Seeing Eye.",
+      "description": "As a harassment or warning, the caster is able to project his or her image onto the surface of a mirror or mirroring surface that is being gazed into by the caster’s intended victim.\nThe victim can be anywhere on Earth. The caster needs a mirror large enough to see his or her head and neck. Gazing within it and keeping an image of the target in mind, he or she utters the short incantation and waits. When the target looks into a darkened window, a mirror or any other reflective surface, an image of the caster begins to form. If the caster tires before the target looks into a mirror, that loss of attention breaks the spell.\nSometimes the mirror image of the caster is looking directly into the eyes of the victim. At other times the caster is seen standing directly behind the victim in the reflection. If the victim wears glasses, images reflected from the lenses may even be resolved. The target can hear words and short phrases uttered by the caster. The caster can see through his or her mirror as well, and see the target and the target’s surroundings.",
+      "cost": "5 magic points; 1 Sanity point",
+      "casting_time": "half a day",
+      "category": 4
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Red Sign of Shudde M’ell",
-        "alternative_names": "The Red Sign, The Mark of Fiery Pain.",
-        "description": "An awful spell that causes one or several victims to die horribly. The caster inscribes in the air the dreaded sign of Shudde M’ell, whilst speaking words of power. When formed correctly, a dull red symbol glows in the air as the caster’s finger describes it. The sign’s malevolent effects manifest the round after its creation. Once formed, the sign must be maintained by concentration and the expenditure of 3 more magic points each additional round.\nAll those within 10 yards of the sign lose 1D3 hit points per round as their bodies quake and spasm, and their internal organs and blood vessels convulse. Those further than 10 yards but nearer than 30 yards lose 1 hit point each round. Those further than 30 yards take no damage.\nIt is possible to escape the sign’s effect by crawling behind a stout wall or other opaque barrier. The caster must stand next to the sign and concentrate. The caster loses 1 hit point each round because of their proximity to the sign.",
-        "cost": "3 magic points; 1D8 Sanity points; 1 hit point per round",
-        "casting_time": "1 round",
-        "deeper_magic": "The caster may empower the red sign further by investing 5 POW into its creation. This done, the sign causes 1D6 hit points loss per round to those within 10 yards and 2 hit points loss to those within 30 yards.\nAlternatively, the caster may elect to cause the sign to expel its dark energy in a single blast. The caster creates the sign as usual and invests it with 10 POW. On 1D4 rounds following, the sign will explode in blaze of red light causing 2D8 damage to everything within 50 yards (including the caster)."
+    "fields": {
+      "user": 1,
+      "name": "Powder of Ibn-Ghazi",
+      "alternative_names": "Dust of Seeing, Witness of the Unseen, Compound of Perception.",
+      "description": "This spell makes visible magically invisible things by blowing the powder against or over the invisible thing. The powder must be compounded carefully, according to exacting instructions and involves three special ingredients and the sacrifice of 1 magic point per dose. A dose is one application of the powder. The Keeper determines the special ingredients.\nThe powder is either blown from a tube or thrown over the target. The thing that is dusted stays visible for no more than ten heartbeats.\nThat which could be made visible includes the magical lines extending from a place enchanted for the Calling of a Mythos deity, the aura around a Gate, or a creature that is normally invisible, such as a star vampire. Using the powder costs no Sanity points, but seeing what it exposes may.",
+      "cost": "1 magic point per dose",
+      "casting_time": "2 days preparation, 1 round to apply",
+      "category": 13
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Resurrection",
-        "alternative_names": "The Rite of Knowledge Long Lost, Recrudance, Rite of Salts.",
-        "description": "The spell reduces a corpse to its essential salts and compounds, a bluish-grey powder, or reverses the process to yield ultimately the form and soul of the deceased. A complete corpse is necessary.\nBeing Resurrected in this manner costs the victim 1D20 Sanity points.\nIf only part of the ashy powder is available for the spell, the sorcerer gets “onlie the liveliest awfullness” from what’s then made flesh. But the successfully resurrected need not be all in one piece—as long as the coffin is intact and sufficient care is taken to scrape together all the fragments and dust within, the spell succeeds.\nReciting the spell backward returns the resurrected entity to dust and likewise requires the expenditure of 3 magic points and 1D10 Sanity points. The dust can be retained or thrown away. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If the caster wins, the victim returns to dust. If the victim wins, it may try to prevent the caster from reciting the spell again. Reciting the spell backward takes two rounds. In The Case of Charles Dexter Ward, many of those resurrected were interrogated and tortured to reveal secrets of the past.",
-        "cost": "3 magic points; 1D10 Sanity points",
-        "casting_time": "1 or 2 rounds"
+    "fields": {
+      "user": 1,
+      "name": "Red Sign of Shudde M’ell",
+      "alternative_names": "The Red Sign, The Mark of Fiery Pain.",
+      "description": "An awful spell that causes one or several victims to die horribly. The caster inscribes in the air the dreaded sign of Shudde M’ell, whilst speaking words of power. When formed correctly, a dull red symbol glows in the air as the caster’s finger describes it. The sign’s malevolent effects manifest the round after its creation. Once formed, the sign must be maintained by concentration and the expenditure of 3 more magic points each additional round.\nAll those within 10 yards of the sign lose 1D3 hit points per round as their bodies quake and spasm, and their internal organs and blood vessels convulse. Those further than 10 yards but nearer than 30 yards lose 1 hit point each round. Those further than 30 yards take no damage.\nIt is possible to escape the sign’s effect by crawling behind a stout wall or other opaque barrier. The caster must stand next to the sign and concentrate. The caster loses 1 hit point each round because of their proximity to the sign.",
+      "cost": "3 magic points; 1D8 Sanity points; 1 hit point per round",
+      "casting_time": "1 round",
+      "deeper_magic": "The caster may empower the red sign further by investing 5 POW into its creation. This done, the sign causes 1D6 hit points loss per round to those within 10 yards and 2 hit points loss to those within 30 yards.\nAlternatively, the caster may elect to cause the sign to expel its dark energy in a single blast. The caster creates the sign as usual and invests it with 10 POW. On 1D4 rounds following, the sign will explode in blaze of red light causing 2D8 damage to everything within 50 yards (including the caster).",
+      "category": 10
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Shrivelling",
-        "alternative_names": "Shriving, The Withering Blast of Death, The Black Words.",
-        "description": "A powerful offensive spell causing physical injury to a target. The caster invests as many magic points as desired and that number halved in Sanity points. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If successful, the target is subjected to a sudden and terrifying blast of energy, causing flesh to blacken and wither. The target loses 1 hit point per magic point invested in the spell.",
-        "cost": "Variable magic points; Sanity points",
-        "casting_time": "Instantaneous",
-        "deeper_magic": "Calling up the powerful energies of the Mythos is one thing; shaping them through understanding and comprehension is another. Casters are able to inflict this spell without the need for a POW roll. In addition, the caster may elect to induce further mental terror for the victim; whilst reeling from the energy blast, the target believes that he or she is being assaulted by horrific Mythos entities, causing 1/1D6 Sanity loss."
+    "fields": {
+      "user": 1,
+      "name": "Resurrection",
+      "alternative_names": "The Rite of Knowledge Long Lost, Recrudance, Rite of Salts.",
+      "description": "The spell reduces a corpse to its essential salts and compounds, a bluish-grey powder, or reverses the process to yield ultimately the form and soul of the deceased. A complete corpse is necessary.\nBeing Resurrected in this manner costs the victim 1D20 Sanity points.\nIf only part of the ashy powder is available for the spell, the sorcerer gets “onlie the liveliest awfullness” from what’s then made flesh. But the successfully resurrected need not be all in one piece—as long as the coffin is intact and sufficient care is taken to scrape together all the fragments and dust within, the spell succeeds.\nReciting the spell backward returns the resurrected entity to dust and likewise requires the expenditure of 3 magic points and 1D10 Sanity points. The dust can be retained or thrown away. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If the caster wins, the victim returns to dust. If the victim wins, it may try to prevent the caster from reciting the spell again. Reciting the spell backward takes two rounds. In The Case of Charles Dexter Ward, many of those resurrected were interrogated and tortured to reveal secrets of the past.",
+      "cost": "3 magic points; 1D10 Sanity points",
+      "casting_time": "1 or 2 rounds",
+      "category": 8
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Song of Hastur",
-        "alternative_names": "The King’s Cry, Music of the Court in Yellow, Bring Forth the Festering Boil of Great Agony and Torment.",
-        "description": "A hideous wailing ululation by the caster causes the skin and flesh of the chosen victim to bubble and fester into pestilent blobs.\nThe target must be visible to the caster. Though everyone can hear the song, the spell affects only the person chosen as target. This spell will not work except at night and only if the star Aldebaran is visible. A roll equal to or under the caster’s POW must be made to sing the correct alien melody.\nSuccessfully cast, the spell causes the target 1D6 hit points damage per round the spell is active. After every two rounds, scarring reduces the victim’s APP by 3D10. After every four rounds, internal ruptures lower the victim’s CON by 3D10. When the victim’s CON reaches 0 or death occurs from hit point loss, the body swells up, and then bursts with a sickening pop as steamy gore spills onto the floor.\nThe song can be used defensively, to guard against another caster of this spell. Successful opposing castings neutralize each other.",
-        "cost": "1D4 magic points per round; 1D4 Sanity points per round",
-        "casting_time": "3 rounds before it begins to take effect",
-        "deeper_magic": "The clarity of understanding and tuning to the mysteries of Hastur allow the caster to comprehend the secrets of Hali and the necessary alignments of Aldebaran in space and time. Thus the spell may be cast when Aldebaran is not visible in the night sky.\nIn addition, the caster may weave an echo of the song into a piece of yellow cloth taken from the court of the King in Yellow. Investing 20 magic points into the pale material means that the next person to touch the cloth suffers the effects of the spell for 10 rounds—the victim may attempt to roll equal to or below half their POW each round, with success ending the spell’s effects."
+    "fields": {
+      "user": 1,
+      "name": "Shrivelling",
+      "alternative_names": "Shriving, The Withering Blast of Death, The Black Words.",
+      "description": "A powerful offensive spell causing physical injury to a target. The caster invests as many magic points as desired and that number halved in Sanity points. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If successful, the target is subjected to a sudden and terrifying blast of energy, causing flesh to blacken and wither. The target loses 1 hit point per magic point invested in the spell.",
+      "cost": "Variable magic points; Sanity points",
+      "casting_time": "Instantaneous",
+      "deeper_magic": "Calling up the powerful energies of the Mythos is one thing; shaping them through understanding and comprehension is another. Casters are able to inflict this spell without the need for a POW roll. In addition, the caster may elect to induce further mental terror for the victim; whilst reeling from the energy blast, the target believes that he or she is being assaulted by horrific Mythos entities, causing 1/1D6 Sanity loss.",
+      "category": 3
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Form of the Command",
-        "description": "The caster’s command to the thing must be specific and limited in duration: “protect me from harm forever,” would not be a valid command; however, “slay that man in the corner,” would be. The thing is bound to the caster until it fulfills a command (a bound thing without a command soon finds a way to leave). Orders might include carrying someone somewhere, presiding at some ceremony, being especially docile while being examined by a group of professors, appearing somewhere as a warning to those assembled—whatever can be imagined.\nKeep commands simple. The best rule of thumb is that a command has no more words than one-fifth of the thing’s INT. Simple gestures such as pointing will be understood. Assume that the thing is always able to understand a straightforward command, whether spoken in English or Urdu. See also Separate Binding, below."
+    "fields": {
+      "user": 1,
+      "name": "Song of Hastur",
+      "alternative_names": "The King’s Cry, Music of the Court in Yellow, Bring Forth the Festering Boil of Great Agony and Torment.",
+      "description": "A hideous wailing ululation by the caster causes the skin and flesh of the chosen victim to bubble and fester into pestilent blobs.\nThe target must be visible to the caster. Though everyone can hear the song, the spell affects only the person chosen as target. This spell will not work except at night and only if the star Aldebaran is visible. A roll equal to or under the caster’s POW must be made to sing the correct alien melody.\nSuccessfully cast, the spell causes the target 1D6 hit points damage per round the spell is active. After every two rounds, scarring reduces the victim’s APP by 3D10. After every four rounds, internal ruptures lower the victim’s CON by 3D10. When the victim’s CON reaches 0 or death occurs from hit point loss, the body swells up, and then bursts with a sickening pop as steamy gore spills onto the floor.\nThe song can be used defensively, to guard against another caster of this spell. Successful opposing castings neutralize each other.",
+      "cost": "1D4 magic points per round; 1D4 Sanity points per round",
+      "casting_time": "3 rounds before it begins to take effect",
+      "deeper_magic": "The clarity of understanding and tuning to the mysteries of Hastur allow the caster to comprehend the secrets of Hali and the necessary alignments of Aldebaran in space and time. Thus the spell may be cast when Aldebaran is not visible in the night sky.\nIn addition, the caster may weave an echo of the song into a piece of yellow cloth taken from the court of the King in Yellow. Investing 20 magic points into the pale material means that the next person to touch the cloth suffers the effects of the spell for 10 rounds—the victim may attempt to roll equal to or below half their POW each round, with success ending the spell’s effects.",
+      "category": 10
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Voorish Sign",
-        "alternative_names": "Sign of Power, Cunninge Pass.",
-        "description": "An ancient and powerful hand gesture used by wizards that benefits the casting of other spells. It may lessen the cost, reduce the casting time or increase the effect a little, depending on the spell in question.\nVoorish Sign is also rumored to temporarily ward against Mythos monsters—such creatures are wary of the sign and may hold off an attack until the wizard’s intentions are known.",
-        "cost": "1 magic point; 1 Sanity point",
-        "casting_time": "1 round"
+    "fields": {
+      "user": 1,
+      "name": "Form of the Command",
+      "description": "The caster’s command to the thing must be specific and limited in duration: “protect me from harm forever,” would not be a valid command; however, “slay that man in the corner,” would be. The thing is bound to the caster until it fulfills a command (a bound thing without a command soon finds a way to leave). Orders might include carrying someone somewhere, presiding at some ceremony, being especially docile while being examined by a group of professors, appearing somewhere as a warning to those assembled—whatever can be imagined.\nKeep commands simple. The best rule of thumb is that a command has no more words than one-fifth of the thing’s INT. Simple gestures such as pointing will be understood. Assume that the thing is always able to understand a straightforward command, whether spoken in English or Urdu. See also Separate Binding, below.",
+      "category": 11
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Warding",
-        "alternative_names": "Stones of Safekeeping, Leave Thy Burden to the Rock, Circle of Protection.",
-        "description": "A number of ordinary white stones are placed on the ground as the caster pleases, except that each must be within a yard of each of the others. When cast, a shimmering heat haze can be seen over the stones. Thereafter if any stone is moved, the caster will be aware of the fact, even if asleep until then. Once this has occurred, the spell is broken.",
-        "cost": "1 magic point per stone",
-        "casting_time": "5 rounds"
+    "fields": {
+      "user": 1,
+      "name": "Voorish Sign",
+      "alternative_names": "Sign of Power, Cunninge Pass.",
+      "description": "An ancient and powerful hand gesture used by wizards that benefits the casting of other spells. It may lessen the cost, reduce the casting time or increase the effect a little, depending on the spell in question.\nVoorish Sign is also rumored to temporarily ward against Mythos monsters—such creatures are wary of the sign and may hold off an attack until the wizard’s intentions are known.",
+      "cost": "1 magic point; 1 Sanity point",
+      "casting_time": "1 round",
+      "category": 6
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Wave of Oblivion",
-        "alternative_names": "Song of the Ocean’s Fist, The Salt Gift, Ye Watery Doom.",
-        "description": "A mighty spell that causes a powerful ocean wave to smash down at the caster’s direction. The caster must be able to see the intended target and sufficient quantities of salt water must be present to create the wave. The caster stands in the water to cast the spell.\nThe wave volume is 3,000 cubic feet, enough to swamp or capsize a small sloop. Needless to say, people swallowed up by such waves vanish forever below the surface.\nOthers can contribute magic points to the spell to create vast waves capable of sinking ocean liners, battleships or Manhattan Island. Those knowing the spell can contribute as many magic points as desired and must expend 1D8 Sanity points. Those who do not know the spell can contribute 1 magic point each. At a minimum of 30 magic points, the wave is ten feet long, ten feet wide and thirty feet high. Each additional magic point adds a foot to the length and width of the wave.",
-        "cost": "30 magic points; 1D8 Sanity points",
-        "casting_time": "1 hour"
+    "fields": {
+      "user": 1,
+      "name": "Warding",
+      "alternative_names": "Stones of Safekeeping, Leave Thy Burden to the Rock, Circle of Protection.",
+      "description": "A number of ordinary white stones are placed on the ground as the caster pleases, except that each must be within a yard of each of the others. When cast, a shimmering heat haze can be seen over the stones. Thereafter if any stone is moved, the caster will be aware of the fact, even if asleep until then. Once this has occurred, the spell is broken.",
+      "cost": "1 magic point per stone",
+      "casting_time": "5 rounds",
+      "category": 6
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Wither Limb",
-        "alternative_names": "The Song of Pain, Shrivel Thy Enemy, The Wasting Burn.",
-        "description": "A terrifying spell designed to torment and cause permanent damage to a target. The caster must be within 10 yards of the target. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If successful, the caster nominates an arm or leg. The said appendage rapidly and painfully withers and shrivels, causing 1D8 hit points of damage and a permanent loss of 2D10 CON. The victim and any witnesses lose 0/1D3 Sanity points each.",
-        "cost": "8 magic points; 1D6 Sanity points",
-        "casting_time": "Instantaneous"
+    "fields": {
+      "user": 1,
+      "name": "Wave of Oblivion",
+      "alternative_names": "Song of the Ocean’s Fist, The Salt Gift, Ye Watery Doom.",
+      "description": "A mighty spell that causes a powerful ocean wave to smash down at the caster’s direction. The caster must be able to see the intended target and sufficient quantities of salt water must be present to create the wave. The caster stands in the water to cast the spell.\nThe wave volume is 3,000 cubic feet, enough to swamp or capsize a small sloop. Needless to say, people swallowed up by such waves vanish forever below the surface.\nOthers can contribute magic points to the spell to create vast waves capable of sinking ocean liners, battleships or Manhattan Island. Those knowing the spell can contribute as many magic points as desired and must expend 1D8 Sanity points. Those who do not know the spell can contribute 1 magic point each. At a minimum of 30 magic points, the wave is ten feet long, ten feet wide and thirty feet high. Each additional magic point adds a foot to the length and width of the wave.",
+      "cost": "30 magic points; 1D8 Sanity points",
+      "casting_time": "1 hour",
+      "category": 7
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Words of Power",
-        "alternative_names": "Sekhmenkenhep’s Words, Beguile the Unrighteous, Mastery of the Mob.",
-        "description": "The caster creates an intense bond with a large group of listeners. The caster must speak extemporaneously and seemingly from the heart, maintaining the audience’s attention. For each ten minutes of speech, the caster must expend 3 magic points and make a successful communication roll as the Keeper thinks appropriate (Charm or Persuade), or the speech ends indecisively and in confusion. At the end of a successful speech, the audience thoroughly believes what has been said for 1D3 days.",
-        "cost": "3+ magic points; 1D6 Sanity points",
-        "casting_time": "10+ minutes"
+    "fields": {
+      "user": 1,
+      "name": "Wither Limb",
+      "alternative_names": "The Song of Pain, Shrivel Thy Enemy, The Wasting Burn.",
+      "description": "A terrifying spell designed to torment and cause permanent damage to a target. The caster must be within 10 yards of the target. For the spell to take effect the caster must succeed in an opposed POW roll with the target. If successful, the caster nominates an arm or leg. The said appendage rapidly and painfully withers and shrivels, causing 1D8 hit points of damage and a permanent loss of 2D10 CON. The victim and any witnesses lose 0/1D3 Sanity points each.",
+      "cost": "8 magic points; 1D6 Sanity points",
+      "casting_time": "Instantaneous",
+      "category": 10
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Wrack",
-        "alternative_names": "Woeful Agony of the Wretched, The Festering Blindness of the Seven Hells, Rend Enemy.",
-        "description": "This spell will temporarily incapacitate a single target who is within 10 yards of the caster. For the spell to take effect the caster must succeed in an opposed POW roll with the target. Intense, wracking pains seize the target, the face and hands blister and drip fluid, and the eyes cloud with blood and become temporarily sightless. The target is rendered completely helpless during the period of the spell’s effect.\nThe effect lasts 1D6 rounds, after which sight returns. In 3D10 minutes, the target fully recovers and can resume normal activity. Traces of physical corruption fade quickly and in 24 hours only faint blemishes can be seen on the skin. Each such experience costs the target 1/1D6+1 Sanity points.",
-        "cost": "3 magic points; 1 Sanity point",
-        "casting_time": "1 round"
+    "fields": {
+      "user": 1,
+      "name": "Words of Power",
+      "alternative_names": "Sekhmenkenhep’s Words, Beguile the Unrighteous, Mastery of the Mob.",
+      "description": "The caster creates an intense bond with a large group of listeners. The caster must speak extemporaneously and seemingly from the heart, maintaining the audience’s attention. For each ten minutes of speech, the caster must expend 3 magic points and make a successful communication roll as the Keeper thinks appropriate (Charm or Persuade), or the speech ends indecisively and in confusion. At the end of a successful speech, the audience thoroughly believes what has been said for 1D3 days.",
+      "cost": "3+ magic points; 1D6 Sanity points",
+      "casting_time": "10+ minutes",
+      "category": 11
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "",
-        "alternative_names": "",
-        "description": "",
-        "cost": "",
-        "casting_time": ""
+    "fields": {
+      "user": 1,
+      "name": "Wrack",
+      "alternative_names": "Woeful Agony of the Wretched, The Festering Blindness of the Seven Hells, Rend Enemy.",
+      "description": "This spell will temporarily incapacitate a single target who is within 10 yards of the caster. For the spell to take effect the caster must succeed in an opposed POW roll with the target. Intense, wracking pains seize the target, the face and hands blister and drip fluid, and the eyes cloud with blood and become temporarily sightless. The target is rendered completely helpless during the period of the spell’s effect.\nThe effect lasts 1D6 rounds, after which sight returns. In 3D10 minutes, the target fully recovers and can resume normal activity. Traces of physical corruption fade quickly and in 24 hours only faint blemishes can be seen on the skin. Each such experience costs the target 1/1D6+1 Sanity points.",
+      "cost": "3 magic points; 1 Sanity point",
+      "casting_time": "1 round",
+      "category": 10
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "",
-        "alternative_names": "",
-        "description": "",
-        "cost": "",
-        "casting_time": ""
+    "fields": {
+      "user": 1,
+      "name": "Bless Blade",
+      "alternative_names": "Imbue Might of the Elder Ones, Ritual of the Seven Cuts, Spirit’s Bane.",
+      "description": "Creates a blade capable of damaging or killing entities that cannot be harmed by mundane weapons. Requires the blood sacrifice of an animal of at least SIZ 50. The blade of the knife must be of an elemental metal such as iron or silver. The blade may be of any size; however, larger blades do greater damage. \n If the blade is broken, melted or otherwise damaged it permanently loses this ability; however, it will not be harmed in attacks against supernatural entities.",
+      "cost": "5 POW; 1D4 Sanity points",
+      "casting_time": "1 hour",
+      "category": 6
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Bless Blade",
-        "alternative_names": "Imbue Might of the Elder Ones, Ritual of the Seven Cuts, Spirit’s Bane.",
-        "description": "Creates a blade capable of damaging or killing entities that cannot be harmed by mundane weapons. Requires the blood sacrifice of an animal of at least SIZ 50. The blade of the knife must be of an elemental metal such as iron or silver. The blade may be of any size; however, larger blades do greater damage. \n If the blade is broken, melted or otherwise damaged it permanently loses this ability; however, it will not be harmed in attacks against supernatural entities.",
-        "cost": "5 POW; 1D4 Sanity points",
-        "casting_time": "1 hour"
+    "fields": {
+      "user": 1,
+      "name": "Body Warping of Gorgoroth",
+      "alternative_names": "Mastery of the Flesh, Skin Walking, The Black Pharaoh’s Touch.",
+      "deeper_magic": "If imitating an individual, the caster becomes a replica of that person, including voice and speech patterns. The caster does not need to repeat the spell to undo the warping—a simple verbal phrase is all that is required.",
+      "description": "Allows the caster to change his or her physical form. The sorcerer can change to any shape and appearance, though retaining personal abilities. The form is fleshly but it can appear to be made of stone, wood, a rug, etc. Once changed into a new shape, the caster has the mobility of that shape. The caster’s STR, CON, INT, POW and DEX do not change. If emulating a person, the sorcerer’s Appearance becomes that of the individual emulated. The caster can take on only a known form. \n The caster invokes Nyarlathotep and repeats the phrases of the spell while expending 6 magic points and an additional magic point for each 5 points of SIZ to be gained or lost in the body warping. Only one alteration per casting is possible and the effect is permanent until the spell is recast to change back again. This spell cannot be cast on another being.",
+      "cost": "6+ magic points; 5 POW; 2D6 Sanity points",
+      "casting_time": "1D6+4 minutes",
+      "category": 16
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Body Warping of Gorgoroth",
-        "alternative_names": "Mastery of the Flesh, Skin Walking, The Black Pharaoh’s Touch.",
-        "deeper_magic": "If imitating an individual, the caster becomes a replica of that person, including voice and speech patterns. The caster does not need to repeat the spell to undo the warping—a simple verbal phrase is all that is required.",
-        "description": "Allows the caster to change his or her physical form. The sorcerer can change to any shape and appearance, though retaining personal abilities. The form is fleshly but it can appear to be made of stone, wood, a rug, etc. Once changed into a new shape, the caster has the mobility of that shape. The caster’s STR, CON, INT, POW and DEX do not change. If emulating a person, the sorcerer’s Appearance becomes that of the individual emulated. The caster can take on only a known form. \n The caster invokes Nyarlathotep and repeats the phrases of the spell while expending 6 magic points and an additional magic point for each 5 points of SIZ to be gained or lost in the body warping. Only one alteration per casting is possible and the effect is permanent until the spell is recast to change back again. This spell cannot be cast on another being.",
-        "cost": "6+ magic points; 5 POW; 2D6 Sanity points",
-        "casting_time": "1D6+4 minutes"
+    "fields": {
+      "user": 1,
+      "name": "Breath of the Deep",
+      "alternative_names": "Currency of the Blue Sea, The Sailor’s Curse, Kiss of Brine.",
+      "description": "The target’s lungs fill with seawater, potentially causing an unpleasant death by drowning. \n The caster must be able to see the target. After mentally intoning the spell for a round, for the spell to take effect the caster must win an opposed POW roll with the target. If the caster wins the target begins to drown—the target falls to the floor, choking on seawater and taking 1D8 damage each round. The target should make an Extreme CON roll (equal to or below one-fifth CON) after taking damage each round; if the roll is successful the water has been expelled and the effects of the spell cease.",
+      "cost": "8 magic points; 1D6 Sanity points",
+      "casting_time": "1 round",
+      "category": 10
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Breath of the Deep",
-        "alternative_names": "Currency of the Blue Sea, The Sailor’s Curse, Kiss of Brine.",
-        "description": "The target’s lungs fill with seawater, potentially causing an unpleasant death by drowning. \n The caster must be able to see the target. After mentally intoning the spell for a round, for the spell to take effect the caster must win an opposed POW roll with the target. If the caster wins the target begins to drown—the target falls to the floor, choking on seawater and taking 1D8 damage each round. The target should make an Extreme CON roll (equal to or below one-fifth CON) after taking damage each round; if the roll is successful the water has been expelled and the effects of the spell cease.",
-        "cost": "8 magic points; 1D6 Sanity points",
-        "casting_time": "1 round"
-    }
-  },
-  {
-    "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Brew Space-Mead",
-        "alternative_names": "Breath of the Void, The Traveller’s Portion, The Quicksilver Draft of Blackest Night.",
-        "description": "This spell creates a magical drink that allows a human to withstand journeys through the vacuum and vicissitudes of space. For all such journeys, the effectiveness of space-mead also requires the expenditure of an equal number of magic points and Sanity points, commensurate to the journey’s distance in light years by the traveller taking the drug. \n Brewing the drink and taking the journey represent separate stages for the caster/user. Different types of space-mead exist, each with the same effects but all of them requiring different ingredients. \n Brewing space-mead requires five special ingredients to be chosen by the Keeper and requires at least a week of brewing time. Once the mead is foaming and bubbling, the caster must sacrifice 20 magic points per dose into the brew. These magic points may be sacrificed over many days; the more points, the more doses. Each dose allows one person to withstand one journey through space of varying distance and time. \n Once the space-mead has been enchanted, the traveller must find a means of transportation—usually a mount: among others, the spell Summon Byakhee can provide an interstellar steed. The traveller then drinks a dose (presumably bringing a return dose along), climbs on, commands the mount and the journey begins. It is at this point that the traveller pays the necessary magic and Sanity point cost subject for the distance being travelled. \n While in space, the travellers are in mental and physical stasis, nearly insensible to their surroundings. Upon arrival at the destination, the effects of the brew conclude.",
-        "cost": "20 magic points per dose; plus variable additional Magic and Sanity points",
-        "casting_time": "Many days"
+    "fields": {
+      "user": 1,
+      "name": "Brew Space-Mead",
+      "alternative_names": "Breath of the Void, The Traveller’s Portion, The Quicksilver Draft of Blackest Night.",
+      "description": "This spell creates a magical drink that allows a human to withstand journeys through the vacuum and vicissitudes of space. For all such journeys, the effectiveness of space-mead also requires the expenditure of an equal number of magic points and Sanity points, commensurate to the journey’s distance in light years by the traveller taking the drug. \n Brewing the drink and taking the journey represent separate stages for the caster/user. Different types of space-mead exist, each with the same effects but all of them requiring different ingredients. \n Brewing space-mead requires five special ingredients to be chosen by the Keeper and requires at least a week of brewing time. Once the mead is foaming and bubbling, the caster must sacrifice 20 magic points per dose into the brew. These magic points may be sacrificed over many days; the more points, the more doses. Each dose allows one person to withstand one journey through space of varying distance and time. \n Once the space-mead has been enchanted, the traveller must find a means of transportation—usually a mount: among others, the spell Summon Byakhee can provide an interstellar steed. The traveller then drinks a dose (presumably bringing a return dose along), climbs on, commands the mount and the journey begins. It is at this point that the traveller pays the necessary magic and Sanity point cost subject for the distance being travelled. \n While in space, the travellers are in mental and physical stasis, nearly insensible to their surroundings. Upon arrival at the destination, the effects of the brew conclude.",
+      "cost": "20 magic points per dose; plus variable additional Magic and Sanity points",
+      "casting_time": "Many days",
+      "category": 17
     }
   }
 ]

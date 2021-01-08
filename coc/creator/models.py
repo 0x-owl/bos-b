@@ -43,24 +43,15 @@ class Spell(BaseModel):
     description = TextField()
     deeper_magic = TextField(blank=True)
     notes = TextField(blank=True)
+    category = PositiveIntegerField(
+        choices=SPELL_CATEGORIES
+    )
     # 15 POW, 2D6 Sanity, 14 Magic Points, 100 sacrifices.
     cost = CharField(max_length=80)
     casting_time = CharField(max_length=50)
 
     def __str__(self):
-        return self.name
-
-
-class SpellType(BaseModel):
-    """Association Spell with its category."""
-    spell = ForeignKey(Spell, on_delete=CASCADE)
-    spell_type = PositiveIntegerField(
-            choices=SPELL_CATEGORIES
-        )
-
-    def __str__(self):
-        title = '{} - {}'.format(self.spell.name, self.spell_type)
-        return title
+        return f"{self.name} - {self.category}" 
 
 
 class SpellTag(BaseModel):

@@ -1,97 +1,97 @@
 [
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Call Deity",
-        "description": "Call spells bring the avatar, god or Great Old One before the caster. Casting this type of spell is perilous indeed, even for cultists. Only cult priests or desperate people should choose to call a Mythos deity. A handful are cited here; however, both Call and Dismiss spells are likely to exist for every Great Old One and for every form of Mythos god.\nA group can assist by adding power to Call spells, with the caster acting as the focus for the group. Everyone present expends 1 magic point. Those who know the spell can sacrifice any number of magic points (including burning hit points). The total of the magic points spent is the percentage chance that the spell works. For each magic point spent, the group must chant for a minute, but never for more than 100 minutes. On a roll of 100 the spell will always fail with all magic points sacrificed in the spell lost.\nThe caster also loses 1D10 Sanity points in casting the spell. Everyone present loses Sanity points if the deity appears. The Keeper plays the thing and must create some motivation for the thing’s behavior. Mostly, when a Mythos deity arrives on Earth, it wants to stay and is usually hungry.",
-        "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
-        "casting_time": "1-100 minutes"
+    "fields": {
+      "user": 1,
+      "name": "Call Deity",
+      "description": "Call spells bring the avatar, god or Great Old One before the caster. Casting this type of spell is perilous indeed, even for cultists. Only cult priests or desperate people should choose to call a Mythos deity. A handful are cited here; however, both Call and Dismiss spells are likely to exist for every Great Old One and for every form of Mythos god.\nA group can assist by adding power to Call spells, with the caster acting as the focus for the group. Everyone present expends 1 magic point. Those who know the spell can sacrifice any number of magic points (including burning hit points). The total of the magic points spent is the percentage chance that the spell works. For each magic point spent, the group must chant for a minute, but never for more than 100 minutes. On a roll of 100 the spell will always fail with all magic points sacrificed in the spell lost.\nThe caster also loses 1D10 Sanity points in casting the spell. Everyone present loses Sanity points if the deity appears. The Keeper plays the thing and must create some motivation for the thing’s behavior. Mostly, when a Mythos deity arrives on Earth, it wants to stay and is usually hungry.",
+      "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
+      "casting_time": "1-100 minutes",
+      "category": 2
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Call Deity - Call Azathoth",
-        "alternative_names": "Petition of Chaos, The Unspeakable Vowel of The Shaggai.",
-        "description": "Calling this god is extremely dangerous and has the potential to fry the entire planet. The spell can be cast only outside at night; however, no other special preparations are needed.",
-        "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
-        "casting_time": "1-100 minutes"
+    "fields": {
+      "user": 1,
+      "name": "Call Deity - Call Azathoth",
+      "alternative_names": "Petition of Chaos, The Unspeakable Vowel of The Shaggai.",
+      "description": "Calling this god is extremely dangerous and has the potential to fry the entire planet. The spell can be cast only outside at night; however, no other special preparations are needed.",
+      "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
+      "casting_time": "1-100 minutes",
+      "category": 2
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Call Deity - Call Cthugha",
-        "alternative_names": "Evocation of the Fiery Burning Doom, The Formalhaut Convention.",
-        "description": "Cthugha bursts into being through a flame held by the caster (a candle, torch, etc.) As the caster intones the spell, he or she moves the flame in series of patterns. The spell can be successfully cast only on clear nights when Fomalhaut (the brightest star in the Piscis Austrinus constellation) clears the horizon. September to November are the best nights for Fomalhaut in the Northern Hemisphere.",
-        "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
-        "casting_time": "1-100 minutes"
+    "fields": {
+      "user": 1,
+      "name": "Call Deity - Call Cthugha",
+      "alternative_names": "Evocation of the Fiery Burning Doom, The Formalhaut Convention.",
+      "description": "Cthugha bursts into being through a flame held by the caster (a candle, torch, etc.) As the caster intones the spell, he or she moves the flame in series of patterns. The spell can be successfully cast only on clear nights when Fomalhaut (the brightest star in the Piscis Austrinus constellation) clears the horizon. September to November are the best nights for Fomalhaut in the Northern Hemisphere.",
+      "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
+      "casting_time": "1-100 minutes",
+      "category": 2
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Call Deity - Call Hastur",
-        "alternative_names": "The Darke Ritual of the One Who Walks in Shadow, The Yellow Petition.",
-        "description": "Calls the deity to nine large blocks of stone arranged in a V-pattern (always a sign of cult activity!) Each of the stone blocks needs a volume of nine or more cubic yards.\nThe spell can be cast only on clear nights when Aldebaran (in the constellation of Taurus) is above the horizon (roughly October to March). Each byakhee present during Call Hastur adds a further 10 percentiles to the chance for success.\nIf 5 points of POW have been sacrificed into each of the stone blocks, so that all are enchanted, the stone V adds 30 percentiles to the chance to cast Summon/Bind Byakhee.",
-        "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
-        "casting_time": "1-100 minutes"
+    "fields": {
+      "user": 1,
+      "name": "Call Deity - Call Hastur",
+      "alternative_names": "The Darke Ritual of the One Who Walks in Shadow, The Yellow Petition.",
+      "description": "Calls the deity to nine large blocks of stone arranged in a V-pattern (always a sign of cult activity!) Each of the stone blocks needs a volume of nine or more cubic yards.\nThe spell can be cast only on clear nights when Aldebaran (in the constellation of Taurus) is above the horizon (roughly October to March). Each byakhee present during Call Hastur adds a further 10 percentiles to the chance for success.\nIf 5 points of POW have been sacrificed into each of the stone blocks, so that all are enchanted, the stone V adds 30 percentiles to the chance to cast Summon/Bind Byakhee.",
+      "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
+      "casting_time": "1-100 minutes",
+      "category": 2
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Call Deity - Call Ithaqua",
-        "alternative_names": "The Seven Oaths of the North Wind, Invoke the Ice God.",
-        "description": "Focuses the attention of Ithaqua; however, the presence of the Great Old One may be noticed only as a whirlwind or strong icy wind. The spell must be cast on an enormous mound of snow (minimum 10 feet high). Legend states that the spell may only be performed in the far north of the world, when temperatures are below freezing. Some wizards conjecture that Ithaqua might be invoked from any high, snowy mountain, even those in the South Pole.",
-        "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
-        "casting_time": "1-100 minutes"
+    "fields": {
+      "user": 1,
+      "name": "Call Deity - Call Ithaqua",
+      "alternative_names": "The Seven Oaths of the North Wind, Invoke the Ice God.",
+      "description": "Focuses the attention of Ithaqua; however, the presence of the Great Old One may be noticed only as a whirlwind or strong icy wind. The spell must be cast on an enormous mound of snow (minimum 10 feet high). Legend states that the spell may only be performed in the far north of the world, when temperatures are below freezing. Some wizards conjecture that Ithaqua might be invoked from any high, snowy mountain, even those in the South Pole.",
+      "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
+      "casting_time": "1-100 minutes",
+      "category": 2
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Call Deity - Call Nyogtha",
-        "alternative_names": "Petition Thy Dark Master Through the Rigorous Chanting and Wailing, Call Favor from HE which Dwells Below.",
-        "description": "Invokes the favor of Nyogtha, who appears to grant a boon to the caster—if Nyogtha deems the caster worthy. The caster must perform the spell ritual at the entrance to any cavern (certain tomes hint that all great caverns link to the one wherein Nyogtha dwells).",
-        "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
-        "casting_time": "1-100 minutes"
+    "fields": {
+      "user": 1,
+      "name": "Call Deity - Call Nyogtha",
+      "alternative_names": "Petition Thy Dark Master Through the Rigorous Chanting and Wailing, Call Favor from HE which Dwells Below.",
+      "description": "Invokes the favor of Nyogtha, who appears to grant a boon to the caster—if Nyogtha deems the caster worthy. The caster must perform the spell ritual at the entrance to any cavern (certain tomes hint that all great caverns link to the one wherein Nyogtha dwells).",
+      "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
+      "casting_time": "1-100 minutes",
+      "category": 2
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Call Deity - Call Shub-Niggurath",
-        "alternative_names": "The Sacred Rites of Union, Bring Forth The Carnal Desire of the Wood Nymph.",
-        "description": "Calls Shub-Niggurath to a consecrated stone altar. This altar must be positioned in dank wilderness under the sky. The spell must be cast from the altar at the dark of the moon.\nEach Call of the dark goddess requires fresh blood to consecrate the altar. An altar bathed in the blood of the equivalent of 200 SIZ or more adds 20 percentiles to the chance to Call Shub-Niggurath, whilst each dark young present adds further 10 percentiles.",
-        "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
-        "casting_time": "1-100 minutes"
+    "fields": {
+      "user": 1,
+      "name": "Call Deity - Call Shub-Niggurath",
+      "alternative_names": "The Sacred Rites of Union, Bring Forth The Carnal Desire of the Wood Nymph.",
+      "description": "Calls Shub-Niggurath to a consecrated stone altar. This altar must be positioned in dank wilderness under the sky. The spell must be cast from the altar at the dark of the moon.\nEach Call of the dark goddess requires fresh blood to consecrate the altar. An altar bathed in the blood of the equivalent of 200 SIZ or more adds 20 percentiles to the chance to Call Shub-Niggurath, whilst each dark young present adds further 10 percentiles.",
+      "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
+      "casting_time": "1-100 minutes",
+      "category": 2
     }
   },
   {
     "model": "creator.Spell",
-    "fields": 
-    { 
-        "user": 1,
-        "name": "Call Deity - Call Yog-Sothoth",
-        "alternative_names": "The Forbidden Song of the Key, The Yah-Zek Channelling.",
-        "description": "Calls Yog-Sothoth to a specially constructed stone tower. The tower must be in an open area and the sky must be cloudless. The stone tower must be at least ten yards high. Each time the spell is cast, the cultists must designate a human sacrifice for the god’s taking. This need be no more than an invitation—gesturing toward a nearby village, for instance, from which Yog-Sothoth then selects a victim.\n At the cult’s option, the stone tower may be enchanted, lowering the magic points needed for a successful cast of the spell. Each point of POW infused in the tower permanently improves the total chance of casting Call Yog-Sothoth from it by 1 percentile.",
-        "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
-        "casting_time": "1-100 minutes"
+    "fields": {
+      "user": 1,
+      "name": "Call Deity - Call Yog-Sothoth",
+      "alternative_names": "The Forbidden Song of the Key, The Yah-Zek Channelling.",
+      "description": "Calls Yog-Sothoth to a specially constructed stone tower. The tower must be in an open area and the sky must be cloudless. The stone tower must be at least ten yards high. Each time the spell is cast, the cultists must designate a human sacrifice for the god’s taking. This need be no more than an invitation—gesturing toward a nearby village, for instance, from which Yog-Sothoth then selects a victim.\n At the cult’s option, the stone tower may be enchanted, lowering the magic points needed for a successful cast of the spell. Each point of POW infused in the tower permanently improves the total chance of casting Call Yog-Sothoth from it by 1 percentile.",
+      "cost": "1+ magic points per person; 1D10 Sanity points (caster only)",
+      "casting_time": "1-100 minutes",
+      "category": 2
     }
   }
 ]

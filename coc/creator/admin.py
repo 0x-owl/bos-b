@@ -3,7 +3,7 @@ from creator.models import (CampaignInvestigator, Game, Inventory,
                             InvestigatorsDiary, Item, ItemImage, ItemTag, Mania,
                             ManiaInvestigator, Occupation, OccupationTags, Phobia,
                             PhobiaInvestigator, Portrait, Skills,
-                            Spell, SpellTag, SpellType, Tag, TagDiary)
+                            Spell, SpellTag, Tag, TagDiary)
 
 from django.contrib import admin
 
