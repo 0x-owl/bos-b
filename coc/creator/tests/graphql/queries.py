@@ -1064,7 +1064,7 @@ mutation{{
     stock: 3,
     investigator: "{investigator_uuid}",
     item: "{item_uuid}",
-    properties: ""
+    properties: "{{\\"title\\": \\"test-item-create\\",\\"description\\": \\"Created item\\",\\"price\\": 25.6}}"
   }})
   {{
     inventoryInv{{
