@@ -2,7 +2,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "user": 1,
       "name": "Summoning Spells - Summon Byakhee",
       "alternative_names": "Call in to Service Thy Steed, The Melody that brings the Journeyed.",
       "description": "a whistle must be blown during the chant. This spell is active only on nights when Aldebaran is above the horizon (October through March are the best months). The summoned byakhee will flap down out of the sky, still icy from its travels through space.\nIf the whistle is enchanted, each point of POW in its enchantment adds 2 percentiles to the chance for success. Such a whistle may be used again and again.\n",
@@ -14,7 +13,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "user": 1,
       "name": "Summoning Spells - Summon Dark Young",
       "alternative_names": "Envoke the Darke of the Forest, Knife Ritual of the Bleeding Bark.",
       "description": "brings present a single dark young. A beast of at least SIZ 40 must be sacrificed. The summoner needs a knife to make certain ritual cuts in dispatching the victim. Cast this spell outdoors, in a wood, during the dark of the moon. A dark young will stalk out of the shadows after the summoning.",
@@ -26,7 +24,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "user": 1,
       "name": "Summoning Spells - Summon Dimensional Shambler",
       "alternative_names": "Recitation to Bring the Wanderer, The Song of Copper.",
       "description": "a single dimensional shambler gradually assembles itself out of thin air. The spell requires a dagger made from any pure metal such as copper or iron. Alloys such as brass will not work. If the dagger is enchanted, the chance for success also rises by 2 percentiles per point of POW in the dagger. This spell may be cast day or night. One authority has written that shamblers are more easily confused in bright sunlight.",
@@ -38,7 +35,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "user": 1,
       "name": "Summoning Spells - Summon Fire Vampire",
       "alternative_names": "Conjure the Glittering Ones, The Autumnal Call of Living Fire.",
       "description": "causes one fire vampire to swoop down from the sky like a skittering star. A bonfire or other source of flame is required. The spell may be cast only at night when the star Fomalhaut is above the horizon (September through November are the best times in moderately northern latitudes).",
@@ -50,7 +46,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "user": 1,
       "name": "Summoning Spells - Summon Hunting Horror",
       "alternative_names": "Petition the Feasting Teeth, Utterances That Bring Forth the Twisting Devils.",
       "description": "A single horror appears headfirst, as though entering through a hole in the air. This spell may be cast only at night in the open air. If no alternate sacrifice has been prepared for the binding (see below), it takes the caster and vanishes",
@@ -62,7 +57,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "user": 1,
       "name": "Summoning Spells - Summon Nightgaunt",
       "alternative_names": "The Whispered Words of the Faceless Men, Conjure the Winged Shadow.",
       "description": "A nearly silent swoosh of air comes, and then the single ghastly form of the blank-faced flying horror appears. To summon, a stone emblazoned with the cryptic Elder Sign must be present, but the stone itself need not be star-shaped. The spell can be cast only at night when there is no moon.",
@@ -74,7 +68,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "user": 1,
       "name": "Summoning Spells - Summon Servitor Of The Outer Gods",
       "alternative_names": "The Ritual Symphony of the Indescribable Ones, Recitation of the Maddening Piping.",
       "description": "A single servitor arrives amid haunting echoes of insane piping. The magic point cost is triple that of the standard summoning spell; for each three magic points sacrificed, increase the chance for a successful cast by 10 percentiles; a result of 96-100 is always a failure. Each cast of this spell also costs 3D4 Sanity points. A flute is also needed to cast this spell; if the flute is enchanted, it increases the chance for the spell’s success by 2 percentiles per point of POW within the flute. Cultists cast this spell anywhere and at any time that is especially unhallowed—typical nights would be Midsummer’s Eve, Samhain and Walpurgis Night.",
@@ -86,7 +79,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "user": 1,
       "name": "Summoning Spells - Summon Star Vampire",
       "alternative_names": "The Night Call of the Feasting Death, Chant of the Bloody Letters.",
       "description": "curious rustling sounds are heard once this invisible thing lurks near. The caster also needs a book in which are written or inscribed the words of the spell. If the book is enchanted, the chance for success is increased by 2 percentiles per point of POW within the book. This spell can be cast only at night under a cloudless sky. The creature is invisible save when its veins fill with blood from some visible creature.",
