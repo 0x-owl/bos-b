@@ -4,6 +4,7 @@
 from random import randint, choice, shuffle
 
 from django.contrib.auth import get_user_model
+from django.db.models import Q
 
 from creator.helpers.model_helpers import roller_stats
 from creator.helpers.random_name import random_names
@@ -188,7 +189,9 @@ def random_inv():
     free_point_assigner(inv.free_skill_points, inv)
     # Create an inventory
     # assign random items (consumables or tools)
-    items = Item.objects.filter(category__in=[2, 4])
+    items = Item.objects.filter(
+        category__in=[2, 4]
+    ).filter(~Q(properties__title='Generic Editable Item'))
     for _ in range(5):
         item = choice(items)
         inventory = Inventory(
