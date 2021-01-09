@@ -2,16 +2,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "name": "Separate Binding",
-      "description": "Binding and Summoning are two sides of the same coin. Sometimes they are learned as one spell, sometimes not. At the Keeper’s discretion the effects may be combined or two separate rolls might be asked for, one to summon and a second to bind.\nIf a monster arrives unbound or is come upon unexpectedly, it may be bound on the spot. The caster must know the Summon/Bind spell for that type of thing and must spend a round chanting before the thing can be bound. For the spell to take effect the caster must succeed in an opposed POW roll with the target. Each cast of the binding costs 1 Sanity point but no magic points. A binding works on only one creature at a time. One option open to the caster is to invest a number of magic points equal to one-fifth of the summoned creature’s POW to gain a bonus die on the opposed POW roll to bind the monster.\nAn attacking creature cannot be bound by the person it is fighting; however, it could be bound by a person able to hold back from the fray. A creature presently bound cannot be re-bound until its present command is completed. A creature to be bound must be visible to the caster and within 100 yards. Binding requires an opposed roll and opposed rolls cannot be pushed; if the opposed roll is failed, the caster is in trouble!",
-      "cost": "1 Sanity point",
-      "casting_time": "1 round",
-      "category": 1
-    }
-  },
-  {
-    "model": "creator.Spell",
-    "fields": {
       "name": "Bind Byakhee",
       "alternative_names": "Obligation of the Steed, Compel the Journeyed.",
       "description": "If an enchanted whistle is used, the caster gains a bonus die on the opposed POW roll. Such a whistle may be used again and again.",

@@ -2,16 +2,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "name": "Call Deity",
-      "description": "Call spells bring the avatar, god or Great Old One before the caster. Casting this type of spell is perilous indeed, even for cultists. Only cult priests or desperate people should choose to call a Mythos deity. A handful are cited here; however, both Call and Dismiss spells are likely to exist for every Great Old One and for every form of Mythos god.\nA group can assist by adding power to Call spells, with the caster acting as the focus for the group. Everyone present expends 1 magic point. Those who know the spell can sacrifice any number of magic points (including burning hit points). The total of the magic points spent is the percentage chance that the spell works. For each magic point spent, the group must chant for a minute, but never for more than 100 minutes. On a roll of 100 the spell will always fail with all magic points sacrificed in the spell lost.\nThe caster also loses 1D10 Sanity points in casting the spell. Everyone present loses Sanity points if the deity appears. The Keeper plays the thing and must create some motivation for the thing’s behavior. Mostly, when a Mythos deity arrives on Earth, it wants to stay and is usually hungry.",
-      "cost": "1 + magic points per person; 1D10 Sanity points (caster only)",
-      "casting_time": "1-100 minutes",
-      "category": 2
-    }
-  },
-  {
-    "model": "creator.Spell",
-    "fields": {
       "name": "Call Deity - Call Azathoth",
       "alternative_names": "Petition of Chaos, The Unspeakable Vowel of The Shaggai.",
       "description": "Calling this god is extremely dangerous and has the potential to fry the entire planet. The spell can be cast only outside at night; however, no other special preparations are needed.",

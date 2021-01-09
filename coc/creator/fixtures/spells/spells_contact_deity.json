@@ -2,16 +2,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "name": "Contact Deity Spells",
-      "description": "Contact Deity spells are unused except by the insane priests of these deities or by great independent sorcerers who hope to strike deals and win over some small fraction of the deity’s powers. The deity sought for Contact can be any one of the Gods or Great Old Ones.\nFor each such spell, the caster must sacrifice 5 POW. The chance of successfully contacting the deity is equal to half the caster’s (reduced) POW. If the roll succeeds, the deity or some aspect of it will contact the caster in a semi-friendly manner after a few game hours or days. The deity is unlikely to give non-worshipers anything of value. If the deity is bored or offended the god will likely squash the caster, or drive him or her insane, and so get some inhuman pleasure from the situation.\nEach version of the spell tends to reflect the deity concerned.",
-      "cost": "5 POW; 1D6 Sanity points",
-      "casting_time": "five to ten (1D6 + 4) rounds",
-      "category": 4
-    }
-  },
-  {
-    "model": "creator.Spell",
-    "fields": {
       "name": "Contact Deity: Chaugnar Faugn",
       "description": "Opens communication with Chaugnar Faugn. With a success, the deity sends the caster visions or nightmares that inform the dreamer of the god’s desires, or lets him or her know if a petition to the god is to be favorably answered or rejected.",
       "cost": "5 POW; 1D6 Sanity points",
