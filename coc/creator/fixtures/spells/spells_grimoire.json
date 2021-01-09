@@ -369,14 +369,6 @@
   {
     "model": "creator.Spell",
     "fields": {
-      "name": "Form of the Command",
-      "description": "The caster’s command to the thing must be specific and limited in duration: “protect me from harm forever,” would not be a valid command; however, “slay that man in the corner,” would be. The thing is bound to the caster until it fulfills a command (a bound thing without a command soon finds a way to leave). Orders might include carrying someone somewhere, presiding at some ceremony, being especially docile while being examined by a group of professors, appearing somewhere as a warning to those assembled—whatever can be imagined.\nKeep commands simple. The best rule of thumb is that a command has no more words than one-fifth of the thing’s INT. Simple gestures such as pointing will be understood. Assume that the thing is always able to understand a straightforward command, whether spoken in English or Urdu. See also Separate Binding, below.",
-      "category": 11
-    }
-  },
-  {
-    "model": "creator.Spell",
-    "fields": {
       "name": "Voorish Sign",
       "alternative_names": "Sign of Power, Cunninge Pass.",
       "description": "An ancient and powerful hand gesture used by wizards that benefits the casting of other spells. It may lessen the cost, reduce the casting time or increase the effect a little, depending on the spell in question.\nVoorish Sign is also rumored to temporarily ward against Mythos monsters—such creatures are wary of the sign and may hold off an attack until the wizard’s intentions are known.",
