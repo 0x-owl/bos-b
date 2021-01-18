@@ -1,96 +1,104 @@
 <!-- Attributes -->
-<h4 style="text-align: center; border: 1px solid grey;"> Attributes </h4>
+<div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+        <h4 class="cartd-title"> Attributes </h4>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
 <div class="row">
-    <div class="column">
+    <div class="col">
         <div class="row">
-            <div class="column">
+            <div class="col">
                 STR:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{res.attributes.STR.0}}</b>|
                 <b>{{res.attributes.STR.1}}</b>|
                 <b>{{res.attributes.STR.2|stringformat:"02d"}}</b>
             </div>
         </div>
         <div class="row">
-            <div class="column">
+            <div class="col">
                 CON:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{res.attributes.CON.0}}</b>|
                 <b>{{res.attributes.CON.1}}</b>|
                 <b>{{res.attributes.CON.2|stringformat:"02d"}}</b>
             </div>
         </div>
         <div class="row">
-            <div class="column">
+            <div class="col">
                 SIZ:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{res.attributes.SIZ.0}}</b>|
                 <b>{{res.attributes.SIZ.1}}</b>|
                 <b>{{res.attributes.SIZ.2|stringformat:"02d"}}</b>
             </div>
         </div>
     </div>
-    <div class="column">
+    <div class="col">
         <div class="row">
-            <div class="column">
+            <div class="col">
                 DEX:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{res.attributes.DEX.0}}</b>|
                 <b>{{res.attributes.DEX.1}}</b>|
                 <b>{{res.attributes.DEX.2|stringformat:"02d"}}</b>
             </div>
         </div>
         <div class="row">
-            <div class="column">
+            <div class="col">
                 APP:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{res.attributes.APP.0}}</b>|
                 <b>{{res.attributes.APP.1}}</b>|
                 <b>{{res.attributes.APP.2|stringformat:"02d"}}</b>
             </div>
         </div>
         <div class="row">
-            <div class="column">
+            <div class="col">
                 INT:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{res.attributes.INT.0}}</b>|
                 <b>{{res.attributes.INT.1}}</b>|
                 <b>{{res.attributes.INT.2|stringformat:"02d"}}</b>
             </div>
         </div>
     </div>
-    <div class="column">
+    <div class="col">
         <div class="row">
-            <div class="column">
+            <div class="col">
                 POW:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{res.attributes.POW.0}}</b>|
                 <b>{{res.attributes.POW.1}}</b>|
                 <b>{{res.attributes.POW.2|stringformat:"02d"}}</b>
             </div>
         </div>
         <div class="row">
-            <div class="column">
+            <div class="col">
                 EDU:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{res.attributes.EDU.0}}</b>|
                 <b>{{res.attributes.EDU.1}}</b>|
                 <b>{{res.attributes.EDU.2|stringformat:"02d"}}</b>
             </div>
         </div>
         <div class="row">
-            <div class="column">
+            <div class="col">
                 MOV:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{res.investigator.move}}</b>
             </div>
         </div>
@@ -98,36 +106,46 @@
 </div>
 <hr>
 <!-- Derivative attributes -->
-<div class="row">
-    <div class="column">
-        <label for="health">Health:</label>
-        <input type="number" name="health" id="health" value="{{res.investigator.health}}"
+<div class="row g-3 justify-content-md-center">
+    <div class="col-auto">
+        <label for="health" class="col-form-label">Health:</label>
+
+    </div>
+    <div class="col-auto">
+        <input type="number" name="health" id="health" class="form-control" value="{{res.investigator.health}}"
             max="{{res.investigator.max_health}}">
     </div>
-    <div class="column column-offset-50">
-        <label for="san">Sanity:</label>
-        <input type="number" name="san" id="san" value="{{res.investigator.sanity}}" max="99">
+    <div class="col-auto">
+        <label for="san" class="col-form-label">Sanity:</label>
+    </div>
+    <div class="col-auto">
+        <input type="number" name="san" id="san" class="form-control" value="{{res.investigator.sanity}}" max="99">
     </div>
 </div>
 <hr>
-<div class="row">
-    <div class="column">
-        <label for="mp">Magic Points:</label>
-        <input id="mp" name="mp" type="number" value="{{res.investigator.magic_points}}"
-            max="{{res.attributes.magic_points}}" min="0">
+<div class="row g-3 justify-content-md-center">
+    <div class="col-auto">
+        <label class="col-form-label" for="mp">Magic Points:</label>
     </div>
-    <div class="column column-offset-50">
-        <label for="luck">Luck:</label>
-        <input id="luck" name="luck" type="number" value="{{res.investigator.luck}}" min="0" max="99">
+    <div class="col-auto">
+        <input id="mp" name="mp" type="number" value="{{res.investigator.magic_points}}"
+            max="{{res.attributes.magic_points}}" min="0" class="form-control">
+    </div>
+    <div class="col-auto">
+        <label class="col-form-label" for="luck">Luck:</label>
+    </div>
+    <div class="col-auto">
+        <input id="luck" name="luck" type="number" value="{{res.investigator.luck}}" min="0" max="99"
+            class="form-control">
     </div>
 </div>
 <hr>
 <!-- Build + DMG Bonus-->
 <div class="row">
-    <div class="column">
+    <div class="col">
         Build: <b>{{res.investigator.build.1}}</b>
     </div>
-    <div class="column column-offset-50">
+    <div class="col offset-md-7">
         Damage Bonus: <b>{{res.investigator.build.0}}</b>
     </div>
 </div>

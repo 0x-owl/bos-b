@@ -1,11 +1,19 @@
-<h4 style="text-align: center; border: 1px solid grey;"> Gear & Posessions </h4>
+<div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+        <h4 class="cartd-title"> Gear & Posessions </h4>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
 <div class="row">
-    <div class="column">
-        <table>
+    <div class="col">
+        <table class="table">
             <thead>
-                <th>Title</th>
-                <th>Price</th>
-                <th>Stock</th>
+                <th class="col">Title</th>
+                <th class="col">Price</th>
+                <th class="col">Stock</th>
             </thead>
             <tbody>
                 {% for gear in res.gear %}

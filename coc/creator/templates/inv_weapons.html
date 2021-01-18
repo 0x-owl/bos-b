@@ -1,16 +1,24 @@
-<h4 style="text-align: center; border: 1px solid grey;"> Weapons </h4>
-<table>
+<div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+        <h4 class="cartd-title"> Weapons </h4>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+<table class="table">
     <thead>
-        <th>Weapon</th>
-        <th>Reg.</th>
-        <th>Hard</th>
-        <th>Ext.</th>
-        <th>Dmg.</th>
-        <th>Range</th>
-        <th>Attacks</th>
-        <th>Bullets in mag</th>
-        <th>Ammo.</th>
-        <th>Malf.</th>
+        <th class="col">Weapon</th>
+        <th class="col">Reg.</th>
+        <th class="col">Hard</th>
+        <th class="col">Ext.</th>
+        <th class="col">Dmg.</th>
+        <th class="col">Range</th>
+        <th class="col">Attacks</th>
+        <th class="col">Bullets in mag</th>
+        <th class="col">Ammo.</th>
+        <th class="col">Malf.</th>
     </thead>
     <tbody>
         {% for weapon in res.weapons %}

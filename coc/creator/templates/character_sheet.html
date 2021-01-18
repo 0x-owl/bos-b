@@ -2,29 +2,20 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Character Sheet V0.0.0</title>
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-
-    <!-- CSS Reset -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-
-    <!-- Milligram CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-
-    <!-- You should properly set the path from the main file. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="column">
-                <h1 style="text-align: center">Investigator</h1>
-            </div>
-            <div class="column column-offset-50">
-                <a style="margin-top: 10px" class="button" href="random"> Generate Random Inv.</a>
-            </div>
+    <nav class="navbar fixed-top navbar-light navbar-light bg-light">
+        <div class="container-fluid justify-content-md-end">
+            <a class="btn btn-primary btn-large" href="random"> Generate Random Inv.</a>
         </div>
+    </nav>
+    <div class="container" style="margin-top: 80px;">
         <!-- Basic Info -->
         {% include "inv_basic_info.html" %}
         <!-- Attributes -->
@@ -38,6 +29,9 @@
         <!-- Gear & Posession -->
         {% include "inv_gear.html" %}
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

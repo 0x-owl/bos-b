@@ -1,12 +1,20 @@
-<h4 style="text-align: center; border: 1px solid grey;"> Skills</h4>
+<div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+        <h4 class="cartd-title"> Skills </h4>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
 <div style="font-size: 15px;" class="row">
-    <div class="column">
-        {% for skill in res.skills|slice:":34" %}
+    <div class="col">
+        {% for skill in res.skills|slice:":35" %}
         <div class="row">
-            <div class="column">
+            <div class="col">
                 {{skill.0}}:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{skill.1|stringformat:"02d"}}</b>|
                 <b>{{skill.2|stringformat:"02d"}}</b>|
                 <b>{{skill.3|stringformat:"02d"}}</b>
@@ -14,13 +22,13 @@
         </div>
         {% endfor %}
     </div>
-    <div class="column">
-        {% for skill in res.skills|slice:"34:68" %}
+    <div class="col">
+        {% for skill in res.skills|slice:"35:71" %}
         <div class="row">
-            <div class="column">
+            <div class="col">
                 {{skill.0}}:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{skill.1|stringformat:"02d"}}</b>|
                 <b>{{skill.2|stringformat:"02d"}}</b>|
                 <b>{{skill.3|stringformat:"02d"}}</b>
@@ -28,13 +36,13 @@
         </div>
         {% endfor %}
     </div>
-    <div class="column">
-        {% for skill in res.skills|slice:"68:" %}
+    <div class="col">
+        {% for skill in res.skills|slice:"71:" %}
         <div class="row">
-            <div class="column">
+            <div class="col">
                 {{skill.0}}:
             </div>
-            <div style="text-align: right" class="column">
+            <div style="text-align: right" class="col">
                 <b>{{skill.1|stringformat:"02d"}}</b>|
                 <b>{{skill.2|stringformat:"02d"}}</b>|
                 <b>{{skill.3|stringformat:"02d"}}</b>
