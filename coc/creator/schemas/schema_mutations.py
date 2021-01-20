@@ -7,7 +7,7 @@ from creator.models import (CampaignInvestigator, Game, Inventory,
                             Occupation, Phobia, PhobiaInvestigator, Portrait,
                             Skills, Spell, Tag)
 
-from creator.schema_nodes import (CampaignInvNode, DiaryInvNode,
+from creator.schemas.schema_nodes import (CampaignInvNode, DiaryInvNode,
                                   GameNode, InventoryInvNode, InvestigatorNode,
                                   ItemNode, ManiaNode, ManiaInvNode,
                                   OccupationNode, PhobiaNode, PhobiaInvNode,

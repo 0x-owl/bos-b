@@ -1,13 +1,13 @@
 from creator.models import Investigator
 
-from creator.schema_nodes import (CampaignInvNode, DiaryInvNode,
+from creator.schemas.schema_nodes import (CampaignInvNode, DiaryInvNode,
                                   GameNode, InventoryInvNode, InvestigatorNode,
                                   ItemNode, ManiaInvNode, ManiaNode,
                                   OccupationNode, PhobiaInvNode, PhobiaNode,
                                   PortraitNode, SkillNode,
                                   SpellNode, TagInvNode, TagNode, UserNode)
 
-from creator.schema_mutations import (CampaignInvMutation,
+from creator.schemas.schema_mutations import (CampaignInvMutation,
                                       DiaryInvMutation, GameMutation,
                                       InventoryInvMutation,
                                       InvestigatorMutation, ItemMutation,
