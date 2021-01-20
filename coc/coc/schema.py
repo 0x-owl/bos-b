@@ -1,6 +1,6 @@
 from graphene import ObjectType, Schema
 
-from creator.schema import Mutation as MCreator, Query as QCreator
+from creator.schemas import Mutation as MCreator, Query as QCreator
 
 
 class Query(QCreator, ObjectType):
