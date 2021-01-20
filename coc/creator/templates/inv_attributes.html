@@ -107,34 +107,23 @@
 <hr>
 <!-- Derivative attributes -->
 <div class="row g-3 justify-content-md-center">
-    <div class="col-auto">
+    <div class="col-auto" style="display: inline">
         <label for="health" class="col-form-label">Health:</label>
-
-    </div>
-    <div class="col-auto">
         <input type="number" name="health" id="health" class="form-control" value="{{res.investigator.health}}"
             max="{{res.investigator.max_health}}">
     </div>
     <div class="col-auto">
         <label for="san" class="col-form-label">Sanity:</label>
-    </div>
-    <div class="col-auto">
         <input type="number" name="san" id="san" class="form-control" value="{{res.investigator.sanity}}" max="99">
     </div>
-</div>
-<hr>
-<div class="row g-3 justify-content-md-center">
+
     <div class="col-auto">
         <label class="col-form-label" for="mp">Magic Points:</label>
-    </div>
-    <div class="col-auto">
         <input id="mp" name="mp" type="number" value="{{res.investigator.magic_points}}"
             max="{{res.attributes.magic_points}}" min="0" class="form-control">
     </div>
     <div class="col-auto">
         <label class="col-form-label" for="luck">Luck:</label>
-    </div>
-    <div class="col-auto">
         <input id="luck" name="luck" type="number" value="{{res.investigator.luck}}" min="0" max="99"
             class="form-control">
     </div>
