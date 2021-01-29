@@ -1,0 +1,56 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 6,
+            "properties": {
+                "title": "Horse (with rider)",
+                "description": "",
+                "price": 0,
+                "year": 0,
+                "seating": "1",
+                "build": 4,
+                "movement": 11,
+                "armor": 0,
+                "skill": "Ride",
+                "era": "1920's, Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 6,
+            "properties": {
+                "title": "4-horse carriage",
+                "description": "",
+                "price": 0,
+                "year": 0,
+                "seating": "6+",
+                "build": 3,
+                "movement": 10,
+                "armor": 0,
+                "skill": "Ride",
+                "era": "1920's, Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 6,
+            "properties": {
+                "title": "Bicycle",
+                "description": "",
+                "price": 0,
+                "year": 0,
+                "seating": "1",
+                "build": 0.5,
+                "movement": 10,
+                "armor": 0,
+                "skill": "Ride",
+                "era": "1920's, Modern"
+            }
+        }
+    }
+]
