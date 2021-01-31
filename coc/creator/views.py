@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from random import choice
 from json import dumps
 
-from creator.helpers.random_investigator import RandomInvestigator
+from creator.random_inv import RandomInvestigator
 from creator.helpers.investigator import generate_full_half_fifth_values
 from creator.constants import SILOUETTES as silouettes
 from creator.models import (

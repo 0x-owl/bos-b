@@ -10,6 +10,8 @@ from django.db.models import Q
 from simplejson import load
 
 from creator.helpers.model_helpers import roller_stats
+from creator.helpers.fixtures.first_names import FIRST_NAMES
+from creator.helpers.fixtures.last_names import LAST_NAMES
 from creator.models import (Investigator, Occupation, Skills, Inventory, Item, Spell,
                             SpellInvestigator)
 
@@ -26,16 +28,9 @@ def random_names(gender, decade, amount_of_names, amount_of_surnames):
         amount_of_surnames - Number of surnames
     """
 
-    dir_path = path.dirname(path.realpath(__file__))
-    with open(f'{dir_path}/fixtures/first_names.json', 'r') as first_names:
-        first_names = load(first_names)
-
-    with open(f'{dir_path}/fixtures/last_names.json', 'r') as last_names:
-        last_names = load(last_names)
-
+    first_names = FIRST_NAMES
+    surnames_list = LAST_NAMES
     names_list = []
-    surnames_list = [surname['last_name'] for surname in last_names]
-
     random_surname = choice(surnames_list).capitalize()
 
     if amount_of_surnames == 2:

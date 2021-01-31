@@ -1,4 +1,4 @@
-[
+FIRST_NAMES = [
     {
         "decade": "20'",
         "gender": "male",
