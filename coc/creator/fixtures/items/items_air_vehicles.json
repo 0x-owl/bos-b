@@ -1,0 +1,87 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 6,
+            "properties": {
+                "title": "Dirigible",
+                "description": "",
+                "price": 0,
+                "year": 0,
+                "seating": "112+",
+                "build": 10,
+                "movement": 12,
+                "armor": 2,
+                "era": "1920's, Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 6,
+            "properties": {
+                "title": "Propeller plane",
+                "description": "",
+                "price": 0,
+                "year": 0,
+                "seating": "4+",
+                "build": 5,
+                "movement": 15,
+                "armor": 1,
+                "era": "1920's, Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 6,
+            "properties": {
+                "title": "Bomber plane",
+                "description": "",
+                "price": 0,
+                "year": 0,
+                "seating": "10+",
+                "build": 11,
+                "movement": 17,
+                "armor": 2,
+                "era": "1920's, Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 6,
+            "properties": {
+                "title": "Jet plane",
+                "description": "",
+                "price": 0,
+                "year": 0,
+                "seating": "50+",
+                "build": 11,
+                "movement": 18,
+                "armor": 3,
+                "era": "1920's, Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 6,
+            "properties": {
+                "title": "Helicopter",
+                "description": "",
+                "price": 0,
+                "year": 0,
+                "seating": "15+",
+                "build": 5,
+                "movement": 15,
+                "armor": 2,
+                "era": "1920's, Modern"
+            }
+        }
+    }
+]
