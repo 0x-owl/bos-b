@@ -1,10 +1,46 @@
 <div class="row">
     <div class="col">
         <div class="row">
-            <form action={% url "data" res.investigator.uuid %} method="POST">
+            <form action={% url "inv_data" res.investigator.uuid %} method="POST" class="input-group mb-3">
                 {% csrf_token %}
-                {{ form }}
-                <input type="submit" value="Submit">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-name">Name:</span>
+                    </div>
+
+                    {{ form.name }}
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-player">Player:</span>
+                    </div>
+                    {{ form.player }}
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-sex">Sex:</span>
+                    </div>
+                    {{ form.sex }}
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-residence">Residence:</span>
+                    </div>
+                    {{ form.residence }}
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-birthplace">Birthplace:</span>
+                    </div>
+                    {{ form.birthplace }}
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-age">Age:</span>
+                    </div>
+                    {{ form.age }}
+                </div>
+
             </form>
         </div>
         <div class="row">Occupation: {{res.investigator.occupation.title}}</div>

@@ -6,5 +6,5 @@ from creator import views
 
 urlpatterns = [
     path('random', views.generate_random_investigator),
-    path('<slug:inv>', views.get_investigator_data, name="data"),
+    path('<slug:inv>', views.get_investigator_data, name="inv_data"),
 ]
