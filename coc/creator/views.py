@@ -5,8 +5,11 @@ from random import choice
 from json import dumps
 
 from creator.random_inv import RandomInvestigator
-from creator.helpers.investigator import generate_full_half_fifth_values
 from creator.constants import SILOUETTES as silouettes
+from creator.helpers.views_helper import generate_basic_info_form
+
+from creator.helpers.investigator import generate_full_half_fifth_values
+
 from creator.models import (
     Investigator, Skills, Portrait, Inventory, PhobiaInvestigator,
     ManiaInvestigator, SpellInvestigator
@@ -14,7 +17,7 @@ from creator.models import (
 
 
 # Create your views here.
-def get_investigator_data(request, inv):
+def get_investigator_data(request, inv, **kwargs):
     '''Retrieve all information associated to an
     Investigator.'''
     investigator = Investigator.objects.get(
@@ -82,7 +85,10 @@ def get_investigator_data(request, inv):
         'artifacts': artifacts,
         'spells': spells
     }
-    return render(request, 'character_sheet.html', {'res': res})
+    form = generate_basic_info_form(request, investigator)
+    return render(
+        request, 'character_sheet.html',
+        {'res': res, 'form': kwargs.get('form', form)})
 
 
 def generate_random_investigator(request):

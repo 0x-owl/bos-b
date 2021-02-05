@@ -1,15 +1,17 @@
 <div class="row">
     <div class="col">
-        Name: {{res.investigator.name}}<br>
-        Age: {{res.investigator.age}}<br>
-        Sex: {{res.investigator.sex}}<br>
-        Birthplace: {{res.investigator.birthplace}}<br>
-        Residence: {{res.investigator.residence}}<br>
-        Occupation: {{res.investigator.occupation.title}}<br>
-        Credit Rating Min: {{res.investigator.occupation.credit_rating_min}}<br>
-        Credit Rating Max: {{res.investigator.occupation.credit_rating_max}}<br>
+        <div class="row">
+            <form action={% url "data" res.investigator.uuid %} method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="row">Occupation: {{res.investigator.occupation.title}}</div>
+        <div class="row">Credit Rating Min: {{res.investigator.occupation.credit_rating_min}}</div>
+        <div class="row">Credit Rating Max: {{res.investigator.occupation.credit_rating_max}}</div>
     </div>
-    <div class="col offset-md-5">
+    <div class="col offset-md-6">
         <img style="max-height: 200px; max-width: 200px" src="{{ res.portrait }}" alt="Investigator portrait">
     </div>
 </div>
