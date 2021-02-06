@@ -86,6 +86,11 @@ def get_investigator_data(request, inv, **kwargs):
         'spells': spells
     }
     form = generate_basic_info_form(request, investigator)
+    if request.method == 'POST':
+        # This redirect forces a full update of the character sheet data and
+        # pulling a get request instead of being a post and making easier the
+        # reload 
+        return redirect(get_investigator_data, inv=investigator.uuid)
     return render(
         request, 'character_sheet.html',
         {'res': res, 'form': kwargs.get('form', form)})
