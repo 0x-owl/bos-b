@@ -20,9 +20,7 @@ def generate_basic_info_form(request, inv):
                 )
                 inv.save()
                 # reset skill dict
-                skills=Skills.objects.filter(
-                    era="1920's"
-                )
+                skills=Skills.objects.all()
                 base_skills_generator(skills, inv)
                 # assign points to the skills
                 occ_point_assigner(inv.occupation_skill_points, inv)
