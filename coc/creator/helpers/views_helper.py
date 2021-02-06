@@ -11,6 +11,8 @@ def generate_basic_info_form(request, inv):
                 uuid=inv.uuid
             )
             data = form.cleaned_data
+            # if occupation changed reset occupation points and 
+            # re assign skills
             inv.update(**data)
             inv = inv.first()
             inv.save()

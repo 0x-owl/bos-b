@@ -18,7 +18,8 @@ class InvestigatorBasicInfoForm(Form):
         widget=Select(
             attrs={
                 'class': 'form-control',
-                'aria-describedby': "inv-sex"}))
+                'aria-describedby': "inv-sex"})
+    )
     player = CharField(
         max_length=50,
         widget=TextInput(attrs={
