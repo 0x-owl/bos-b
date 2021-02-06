@@ -14,7 +14,7 @@ coc/uploads/portraits/*
 .DS_Store
 # C extensions
 *.so
-
+.vscode/
 # Distribution / packaging
 bin/
 build/
