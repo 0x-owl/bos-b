@@ -21,7 +21,8 @@ def generate_basic_info_form(request, inv):
                 'sex': inv.sex,
                 'residence': inv.residence,
                 'birthplace': inv.birthplace,
-                'age': inv.age
+                'age': inv.age,
+                'occupation': inv.occupation.uuid
             })
     
 

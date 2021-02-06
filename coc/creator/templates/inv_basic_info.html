@@ -2,52 +2,88 @@
     <div class="col">
         <div class="row">
             <!-- Basic Investigator information form -->
-            <form action={% url "inv_data" res.investigator.uuid %} method="POST" class="input-group mb-3">
+            <form action={% url "inv_data" res.investigator.uuid %} method="POST" class="form-group mb-3">
                 {% csrf_token %}
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inv-name">Name:</span>
                     </div>
-
                     {{ form.name }}
+                    <div class="input-group-append">
+                        <input class="btn btn-secondary" type="submit" value="Update">
+                    </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inv-player">Player:</span>
                     </div>
                     {{ form.player }}
+                    <div class="input-group-append">
+                        <input class="btn btn-secondary" type="submit" value="Update">
+                    </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inv-sex">Sex:</span>
                     </div>
                     {{ form.sex }}
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inv-residence">Residence:</span>
+                    <div class="input-group-append">
+                        <input class="btn btn-secondary" type="submit" value="Update">
                     </div>
-                    {{ form.residence }}
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inv-birthplace">Birthplace:</span>
-                    </div>
-                    {{ form.birthplace }}
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inv-age">Age:</span>
                     </div>
                     {{ form.age }}
+                    <div class="input-group-append">
+                        <input class="btn btn-secondary" type="submit" value="Update">
+                    </div>
                 </div>
-                <!-- Small trick to have submits when pressing the enter key -->
-                <input type="submit" value="Update" style="display: none;">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-residence">Residence:</span>
+                    </div>
+                    {{ form.residence }}
+                    <div class="input-group-append">
+                        <input class="btn btn-secondary" type="submit" value="Update">
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-birthplace">Birthplace:</span>
+                    </div>
+                    {{ form.birthplace }}
+                    <div class="input-group-append">
+                        <input class="btn btn-secondary" type="submit" value="Update">
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-occupation">Occupation:</span>
+                    </div>
+                    {{ form.occupation }}
+                    <div class="input-group-append">
+                        <input class="btn btn-secondary" type="submit" value="Update">
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-crmin">Credit Rating Min:</span>
+                    </div>
+                    <input class="form-control" type="text" disabled
+                        value={{res.investigator.occupation.credit_rating_min}} aria-describedby="inv-crmin">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-crmax">Credit Rating Max:</span>
+                    </div>
+                    <input class="form-control" type="text" disabled
+                        value={{res.investigator.occupation.credit_rating_max}} aria-describedby="inv-crmax">
+                </div>
             </form>
         </div>
-        <div class="row">Occupation: {{res.investigator.occupation.title}}</div>
-        <div class="row">Credit Rating Min: {{res.investigator.occupation.credit_rating_min}}</div>
-        <div class="row">Credit Rating Max: {{res.investigator.occupation.credit_rating_max}}</div>
+
     </div>
     <div class="col offset-md-6">
         <img style="max-height: 200px; max-width: 200px" src="{{ res.portrait }}" alt="Investigator portrait">

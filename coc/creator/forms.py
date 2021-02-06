@@ -1,4 +1,5 @@
-from django.forms import Form, CharField, IntegerField, TextInput
+from django.forms import Form, CharField, ChoiceField, IntegerField, TextInput, Select, NumberInput
+from creator.models import Occupation
 from creator.constants import GENDER
 
 class InvestigatorBasicInfoForm(Form):
@@ -9,16 +10,20 @@ class InvestigatorBasicInfoForm(Form):
             'class': 'form-control',
             'aria-describedby': "inv-name"})
     )
+    sex = ChoiceField(
+        choices=[
+            ('F', 'Female'),
+            ('M', 'Male')
+        ],
+        widget=Select(
+            attrs={
+                'class': 'form-control',
+                'aria-describedby': "inv-sex"}))
     player = CharField(
         max_length=50,
         widget=TextInput(attrs={
             'class': 'form-control',
-            'aria-describedby': "inv-name"}))
-    sex = CharField(
-        max_length=1,
-        widget=TextInput(attrs={
-            'class': 'form-control',
-            'aria-describedby': "inv-sex"})
+            'aria-describedby': "inv-player"})
     )
     residence = CharField(
         max_length=80,
@@ -34,7 +39,20 @@ class InvestigatorBasicInfoForm(Form):
     )
     age = IntegerField(
         max_value=90,
-        widget=TextInput(attrs={
+        widget=NumberInput(attrs={
             'class': 'form-control',
-            'aria-describedby': 'inv-age'})
+            'aria-describedby': 'inv-age',
+            'min': 15,
+            'max': 90
+        })
+    )
+    occupation = ChoiceField(
+        choices=[
+            (occupation.uuid, occupation.title) for occupation
+            in Occupation.objects.all()
+        ],
+        widget=Select(attrs={
+            'class': 'form-control',
+            'aria-desribedby': 'inv-occupation'
+        })
     )
