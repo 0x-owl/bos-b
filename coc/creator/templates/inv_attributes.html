@@ -106,28 +106,52 @@
 </div>
 <hr>
 <!-- Derivative attributes -->
-<div class="row g-3 justify-content-md-center">
-    <div class="col-auto" style="display: inline">
-        <label for="health" class="col-form-label">Health:</label>
-        <input type="number" name="health" id="health" class="form-control" value="{{res.investigator.health}}"
-            max="{{res.investigator.max_health}}">
-    </div>
-    <div class="col-auto">
-        <label for="san" class="col-form-label">Sanity:</label>
-        <input type="number" name="san" id="san" class="form-control" value="{{res.investigator.sanity}}" max="99">
+
+<form class="align-items-center" action={% url "inv_data" res.investigator.uuid %} method="POST">
+    {% csrf_token %}
+
+    <div class="row">
+        <div class="col">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Health:</div>
+                </div>
+                {{ derivative_attrs_form.health }}
+                <input class="btn btn-secondary" type="submit" value="Update">
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Sanity:</div>
+                </div>
+                {{ derivative_attrs_form.sanity }}
+                <input class="btn btn-secondary" type="submit" value="Update">
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Luck:</div>
+                </div>
+                {{ derivative_attrs_form.luck }}
+                <input class="btn btn-secondary" type="submit" value="Update">
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Magic Points:</div>
+                </div>
+                {{ derivative_attrs_form.magic_points }}
+                <input class="btn btn-secondary" type="submit" value="Update">
+            </div>
+        </div>
     </div>
 
-    <div class="col-auto">
-        <label class="col-form-label" for="mp">Magic Points:</label>
-        <input id="mp" name="mp" type="number" value="{{res.investigator.magic_points}}"
-            max="{{res.attributes.magic_points}}" min="0" class="form-control">
-    </div>
-    <div class="col-auto">
-        <label class="col-form-label" for="luck">Luck:</label>
-        <input id="luck" name="luck" type="number" value="{{res.investigator.luck}}" min="0" max="99"
-            class="form-control">
-    </div>
-</div>
+</form>
+
 <hr>
 <!-- Build + DMG Bonus-->
 <div class="row">

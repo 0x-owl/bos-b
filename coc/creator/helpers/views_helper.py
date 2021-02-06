@@ -27,8 +27,7 @@ def generate_basic_info_form(request, inv):
                 free_point_assigner(inv.free_skill_points, inv)
                 del data['occupation']
 
-            # if occupation changed reset occupation points and 
-            # re assign skills
+            # update the rest of the attributes
             inv = Investigator.objects.filter(
                 uuid=inv.uuid
             )
@@ -51,12 +50,20 @@ def generate_basic_info_form(request, inv):
 def generate_derivative_attributes_form(request, inv):
     '''Generate or update the investigators derivative attributes.'''
     if request.method == 'POST':
-        form = {}
+        form = DerivativeAttributesForm(request.POST)
+        if form.is_valid():
+            inv = Investigator.objects.filter(
+                uuid=inv.uuid
+            )
+            data = form.cleaned_data
+            inv.update(**data)
+            inv = inv.first()
+            inv.save()
     else:
         form = DerivativeAttributesForm(
             initial={
                 'health': inv.health,
-                'sanity': inv.sanitiy,
+                'sanity': inv.sanity,
                 'magic_points': inv.magic_points,
                 'luck': inv.luck
             }

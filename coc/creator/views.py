@@ -6,7 +6,8 @@ from django.shortcuts import redirect, render
 
 from creator.constants import SILOUETTES as silouettes
 from creator.helpers.investigator import generate_full_half_fifth_values
-from creator.helpers.views_helper import generate_basic_info_form
+from creator.helpers.views_helper import (generate_basic_info_form,
+                                          generate_derivative_attributes_form)
 from creator.models import (Inventory, Investigator, ManiaInvestigator,
                             PhobiaInvestigator, Portrait, Skills,
                             SpellInvestigator)
@@ -80,9 +81,12 @@ def get_investigator_data(request, inv, **kwargs):
     )
     res['arcane'] = {
         'artifacts': artifacts,
-        'spells': spells
+        'spells': spells  
     }
-    basic_info_form = generate_basic_info_form(request, investigator)
+    basic_info_form = generate_basic_info_form(
+        request, investigator)
+    derivative_attrs_form = generate_derivative_attributes_form(
+        request, investigator)
     if request.method == 'POST':
         # This redirect forces a full update of the character sheet data and
         # pulling a get request instead of being a post and making easier the
@@ -92,7 +96,8 @@ def get_investigator_data(request, inv, **kwargs):
         request, 'character_sheet.html',
         {
             'res': res,
-            'basic_info_form': kwargs.get('basic_info_form', basic_info_form)
+            'basic_info_form': basic_info_form,
+            'derivative_attrs_form': derivative_attrs_form
         }
     )
 
