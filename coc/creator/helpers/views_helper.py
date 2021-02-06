@@ -14,11 +14,9 @@ def generate_basic_info_form(request, inv):
             )
             data = form.cleaned_data
             # This means the occupation has been requested for an update
-            if data['occupation'] != inv.occupation.uuid:
+            if data['occupation'] != inv.occupation:
                 # save the new occupation
-                inv.occupation = Occupation.objects.get(
-                    uuid=data['occupation']
-                )
+                inv.occupation = data['occupation']
                 inv.save()
                 # reset skill dict
                 skills=Skills.objects.all()
