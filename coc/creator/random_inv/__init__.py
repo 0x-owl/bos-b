@@ -228,8 +228,10 @@ class RandomInvestigator:
         self.investigator.appearance = roller_stats(3)
         # Load derivative statuses
         self.investigator.health = self.investigator.max_health
-        self.investigator.sanity = self.investigator.power
+        self.investigator.sanity = self.investigator.init_sanity()
+        self.investigator.magic_points = self.investigator.init_magic_points()
         self.investigator.save()
+
     
     def skills_assigner(self):
         '''Assign skills to investigator entity.'''

@@ -1,19 +1,16 @@
-from django.http import HttpResponse
-from django.shortcuts import render, redirect
-
-from random import choice
 from json import dumps
+from random import choice
 
-from creator.random_inv import RandomInvestigator
+from django.http import HttpResponse
+from django.shortcuts import redirect, render
+
 from creator.constants import SILOUETTES as silouettes
-from creator.helpers.views_helper import generate_basic_info_form
-
 from creator.helpers.investigator import generate_full_half_fifth_values
-
-from creator.models import (
-    Investigator, Skills, Portrait, Inventory, PhobiaInvestigator,
-    ManiaInvestigator, SpellInvestigator
-)
+from creator.helpers.views_helper import generate_basic_info_form
+from creator.models import (Inventory, Investigator, ManiaInvestigator,
+                            PhobiaInvestigator, Portrait, Skills,
+                            SpellInvestigator)
+from creator.random_inv import RandomInvestigator
 
 
 # Create your views here.
@@ -85,7 +82,7 @@ def get_investigator_data(request, inv, **kwargs):
         'artifacts': artifacts,
         'spells': spells
     }
-    form = generate_basic_info_form(request, investigator)
+    basic_info_form = generate_basic_info_form(request, investigator)
     if request.method == 'POST':
         # This redirect forces a full update of the character sheet data and
         # pulling a get request instead of being a post and making easier the
@@ -93,7 +90,11 @@ def get_investigator_data(request, inv, **kwargs):
         return redirect(get_investigator_data, inv=investigator.uuid)
     return render(
         request, 'character_sheet.html',
-        {'res': res, 'form': kwargs.get('form', form)})
+        {
+            'res': res,
+            'basic_info_form': kwargs.get('basic_info_form', basic_info_form)
+        }
+    )
 
 
 def generate_random_investigator(request):

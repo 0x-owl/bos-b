@@ -1,15 +1,15 @@
-import django
-
 from uuid import uuid4
 
-from django.db.models import (BooleanField, CASCADE, CharField, DateTimeField,
-                              FloatField, ForeignKey, ImageField, IntegerField,
-                              Model, OneToOneField, PROTECT,
-                              PositiveIntegerField, SET_NULL, TextField,
-                              UUIDField, JSONField)
+import django
 from django.contrib.auth import get_user_model
+from django.db.models import (CASCADE, PROTECT, SET_NULL, BooleanField,
+                              CharField, DateTimeField, FloatField, ForeignKey,
+                              ImageField, IntegerField, JSONField, Model,
+                              OneToOneField, PositiveIntegerField, TextField,
+                              UUIDField)
 
-from creator.constants import GAME_TYPE, GENDER, ITEM_CATEGORIES, SPELL_CATEGORIES
+from creator.constants import (GAME_TYPE, GENDER, ITEM_CATEGORIES,
+                               SPELL_CATEGORIES)
 from creator.helpers.model_helpers import renamer, roller_stats
 
 User = get_user_model()
@@ -146,6 +146,7 @@ class Investigator(BaseModel):
     encounters_with_strange_entities = TextField(blank=True)
     sanity = PositiveIntegerField(default=0)
     luck = PositiveIntegerField(default=roller_stats(3))
+    magic_points = PositiveIntegerField(default=0)
     health = IntegerField(default=0)
 
     @property
@@ -153,12 +154,6 @@ class Investigator(BaseModel):
         """Health property."""
         health = (self.size + self.constitution) // 10
         return health
-
-    @property
-    def magic_points(self):
-        """Magic points property."""
-        mp = self.sanity // 5
-        return mp
 
     @property
     def attributes_detail(self):
@@ -240,13 +235,15 @@ class Investigator(BaseModel):
 
         return skill_points
 
-
     def init_sanity(self):
         """Sanity property, start."""
-        self.sanity = self.power
-        self.save()
-        ret = 'Sanity was initialized'
-        return ret
+        sanity_points = self.power
+        return sanity_points
+    
+    def init_magic_points(self): 
+        """Initialize the magic points at the investigator."""
+        magic_points = self.sanity // 5
+        return magic_points
 
     def __str__(self):
         """String representation of the object."""

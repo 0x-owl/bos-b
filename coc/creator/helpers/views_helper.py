@@ -1,10 +1,11 @@
-from creator.forms import InvestigatorBasicInfoForm
-from creator.models import Investigator, Skills, Occupation
-from creator.random_inv import base_skills_generator, occ_point_assigner, free_point_assigner
+from creator.forms import DerivativeAttributesForm, InvestigatorBasicInfoForm
+from creator.models import Investigator, Occupation, Skills
+from creator.random_inv import (base_skills_generator, free_point_assigner,
+                                occ_point_assigner)
 
-# Update investigators basic info
+
 def generate_basic_info_form(request, inv):
-    '''Method generate or update the investigator basic information form.'''
+    '''Generate or update the investigator using the basic information form.'''
     if request.method == "POST":
         form = InvestigatorBasicInfoForm(request.POST)
         if form.is_valid():
@@ -47,5 +48,19 @@ def generate_basic_info_form(request, inv):
                 'occupation': inv.occupation.uuid
             })
     
+    return form
 
+def generate_derivative_attributes_form(request, inv):
+    '''Generate or update the investigators derivative attributes.'''
+    if request.method == 'POST':
+        form = {}
+    else:
+        form = DerivativeAttributesForm(
+            initial={
+                'health': inv.health,
+                'sanity': inv.sanitiy,
+                'magic_points': inv.magic_points,
+                'luck': inv.luck
+            }
+        )
     return form

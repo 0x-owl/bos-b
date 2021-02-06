@@ -1,6 +1,9 @@
-from django.forms import Form, CharField, ChoiceField, IntegerField, TextInput, Select, NumberInput
-from creator.models import Occupation
+from django.forms import (CharField, ChoiceField, Form, IntegerField,
+                          ModelChoiceField, NumberInput, Select, TextInput)
+
 from creator.constants import GENDER
+from creator.models import Occupation
+
 
 class InvestigatorBasicInfoForm(Form):
     '''Basic information form for an Investigator.'''
@@ -47,13 +50,47 @@ class InvestigatorBasicInfoForm(Form):
             'max': 90
         })
     )
-    occupation = ChoiceField(
-        choices=[
-            (occupation.uuid, occupation.title) for occupation
-            in Occupation.objects.all()
-        ],
+    occupation = ModelChoiceField(
+        queryset=Occupation.objects.all(),
         widget=Select(attrs={
             'class': 'form-control',
             'aria-desribedby': 'inv-occupation'
+        })
+    )
+
+
+class DerivativeAttributesForm(Form):
+    '''Form for the attributes that are initialized based on
+    the investigators attributes.'''
+    health = IntegerField(
+        widget=NumberInput(attrs={
+            'class': 'form-control',
+            'aria-describedby': 'inv-health',
+            'min': 0,
+            'max': 20
+        })
+    )
+    sanity = IntegerField(
+        widget=NumberInput(attrs={
+            'class': 'form-control',
+            'aria-describedby': 'inv-sanity',
+            'min': 0,
+            'max': 99
+        })
+    )
+    magic_points = IntegerField(
+        widget=NumberInput(attrs={
+            'class': 'form-control',
+            'aria-describedby': 'inv-mp',
+            'min': 0,
+            'max': 24
+        })
+    )
+    luck = IntegerField(
+        widget=NumberInput(attrs={
+            'class': 'form-control',
+            'aria-describedby': 'inv-luck',
+            'min': 0,
+            'max': 99
         })
     )
