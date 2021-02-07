@@ -162,14 +162,13 @@ def get_investigators_skills(request, inv):
     skills_sanitized = []
     for skill in skills:
         skills_sanitized.append(
-            (
+            [
                 skill,
                 *generate_full_half_fifth_values(
                     investigator.skills[skill]['value']
                 )
-            )
+            ]
         )
-
     res = {'skills': skills_sanitized}
     return JsonResponse(res, status=200)
 
