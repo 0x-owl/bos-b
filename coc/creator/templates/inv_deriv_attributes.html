@@ -1,0 +1,44 @@
+<form class="align-items-center" action={% url "inv_data" res.investigator.uuid %} method="POST">
+    {% csrf_token %}
+
+    <div class="row">
+        <div class="col">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Health:</div>
+                </div>
+                {{ derivative_attrs_form.health }}
+                <input class="btn btn-secondary" type="submit" value="Update">
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Sanity:</div>
+                </div>
+                {{ derivative_attrs_form.sanity }}
+                <input class="btn btn-secondary" type="submit" value="Update">
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Luck:</div>
+                </div>
+                {{ derivative_attrs_form.luck }}
+                <input class="btn btn-secondary" type="submit" value="Update">
+            </div>
+        </div>
+        <div class="col">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Magic Points:</div>
+                </div>
+                {{ derivative_attrs_form.magic_points }}
+                <input class="btn btn-secondary" type="submit" value="Update">
+            </div>
+        </div>
+    </div>
+
+</form>

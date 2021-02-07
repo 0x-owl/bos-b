@@ -6,7 +6,7 @@ from creator import views
 
 urlpatterns = [
     path('random', views.generate_random_investigator),
-    path('<slug:inv>', views.get_investigator_data, name="inv_data"),
+    path('<slug:inv>', views.get_investigators_data, name="inv_data"),
     path(
         '<slug:inv>/basic_info',
         views.get_investigators_basic_info,
@@ -44,7 +44,7 @@ urlpatterns = [
     ),
     path(
         '<slug:inv>/derivative_attrs',
-        views.get_investigator_deriv_attrs,
+        views.get_investigators_deriv_attrs,
         name="inv_deriv_attrs"
     ),
 ]

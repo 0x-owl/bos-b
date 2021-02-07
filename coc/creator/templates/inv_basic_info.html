@@ -5,67 +5,51 @@
             <form action={% url "inv_data" res.investigator.uuid %} method="POST" class="form-group mb-3">
                 {% csrf_token %}
                 <div class="input-group mb-3">
+                    <input class="btn btn-lg btn-block btn-danger form-control" type="submit" value="Submit">
+                </div>
+
+                <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inv-name">Name:</span>
                     </div>
                     {{ basic_info_form.name }}
-                    <div class="input-group-append">
-                        <input class="btn btn-secondary" type="submit" value="Update">
-                    </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inv-player">Player:</span>
                     </div>
                     {{ basic_info_form.player }}
-                    <div class="input-group-append">
-                        <input class="btn btn-secondary" type="submit" value="Update">
-                    </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inv-sex">Sex:</span>
                     </div>
                     {{ basic_info_form.sex }}
-                    <div class="input-group-append">
-                        <input class="btn btn-secondary" type="submit" value="Update">
-                    </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inv-age">Age:</span>
                     </div>
                     {{ basic_info_form.age }}
-                    <div class="input-group-append">
-                        <input class="btn btn-secondary" type="submit" value="Update">
-                    </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inv-residence">Residence:</span>
                     </div>
                     {{ basic_info_form.residence }}
-                    <div class="input-group-append">
-                        <input class="btn btn-secondary" type="submit" value="Update">
-                    </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inv-birthplace">Birthplace:</span>
                     </div>
                     {{ basic_info_form.birthplace }}
-                    <div class="input-group-append">
-                        <input class="btn btn-secondary" type="submit" value="Update">
-                    </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inv-occupation">Occupation:</span>
                     </div>
                     {{ basic_info_form.occupation }}
-                    <div class="input-group-append">
-                        <input class="btn btn-secondary" type="submit" value="Update">
-                    </div>
+
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
