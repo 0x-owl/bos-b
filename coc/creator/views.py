@@ -3,6 +3,7 @@ from random import choice
 
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
+from django.template.loader import render_to_string
 
 from creator.constants import SILOUETTES as silouettes
 from creator.helpers.investigator import generate_full_half_fifth_values
@@ -200,7 +201,14 @@ def get_investigators_gear(request, inv):
         investigator=investigator,
         item__category__in=[2,4]
     )
-    return JsonResponse({'gear': items}, status=200)
+    gear = [
+        {
+            'title': item.properties['title'],
+            'stock': item.stock,
+            'price': item.properties['price']
+        } for item in items
+    ]
+    return JsonResponse({'gear': gear}, status=200)
 
 
 def get_investigators_manias_and_phobias(request, inv):

@@ -15,15 +15,30 @@
                 <th class="col">Price</th>
                 <th class="col">Stock</th>
             </thead>
-            <tbody>
-                {% for gear in res.gear %}
-                <tr>
-                    <td>{{gear.properties.title}}</td>
-                    <td>{{gear.properties.price}}</td>
-                    <td>{{gear.stock}}</td>
-                </tr>
-                {% endfor %}
+            <tbody id="inv-gear">
             </tbody>
         </table>
     </div>
 </div>
+<script>
+    $(document).ready(
+        function () {
+            $.ajax({
+                url: "{% url 'inv_gear' res.investigator.uuid %}",
+                success: function (res) {
+                    for (item of res.gear) {
+                        $("#inv-gear").append(
+                            `<tr>
+                                <td>${item["title"]}</td>
+                                <td>${item["price"]}</td>
+                                <td>${item["stock"]}</td>
+                            </tr >`
+                        )
+                    }
+                },
+                error: function (res) {
+                    console.log(res);
+                }
+            })
+        });
+</script>
