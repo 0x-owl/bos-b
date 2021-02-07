@@ -121,7 +121,8 @@ def get_investigators_attributes(request, inv):
     investigator = Investigator.objects.get(
         uuid=inv
     )
-    return JsonResponse({'attributes': investigator.attributes_detail})
+    return JsonResponse(
+        {'attributes': investigator.attributes_detail}, status=200)
 
 
 def get_investigators_portrait(request, inv):
@@ -135,7 +136,7 @@ def get_investigators_portrait(request, inv):
     default_portrait = silouettes[0] if investigator.sex == 'M' else silouettes[1]
 
     res = {'portrait': portrait.portrait.url if portrait is not None else default_portrait}
-    return JsonResponse(res)
+    return JsonResponse(res, status=200)
 
 
 def get_investigators_deriv_attrs(request, inv):
@@ -169,7 +170,7 @@ def get_investigators_skills(request, inv):
         )
 
     res = {'skills': skills_sanitized}
-    return JsonResponse(res)
+    return JsonResponse(res, status=200)
 
 
 def get_investigators_weapons(request, inv):
@@ -199,7 +200,7 @@ def get_investigators_gear(request, inv):
         investigator=investigator,
         item__category__in=[2,4]
     )
-    return JsonResponse({'gear': items})
+    return JsonResponse({'gear': items}, status=200)
 
 
 def get_investigators_manias_and_phobias(request, inv):
@@ -216,7 +217,7 @@ def get_investigators_manias_and_phobias(request, inv):
     res = {}
     res['manias'] = manias
     res['phobias'] = phobias
-    return JsonResponse(res)
+    return JsonResponse(res, status=200)
 
 
 def get_investigators_arcane(request, inv):
@@ -238,10 +239,10 @@ def get_investigators_arcane(request, inv):
         'artifacts': artifacts,
         'spells': spells  
     }
-    return JsonResponse(res)
+    return JsonResponse(res, status=200)
 
 
 def generate_random_investigator(request):
     rand = RandomInvestigator()
     rand.build()
-    return redirect(get_investigator_data, inv=rand.investigator.uuid)
+    return redirect(get_investigators_data, inv=rand.investigator.uuid)
