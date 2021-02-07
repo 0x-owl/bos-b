@@ -101,6 +101,31 @@ def get_investigator_data(request, inv, **kwargs):
         }
     )
 
+def get_investigator_basic_info(request, inv):
+    '''Generate investigator basic information form.'''
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    form = generate_basic_info_form(
+        request, investigator)
+    return render(
+        request, 'inv_basic_info.html',
+        {'basic_info_form': form}
+    )
+
+def get_investigator_deriv_attrs(request, inv):
+    '''Generate investigator derivative attributes form.'''
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    form = generate_derivative_attributes_form(
+        request, investigator)
+    return render(
+        request, 'inv_basic_info.html',
+        {'derivative_attrs_form': form}
+    )
+
+
 
 def generate_random_investigator(request):
     rand = RandomInvestigator()
