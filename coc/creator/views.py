@@ -1,7 +1,7 @@
 from json import dumps
 from random import choice
 
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
 
 from creator.constants import SILOUETTES as silouettes
@@ -21,6 +21,7 @@ def get_investigator_data(request, inv, **kwargs):
     investigator = Investigator.objects.get(
         uuid=inv
     )
+    # covered
     portrait = Portrait.objects.filter(
         investigator=investigator
     ).first()
@@ -113,6 +114,29 @@ def get_investigator_basic_info(request, inv):
         {'basic_info_form': form}
     )
 
+
+def get_investigator_attributes(request, inv):
+    '''Retrieve investigators attributes.'''
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    return JsonResponse({'attributes': investigator.attributes_detail})
+
+
+def get_investigator_portrait(request, inv):
+    '''Retrieve investigators portrait.'''
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    portrait = Portrait.objects.filter(
+        investigator=investigator
+    ).first()
+    default_portrait = silouettes[0] if investigator.sex == 'M' else silouettes[1]
+
+    res = {'portrait': portrait.portrait.url if portrait is not None else default_portrait}
+    return JsonResponse(res)
+
+
 def get_investigator_deriv_attrs(request, inv):
     '''Generate investigator derivative attributes form.'''
     investigator = Investigator.objects.get(
@@ -125,6 +149,71 @@ def get_investigator_deriv_attrs(request, inv):
         {'derivative_attrs_form': form}
     )
 
+
+def get_investigator_weapons(request, inv):
+    '''Retrieve investigators weapons.'''
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    weapons = Inventory.objects.filter(
+        investigator=investigator,
+        item__category=3)
+    for weapon in weapons:
+        weapon.properties['skill_value'] = generate_full_half_fifth_values(
+            investigator.skills[weapon.item.properties['skill']]['value']
+        )
+    return JsonResponse({'weapons': weapons})
+
+
+def get_investigator_gear(request, inv):
+    '''Retrieve investigators gear.'''
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    items = Inventory.objects.filter(
+        investigator=investigator,
+        item__category__in=[2,4]
+    )
+    return JsonResponse({'gear': items})
+
+
+def get_investigators_manias_and_phobias(request, inv):
+    '''Retrieve investigators manias and phobias.'''
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    manias = ManiaInvestigator.objects.filter(
+        investigator=investigator
+    )
+    phobias = PhobiaInvestigator.objects.filter(
+        investigator=investigator
+    )
+    res = {}
+    res['manias'] = manias
+    res['phobias'] = phobias
+    return JsonResponse(res)
+
+
+def get_investigators_arcane(request, inv):
+    '''Retrieve arcane artifacts and spells from investigator.'''
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    # Retrieve arcane
+    artifacts = Inventory.objects.filter(
+        investigator=investigator,
+        item__category=1
+
+    )
+    spells = SpellInvestigator.objects.filter(
+        investigator=investigator
+    )
+    res = {}
+    res['arcane'] = {
+        'artifacts': artifacts,
+        'spells': spells  
+    }
+    return JsonResponse(res)
 
 
 def generate_random_investigator(request):

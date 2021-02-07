@@ -9,8 +9,38 @@ urlpatterns = [
     path('<slug:inv>', views.get_investigator_data, name="inv_data"),
     path(
         '<slug:inv>/basic_info',
-        views.get_investigator_basic_info,
+        views.get_investigators_basic_info,
         name="inv_basic_info"
+    ),
+    path(
+        '<slug:inv>/attrs',
+        views.get_investigators_attributes,
+        name="inv_attrs"
+    ),
+    path(
+        '<slug:inv>/portrait',
+        views.get_investigators_portrait,
+        name="inv_portrait"
+    ),
+    path(
+        '<slug:inv>/wepons',
+        views.get_investigators_weapons,
+        name="inv_weapons"
+    ),
+    path(
+        '<slug:inv>/gear',
+        views.get_investigators_gear,
+        name="inv_gear"
+    ),
+    path(
+        '<slug:inv>/manias_phobias',
+        views.get_investigators_manias_and_phobias,
+        name="inv_manias_phobias"
+    ),
+    path(
+        '<slug:inv>/arcane',
+        views.get_investigators_arcane,
+        name="inv_arcane"
     ),
     path(
         '<slug:inv>/derivative_attrs',
