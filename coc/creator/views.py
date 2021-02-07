@@ -15,7 +15,7 @@ from creator.random_inv import RandomInvestigator
 
 
 # Create your views here.
-def get_investigator_data(request, inv, **kwargs):
+def get_investigators_data(request, inv, **kwargs):
     '''Retrieve all information associated to an
     Investigator.'''
     investigator = Investigator.objects.get(
@@ -92,7 +92,7 @@ def get_investigator_data(request, inv, **kwargs):
         # This redirect forces a full update of the character sheet data and
         # pulling a get request instead of being a post and making easier the
         # reload 
-        return redirect(get_investigator_data, inv=investigator.uuid)
+        return redirect(get_investigators_data, inv=investigator.uuid)
     return render(
         request, 'character_sheet.html',
         {
@@ -102,7 +102,7 @@ def get_investigator_data(request, inv, **kwargs):
         }
     )
 
-def get_investigator_basic_info(request, inv):
+def get_investigators_basic_info(request, inv):
     '''Generate investigator basic information form.'''
     investigator = Investigator.objects.get(
         uuid=inv
@@ -115,7 +115,7 @@ def get_investigator_basic_info(request, inv):
     )
 
 
-def get_investigator_attributes(request, inv):
+def get_investigators_attributes(request, inv):
     '''Retrieve investigators attributes.'''
     investigator = Investigator.objects.get(
         uuid=inv
@@ -123,7 +123,7 @@ def get_investigator_attributes(request, inv):
     return JsonResponse({'attributes': investigator.attributes_detail})
 
 
-def get_investigator_portrait(request, inv):
+def get_investigators_portrait(request, inv):
     '''Retrieve investigators portrait.'''
     investigator = Investigator.objects.get(
         uuid=inv
@@ -137,7 +137,7 @@ def get_investigator_portrait(request, inv):
     return JsonResponse(res)
 
 
-def get_investigator_deriv_attrs(request, inv):
+def get_investigators_deriv_attrs(request, inv):
     '''Generate investigator derivative attributes form.'''
     investigator = Investigator.objects.get(
         uuid=inv
@@ -150,7 +150,7 @@ def get_investigator_deriv_attrs(request, inv):
     )
 
 
-def get_investigator_weapons(request, inv):
+def get_investigators_weapons(request, inv):
     '''Retrieve investigators weapons.'''
     investigator = Investigator.objects.get(
         uuid=inv
@@ -165,7 +165,7 @@ def get_investigator_weapons(request, inv):
     return JsonResponse({'weapons': weapons})
 
 
-def get_investigator_gear(request, inv):
+def get_investigators_gear(request, inv):
     '''Retrieve investigators gear.'''
     investigator = Investigator.objects.get(
         uuid=inv
