@@ -2,7 +2,7 @@
     <div class="col">
         <div class="row">
             <!-- Basic Investigator information form -->
-            <form action={% url "inv_data" res.investigator.uuid %} method="POST" class="form-group mb-3">
+            <form action={% url "sheet" res.investigator.uuid %} method="POST" class="form-group mb-3">
                 {% csrf_token %}
                 <div class="input-group mb-3">
                     <input class="btn btn-lg btn-block btn-danger form-control" type="submit" value="Submit">

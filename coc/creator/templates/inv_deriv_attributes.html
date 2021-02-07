@@ -1,4 +1,4 @@
-<form class="align-items-center" action={% url "inv_data" res.investigator.uuid %} method="POST">
+<form class="align-items-center" action={% url "sheet" res.investigator.uuid %} method="POST">
     {% csrf_token %}
 
     <div class="row">

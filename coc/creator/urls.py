@@ -8,9 +8,9 @@ urlpatterns = [
     path('random', views.generate_random_investigator),
     path('<slug:inv>', views.get_investigators_data, name="inv_data"),
     path(
-        '<slug:inv>/basic_info',
+        '<slug:inv>/sheet',
         views.get_investigators_basic_info,
-        name="inv_basic_info"
+        name="sheet"
     ),
     path(
         '<slug:inv>/attrs',
