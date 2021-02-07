@@ -23,6 +23,11 @@ urlpatterns = [
         name="inv_portrait"
     ),
     path(
+        '<slug:inv>/skills',
+        views.get_investigators_skills,
+        name="inv_skills"
+    ),
+    path(
         '<slug:inv>/wepons',
         views.get_investigators_weapons,
         name="inv_weapons"

@@ -48,14 +48,14 @@ def get_investigators_data(request, inv, **kwargs):
     res['skills'] = skills_sanitized
 
     # Retrieve "inventory"
-    weapons = Inventory.objects.filter(
-        investigator=investigator,
-        item__category=3)
-    for weapon in weapons:
-        weapon.properties['skill_value'] = generate_full_half_fifth_values(
-            investigator.skills[weapon.item.properties['skill']]['value']
-        )
-    res['weapons'] = weapons
+    # weapons = Inventory.objects.filter(
+    #     investigator=investigator,
+    #     item__category=3)
+    # for weapon in weapons:
+    #     weapon.properties['skill_value'] = generate_full_half_fifth_values(
+    #         investigator.skills[weapon.item.properties['skill']]['value']
+    #     )
+    # res['weapons'] = weapons
 
     items = Inventory.objects.filter(
         investigator=investigator,
@@ -101,6 +101,7 @@ def get_investigators_data(request, inv, **kwargs):
             'derivative_attrs_form': derivative_attrs_form
         }
     )
+
 
 def get_investigators_basic_info(request, inv):
     '''Generate investigator basic information form.'''
@@ -150,6 +151,27 @@ def get_investigators_deriv_attrs(request, inv):
     )
 
 
+def get_investigators_skills(request, inv):
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    # Retrieve skills
+    skills = sorted(investigator.skills)
+    skills_sanitized = []
+    for skill in skills:
+        skills_sanitized.append(
+            (
+                skill,
+                *generate_full_half_fifth_values(
+                    investigator.skills[skill]['value']
+                )
+            )
+        )
+
+    res = {'skills': skills_sanitized}
+    return JsonResponse(res)
+
+
 def get_investigators_weapons(request, inv):
     '''Retrieve investigators weapons.'''
     investigator = Investigator.objects.get(
@@ -158,11 +180,14 @@ def get_investigators_weapons(request, inv):
     weapons = Inventory.objects.filter(
         investigator=investigator,
         item__category=3)
+    weapons_results = []
     for weapon in weapons:
-        weapon.properties['skill_value'] = generate_full_half_fifth_values(
+        w_dict = weapon.properties
+        w_dict['skill_value'] = generate_full_half_fifth_values(
             investigator.skills[weapon.item.properties['skill']]['value']
         )
-    return JsonResponse({'weapons': weapons})
+        weapons_results.append(w_dict)
+    return JsonResponse({'weapons': weapons_results}, status=200)
 
 
 def get_investigators_gear(request, inv):

@@ -20,21 +20,7 @@
         <th class="col">Ammo.</th>
         <th class="col">Malf.</th>
     </thead>
-    <tbody>
-        {% for weapon in res.weapons %}
-        <tr>
-            <td>{{ weapon.properties.title }}</td>
-            <td>{{ weapon.properties.skill_value.0 }}</td>
-            <td>{{ weapon.properties.skill_value.1 }}</td>
-            <td>{{ weapon.properties.skill_value.2 }}</td>
-            <td>{{ weapon.properties.damage }}</td>
-            <td>{{ weapon.properties.base_range }}</td>
-            <td>{{ weapon.properties.uses_per_round }}</td>
-            <td>{{ weapon.properties.bullets_in_gun_mag }}</td>
-            <td>{{ weapon.properties.ammo }}</td>
-            <td>{{ weapon.properties.malfunction }}</td>
-        </tr>
-        {% endfor %}
+    <tbody id="inv-weapons">
     </tbody>
 </table>
 <hr>
