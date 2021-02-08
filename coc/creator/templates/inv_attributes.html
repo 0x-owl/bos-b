@@ -10,6 +10,14 @@
 </div>
 <div class="row" id="inv-attrs">
 </div>
+<hr>
+<!-- Derivative attributes -->
+{% include "inv_deriv_attributes.html" %}
+<hr>
+<!-- Build + DMG Bonus-->
+<div class="row" id="inv-extra-attr">
+</div>
+<hr>
 <script>
     $(document).ready(
         function () {
@@ -96,8 +104,15 @@
                                 </div>
                             </div>
                         </div>`
+                    );
+                    $("#inv-extra-attr").append(
+                        `<div class="col">
+                            Build: <b>${attributes.BUILD[1]} </b>
+                        </div >
+                        <div class="col offset-md-7">
+                            Damage Bonus: <b>${attributes.BUILD[0]}</b>
+                        </div>`
                     )
-
                 },
                 error: function (res) {
                     console.log(res);
@@ -105,10 +120,3 @@
             })
         });
 </script>
-<hr>
-<!-- Derivative attributes -->
-{% include "inv_deriv_attributes.html" %}
-<hr>
-<!-- Build + DMG Bonus-->
-{% include "inv_extra_attrs.html" %}
-<hr>

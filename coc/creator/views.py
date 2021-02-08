@@ -23,7 +23,6 @@ def get_investigators_data(request, inv, **kwargs):
         uuid=inv
     )
     res = {
-        'attributes': investigator.attributes_detail,
         'investigator': investigator
     }
     # Retrieve manias and phobias
@@ -87,6 +86,7 @@ def get_investigators_attributes(request, inv):
     )
     attributes = investigator.attributes_detail
     attributes['MOV'] = [investigator.move]
+    attributes["BUILD"] = list(investigator.build)
     return JsonResponse(
         {'attributes': attributes}, status=200)
 
