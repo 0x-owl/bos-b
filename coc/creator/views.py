@@ -22,47 +22,10 @@ def get_investigators_data(request, inv, **kwargs):
     investigator = Investigator.objects.get(
         uuid=inv
     )
-    # covered
-    portrait = Portrait.objects.filter(
-        investigator=investigator
-    ).first()
-    default_portrait = silouettes[0] if investigator.sex == 'M' else silouettes[1]
-
     res = {
-        'portrait': portrait.portrait.url if portrait is not None else default_portrait,
         'attributes': investigator.attributes_detail,
         'investigator': investigator
     }
-    # Retrieve skills
-    skills = sorted(investigator.skills)
-    skills_sanitized = []
-    for skill in skills:
-        skills_sanitized.append(
-            (
-                skill,
-                *generate_full_half_fifth_values(
-                    investigator.skills[skill]['value']
-                )
-            )
-        )
-
-    res['skills'] = skills_sanitized
-
-    # Retrieve "inventory"
-    # weapons = Inventory.objects.filter(
-    #     investigator=investigator,
-    #     item__category=3)
-    # for weapon in weapons:
-    #     weapon.properties['skill_value'] = generate_full_half_fifth_values(
-    #         investigator.skills[weapon.item.properties['skill']]['value']
-    #     )
-    # res['weapons'] = weapons
-
-    items = Inventory.objects.filter(
-        investigator=investigator,
-        item__category__in=[2,4]
-    )
-    res['gear'] = items
     # Retrieve manias and phobias
     manias = ManiaInvestigator.objects.filter(
         investigator=investigator
@@ -122,8 +85,10 @@ def get_investigators_attributes(request, inv):
     investigator = Investigator.objects.get(
         uuid=inv
     )
+    attributes = investigator.attributes_detail
+    attributes['MOV'] = [investigator.move]
     return JsonResponse(
-        {'attributes': investigator.attributes_detail}, status=200)
+        {'attributes': attributes}, status=200)
 
 
 def get_investigators_portrait(request, inv):
