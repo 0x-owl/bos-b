@@ -12,6 +12,7 @@
 <script>
     $(document).ready(
         function () {
+            $.ajaxSetup({ cache: false });
             $.ajax({
                 url: "{% url 'inv_skills' res.investigator.uuid %}",
                 success: function (res) {

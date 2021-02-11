@@ -10,7 +10,7 @@ from creator.helpers.investigator import generate_full_half_fifth_values
 from creator.helpers.views_helper import (generate_basic_info_form,
                                           generate_derivative_attributes_form)
 from creator.models import (Inventory, Investigator, ManiaInvestigator,
-                            PhobiaInvestigator, Portrait, Skills,
+                            Occupation, PhobiaInvestigator, Portrait, Skills,
                             SpellInvestigator)
 from creator.random_inv import RandomInvestigator
 
@@ -47,8 +47,6 @@ def get_investigators_data(request, inv, **kwargs):
         'artifacts': artifacts,
         'spells': spells  
     }
-    basic_info_form = generate_basic_info_form(
-        request, investigator)
     derivative_attrs_form = generate_derivative_attributes_form(
         request, investigator)
     if request.method == 'POST':
@@ -60,22 +58,35 @@ def get_investigators_data(request, inv, **kwargs):
         request, 'character_sheet.html',
         {
             'res': res,
-            'basic_info_form': basic_info_form,
             'derivative_attrs_form': derivative_attrs_form
         }
     )
 
 
-def get_investigators_basic_info(request, inv):
+def investigators_basic_info(request, inv):
     '''Generate investigator basic information form.'''
-    investigator = Investigator.objects.get(
-        uuid=inv
-    )
-    form = generate_basic_info_form(
-        request, investigator)
-    return render(
-        request, 'inv_basic_info.html',
-        {'basic_info_form': form}
+    investigator = generate_basic_info_form(
+        request, inv)
+    occupations = [
+        [occ.uuid, occ.__str__()] for occ in 
+        Occupation.objects.all()
+    ]
+    investigator = {
+        'name': investigator.name,
+        'uuid': investigator.uuid,
+        'sex': investigator.sex,
+        'occupation': investigator.occupation.uuid,
+        'age': investigator.age,
+        'player': investigator.player,
+        'residence': investigator.residence,
+        'birthplace': investigator.birthplace
+    }
+    return JsonResponse(
+        {
+            'investigator': investigator,
+            'occupations': occupations
+        },
+        status=200
     )
 
 
