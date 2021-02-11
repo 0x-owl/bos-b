@@ -62,35 +62,7 @@ class InvestigatorBasicInfoForm(Form):
 class DerivativeAttributesForm(Form):
     '''Form for the attributes that are initialized based on
     the investigators attributes.'''
-    health = IntegerField(
-        widget=NumberInput(attrs={
-            'class': 'form-control',
-            'aria-describedby': 'inv-health',
-            'min': 0,
-            'max': 20
-        })
-    )
-    sanity = IntegerField(
-        widget=NumberInput(attrs={
-            'class': 'form-control',
-            'aria-describedby': 'inv-sanity',
-            'min': 0,
-            'max': 99
-        })
-    )
-    magic_points = IntegerField(
-        widget=NumberInput(attrs={
-            'class': 'form-control',
-            'aria-describedby': 'inv-mp',
-            'min': 0,
-            'max': 24
-        })
-    )
-    luck = IntegerField(
-        widget=NumberInput(attrs={
-            'class': 'form-control',
-            'aria-describedby': 'inv-luck',
-            'min': 0,
-            'max': 99
-        })
-    )
+    health = IntegerField()
+    sanity = IntegerField()
+    magic_points = IntegerField()
+    luck = IntegerField()

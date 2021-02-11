@@ -47,19 +47,10 @@ def get_investigators_data(request, inv, **kwargs):
         'artifacts': artifacts,
         'spells': spells  
     }
-    derivative_attrs_form = generate_derivative_attributes_form(
-        request, investigator)
-    if request.method == 'POST':
-        # This redirect forces a full update of the character sheet data and
-        # pulling a get request instead of being a post and making easier the
-        # reload 
-        return redirect(get_investigators_data, inv=investigator.uuid)
+
     return render(
         request, 'character_sheet.html',
-        {
-            'res': res,
-            'derivative_attrs_form': derivative_attrs_form
-        }
+        {'res': res}
     )
 
 
@@ -118,14 +109,17 @@ def get_investigators_portrait(request, inv):
 
 def get_investigators_deriv_attrs(request, inv):
     '''Generate investigator derivative attributes form.'''
-    investigator = Investigator.objects.get(
-        uuid=inv
-    )
-    form = generate_derivative_attributes_form(
-        request, investigator)
-    return render(
-        request, 'inv_basic_info.html',
-        {'derivative_attrs_form': form}
+    inv = generate_derivative_attributes_form(
+        request, inv)
+    investigator_relevant_data = {
+        "health": inv.health,
+        "magic_points": inv.magic_points,
+        "luck": inv.luck,
+        "sanity": inv.sanity
+    }
+    return JsonResponse(
+        {'investigator': investigator_relevant_data},
+        status=200
     )
 
 

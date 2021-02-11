@@ -1,4 +1,5 @@
-<form class="align-items-center" action={% url "inv_deriv_attrs" res.investigator.uuid %} method="POST">
+<form id="inv-deriv-attrs" class="align-items-center" action={% url "inv_deriv_attrs" res.investigator.uuid %}
+    method="POST">
     {% csrf_token %}
 
     <div class="row">
@@ -7,7 +8,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Health:</div>
                 </div>
-                {{ derivative_attrs_form.health }}
+                <input type="number" id="inv-health-inp" class="form-control" max=20 aria-describedby='inv-health'>
                 <input class="btn btn-secondary" type="submit" value="Update">
             </div>
         </div>
@@ -17,7 +18,8 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Sanity:</div>
                 </div>
-                {{ derivative_attrs_form.sanity }}
+                <input type="number" id="inv-sanity-inp" class="form-control" max=99 min=0
+                    aria-describedby='inv-sanity'>
                 <input class="btn btn-secondary" type="submit" value="Update">
             </div>
         </div>
@@ -26,7 +28,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Luck:</div>
                 </div>
-                {{ derivative_attrs_form.luck }}
+                <input type="number" id="inv-luck-inp" class="form-control" max=99 min=0 aria-describedby='inv-luck'>
                 <input class="btn btn-secondary" type="submit" value="Update">
             </div>
         </div>
@@ -35,10 +37,59 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Magic Points:</div>
                 </div>
-                {{ derivative_attrs_form.magic_points }}
+                <input type="number" id="inv-mp-inp" class="form-control" max=24 min=0 aria-describedby='inv-mp-points'>
                 <input class="btn btn-secondary" type="submit" value="Update">
             </div>
         </div>
     </div>
-
 </form>
+
+<script>
+    $(document).ready(
+        $("#inv-deriv-attrs").on('submit', function (evt) {
+            evt.preventDefault();
+            var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+            $.ajax({
+                url: "{% url 'inv_deriv_attrs' res.investigator.uuid %}",
+                type: "POST",
+                data: {
+                    'health': $("#inv-health-inp").val(),
+                    'magic_points': $("#inv-mp-inp").val(),
+                    'sanity': $("#inv-sanity-inp").val(),
+                    'luck': $("#inv-luck-inp").val()
+                },
+                beforeSend: function (xhr, settings) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                },
+                success: function (res) {
+                    let investigator = res.investigator;
+                    $("#inv-health-inp").val(investigator['health']);
+                    $("#inv-mp-inp").val(investigator['magic_points']);
+                    $("#inv-sanity-inp").val(investigator['sanity']);
+                    $("#inv-luck-inp").val(investigator['luck']);
+                },
+                error: function (res) {
+                    console.log(res);
+                }
+            })
+        })
+    );
+    $(document).ready(
+        $.ajaxSetup({ cache: false }),
+        $("#inv-deriv-attrs").ready(
+            $.ajax({
+                url: "{% url 'inv_deriv_attrs' res.investigator.uuid %}",
+                success: function (res) {
+                    let investigator = res.investigator;
+                    $("#inv-health-inp").val(investigator['health']);
+                    $("#inv-mp-inp").val(investigator['magic_points']);
+                    $("#inv-sanity-inp").val(investigator['sanity']);
+                    $("#inv-luck-inp").val(investigator['luck']);
+                },
+                error: function (res) {
+                    console.log(res);
+                }
+            })
+        )
+    );
+</script>
