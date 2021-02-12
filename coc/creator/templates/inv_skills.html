@@ -9,19 +9,4 @@
 </div>
 <div style="font-size: 15px;" class="row" id="inv-skills">
 </div>
-{% load static %}
-<script type="module">
-    import { skills } from '{% static "creator/js/skills.js" %}';
-    $("#inv-skills").ready(
-        function () {
-            $.ajaxSetup({ cache: false });
-            $.ajax({
-                url: "{% url 'inv_skills' res.investigator.uuid %}",
-                success: function (res) { skills(res) },
-                error: function (res) {
-                    console.log(res);
-                }
-            })
-        });
-</script>
 <hr>
