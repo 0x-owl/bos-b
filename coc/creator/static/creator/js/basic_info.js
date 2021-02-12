@@ -61,3 +61,9 @@ export function get_basic_info(res) {
         }
     }
 }
+
+export function get_portrait(res) {
+    $("#inv-portrait").append(
+        `<img class="rounded float-right img-thumbnail" src="${res.portrait}" alt="Investigator portrait">`
+    )
+}

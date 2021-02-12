@@ -20,25 +20,3 @@
         </table>
     </div>
 </div>
-<script>
-    $(document).ready(
-        function () {
-            $.ajax({
-                url: "{% url 'inv_gear' res.investigator.uuid %}",
-                success: function (res) {
-                    for (item of res.gear) {
-                        $("#inv-gear").append(
-                            `<tr>
-                                <td>${item["title"]}</td>
-                                <td>${item["price"]}</td>
-                                <td>${item["stock"]}</td>
-                            </tr >`
-                        )
-                    }
-                },
-                error: function (res) {
-                    console.log(res);
-                }
-            })
-        });
-</script>

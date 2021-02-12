@@ -1,0 +1,166 @@
+{% load static %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+<!-- Skills Ajax -->
+<script type="module">
+    import { skills } from '{% static "creator/js/skills.js" %}';
+    $("#inv-skills").ready(
+        function () {
+            $.ajaxSetup({ cache: false });
+            $.ajax({
+                url: "{% url 'inv_skills' res.investigator.uuid %}",
+                success: function (res) { skills(res) },
+                error: function (res) {
+                    console.log(res);
+                }
+            })
+        });
+</script>
+<!-- Basic Info Ajax -->
+<script type="module">
+    import { post_basic_info, get_basic_info } from '{% static "creator/js/basic_info.js" %}';
+
+    $(document).ready(
+        $("#basic-info").on('submit', function (evt) {
+            evt.preventDefault();
+            var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+            $.ajax({
+                url: "{% url 'basic_info' res.investigator.uuid %}",
+                type: "POST",
+                data: {
+                    'name': $("#inv-name-inp").val(),
+                    'sex': $("#inv-sex-inp").val(),
+                    'age': $("#inv-age-inp").val(),
+                    'player': $("#inv-player-inp").val(),
+                    'residence': $("#inv-residence-inp").val(),
+                    'birthplace': $("#inv-birthplace-inp").val(),
+                    'occupation': $('#inv-occupation-inp').val()
+                },
+                beforeSend: function (xhr, settings) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                },
+                success: function (res) {
+                    post_basic_info(res)
+                }
+            })
+        }));
+
+    $("#basic-info").ready(
+        $.ajaxSetup({ cache: false }),
+        $.ajax({
+            url: "{% url 'basic_info' res.investigator.uuid %}",
+            success: function (res) {
+                get_basic_info(res)
+            },
+            error: function (res) {
+                console.log(res);
+            }
+        })
+    );
+</script>
+<!-- Portrait Ajax -->
+<script type="module">
+    import { get_portrait } from '{% static "creator/js/basic_info.js" %}';
+    $("#inv-portrait").ready(
+        function () {
+            $.ajax({
+                url: "{% url 'inv_portrait' res.investigator.uuid %}",
+                success: function (res) {
+                    get_portrait(res)
+                },
+                error: function (res) {
+                    console.log(res);
+                }
+            })
+        });
+</script>
+<!-- Attributes Ajax -->
+<script type="module">
+    import { get_attributes } from '{% static "creator/js/attributes.js" %}';
+    $("#inv-attrs").ready(
+        function () {
+            $.ajax({
+                url: "{% url 'inv_attrs' res.investigator.uuid %}",
+                success: function (res) {
+                    get_attributes(res)
+                },
+                error: function (res) {
+                    console.log(res);
+                }
+            })
+        });
+</script>
+<!-- Deriv attributes Ajax -->
+<script type="module">
+    import { get_deriv_attrs } from '{% static "creator/js/deriv_attributes.js" %}';
+
+    $.ajaxSetup({ cache: false });
+    $("#inv-deriv-attrs").on('submit', function (evt) {
+        evt.preventDefault();
+        var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+        $.ajax({
+            url: "{% url 'inv_deriv_attrs' res.investigator.uuid %}",
+            type: "POST",
+            data: {
+                'health': $("#inv-health-inp").val(),
+                'magic_points': $("#inv-mp-inp").val(),
+                'sanity': $("#inv-sanity-inp").val(),
+                'luck': $("#inv-luck-inp").val()
+            },
+            beforeSend: function (xhr, settings) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            },
+            success: function (res) {
+                get_deriv_attrs(res)
+            },
+            error: function (res) {
+                console.log(res);
+            }
+        })
+    })
+    $("#inv-deriv-attrs").ready(
+        $.ajax({
+            url: "{% url 'inv_deriv_attrs' res.investigator.uuid %}",
+            success: function (res) {
+                get_deriv_attrs(res)
+            },
+            error: function (res) {
+                console.log(res);
+            }
+        })
+    )
+</script>
+<!-- Gear Ajax -->
+<script type="module">
+    import { get_gear } from '{% static "creator/js/gear.js" %}';
+
+    $("#inv-gear").ready(
+        function () {
+            $.ajax({
+                url: "{% url 'inv_gear' res.investigator.uuid %}",
+                success: function (res) {
+                    get_gear(res)
+                },
+                error: function (res) {
+                    console.log(res);
+                }
+            })
+        });
+</script>
+<!-- Weaons Ajax -->
+<script type="module">
+    import { get_weapons } from '{% static "creator/js/weapons.js" %}';
+    $("#inv-weapons").ready(
+        function () {
+            $.ajax({
+                url: "{% url 'inv_weapons' res.investigator.uuid %}",
+                success: function (res) {
+                    get_weapons(res)
+                },
+                error: function (res) {
+                    console.log(res);
+                }
+            })
+        });
+</script>

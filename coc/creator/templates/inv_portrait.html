@@ -1,18 +1,2 @@
 <div class="col offset-md-6" id="inv-portrait">
 </div>
-<script>
-    $(document).ready(
-        function () {
-            $.ajax({
-                url: "{% url 'inv_portrait' res.investigator.uuid %}",
-                success: function (res) {
-                    $("#inv-portrait").append(
-                        `<img class="rounded float-right img-thumbnail" src="${res.portrait}" alt="Investigator portrait">`
-                    )
-                },
-                error: function (res) {
-                    console.log(res);
-                }
-            })
-        });
-</script>
