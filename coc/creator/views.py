@@ -25,15 +25,6 @@ def get_investigators_data(request, inv, **kwargs):
     res = {
         'investigator': investigator
     }
-    # Retrieve manias and phobias
-    manias = ManiaInvestigator.objects.filter(
-        investigator=investigator
-    )
-    phobias = PhobiaInvestigator.objects.filter(
-        investigator=investigator
-    )
-    res['manias'] = manias
-    res['phobias'] = phobias
     # Retrieve arcane
     artifacts = Inventory.objects.filter(
         investigator=investigator,
@@ -191,9 +182,12 @@ def get_investigators_manias_and_phobias(request, inv):
     phobias = PhobiaInvestigator.objects.filter(
         investigator=investigator
     )
-    res = {}
-    res['manias'] = manias
-    res['phobias'] = phobias
+    phobias = [[phobia.uuid, phobia.title] for phobia in phobias]
+    manias = [[mania.uuid, mania.title] for mania in manias]
+    res = {
+        'manias': manias,
+        'phobias': phobias
+    }
     return JsonResponse(res, status=200)
 
 
@@ -211,10 +205,25 @@ def get_investigators_arcane(request, inv):
     spells = SpellInvestigator.objects.filter(
         investigator=investigator
     )
-    res = {}
-    res['arcane'] = {
+    spells = [
+        {
+            'name': spell.spell.name,
+            'cost': spell.spell.cost,
+            'casting_time': spell.spell.casting_time,
+            'description': spell.spell.description,
+            'deeper_magic': spell.spell.deeper_magic,
+            'alternative_names': spell.spell.alternative_names
+        }
+        for spell in spells
+    ]
+    artifacts = [
+        artifact.properties.title
+        for artifact in artifacts
+    ]
+    res = {
         'artifacts': artifacts,
-        'spells': spells  
+        'spells': spells,
+        'encounters': investigator.encounters_with_strange_entities
     }
     return JsonResponse(res, status=200)
 

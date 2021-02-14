@@ -25,43 +25,19 @@
         <p>{{res.investigator.traits}}</p>
         <b>Injuries & Scars:</b>
         <p>{{res.investigator.injure_scars}}</p>
-        <b>Phobias & Manias:</b>
-        <ul>
-            {% for phobia in res.phobias %}
-            <li>{{phobia}}</li>
-            {% endfor %}
+        <b id="inv-phobias-manias">Phobias & Manias:</b>
+        <ul id="inv-phobias">
         </ul>
-        <ul>
-            {% for mania in res.manias %}
-            <li>{{mania}}</li>
-            {% endfor %}
+        <ul id="inv-manias">
         </ul>
-        <span><b>Arcane Tomes, Spells & Artifacts:</b></span><br>
+        <span id="inv-arcane"><b>Arcane Tomes, Spells & Artifacts:</b></span><br>
         <span><i>Spells:</i></span>
-        <ul style="list-style-type: none;">
-            {% for spell in res.arcane.spells %}
-            <li>
-                <dl>
-                    <dt><u>{{spell.spell.name}}</u> ({{spell.spell.cost}})</dt>
-                    <dd>
-                        <span><b>Casting Time:</b></span> {{spell.spell.casting_time}}<br>
-                        <span><b>Desc.:</b></span> {{spell.spell.description}}<br>
-                        <span><b>Deeper Magic:</b></span>{{spell.spell.deeper_magic}}<br>
-                        <span><b>Alt Names:</b></span> <i>{{spell.spell.alternative_names}}</i>
-                    </dd>
-
-                </dl>
-            </li>
-            {% endfor %}
+        <ul id="inv-spells" style="list-style-type: none;">
         </ul>
         <span><i>Artifacts:</i></span>
-        <ul>
-            {% for artifact in res.arcane.artifacts %}
-            <li>{{artifact}}</li>
-            {% endfor %}
+        <ul id="inv-artifacts">
         </ul>
-        <b>Encounters with strange entities:</b>
-        <p>{{res.investigator.encounters_with_strange_entities}}</p>
+        <b id="inv-encounters">Encounters with strange entities:</b>
     </div>
 </div>
 <hr>

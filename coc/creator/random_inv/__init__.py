@@ -2,19 +2,16 @@
 # random investigator generator module.
 # '''
 from os import path
-from random import randint, choice, shuffle
+from random import choice, randint, shuffle
 
-from django.contrib.auth import get_user_model
-from django.db.models import Q
-
-from simplejson import load
-
-from creator.helpers.model_helpers import roller_stats
 from creator.helpers.fixtures.first_names import FIRST_NAMES
 from creator.helpers.fixtures.last_names import LAST_NAMES
-from creator.models import (Investigator, Occupation, Skills, Inventory, Item, Spell,
-                            SpellInvestigator)
-
+from creator.helpers.model_helpers import roller_stats
+from creator.models import (Inventory, Investigator, Item, Occupation, Skills,
+                            Spell, SpellInvestigator)
+from django.contrib.auth import get_user_model
+from django.db.models import Q
+from simplejson import load
 
 User = get_user_model()
 
@@ -179,7 +176,7 @@ class RandomInvestigator:
     '''Wrapper class for random investigators.'''
     def __init__(self, *args, **kwargs):
         self.lucky_gen = randint(1, 20) == 20
- 
+
     def build(self):
         self.investigator = self.base_build()
         self.roll_attributes()

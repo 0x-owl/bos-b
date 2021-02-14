@@ -164,3 +164,36 @@
             })
         });
 </script>
+<!-- Backstory AJAX -->
+<!-- Mania and Phobias -->
+<script type="module">
+    import { manias_phobias } from '{% static "creator/js/mania_phobias.js" %}'
+
+    $("#inv-phobias-manias").ready(
+        $.ajax({
+            url: "{% url 'inv_manias_phobias' res.investigator.uuid %}",
+            success: function (res) {
+                manias_phobias(res)
+            },
+            error: function (res) {
+                console.log(res);
+            }
+        })
+    )
+</script>
+<!-- Arcane -->
+<script type="module">
+    import { get_arcane } from '{% static "creator/js/arcane.js" %}'
+
+    $("#inv-arcane").ready(
+        $.ajax({
+            url: "{% url 'inv_arcane' res.investigator.uuid %}",
+            success: function (res) {
+                get_arcane(res)
+            },
+            error: function (res) {
+                console.log(res);
+            }
+        })
+    )
+</script>
