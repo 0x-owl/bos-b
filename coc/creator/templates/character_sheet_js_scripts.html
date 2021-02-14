@@ -165,6 +165,21 @@
         });
 </script>
 <!-- Backstory AJAX -->
+<script type="module">
+    import { get_backstory } from '{% static "creator/js/back_story.js" %}'
+
+    $("#inv-backstory").ready(
+        $.ajax({
+            url: "{% url 'inv_backstory' res.investigator.uuid %}",
+            success: function (res) {
+                get_backstory(res)
+            },
+            error: function (res) {
+                console.log(res);
+            }
+        })
+    )
+</script>
 <!-- Mania and Phobias -->
 <script type="module">
     import { manias_phobias } from '{% static "creator/js/mania_phobias.js" %}'

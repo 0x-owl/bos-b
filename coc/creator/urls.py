@@ -52,4 +52,9 @@ urlpatterns = [
         views.get_investigators_deriv_attrs,
         name="inv_deriv_attrs"
     ),
+    path(
+        '<slug:inv>/backstory',
+        views.get_investigators_backstory,
+        name="inv_backstory"
+    )
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

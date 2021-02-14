@@ -25,19 +25,6 @@ def get_investigators_data(request, inv, **kwargs):
     res = {
         'investigator': investigator
     }
-    # Retrieve arcane
-    artifacts = Inventory.objects.filter(
-        investigator=investigator,
-        item__category=1
-
-    )
-    spells = SpellInvestigator.objects.filter(
-        investigator=investigator
-    )
-    res['arcane'] = {
-        'artifacts': artifacts,
-        'spells': spells  
-    }
 
     return render(
         request, 'character_sheet.html',
@@ -226,6 +213,25 @@ def get_investigators_arcane(request, inv):
         'encounters': investigator.encounters_with_strange_entities
     }
     return JsonResponse(res, status=200)
+
+def get_investigators_backstory(request, inv):
+    '''Retrieve arcane artifacts and spells from investigator.'''
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    res = {
+        'description': investigator.description,
+        'ideologies': investigator.ideologies,
+        'significant_people': investigator.significant_people,
+        'meaningful_locations': investigator.meaningful_locations,
+        'treasured_possessions': investigator.treasured_possessions,
+        'traits': investigator.traits,
+        'injuries_scars': investigator.injure_scars
+    }
+    return JsonResponse(res, status=200)
+
+
+
 
 
 def generate_random_investigator(request):

@@ -1,0 +1,23 @@
+export function get_backstory(res) {
+    $("#inv-description").after(
+        `<p>${res.description}</p>`
+    );
+    $("#inv-ideologies").after(
+        `<p>${res.ideologies}</p>`
+    )
+    $("#inv-significant-people").after(
+        `<p>${res.significant_people}</p>`
+    )
+    $("#inv-meaningful-locations").after(
+        `<p>${res.meaningful_locations}</p>`
+    )
+    $("#inv-treasured-possessions").after(
+        `<p>${res.treasured_possessions}</p>`
+    )
+    $("#inv-traits").after(
+        `<p>${res.traits}</p>`
+    )
+    $("#inv-injuries-scars").after(
+        `<p>${res.injuries_scars}</p>`
+    )
+}
