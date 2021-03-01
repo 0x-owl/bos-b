@@ -14,7 +14,7 @@ urlpatterns = [
     ),
     path(
         '<slug:inv>/attrs',
-        views.get_investigators_attributes,
+        views.investigators_attributes,
         name="inv_attrs"
     ),
     path(
@@ -49,7 +49,7 @@ urlpatterns = [
     ),
     path(
         '<slug:inv>/derivative_attrs',
-        views.get_investigators_deriv_attrs,
+        views.investigators_deriv_attrs,
         name="inv_deriv_attrs"
     ),
     path(

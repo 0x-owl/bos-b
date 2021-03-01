@@ -1,4 +1,5 @@
-from creator.forms import DerivativeAttributesForm, InvestigatorBasicInfoForm
+from creator.forms import (AttributesForm, DerivativeAttributesForm,
+                           InvestigatorBasicInfoForm)
 from creator.models import Investigator, Skills
 from creator.random_inv import (base_skills_generator, free_point_assigner,
                                 occ_point_assigner)
@@ -48,8 +49,24 @@ def generate_derivative_attributes_form(request, inv):
     if request.method == 'POST':
         form = DerivativeAttributesForm(request.POST)
         if form.is_valid():
+            inv = Investigator.objects.filter(
+                uuid=inv.uuid
+            )
+            data = form.cleaned_data
+            inv.update(**data)
+            inv = inv.first()
+            inv.save()
+    return inv
 
-            print("IS VALIDDD!")
+
+def generate_attributes_form(request, inv):
+    '''Generate or update the investigators attributes.'''
+    inv = Investigator.objects.get(
+        uuid=inv
+    )
+    if request.method == 'POST':
+        form = AttributesForm(request.POST)
+        if form.is_valid():
             inv = Investigator.objects.filter(
                 uuid=inv.uuid
             )

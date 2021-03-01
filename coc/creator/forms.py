@@ -59,6 +59,18 @@ class InvestigatorBasicInfoForm(Form):
     )
 
 
+class AttributesForm(Form):
+    '''Form for the main attributes associated to an investigator.'''
+    strength = IntegerField()
+    dexterity = IntegerField()
+    constitution = IntegerField()
+    power = IntegerField()
+    size = IntegerField()
+    education = IntegerField()
+    intelligence = IntegerField()
+    appearance = IntegerField()
+
+
 class DerivativeAttributesForm(Form):
     '''Form for the attributes that are initialized based on
     the investigators attributes.'''

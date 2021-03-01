@@ -7,7 +7,8 @@ from django.template.loader import render_to_string
 
 from creator.constants import SILOUETTES as silouettes
 from creator.helpers.investigator import generate_full_half_fifth_values
-from creator.helpers.views_helper import (generate_basic_info_form,
+from creator.helpers.views_helper import (generate_attributes_form,
+                                          generate_basic_info_form,
                                           generate_derivative_attributes_form)
 from creator.models import (Inventory, Investigator, ManiaInvestigator,
                             Occupation, PhobiaInvestigator, Portrait, Skills,
@@ -59,14 +60,14 @@ def investigators_basic_info(request, inv):
     )
 
 
-def get_investigators_attributes(request, inv):
+def investigators_attributes(request, inv):
     '''Retrieve investigators attributes.'''
-    investigator = Investigator.objects.get(
-        uuid=inv
+    inv = generate_attributes_form(
+        request, inv
     )
-    attributes = investigator.attributes_detail
-    attributes['MOV'] = [investigator.move]
-    attributes["BUILD"] = list(investigator.build)
+    attributes = inv.attributes_detail
+    attributes['MOV'] = [inv.move]
+    attributes["BUILD"] = list(inv.build)
     return JsonResponse(
         {'attributes': attributes}, status=200)
 
@@ -85,7 +86,7 @@ def get_investigators_portrait(request, inv):
     return JsonResponse(res, status=200)
 
 
-def get_investigators_deriv_attrs(request, inv):
+def investigators_deriv_attrs(request, inv):
     '''Generate investigator derivative attributes form.'''
     inv = generate_derivative_attributes_form(
         request, inv)
@@ -214,6 +215,7 @@ def get_investigators_arcane(request, inv):
     }
     return JsonResponse(res, status=200)
 
+
 def get_investigators_backstory(request, inv):
     '''Retrieve arcane artifacts and spells from investigator.'''
     investigator = Investigator.objects.get(
@@ -229,9 +231,6 @@ def get_investigators_backstory(request, inv):
         'injuries_scars': investigator.injure_scars
     }
     return JsonResponse(res, status=200)
-
-
-
 
 
 def generate_random_investigator(request):
