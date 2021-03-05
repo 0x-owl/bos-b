@@ -77,19 +77,47 @@
 </script>
 <!-- Attributes Ajax -->
 <script type="module">
-    import { get_attributes } from '{% static "creator/js/attributes.js" %}';
-    $("#inv-attrs").ready(
-        function () {
+    import { get_attributes, post_attributes } from '{% static "creator/js/attributes.js" %}';
+
+    $(document).ready(
+        $("#inv-attrs").on('submit', function (evt) {
+            evt.preventDefault();
+            var csrftoken = $("[name=csrfmiddlewaretoken]").val();
             $.ajax({
                 url: "{% url 'inv_attrs' res.investigator.uuid %}",
-                success: function (res) {
-                    get_attributes(res)
+                type: "POST",
+                data: {
+                    'strength': $("#inv-str").val(),
+                    'constitution': $("#inv-con").val(),
+                    'power': $("#inv-pow").val(),
+                    'size': $("#inv-siz").val(),
+                    'education': $("#inv-edu").val(),
+                    'intelligence': $("#inv-int").val(),
+                    'appearance': $('#inv-app').val(),
+                    'dexterity': $('#inv-dex').val()
                 },
-                error: function (res) {
-                    console.log(res);
+                beforeSend: function (xhr, settings) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                },
+                success: function (res) {
+                    post_attributes(res)
                 }
             })
-        });
+        }));
+
+    $("#inv-attrs").ready(
+        $.ajaxSetup({ cache: false }),
+        $.ajax({
+            url: "{% url 'inv_attrs' res.investigator.uuid %}",
+            success: function (res) {
+                get_attributes(res)
+            },
+            error: function (res) {
+                console.log(res);
+            }
+        })
+    );
+
 </script>
 <!-- Deriv attributes Ajax -->
 <script type="module">

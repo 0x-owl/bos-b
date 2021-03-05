@@ -8,7 +8,11 @@
     <div class="card-footer text-muted">
     </div>
 </div>
-<div class="row" id="inv-attrs">
+<div class="row" id="inv-attrs-container">
+    <form id="inv-attrs" action="{% url 'inv_attrs' res.investigator.uuid %}" class="form-group mb-3">
+        {% csrf_token %}
+    </form>
+
 </div>
 <hr>
 <!-- Derivative attributes -->
