@@ -77,7 +77,7 @@
 </script>
 <!-- Attributes Ajax -->
 <script type="module">
-    import { get_attributes, post_attributes } from '{% static "creator/js/attributes.js" %}';
+    import { parse_attributes } from '{% static "creator/js/attributes.js" %}';
 
     $(document).ready(
         $("#inv-attrs").on('submit', function (evt) {
@@ -100,7 +100,7 @@
                     xhr.setRequestHeader("X-CSRFToken", csrftoken);
                 },
                 success: function (res) {
-                    post_attributes(res)
+                    parse_attributes(res)
                 }
             })
         }));
@@ -110,7 +110,7 @@
         $.ajax({
             url: "{% url 'inv_attrs' res.investigator.uuid %}",
             success: function (res) {
-                get_attributes(res)
+                parse_attributes(res)
             },
             error: function (res) {
                 console.log(res);

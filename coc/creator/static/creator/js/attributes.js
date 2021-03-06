@@ -156,23 +156,7 @@ function attribute_seeder(attributes) {
 }
 
 
-export function get_attributes(res) {
-    let attributes = res.attributes;
-    $("#inv-attrs").append(
-        attribute_seeder(attributes)
-    );
-    $("#inv-extra-attr").append(
-        `<div class="col">
-            Build: <b>${attributes.BUILD[1]} </b>
-        </div >
-        <div class="col offset-md-7">
-            Damage Bonus: <b>${attributes.BUILD[0]}</b>
-        </div>`
-    )
-}
-
-
-export function post_attributes(res) {
+export function parse_attributes(res) {
     let attributes = res.attributes;
     $("#inv-attrs").children().remove();
     $("#inv-extra-attr").children().remove();
