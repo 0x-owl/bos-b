@@ -28,6 +28,16 @@ urlpatterns = [
         name="inv_skills"
     ),
     path(
+        '<slug:inv>/skills_shuffle',
+        views.investigators_skills_shuffle,
+        name="inv_skills_shuffle"
+    ),
+    path(
+        '<slug:inv>/skills_reset',
+        views.investigators_skills_reset,
+        name="inv_skills_reset"
+    ),
+    path(
         '<slug:inv>/wepons',
         views.get_investigators_weapons,
         name="inv_weapons"

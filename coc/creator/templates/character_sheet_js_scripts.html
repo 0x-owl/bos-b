@@ -15,7 +15,45 @@
                     console.log(res);
                 }
             })
-        });
+        }
+    );
+    $("#inv-skills-reset").click(
+        function (evt) {
+            evt.preventDefault();
+            $.ajaxSetup({ cache: false });
+            $.ajax({
+                url: "{% url 'inv_skills_reset' res.investigator.uuid %}",
+                success: function (res) {
+                    $("#skills_1").remove();
+                    $("#skills_2").remove();
+                    $("#skills_3").remove();
+                    skills(res);
+                },
+                error: function (res) {
+                    console.log(res);
+                }
+            })
+        }
+    );
+
+    $("#inv-skills-shuffle").click(
+        function (evt) {
+            evt.preventDefault();
+            $.ajaxSetup({ cache: false });
+            $.ajax({
+                url: "{% url 'inv_skills_shuffle' res.investigator.uuid %}",
+                success: function (res) {
+                    $("#skills_1").remove();
+                    $("#skills_2").remove();
+                    $("#skills_3").remove();
+                    skills(res);
+                },
+                error: function (res) {
+                    console.log(res);
+                }
+            })
+        }
+    );
 </script>
 <!-- Basic Info Ajax -->
 <script type="module">
@@ -151,7 +189,7 @@
         $.ajax({
             url: "{% url 'inv_deriv_attrs' res.investigator.uuid %}",
             success: function (res) {
-                get_deriv_attrs(res)
+                parse_deriv_attrs(res)
             },
             error: function (res) {
                 console.log(res);
@@ -176,7 +214,7 @@
             })
         });
 </script>
-<!-- Weaons Ajax -->
+<!-- Weapons Ajax -->
 <script type="module">
     import { get_weapons } from '{% static "creator/js/weapons.js" %}';
     $("#inv-weapons").ready(

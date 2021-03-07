@@ -32,7 +32,8 @@ export function skills(res) {
                     <b>${half_val}</b > |
                     <b>${fifth_val}</b>
                 </div >
-            </div >`
+            </div >
+            <br>`
         )
     }
 }

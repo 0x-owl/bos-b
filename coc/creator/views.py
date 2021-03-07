@@ -13,7 +13,8 @@ from creator.helpers.views_helper import (generate_attributes_form,
 from creator.models import (Inventory, Investigator, ManiaInvestigator,
                             Occupation, PhobiaInvestigator, Portrait, Skills,
                             SpellInvestigator)
-from creator.random_inv import RandomInvestigator
+from creator.random_inv import (RandomInvestigator, base_skills_generator,
+                                free_point_assigner, occ_point_assigner)
 
 
 # Create your views here.
@@ -107,6 +108,52 @@ def get_investigators_skills(request, inv):
         uuid=inv
     )
     # Retrieve skills
+    skills = sorted(investigator.skills)
+    skills_sanitized = []
+    for skill in skills:
+        skills_sanitized.append(
+            [
+                skill,
+                *generate_full_half_fifth_values(
+                    investigator.skills[skill]['value']
+                )
+            ]
+        )
+    res = {'skills': skills_sanitized}
+    return JsonResponse(res, status=200)
+
+
+def investigators_skills_reset(request, inv):
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    skills = list(Skills.objects.all())
+    base_skills_generator(skills, investigator)
+    skills = sorted(investigator.skills)
+    skills_sanitized = []
+    for skill in skills:
+        skills_sanitized.append(
+            [
+                skill,
+                *generate_full_half_fifth_values(
+                    investigator.skills[skill]['value']
+                )
+            ]
+        )
+    res = {'skills': skills_sanitized}
+    return JsonResponse(res, status=200)
+
+
+def investigators_skills_shuffle(request, inv):
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    skills = list(Skills.objects.all())
+    base_skills_generator(skills, investigator)
+    proff_points = investigator.occupation_skill_points
+    occ_point_assigner(proff_points, investigator)
+    # Assign free skill points
+    free_point_assigner(investigator.free_skill_points, investigator)
     skills = sorted(investigator.skills)
     skills_sanitized = []
     for skill in skills:

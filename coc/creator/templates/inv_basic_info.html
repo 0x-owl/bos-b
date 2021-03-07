@@ -2,74 +2,72 @@
     <div class="col">
         <div class="row">
             <!-- Basic Investigator information form -->
-            <form id="basic-info" action="{% url 'basic_info' res.investigator.uuid %}" class="form-group mb-3">
+            <form id="basic-info" action="{% url 'basic_info' res.investigator.uuid %}" class="form-group mb-5">
                 {% csrf_token %}
-                <div class="input-group mb-3">
-                    <input id="basic-info-submit" class="btn btn-lg btn-block btn-danger form-control" type="submit"
-                        value="Submit">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inv-name">Name:</span>
-                        </div>
-                        <input type="text" class="form-control" id="inv-name-inp">
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-name">Name:</span>
                     </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inv-player">Player:</span>
-                        </div>
-                        <input type="text" class="form-control" id="inv-player-inp">
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inv-sex">Sex:</span>
-                        </div>
-                        <select id="inv-sex-inp" class="form-control">
-                            <option value="M">Male</option>
-                            <option value="F">Female</option>
-                        </select>
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inv-age">Age:</span>
-                        </div>
-                        <input type="text" class="form-control" id="inv-age-inp">
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inv-residence">Residence:</span>
-                        </div>
-                        <input type="text" class="form-control" id="inv-residence-inp">
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inv-birthplace">Birthplace:</span>
-                        </div>
-                        <input type="text" class="form-control" id="inv-birthplace-inp">
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inv-occupation">Occupation:</span>
-                        </div>
-                        <select class="form-control" id="inv-occupation-inp">
-
-                        </select>
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inv-crmin">Credit Rating Min:</span>
-                        </div>
-                        <input class="form-control" type="text" disabled
-                            value={{res.investigator.occupation.credit_rating_min}} aria-describedby="inv-crmin">
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inv-crmax">Credit Rating Max:</span>
-                        </div>
-                        <input class="form-control" type="text" disabled
-                            value={{res.investigator.occupation.credit_rating_max}} aria-describedby="inv-crmax">
-                    </div>
+                    <input type="text" class="form-control" id="inv-name-inp">
                 </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-player">Player:</span>
+                    </div>
+                    <input type="text" class="form-control" id="inv-player-inp">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-sex">Sex:</span>
+                    </div>
+                    <select id="inv-sex-inp" class="form-control">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-age">Age:</span>
+                    </div>
+                    <input type="text" class="form-control" id="inv-age-inp">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-residence">Residence:</span>
+                    </div>
+                    <input type="text" class="form-control" id="inv-residence-inp">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-birthplace">Birthplace:</span>
+                    </div>
+                    <input type="text" class="form-control" id="inv-birthplace-inp">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-occupation">Occupation:</span>
+                    </div>
+                    <select class="form-control" id="inv-occupation-inp">
 
+                    </select>
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-crmin">Credit Rating Min:</span>
+                    </div>
+                    <input class="form-control" type="text" disabled
+                        value={{res.investigator.occupation.credit_rating_min}} aria-describedby="inv-crmin">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-crmax">Credit Rating Max:</span>
+                    </div>
+                    <input class="form-control" type="text" disabled
+                        value={{res.investigator.occupation.credit_rating_max}} aria-describedby="inv-crmax">
+                </div>
+                <hr>
+                <input id="basic-info-submit" class="btn btn-lg btn-block btn-danger form-control" type="submit"
+                    value="Submit">
             </form>
         </div>
     </div>
