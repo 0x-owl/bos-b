@@ -121,7 +121,7 @@
 </script>
 <!-- Deriv attributes Ajax -->
 <script type="module">
-    import { get_deriv_attrs } from '{% static "creator/js/deriv_attributes.js" %}';
+    import { parse_deriv_attrs } from '{% static "creator/js/deriv_attributes.js" %}';
 
     $.ajaxSetup({ cache: false });
     $("#inv-deriv-attrs").on('submit', function (evt) {
@@ -140,7 +140,7 @@
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             },
             success: function (res) {
-                get_deriv_attrs(res)
+                parse_deriv_attrs(res)
             },
             error: function (res) {
                 console.log(res);
