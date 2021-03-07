@@ -1,4 +1,4 @@
-import { skills } from "/static/creator/js/skills.js";
+import { skills, flush_skills_columns } from "/static/creator/js/skills.js";
 
 
 export function post_basic_info(res) {
@@ -10,9 +10,8 @@ export function post_basic_info(res) {
     $("#inv-birthplace-inp").val(investigator['birthplace']);
     $("#inv-residence-inp").val(investigator['residence']);
     $("#inv-player-inp").val(investigator['player']);
-    $("#skills_1").remove();
-    $("#skills_2").remove();
-    $("#skills_3").remove();
+    flush_skills_columns();
+
     for (let occ of occupations) {
         if (occ[0] == investigator['occupation']) {
             $("#inv-occupation-inp").append(

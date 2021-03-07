@@ -1,3 +1,10 @@
+export function flush_skills_columns() {
+    $("#skills_1").remove();
+    $("#skills_2").remove();
+    $("#skills_3").remove();
+}
+
+
 export function skills(res) {
     let id_ = "#skills_1";;
     for (let inv_skill of res.skills) {

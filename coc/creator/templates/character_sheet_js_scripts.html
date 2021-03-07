@@ -4,7 +4,7 @@
     </script>
 <!-- Skills Ajax -->
 <script type="module">
-    import { skills } from '{% static "creator/js/skills.js" %}';
+    import { skills, flush_skills_columns } from '{% static "creator/js/skills.js" %}';
     $("#inv-skills").ready(
         function () {
             $.ajaxSetup({ cache: false });
@@ -24,9 +24,7 @@
             $.ajax({
                 url: "{% url 'inv_skills_reset' res.investigator.uuid %}",
                 success: function (res) {
-                    $("#skills_1").remove();
-                    $("#skills_2").remove();
-                    $("#skills_3").remove();
+                    flush_skills_columns();
                     skills(res);
                 },
                 error: function (res) {
@@ -43,9 +41,7 @@
             $.ajax({
                 url: "{% url 'inv_skills_shuffle' res.investigator.uuid %}",
                 success: function (res) {
-                    $("#skills_1").remove();
-                    $("#skills_2").remove();
-                    $("#skills_3").remove();
+                    flush_skills_columns();
                     skills(res);
                 },
                 error: function (res) {
