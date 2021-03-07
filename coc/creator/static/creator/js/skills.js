@@ -35,8 +35,8 @@ export function skills(res) {
                     <span class="input-group-text" style="width: 210px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" id="skill-inv-${inv_skill[0]}">${inv_skill[0]}:</span>
                 </div>
                 <input type="number" max=90 style="width: 70px;"class="form-control" id="inv-str" value=${full_val}>
-                <input type="text" readonly class="form-control" id="inv-str" value=${half_val}>
-                <input type="text" readonly class="form-control" id="inv-str" value=${fifth_val}>
+                <input type="text" readonly class="form-control" id="inv-str" value=${half_val == 0 ? "01" : half_val}>
+                <input type="text" readonly class="form-control" id="inv-str" value=${fifth_val == 0 ? "01" : fifth_val}>
             </div>
             <br>`
         )
