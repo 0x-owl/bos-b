@@ -30,16 +30,14 @@ export function skills(res) {
         };
         $(id_).append(
             `
-            <div class="row">
-                <div class="col">
-                    ${inv_skill[0]}:
-                </div >
-                <div style="text-align: right" class="col">
-                    <b>${full_val}</b >|
-                    <b>${half_val}</b > |
-                    <b>${fifth_val}</b>
-                </div >
-            </div >
+            <div style="text-align: right" class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" style="width: 210px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" id="skill-inv-${inv_skill[0]}">${inv_skill[0]}:</span>
+                </div>
+                <input type="number" max=90 style="width: 70px;"class="form-control" id="inv-str" value=${full_val}>
+                <input type="text" readonly class="form-control" id="inv-str" value=${half_val}>
+                <input type="text" readonly class="form-control" id="inv-str" value=${fifth_val}>
+            </div>
             <br>`
         )
     }

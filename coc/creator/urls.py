@@ -6,6 +6,7 @@ from creator import views
 
 urlpatterns = [
     path('random', views.generate_random_investigator),
+    # Core endpoints
     path('<slug:inv>', views.get_investigators_data, name="inv_data"),
     path(
         '<slug:inv>/info',
@@ -18,14 +19,25 @@ urlpatterns = [
         name="inv_attrs"
     ),
     path(
+        '<slug:inv>/derivative_attrs',
+        views.investigators_deriv_attrs,
+        name="inv_deriv_attrs"
+    ),
+    path(
         '<slug:inv>/portrait',
         views.get_investigators_portrait,
         name="inv_portrait"
     ),
+    # Skills endpoints
     path(
         '<slug:inv>/skills',
         views.get_investigators_skills,
         name="inv_skills"
+    ),
+    path(
+        '<slug:inv>/skills_update',
+        views.update_investigators_skills,
+        name="inv_skills_update"
     ),
     path(
         '<slug:inv>/skills_shuffle',
@@ -37,6 +49,7 @@ urlpatterns = [
         views.investigators_skills_reset,
         name="inv_skills_reset"
     ),
+    # Items endpoints
     path(
         '<slug:inv>/wepons',
         views.get_investigators_weapons,
@@ -47,6 +60,7 @@ urlpatterns = [
         views.get_investigators_gear,
         name="inv_gear"
     ),
+    # Backstory endpoints
     path(
         '<slug:inv>/manias_phobias',
         views.get_investigators_manias_and_phobias,
@@ -56,11 +70,6 @@ urlpatterns = [
         '<slug:inv>/arcane',
         views.get_investigators_arcane,
         name="inv_arcane"
-    ),
-    path(
-        '<slug:inv>/derivative_attrs',
-        views.investigators_deriv_attrs,
-        name="inv_deriv_attrs"
     ),
     path(
         '<slug:inv>/backstory',

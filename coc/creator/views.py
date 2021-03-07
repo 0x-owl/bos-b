@@ -122,6 +122,14 @@ def get_investigators_skills(request, inv):
     res = {'skills': skills_sanitized}
     return JsonResponse(res, status=200)
 
+def update_investigators_skills(request, inv):
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    # Retrieve skills
+    res = {}
+    return JsonResponse(res, status=200)
+
 
 def investigators_skills_reset(request, inv):
     investigator = Investigator.objects.get(
