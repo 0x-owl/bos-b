@@ -20,8 +20,8 @@ let attribute_block = template`
                     <span class="input-group-text" id="">STR:</span>
                 </div>
                 <input type="number" class="form-control" id="inv-str" value=${0}>
-                <input type="text" readonly class="form-control" id="inv-str" value=${1}>
-                <input type="text" readonly class="form-control" id="inv-str" value=${2}>
+                <input type="text" readonly class="form-control" value=${1}>
+                <input type="text" readonly class="form-control" value=${2}>
             </div>
         </div>
         <div class="col">
@@ -30,8 +30,8 @@ let attribute_block = template`
                     <span class="input-group-text" id="">DEX:</span>
                 </div>
                 <input type="number" class="form-control" id="inv-dex" value=${3}>
-                <input type="text" readonly class="form-control" id="inv-dex" value=${4}>
-                <input type="text" readonly class="form-control" id="inv-dex" value=${5}>
+                <input type="text" readonly class="form-control" value=${4}>
+                <input type="text" readonly class="form-control" value=${5}>
             </div>
         </div>
         <div class="col">
@@ -40,8 +40,8 @@ let attribute_block = template`
                     <span class="input-group-text" id="">POW:</span>
                 </div>
                 <input type="number" class="form-control" id="inv-pow" value=${6}>
-                <input type="text" readonly class="form-control" id="inv-pow" value=${7}>
-                <input type="text" readonly class="form-control" id="inv-pow" value=${8}>
+                <input type="text" readonly class="form-control" value=${7}>
+                <input type="text" readonly class="form-control" value=${8}>
             </div>
         </div>
     </div >
@@ -53,8 +53,8 @@ let attribute_block = template`
                     <span class="input-group-text" id="">CON:</span>
                 </div>
                 <input type="number" class="form-control" id="inv-con" value=${9}>
-                <input type="text" readonly class="form-control" id="inv-con" value=${10}>
-                <input type="text" readonly class="form-control" id="inv-con" value=${11}>
+                <input type="text" readonly class="form-control" value=${10}>
+                <input type="text" readonly class="form-control" value=${11}>
             </div>
         </div >
 
@@ -64,8 +64,8 @@ let attribute_block = template`
                     <span class="input-group-text" id="">APP:</span>
                 </div>
                 <input type="number" class="form-control" id="inv-app" value=${12}>
-                <input type="text" readonly class="form-control" id="inv-app" value=${13}>
-                <input type="text" readonly class="form-control" id="inv-app" value=${14}>
+                <input type="text" readonly class="form-control" value=${13}>
+                <input type="text" readonly class="form-control" value=${14}>
             </div>
         </div >
 
@@ -75,8 +75,8 @@ let attribute_block = template`
                     <span class="input-group-text" id="">EDU:</span>
                 </div>
                 <input type="number" class="form-control" id="inv-edu" value=${15}>
-                <input type="text" readonly class="form-control" id="inv-edu" value=${16}>
-                <input type="text" readonly class="form-control" id="inv-edu" value=${17}>
+                <input type="text" readonly class="form-control" value=${16}>
+                <input type="text" readonly class="form-control" value=${17}>
             </div>
         </div >
     </div>
@@ -88,8 +88,8 @@ let attribute_block = template`
                     <span class="input-group-text" id="">SIZ:</span>
                 </div>
                 <input type="number" class="form-control" id="inv-siz" value=${18}>
-                <input type="text" readonly class="form-control" id="inv-siz" value=${19}>
-                <input type="text" readonly class="form-control" id="inv-siz" value=${20}>
+                <input type="text" readonly class="form-control" value=${19}>
+                <input type="text" readonly class="form-control" value=${20}>
             </div>
         </div >
         <div class="col">
@@ -98,8 +98,8 @@ let attribute_block = template`
                     <span class="input-group-text" id="">INT:</span>
                 </div>
                 <input type="number" class="form-control" id="inv-int" value=${21}>
-                <input type="text" readonly class="form-control" id="inv-int" value=${22}>
-                <input type="text" readonly class="form-control" id="inv-int" value=${23}>
+                <input type="text" readonly class="form-control" value=${22}>
+                <input type="text" readonly class="form-control" value=${23}>
             </div>
         </div >
         <div class="col">

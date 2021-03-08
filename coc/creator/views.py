@@ -9,7 +9,8 @@ from creator.constants import SILOUETTES as silouettes
 from creator.helpers.investigator import generate_full_half_fifth_values
 from creator.helpers.views_helper import (generate_attributes_form,
                                           generate_basic_info_form,
-                                          generate_derivative_attributes_form)
+                                          generate_derivative_attributes_form,
+                                          skills_sanitizer)
 from creator.models import (Inventory, Investigator, ManiaInvestigator,
                             Occupation, PhobiaInvestigator, Portrait, Skills,
                             SpellInvestigator)
@@ -108,17 +109,7 @@ def get_investigators_skills(request, inv):
         uuid=inv
     )
     # Retrieve skills
-    skills = sorted(investigator.skills)
-    skills_sanitized = []
-    for skill in skills:
-        skills_sanitized.append(
-            [
-                skill,
-                *generate_full_half_fifth_values(
-                    investigator.skills[skill]['value']
-                )
-            ]
-        )
+    skills_sanitized = skills_sanitizer(investigator)
     res = {'skills': skills_sanitized}
     return JsonResponse(res, status=200)
 
@@ -126,8 +117,14 @@ def update_investigators_skills(request, inv):
     investigator = Investigator.objects.get(
         uuid=inv
     )
-    # Retrieve skills
-    res = {}
+    skills = request.POST.keys()
+    for skill in skills:
+        inv_sk = investigator.skills.get(skill)
+        if inv_sk is not None:
+            investigator.skills[skill]['value'] = int(request.POST[skill])
+    investigator.save()
+    skills_sanitized = skills_sanitizer(investigator)
+    res = {'skills': skills_sanitized}
     return JsonResponse(res, status=200)
 
 
@@ -137,17 +134,7 @@ def investigators_skills_reset(request, inv):
     )
     skills = list(Skills.objects.all())
     base_skills_generator(skills, investigator)
-    skills = sorted(investigator.skills)
-    skills_sanitized = []
-    for skill in skills:
-        skills_sanitized.append(
-            [
-                skill,
-                *generate_full_half_fifth_values(
-                    investigator.skills[skill]['value']
-                )
-            ]
-        )
+    skills_sanitized = skills_sanitizer(investigator)
     res = {'skills': skills_sanitized}
     return JsonResponse(res, status=200)
 

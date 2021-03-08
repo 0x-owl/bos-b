@@ -1,5 +1,6 @@
 from creator.forms import (AttributesForm, DerivativeAttributesForm,
                            InvestigatorBasicInfoForm)
+from creator.helpers.investigator import generate_full_half_fifth_values
 from creator.models import Investigator, Skills
 from creator.random_inv import (base_skills_generator, free_point_assigner,
                                 occ_point_assigner)
@@ -58,7 +59,6 @@ def generate_derivative_attributes_form(request, inv):
             inv.save()
     return inv
 
-
 def generate_attributes_form(request, inv):
     '''Generate or update the investigators attributes.'''
     inv = Investigator.objects.get(
@@ -75,3 +75,17 @@ def generate_attributes_form(request, inv):
             inv = inv.first()
             inv.save()
     return inv
+
+def skills_sanitizer(investigator):
+    skills = sorted(investigator.skills)
+    skills_sanitized = []
+    for skill in skills:
+        skills_sanitized.append(
+            [
+                skill,
+                *generate_full_half_fifth_values(
+                    investigator.skills[skill]['value']
+                )
+            ]
+        )
+    return skills_sanitized

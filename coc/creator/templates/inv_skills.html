@@ -19,8 +19,7 @@
     </div>
 </div>
 <br>
-<form id="inv-skills" style="font-size: 15px;" action="{% url 'inv_skills_update' res.investigator.uuid %}"
-    class="row form-group mb-3">
+<form id="inv-skills" style="font-size: 12px;" action="" class="row form-group mb-3" method="POST">
     {% csrf_token %}
 </form>
 <hr>
