@@ -1,7 +1,7 @@
 from creator.forms import (AttributesForm, DerivativeAttributesForm,
                            InvestigatorBasicInfoForm)
 from creator.helpers.investigator import generate_full_half_fifth_values
-from creator.models import Investigator, Skills
+from creator.models import Inventory, Investigator, Skills
 from creator.random_inv import (base_skills_generator, free_point_assigner,
                                 occ_point_assigner)
 
@@ -89,3 +89,18 @@ def skills_sanitizer(investigator):
             ]
         )
     return skills_sanitized
+
+def gear_sanitizer(investigator):
+    items = Inventory.objects.filter(
+        investigator=investigator,
+        item__category__in=[2,4]
+    )
+    gear = [
+        {
+            'uuid': item.uuid,
+            'title': item.properties['title'],
+            'stock': item.stock,
+            'price': item.properties['price']
+        } for item in items
+    ]
+    return gear

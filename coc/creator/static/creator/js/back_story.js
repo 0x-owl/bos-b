@@ -2,7 +2,7 @@ export function get_backstory(res) {
     $("#inv-description").after(
         `<p>${res.description}</p>`
     );
-    $("#inv-ideologies").after(
+    $("#inv-ideologies").append(
         `<p>${res.ideologies}</p>`
     )
     $("#inv-significant-people").after(

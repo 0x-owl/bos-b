@@ -60,6 +60,11 @@ urlpatterns = [
         views.get_investigators_gear,
         name="inv_gear"
     ),
+    path(
+        'inventory/<slug:inventory>/remove',
+        views.remove_investigators_gear,
+        name="inv_gear_remove"
+    ),
     # Backstory endpoints
     path(
         '<slug:inv>/manias_phobias',

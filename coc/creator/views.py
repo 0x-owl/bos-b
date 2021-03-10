@@ -7,11 +7,12 @@ from django.template.loader import render_to_string
 
 from creator.constants import SILOUETTES as silouettes
 from creator.helpers.investigator import generate_full_half_fifth_values
-from creator.helpers.views_helper import (generate_attributes_form,
+from creator.helpers.views_helper import (gear_sanitizer,
+                                          generate_attributes_form,
                                           generate_basic_info_form,
                                           generate_derivative_attributes_form,
                                           skills_sanitizer)
-from creator.models import (Inventory, Investigator, ManiaInvestigator,
+from creator.models import (Inventory, Investigator, Item, ManiaInvestigator,
                             Occupation, PhobiaInvestigator, Portrait, Skills,
                             SpellInvestigator)
 from creator.random_inv import (RandomInvestigator, base_skills_generator,
@@ -113,6 +114,7 @@ def get_investigators_skills(request, inv):
     res = {'skills': skills_sanitized}
     return JsonResponse(res, status=200)
 
+
 def update_investigators_skills(request, inv):
     investigator = Investigator.objects.get(
         uuid=inv
@@ -187,18 +189,17 @@ def get_investigators_gear(request, inv):
     investigator = Investigator.objects.get(
         uuid=inv
     )
-    items = Inventory.objects.filter(
-        investigator=investigator,
-        item__category__in=[2,4]
-    )
-    gear = [
-        {
-            'title': item.properties['title'],
-            'stock': item.stock,
-            'price': item.properties['price']
-        } for item in items
-    ]
+    gear = gear_sanitizer(investigator)
     return JsonResponse({'gear': gear}, status=200)
+
+
+def remove_investigators_gear(request, inventory):
+    '''Remove inventory from investigator.'''
+    inventory = Inventory.objects.get(uuid=inventory)
+    investigator = Investigator.objects.get(uuid=inventory.investigator.uuid)
+    inventory.delete()
+    return JsonResponse("Ok", status=200)
+
 
 
 def get_investigators_manias_and_phobias(request, inv):

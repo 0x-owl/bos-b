@@ -7,30 +7,164 @@
     <div class="card-footer text-muted">
     </div>
 </div>
-<div class="row" id="inv-backstory">
-    <div class="col">
-        <b id="inv-description">Personal Description:</b>
-        <b id="inv-ideologies">Ideology/Beliefs:</b>
-        <b id="inv-significant-people">Signficant People:</b>
-        <b id="inv-meaningful-locations">Meaningful Locations:</b>
-        <b id="inv-treasured-possessions">Treasured Possesions:</b>
+<div class="accordion" id="inv-backstory">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPersonalDesc">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsePersonalDesc" aria-expanded="true" aria-controls="collapsePersonalDesc">
+                Personal Description:
+            </button>
+        </h2>
+        <div id="collapsePersonalDesc" class="accordion-collapse collapse" aria-labelledby="headingPersonalDesc"
+            data-bs-parent="#accordionPersonalDesc">
+            <div class="accordion-body" id="inv-description">
+                <b>Personal Description</b>
+            </div>
+        </div>
     </div>
-    <div class="col offset-md-1">
-        <b id="inv-traits">Traits:</b>
-        <b id="injuries-scars">Injuries & Scars:</b>
-        <b id="inv-phobias-manias">Phobias & Manias:</b>
-        <ul id="inv-phobias">
-        </ul>
-        <ul id="inv-manias">
-        </ul>
-        <span id="inv-arcane"><b>Arcane Tomes, Spells & Artifacts:</b></span><br>
-        <span><i>Spells:</i></span>
-        <ul id="inv-spells" style="list-style-type: none;">
-        </ul>
-        <span><i>Artifacts:</i></span>
-        <ul id="inv-artifacts">
-        </ul>
-        <b id="inv-encounters">Encounters with strange entities:</b>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingIdeologyBeliefs">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseIdeologyBeliefs" aria-expanded="true" aria-controls="collapseIdeologyBeliefs">
+                Ideology/Beliefs:
+            </button>
+        </h2>
+        <div id="collapseIdeologyBeliefs" class="accordion-collapse collapse" aria-labelledby="headingIdeologyBeliefs"
+            data-bs-parent="#accordionIdeologyBeliefs">
+            <div class="accordion-body" id="inv-ideologies">
+            </div>
+        </div>
     </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSignificantPeople">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSignificantPeople" aria-expanded="true"
+                aria-controls="collapseSignificantPeople">
+                Signficant People:
+            </button>
+        </h2>
+        <div id="collapseSignificantPeople" class="accordion-collapse collapse"
+            aria-labelledby="headingSignificantPeople" data-bs-parent="#accordionSignificantPeople">
+            <div class="accordion-body" id="inv-significant-people">
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingMeaningfulLocations">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseMeaningfulLocations" aria-expanded="true"
+                aria-controls="collapseMeaningfulLocations">
+                Meaningful Locations:
+            </button>
+        </h2>
+        <div id="collapseMeaningfulLocations" class="accordion-collapse collapse"
+            aria-labelledby="headingMeaningfulLocations" data-bs-parent="#accordionMeaningfulLocations">
+            <div class="accordion-body" id="inv-meaningful-locations">
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTreasuredPosessions">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTreasuredPosessions" aria-expanded="true"
+                aria-controls="collapseTreasuredPosessions">
+                Treasured Possesions:
+            </button>
+        </h2>
+        <div id="collapseTreasuredPosessions" class="accordion-collapse collapse"
+            aria-labelledby="headingTreasuredPosessions" data-bs-parent="#accordionTreasuredPosessions">
+            <div class="accordion-body" id="inv-treasured-possessions">
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTraits">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTraits" aria-expanded="true" aria-controls="collapseTraits">
+                Traits:
+            </button>
+        </h2>
+        <div id="collapseTraits" class="accordion-collapse collapse" aria-labelledby="headingTraits"
+            data-bs-parent="#accordionTraits">
+            <div class="accordion-body" id="inv-traits">
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingInjuriesScars">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseInjuriesScars" aria-expanded="true" aria-controls="collapseInjuriesScars">
+                Injuries & Scars:
+            </button>
+        </h2>
+        <div id="collapseInjuriesScars" class="accordion-collapse collapse" aria-labelledby="headingInjuriesScars"
+            data-bs-parent="#accordionInjuriesScars">
+            <div class="accordion-body" id="inv-injuries-scars">
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPhobiasManias">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsePhobiasManias" aria-expanded="true" aria-controls="collapsePhobiasManias">
+                Phobias & Manias:
+            </button>
+        </h2>
+        <div id="collapsePhobiasManias" class="accordion-collapse collapse" aria-labelledby="headingPhobiasManias"
+            data-bs-parent="#accordionPhobiasManias">
+            <div class="accordion-body" id="inv-injuries-scars">
+                <ul id="inv-phobias">
+                </ul>
+                <ul id="inv-manias">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingArcaneSpells">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseArcaneSpells" aria-expanded="true" aria-controls="collapseArcaneSpells">
+                Arcane - Spells:
+            </button>
+        </h2>
+        <div id="collapseArcaneSpells" class="accordion-collapse collapse" aria-labelledby="headingArcaneSpells"
+            data-bs-parent="#accordionArcaneSpells">
+            <div class="accordion-body">
+                <ul id="inv-spells" style="list-style-type: none;">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingArcaneArtifacts">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseArcaneArtifacts" aria-expanded="true" aria-controls="collapseArcaneArtifacts">
+                Arcane - Artifacts:
+            </button>
+        </h2>
+        <div id="collapseArcaneArtifacts" class="accordion-collapse collapse" aria-labelledby="headingArcaneArtifacts"
+            data-bs-parent="#accordionArcaneArtifacts">
+            <div class="accordion-body">
+                <ul id="inv-artifacts" style="list-style-type: none;">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEncounters">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseEncounters" aria-expanded="true" aria-controls="collapseEncounters">
+                Encounters with strage entities:
+            </button>
+        </h2>
+        <div id="collapseEncounters" class="accordion-collapse collapse" aria-labelledby="headingEncounters"
+            data-bs-parent="#accordionEncounters">
+            <div class="accordion-body">
+                <ul id="inv-encounters" style="list-style-type: none;">
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </div>
 <hr>

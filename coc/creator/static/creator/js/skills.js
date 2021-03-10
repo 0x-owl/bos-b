@@ -28,13 +28,13 @@ export function skills(res) {
             $("#inv-skills").append(
                 `<div class="col" id="skills_1"></div>`
             );
-        } else if (index_of === 35) {
+        } else if (index_of === 36) {
             id_ = "#skills_2";
             $("#inv-skills").append(
                 `<div class="col" id="skills_2"></div>`
             );
         }
-        else if (index_of === 71) {
+        else if (index_of === 72) {
             id_ = "#skills_3";
             $("#inv-skills").append(
                 `<div class="col" id="skills_3"></div>`
