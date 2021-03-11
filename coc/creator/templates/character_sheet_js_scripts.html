@@ -101,6 +101,18 @@
                 },
                 success: function (res) {
                     post_basic_info(res)
+                    $("#basic-info-submit").addClass('disabled');
+                    $("#basic-info-submit").prop('disabled', true);
+                    $("#basic-info-edit").removeClass('disabled');
+                    $("#inv-occupation-inp").prop('disabled', true);
+                    $("#inv-birthplace-inp").attr('readonly', true);
+                    $("#inv-residence-inp").prop('readonly', true);
+                    $("#inv-age-inp").prop('readonly', true);
+                    $("#inv-residence-inp").prop('readonly', true);
+                    $("#inv-sex-inp").prop('disabled', true);
+                    $("#inv-sex-inp").attr('readonly', true);
+                    $("#inv-player-inp").prop('readonly', true);
+                    $("#inv-name-inp").prop('readonly', true);
                 }
             })
         }));
@@ -117,6 +129,24 @@
             }
         })
     );
+    $("#basic-info-edit").click(
+        function (evt) {
+            evt.preventDefault();
+            $("#basic-info-submit").removeClass('disabled');
+            $("#basic-info-submit").prop('disabled', false);
+            $("#basic-info-edit").addClass('disabled');
+            $("#inv-occupation-inp").prop('disabled', false);
+            $("#inv-occupation-inp").attr('readonly', false);
+            $("#inv-birthplace-inp").prop('readonly', false);
+            $("#inv-residence-inp").prop('readonly', false);
+            $("#inv-age-inp").prop('readonly', false);
+            $("#inv-residence-inp").prop('readonly', false);
+            $("#inv-sex-inp").prop('disabled', false);
+            $("#inv-sex-inp").attr('readonly', false);
+            $("#inv-player-inp").prop('readonly', false);
+            $("#inv-name-inp").prop('readonly', false);
+        }
+    )
 </script>
 <!-- Portrait Ajax -->
 <script type="module">
