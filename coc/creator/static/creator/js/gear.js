@@ -7,8 +7,8 @@ export function get_gear(res) {
                     <td><input type="text" class="form-control" id="item-inv-price-${item['uuid']}" value=${item["price"]} readonly></td>
                     <td><input type="text" class="form-control" id="item-inv-stock-${item['uuid']}" value=${item["stock"]} readonly></td>
                     <td>
-                        <a class="btn btn-info" id="item-inv-edit-${item["uuid"]}">Edit</a>
-                        <a class="btn btn-warning disabled" id="item-inv-save-${item["uuid"]}">Save</a>
+                        <a class="btn btn-primary" id="item-inv-edit-${item["uuid"]}">Edit</a>
+                        <a class="btn btn-success disabled" id="item-inv-save-${item["uuid"]}">Save</a>
                         <a class="btn btn-danger" id="item-inv-rem-${item["uuid"]}">Remove</a>
                     </td>
                 </div>
@@ -48,6 +48,7 @@ export function edit_item_inventory_handler() {
             $("input[id*='" + item_id + "']").prop('readonly', false);
             $("#item-inv-save-" + item_id).removeClass("disabled");
             $("#item-inv-rem-" + item_id).addClass("disabled");
+            $("#item-inv-edit-" + item_id).addClass("disabled");
             // var object_id = "#gear-row-" + item_id;
             // var url_ = "/creator/inventory/" + item_id + "/remove";
             // $.ajax(
@@ -74,6 +75,7 @@ export function save_item_inventory_handler() {
             $("input[id*='" + item_id + "']").prop('readonly', true);
             $("#item-inv-save-" + item_id).addClass("disabled");
             $("#item-inv-rem-" + item_id).removeClass("disabled");
+            $("#item-inv-edit-" + item_id).removeClass("disabled");
         }
     )
 }

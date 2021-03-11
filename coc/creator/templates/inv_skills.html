@@ -7,15 +7,15 @@
     <div class="card-footer text-muted">
         <div class="row">
             <div class="col">
-                <a id="inv-skills-edit" class="btn btn-outline-info" href="">Edit</a>
+                <a id="inv-skills-edit" class="btn btn-primary" href="">Edit</a>
             </div>
             <div class="col">
-                <a id="inv-skills-shuffle" class="btn btn-outline-primary disabled"
+                <a id="inv-skills-shuffle" class="btn btn-secondary disabled"
                     href="{% url 'inv_skills_shuffle' res.investigator.uuid %}">Shuffle
                     Skills</a>
             </div>
             <div class="col">
-                <a id="inv-skills-reset" class="btn btn-outline-secondary disabled"
+                <a id="inv-skills-reset" class="btn btn-dark disabled"
                     href="{% url 'inv_skills_reset' res.investigator.uuid %}">Reset to Default</a>
             </div>
         </div>
