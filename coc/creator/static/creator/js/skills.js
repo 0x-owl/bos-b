@@ -46,7 +46,7 @@ export function skills(res) {
                 <div class="input-group-prepend">
                     <span class="input-group-text" style="width: 210px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" >${inv_skill[0]}:</span>
                 </div>
-                <input type="number" max=90 style="width: 70px;"class="form-control" id="invsk-${inv_skill[0]}" value=${full_val}>
+                <input type="number" readonly max=90 style="width: 70px;"class="form-control" id="invsk-${inv_skill[0]}" value=${full_val}>
                 <input type="text" readonly class="form-control" value=${half_val == 0 ? "01" : half_val}>
                 <input type="text" readonly class="form-control" value=${fifth_val == 0 ? "01" : fifth_val}>
             </div>
@@ -54,8 +54,18 @@ export function skills(res) {
         )
     }
     $("#inv-skills").append(
-        `<div id="inv-skills-submit" class="row">
-            <input type="submit" class="btn btn-outline-danger" value="Update">
+        `<div class="row">
+            <input id="inv-skills-submit" type="submit" class="btn btn-outline-danger disabled" value="Update">
         </div>`
     );
+    // edit button logic for skills
+    $("#inv-skills-edit").click(
+        function (evt) {
+            evt.preventDefault();
+            $("input[id*='invsk-']").prop('readonly', false);
+            $("#inv-skills-reset").removeClass('disabled');
+            $("#inv-skills-shuffle").removeClass('disabled');
+            $("#inv-skills-submit").removeClass('disabled');
+        }
+    )
 }

@@ -26,6 +26,9 @@
                 success: function (res) {
                     flush_skills_columns();
                     skills(res);
+                    $("#inv-skills-reset").addClass('disabled');
+                    $("#inv-skills-shuffle").addClass('disabled');
+                    $("#inv-skills-submit").addClass('disabled');
                 },
                 error: function (res) {
                     console.log(res);
@@ -42,6 +45,9 @@
                 success: function (res) {
                     flush_skills_columns();
                     skills(res);
+                    $("#inv-skills-reset").addClass('disabled');
+                    $("#inv-skills-shuffle").addClass('disabled');
+                    $("#inv-skills-submit").addClass('disabled');
                 },
                 error: function (res) {
                     console.log(res);
@@ -62,6 +68,9 @@
             },
             success: function (res) {
                 skills(res);
+                $("#inv-skills-reset").addClass('disabled');
+                $("#inv-skills-shuffle").addClass('disabled');
+                $("#inv-skills-submit").addClass('disabled');
             }
         })
 
