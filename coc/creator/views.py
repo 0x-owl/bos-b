@@ -198,7 +198,7 @@ def remove_investigators_gear(request, inventory):
     inventory = Inventory.objects.get(uuid=inventory)
     investigator = Investigator.objects.get(uuid=inventory.investigator.uuid)
     inventory.delete()
-    return JsonResponse("Ok", status=200)
+    return JsonResponse({'response': 'Ok'}, status=200)
 
 
 
