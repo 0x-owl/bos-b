@@ -211,7 +211,6 @@
 <!-- Deriv attributes Ajax -->
 <script type="module">
     import { parse_deriv_attrs } from '{% static "creator/js/deriv_attributes.js" %}';
-
     $.ajaxSetup({ cache: false });
     $("#inv-deriv-attrs").on('submit', function (evt) {
         evt.preventDefault();
@@ -315,6 +314,7 @@
 <!-- Gear Ajax -->
 <script type="module">
     import { get_gear, remove_item_inventory_handler, edit_item_inventory_handler, save_item_inventory_handler } from '{% static "creator/js/gear.js" %}';
+    $.ajaxSetup({ cache: false });
     $("#inv-gear").ready(
         function () {
             $.ajax({

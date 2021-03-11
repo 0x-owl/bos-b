@@ -15,7 +15,6 @@ export function cleanse_skills() {
 }
 
 
-
 export function skills(res) {
     let id_ = "#skills_1";;
     flush_skills_columns();

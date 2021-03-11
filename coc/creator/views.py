@@ -196,10 +196,23 @@ def get_investigators_gear(request, inv):
 def remove_investigators_gear(request, inventory):
     '''Remove inventory from investigator.'''
     inventory = Inventory.objects.get(uuid=inventory)
-    investigator = Investigator.objects.get(uuid=inventory.investigator.uuid)
     inventory.delete()
     return JsonResponse({'response': 'Ok'}, status=200)
 
+def edit_investigators_gear(request, inventory):
+    '''Remove inventory from investigator.'''
+    inventory = Inventory.objects.get(uuid=inventory)
+    if request.POST:
+        data = dict(request.POST)
+        sanitize_data = {
+            k: data[k][0] for k in data.keys()
+            if k != 'stock'
+        }
+        inventory.stock = int(data['stock'][0])
+        inventory.properties.update(**sanitize_data)
+        inventory.save()
+        return JsonResponse(inventory.properties, status=200)
+    return JsonResponse({'response': 'Unauthorized'}, status=401)
 
 
 def get_investigators_manias_and_phobias(request, inv):

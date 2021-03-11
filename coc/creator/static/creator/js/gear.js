@@ -49,20 +49,6 @@ export function edit_item_inventory_handler() {
             $("#item-inv-save-" + item_id).removeClass("disabled");
             $("#item-inv-rem-" + item_id).addClass("disabled");
             $("#item-inv-edit-" + item_id).addClass("disabled");
-            // var object_id = "#gear-row-" + item_id;
-            // var url_ = "/creator/inventory/" + item_id + "/remove";
-            // $.ajax(
-            //     {
-            //         url: url_,
-            //         type: "GET",
-            //         success: function (res) {
-            //             $(object_id).remove()
-            //         },
-            //         error: function (res) {
-            //             console.log(res)
-            //         }
-            //     }
-            // )
         }
     )
 }
@@ -76,6 +62,30 @@ export function save_item_inventory_handler() {
             $("#item-inv-save-" + item_id).addClass("disabled");
             $("#item-inv-rem-" + item_id).removeClass("disabled");
             $("#item-inv-edit-" + item_id).removeClass("disabled");
+            var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+            $.ajax({
+                url: '/creator/inventory/' + item_id + '/edit',
+                method: 'POST',
+                data: {
+                    'title': $("#item-inv-title-" + item_id).val(),
+                    'price': $("#item-inv-price-" + item_id).val(),
+                    'stock': $("#item-inv-stock-" + item_id).val(),
+                },
+                beforeSend: function (xhr, settings) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                },
+                success: function (res) {
+                    // update values
+                    console.log(res);
+                    $("#item-inv-title-" + item_id).val(res.title);
+                    $("#item-inv-price-" + item_id).val(res.price);
+                    $("#item-inv-stock-" + item_id).val(res.stock);
+                },
+                error: function (res) {
+                    console.log(res)
+                }
+
+            })
         }
     )
 }
