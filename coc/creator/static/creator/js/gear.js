@@ -13,3 +13,25 @@ export function get_gear(res) {
     }
 }
 
+export function remove_item_inventory_handler() {
+    $("a[id^='item-inv-']").click(
+        function (evt) {
+            evt.preventDefault();
+            var item_id = evt.target.id.replace("item-inv-", "");
+            var object_id = "#gear-row-" + item_id;
+            var url_ = "/creator/inventory/" + item_id + "/remove";
+            $.ajax(
+                {
+                    url: url_,
+                    type: "GET",
+                    success: function (res) {
+                        $(object_id).remove()
+                    },
+                    error: function (res) {
+                        console.log(res)
+                    }
+                }
+            )
+        }
+    )
+}
