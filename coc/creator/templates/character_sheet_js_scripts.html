@@ -275,7 +275,7 @@
 </script>
 <!-- Gear Ajax -->
 <script type="module">
-    import { get_gear, remove_item_inventory_handler } from '{% static "creator/js/gear.js" %}';
+    import { get_gear, remove_item_inventory_handler, edit_item_inventory_handler, save_item_inventory_handler } from '{% static "creator/js/gear.js" %}';
     $("#inv-gear").ready(
         function () {
             $.ajax({
@@ -284,6 +284,8 @@
                     get_gear(res)
                     // Hook for removal of items
                     remove_item_inventory_handler()
+                    edit_item_inventory_handler()
+                    save_item_inventory_handler()
                 },
                 error: function (res) {
                     console.log(res);

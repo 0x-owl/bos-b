@@ -55,7 +55,7 @@ export function skills(res) {
     }
     $("#inv-skills").append(
         `<div id="inv-skills-submit" class="row">
-            <input type="submit" class="btn btn-danger" value="Update">
+            <input type="submit" class="btn btn-outline-danger" value="Update">
         </div>`
     );
 }

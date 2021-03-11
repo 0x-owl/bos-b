@@ -113,7 +113,7 @@ let attribute_block = template`
     </div>
     <br>
     <div class="row">
-        <input type="submit" class="btn btn-danger" value="Update">
+        <input type="submit" class="btn btn-outline-danger" value="Update">
     </div>
 </div>`;
 
