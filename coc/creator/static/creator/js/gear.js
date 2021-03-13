@@ -76,7 +76,6 @@ export function save_item_inventory_handler() {
                 },
                 success: function (res) {
                     // update values
-                    console.log(res);
                     $("#item-inv-title-" + item_id).val(res.title);
                     $("#item-inv-price-" + item_id).val(res.price);
                     $("#item-inv-stock-" + item_id).val(res.stock);

@@ -180,6 +180,7 @@ def get_investigators_weapons(request, inv):
         w_dict['skill_value'] = generate_full_half_fifth_values(
             investigator.skills[weapon.item.properties['skill']]['value']
         )
+        w_dict['uuid'] = weapon.uuid
         weapons_results.append(w_dict)
     return JsonResponse({'weapons': weapons_results}, status=200)
 
@@ -208,7 +209,7 @@ def edit_investigators_gear(request, inventory):
             k: data[k][0] for k in data.keys()
             if k != 'stock'
         }
-        inventory.stock = int(data['stock'][0])
+        inventory.stock = int(data.get('stock', [1])[0])
         inventory.properties.update(**sanitize_data)
         inventory.save()
         return JsonResponse(inventory.properties, status=200)

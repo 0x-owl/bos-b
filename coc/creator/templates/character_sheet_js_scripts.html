@@ -249,13 +249,17 @@
 </script>
 <!-- Weapons Ajax -->
 <script type="module">
-    import { get_weapons } from '{% static "creator/js/weapons.js" %}';
+    import { get_weapons, edit_weapon_inventory_handler, save_weapon_inventory_handler } from '{% static "creator/js/weapons.js" %}';
+    import { remove_item_inventory_handler } from '{% static "creator/js/gear.js" %}';
     $("#inv-weapons").ready(
         function () {
             $.ajax({
                 url: "{% url 'inv_weapons' res.investigator.uuid %}",
                 success: function (res) {
                     get_weapons(res)
+                    remove_item_inventory_handler()
+                    edit_weapon_inventory_handler()
+                    save_weapon_inventory_handler()
                 },
                 error: function (res) {
                     console.log(res);
