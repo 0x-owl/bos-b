@@ -269,7 +269,7 @@
 </script>
 <!-- Backstory AJAX -->
 <script type="module">
-    import { get_backstory } from '{% static "creator/js/back_story.js" %}'
+    import { get_backstory, update_backstory } from '{% static "creator/js/back_story.js" %}'
 
     $("#inv-backstory").ready(
         $.ajax({
@@ -281,6 +281,14 @@
                 console.log(res);
             }
         })
+    )
+
+    $("textarea[id$='-inp']").focusout(
+        function (evt) {
+            let url = "{% url 'inv_backstory_update' res.investigator.uuid %}";
+            evt['url'] = url;
+            update_backstory(evt);
+        }
     )
 </script>
 <!-- Mania and Phobias -->

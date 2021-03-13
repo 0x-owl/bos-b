@@ -85,5 +85,10 @@ urlpatterns = [
         '<slug:inv>/backstory',
         views.get_investigators_backstory,
         name="inv_backstory"
+    ),
+    path(
+        '<slug:inv>/backstory/update',
+        views.update_investigators_backstory,
+        name="inv_backstory_update"
     )
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

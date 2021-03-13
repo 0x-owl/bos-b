@@ -200,6 +200,7 @@ def remove_investigators_gear(request, inventory):
     inventory.delete()
     return JsonResponse({'response': 'Ok'}, status=200)
 
+
 def edit_investigators_gear(request, inventory):
     '''Remove inventory from investigator.'''
     inventory = Inventory.objects.get(uuid=inventory)
@@ -285,9 +286,31 @@ def get_investigators_backstory(request, inv):
         'meaningful_locations': investigator.meaningful_locations,
         'treasured_possessions': investigator.treasured_possessions,
         'traits': investigator.traits,
-        'injuries_scars': investigator.injure_scars
+        'injuries_scars': investigator.injure_scars,
+        'encounters_with_strange_entities': investigator.encounters_with_strange_entities
     }
     return JsonResponse(res, status=200)
+
+
+def update_investigators_backstory(request, inv):
+    '''Update investigators backstory information.'''
+    investigator = Investigator.objects.filter(
+        uuid=inv
+    )
+    if request.POST:
+        data = dict(request.POST)
+        sanitize_data = {
+            k: data[k][0] for k in data.keys()
+        }
+        investigator.update(**sanitize_data)
+        investigator = investigator.first().__dict__
+        res = {
+            k: investigator[k] for k in sanitize_data
+        }
+        return JsonResponse(res, status=200)
+    return JsonResponse({'response': 'Unauthorized'}, status=401)
+
+
 
 
 def generate_random_investigator(request):
