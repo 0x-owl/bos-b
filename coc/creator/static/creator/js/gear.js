@@ -56,8 +56,7 @@ export function edit_item_inventory_handler() {
 export function save_item_inventory_handler() {
     $("a[id^='item-inv-save-']").click(
         function (evt) {
-            evt.preventDefault();
-            var item_id = evt.target.id.replace("item-inv-save-", "");
+            var item_id = evt.currentTarget.id.replace("item-inv-save-", "");
             $("input[id*='" + item_id + "']").prop('readonly', true);
             $("#item-inv-save-" + item_id).addClass("disabled");
             $("#item-inv-rem-" + item_id).removeClass("disabled");
