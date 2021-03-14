@@ -149,32 +149,6 @@
 <script type="module">
     import { parse_attributes } from '{% static "creator/js/attributes.js" %}';
 
-    $(document).ready(
-        $("#inv-attrs").on('submit', function (evt) {
-            evt.preventDefault();
-            var csrftoken = $("[name=csrfmiddlewaretoken]").val();
-            $.ajax({
-                url: "{% url 'inv_attrs' res.investigator.uuid %}",
-                type: "POST",
-                data: {
-                    'strength': $("#inv-str").val(),
-                    'constitution': $("#inv-con").val(),
-                    'power': $("#inv-pow").val(),
-                    'size': $("#inv-siz").val(),
-                    'education': $("#inv-edu").val(),
-                    'intelligence': $("#inv-int").val(),
-                    'appearance': $('#inv-app').val(),
-                    'dexterity': $('#inv-dex').val()
-                },
-                beforeSend: function (xhr, settings) {
-                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
-                },
-                success: function (res) {
-                    parse_attributes(res)
-                }
-            })
-        }));
-
     $("#inv-attrs").ready(
         $.ajaxSetup({ cache: false }),
         $.ajax({
@@ -193,29 +167,29 @@
 <script type="module">
     import { parse_deriv_attrs } from '{% static "creator/js/deriv_attributes.js" %}';
     $.ajaxSetup({ cache: false });
-    $("#inv-deriv-attrs").on('submit', function (evt) {
-        evt.preventDefault();
-        var csrftoken = $("[name=csrfmiddlewaretoken]").val();
-        $.ajax({
-            url: "{% url 'inv_deriv_attrs' res.investigator.uuid %}",
-            type: "POST",
-            data: {
-                'health': $("#inv-health-inp").val(),
-                'magic_points': $("#inv-mp-inp").val(),
-                'sanity': $("#inv-sanity-inp").val(),
-                'luck': $("#inv-luck-inp").val()
-            },
-            beforeSend: function (xhr, settings) {
-                xhr.setRequestHeader("X-CSRFToken", csrftoken);
-            },
-            success: function (res) {
-                parse_deriv_attrs(res)
-            },
-            error: function (res) {
-                console.log(res);
-            }
+    $("#inv-health-inp, #inv-mp-inp, #inv-sanity-inp, #inv-luck-inp").change(
+        function (evt) {
+            var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+            $.ajax({
+                url: "{% url 'inv_deriv_attrs' res.investigator.uuid %}",
+                type: "POST",
+                data: {
+                    'health': $("#inv-health-inp").val(),
+                    'magic_points': $("#inv-mp-inp").val(),
+                    'sanity': $("#inv-sanity-inp").val(),
+                    'luck': $("#inv-luck-inp").val()
+                },
+                beforeSend: function (xhr, settings) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                },
+                success: function (res) {
+                    parse_deriv_attrs(res)
+                },
+                error: function (res) {
+                    console.log(res);
+                }
+            })
         })
-    })
     $("#inv-deriv-attrs").ready(
         $.ajax({
             url: "{% url 'inv_deriv_attrs' res.investigator.uuid %}",

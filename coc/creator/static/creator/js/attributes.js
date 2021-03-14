@@ -11,7 +11,6 @@ function template(strings, ...keys) {
 }
 
 let attribute_block = template`
-<div class="col">
     <hr>
     <div class="row">
         <div class="col">
@@ -19,7 +18,7 @@ let attribute_block = template`
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="">STR:</span>
                 </div>
-                <input type="number" class="form-control" id="inv-str" value=${0}>
+                <input type="number" class="form-control" id="inv-str" value=${0} readonly>
                 <input type="text" readonly class="form-control" value=${1}>
                 <input type="text" readonly class="form-control" value=${2}>
             </div>
@@ -29,7 +28,7 @@ let attribute_block = template`
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="">DEX:</span>
                 </div>
-                <input type="number" class="form-control" id="inv-dex" value=${3}>
+                <input type="number" class="form-control" id="inv-dex" value=${3} readonly>
                 <input type="text" readonly class="form-control" value=${4}>
                 <input type="text" readonly class="form-control" value=${5}>
             </div>
@@ -39,7 +38,7 @@ let attribute_block = template`
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="">POW:</span>
                 </div>
-                <input type="number" class="form-control" id="inv-pow" value=${6}>
+                <input type="number" class="form-control" id="inv-pow" value=${6} readonly>
                 <input type="text" readonly class="form-control" value=${7}>
                 <input type="text" readonly class="form-control" value=${8}>
             </div>
@@ -52,7 +51,7 @@ let attribute_block = template`
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="">CON:</span>
                 </div>
-                <input type="number" class="form-control" id="inv-con" value=${9}>
+                <input type="number" class="form-control" id="inv-con" value=${9} readonly>
                 <input type="text" readonly class="form-control" value=${10}>
                 <input type="text" readonly class="form-control" value=${11}>
             </div>
@@ -63,7 +62,7 @@ let attribute_block = template`
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="">APP:</span>
                 </div>
-                <input type="number" class="form-control" id="inv-app" value=${12}>
+                <input type="number" class="form-control" id="inv-app" value=${12} readonly>
                 <input type="text" readonly class="form-control" value=${13}>
                 <input type="text" readonly class="form-control" value=${14}>
             </div>
@@ -74,7 +73,7 @@ let attribute_block = template`
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="">EDU:</span>
                 </div>
-                <input type="number" class="form-control" id="inv-edu" value=${15}>
+                <input type="number" class="form-control" id="inv-edu" value=${15} readonly>
                 <input type="text" readonly class="form-control" value=${16}>
                 <input type="text" readonly class="form-control" value=${17}>
             </div>
@@ -87,7 +86,7 @@ let attribute_block = template`
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="">SIZ:</span>
                 </div>
-                <input type="number" class="form-control" id="inv-siz" value=${18}>
+                <input type="number" class="form-control" id="inv-siz" value=${18} readonly>
                 <input type="text" readonly class="form-control" value=${19}>
                 <input type="text" readonly class="form-control" value=${20}>
             </div>
@@ -97,7 +96,7 @@ let attribute_block = template`
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="">INT:</span>
                 </div>
-                <input type="number" class="form-control" id="inv-int" value=${21}>
+                <input type="number" class="form-control" id="inv-int" value=${21} readonly>
                 <input type="text" readonly class="form-control" value=${22}>
                 <input type="text" readonly class="form-control" value=${23}>
             </div>
@@ -107,15 +106,10 @@ let attribute_block = template`
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="">MOV:</span>
                 </div>
-                <input type="text" readonly class="form-control" id="inv-mov" value=${24}>
+                <input type="text" readonly class="form-control" id="inv-mov" value=${24} disabled>
             </div>
         </div>
-    </div>
-    <br>
-    <div class="row">
-        <input type="submit" class="btn btn-success" value="Update">
-    </div>
-</div>`;
+    </div>`;
 
 function attribute_seeder(attributes) {
     return attribute_block(
@@ -170,5 +164,42 @@ export function parse_attributes(res) {
         <div class="col offset-md-7">
             Damage Bonus: <b>${attributes.BUILD[0]}</b>
         </div>`
+    )
+    $(document).ready(
+        $("#inv-str, #inv-con, #inv-pow, #inv-siz, #inv-edu, #inv-int, #inv-app, #inv-dex").change(
+            function (evt) {
+                var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+                $.ajax({
+                    url: window.location.pathname + '/attrs',
+                    type: "POST",
+                    data: {
+                        'strength': $("#inv-str").val(),
+                        'constitution': $("#inv-con").val(),
+                        'power': $("#inv-pow").val(),
+                        'size': $("#inv-siz").val(),
+                        'education': $("#inv-edu").val(),
+                        'intelligence': $("#inv-int").val(),
+                        'appearance': $('#inv-app').val(),
+                        'dexterity': $('#inv-dex').val()
+                    },
+                    beforeSend: function (xhr, settings) {
+                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                    },
+                    success: function (res) {
+                        parse_attributes(res)
+                    }
+                })
+            }));
+
+    $("#inv-attrs-edit").click(
+        function (evt) {
+            if ($("#inv-attrs-edit")[0].innerHTML === `<i class="bi bi-unlock"></i>`) {
+                $("#inv-attrs div div input[id^='inv-']").prop('readonly', false);
+                $("#inv-attrs-edit")[0].innerHTML = `<i class="bi bi-lock"></i>`
+            } else {
+                $("#inv-attrs div div input[id^='inv-']").prop('readonly', true);
+                $("#inv-attrs-edit")[0].innerHTML = `<i class="bi bi-unlock"></i>`
+            }
+        }
     )
 }
