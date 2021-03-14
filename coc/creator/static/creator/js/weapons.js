@@ -2,16 +2,16 @@ export function get_weapons(res) {
     for (let weapon of res.weapons) {
         $("#inv-weapons").append(
             `<tr id="gear-row-${weapon['uuid']}">
-                <td><input type="text" class="form-control" id="item-inv-title-${weapon['uuid']}" value=${weapon["title"]} readonly></td>
+                <td><input type="text" class="form-control" style="width:200px" id="item-inv-title-${weapon['uuid']}" value=${weapon["title"]} readonly></td>
                 <td>${weapon["skill_value"][0]}</td>
                 <td>${weapon["skill_value"][1]}</td>
                 <td>${weapon["skill_value"][2]}</td>
-                <td><input type="text" class="form-control" id="item-inv-dmg-${weapon['uuid']}" value=${weapon.damage} readonly></td>
-                <td><input type="text" class="form-control" id="item-inv-base-range-${weapon['uuid']}" value=${weapon.base_range} readonly></td>
-                <td><input type="text" class="form-control" id="item-inv-uses-per-round-${weapon['uuid']}" value=${weapon.uses_per_round} readonly></td>
-                <td><input type="text" class="form-control" id="item-inv-bullets-in-gun-mag-${weapon['uuid']}" value=${weapon.bullets_in_gun_mag} readonly></td>
-                <td><input type="text" class="form-control" id="item-inv-ammo-${weapon['uuid']}" value=${weapon.ammo} readonly></td>
-                <td><input type="text" class="form-control" id="item-inv-malf-${weapon['uuid']}" value=${weapon.malfunction} readonly></td>
+                <td><input type="text" class="form-control" style="width:70px" id="item-inv-dmg-${weapon['uuid']}" value=${weapon.damage} readonly></td>
+                <td><input type="text" class="form-control" style="width:70px" id="item-inv-base-range-${weapon['uuid']}" value=${weapon.base_range} readonly></td>
+                <td><input type="text" class="form-control" style="width:70px" id="item-inv-uses-per-round-${weapon['uuid']}" value=${weapon.uses_per_round} readonly></td>
+                <td><input type="text" class="form-control" style="width:70px" id="item-inv-bullets-in-gun-mag-${weapon['uuid']}" value=${weapon.bullets_in_gun_mag} readonly></td>
+                <td><input type="text" class="form-control" style="width:70px" id="item-inv-ammo-${weapon['uuid']}" value=${weapon.ammo} readonly></td>
+                <td><input type="text" class="form-control" style="width:50px" id="item-inv-malf-${weapon['uuid']}" value=${weapon.malfunction} readonly></td>
                 <td>
                     <a class="btn btn-primary" id="item-inv-edit-${weapon["uuid"]}"><i class="bi bi-pencil"></i></a>
                     <a class="btn btn-success disabled" id="weapon-inv-save-${weapon["uuid"]}"><i class="bi bi-save"></i></a>
@@ -26,7 +26,7 @@ export function save_weapon_inventory_handler() {
     $("a[id^='weapon-inv-save-']").click(
         function (evt) {
             evt.preventDefault();
-            var item_id = evt.target.id.replace("weapon-inv-save-", "");
+            var item_id = evt.currentTarget.id.replace("weapon-inv-save-", "");
             $("input[id*='" + item_id + "']").prop('readonly', true);
             $("#weapon-inv-save-" + item_id).addClass("disabled");
             $("#item-inv-rem-" + item_id).removeClass("disabled");
@@ -71,7 +71,7 @@ export function edit_weapon_inventory_handler() {
         function (evt) {
             evt.preventDefault();
             var item_id = evt.target.id.replace("item-inv-edit-", "");
-            $("input[id*='" + item_id + "']").prop('readonly', false);
+            $("input[id$='" + item_id + "']").prop('readonly', false);
             $("#weapon-inv-save-" + item_id).removeClass("disabled");
             $("#item-inv-rem-" + item_id).addClass("disabled");
             $("#item-inv-edit-" + item_id).addClass("disabled");
