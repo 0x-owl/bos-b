@@ -2,7 +2,6 @@ export function flush_skills_columns() {
     $("#skills_1").remove();
     $("#skills_2").remove();
     $("#skills_3").remove();
-    $("#inv-skills-submit").remove();
 }
 
 export function cleanse_skills() {
@@ -15,8 +14,28 @@ export function cleanse_skills() {
 }
 
 
+export function edit_skills_handler() {
+    $("#inv-skills-edit").click(
+        function (evt) {
+            if ($("#inv-skills-edit")[0].innerHTML === `<i class="bi bi-unlock"></i>`) {
+                $("input[id*='invsk-']").prop('readonly', false);
+                $("#inv-skills-reset").removeClass('disabled');
+                $("#inv-skills-shuffle").removeClass('disabled');
+                $("#inv-skills-edit")[0].innerHTML = `<i class="bi bi-lock"></i>`
+            } else {
+                $("input[id*='invsk-']").prop('readonly', true);
+                $("#inv-skills-reset").addClass('disabled');
+                $("#inv-skills-shuffle").addClass('disabled');
+                $("#inv-skills-edit")[0].innerHTML = `<i class="bi bi-unlock"></i>`
+            }
+        }
+    )
+}
+
+
+
 export function skills(res) {
-    let id_ = "#skills_1";;
+    let id_ = "#skills_1";
     flush_skills_columns();
     for (let inv_skill of res.skills) {
         let full_val = inv_skill[1] < 10 ? "0" + inv_skill[1] : inv_skill[1];
@@ -86,19 +105,5 @@ export function skills(res) {
         }
     );
     // edit button logic for skills
-    $("#inv-skills-edit").click(
-        function (evt) {
-            if ($("#inv-skills-edit")[0].innerHTML === `<i class="bi bi-unlock"></i>`) {
-                $("input[id*='invsk-']").prop('readonly', false);
-                $("#inv-skills-reset").removeClass('disabled');
-                $("#inv-skills-shuffle").removeClass('disabled');
-                $("#inv-skills-edit")[0].innerHTML = `<i class="bi bi-lock"></i>`
-            } else {
-                $("input[id*='invsk-']").prop('readonly', true);
-                $("#inv-skills-reset").addClass('disabled');
-                $("#inv-skills-shuffle").addClass('disabled');
-                $("#inv-skills-edit")[0].innerHTML = `<i class="bi bi-unlock"></i>`
-            }
-        }
-    )
+    edit_skills_handler();
 }

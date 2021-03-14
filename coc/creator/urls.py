@@ -19,6 +19,11 @@ urlpatterns = [
         name="inv_attrs"
     ),
     path(
+        '<slug:inv>/attrs/update',
+        views.investigators_attribute_update,
+        name="inv_attr_update"
+    ),
+    path(
         '<slug:inv>/derivative_attrs',
         views.investigators_deriv_attrs,
         name="inv_deriv_attrs"

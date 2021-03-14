@@ -149,6 +149,40 @@ function attribute_seeder(attributes) {
     )
 }
 
+export function update_attribute(res) {
+    let attributes_name = {
+        'inv-str': 'strength',
+        'inv-con': 'constitution',
+        'inv-pow': 'power',
+        'inv-siz': 'size',
+        'inv-edu': 'education',
+        'inv-int': 'intelligence',
+        'inv-app': 'appearance',
+        'inv-dex': 'dexterity'
+    }
+    $("#inv-attrs div div input[id^='inv-']").change(
+        function (evt) {
+            var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+            let id_ = evt.target.id;
+            let data = {};
+            data[attributes_name[id_]] = $("#" + id_).val();
+            $.ajax({
+                url: window.location.pathname + '/attrs/update',
+                type: "POST",
+                data: data,
+                beforeSend: function (xhr, settings) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                },
+                success: function (res) {
+                    $("#" + id_).val(res[attributes_name[id_]][0])
+                    let siblings = $("#" + id_).siblings('input');
+                    siblings[0].value = res[attributes_name[id_]][1];
+                    siblings[1].value = res[attributes_name[id_]][2];
+                }
+            })
+        });
+}
+
 
 export function parse_attributes(res) {
     let attributes = res.attributes;
@@ -165,31 +199,8 @@ export function parse_attributes(res) {
             Damage Bonus: <b>${attributes.BUILD[0]}</b>
         </div>`
     )
-    $(document).ready(
-        $("#inv-str, #inv-con, #inv-pow, #inv-siz, #inv-edu, #inv-int, #inv-app, #inv-dex").change(
-            function (evt) {
-                var csrftoken = $("[name=csrfmiddlewaretoken]").val();
-                $.ajax({
-                    url: window.location.pathname + '/attrs',
-                    type: "POST",
-                    data: {
-                        'strength': $("#inv-str").val(),
-                        'constitution': $("#inv-con").val(),
-                        'power': $("#inv-pow").val(),
-                        'size': $("#inv-siz").val(),
-                        'education': $("#inv-edu").val(),
-                        'intelligence': $("#inv-int").val(),
-                        'appearance': $('#inv-app').val(),
-                        'dexterity': $('#inv-dex').val()
-                    },
-                    beforeSend: function (xhr, settings) {
-                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
-                    },
-                    success: function (res) {
-                        parse_attributes(res)
-                    }
-                })
-            }));
+
+    update_attribute();
 
     $("#inv-attrs-edit").click(
         function (evt) {

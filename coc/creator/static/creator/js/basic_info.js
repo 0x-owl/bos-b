@@ -1,4 +1,4 @@
-import { skills, flush_skills_columns } from "/static/creator/js/skills.js";
+import { skills, flush_skills_columns, edit_skills_handler } from "/static/creator/js/skills.js";
 
 
 export function post_basic_info(res) {
@@ -25,7 +25,10 @@ export function post_basic_info(res) {
     }
     $.ajax({
         url: window.location.href + "/skills",
-        success: function (res) { skills(res) },
+        success: function (res) {
+            skills(res);
+            edit_skills_handler();
+        },
         error: function (res) {
             console.log(res);
         }

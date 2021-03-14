@@ -75,6 +75,23 @@ def investigators_attributes(request, inv):
         {'attributes': attributes}, status=200)
 
 
+def investigators_attribute_update(request, inv):
+    '''Retrieve investigators attributes.'''
+    inv = Investigator.objects.filter(uuid=inv)
+
+    if request.POST:
+        data_unclean = dict(request.POST)
+        attr = list(data_unclean.keys())[0]
+        attr_value = int(data_unclean[attr][0])
+        inv.update(**{attr: attr_value})
+        attributes = {attr: generate_full_half_fifth_values(attr_value)}
+        inv = inv.first()
+        attributes['MOV'] = [inv.move]
+        attributes["BUILD"] = list(inv.build)
+        return JsonResponse(attributes, status=200)
+    return JsonResponse({'response': 'Unauthorized'}, status=401)
+
+
 def get_investigators_portrait(request, inv):
     '''Retrieve investigators portrait.'''
     investigator = Investigator.objects.get(

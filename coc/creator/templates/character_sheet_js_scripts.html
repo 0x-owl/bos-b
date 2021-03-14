@@ -4,7 +4,7 @@
     </script>
 <!-- Skills Ajax -->
 <script type="module">
-    import { skills, flush_skills_columns, cleanse_skills } from '{% static "creator/js/skills.js" %}';
+    import { skills, flush_skills_columns, cleanse_skills, edit_skills_handler } from '{% static "creator/js/skills.js" %}';
     $("#inv-skills").ready(
         function () {
             $.ajaxSetup({ cache: false });
@@ -29,8 +29,10 @@
                 success: function (res) {
                     flush_skills_columns();
                     skills(res);
+                    edit_skills_handler();
                     $("#inv-skills-reset").addClass('disabled');
                     $("#inv-skills-shuffle").addClass('disabled');
+                    $("#inv-skills-edit")[0].innerHTML = `<i class="bi bi-unlock"></i>`
                 },
                 error: function (res) {
                     console.log(res);
@@ -47,8 +49,10 @@
                 success: function (res) {
                     flush_skills_columns();
                     skills(res);
+                    edit_skills_handler();
                     $("#inv-skills-reset").addClass('disabled');
                     $("#inv-skills-shuffle").addClass('disabled');
+                    $("#inv-skills-edit")[0].innerHTML = `<i class="bi bi-unlock"></i>`
                 },
                 error: function (res) {
                     console.log(res);
