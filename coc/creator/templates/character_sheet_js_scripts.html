@@ -10,7 +10,10 @@
             $.ajaxSetup({ cache: false });
             $.ajax({
                 url: "{% url 'inv_skills' res.investigator.uuid %}",
-                success: function (res) { skills(res) },
+                success: function (res) {
+                    skills(res);
+
+                },
                 error: function (res) {
                     console.log(res);
                 }
@@ -28,7 +31,6 @@
                     skills(res);
                     $("#inv-skills-reset").addClass('disabled');
                     $("#inv-skills-shuffle").addClass('disabled');
-                    $("#inv-skills-submit").addClass('disabled');
                 },
                 error: function (res) {
                     console.log(res);
@@ -47,7 +49,6 @@
                     skills(res);
                     $("#inv-skills-reset").addClass('disabled');
                     $("#inv-skills-shuffle").addClass('disabled');
-                    $("#inv-skills-submit").addClass('disabled');
                 },
                 error: function (res) {
                     console.log(res);
@@ -55,26 +56,6 @@
             })
         }
     );
-    $("#inv-skills").on("submit", function (evt) {
-        evt.preventDefault();
-        var csrftoken = $("[name=csrfmiddlewaretoken]").val();
-        let data = cleanse_skills();
-        $.ajax({
-            url: "{% url 'inv_skills_update' res.investigator.uuid %}",
-            type: "POST",
-            data: data,
-            beforeSend: function (xhr, settings) {
-                xhr.setRequestHeader("X-CSRFToken", csrftoken);
-            },
-            success: function (res) {
-                skills(res);
-                $("#inv-skills-reset").addClass('disabled');
-                $("#inv-skills-shuffle").addClass('disabled');
-                $("#inv-skills-submit").addClass('disabled');
-            }
-        })
-
-    })
 </script>
 <!-- Basic Info Ajax -->
 <script type="module">

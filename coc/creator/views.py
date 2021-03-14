@@ -130,6 +130,22 @@ def update_investigators_skills(request, inv):
     return JsonResponse(res, status=200)
 
 
+def update_investigators_skill(request, inv):
+    '''Update a single skill for an investigator.'''
+    investigator = Investigator.objects.get(
+        uuid=inv
+    )
+    data_unclean = dict(request.POST)
+    skill = list(data_unclean.keys())[0]
+    skill_value = data_unclean[skill][0]
+    inv_sk = investigator.skills.get(skill)
+    if inv_sk is not None:
+        investigator.skills[skill]['value'] = int(skill_value)
+    investigator.save()
+    res = {skill: list(generate_full_half_fifth_values(int(skill_value)))}
+    return JsonResponse(res, status=200)
+
+
 def investigators_skills_reset(request, inv):
     investigator = Investigator.objects.get(
         uuid=inv
@@ -213,6 +229,7 @@ def edit_investigators_gear(request, inventory):
         inventory.stock = int(data.get('stock', [1])[0])
         inventory.properties.update(**sanitize_data)
         inventory.save()
+        inventory.properties['stock'] = inventory.stock
         return JsonResponse(inventory.properties, status=200)
     return JsonResponse({'response': 'Unauthorized'}, status=401)
 

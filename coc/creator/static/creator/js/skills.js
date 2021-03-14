@@ -52,19 +52,53 @@ export function skills(res) {
             <br>`
         )
     }
-    $("#inv-skills").append(
-        `<div class="row">
-            <input id="inv-skills-submit" type="submit" class="btn btn-success disabled" value="Update">
-        </div>`
+    // updating skill value logic
+    $("input[id^='invsk-']").change(
+        function (evt) {
+            let inp = $("#" + evt.target.id)[0];
+            let val = inp.valueAsNumber;
+            let skill_name = evt.target.id.replace('invsk-', '');
+            if (inp.readOnly === false) {
+                var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+                let data = {};
+                data[skill_name] = val;
+                let url_ = window.location.pathname + "/skill_update";
+                $.ajax({
+                    url: url_,
+                    type: "POST",
+                    data: data,
+                    beforeSend: function (xhr, settings) {
+                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                    },
+                    success: function (res) {
+                        let skill = Object.keys(res)[0];
+                        let ids_ = "#invsk-" + skill;
+                        $(ids_).val(res[skill][0])
+                        let siblings = $(ids_).siblings("input");
+                        siblings[0].value = res[skill][1];
+                        siblings[1].value = res[skill][2];
+                    },
+                    error: function (res) {
+                        console.log(res)
+                    }
+                })
+            }
+        }
     );
     // edit button logic for skills
     $("#inv-skills-edit").click(
         function (evt) {
-            evt.preventDefault();
-            $("input[id*='invsk-']").prop('readonly', false);
-            $("#inv-skills-reset").removeClass('disabled');
-            $("#inv-skills-shuffle").removeClass('disabled');
-            $("#inv-skills-submit").removeClass('disabled');
+            if ($("#inv-skills-edit")[0].innerHTML === 'Unlock') {
+                $("input[id*='invsk-']").prop('readonly', false);
+                $("#inv-skills-reset").removeClass('disabled');
+                $("#inv-skills-shuffle").removeClass('disabled');
+                $("#inv-skills-edit")[0].innerHTML = 'Lock'
+            } else {
+                $("input[id*='invsk-']").prop('readonly', true);
+                $("#inv-skills-reset").addClass('disabled');
+                $("#inv-skills-shuffle").addClass('disabled');
+                $("#inv-skills-edit")[0].innerHTML = 'Unlock'
+            }
         }
     )
 }

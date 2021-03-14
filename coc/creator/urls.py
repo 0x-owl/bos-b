@@ -40,6 +40,11 @@ urlpatterns = [
         name="inv_skills_update"
     ),
     path(
+        '<slug:inv>/skill_update',
+        views.update_investigators_skill,
+        name="inv_skill_update"
+    ),
+    path(
         '<slug:inv>/skills_shuffle',
         views.investigators_skills_shuffle,
         name="inv_skills_shuffle"
