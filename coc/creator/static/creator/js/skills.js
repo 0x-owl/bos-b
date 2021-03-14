@@ -88,16 +88,16 @@ export function skills(res) {
     // edit button logic for skills
     $("#inv-skills-edit").click(
         function (evt) {
-            if ($("#inv-skills-edit")[0].innerHTML === 'Unlock') {
+            if ($("#inv-skills-edit")[0].innerHTML === `<i class="bi bi-unlock"></i>`) {
                 $("input[id*='invsk-']").prop('readonly', false);
                 $("#inv-skills-reset").removeClass('disabled');
                 $("#inv-skills-shuffle").removeClass('disabled');
-                $("#inv-skills-edit")[0].innerHTML = 'Lock'
+                $("#inv-skills-edit")[0].innerHTML = `<i class="bi bi-lock"></i>`
             } else {
                 $("input[id*='invsk-']").prop('readonly', true);
                 $("#inv-skills-reset").addClass('disabled');
                 $("#inv-skills-shuffle").addClass('disabled');
-                $("#inv-skills-edit")[0].innerHTML = 'Unlock'
+                $("#inv-skills-edit")[0].innerHTML = `<i class="bi bi-unlock"></i>`
             }
         }
     )

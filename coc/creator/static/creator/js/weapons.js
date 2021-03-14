@@ -13,9 +13,9 @@ export function get_weapons(res) {
                 <td><input type="text" class="form-control" id="item-inv-ammo-${weapon['uuid']}" value=${weapon.ammo} readonly></td>
                 <td><input type="text" class="form-control" id="item-inv-malf-${weapon['uuid']}" value=${weapon.malfunction} readonly></td>
                 <td>
-                    <a class="btn btn-primary" id="item-inv-edit-${weapon["uuid"]}">Edit</a>
-                    <a class="btn btn-success disabled" id="weapon-inv-save-${weapon["uuid"]}">Save</a>
-                    <a class="btn btn-danger" id="item-inv-rem-${weapon["uuid"]}">Remove</a>
+                    <a class="btn btn-primary" id="item-inv-edit-${weapon["uuid"]}"><i class="bi bi-pencil"></i></a>
+                    <a class="btn btn-success disabled" id="weapon-inv-save-${weapon["uuid"]}"><i class="bi bi-save"></i></a>
+                    <a class="btn btn-danger" id="item-inv-rem-${weapon["uuid"]}"><i class="bi bi-x-circle"></i></a>
                 </td>
             </tr >`
         )
