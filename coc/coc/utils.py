@@ -13,25 +13,25 @@ def mutation_flow(mutation, model, method, input_, field):
         input_ -- dictionary that contains all necessary information.
         field -- string that represents the field name of the mutation.
     """
-    if method != 'CREATE':
-        uuid = input_.pop('uuid')
-        mutations = model.objects.filter(
-            uuid=uuid)
-        if method == 'DELETE':
+    method = method.lower().strip()
+    if method != 'create':
+        uuid = input_.get('uuid')
+        assert uuid is not None, "Mutations require a UUID"
+        mutations = model.objects.filter(uuid=uuid)
+        if method == 'delete':
             mutate = mutations.first()
             mutate.delete()
-            ret = mutation(**{field: mutate})
-        elif method == 'UPDATE':
-            if len(mutations) == 1:
-                mutations.update(**input_)
-                mutate = mutations.first()
-                ret = mutation(**{field: mutate})
-            else:
-                log.error('Two or more entities have the same uuid!')
-                ret = mutation(**{field: mutations.first()})
+            # Mitigates Graphql "GraphQLError: Cannot return null for non-nullable field"
+            mutate.uuid = uuid
+            return mutation(**{field: mutate})
+    
+        if method == 'update':
+            del input_['uuid']
+            mutations.update(**input_)
+            mutate = mutations.first()
+
+            return mutation(**{field: mutate})
     else: 
         mutate = model(**input_) 
         mutate.save()
-        ret = mutation(**{field: mutate})
-
-    return ret
+        return mutation(**{field: mutate})

@@ -1,22 +1,18 @@
 from coc.utils import mutation_flow
-
 from creator.models import (CampaignInvestigator, Game, Inventory,
-                            Investigator,
-                            InvestigatorsDiary,
-                            InvestigatorTags, Item, Mania, ManiaInvestigator,
-                            Occupation, Phobia, PhobiaInvestigator, Portrait,
-                            Skills, Spell, Tag)
-
+                            Investigator, InvestigatorsDiary, InvestigatorTags,
+                            Item, Mania, ManiaInvestigator, Occupation, Phobia,
+                            PhobiaInvestigator, Portrait, Skills, Spell, Tag)
 from creator.schemas.schema_nodes import (CampaignInvNode, DiaryInvNode,
-                                  GameNode, InventoryInvNode, InvestigatorNode,
-                                  ItemNode, ManiaNode, ManiaInvNode,
-                                  OccupationNode, PhobiaNode, PhobiaInvNode,
-                                  SkillNode, SpellNode, TagNode,
-                                  TagInvNode, UserNode, UserNode)
-
-from graphene import (ClientIDMutation, Field, Float, Int, ObjectType, String,
-                      relay, JSONString, Boolean)
+                                          GameNode, InventoryInvNode,
+                                          InvestigatorNode, ItemNode,
+                                          ManiaInvNode, ManiaNode,
+                                          OccupationNode, PhobiaInvNode,
+                                          PhobiaNode, SkillNode, SpellNode,
+                                          TagInvNode, TagNode, UserNode)
 from django.contrib.auth.models import User
+from graphene import (Boolean, ClientIDMutation, Field, Float, Int, JSONString,
+                      ObjectType, String, relay)
 
 
 class TagMutation(ClientIDMutation):
@@ -148,6 +144,7 @@ class SkillMutation(ClientIDMutation):
             'skill'
         )
         return ret
+
 
 class InvestigatorMutation(ClientIDMutation):
     investigator = Field(InvestigatorNode)

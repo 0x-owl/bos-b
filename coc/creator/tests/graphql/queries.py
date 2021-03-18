@@ -463,6 +463,7 @@ mutation{{
       method: "DELETE"
     }}){{
     spell{{
+        name,
         uuid
     }}
   }}
