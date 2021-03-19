@@ -4,7 +4,7 @@
     "fields": {
       "category": 4,
       "properties": {
-        "title": "Lamp Glass Shade",
+        "title": "Lamp, Glass Shade",
         "description": "Furniture",
         "price": 5,
         "era": "1920's"
@@ -184,7 +184,7 @@
     "fields": {
       "category": 4,
       "properties": {
-        "title": "Harris Typewrite",
+        "title": "Harris Typewriter",
         "description": "Miscellaneous Investigator Tools",
         "price": 66.75,
         "era": "1920's"
@@ -400,7 +400,7 @@
     "fields": {
       "category": 4,
       "properties": {
-        "title": "Glass-Door Oak Bookcase (200 Book)",
+        "title": "Glass-Door Oak Bookcase (200 Books)",
         "description": "Miscellaneous Investigator Tools",
         "price": 24.65,
         "era": "1920's"
@@ -474,7 +474,7 @@
       "properties": {
         "title": "Field Glasses (3x to 6x)",
         "description": "Outdoor & Travel Gear",
-        "price": 23,
+        "price": "8.5 - 23",
         "era": "1920's"
       }
     }
@@ -628,7 +628,7 @@
     "fields": {
       "category": 4,
       "properties": {
-        "title": "Carbide Lamp (300\\u2019 Beam)",
+        "title": "Carbide Lamp (300' Beam)",
         "description": "Outdoor & Travel Gear",
         "price": 2.59,
         "era": "1920's"
@@ -712,7 +712,7 @@
     "fields": {
       "category": 4,
       "properties": {
-        "title": "Collapsible Fishing Rod and Tackle Se",
+        "title": "Collapsible Fishing Rod and Tackle Set",
         "description": "Outdoor & Travel Gear",
         "price": 9.35,
         "era": "1920's"
@@ -774,7 +774,7 @@
       "properties": {
         "title": "Electric Torch",
         "description": "Outdoor & Travel Gear",
-        "price": 2.25,
+        "price": "1.35 - 2.25",
         "era": "1920's"
       }
     }
@@ -796,7 +796,7 @@
     "fields": {
       "category": 4,
       "properties": {
-        "title": "Batterie",
+        "title": "Batteries",
         "description": "Outdoor & Travel Gear",
         "price": 0.6,
         "era": "1920's"
@@ -820,7 +820,7 @@
     "fields": {
       "category": 4,
       "properties": {
-        "title": "Tool Outfit (40 Tools)",
+        "title": "Tool Outfit (20 Tools)",
         "description": "Tools",
         "price": 14.9,
         "era": "1920's"
@@ -892,7 +892,7 @@
     "fields": {
       "category": 4,
       "properties": {
-        "title": "Watchmaker\\u2019s Tool Kit",
+        "title": "Watchmaker's Tool Kit",
         "description": "Tools",
         "price": 7.74,
         "era": "1920's"
@@ -1242,7 +1242,7 @@
       "properties": {
         "title": "Covert Digital Recorder",
         "description": "Electronics",
-        "price": 300,
+        "price": "300+",
         "era": "Modern"
       }
     }
@@ -1254,7 +1254,7 @@
       "properties": {
         "title": "Listening Device",
         "description": "Electronics",
-        "price": 200,
+        "price": "200+",
         "era": "Modern"
       }
     }
@@ -1266,7 +1266,7 @@
       "properties": {
         "title": "Night Vision Goggles",
         "description": "Electronics",
-        "price": 600,
+        "price": "600+",
         "era": "Modern"
       }
     }
@@ -1384,7 +1384,7 @@
     "fields": {
       "category": 4,
       "properties": {
-        "title": "\\u201cSurvival\\u201d Knife",
+        "title": "'Survival' Knife",
         "description": "Outdoor & Travel Gear",
         "price": 65,
         "era": "Modern"
@@ -1470,7 +1470,7 @@
       "properties": {
         "title": "Scuba Gear good",
         "description": "Outdoor & Travel Gear",
-        "price": 2500,
+        "price": "2500+",
         "era": "Modern"
       }
     }
@@ -1528,7 +1528,7 @@
     "fields": {
       "category": 4,
       "properties": {
-        "title": "Mechanic\\u2019s Tool Chest (255 pc.)",
+        "title": "Mechanic's Tool Chest (255 pc.)",
         "description": "Tools",
         "price": 500,
         "era": "Modern"
@@ -1552,7 +1552,7 @@
     "fields": {
       "category": 4,
       "properties": {
-        "title": "Welder\\u2019s Kit",
+        "title": "Welder's Kit",
         "description": "Tools",
         "price": 1400,
         "era": "Modern"
