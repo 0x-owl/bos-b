@@ -1,0 +1,12 @@
+{% block content %}
+
+<h1>All occupations</h1>
+<ul>
+   {% for occupation in occupations %}
+
+    <li><a href="">{{occupation.title}}</a></li>
+   
+    {% endfor %}
+</ul>
+
+{% endblock %}

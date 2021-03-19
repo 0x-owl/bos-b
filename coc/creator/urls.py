@@ -5,6 +5,7 @@ from django.urls import path
 from creator import views
 
 urlpatterns = [
+    path('occupations', views.list_occupations, name="list_occupations"),
     path('random', views.generate_random_investigator),
     # Core endpoints
     path('<slug:inv>', views.get_investigators_data, name="inv_data"),
@@ -100,5 +101,6 @@ urlpatterns = [
         '<slug:inv>/backstory/update',
         views.update_investigators_backstory,
         name="inv_backstory_update"
-    )
+    ),
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
