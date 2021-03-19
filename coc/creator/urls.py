@@ -62,7 +62,7 @@ urlpatterns = [
     ),
     # Items endpoints
     path(
-        '<slug:inv>/wepons',
+        '<slug:inv>/weapons',
         views.get_investigators_weapons,
         name="inv_weapons"
     ),
