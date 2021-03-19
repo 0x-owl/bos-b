@@ -351,3 +351,10 @@ def generate_random_investigator(request):
     rand = RandomInvestigator()
     rand.build()
     return redirect(get_investigators_data, inv=rand.investigator.uuid)
+
+def list_occupations(request):
+    '''generates a dict of all occupations'''
+    occ = {
+        'occupations': Occupation.objects.all()
+    }
+    return render(request, 'occupations.html', occ )
