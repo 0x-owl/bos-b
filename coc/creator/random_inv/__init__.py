@@ -113,6 +113,15 @@ def occ_point_assigner(max_points: int, inv: Investigator):
         inv.skills[occ_skill]['value'] += val
         max_points -= val
 
+    credit_rating_value = randint(
+        inv.occupation.credit_rating_min,
+        inv.occupation.credit_rating_max
+    )
+
+    max_points -= credit_rating_value
+    
+    inv.skills['Credit Rating']['value'] = credit_rating_value
+
     shuffle(occupation_skills)
     while max_points:
         occ_skill = choice(occupation_skills)
@@ -123,10 +132,7 @@ def occ_point_assigner(max_points: int, inv: Investigator):
             inv.skills[occ_skill]['value'] += val
             max_points -= val
 
-    inv.skills['Credit Rating']['value'] = randint(
-        inv.occupation.credit_rating_min,
-        inv.occupation.credit_rating_max
-    )
+    
     inv.skills['Language(Own)']['value'] = inv.education
     inv.skills['Dodge']['value'] = inv.dexterity // 2
     inv.save()
