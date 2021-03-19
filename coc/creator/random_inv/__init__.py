@@ -49,7 +49,9 @@ def random_names(gender, decade, amount_of_names, amount_of_surnames):
 
 def amount(points_available: int, limit: int):
     """Generate an adequate random value for the points assignment."""
-    limit = min(points_available, 91-limit)
+    upper_limit = 91-limit
+    upper_limit = upper_limit if upper_limit > 0 else 0
+    limit = min(points_available, upper_limit)
     val = randint(1, limit)
     return val
 
@@ -113,9 +115,12 @@ def occ_point_assigner(max_points: int, inv: Investigator):
         inv.skills[occ_skill]['value'] += val
         max_points -= val
 
+    cr_max_limit = max_points if max_points < inv.occupation.credit_rating_max \
+        else inv.occupation.credit_rating_max
+    
     credit_rating_value = randint(
         inv.occupation.credit_rating_min,
-        inv.occupation.credit_rating_max
+        cr_max_limit
     )
 
     max_points -= credit_rating_value
