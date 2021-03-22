@@ -10,14 +10,12 @@ GAME_TYPE = (
     ('2', 'Campaign')
 )
 
-
 TAG_FIELDS = {
     'id': Int(),
     'uuid': String(),
     'title': String(),
     'user_id': Int()
 }
-
 
 SPELL_CATEGORIES = [
     (1, 'BANISHMENT_OR_CONTROL'),
