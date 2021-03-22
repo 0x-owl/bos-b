@@ -1,0 +1,20 @@
+{% block content %}
+
+<h1>{{occupation}}</h1>
+<p>{{occupation.description}}</p>
+<p>Suggested contacts: {{occupation.suggested_contacts}}</p>
+<p>Credit Rating: {{occupation.credit_rating_min}}-{{occupation.credit_rating_max}}</p>
+
+{% for key, value in occupation.skills.items %}
+
+    <p>{{key}}: {{value}}</p>
+
+{% endfor %}
+
+{% for key, value in occupation.points.items %}
+
+    <p>{{key}}: {{value}}</p>
+    
+{% endfor %}
+
+{% endblock %}
