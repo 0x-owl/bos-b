@@ -414,7 +414,7 @@
             "era": "1920's",
             "base_value": 1,
             "description": "With this skill the user is familiar in the safe use of demolitions, including setting and defusing explosive charges. Mines and similar devices are designed to be easy to set (no roll required) and more difficult to remove or defuse. This skill also encompasses military-grade demolitions (anti-personnel mines, plastique, etc.). Given enough time and resources, those proficient may rig charges to demolish a building, clear a blocked tunnel, and repurpose explosive devises (such as constructing lowyield charges, booby-traps, and so on). Pushing examples: taking until the very last second to defuse the bomb; double-checking all the circuits/connections by hand. Sample Consequences of failing a Pushed roll: if defusing or removing an explosive device, the consequence of failing a pushed roll is clear—it explodes! If using the Demolitions skill to place charges, the consequence of failing a pushed roll may be a failure to detonate at the right time (or at all), or that the detonation fails to have the desired effect (either too great or too little). If an insane investigator fails a pushed roll, he or she devises the most bizarre method of delivering the explosive, such as strapping it to a cat or to themselves.",
-            "uncommon": false,
+            "uncommon": true,
             "sub_skills": {}
         }
     },
@@ -436,7 +436,7 @@
             "era": "1920's",
             "base_value": 1,
             "description": "The user is trained in the use and maintenance of diving equipment for swimming underwater, including underwater navigation, proper weighting, and emergency procedures. Prior to the invention of the Aqua-Lung in 1942, rigid diving suits were worn with air pumped from the surface through a connecting tube. In the modern age, a scuba diver will be familiar with the physics of diving, air pressure, and the physiological processes that occur when breathing with pressurized air. Pushing examples: pushing the limits of the equipment; methodically double-checking equipment; gaining professional assistance. Sample Consequences of failing a Pushed roll: become trapped underwater; attacked by sea creatures; suffer the bends. If an insane investigator fails a pushed roll, he or she begins to understand whale-song; all you have to do is follow their instructions.",
-            "uncommon": true,
+            "uncommon": false,
             "sub_skills": {}
         }
     },
