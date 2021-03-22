@@ -6,6 +6,7 @@ from creator import views
 
 urlpatterns = [
     path('occupations', views.list_occupations, name="list_occupations"),
+    path('occupations/<slug:occu>', views.show_occupation, name='occupation_detail'),
     path('random', views.generate_random_investigator),
     # Core endpoints
     path('<slug:inv>', views.get_investigators_data, name="inv_data"),

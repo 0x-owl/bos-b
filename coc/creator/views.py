@@ -345,12 +345,11 @@ def update_investigators_backstory(request, inv):
     return JsonResponse({'response': 'Unauthorized'}, status=401)
 
 
-
-
 def generate_random_investigator(request):
     rand = RandomInvestigator()
     rand.build()
     return redirect(get_investigators_data, inv=rand.investigator.uuid)
+
 
 def list_occupations(request):
     '''generates a dict of all occupations'''
@@ -358,3 +357,10 @@ def list_occupations(request):
         'occupations': Occupation.objects.all()
     }
     return render(request, 'occupations.html', occ )
+
+
+def show_occupation(request, occu):
+    occ = {
+        'occupation': Occupation.objects.get(uuid= occu)
+    }
+    return render(request, 'occupation_detail.html', occ)

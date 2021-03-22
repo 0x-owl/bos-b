@@ -4,7 +4,7 @@
 <ul>
    {% for occupation in occupations %}
 
-    <li><a href="">{{occupation.title}}</a></li>
+    <li><a href="{% url 'occupation_detail' occupation.uuid %}">{{occupation.title}}</a></li>
    
     {% endfor %}
 </ul>
