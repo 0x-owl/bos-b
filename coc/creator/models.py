@@ -7,9 +7,10 @@ from django.db.models import (CASCADE, PROTECT, SET_NULL, BooleanField,
                               ImageField, IntegerField, JSONField, Model,
                               OneToOneField, PositiveIntegerField, TextField,
                               UUIDField)
+from graphene.types.scalars import String
 
-from creator.constants import (GAME_TYPE, GENDER, ITEM_CATEGORIES,
-                               SPELL_CATEGORIES)
+from creator.constants import (CREDIT_RATING, GAME_TYPE, GENDER,
+                               ITEM_CATEGORIES, SPELL_CATEGORIES)
 from creator.helpers.model_helpers import renamer, roller_stats
 
 User = get_user_model()
@@ -90,7 +91,7 @@ class Occupation(BaseModel):
     credit_rating_max = PositiveIntegerField()
     skills = JSONField()
     points = JSONField()
-    era = CharField(max_length=50, default="1920's")
+    era = CharField(max_length=50, default="1920")
     lovecraftian = BooleanField(default=False)
     classic = BooleanField(default=False)
     modern = BooleanField(default=False)
@@ -123,6 +124,7 @@ class Investigator(BaseModel):
     residence = CharField(max_length=80)
     birthplace = CharField(max_length=80)
     age = PositiveIntegerField(default=18)
+    era = CharField(max_length=50, default="1920")
     # Attributes
     strength = PositiveIntegerField(default=roller_stats(3))
     dexterity = PositiveIntegerField(default=roller_stats(3))
@@ -148,6 +150,11 @@ class Investigator(BaseModel):
     luck = PositiveIntegerField(default=roller_stats(3))
     magic_points = PositiveIntegerField(default=0)
     health = IntegerField(default=0)
+    # Skill derivative attributes
+    credit_rating_category = CharField(max_length=50, default="penniless")
+    cash = IntegerField(default=0)
+    assets = IntegerField(default=0)
+    spending_level = IntegerField(default=0)
 
     @property
     def max_health(self):
@@ -244,6 +251,28 @@ class Investigator(BaseModel):
         """Initialize the magic points at the investigator."""
         magic_points = self.sanity // 5
         return magic_points
+
+    def set_credit_status(self):
+        '''Initialize cash, assets and set spending level of investigator, given its
+        CR.'''
+        value = self.skills.get('Credit Rating', {}).get('value', 0)
+        value = int(value)
+        cr_era = CREDIT_RATING.get(self.era)
+        for category in cr_era:
+            cat_config = cr_era.get(category)
+            if value in range(cat_config['min'], cat_config['max'] + 1):
+                self.credit_rating_category = category
+                self.spending_level = cat_config['spending_level']
+                if category not in ['penniless', 'super_rich']:
+                    self.cash = value * cat_config['cash']
+                    self.assets = value * cat_config['assets']
+                else:
+                    self.cash = cat_config['cash']
+                    self.assets = cat_config['assets']
+                    
+                break
+        self.save()
+
 
     def __str__(self):
         """String representation of the object."""
