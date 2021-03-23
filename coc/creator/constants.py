@@ -50,6 +50,6 @@ ITEM_CATEGORIES = [
 ]
 
 SILOUETTES = [
-    "/uploads/basics/img/silouette_male.jpg",
-    "/uploads/basics/img/silouette_female.jpg"
+    "/uploads/basics/img/silouette_male.png",
+    "/uploads/basics/img/silouette_female.png"
 ]
