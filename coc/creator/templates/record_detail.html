@@ -1,0 +1,13 @@
+{% block content %}
+<h1>{{record}}</h1>
+<ul>
+    
+   {% for key, value in record.safe_dict.items %}
+
+        <p>{{key}}: {{value}}</p>
+   
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
