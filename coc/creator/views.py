@@ -11,7 +11,7 @@ from creator.helpers.views_helper import (gear_sanitizer,
                                           generate_attributes_form,
                                           generate_basic_info_form,
                                           generate_derivative_attributes_form,
-                                          skills_sanitizer)
+                                          skills_sanitizer, ALL_MODELS as all_models)
 from creator.models import (Inventory, Investigator, Item, ManiaInvestigator,
                             Occupation, PhobiaInvestigator, Portrait, Skills,
                             SpellInvestigator)
@@ -351,16 +351,19 @@ def generate_random_investigator(request):
     return redirect(get_investigators_data, inv=rand.investigator.uuid)
 
 
-def list_occupations(request):
-    '''generates a dict of all occupations'''
-    occ = {
-        'occupations': Occupation.objects.all()
-    }
-    return render(request, 'occupations.html', occ )
+def generic_model_list(request, model_type):
 
-
-def show_occupation(request, occu):
-    occ = {
-        'occupation': Occupation.objects.get(uuid= occu)
+    model = {
+        'model_name': model_type,
+        'records': all_models[model_type].objects.all()
     }
-    return render(request, 'occupation_detail.html', occ)
+
+    return render(request, 'generic_detail.html', model)
+
+def record_detail(request, id, model_name):
+
+    rec = {
+        'record': all_models[model_name].objects.get(uuid=id)
+    }
+
+    return render(request, 'record_detail.html', rec)

@@ -1,10 +1,19 @@
 from creator.forms import (AttributesForm, DerivativeAttributesForm,
                            InvestigatorBasicInfoForm)
 from creator.helpers.investigator import generate_full_half_fifth_values
-from creator.models import Inventory, Investigator, Skills
+from creator.models import (Inventory, Investigator, Skills, Occupation, Item, Spell, Mania, Phobia)
 from creator.random_inv import (base_skills_generator, free_point_assigner,
                                 occ_point_assigner)
 
+
+ALL_MODELS = {
+    'occupations': Occupation,
+    'spells': Spell,
+    'items': Item,
+    'skills': Skills,
+    'manias': Mania,
+    'phobias': Phobia
+    }
 
 def generate_basic_info_form(request, inv):
     '''Generate or update the investigator using the basic information form.'''

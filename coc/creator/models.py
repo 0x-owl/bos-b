@@ -50,7 +50,21 @@ class Spell(BaseModel):
     casting_time = CharField(max_length=50)
 
     def __str__(self):
-        return f"{self.name} - {self.category}" 
+        return f"{self.name} - {self.category}"
+
+    def safe_dict(self):
+        """Creates dict of all fields"""
+        model = {
+            'name': self.name,
+            'alternative_names': self.alternative_names,
+            'description': self.description,
+            'deeper_magic': self.deeper_magic,
+            'notes': self.notes,
+            'category': self.category,
+            'cost': self.cost,
+            'casting_time': self.casting_time
+            }
+        return model 
 
 
 class SpellTag(BaseModel):
@@ -80,6 +94,18 @@ class Skills(BaseModel):
         """String representation of the object."""
         return f"{self.title}-{self.era}"
 
+    def safe_dict(self):
+        """Creates dict of all fields"""
+        model = {
+            'title': self.title,
+            'era': self.era,
+            'base_value': self.base_value,
+            'description': self.description,
+            'uncommon': self.uncommon,
+            'sub_skills': self.sub_skills
+            }
+        return model
+
 
 class Occupation(BaseModel):
     """Occupation class."""
@@ -98,7 +124,22 @@ class Occupation(BaseModel):
     def __str__(self):
         """String representation of the object."""
         return f"{self.title}-{self.era}"
-
+    
+    def safe_dict(self):
+        """Creates dict of all fields"""
+        model = {
+            'title': self.title,
+            'description': self.description,
+            'suggested_contacts': self.suggested_contacts,
+            'credit_rating':  f"{self.credit_rating_min}-{self.credit_rating_max}",
+            'skills': self.skills,
+            'points': self.points,
+            'era': self.era,
+            'lovecraftian': self.lovecraftian,
+            'classic': self.classic,
+            'modern': self.modern
+        }
+        return model
 
 class OccupationTags(BaseModel):
     """Tags assigned to occupations."""
@@ -311,6 +352,14 @@ class Item(BaseModel):
         """String representation of the object."""
         return f"{self.properties['title']}-{self.properties['era']}"
 
+    def safe_dict(self):
+        """Creates dict of all fields"""
+        model = {
+            'category': self.category,
+            'properties': self.properties
+            }
+        return model 
+
 
 class ItemTag(BaseModel):
     """Tags assigned to the Item."""
@@ -382,6 +431,14 @@ class Mania(BaseModel):
         """String representation of the object."""
         return self.title
 
+    def safe_dict(self):
+        """Creates dict of all fields"""
+        model = {
+            'title': self.title,
+            'description': self.description
+            }
+        return model 
+
 
 class ManiaInvestigator(BaseModel):
     """Manias  Investigator Relationship"""
@@ -405,6 +462,14 @@ class Phobia(BaseModel):
     def __str__(self):
         """String representation of the object."""
         return self.title
+
+    def safe_dict(self):
+        """Creates dict of all fields"""
+        model = {
+            'title': self.title,
+            'description': self.description
+            }
+        return model
 
 
 class PhobiaInvestigator(BaseModel):

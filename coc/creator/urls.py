@@ -5,8 +5,8 @@ from django.urls import path
 from creator import views
 
 urlpatterns = [
-    path('occupations', views.list_occupations, name="list_occupations"),
-    path('occupations/<slug:occu>', views.show_occupation, name='occupation_detail'),
+    path('list/<str:model_type>', views.generic_model_list, name="list_model"),
+    path('detail/<slug:id>/<str:model_name>', views.record_detail, name="record_detail"),
     path('random', views.generate_random_investigator),
     # Core endpoints
     path('<slug:inv>', views.get_investigators_data, name="inv_data"),
