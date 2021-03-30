@@ -1,5 +1,0 @@
-## Objective
-
-## Steps
-
-## Documents // Notes
