@@ -10,6 +10,10 @@ GAME_TYPE = (
     ('2', 'Campaign')
 )
 
+ERA = (
+    '1920', '1920',
+    'modern', 'Modern'
+)
 
 TAG_FIELDS = {
     'id': Int(),

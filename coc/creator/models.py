@@ -8,7 +8,7 @@ from django.db.models import (CASCADE, PROTECT, SET_NULL, BooleanField,
                               OneToOneField, PositiveIntegerField, TextField,
                               UUIDField)
 
-from creator.constants import (GAME_TYPE, GENDER, ITEM_CATEGORIES,
+from creator.constants import (ERA, GAME_TYPE, GENDER, ITEM_CATEGORIES,
                                SPELL_CATEGORIES)
 from creator.helpers.model_helpers import renamer, roller_stats
 
@@ -81,7 +81,7 @@ class SpellTag(BaseModel):
 class Skills(BaseModel):
     """Skills class."""
     title = CharField(max_length=50)
-    era = CharField(max_length=50)
+    era = CharField(max_length=10, choices=ERA, default="1920")
     base_value = PositiveIntegerField(default=0)
     description = TextField(default="")
     uncommon = BooleanField(default=False)
@@ -116,7 +116,7 @@ class Occupation(BaseModel):
     credit_rating_max = PositiveIntegerField()
     skills = JSONField()
     points = JSONField()
-    era = CharField(max_length=50, default="1920's")
+    era = CharField(max_length=10, choices=ERA, default="1920")
     lovecraftian = BooleanField(default=False)
     classic = BooleanField(default=False)
     modern = BooleanField(default=False)
@@ -141,6 +141,7 @@ class Occupation(BaseModel):
         }
         return model
 
+
 class OccupationTags(BaseModel):
     """Tags assigned to occupations."""
     tag = ForeignKey(Tag, on_delete=PROTECT)
@@ -164,6 +165,7 @@ class Investigator(BaseModel):
     residence = CharField(max_length=80)
     birthplace = CharField(max_length=80)
     age = PositiveIntegerField(default=18)
+    era = CharField(max_length=10, choices=ERA, default="1920")
     # Attributes
     strength = PositiveIntegerField(default=roller_stats(3))
     dexterity = PositiveIntegerField(default=roller_stats(3))
@@ -343,6 +345,12 @@ class TagDiary(BaseModel):
 
 class Item(BaseModel):
     """Item class."""
+    title = CharField(max_length=50)
+    description = TextField(blank=True)
+    era = CharField(max_length=10, choices=ERA, default="1920")
+    rare = BooleanField(default=False)
+    base_price = PositiveIntegerField(default=0)
+    max_price = PositiveIntegerField(default=0, null=True, blank=True)
     category = PositiveIntegerField(
         choices=ITEM_CATEGORIES
     )
@@ -350,13 +358,19 @@ class Item(BaseModel):
 
     def __str__(self):
         """String representation of the object."""
-        return f"{self.properties['title']}-{self.properties['era']}"
+        return f"{self.title}-{self.era}"
 
     def safe_dict(self):
         """Creates dict of all fields"""
+        properties = self.properties.copy()
+        properties['title'] = self.title
+        properties['era'] = self.era
+        properties['rare'] = self.rare
+        properties['base_price'] = self.base_price
+        properties['max_price'] = self.max_price
         model = {
             'category': self.category,
-            'properties': self.properties
+            'properties': properties
             }
         return model 
 
