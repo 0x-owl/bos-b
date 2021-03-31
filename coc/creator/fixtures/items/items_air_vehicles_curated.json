@@ -1,0 +1,92 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Dirigible",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "112+",
+                "build": 10,
+                "movement": 12,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Propeller plane",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "4+",
+                "build": 5,
+                "movement": 15,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Bomber plane",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "10+",
+                "build": 11,
+                "movement": 17,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Jet plane",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "50+",
+                "build": 11,
+                "movement": 18,
+                "armor": 3
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Helicopter",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "15+",
+                "build": 5,
+                "movement": 15,
+                "armor": 2
+            }
+        }
+    }
+]

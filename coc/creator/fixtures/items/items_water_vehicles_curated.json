@@ -1,0 +1,128 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Row boat",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "3",
+                "build": 2,
+                "movement": 4,
+                "armor": 0
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Hovercraft",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "22",
+                "build": 4,
+                "movement": 12,
+                "armor": 0
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Motorboat",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "6",
+                "build": 3,
+                "movement": 14,
+                "armor": 0
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Cruise ship",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "2200+",
+                "build": 32,
+                "movement": 11,
+                "armor": 0
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Battleship",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "1800+",
+                "build": 65,
+                "movement": 11,
+                "armor": 0
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Aircraft carrier",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "3200+",
+                "build": 75,
+                "movement": 11,
+                "armor": 0
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Submarine",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "120+",
+                "build": 24,
+                "movement": 12,
+                "armor": 0
+            }
+        }
+    }
+]

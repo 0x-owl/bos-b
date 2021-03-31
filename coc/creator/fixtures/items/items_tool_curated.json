@@ -1,0 +1,1574 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Lamp, Glass Shade",
+            "description": "Furniture",
+            "era": "1920's",
+            "base_price": 5,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Gas Range",
+            "description": "Furniture",
+            "era": "1920's",
+            "base_price": 77,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Medical Case",
+            "description": "Medical Equipment",
+            "era": "1920's",
+            "base_price": 10.45,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Handcuffs",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 3.35,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Extra Handcuff Key",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 0.28,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Police Whistle",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 0.3,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Dictaphone",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 39.95,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Wire Recorder",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 129.95,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Wristwatch",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 5.95,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Gold Pocket Watch",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 35.1,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Self-filling Fountain Pen",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 1.8,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Mechanical Pencil",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 0.85,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Writing Tablet",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 0.2,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Straightjacket",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 9.5,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Sketch Pad",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 0.25,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Harris Typewriter",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 66.75,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Complete Diving Suit",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 1200,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Remington Typewriter",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 40,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Pocket Microscope",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 0.58,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "110x Desk Microscope",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 17.5,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Floor Safe (3-Foot high, 950 Lbs.)",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 62.5,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Turkish Water Pipe",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 0.99,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Cigarettes (per Pack)",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 0.1,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Umbrella",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 1.79,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Box of Cigars",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 2.29,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Unabridged Dictionary",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 6.75,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "10-volume Encyclopedia",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 49,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Wet Sponge Respirator",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 1.95,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "3-Lens Pocket Magnifying Glass (7x to 30x)",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 1.68,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Bible",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 3.98,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Briefcase",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 1.48,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Globe on Stand",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 9.95,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Folding Writing Desk",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 16.65,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Glass-Door Oak Bookcase (200 Books)",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 24.65,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Baby Buggy",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 34.45,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Watchmaker's Eye Glass",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 0.45,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Chemical Fire Extinguisher",
+            "description": "Miscellaneous Investigator Tools",
+            "era": "1920's",
+            "base_price": 13.85,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Flare (Disposable)",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 0.27,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Telescope",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 3.45,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Field Glasses (3x to 6x)",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 8.5,
+            "max_price": 23,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Cooking Kit",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 8.98,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Binoculars",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 28.5,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Camp Stove",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 6.1,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Jeweled Compass",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 3.25,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Vacuum Bottle",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 0.89,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Compass with Lid",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 2.85,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Folding Bathtub",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 6.79,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Hunting Knife",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 2.35,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Waterproof Blanket (58 x 96 Inches)",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 5.06,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Heavy 2-Blade Pocket Knife",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 1.2,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Folding Camp Bed",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 3.65,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Hand Axe",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 0.98,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Carbide Lamp (300' Beam)",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 2.59,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Small Live Animal Trap",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 2.48,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Can of Carbide (Two Pounds)",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 0.25,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Coil Spring Animal Trap",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 5.98,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Searchlight",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 5.95,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Bear Trap",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 11.43,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Gasoline Lantern (Built-in Pump)",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 6.59,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Collapsible Fishing Rod and Tackle Set",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 9.35,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Kerosene Lantern",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 1.39,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Hemp Twine",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 0.27,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Dark Lantern",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 1.68,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Pedometer",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 1.7,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Electric Torch",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 1.35,
+            "max_price": 2.25,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Heavy Canvas Shoulder Bag",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 3.45,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Batteries",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 0.6,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Pen Light",
+            "description": "Outdoor & Travel Gear",
+            "era": "1920's",
+            "base_price": 1,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Tool Outfit (20 Tools)",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 14.9,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Hand Drill (Plus 8 Bits)",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 6.15,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Large Steel Pulley",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 1.75,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Padlock",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 0.95,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Rope (50 Feet)",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 8.6,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Light Chain (per Foot)",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 0.1,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Watchmaker's Tool Kit",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 7.74,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Crowbar",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 2.25,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Handsaw",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 1.65,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Gasoline Blowtorch",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 4.45,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Electricians Gloves",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 1.98,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Lineman's Tool Belt & Safety Strap",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 3.33,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Lineman's Climbers",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 2.52,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Jewelers 48-Piece Tool Set",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 15.98,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Rotary Tool Grinder",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 6.9,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Waterproof Match Case",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 0.48,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Steel Row Boat (Seats 4)",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 35.2,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Shovel",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 0.95,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "2 HP Motor for Row Boats",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 79.95,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Home Tool Set in Box",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 14.9,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Canvas and Wood Canoe",
+            "description": "Tools",
+            "era": "1920's",
+            "base_price": 75,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "CB Radio w/Police Scanner",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 90,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Three-band Walkie Talkie",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 35,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Radar Scanner",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 40,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "35mm SLR Digital Camera",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 450,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Pocket One-use Camera",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 10,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Metal Detector",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 240,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Geiger Counter",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 400,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Motion Detector Alarm Set",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 200,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Wireless Perimeter Alarm",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 260,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Telephonic Voice Changer",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 60,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Pen Camcorder",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 250,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Telephone Bug Detector",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 400,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Bug Sweep Kit",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 900,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Body Worn Spy Camera",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 200,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Covert Digital Recorder",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 300,
+            "max_price": null,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Listening Device",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 200,
+            "max_price": null,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Night Vision Goggles",
+            "description": "Electronics",
+            "era": "modern",
+            "base_price": 600,
+            "max_price": null,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Medical Case",
+            "description": "Medical Equipment",
+            "era": "modern",
+            "base_price": 100,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Disposable Respirator",
+            "description": "Medical Equipment",
+            "era": "modern",
+            "base_price": 30,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Complete First Aid Kit",
+            "description": "Medical Equipment",
+            "era": "modern",
+            "base_price": 60,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Emergency Burn Kit",
+            "description": "Medical Equipment",
+            "era": "modern",
+            "base_price": 160,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Portable Oxygen Unit",
+            "description": "Medical Equipment",
+            "era": "modern",
+            "base_price": 70,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "4-person Cook Set",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 25,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Propane Camp Stove",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 60,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Portable Chemical Toilet",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 110,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Poly/Cotton Sleeping Bag",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 30,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "'Survival' Knife",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 65,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Swiss Army Knife",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 30,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Machete cheap",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 20,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "10.5mm Dry Rope (50 m)",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 250,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "G.P.S Handheld",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 260,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Climbing Gear (1 person)",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 2000,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Touring Kayak (1 person)",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 1000,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Scuba Gear good",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 2500,
+            "max_price": null,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Signal Gun",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 100,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Polar Sleeping Bag",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 200,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Stabilized Binoculars",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 1300,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "6-watt Fluorescent Lamp",
+            "description": "Outdoor & Travel Gear",
+            "era": "modern",
+            "base_price": 30,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Mechanic's Tool Chest (255 pc.)",
+            "description": "Tools",
+            "era": "modern",
+            "base_price": 500,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "60-gallon Air Compressor",
+            "description": "Tools",
+            "era": "modern",
+            "base_price": 600,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Welder's Kit",
+            "description": "Tools",
+            "era": "modern",
+            "base_price": 1400,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Lock-picking Tools",
+            "description": "Tools",
+            "era": "modern",
+            "base_price": 90,
+            "max_price": 0,
+            "category": 4,
+            "properties": {}
+        }
+    }
+]
