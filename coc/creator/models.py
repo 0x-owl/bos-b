@@ -349,9 +349,10 @@ class Item(BaseModel):
     description = TextField(blank=True)
     era = CharField(max_length=10, choices=ERA, default="1920")
     rare = BooleanField(default=False)
+    # if None un appraised
     base_price = FloatField(null=True)
     # if 0 no max price, if None no limit
-    max_price = FloatField(null=True)
+    max_price = FloatField(default=0.0, null=True)
     category = PositiveIntegerField(
         choices=ITEM_CATEGORIES
     )

@@ -12,7 +12,8 @@ GAME_TYPE = (
 
 ERA = (
     '1920', '1920',
-    'modern', 'Modern'
+    'modern', 'Modern',
+    'WWII', 'WorldWar 2'
 )
 
 TAG_FIELDS = {
