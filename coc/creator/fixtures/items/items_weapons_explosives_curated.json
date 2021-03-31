@@ -1,0 +1,210 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Molotov Cocktail",
+            "description": "",
+            "era": "1920",
+            "base_price": null,
+            "properties": {
+                "subcategory": "Explosives",
+                "skill": "Throw",
+                "damage": "2D6 + burn",
+                "base_range": "STR feet",
+                "uses_per_round": "1/2",
+                "bullets_in_gun_mag": "1 only",
+                "malfunction": "95"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "M79 Grenade Launcher",
+            "description": "",
+            "era": "modern",
+            "base_price": null,
+            "properties": {
+                "subcategory": "Explosives",
+                "skill": "Firearms(Heavy Weapons)",
+                "damage": "3D10/ 2 yards",
+                "base_range": "20",
+                "uses_per_round": "1/3",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "99"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Dynamite Stick",
+            "description": "",
+            "era": "1920",
+            "base_price": 2.0,
+            "properties": {
+                "subcategory": "Explosives",
+                "skill": "Throw",
+                "damage": "4D10/ 3 yards",
+                "base_range": "STR feet",
+                "uses_per_round": "1/2",
+                "bullets_in_gun_mag": "1 only",
+                "malfunction": "99"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Dynamite Stick",
+            "description": "",
+            "era": "modern",
+            "base_price": 5.0,
+            "properties": {
+                "subcategory": "Explosives",
+                "skill": "Throw",
+                "damage": "4D10/ 3 yards",
+                "base_range": "STR feet",
+                "uses_per_round": "1/2",
+                "bullets_in_gun_mag": "1 only",
+                "malfunction": "99"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Blasting Cap (Box)",
+            "description": "",
+            "base_price": 20.0,
+            "era": "1920",
+            "properties": {
+                "subcategory": "Explosives",
+                "skill": "Electrical Repair",
+                "damage": "2D10/ 1 yard",
+                "base_range": "N/A",
+                "uses_per_round": "N/A",
+                "bullets_in_gun_mag": "One use",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Pipe Bomb",
+            "description": "",
+            "base_price": null,
+            "era": "1920",
+            "properties": {
+                "subcategory": "Explosives",
+                "skill": "Demolitions",
+                "damage": "1D10/ 3 yards",
+                "base_range": "In place",
+                "uses_per_round": "One use",
+                "bullets_in_gun_mag": "1 only",
+                "malfunction": "95"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Plastique(C-4), 4oz",
+            "description": "",
+            "era": "modern",
+            "properties": {
+                "subcategory": "Explosives",
+                "skill": "Demolitions",
+                "damage": "6D10/ 3 yards",
+                "base_range": "In place",
+                "uses_per_round": "One use",
+                "bullets_in_gun_mag": "1 only",
+                "malfunction": "99"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Hand Grenade",
+            "description": "",
+            "era": "1920",
+            "base_price": null,
+            "properties": {
+                "subcategory": "Explosives",
+                "skill": "Throw",
+                "damage": "4D10/ 3 yards",
+                "base_range": "STR feet",
+                "uses_per_round": "1/2",
+                "bullets_in_gun_mag": "1 only",
+                "malfunction": "99"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "81mm Mortar",
+            "description": "",
+            "base_price": null,
+            "era": "modern",
+            "properties": {
+                "subcategory": "Explosives",
+                "skill": "Artillery",
+                "damage": "6D10/ 6 yards",
+                "base_range": "500 yards",
+                "uses_per_round": "2",
+                "bullets_in_gun_mag": "Separate",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Anti-Personnel Mine",
+                "subcategory": "Explosives",
+                "description": "",
+                "skill": "Demolitions",
+                "damage": "4D10/ 5 yards",
+                "base_range": "In place",
+                "uses_per_round": "In place",
+                "bullets_in_gun_mag": "One use",
+                "cost_20s_modern": "-/-",
+                "malfunction": "99",
+                "era": "1920's, Modern"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "properties": {
+                "title": "Claymore Mine",
+                "subcategory": "Explosives",
+                "description": "",
+                "skill": "Demolitions",
+                "damage": "6D6/ 20 yards",
+                "base_range": "In place",
+                "uses_per_round": "In place",
+                "bullets_in_gun_mag": "One use",
+                "cost_20s_modern": "-/-",
+                "malfunction": "99",
+                "era": "Modern"
+            }
+        }
+    }
+]

@@ -109,7 +109,7 @@
                 "bullets_in_gun_mag": "8",
                 "cost_20s_modern": "$400",
                 "malfunction": "100",
-                "era": "WWII, Later"
+                "era": "WWII"
             }
         }
     },
@@ -126,7 +126,7 @@
                 "base_range": "90 yards",
                 "uses_per_round": "1(2)",
                 "bullets_in_gun_mag": "10",
-                "cost_20s_modern": "$500",
+                "cost_20s_modern": "-/$500",
                 "malfunction": "97",
                 "era": "Modern"
             }
@@ -183,7 +183,7 @@
                 "base_range": "110 yards",
                 "uses_per_round": "1",
                 "bullets_in_gun_mag": "5",
-                "cost_20s_modern": "$275",
+                "cost_20s_modern": "-/$275",
                 "malfunction": "100",
                 "era": "Modern"
             }
@@ -202,7 +202,7 @@
                 "base_range": "110 yards",
                 "uses_per_round": "1",
                 "bullets_in_gun_mag": "5",
-                "cost_20s_modern": "$400",
+                "cost_20s_modern": "-/$400",
                 "malfunction": "98",
                 "era": "Modern"
             }
