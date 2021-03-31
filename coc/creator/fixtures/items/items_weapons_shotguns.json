@@ -12,9 +12,9 @@
                 "base_range": "10/20/50 yards",
                 "uses_per_round": "1 or 2",
                 "bullets_in_gun_mag": "2",
-                "cost_20s_modern": "$35/Rare",
+                "cost_20s_modern": "$35",
                 "malfunction": "100",
-                "era": "1920's"
+                "era": "1920's, Rare"
             }
         }
     },
@@ -31,9 +31,9 @@
                 "base_range": "10/20/50 yards",
                 "uses_per_round": "1 or 2",
                 "bullets_in_gun_mag": "2",
-                "cost_20s_modern": "$40/Rare",
+                "cost_20s_modern": "$40",
                 "malfunction": "100",
-                "era": "1920's"
+                "era": "1920's, Rare"
             }
         }
     },
@@ -71,7 +71,7 @@
                 "bullets_in_gun_mag": "5",
                 "cost_20s_modern": "$45/$100",
                 "malfunction": "100",
-                "era": "Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -90,7 +90,7 @@
                 "bullets_in_gun_mag": "5",
                 "cost_20s_modern": "$45/$100",
                 "malfunction": "100",
-                "era": "Modern"
+                "era": "1920's, Modern"
             }
         }
     },
@@ -126,7 +126,7 @@
                 "base_range": "10/20/50 yards",
                 "uses_per_round": "1 or 2",
                 "bullets_in_gun_mag": "2",
-                "cost_20s_modern": "Rare",
+                "cost_20s_modern": "-/-",
                 "malfunction": "100",
                 "era": "1920's Rare"
             }
