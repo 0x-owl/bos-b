@@ -1,0 +1,59 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Tank",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "4",
+                "build": 20,
+                "movement": 11,
+                "armor": 24,
+                "skill": "Operate Heavy Machinery"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Steam train",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "400+",
+                "build": 12,
+                "movement": 12,
+                "armor": 1,
+                "skill": "Operate Heavy Machinery"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Modern train",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "400+",
+                "build": 14,
+                "movement": 15,
+                "armor": 2,
+                "skill": "Operate Heavy Machinery"
+            }
+        }
+    }
+]

@@ -1,0 +1,605 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".22 Long Rifle",
+            "description": "",
+            "era": "1920's",
+            "base_price": 0.53,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".22 Bolt-Action Rifle",
+                    ".22 Short Automatic"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".22 Hollow Point",
+            "description": "",
+            "era": "1920's",
+            "base_price": 0.54,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".22 Bolt-Action Rifle",
+                    ".22 Short Automatic"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".25 Rim Fire",
+            "description": "",
+            "era": "1920's",
+            "base_price": 1.34,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".25 Derringer(1B)"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".30-06 Gov't",
+            "description": "",
+            "era": "1920's",
+            "base_price": 7.63,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".30-06 Bolt-Action Rifle",
+                    ".30-06 Semi-Automatic Rifle",
+                    ".30 Lever-Action Carbine"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".32 Special",
+            "description": "",
+            "era": "modern",
+            "base_price": 5.95,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".32 or 7.65mm Revolver",
+                    ".32 or 7.65mm Automatic"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".32-20 Repeater",
+            "description": "",
+            "era": "1920's",
+            "base_price": 2.97,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".32 or 7.65mm Automatic",
+                    ".32 or 7.65mm Revolver"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".38 Short Round",
+            "description": "",
+            "era": "1920's",
+            "base_price": 1.75,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".38 or 9mm Revolver",
+                    ".38 Automatic"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".38-55 Repeater",
+            "description": "",
+            "era": "1920's",
+            "base_price": 6.6,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".38 or 9mm Revolver",
+                    ".38 Automatic"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".44 Hi-Power",
+            "description": "",
+            "era": "1920's",
+            "base_price": 4.49,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".44 Magnum Revolver"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".45 Automatic",
+            "description": "",
+            "era": "1920's",
+            "base_price": 4.43,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".45 Revolver",
+                    ".45 Automatic",
+                    ".45 Martini-Henry Rifle"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "10-Gauge Shell",
+            "description": "",
+            "era": "1920's",
+            "base_price": 25,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "10-gauge Shotgun (2B)"
+                ],
+                "stock": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "10-Gauge Shell",
+            "description": "",
+            "era": "1920's",
+            "base_price": 3.91,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "10-gauge Shotgun (2B)"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "12-Gauge Shell",
+            "description": "",
+            "era": "1920's",
+            "base_price": 0.93,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "12-gauge Benelli M3(folding stock)",
+                    "12-gauge SPAS (Folding Stock)",
+                    "12-gauge Shotgun (2B)",
+                    "12-gauge Shotgun (Pump)",
+                    "12-gauge Shotgun (Semi-Auto)",
+                    "12-gauge Shotgun (2B Sawed Off)"
+                ],
+                "stock": 25
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "12-Gauge Shell",
+            "description": "",
+            "era": "1920's",
+            "base_price": 3.63,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "12-gauge Benelli M3(folding stock)",
+                    "12-gauge SPAS (Folding Stock)",
+                    "12-gauge Shotgun (2B)",
+                    "12-gauge Shotgun (Pump)",
+                    "12-gauge Shotgun (Semi-Auto)",
+                    "12-gauge Shotgun (2B Sawed Off)"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "16-Gauge Shell",
+            "description": "",
+            "era": "1920's",
+            "base_price": 0.86,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "16-gauge Shotgun (2B)"
+                ],
+                "stock": 25
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "16-Gauge Shell",
+            "description": "",
+            "era": "1920's",
+            "base_price": 3.34,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "16-gauge Shotgun (2B)"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "20-Gauge Shell",
+            "description": "",
+            "era": "1920's",
+            "base_price": 0.85,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "20-gauge Shotgun (2B)"
+                ],
+                "stock": 25
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "20-Gauge Shell",
+            "description": "",
+            "era": "1920's",
+            "base_price": 3.3,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "20-gauge Shotgun (2B)"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Extra Magazine",
+            "description": "",
+            "era": "1920's",
+            "base_price": 1.9,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [],
+                "stock": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".22 Long Rifle",
+            "description": "",
+            "era": "modern",
+            "base_price": 21,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".22 Bolt-Action Rifle"
+                ],
+                "stock": 500
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".220 Swift",
+            "description": "",
+            "era": "modern",
+            "base_price": 24,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [],
+                "stock": 50
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".25 Automatic",
+            "description": "",
+            "era": "modern",
+            "base_price": 15,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".25 Derringer(1B)"
+                ],
+                "stock": 50
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".30 Carbine",
+            "description": "",
+            "era": "modern",
+            "base_price": 15,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".30 Lever-Action Carbine"
+                ],
+                "stock": 50
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".30-06 Rifle",
+            "description": "",
+            "era": "modern",
+            "base_price": 15,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".30-06 Bolt-Action Rifle",
+                    ".30-06 Semi-Automatic Rifle"
+                ],
+                "stock": 50
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".357 Magnum",
+            "description": "",
+            "era": "modern",
+            "base_price": 22,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".357 Magnum Revolver"
+                ],
+                "stock": 50
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".38 Special",
+            "description": "",
+            "era": "modern",
+            "base_price": 17,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".38 or 9mm Revolver",
+                    ".38 Automatic"
+                ],
+                "stock": 50
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "5.56mm",
+            "description": "",
+            "era": "modern",
+            "base_price": 24,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "FN Minimi, 5.56mm"
+                ],
+                "stock": 50
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "9mm Parabellum",
+            "description": "",
+            "era": "modern",
+            "base_price": 12,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "Glock 17 9mm Auto",
+                    ".38 or 9mm Revolver"
+                ],
+                "stock": 50
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".44 Magnum",
+            "description": "",
+            "era": "modern",
+            "base_price": 39,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".44 Magnum Revolver"
+                ],
+                "stock": 50
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": ".45 Automatic",
+            "description": "",
+            "era": "modern",
+            "base_price": 23,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    ".45 Automatic",
+                    ".45 Revolver"
+                ],
+                "stock": 100
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "10-Gauge Shell",
+            "description": "",
+            "era": "modern",
+            "base_price": 40,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "10-gauge Shotgun (2B)"
+                ],
+                "stock": 25
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "12-Gauge Shell",
+            "description": "",
+            "era": "modern",
+            "base_price": 30,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "12-gauge Benelli M3(folding stock)",
+                    "12-gauge SPAS (Folding Stock)",
+                    "12-gauge Shotgun (2B)",
+                    "12-gauge Shotgun (Pump)",
+                    "12-gauge Shotgun (Semi-Auto)",
+                    "12-gauge Shotgun (2B Sawed Off)"
+                ],
+                "stock": 25
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "16-Gauge Shell",
+            "description": "",
+            "era": "modern",
+            "base_price": 26,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "16-gauge Shotgun (2B)"
+                ],
+                "stock": 25
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "20-Gauge Shell",
+            "description": "",
+            "era": "modern",
+            "base_price": 28,
+            "max_price": 0,
+            "category": 4,
+            "properties": {
+                "weapons": [
+                    "20-gauge Shotgun (2B)"
+                ],
+                "stock": 25
+            }
+        }
+    }
+]

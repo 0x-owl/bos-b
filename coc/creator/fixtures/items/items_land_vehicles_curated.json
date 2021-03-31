@@ -1,0 +1,667 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Buick Model D-45",
+            "description": "",
+            "era": "1920's",
+            "base_price": 1020,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1916,
+                "seating": "5",
+                "build": 3,
+                "movement": 12,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Cadillac subcategory 55",
+            "description": "",
+            "era": "1920's",
+            "base_price": 2240,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1917,
+                "seating": "4",
+                "build": 4,
+                "movement": 14,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Chevrolet Capitol",
+            "description": "Chevrolet is part of General Motors and a direct competitor to Ford. The Capitol is available in two-door and four-door models. First introduced in 1927, its price is $695.",
+            "era": "1920's",
+            "base_price": 695,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1927,
+                "seating": "5",
+                "build": 3,
+                "movement": 13,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Chrysler Model F-58",
+            "description": "",
+            "era": "1920's",
+            "base_price": 1045,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1926,
+                "seating": "5",
+                "build": 3,
+                "movement": 13,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Dodge Model S/1",
+            "description": "",
+            "era": "1920's",
+            "base_price": 985,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1922,
+                "seating": "5",
+                "build": 3,
+                "movement": 13,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Duesenberg J",
+            "description": "A vehicle for the truly discriminating. Like all Duesenbergs it is handmade by skilled craftsmen using only the finest materials. Aside from the usual instrumentation, the Duesenberg can be ordered with an altimeter, barometer, and gauges to monitor tire pressure, oil changes, radiator water level, and brake-fluid levels. Coachwork is custom, often done by craftsmen outside Duesenberg. Introduced in 1929, a Duesenberg costs $20,000 or more.",
+            "era": "1920's",
+            "base_price": 20000,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1929,
+                "seating": "5",
+                "build": 6,
+                "movement": 15,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Ford Model T",
+            "description": "The Model T was an 'everyman's car', capable of carrying as many as six passengers. Possessed of excellent handling (for its day), the car is easily maintained; most repairs can be performed by the amateur mechanic. The Model T can be ordered as a delivery vehicle, ambulance, or cargo carrier. Speedster and Roadster models were also produced. With its sometimes-dangerous hand crank, and inefficient speed-dependent lighting system, the Model T is finally forced out of production in 1927. First introduced in 1908, price ranges from $900 to as low as $280.",
+            "era": "1920's",
+            "base_price": 360,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1908,
+                "seating": "5",
+                "build": 3,
+                "movement": 12,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Ford Model A",
+            "description": "When it is unveiled in 1927, over a million people jam Ford Motor Company headquarters in New York trying to see the new Ford, which is intended to replace the venerable Model T. With four doors, an open top, and a three-speed transmission, the Model A is a manifest improvement over its predecessor. Introduced in 1927, its price tag is $450.",
+            "era": "1920's",
+            "base_price": 450,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1927,
+                "seating": "4",
+                "build": 3,
+                "movement": 13,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Hudson Super Six Series J",
+            "description": "",
+            "era": "1920's",
+            "base_price": 1750,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1916,
+                "seating": "4",
+                "build": 4,
+                "movement": 13,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Oldsmobile 43-AT",
+            "description": "",
+            "era": "1920's",
+            "base_price": 1345,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1923,
+                "seating": "5",
+                "build": 3,
+                "movement": 13,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Packard Twin Six Touring",
+            "description": "The Twin Six is noted for its superb acceleration and speed. Prices begin at $2,600 for the two-seat runabout, higher for the five-passenger versions, and topping at $4,440 for the seven-seat limousine. Available in closed-top or open models, standard equipment includes a Warner speedometer, a Waltham clock, complete tool kit, and power tire pump. First introduced in 1916, it costs $2950.",
+            "era": "1920's",
+            "base_price": 2950,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1916,
+                "seating": "7",
+                "build": 5,
+                "movement": 13,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Pierce-Arrow",
+            "description": "",
+            "era": "1920's",
+            "base_price": 6000,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1921,
+                "seating": "6",
+                "build": 6,
+                "movement": 14,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Pontiac 6-28 Sedan",
+            "description": "",
+            "era": "1920's",
+            "base_price": 745,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1928,
+                "seating": "5",
+                "build": 3,
+                "movement": 13,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Studebaker Stnd./Dictator",
+            "description": "Studebaker, formerly a carriage maker, now switched to automobiles. The Dictator features standard spare tire lock, speedometer, windshield washer, and shock absorbers, and is available in closed-top or open-top versions. Introduced in 1928, its price ranges from $900 to $1,195.",
+            "era": "1920's",
+            "base_price": 1165,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Common",
+                "year": 1927,
+                "seating": "5",
+                "build": 4,
+                "movement": 13,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Chevrolet International Model AC Truck",
+            "description": "Four versions of this widely used light truck are offered for sale: the Sedan Delivery, the Pickup, the Canopy or Screen, and the Panel version. The roadster pickup is fitted with a slip-in pickup box or cargo carrier. From 1918 onwards, a typical Chevrolet truck costs $495 to $695.",
+            "era": "1920's",
+            "base_price": 545,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Light Trucks",
+                "year": 1929,
+                "seating": "3",
+                "build": 4,
+                "movement": 12,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Dodge 1/2 ton Model 1919",
+            "description": "",
+            "era": "1920's",
+            "base_price": 1085,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Light Trucks",
+                "year": 1919,
+                "seating": "3",
+                "build": 4,
+                "movement": 12,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Ford Model TT Truck",
+            "description": "",
+            "era": "1920's",
+            "base_price": 490,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Light Trucks",
+                "year": 1923,
+                "seating": "3",
+                "build": 4,
+                "movement": 11,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Bentley 3-Litre England",
+            "description": "",
+            "era": "1920's",
+            "base_price": 9000,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Imports",
+                "year": 1920,
+                "seating": "5",
+                "build": 6,
+                "movement": 14,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "BMW Dixi Germany",
+            "description": "",
+            "era": "1920's",
+            "base_price": 1225,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Imports",
+                "year": 1928,
+                "seating": "2",
+                "build": 3,
+                "movement": 12,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Citroen C3 France",
+            "description": "",
+            "era": "1920's",
+            "base_price": 800,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Imports",
+                "year": 1921,
+                "seating": "2",
+                "build": 3,
+                "movement": 12,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Hispano-Suiza Alfonso Spain",
+            "description": "",
+            "era": "1920's",
+            "base_price": 4000,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Imports",
+                "year": 1912,
+                "seating": "2",
+                "build": 5,
+                "movement": 13,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Lancia Lambda 214 Italy",
+            "description": "",
+            "era": "1920's",
+            "base_price": 4050,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Imports",
+                "year": 1923,
+                "seating": "6",
+                "build": 4,
+                "movement": 13,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Mercedes-Benz SS Germany",
+            "description": "The SS is an expensive sport and racing car produced by Daimler-Benz of Stuttgart, Germany. Normally a four-door, open-top car, the specially produced two-seater won a number of races in Europe and South America. Carefully handcrafted, fewer than 300 of the entire series are manufactured by 1934. First appearing in 1928, the Mercedes has a price tag of $7,750.",
+            "era": "1920's",
+            "base_price": 7750,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Imports",
+                "year": 1928,
+                "seating": "4",
+                "build": 6,
+                "movement": 15,
+                "armor": 3
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Renault AX France",
+            "description": "",
+            "era": "1920's",
+            "base_price": 500,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Imports",
+                "year": 1909,
+                "seating": "2",
+                "build": 3,
+                "movement": 11,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Rolls-Royce Model 40/50 Silver Ghost",
+            "description": "Rolls Royce features autos manufactured individually, rather than mass-produced. The Silver Ghost, fast for it time, is also noted for its exceptional quietness and comfort. From 1907-1925, 6,173 Silver Ghosts were produced with an average price tag of $6,750.",
+            "era": "1920's",
+            "base_price": 6750,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Imports",
+                "year": 1907,
+                "seating": "6",
+                "build": 6,
+                "movement": 13,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Rolls-Royce Phantom I",
+            "description": "",
+            "era": "1920's",
+            "base_price": 10800,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "Imports",
+                "year": 1925,
+                "seating": "6",
+                "build": 6,
+                "movement": 14,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Car, economy",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "",
+                "year": 0,
+                "seating": "3 or 4",
+                "build": 4,
+                "movement": 13,
+                "armor": 1
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Car, standard",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "",
+                "year": 0,
+                "seating": "4",
+                "build": 5,
+                "movement": 14,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Car, deluxe",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "",
+                "year": 0,
+                "seating": "4",
+                "build": 6,
+                "movement": 15,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Sports car",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "",
+                "year": 0,
+                "seating": "1",
+                "build": 5,
+                "movement": 16,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Pickup truck",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "",
+                "year": 0,
+                "seating": "2+",
+                "build": 6,
+                "movement": 14,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "6-ton truck",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "",
+                "year": 0,
+                "seating": "2+",
+                "build": 7,
+                "movement": 13,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "18-wheeler",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "",
+                "year": 0,
+                "seating": "3+",
+                "build": 9,
+                "movement": 13,
+                "armor": 2
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Motorcycle, light",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "",
+                "year": 0,
+                "seating": "1",
+                "build": 1,
+                "movement": 13,
+                "armor": 0
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Motorcycle, heavy",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "subcategory": "",
+                "year": 0,
+                "seating": "1",
+                "build": 3,
+                "movement": 16,
+                "armor": 0
+            }
+        }
+    }
+]

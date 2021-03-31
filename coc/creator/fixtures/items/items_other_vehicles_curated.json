@@ -1,0 +1,59 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Horse (with rider)",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "1",
+                "build": 4,
+                "movement": 11,
+                "armor": 0,
+                "skill": "Ride"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "4-horse carriage",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "6+",
+                "build": 3,
+                "movement": 10,
+                "armor": 0,
+                "skill": "Ride"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Bicycle",
+            "description": "",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 6,
+            "properties": {
+                "year": 0,
+                "seating": "1",
+                "build": 0.5,
+                "movement": 10,
+                "armor": 0,
+                "skill": "Ride"
+            }
+        }
+    }
+]

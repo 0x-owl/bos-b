@@ -1,0 +1,296 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Bio-Web Armor",
+            "description": "In dangerous situations, mi-go typically don these webs of semi-luminous green slime. The harnesses provides 8 points of armor against blows, flame, electricity, etc. Humans may wear these bio-webs, but take 1 point of damage as hair and flesh is ripped away each time the armor is removed. A bio-web will slowly degrade because humans do not exude the proper nutrient solutions to care for it. Each time it is worn by a human, a bio-web decreases in protection by one point. When no armor points remain, the armor disintegrates into a steaming, sticky pool of viscous matter. Whether there are significant side effects to wearing this armor is unknown.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Mi-go"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Black Lotus Powder",
+            "description": "A mind-bending psychedelic, also known as 'black stygian', used by serpent people as a means of torture to extract information. In minute quantities the lotus powder is a mild hallucinogen, equivalent to magic mushrooms; however in larger doses the drug may reduce those taking it to insane, driveling idiots. The drug can be administered either by injection (the powder when heated turns to liquid) or by inhalation (the black smoke given-off smells like burnt toffee). If more than the usual (recreational) dose is administered, the victim immediately begins to hallucinate for 1D6 minutes per dose. The visions are totally immersive and horrifying, granting insights into the unspeakable knowledge of the Mythos some serpent men claim that it is like looking into the very face of Azathoth. 1D4 Sanity points are lost per minute the drug is active. During this period, the victim is highly susceptible to questioning, readily revealing information and close-kept secrets. Towards the end, the victim's body goes into spasm until collapsing into unconsciousness for 1D10 hours. It is not uncommon for the victim to wake up totally insane. Accounts suggest that the black lotus flower was rare even in the time of famed Valusia and today it is thought the infamous plant is long extinct. However, from time to time, ancient vials and jars have been uncovered containing quantities of black stygian powder. It is unknown, yet presumable, that modern science might be able to analyze the powder's compounds and recreate them.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Serpent people"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Brain Cylinder",
+            "description": "These shiny cylinders are used to preserve extracted brains. Lovecraft described them as, 'a foot high and somewhat less in diameter, with three curious sockets set in an isosceles triangle over the front convex surface.' Each cylinder is filled with a nutrient solution that sustains the brain within. Three accessory machines\\u2014a tall rig with twin lenses mounted on front, a box with vacuumtubes and a sounding board, and a small box with a metal disc on top\\u2014comprise the mi-go sensing apparatus. These machines, when connected to the proper sockets, provide the brain with the faculties of sight, speech, and hearing. The mi-go, not possessed of human senses, have done their best; however it is but an approximation of sound and vision. All visual input is grainy, of low general resolution and the audio is flat, like that of a monaural phonograph. Speech, with all its nuances of inflection and emotion, is utterly lost on the fungi. The speech machine talks with a mechanical, monotone voice, devoid of emotion. When the sensory machines are disconnected or deactivated, the encased brain falls into a semi-insane sleep state filled with strange dreams and hallucinations. Every month a human brain is enclosed within a cylinder, the brain must roll under or equal to its INT. If successful, the brain remembers it is stuck inside a tin can and loses 1D3 Sanity points.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Mi-go"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Carotid Toxin",
+            "description": "A rare poison that causes a slow degeneration of the carotid arteries. The toxin slowly eats away at the carotid arteries, causing massive internal bleeding and almost inevitable death. The effect of the poison takes a number of days equal to one-fifth of the victim's CON. After this period an Extreme CON roll must be made, otherwise the imbiber suffers an agonizing death over the course of 1D3 days. If the CON roll is successful, the imbiber becomes extremely sick for 1D6 days as the poison is fought off, with most needing to be confined to bed. No doctor will find evidence of disease. During this period, STR and CON temporarily drop to 10 the victim is utterly exhausted and suffers from terrifying hallucinations. Thereafter, the victim regains 1D10 points of STR and CON per day until fully recovered.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Serpent people"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Crystal of the Elder Things",
+            "description": "Large crystalline storage containers constructed to harness the power needed to bind shoggoths to elder thing will. These crystals store magic points. The smallest shards might store 5 magic points and the largest 100. A caster can draw some or all of the magic points from a crystal while casting a spell. When empty these crystals are room temperature, but they become colder as more magic points are stored in them. To access the magic points stored the user must become attuned to the specific crystal. There must be physical contact and the user must spend 1D6 rounds attuning to the vibrations of the crystal. On the final round a POW roll must be made. With success the user can draw upon the magic points within as needed. Note that only elder things have the ability and understanding to invest crystals with further magic points.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Elder things"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Crystallizer of Dreams",
+            "description": "Looking like a large, yellowish egg, the crystallizer is used to view places faraway (distant lands, planets, and perhaps dimensions) in dreams. A second, purported, function of this artifact is the ability it bestows upon its user to bring items (or even creatures) back with them from the Dreamlands. Presumably the user must have the item or creature in physical contact with them for this to be successful. Myths surround this unique device and tell that the user should beware lest they fall foul of the guardian of the crystallizer\\u2014a servant of Hypnos that appears like a translucent jellyfish.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Anyone"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Domination Serum",
+            "description": "A colorless serum with the faintest taste of raspberries. No more than ten drops are required for full effect. If a Hard Con roll is failed the target becomes very suggestible, but only to serpent people. Something in their peculiar smell or the specific intonation of their voices is the key to this suggestibility. The victim will do almost anything for serpent people, short of endangering his or her own life or the lives of loved ones. The serum metabolizes slowly, taking 1D10+10 days for a victim to be free of its effects, provided no more is imbibed in the meantime.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Serpent people"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Earthquake Mining Machine",
+            "description": "A massive cube measuring twenty feet on a side. The sides are covered with small, irregularly spaced convex windows of a cloudy, glasslike substance. When the device is made active it can be adjusted to pull a deeply buried stratum up through intervening layers of rock. The machine can reach down four to five miles and can affect an area up to one cubic mile in area at a time. However, the machine has the unfortunate side effect of causing earthquakes when it is used. The size and depth of the area affected are directly correlated to the magnitude of the earthquake. For this reason mi-go tend to use such machines only in largely uninhabited areas, to avoid detection. A human unfamiliar with mi-go technology would be unlikely to be able to use the earthquake mining machine, except perhaps accidentally.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Mi-go"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Electric Gun",
+            "description": "This weapon looks like a warty, doorknob-sized lump of black metal, covered in tiny wires. Mi-go fire this weapon by clutching it tightly and changing the electrical resistance of the lump. When activated, the weapon fires a bluish bolt of sparks, causing 1D10 points of damage to the target. When it hits, the electric jolt acts like a taser, causing violent muscle spasms that immobilize the victim for a number of rounds equal to the damage inflicted. The target must make a CON roll or fall unconscious for 1D6 rounds\\u2014if the roll is fumbled the target suffers cardiac arrest and dies, unless immediate medical intervention is received. Mi-go take normal rolled damage (surface burns to the carapace) from these weapons, but do not have electrical nervous systems and are immune to the other possible effects of damage from the electrical charges. To be able to fire this alien weapon humans must realign the wires on the electric gun, a feat requiring a Hard Electrical Repair roll. So jury-rigged for human use, the weapon fires uncertainly. Roll 1D6 when attempting to fire: the weapon fires only on a result of 1\\u20132. The base chance for a human attacking with the Firearms (Electric Gun) skill is 10%.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Mi-go"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Glass from Leng",
+            "description": "This magical arcane glass allows the possessor to see random visions of other places. The owner inscribes a pentagram in red chalk (presumably for protection), recites a brief verse and then the glass shows a scene of beings from the Cthulhu Mythos. Unfortunately, such beings can also see through the glass to the user's side. The choice of scene viewed is not of the user's choice and appears randomly. The spell used to enchant the glass is long forgotten, although rumors persist that a certain odd fellow who lives in Carcosa will impart the spell if a bargain can be reached.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Anyone"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "The Moon Lens",
+            "description": "Within Goatswood, in the Severn Valley of England, resides an artifact known as the moon lens. Built by worshippers of Shub-Niggurath, the lens acts to concentrate a beam of moonlight and so aid in the summoning of the Dark Mother with a Thousand Young at the full moon (instead of the dark of the moon as normally required). Researchers of the occult suggest that the moon lens is actually a glass from Leng specifically tuned to the vibrations and space wherein Shub-Niggurath dwells. If so, then it would effectively provide the god with a direct semi-permanent portal or gateway to the Earth.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Anyone"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Great White Space",
+            "description": "A strange other dimension. It is unknown if the elder things actually created this dimension; however there is no doubt that they actively exploited it. It connects places light years apart and is or was used by the elder things to traverse the universe. The elder things created at least one portal to the Great White Space on Earth, deep in the mountains of China; whether more portals exist remains to be discovered. If the Great White Space was a dimension constructed by the elder things, it is reasonable to presume that other pocket dimensions may have also been created. Probably varying in size and secretly existing until discovered by some hapless traveller or sorcerer, who knows what such spaces would hold?",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Elder things"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "The Lamp of Alhazred",
+            "description": "An enchanted oil-burning lamp. When lit, the lamp gives forth vapors that send the minds of those who inhale them into ecstasies of vision. These revelations are of the strange and weird landscapes of Mythos places and dimensions, and the ways of the entities there. If this lamp were actually used by Al-Hazred, the author of the Al Azif, some of the breadth of his knowledge would be explained. It is believed that the lamp is unique, however its whereabouts today is unknown.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Anyone"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Lightning Gun",
+            "description": "A rare Yithian weapon, this device was created by the race shortly after their arrival on prehistoric Earth. Built to combat the carnivorous flying polyps, it is a camera-shaped weapon that fires great gouts of electricity. Numerous varieties exist. A common one contains a pack of 32 charges and takes 1 round to reload. Multiple charges may be fired at once, though each charge used above four at one time gives a 5% cumulative chance of burning out the gun. Each charge does 1D10 damage to the target of the weapon. Base range is 100 yards. For each additional 100 yards add one penalty to the attack roll and decrease the damage roll result by 3. At point-blank range add one bonus die to the attack roll. An investigator can figure out how to use this weapon with a successful INT roll. The base chance for a human attacking with the Firearms (Lightning Gun) skill is 10%.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Yithians"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Mist Projector",
+            "description": "A device looking like a cluster of twisted metal tubes that projects a cone of icy mist in a fat cloud about ten feet across. The mist looks like thick white fog and is intensely cold. The mist does 1D10 points of damage per round of exposure, less one point if the targets are dressed in warm clothing or three points for thick, arctic clothing. Hiding inside a car affords four points of protection; however the mist freezes automobile engines, running or not, and the car will not start or restart until it warms up. The weapon's projection can be sustained\\u2014mi-go generally spray mist over a target for several rounds, ensuring the death of unprotected humans. An investigator can figure out how to use this weapon with a successful INT roll. Because the mist travels much more slowly than a bullet, investigators who have seen mist projectors in action and who have freedom of movement (i.e. they are not caught in an enclosed space), can dodge the slow-moving mist streams with a successful DEX roll. The weapons carry enough charge for twenty shots, each potentially lasting an entire combat round.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Mi-go"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Plutonian Drug",
+            "description": "This drug can send the user's mind back in time, sometimes so far back that the user may even encounter the Hounds of Tindalos (page 298)\\u2014entities capable of traveling up and down time via its 'corners'. Those taking the drug must make a Sanity roll or lose 1D8 sanity points; however if they come across Mythos entities on their journey back in time they are subject to the standard sanity losses for viewing those entities. Taking the plutonian drug and witnessing the true history of the universe and planet Earth provides the user with 1D6 Cthulhu Mythos points. The drug can appear in liquid or tablet form and its manufacture is hinted at within certain Mythos tomes, including the Book of Eibon (page 226).",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Anyone"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Shining Trapezohedron",
+            "description": "A peculiar metal box in which is mounted a stone about four inches thick. It rewards or damns those who look into it with visions of other worlds and dimensions\\u2014thus the stone shines with the interior light of things not of our world. When the box is closed (enclosing the gem in total darkness), a hideous avatar of Nyarlathotep comes, known as the Haunter of the Dark since it abhors light\\u2014it will not enter any space where light is present, not even the pale circles of light cast by street lamps. The stone exercises great command over human psyches and is believed to be used by worshippers of Nyarlathotep. This artifact is ancient, predating humanity and possibly manufactured by the mi-go on Yuggoth.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Cultists of Nyarlathotep"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Star Stones of Mnar",
+            "description": "Usually found in the same location as the supposed tombs of ancient evil beings. Best described as greencolored disk-shaped (sometimes star-shaped) rocks on which is carved an Elder Sign (page 255). The stones are alleged to come from the fabled land of Mnar in prehistory, although some occult scholars suggest that this is a mere tale and that the stones are extraterrestrial in origin and were perhaps fashioned by the Elder Gods themselves. Either way, a star stone is believed to ward the bearer against the minions of the Great Old Ones, granting safe passage in dark places. Note that the protection only extends to the minions of Great Old Ones, not the Great Old Ones themselves! Wise folk state that the stones are blighted and that anyone removing a star stone from its proper place will suffer an elder curse. Presumably the Elder Gods do not wish the stones to be removed from the prison-tombs of the Great Old Ones, as doing so might weaken the magicks in force and allow the imprisoned god to break free.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Anyone"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Stasis Cube",
+            "description": "These devices appear in a number of different shapes and sizes, however they all have a single purpose: to slow the flow of time. Older cubes give ratios of 1-second internal time per thousand years external time, but in the future the Yithians will advance this to 1-second internal time per million years external time. The smallest stasis cubes were used to store books in Pnakotus. Larger stasis cubes have been used to fling Yithians into the future. Almost all stasis cubes are simple in design, made from metal or plastic with no sign of external circuitry. Pushing a button or opening up the stasis cube deactivates most stasis cubes, but some have complicated panels allowing the programming of set periods of stasis. These more complicated devices would likely be incomprehensible to someone who did not understand Yithian technology, but anyone could use the simpler ones, perhaps even by accident.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Yithians"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Tabula Rasa Device",
+            "description": "A device invented by the Yithians to erase the memories of those entities they displace through time. It is a small, slim, rectangular copper box covered with tiny indentations. From one side of the box, five flexible metal tubes extend, ending in inch-long metal needles. The needles are inserted into the victim's head, which takes five rounds. Once the device is activated, the victim is paralyzed unless he or she makes a successful POW roll each round that the device is connected. Each round the machine erases up to a year's worth of memories or removes 5 points of INT, at the operator's discretion. These memories and thoughts are stored in the copper box. The erasure of memories is not always totally complete. Every year there is an INT chance that some memory returns in the form of dreams. The function of this device may also be reversed, feeding the stored memories to the original victim or alternatively to another entity entirely. The tabula rasa device is very complex, and can only be used by those familiar with Yithian technology. Humans ignorant of Yithian technology would require an Extreme INT roll to successful operate the device\\u2014failure would indicate that the person connected to the machine has suffered brain damage and the loss of 1D100 INT.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Yithians"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "title": "Temporal Communicator",
+            "description": "These devices are sometimes supplied to human agents of the Yithians. When assembled, the device stands nearly a foot tall. It is made of bronze and covered with intricate carvings. A red jewel, attuned to a specific Yithian, is embedded into the top of the machine. When power is switched on, the jewel begins to glow red. After a few minutes, contact is established with the Yithian attuned to the jewel. The Yithian may be any distance in time or space. A hologram is projected and the Yithian can see into the time and space occupied by the machine and thus may communicate with those who have contacted it. A Yithian temporal communicator is fairly straightforward to operate, provided that an investigator can understand and determine which carving turns it on.",
+            "era": "modern",
+            "base_price": 0,
+            "max_price": 0,
+            "category": 1,
+            "properties": {
+                "used_by": "Yithians"
+            }
+        }
+    }
+]
