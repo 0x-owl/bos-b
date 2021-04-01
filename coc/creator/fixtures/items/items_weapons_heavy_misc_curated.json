@@ -1,0 +1,175 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Signal Handgun (Flare gun)",
+            "description": "",
+            "era": "1920",
+            "base_price": 15.0,
+            "properties": {
+                "subcategory": "Misc",
+                "skill": "Firearms(Handgun)",
+                "damage": "1D10 + 1D3 + burn",
+                "base_range": "10",
+                "uses_per_round": "1/2",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Signal Handgun (Flare gun)",
+            "description": "",
+            "era": "modern",
+            "base_price": 75.0,
+            "properties": {
+                "subcategory": "Misc",
+                "skill": "Firearms(Handgun)",
+                "damage": "1D10 + 1D3 + burn",
+                "base_range": "10",
+                "uses_per_round": "1/2",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "75mm Field Gun",
+            "description": "",
+            "era": "1920",
+            "base_price": 1500.0,
+            "properties": {
+                "subcategory": "Heavy",
+                "skill": "Artillery",
+                "damage": "10D10/ 2 yards",
+                "base_range": "500 yards",
+                "uses_per_round": "1/4",
+                "bullets_in_gun_mag": "Separate",
+                "malfunction": "99"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "75mm Field Gun",
+            "description": "",
+            "era": "modern",
+            "base_price": null,
+            "properties": {
+                "subcategory": "Heavy",
+                "skill": "Artillery",
+                "damage": "10D10/ 2 yards",
+                "base_range": "500 yards",
+                "uses_per_round": "1/4",
+                "bullets_in_gun_mag": "Separate",
+                "malfunction": "99"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "120mm Tank Gun(Stabilized)",
+            "description": "",
+            "era": "modern",
+            "base_price": null,
+            "properties": {
+                "subcategory": "Heavy",
+                "skill": "Artillery",
+                "damage": "15D10/ 4 yards",
+                "base_range": "2000 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "Separate",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Ship-mounted 5-inch Rifle, stabilized",
+            "description": "",
+            "era": "modern",
+            "base_price": null,
+            "properties": {
+                "subcategory": "Heavy",
+                "skill": "Artillery",
+                "damage": "12D10/ 4 yards",
+                "base_range": "3000 yards",
+                "uses_per_round": "2",
+                "bullets_in_gun_mag": "Auto-magazine",
+                "malfunction": "98"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Flamethrower",
+            "description": "",
+            "era": "1920",
+            "base_price": null,
+            "properties": {
+                "subcategory": "Heavy",
+                "skill": "Firearms(Flamethrower)",
+                "damage": "2D6 + burn",
+                "base_range": "25 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "At least 10",
+                "malfunction": "93"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Flamethrower",
+            "description": "",
+            "era": "modern",
+            "base_price": null,
+            "properties": {
+                "subcategory": "Heavy",
+                "skill": "Firearms(Flamethrower)",
+                "damage": "2D6 + burn",
+                "base_range": "25 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "At least 10",
+                "malfunction": "93"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "LAW",
+            "description": "",
+            "era": "modern",
+            "base_price": null,
+            "properties": {
+                "title": "LAW",
+                "subcategory": "Heavy",
+                "description": "",
+                "skill": "Firearms(Heavy Weapons)",
+                "damage": "8D10/ 1 yards",
+                "base_range": "150 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "98"
+            }
+        }
+    }
+]

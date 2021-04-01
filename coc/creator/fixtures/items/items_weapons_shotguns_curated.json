@@ -3,18 +3,18 @@
         "model": "creator.Item",
         "fields": {
             "category": 3,
+            "title": "20-gauge Shotgun (2B)",
+            "era": "1920",
+            "rare": true,
+            "base_price": 35.0,
             "properties": {
-                "title": "20-gauge Shotgun (2B)",
                 "subcategory": "Shotguns",
-                "description": "",
                 "skill": "Firearms(Shotgun)",
                 "damage": "2D6/1D6/1D3",
                 "base_range": "10/20/50 yards",
                 "uses_per_round": "1 or 2",
                 "bullets_in_gun_mag": "2",
-                "cost_20s_modern": "$35",
-                "malfunction": "100",
-                "era": "1920's, Rare"
+                "malfunction": "100"
             }
         }
     },
@@ -22,18 +22,18 @@
         "model": "creator.Item",
         "fields": {
             "category": 3,
+            "title": "16-gauge Shotgun (2B)",
+            "era": "1920",
+            "rare": true,
+            "base_price": 40.0,
             "properties": {
-                "title": "16-gauge Shotgun (2B)",
                 "subcategory": "Shotguns",
-                "description": "",
                 "skill": "Firearms(Shotgun)",
                 "damage": "2D6 + 2/1D6 + 1/1D4",
                 "base_range": "10/20/50 yards",
                 "uses_per_round": "1 or 2",
                 "bullets_in_gun_mag": "2",
-                "cost_20s_modern": "$40",
-                "malfunction": "100",
-                "era": "1920's, Rare"
+                "malfunction": "100"
             }
         }
     },
@@ -41,18 +41,17 @@
         "model": "creator.Item",
         "fields": {
             "category": 3,
+            "title": "12-gauge Shotgun (2B)",
+            "era": "1920",
+            "base_price": 40.0,
             "properties": {
-                "title": "12-gauge Shotgun (2B)",
                 "subcategory": "Shotguns",
-                "description": "",
                 "skill": "Firearms(Shotgun)",
                 "damage": "4D6/2D6/1D6",
                 "base_range": "10/20/50 yards",
                 "uses_per_round": "1 or 2",
                 "bullets_in_gun_mag": "2",
-                "cost_20s_modern": "$40/$200",
-                "malfunction": "100",
-                "era": "1920's, Modern"
+                "malfunction": "100"
             }
         }
     },
@@ -60,18 +59,35 @@
         "model": "creator.Item",
         "fields": {
             "category": 3,
+            "title": "12-gauge Shotgun (2B)",
+            "era": "modern",
+            "base_price": 200.0,
             "properties": {
-                "title": "12-gauge Shotgun (Pump)",
                 "subcategory": "Shotguns",
-                "description": "",
+                "skill": "Firearms(Shotgun)",
+                "damage": "4D6/2D6/1D6",
+                "base_range": "10/20/50 yards",
+                "uses_per_round": "1 or 2",
+                "bullets_in_gun_mag": "2",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "12-gauge Shotgun (Pump)",
+            "era": "1920",
+            "base_price": 45.0,
+            "properties": {
+                "subcategory": "Shotguns",
                 "skill": "Firearms(Shotgun)",
                 "damage": "4D6/2D6/1D6",
                 "base_range": "10/20/50 yards",
                 "uses_per_round": "1",
                 "bullets_in_gun_mag": "5",
-                "cost_20s_modern": "$45/$100",
-                "malfunction": "100",
-                "era": "1920's, Modern"
+                "malfunction": "100"
             }
         }
     },
@@ -79,18 +95,35 @@
         "model": "creator.Item",
         "fields": {
             "category": 3,
+            "title": "12-gauge Shotgun (Pump)",
+            "era": "modern",
+            "base_price": 100.0,
             "properties": {
-                "title": "12-gauge Shotgun (Semi-Auto)",
                 "subcategory": "Shotguns",
-                "description": "",
+                "skill": "Firearms(Shotgun)",
+                "damage": "4D6/2D6/1D6",
+                "base_range": "10/20/50 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "5",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "12-gauge Shotgun (Semi-Auto)",
+            "era": "1920",
+            "base_price": 45.0,
+            "properties": {
+                "subcategory": "Shotguns",
                 "skill": "Firearms(Shotgun)",
                 "damage": "4D6/2D6/1D6",
                 "base_range": "10/20/50 yards",
                 "uses_per_round": "1(2)",
                 "bullets_in_gun_mag": "5",
-                "cost_20s_modern": "$45/$100",
-                "malfunction": "100",
-                "era": "1920's, Modern"
+                "malfunction": "100"
             }
         }
     },
@@ -98,18 +131,35 @@
         "model": "creator.Item",
         "fields": {
             "category": 3,
+            "title": "12-gauge Shotgun (Semi-Auto)",
+            "era": "modern",
+            "base_price": 100.0,
             "properties": {
-                "title": "12-gauge Shotgun (2B Sawed Off)",
                 "subcategory": "Shotguns",
-                "description": "",
+                "skill": "Firearms(Shotgun)",
+                "damage": "4D6/2D6/1D6",
+                "base_range": "10/20/50 yards",
+                "uses_per_round": "1(2)",
+                "bullets_in_gun_mag": "5",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "12-gauge Shotgun (2B Sawed Off)",
+            "era": "1920",
+            "base_price": null,
+            "properties": {
+                "subcategory": "Shotguns",
                 "skill": "Firearms(Shotgun)",
                 "damage": "4D6/1D6",
                 "base_range": "5/10 yards",
                 "uses_per_round": "1 or 2",
                 "bullets_in_gun_mag": "2",
-                "cost_20s_modern": "-/-",
-                "malfunction": "100",
-                "era": "1920's"
+                "malfunction": "100"
             }
         }
     },
@@ -117,18 +167,18 @@
         "model": "creator.Item",
         "fields": {
             "category": 3,
+            "title": "10-gauge Shotgun (2B)",
+            "era": "1920",
+            "rare": true,
+            "base_price": null,
             "properties": {
-                "title": "10-gauge Shotgun (2B)",
                 "subcategory": "Shotguns",
-                "description": "",
                 "skill": "Firearms(Shotgun)",
                 "damage": "4D6 + 2/2D6 + 1/1D4",
                 "base_range": "10/20/50 yards",
                 "uses_per_round": "1 or 2",
                 "bullets_in_gun_mag": "2",
-                "cost_20s_modern": "-/-",
-                "malfunction": "100",
-                "era": "1920's Rare"
+                "malfunction": "100"
             }
         }
     },
@@ -136,18 +186,17 @@
         "model": "creator.Item",
         "fields": {
             "category": 3,
+            "title": "12-gauge Benelli M3(folding stock)",
+            "base_price": 895.0,
+            "era": "modern",
             "properties": {
-                "title": "12-gauge Benelli M3(folding stock)",
                 "subcategory": "Shotguns",
-                "description": "",
                 "skill": "Firearms(Shotgun)",
                 "damage": "4D6/2D6/1D6",
                 "base_range": "10/20/50 yards",
                 "uses_per_round": "1(2)",
                 "bullets_in_gun_mag": "7",
-                "cost_20s_modern": "-/$895",
-                "malfunction": "100",
-                "era": "Modern"
+                "malfunction": "100"
             }
         }
     },
@@ -155,18 +204,17 @@
         "model": "creator.Item",
         "fields": {
             "category": 3,
+            "title": "12-gauge SPAS (Folding Stock)",
+            "era": "modern",
+            "base_price": 600.0,
             "properties": {
-                "title": "12-gauge SPAS (Folding Stock)",
                 "subcategory": "Shotguns",
-                "description": "",
                 "skill": "Firearms(Shotgun)",
                 "damage": "4D6/2D6/1D6",
                 "base_range": "10/20/50 yards",
                 "uses_per_round": "1",
                 "bullets_in_gun_mag": "8",
-                "cost_20s_modern": "-/$600",
-                "malfunction": "98",
-                "era": "Modern"
+                "malfunction": "98"
             }
         }
     }
