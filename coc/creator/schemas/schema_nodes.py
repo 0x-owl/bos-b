@@ -1,17 +1,13 @@
 from json import loads
 
 from creator.models import (CampaignInvestigator, Game, Inventory,
-                            Investigator,
-                            InvestigatorsDiary,
-                            InvestigatorTags, Item, Mania, ManiaInvestigator,
-                            Occupation, Phobia, PhobiaInvestigator, Portrait,
-                            Skills, Spell, Tag)
-
+                            Investigator, InvestigatorsDiary, InvestigatorTags,
+                            Item, Mania, ManiaInvestigator, Occupation, Phobia,
+                            PhobiaInvestigator, Portrait, Skills, Spell, Tag)
+from django.contrib.auth.models import User
+from django.core.serializers import serialize
 from graphene import ObjectType, String, relay
 from graphene_django.types import DjangoObjectType
-
-from django.core.serializers import serialize
-from django.contrib.auth.models import User
 
 
 class UserNode(DjangoObjectType):
@@ -41,7 +37,12 @@ class ItemNode(DjangoObjectType):
         model = Item
         filter_fields = {
             'uuid': ['exact'],
+            'title':  ['exact', 'icontains', 'istartswith'],
+            'rare': ['exact'],
+            'base_price': ['exact', 'gt', 'lt', 'gte', 'lte'],
+            'max_price': ['exact', 'gt', 'lt', 'gte', 'lte'],
             'category': ['exact'],
+            'era': ['exact']
         }
         interfaces = (relay.Node, )
 
