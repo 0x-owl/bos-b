@@ -256,7 +256,7 @@ class RandomInvestigator:
         '''Give the investigator 5 random tools or consumables.'''
         items = Item.objects.filter(
             category__in=[2, 4]
-        ).filter(~Q(properties__title='Generic Editable Item'))
+        ).filter(~Q(title='Generic Editable Item'))
         for _ in range(5):
             item = choice(items)
             inventory = Inventory(
