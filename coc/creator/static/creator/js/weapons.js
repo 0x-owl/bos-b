@@ -1,8 +1,9 @@
 export function get_weapons(res) {
     for (let weapon of res.weapons) {
+        let weapon_title = JSON.stringify(weapon['title']);
         $("#inv-weapons").append(
             `<tr id="gear-row-${weapon['uuid']}">
-                <td><input type="text" class="form-control" style="width:200px" id="item-inv-title-${weapon['uuid']}" value=${weapon["title"]} readonly></td>
+                <td><input type="text" class="form-control" style="width:200px" id="item-inv-title-${weapon['uuid']}" value=${weapon_title} readonly></td>
                 <td>${weapon["skill_value"][0]}</td>
                 <td>${weapon["skill_value"][1]}</td>
                 <td>${weapon["skill_value"][2]}</td>

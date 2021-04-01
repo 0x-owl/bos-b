@@ -1,10 +1,10 @@
 from creator.forms import (AttributesForm, DerivativeAttributesForm,
                            InvestigatorBasicInfoForm)
 from creator.helpers.investigator import generate_full_half_fifth_values
-from creator.models import (Inventory, Investigator, Skills, Occupation, Item, Spell, Mania, Phobia)
+from creator.models import (Inventory, Investigator, Item, Mania, Occupation,
+                            Phobia, Skills, Spell)
 from creator.random_inv import (base_skills_generator, free_point_assigner,
                                 occ_point_assigner)
-
 
 ALL_MODELS = {
     'occupations': Occupation,
