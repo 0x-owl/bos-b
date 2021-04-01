@@ -53,6 +53,12 @@ class ItemMutation(ClientIDMutation):
         method = String()
         uuid = String()
         category = Int()
+        title =  String()
+        rare = Boolean()
+        base_price = Float()
+        max_price = Float()
+        category = String()
+        era = String()
         properties = JSONString()
 
     @classmethod
