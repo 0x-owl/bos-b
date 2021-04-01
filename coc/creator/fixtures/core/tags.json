@@ -2,29 +2,15 @@
   {
     "model": "creator.Tag",
     "fields": {
-        "title":"Modern",
-        "user": 1
-      }
+      "title": "Official",
+      "user": 1
+    }
   },
   {
     "model": "creator.Tag",
     "fields": {
-        "title":"1920's",
-        "user": 1
-      }
-  },
-  {
-    "model": "creator.Tag",
-    "fields": {
-        "title":"Official",
-        "user": 1
-      }
-  },
-  {
-    "model": "creator.Tag",
-    "fields": {
-        "title":"Homebrew",
-        "user": 1
-      }
+      "title": "Homebrew",
+      "user": 1
+    }
   }
 ]
