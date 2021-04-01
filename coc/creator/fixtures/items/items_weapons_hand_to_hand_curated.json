@@ -1,0 +1,957 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Bow and Arrows",
+            "description": "",
+            "era": "1920",
+            "base_price": 7.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Firearms(Bow)",
+                "damage": "1D6 + half DB",
+                "base_range": "30 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "97"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Bow and Arrows",
+            "description": "",
+            "era": "modern",
+            "base_price": 75.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Firearms(Bow)",
+                "damage": "1D6 + half DB",
+                "base_range": "30 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "97"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Brass Knuckles",
+            "description": "",
+            "era": "1920",
+            "base_price": 1.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D3 + 1 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "cost_20s_modern": "$10",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Brass Knuckles",
+            "description": "",
+            "era": "modern",
+            "base_price": 10.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D3 + 1 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Bullwhip",
+            "description": "",
+            "era": "1920",
+            "base_price": 5.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Whip)",
+                "damage": "1D3 + half DB",
+                "base_range": "10 feet",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Bullwhip",
+            "description": "",
+            "era": "modern",
+            "base_price": 50.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Whip)",
+                "damage": "1D3 + half DB",
+                "base_range": "10 feet",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Burning Torch",
+            "description": "",
+            "era": "1920",
+            "base_price": 0.05,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D6 + burn",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Burning Torch",
+            "description": "",
+            "era": "modern",
+            "base_price": 0.5,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D6 + burn",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Chainsaw",
+            "description": "",
+            "era": "modern",
+            "base_price": 300.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Chainsaw)",
+                "damage": "2D8",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "95"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Blackjack(Cosh, lifepreserver)",
+            "description": "",
+            "era": "1920",
+            "base_price": 2.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D8+DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Blackjack(Cosh, lifepreserver)",
+            "description": "",
+            "era": "modern",
+            "base_price": 15.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D8+DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Club, large(baseball, cricket bat, poker)",
+            "description": "",
+            "era": "1920",
+            "base_price": 3.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D8 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Club, large(baseball, cricket bat, poker)",
+            "description": "",
+            "era": "modern",
+            "base_price": 35.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D8 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Club, small(nightstick)",
+            "description": "",
+            "era": "1920",
+            "base_price": 3.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D6 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Club, small(nightstick)",
+            "description": "",
+            "era": "modern",
+            "base_price": 35.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D6 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Crossbow",
+            "description": "",
+            "era": "1920",
+            "base_price": 10.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Firearms(Bow)",
+                "damage": "1D8 + 2",
+                "base_range": "50 yards",
+                "uses_per_round": "1/2",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "96"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Crossbow",
+            "description": "",
+            "era": "modern",
+            "base_price": 100.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Firearms(Bow)",
+                "damage": "1D8 + 2",
+                "base_range": "50 yards",
+                "uses_per_round": "1/2",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "96"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Garrote",
+            "description": "",
+            "era": "1920",
+            "base_price": 0.5,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Garrote)",
+                "damage": "1D6 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Garrote",
+            "description": "",
+            "era": "modern",
+            "base_price": 3.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Garrote)",
+                "damage": "1D6 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Hatchet/Sickle",
+            "description": "",
+            "era": "1920",
+            "base_price": 3.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Axe)",
+                "damage": "1D6 + 1 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Hatchet/Sickle",
+            "description": "",
+            "era": "modern",
+            "base_price": 9.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Axe)",
+                "damage": "1D6 + 1 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Knife, large(Machete, etc)",
+            "description": "",
+            "era": "1920",
+            "base_price": 4.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D8 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Knife, large(Machete, etc)",
+            "description": "",
+            "era": "modern",
+            "base_price": 50.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D8 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Knife, medium(Carving knife, etc.)",
+            "description": "",
+            "era": "1920",
+            "base_price": 2.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D4 + 2 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Knife, medium(Carving knife, etc.)",
+            "description": "",
+            "era": "modern",
+            "base_price": 15.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D4 + 2 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Knife, Small(Switchblade)",
+            "description": "",
+            "era": "1920",
+            "base_price": 2.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D4 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Knife, Small(Switchblade)",
+            "description": "",
+            "era": "modern",
+            "base_price": 6.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D4 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Live Wire, 220-volt charge",
+            "description": "",
+            "base_price": null,
+            "era": "modern",
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "2D8 + Stun",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "95"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Mace Spray",
+            "description": "",
+            "era": "modern",
+            "base_price": 10.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "Stun",
+                "base_range": "6 feet",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "25 squirts",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Nunchaku",
+            "description": "",
+            "era": "1920",
+            "base_price": 1.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Flail)",
+                "damage": "1D8 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Nunchaku",
+            "description": "",
+            "era": "modern",
+            "base_price": 10.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Flail)",
+                "damage": "1D8 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Rock, Thrown",
+            "description": "",
+            "base_price": null,
+            "era": "1920",
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Throw",
+                "damage": "1D4 + half DB",
+                "base_range": "STR feet",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Shuriken",
+            "description": "",
+            "era": "1920",
+            "base_price": 0.5,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Throw",
+                "damage": "1D3 + half DB",
+                "base_range": "20 yards",
+                "uses_per_round": "2",
+                "bullets_in_gun_mag": "One Use",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Shuriken",
+            "description": "",
+            "era": "modern",
+            "base_price": 3.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Throw",
+                "damage": "1D3 + half DB",
+                "base_range": "20 yards",
+                "uses_per_round": "2",
+                "bullets_in_gun_mag": "One Use",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Spear (cavalry lance)",
+            "description": "",
+            "era": "1920",
+            "base_price": 25.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Spear)",
+                "damage": "1D8 + 1",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Spear (cavalry lance)",
+            "description": "",
+            "era": "1920",
+            "base_price": 150.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Spear)",
+                "damage": "1D8 + 1",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Spear Thrown",
+            "description": "",
+            "era": "1920",
+            "rare": true,
+            "base_price": 1.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Throw",
+                "damage": "1D8 + half DB",
+                "base_range": "STR/5 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Spear Thrown",
+            "description": "",
+            "era": "modern",
+            "rare": true,
+            "base_price": 25.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Throw",
+                "damage": "1D8 + half DB",
+                "base_range": "STR/5 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Sword, heavy(Cavalry saber)",
+            "description": "",
+            "era": "1920",
+            "base_price": 30.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Sword)",
+                "damage": "1D8 + 1 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Sword, heavy(Cavalry saber)",
+            "description": "",
+            "era": "modern",
+            "base_price": 75.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Sword)",
+                "damage": "1D8 + 1 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Sword, medium(Rapier, heavy epee)",
+            "description": "",
+            "era": "1920",
+            "base_price": 15.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Sword)",
+                "damage": "1D6 + 1 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Sword, medium(Rapier, heavy epee)",
+            "description": "",
+            "era": "modern",
+            "base_price": 100.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Sword)",
+                "damage": "1D6 + 1 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Sword, light(Sharpened fencing foil, sword cane)",
+            "description": "",
+            "era": "1920",
+            "base_price": 25.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Sword)",
+                "damage": "1D6 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Sword, light(Sharpened fencing foil, sword cane)",
+            "description": "",
+            "era": "modern",
+            "base_price": 100.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Sword)",
+                "damage": "1D6 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Taser(Contact)",
+            "description": "",
+            "era": "modern",
+            "base_price": 200,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Brawl)",
+                "damage": "1D3 + stun",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "Varies",
+                "malfunction": "97"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Taser(Dart)",
+            "description": "",
+            "base_price": 400.0,
+            "era": "modern",
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Firearms(Handgun)",
+                "damage": "1D3 + stun",
+                "base_range": "15 feet",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "3",
+                "malfunction": "95"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "War Boomerang",
+            "description": "",
+            "era": "1920",
+            "rare": true,
+            "base_price": 2.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Throw",
+                "damage": "1D8 + half STR",
+                "base_range": "STR/5 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "War Boomerang",
+            "description": "",
+            "era": "modern",
+            "rare": true,
+            "base_price": 4.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Throw",
+                "damage": "1D8 + half STR",
+                "base_range": "STR/5 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Wood Axe",
+            "description": "",
+            "era": "1920",
+            "base_price": 5.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Axe)",
+                "damage": "1D8 + 2 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Wood Axe",
+            "description": "",
+            "era": "modern",
+            "base_price": 10.0,
+            "properties": {
+                "subcategory": "Hand-to-Hand",
+                "skill": "Fighting(Axe)",
+                "damage": "1D8 + 2 + DB",
+                "base_range": "Touch",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "-",
+                "malfunction": "-"
+            }
+        }
+    }
+]

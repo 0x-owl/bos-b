@@ -1,0 +1,348 @@
+[
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".58 Springfield, Rifle Musket",
+            "description": "",
+            "era": "1920",
+            "rare": true,
+            "base_price": 25.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "1D10 + 4",
+                "base_range": "60 yards",
+                "uses_per_round": "1/4",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "95"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".58 Springfield, Rifle Musket",
+            "description": "",
+            "era": "modern",
+            "rare": true,
+            "base_price": 350.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "1D10 + 4",
+                "base_range": "60 yards",
+                "uses_per_round": "1/4",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "95"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".22 Bolt-Action Rifle",
+            "base_price": 13.0,
+            "era": "1920",
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "1D6 + 1",
+                "base_range": "30 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "6",
+                "malfunction": "99"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".22 Bolt-Action Rifle",
+            "base_price": 70.0,
+            "era": "modern",
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "1D6 + 1",
+                "base_range": "30 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "6",
+                "malfunction": "99"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".30 Lever-Action Carbine",
+            "era": "1920",
+            "base_price": 19.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6",
+                "base_range": "50 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "6",
+                "malfunction": "98"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".30 Lever-Action Carbine",
+            "era": "modern",
+            "base_price": 150.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6",
+                "base_range": "50 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "6",
+                "malfunction": "98"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".45 Martini-Henry Rifle",
+            "era": "1920",
+            "base_price": 20.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "1D8 + 1D6 + 3",
+                "base_range": "80 yards",
+                "uses_per_round": "1/3",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".45 Martini-Henry Rifle",
+            "era": "modern",
+            "base_price": 200.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "1D8 + 1D6 + 3",
+                "base_range": "80 yards",
+                "uses_per_round": "1/3",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Col. Moran's Air Rifle",
+            "era": "1920",
+            "base_price": 200.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6 + 1",
+                "base_range": "20 yards",
+                "uses_per_round": "1/3",
+                "bullets_in_gun_mag": "1",
+                "malfunction": "88"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Garand M1, M2 Rifle",
+            "base_price": 400.0,
+            "era": "WWII",
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6 + 4",
+                "base_range": "110 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "8",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "SKS Carbine",
+            "era": "modern",
+            "base_price": 500.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6 + 1",
+                "base_range": "90 yards",
+                "uses_per_round": "1(2)",
+                "bullets_in_gun_mag": "10",
+                "malfunction": "97"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".303 Lee-Enfield",
+            "era": "1920",
+            "base_price": 50.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6 + 4",
+                "base_range": "110 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "10",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".303 Lee-Enfield",
+            "era": "modern",
+            "base_price": 300.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6 + 4",
+                "base_range": "110 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "10",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".30-06 Bolt-Action Rifle",
+            "era": "1920",
+            "base_price": 75.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6 + 4",
+                "base_range": "110 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "5",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".30-06 Bolt-Action Rifle",
+            "era": "modern",
+            "base_price": 175.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6 + 4",
+                "base_range": "110 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "5",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".30-06 Semi-Automatic Rifle",
+            "era": "modern",
+            "base_price": 275.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D6 + 4",
+                "base_range": "110 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "5",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": ".444 Marlin Rifle",
+            "base_price": 400.0,
+            "era": "modern",
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "2D8 + 4",
+                "base_range": "110 yards",
+                "uses_per_round": "1",
+                "bullets_in_gun_mag": "5",
+                "malfunction": "98"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Elephant Gun(2B)",
+            "era": "1920",
+            "base_price": 400.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "3D6 + 4",
+                "base_range": "100 yards",
+                "uses_per_round": "1 or 2",
+                "bullets_in_gun_mag": "2",
+                "malfunction": "100"
+            }
+        }
+    },
+    {
+        "model": "creator.Item",
+        "fields": {
+            "category": 3,
+            "title": "Elephant Gun(2B)",
+            "era": "modern",
+            "base_price": 1800.0,
+            "properties": {
+                "subcategory": "Rifles",
+                "skill": "Firearms(Rifle)",
+                "damage": "3D6 + 4",
+                "base_range": "100 yards",
+                "uses_per_round": "1 or 2",
+                "bullets_in_gun_mag": "2",
+                "malfunction": "100"
+            }
+        }
+    }
+]

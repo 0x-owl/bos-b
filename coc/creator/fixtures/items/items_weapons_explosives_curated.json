@@ -62,7 +62,7 @@
             "category": 3,
             "title": "Dynamite Stick",
             "description": "",
-            "era": "modern",
+            "era": "1920",
             "base_price": 5.0,
             "properties": {
                 "subcategory": "Explosives",
@@ -173,18 +173,18 @@
         "model": "creator.Item",
         "fields": {
             "category": 3,
+            "title": "Anti-Personnel Mine",
+            "description": "",
+            "base_price": null,
+            "era": "1920",
             "properties": {
-                "title": "Anti-Personnel Mine",
                 "subcategory": "Explosives",
-                "description": "",
                 "skill": "Demolitions",
                 "damage": "4D10/ 5 yards",
                 "base_range": "In place",
                 "uses_per_round": "In place",
                 "bullets_in_gun_mag": "One use",
-                "cost_20s_modern": "-/-",
-                "malfunction": "99",
-                "era": "1920's, Modern"
+                "malfunction": "99"
             }
         }
     },
@@ -192,18 +192,18 @@
         "model": "creator.Item",
         "fields": {
             "category": 3,
+            "title": "Claymore Mine",
+            "description": "",
+            "era": "modern",
+            "base_price": null,
             "properties": {
-                "title": "Claymore Mine",
                 "subcategory": "Explosives",
-                "description": "",
                 "skill": "Demolitions",
                 "damage": "6D6/ 20 yards",
                 "base_range": "In place",
                 "uses_per_round": "In place",
                 "bullets_in_gun_mag": "One use",
-                "cost_20s_modern": "-/-",
-                "malfunction": "99",
-                "era": "Modern"
+                "malfunction": "99"
             }
         }
     }
