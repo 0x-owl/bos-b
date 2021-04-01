@@ -201,7 +201,7 @@ class RandomInvestigator:
 
     def base_build(self):
         '''Basic information required to build de model.'''
-        occupations = Occupation.objects.filter(era="1920's", modern=False)
+        occupations = Occupation.objects.filter(era="1920", modern=False)
         occupation = choice(list(occupations))
         genders = [('M', 'male'), ('F', 'female')]
         gender_pick = choice(genders)
