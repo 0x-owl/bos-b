@@ -7,11 +7,12 @@ from django.template.loader import render_to_string
 
 from creator.constants import SILOUETTES as silouettes
 from creator.helpers.investigator import generate_full_half_fifth_values
+from creator.helpers.views_helper import ALL_MODELS as all_models
 from creator.helpers.views_helper import (gear_sanitizer,
                                           generate_attributes_form,
                                           generate_basic_info_form,
                                           generate_derivative_attributes_form,
-                                          skills_sanitizer, ALL_MODELS as all_models)
+                                          skills_sanitizer)
 from creator.models import (Inventory, Investigator, Item, ManiaInvestigator,
                             Occupation, PhobiaInvestigator, Portrait, Skills,
                             SpellInvestigator)

@@ -259,10 +259,15 @@ class RandomInvestigator:
         ).filter(~Q(title='Generic Editable Item'))
         for _ in range(5):
             item = choice(items)
+            props = item.properties.copy()
+            props['title'] = item.title
+            props['era'] = item.era
+            props['price'] = item.base_price
+            props['rare'] = item.rare
             inventory = Inventory(
                 investigator=self.investigator,
                 item=item,
-                properties=item.properties
+                properties=props
             )
             inventory.save()
     
@@ -278,8 +283,13 @@ class RandomInvestigator:
         )
 
         weapon = choice(weapons)
-        weapon_props = weapon.properties
+        weapon_props = weapon.properties.copy()
         weapon_props['ammo'] = weapon.properties["bullets_in_gun_mag"]
+        weapon_props['title'] = weapon.title
+        weapon_props['era'] = weapon.era
+        weapon_props['price'] = weapon.base_price
+        weapon_props['rare'] = weapon.rare
+            
         weapon_inventory = Inventory(
             investigator=self.investigator,
             item=weapon,

@@ -410,7 +410,7 @@ class Inventory(BaseModel):
 
     def __str__(self):
         """String representation of the object."""
-        title = f"{self.item.properties['title']} - {self.investigator.name}"
+        title = f"{self.item.title} - {self.investigator.name}"
         return title
 
 

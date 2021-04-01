@@ -1,9 +1,10 @@
 export function get_gear(res) {
     for (let item of res.gear) {
+        let item_title = JSON.stringify(item['title']);
         $("#inv-gear").append(
             `<tr id='gear-row-${item["uuid"]}'>
                 <div class="input-group mb-3">
-                    <td><input type="text" class="form-control" id="item-inv-title-${item['uuid']}" value=${item["title"]} readonly></td>
+                    <td><input type="text" class="form-control" id="item-inv-title-${item['uuid']}" value=${item_title} readonly></td>
                     <td><input type="text" class="form-control" id="item-inv-price-${item['uuid']}" value=${item["price"]} readonly></td>
                     <td><input type="text" class="form-control" id="item-inv-stock-${item['uuid']}" value=${item["stock"]} readonly></td>
                     <td>
