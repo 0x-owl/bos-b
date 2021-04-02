@@ -1,0 +1,2264 @@
+[
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Al Azif",
+            "subheading": "Arabic, by Abdul al-Hazrad (Abd al-Azrad), c. 730 AD",
+            "description": "Original form is unknown, but numerous manuscript versions were long circulated between medieval scholars. As early as the 12th century, this version was referred to as lost. An immense compendium touching on nearly every aspect of the Mythos, and a reference including charts and star maps.",
+            "language": "Arabic",
+            "date": "c. 730",
+            "author": "Abdul al-Hazrad",
+            "weeks": "68",
+            "sanity": "2D10",
+            "cthulhu_mythos_initial": "+6",
+            "cthulhu_mythos_full": "+12",
+            "mythos_rating": "54",
+            "suggested_spells": "Call/Dismiss Azathoth, Call/Dismiss Cthugha, Call/Dismiss Hastur, Call/Dismiss Nyogtha, Call/Dismiss Shub-Niggurath, Call/Dismiss Yog-Sothoth, Contact Ghoul, Contact Deity/Nyarlathotep, Contact Sand Dweller, Dominate, Dread Curse of Azathoth, Dust of Suleiman, Elder Sign, Powder of Ibn-Ghazi, Resurrection, Shrivelling, Summon/Bind Byakhee, Summon/Bind Fire Vampire, Summon/ Bind Servitor of the Outer Gods, Voorish Sign.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Azathoth and Others",
+            "subheading": "English, Edward Derby, 1919",
+            "description": "A collection of the Arkham-born poet's early works. Published in Boston in a pocket-sized edition, 3.5' × 5.5' and bound in black leather. Approximately 1,400 copies were printed and sold.",
+            "language": "English",
+            "date": "1919",
+            "author": "Edward Derby",
+            "weeks": "1",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "none",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Black Book of the Skull",
+            "subheading": "",
+            "description": "",
+            "language": "Greek",
+            "date": "",
+            "author": "J'cak Igguratian",
+            "weeks": "29",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "18",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Black God of Madness",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1930s",
+            "author": "Amadaeus Carson",
+            "weeks": "7",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Black Rites",
+            "subheading": "",
+            "description": "",
+            "language": "Egyptian",
+            "date": "",
+            "author": "Luveh-Keraphf",
+            "weeks": "41",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+8",
+            "mythos_rating": "33",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Black Sutra",
+            "subheading": "",
+            "description": "",
+            "language": "Burmese",
+            "date": "c. 700",
+            "author": "U Pao",
+            "weeks": "18",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "15",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Black Tome",
+            "subheading": "",
+            "description": "",
+            "language": "Latin",
+            "date": "",
+            "author": "Alsophocus",
+            "weeks": "37",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+7",
+            "mythos_rating": "30",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Book of Dzyan",
+            "subheading": "English, author/translation unknown, reputedly of ancient origin",
+            "description": "Long referred to by theosophist Helena Blavatsky, a copy of this tome has never been verified. Said to be a translation of manuscripts original to Atlantis. Also called the Stanzas of Dzyan. Portions of this work were translated as The Secret Doctrine, but that includes no spells or other Mythos information.",
+            "language": "English",
+            "date": "",
+            "author": "unknown",
+            "weeks": "14",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+6",
+            "mythos_rating": "27",
+            "suggested_spells": "Call Forth Childe of the Woode (Summon/Bind Dark Young), Call Forth Wind Spirit (Summon/Bind Byakhee), Call Forth The Unseen Walker (Summon/Bind Dimensional Shambler), Dream Vision (Contact Deity/Cthulhu).",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Book of Eibon",
+            "subheading": "English, translation unknown, c. 15th century",
+            "description": "A flawed and incomplete translation. Eighteen copies by various hands are known to exist today.",
+            "language": "English",
+            "date": "15th C.",
+            "author": "unknown",
+            "weeks": "32",
+            "sanity": "2D4",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+8",
+            "mythos_rating": "33",
+            "suggested_spells": "Call/Dismiss Azathoth, Contact Formless Spawn of Zhothaqquah (Formless Spawn), Contact Deity/ Kthulhut (Cthulhu), Contact Deity/ Yok Zothoth (Yog-Sothoth), Contact Deity/Zhothaqquah (Tsathoggua), Create Gate, Create Mist of R'lyeh, Enchant Knife, Green Decay, Wither Limb.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Book of Iod",
+            "subheading": "",
+            "description": "",
+            "language": "ancient tongue",
+            "date": "",
+            "author": "unknown",
+            "weeks": "51",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+4",
+            "cthulhu_mythos_full": "+8",
+            "mythos_rating": "36",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Book of Iod",
+            "subheading": "",
+            "description": "",
+            "language": "English translation",
+            "date": "",
+            "author": "Johann Negus",
+            "weeks": "10",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Book of Skelos",
+            "subheading": "",
+            "description": "",
+            "language": "Aklo",
+            "date": "",
+            "author": "unknown",
+            "weeks": "54",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+7",
+            "mythos_rating": "30",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Cabala of Saboth",
+            "subheading": "",
+            "description": "",
+            "language": "Greek",
+            "date": "1686",
+            "author": "unknown",
+            "weeks": "16",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "9",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Celaeno Fragments",
+            "subheading": "Holographic manuscript in English, by Dr. Laban Shrewsbury, 1915 (1938)",
+            "description": "A single copy is known to exist, deposited at Miskatonic University Library shortly before the author mysteriously disappeared.",
+            "language": "English",
+            "date": "1915",
+            "author": "Laban Shrewsbury",
+            "weeks": "15",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+6",
+            "mythos_rating": "27",
+            "suggested_spells": "Brew Space Mead, Call Cthugha, Elder Sign, Enchant Whistle, Summon/Bind Byakhee.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Confessions of the Mad Monk Clithanus",
+            "subheading": "Latin, by Clithanus, 400 (1674)",
+            "description": "A retreading of material Clithanus gleaned from reading the Necronomicon. Contains lengthy treatise on sigils of protection and the spawn of Cthulhu.",
+            "language": "Latin",
+            "date": "c. 400",
+            "author": "Clithanus",
+            "weeks": "29",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+6",
+            "mythos_rating": "27",
+            "suggested_spells": "Call Down the Blasphemies of the Oceans (Contact Star-Spawn of Cthulhu), Sign of the Master (Elder Sign), Warding.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Cthaat Aquadingen",
+            "subheading": "Middle English, author and translator unknown, c. 14th century",
+            "description": "A comprehensive study of the deep ones, but in an incomplete and deeply flawed translation. A single bound manuscript is held by the British Museum.",
+            "language": "English",
+            "date": "14th C.",
+            "author": "unknown",
+            "weeks": "29",
+            "sanity": "2D4",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "18",
+            "suggested_spells": "Dreams from God (Contact Deity/ Cthulhu), Speak with Sea Children (Contact Deep Ones), Speak with Father Dagon, Speak with Mother Hydra, Speak with God-Child (Contact Star-Spawn of Cthulhu).",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Cthaat Aquadingen",
+            "subheading": "Latin, author unknown, c. 11-12th century",
+            "description": "A comprehensive study of the deep ones. Three copies of this Latin version exist, identically bound in human skin said to sweat when the humidity drops too low. One is allegedly held at the British Museum—although the museum denies this—and the other two are owned by British collectors.",
+            "language": "Latin",
+            "date": "11-12th C.",
+            "author": "unknown",
+            "weeks": "46",
+            "sanity": "2D8",
+            "cthulhu_mythos_initial": "+4",
+            "cthulhu_mythos_full": "+9",
+            "mythos_rating": "39",
+            "suggested_spells": "Dreams from God (Contact Deity/ Cthulhu), Dreams from Zattoqua (Contact Deity/ Tsathoggua), Dreams of the Drowner (Contact Deity/Yibb-Tstll), Speak with Sea Children (Contact Deep Ones), Speak with Father Dagon, Speak with Mother Hydra (Contact Deep One/Mother Hydra) Speak with God-Child (Contact Star-Spawn of Cthulhu), Nyhargo Dirge (this last spell is a reversal of the Resurrection spell, used to destroy revenants).",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Cthulhu in the Necronomicon",
+            "subheading": "English, written by Dr. Laban Shrewsbury, 1915 (pub: 1938)",
+            "description": "Handwritten notes toward an intended book. Deposited at Miskatonic University Library shortly before the author mysteriously disappeared. Tells of Cthulhu's power to affect men's dreams, warning of a worldwide cult dedicated to the creature's return.",
+            "language": "English",
+            "date": "1915",
+            "author": "Laban Shrewsbury",
+            "weeks": "14",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "18",
+            "suggested_spells": "Contact Deity/Cthulhu, Contact Deep Ones, Elder Sign.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Cthonic Revelations",
+            "subheading": "",
+            "description": "",
+            "language": "Laotian",
+            "date": "",
+            "author": "Thanang Phram",
+            "weeks": "18",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+5",
+            "mythos_rating": "21",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Cultes des Goules",
+            "subheading": "French, by François-Honore Balfour, Comte d'Erlette, 1702?",
+            "description": "Published in 1703 in France (Paris?), in a quarto edition. The Church immediately denounced it. Catalogs a large cult practicing necromancy, necrophagy, and necrophilia in France. Fourteen copies are known to exist, the most recent surfacing in 1906.",
+            "language": "French",
+            "date": "1702",
+            "author": "Francois-Honore Balfour",
+            "weeks": "22",
+            "sanity": "1D10",
+            "cthulhu_mythos_initial": "+4",
+            "cthulhu_mythos_full": "+8",
+            "mythos_rating": "36",
+            "suggested_spells": "Black Binding, Call/Dismiss Nyogtha, Call/Dismiss Shub-Niggurath, Contact Ghoul, Resurrection, Shrivelling, Summon/Bind Byakhee, Summon/Bind Dark Young, Voorish Sign.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Daemonolatreia",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1595",
+            "author": "Remigius",
+            "weeks": "28",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+6",
+            "mythos_rating": "24",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "De Vermiis Mysteriis",
+            "subheading": "Latin, by Ludwig Prinn, 1542",
+            "description": "Black letter folio printed in Cologne, Germany, in the same year. Suppressed by the Church. Fifteen copies have survived. In part discusses the Arab world, and things supernatural there.",
+            "language": "Latin",
+            "date": "1542",
+            "author": "Ludwig Prinn",
+            "weeks": "48",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+4",
+            "cthulhu_mythos_full": "+8",
+            "mythos_rating": "36",
+            "suggested_spells": "Contact Deity/Yig, Create Scrying Window, Create Zombie, Invoke Demon (Summon/Bind Byakhee), Invoke Child of the Goat (Summon/Bind Dark Young), Invoke Invisible Servant (Summon/ Bind Star Vampire), Mind Transfer, Voorish Sign.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Dhol Chants",
+            "subheading": "",
+            "description": "",
+            "language": "German",
+            "date": "1890s",
+            "author": "Heinrich Zimmerman",
+            "weeks": "17",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+5",
+            "mythos_rating": "21",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Dwellers in the Depths",
+            "subheading": "",
+            "description": "",
+            "language": "French",
+            "date": "",
+            "author": "Gaston Le Fé",
+            "weeks": "12",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+6",
+            "mythos_rating": "24",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Eltdown Shards",
+            "subheading": "English, by Rev. Arthur Brooke Winters-Hall, 1912",
+            "description": "Questionable translation of mysterious hieroglyphs found on clay fragments in southern England, in an edition of 350 pamphlets, 64 pages. Tells of beings that could exchange minds with others across space and time.",
+            "language": "English",
+            "date": "1912",
+            "author": "Arthur B Winters-Hall",
+            "weeks": "6",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+8",
+            "mythos_rating": "33",
+            "suggested_spells": "Contact Yithian.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Ethics of Ygor",
+            "subheading": "",
+            "description": "",
+            "language": "Latin",
+            "date": "",
+            "author": "unknown",
+            "weeks": "13",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Fischbuch",
+            "subheading": "",
+            "description": "",
+            "language": "German",
+            "date": "1598",
+            "author": "Konrad von Gerner",
+            "weeks": "8",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "9",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Fourth Book of D'harsis",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "D'harsis",
+            "weeks": "42",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+8",
+            "mythos_rating": "33",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Geph Transcriptions",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "unknown",
+            "weeks": "20",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+5",
+            "mythos_rating": "21",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "G'harne Fragments",
+            "subheading": "English, by Sir Amery Wendy-Smith, 1919 (pub: 1931)",
+            "description": "Scholarly study and translation of shards inscribed with curious dot patterns. Discusses the lost city of G’harne in great detail, including its location. The shards were discovered by Windrop in North Africa. The original edition was 958 copies, printed at the author’s expense as a humble sextodecimo (4.5' × 5.75').",
+            "language": "English",
+            "date": "",
+            "author": "Amery Wendy Smith",
+            "weeks": "12",
+            "sanity": "1D10",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+7",
+            "mythos_rating": "30",
+            "suggested_spells": "Contact Chthonian, Contact Elder Thing, Contact Shudde M'ell, Red Sign of Shudde M'ell.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Ghorl Nigral",
+            "subheading": "",
+            "description": "",
+            "language": "Muvian",
+            "date": "Naacal Zakuba",
+            "author": "",
+            "weeks": "46",
+            "sanity": "2D8",
+            "cthulhu_mythos_initial": "+4",
+            "cthulhu_mythos_full": "+10",
+            "mythos_rating": "42",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Green Book",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "unknown",
+            "weeks": "50",
+            "sanity": "2D8",
+            "cthulhu_mythos_initial": "+4",
+            "cthulhu_mythos_full": "+9",
+            "mythos_rating": "39",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Hydrophinnae",
+            "subheading": "",
+            "description": "",
+            "language": "Latin",
+            "date": "",
+            "author": "Mr. Gantley",
+            "weeks": "7",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "9",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Ilarnek Papyri",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "unknown",
+            "weeks": "15",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "18",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "In Pressured Places",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Hartrack",
+            "weeks": "3",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "15",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Invocations to Dagon",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Asaph Waite",
+            "weeks": "16",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+6",
+            "mythos_rating": "27",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Johansen Narrative",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Gustaf Johansen",
+            "weeks": "6",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "The King in Yellow",
+            "subheading": "English, translator unknown, c. 1895",
+            "description": "The original is in French, apparently, but that edition was seized and destroyed by the Third Republic just after publication. The English edition is a thin black octavo volume, across the front cover of which is embossed a large Yellow Sign. Until the book has been read, the Sign has no effect on the viewer, except to imbue a sense of curiosity. After reading the book (or after having contact with anything or anyone from Carcosa), viewing the sign costs 0/1D6 Sanity points to see (for one time only). The text is an ambiguous, dreamlike play that opens readers to madness. Uniquely, readers cannot opt to disbelieve what is written here. Those of an artistic bent will feel compelled to reread the play. If the book results in insanity, the reader should become obsessed with Carcosa and the King in Yellow (see The Yellow Sign, page 322).",
+            "language": "English",
+            "date": "1895",
+            "author": "unknown",
+            "weeks": "1",
+            "sanity": "1D10",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "15",
+            "suggested_spells": "none",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Legends of Liqualia",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Oswald",
+            "weeks": "9",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Liber Damnatus Damnationum",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1647",
+            "author": "Janus Aquaticus",
+            "weeks": "34",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+7",
+            "mythos_rating": "30",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Liber Ivonis",
+            "subheading": "Latin, translated by Caius Phillipus Faber, 9th century",
+            "description": "Although the original is said to have been written by Eibon, wizard of Hyperborea, no earlier versions than the Latin have been verified. Never printed, six bound manuscript versions have been listed in library collections.",
+            "language": "Latin",
+            "date": "9th C.",
+            "author": "Caius Phillipus Faber",
+            "weeks": "36",
+            "sanity": "2D4",
+            "cthulhu_mythos_initial": "+4",
+            "cthulhu_mythos_full": "+9",
+            "mythos_rating": "39",
+            "suggested_spells": "Call/Dismiss Azathoth, Contact Formless Spawn of Zhothaqquah (Formless Spawn), Contact Deity/ Kthulhut (Cthulhu), Contact Deity/ Yok Zothoth (Yog-Sothoth), Contact Deity/Zhothaqquah (Tsathoggua), Create Barrier of Naach-Tith, Create Gate, Create Mist of R'lyeh, Enchant Knife, Green Decay, Voorish Sign, Wither Limb.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Life of Eibon",
+            "subheading": "",
+            "description": "",
+            "language": "French",
+            "date": "",
+            "author": "Cyron",
+            "weeks": "8",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "9",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Livre d'Ivon",
+            "subheading": "French, translated by Gaspard du Nord, c. 13th century",
+            "description": "Bound, handwritten manuscript of which thirteen specimens, partial or complete, are known to exist.",
+            "language": "French",
+            "date": "13th C.",
+            "author": "Gaspard du Nord",
+            "weeks": "36",
+            "sanity": "2D4",
+            "cthulhu_mythos_initial": "+4",
+            "cthulhu_mythos_full": "+9",
+            "mythos_rating": "36",
+            "suggested_spells": "same as Liber Ivonis.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Magic and the Black Arts",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Kane",
+            "weeks": "12",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "15",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Marvels of Science",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Morryster",
+            "weeks": "11",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "9",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Massa di Requiem Per Shuggay",
+            "subheading": "Italian, by Benvenuto Chieti Brodighera, 1768",
+            "description": "An opera score and libretto never published and believed to have been performed only once. Deals with rape, incest and other degradations. Knowledgeable musicians pronounce portions of it unplayable. Copies are held by the British Museum, the Bibliothèque Nationale in Paris, and probably the Vatican's Z-collection.",
+            "language": "Italian",
+            "date": "1768",
+            "author": "B Chieti Brodighera",
+            "weeks": "2",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "(performed with full orchestra) Call Azathoth is cast about midway through the third act.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Monstres and their Kynde",
+            "subheading": "English, author unknown, 16th century",
+            "description": "A single folio version of this handwritten book existed and that was stolen from the British Museum in 1898. Rumors of other copies continue to persist to this day, though none has been verified. Contains a jumble of topics drawn from the Necronomicon, Book of Eibon, and a variety of other tomes. Many entities are discussed, including Cthulhu, Yog- Sothoth, and Lloigor, the twin of Zhar.",
+            "language": "English",
+            "date": "16th C.",
+            "author": "unknown",
+            "weeks": "36",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+6",
+            "mythos_rating": "24",
+            "suggested_spells": "Command Faceless One (Summon/ Bind Nightgaunt), Command Ice Demon (Summon/ Bind Byakhee), Command Invisible Servant (Summon/Bind Star Vampire), Command Night Beast (Summon/Bind Hunting Horror), Command Star Walker (Summon/Bind Dimensional Shambler), Enchant Knife, Enchant Pipes.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Mum-Rath Papyri",
+            "subheading": "",
+            "description": "",
+            "language": "Latin",
+            "date": "",
+            "author": "Ibn Shoddathua",
+            "weeks": "10",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Naacal Key",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Churchward",
+            "weeks": "2",
+            "sanity": "1D2",
+            "cthulhu_mythos_initial": "0",
+            "cthulhu_mythos_full": "+1",
+            "mythos_rating": "3",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Nameless Cults",
+            "subheading": "English, translator unknown, published 1845",
+            "description": "An unauthorized translation published by Bridewell of England (probably London) in an octavo edition. At least twenty copies are held in various collections. Badly flawed text.",
+            "language": "English",
+            "date": "1845",
+            "author": "unknown",
+            "weeks": "48",
+            "sanity": "2D8",
+            "cthulhu_mythos_initial": "+4",
+            "cthulhu_mythos_full": "+8",
+            "mythos_rating": "36",
+            "suggested_spells": "as per Unaussprechlichen Kulten, but most of these spell versions are incomplete or faulty.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Nameless Cults",
+            "subheading": "English, translator unknown, published 1909",
+            "description": "An expurgated version of the faulty Bridewell text, published by Golden Goblin Press, New York. Contains only descriptions of spells, not the complete rituals of the earlier editions. This edition can possibly be found in used bookstores.",
+            "language": "English",
+            "date": "1909",
+            "author": "unknown",
+            "weeks": "30",
+            "sanity": "2D8",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+6",
+            "mythos_rating": "27",
+            "suggested_spells": "none",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Necrolatry",
+            "subheading": "",
+            "description": "",
+            "language": "German",
+            "date": "1702",
+            "author": "Ivor Gorstadt",
+            "weeks": "20",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+4",
+            "cthulhu_mythos_full": "+8",
+            "mythos_rating": "36",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Necronomicon",
+            "subheading": "Greek, translated by Theodoras Philetas, c. 950 AD",
+            "description": "Early manuscript versions are unknown. A small printing in (Florence?) Italy in a folio edition was suppressed by the Church; it lacked any drawings, maps, or charts. Last known copy burned in Salem, 1692.",
+            "language": "Greek",
+            "date": "c. 950",
+            "author": "Theodoras Philetas",
+            "weeks": "68",
+            "sanity": "2D10",
+            "cthulhu_mythos_initial": "+5",
+            "cthulhu_mythos_full": "+12",
+            "mythos_rating": "51",
+            "suggested_spells": "same as Al Azif.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Necronomicon",
+            "subheading": "Latin, translated by Olaus Wormius, 1228 AD",
+            "description": "First circulated in manuscript form, then printed in Germany (late 15th century) as a black-letter folio. A second, nearly identical edition was published in Spain in the early 17th century. One copy of the former edition and four copies of the latter are known to exist.",
+            "language": "Latin",
+            "date": "1228",
+            "author": "Olaus Wormius",
+            "weeks": "66",
+            "sanity": "2D10",
+            "cthulhu_mythos_initial": "+5",
+            "cthulhu_mythos_full": "+11",
+            "mythos_rating": "48",
+            "suggested_spells": "same as Al Azif.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Necronomicon",
+            "subheading": "English, translated by Dr. John Dee, 1586",
+            "description": "An accurate but expurgated version of the Greek translation. Never printed; exists in bound manuscript form only. Three nearly-complete copies are known.",
+            "language": "English",
+            "date": "1586",
+            "author": "John Dee",
+            "weeks": "50",
+            "sanity": "2D10",
+            "cthulhu_mythos_initial": "+5",
+            "cthulhu_mythos_full": "+10",
+            "mythos_rating": "45",
+            "suggested_spells": "Call Forth the Angel Yazrael (Call/ Dismiss Yog-Sothoth), Call Forth the Lord of the Pit (Call/Dismiss Nyogtha), Command the Angel Dilyah (Summon/Bind Servitor of the Outer Gods), Consult Dark Servant (Contact Ghoul), Consult Ye Spirit of the Earth (Contact Nyarlathotep), Dominate, Dust of Suleiman, Elder Sign, Powder of Ibn- Ghazi, Voorish Sign.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Night-Gaunt",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Edgar Gordon",
+            "weeks": "4",
+            "sanity": "1D3",
+            "cthulhu_mythos_initial": "0",
+            "cthulhu_mythos_full": "+1",
+            "mythos_rating": "3",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "The Occult Foundation",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "c. 1980",
+            "author": "J. C. Wassermann",
+            "weeks": "16",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "15",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Of Evil Sorceries Done in New England",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "c.1600",
+            "author": "unknown",
+            "weeks": "9",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Othuum Omnicia",
+            "subheading": "",
+            "description": "",
+            "language": "Latin",
+            "date": "",
+            "author": "unknown",
+            "weeks": "12",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "9",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Parchments of Pnom",
+            "subheading": "",
+            "description": "",
+            "language": "Hyperborean",
+            "date": "",
+            "author": "Pnom",
+            "weeks": "31",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+8",
+            "mythos_rating": "33",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "People of the Monolith",
+            "subheading": "English, by Justin Geoffrey, 1926",
+            "description": "A volume of poems, 4' × 6.75', bound in dark red buckram at Erebus Press, Monmouth, Illinois, in an edition of 1200 copies. The title poem is acknowledged as Geoffrey's masterwork.",
+            "language": "English",
+            "date": "1926",
+            "author": "Justin Geoffrey",
+            "weeks": "1",
+            "sanity": "1D3",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "9",
+            "suggested_spells": "none",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Pnakotic Manuscripts",
+            "subheading": "English, author and translator unknown, 15th century",
+            "description": "Five bound manuscript versions (partial copies of a greater work, now lost) of this book are catalogued in Europe and America. The apparent precursor volume, the Pnakotica, was written in classical Greek, and that book may trace its origins to the pre-human crinoids who seeded life on Earth.",
+            "language": "English",
+            "date": "15th C.",
+            "author": "unknown",
+            "weeks": "45",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+7",
+            "mythos_rating": "30",
+            "suggested_spells": "Contact Winged Thing (Elder Thing).",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Polynesian Mythology, with a Note on the Cthulhu Legend-Cycle",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1906",
+            "author": "Harold H. Copeland",
+            "weeks": "8",
+            "sanity": "1D3",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "9",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Ponape Scripture",
+            "subheading": "English, by Captain Abner Ezekiel Hoag, 1734.",
+            "description": "Published posthumously c. 1795, in Boston, as a sextodecimo, 4' × 6.75', but inferior in accuracy and completeness to Hoag’s manuscript, copies of which purportedly still exist. Details a South Sea islander cult of humans who worship and breed with the deep ones.",
+            "language": "",
+            "date": "1734",
+            "author": "Abner Ezekiel",
+            "weeks": "10",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "15",
+            "suggested_spells": "the printed version has no spells. The manuscript original contains Contact Deep One, Contact Father Dagon, Contact Mother Hydra.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Prehistoric Pacific in the Light of the Ponape Scripture",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1911",
+            "author": "Harold H. Copeland",
+            "weeks": "7",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Prehistory in the Pacific: A Preliminary Investigation",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1902",
+            "author": "Harold H. Copeland",
+            "weeks": "4",
+            "sanity": "1D2",
+            "cthulhu_mythos_initial": "0",
+            "cthulhu_mythos_full": "+1",
+            "mythos_rating": "3",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Reflections",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Ibn Schacabao",
+            "weeks": "27",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+6",
+            "mythos_rating": "24",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Remnants of Lost Empires",
+            "subheading": "",
+            "description": "",
+            "language": "German",
+            "date": "1809",
+            "author": "Otto Dostmann",
+            "weeks": "5",
+            "sanity": "1D3",
+            "cthulhu_mythos_initial": "0",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "6",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Revelations of Gla'aki",
+            "subheading": "English, by various authors, 1842",
+            "description": "Nine folio volumes were published by subscription, the last in 1865. Since then, three more volumes are said to have been composed and privately circulated. Copies of the original nine folio volumes are held by many major libraries. Each volume is by a different cultist, discussing a different aspect of Gla'aki, associated entities, and their cults. This version of the text was apparently expurgated, but much information survives.",
+            "language": "English",
+            "date": "1842",
+            "author": "various authors",
+            "weeks": "32",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+5",
+            "cthulhu_mythos_full": "+10",
+            "mythos_rating": "45",
+            "suggested_spells": "Call/Dismiss Azathoth, Call/Dismiss Daoloth, Call/Dismiss Shub-Niggurath, Contact Deity (Eihort), Contact Deity (Gla'aki), Green Decay",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Revelations of Hali",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1913",
+            "author": "E. S. Bayrolles",
+            "weeks": "5",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "R'lyeh Text",
+            "subheading": "Chinese, author unknown, c. 300 BC",
+            "description": "Supposedly the clay tablet originals have been destroyed, but scroll copies and recent English and German translations are said to exist. The text apparently concerns Dagon, Hydra, star-spawn, Zoth-Ommog, Ghatanothoa, and Cthulhu, and tells of the sinking of Mu and R'lyeh.",
+            "language": "Chinese",
+            "date": "c. 300",
+            "author": "unknown",
+            "weeks": "54",
+            "sanity": "2D8",
+            "cthulhu_mythos_initial": "+5",
+            "cthulhu_mythos_full": "+10",
+            "mythos_rating": "45",
+            "suggested_spells": "Call Cyaegha, Contact Deity/Cthulhu, Contact Deep Ones, Contact Father Dagon, Contact Mother Hydra, Wave of Oblivion.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Saducismus Triumphatus",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1681",
+            "author": "Joseph Glanvill",
+            "weeks": "6",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Sapientia Maglorum",
+            "subheading": "",
+            "description": "",
+            "language": "Latin",
+            "date": "",
+            "author": "Ostanes",
+            "weeks": "40",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+7",
+            "mythos_rating": "30",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Saracenic Rituals",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "19th C.",
+            "author": "Clergyman X",
+            "weeks": "6",
+            "sanity": "1D3",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "9",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Secret Mysteries of Asia, with a Commentary on the Ghorl Nigral",
+            "subheading": "",
+            "description": "",
+            "language": "German",
+            "date": "1847",
+            "author": "Gottfried Mulder",
+            "weeks": "16",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+5",
+            "mythos_rating": "21",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "The Secret Watcher",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Halpin Chalmers",
+            "weeks": "10",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Seven Cryptical Books of Hsan",
+            "subheading": "Chinese, written by Hsan the Greater, c. 2nd century AD",
+            "description": "Seven scrolls, each on a different topic. An English translation, Seven Cryptical Books of Earth, is said to exist. The books discuss elements of the Mythos of particular importance or interest to those who live in the Middle Kingdom.",
+            "language": "Chinese",
+            "date": "2nd C.",
+            "author": "Hsan the Greater",
+            "weeks": "40",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+6",
+            "mythos_rating": "24",
+            "suggested_spells": "Call Down Spirit (Summon/Bind Byakhee), Call Forth the Earth Spirit (Contact Chthonian), Contact Ghoul, Contact Hound of Tindalos, Contact Deity/Nyarlathotep, Door to Kadath (a Gate to Kadath), Restore Life (Resurrection).",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Song of Yste",
+            "subheading": "",
+            "description": "",
+            "language": "Greek",
+            "date": "",
+            "author": "Dirka Family",
+            "weeks": "11",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "15",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Soul of Chaos",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Edgar Gordon",
+            "weeks": "7",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Sussex Manuscript",
+            "subheading": "English, translated by Baron Frederic, 1597",
+            "description": "A muddled, incomplete translation of the Latin Necronomicon, printed in Sussex, England, in an octavo edition. Properly known as the Cultus Maleficarum.",
+            "language": "English",
+            "date": "1597",
+            "author": "Baron Frederic",
+            "weeks": "36",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+5",
+            "mythos_rating": "21",
+            "suggested_spells": "same as Al Azif, but possibly dangerously flawed in form and intent.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Testament of Carnamagos",
+            "subheading": "",
+            "description": "",
+            "language": "Greek",
+            "date": "12th C.",
+            "author": "Carnamagos",
+            "weeks": "23",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "18",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Thaumaturgical Prodigies in the New-England Canaan",
+            "subheading": "English, by Rev. Ward Phillips, 1788?",
+            "description": "Published in two editions, the second in Boston, 1801. Primitive American octavo in imitation black letter. The interiors of the editions are the same, except for changes in printer, place of printing and edition date. Commonly found in major libraries and historical society libraries in New England. Describes the blasphemies of witches, warlocks, shamans, and other Colonial-era evildoers. Details of events in and around Billington's Woods.",
+            "language": "English",
+            "date": "1788",
+            "author": "Ward Philips",
+            "weeks": "8",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "none, but annotations by Rev. Phillips in his personal copy reveal Call/Dismiss Ithaka (Ithaqua), Contact Deity/Narlato (Nyarlathotep), Contact Deity/Sadogowah (Tsathoggua), Contact Deity/Yogge Sothyothe (Yog-Sothoth), Elder Sign.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "True Magick",
+            "subheading": "English, by Theophilus Wenn, 17th century",
+            "description": "A small and crumbling hand-bound manuscript, nonetheless describable as a veritable encyclopedia of Devil's lore.",
+            "language": "English",
+            "date": "17th C.",
+            "author": "Theophilus Wenn",
+            "weeks": "24",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "18",
+            "suggested_spells": "Call for Spirit of the Air (Summon/ Bind Star Vampire), Call Forth the One (Summon/ Bind Servitor of the Outer Gods), Call Forth the Winged One (Summon/Bind Byakhee), Speak with the Dark One (Contact Deity/Nyogtha).",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "The Tunneler Below",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1936",
+            "author": "Georg Reuter",
+            "weeks": "2",
+            "sanity": "1D3",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "9",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Tuscan Rituals",
+            "subheading": "",
+            "description": "",
+            "language": "Italian",
+            "date": "",
+            "author": "unknown",
+            "weeks": "3",
+            "sanity": "1D3",
+            "cthulhu_mythos_initial": "0",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "6",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Unaussprechlichen Kulten",
+            "subheading": "German, by Friedrich Wilhelm von Junzt, 1839",
+            "description": "Properly known as Das Buch von den unaussprechlichen Kulten. A quarto, possibly printed in Hamburg. This volume, long referred to as the Black Book, tells of von Junzt's connections to various cults and secret societies. Other editions are rumored. Six copies are known to be in major libraries in Europe and America. The original edition boasts the horrific engravings of Gunther Hasse.",
+            "language": "German",
+            "date": "1839",
+            "author": "F W von Junzt",
+            "weeks": "52",
+            "sanity": "2D8",
+            "cthulhu_mythos_initial": "+5",
+            "cthulhu_mythos_full": "+10",
+            "mythos_rating": "45",
+            "suggested_spells": "Approach Brother (Contact Ghoul), Barrier of Naach-Tith, Beckon Great One (Contact Dagon), Call Aether Devil (Contact Mi-Go), Call Forth the Sun (Call/Dismiss Azathoth), Call Forth Cyaegha (Call/Dismiss Cyaegha), Call Forth the Horned Man (Call/Dismiss Nyarlathotep), Call Forth That Which Should Not Be (Call/Dismiss Nyogtha), Call Forth the Woodland Goddess (Call/Dismiss Shub-Niggurath), Command Airy Travellers (Summon/ Bind Byakhee), Command the Trees (Summon/ Bind Dark Young), Command the Unknown (Call/ Dismiss Ghatanothoa), Contact Children of the Deep (Contact Deep Ones), Revivify (Resurrection).",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Unter Zee Kulten",
+            "subheading": "",
+            "description": "",
+            "language": "German",
+            "date": "17th C.",
+            "author": "Graf Gauberg",
+            "weeks": "17",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "18",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Uralteschrecken",
+            "subheading": "",
+            "description": "",
+            "language": "German",
+            "date": "19th C.",
+            "author": "Graf von Konnenberg",
+            "weeks": "22",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+2",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "18",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Visions from Yaddith",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1927",
+            "author": "Ariel Prescott",
+            "weeks": "1",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Von denen Verdammten Oder",
+            "subheading": "",
+            "description": "",
+            "language": "German",
+            "date": "",
+            "author": "Karaj Heinz Vogel",
+            "weeks": "24",
+            "sanity": "2D6",
+            "cthulhu_mythos_initial": "+4",
+            "cthulhu_mythos_full": "+8",
+            "mythos_rating": "36",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Von denen Verdammten",
+            "subheading": "",
+            "description": "",
+            "language": "German (repr.)",
+            "date": "1907",
+            "author": "Edith Brendall",
+            "weeks": "10",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+4",
+            "mythos_rating": "15",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Watchers on the Other Side",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1940s",
+            "author": "Nayland Colum",
+            "weeks": "2",
+            "sanity": "1D4",
+            "cthulhu_mythos_initial": "0",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "9",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "We Pass from View",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "1964",
+            "author": "Roland Franklyn",
+            "weeks": "1",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Yhe Ritual",
+            "subheading": "",
+            "description": "",
+            "language": "Egyptian",
+            "date": "",
+            "author": "Niggoum-Zhog",
+            "weeks": "14",
+            "sanity": "1D8",
+            "cthulhu_mythos_initial": "+3",
+            "cthulhu_mythos_full": "+6",
+            "mythos_rating": "27",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Yuggya Chants",
+            "subheading": "",
+            "description": "",
+            "language": "English",
+            "date": "",
+            "author": "Unknown",
+            "weeks": "11",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+3",
+            "mythos_rating": "12",
+            "suggested_spells": "",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Tomes of Eldritch Lore",
+            "title": "Zanthu Tablets",
+            "subheading": "English, by Prof. Harold Hadley Copeland, 1916",
+            "description": "A brochure subtitled 'A Conjectural Translation' printed in 400 copies. Translates carvings found on black jade tablets drawn up from the Pacific Ocean by fishermen. The author claims the carvings are hieratic Naacal, the high language of ancient Mu. The brochure describes the worship of Ghatanothoa, Shub-Niggurath, and Cthulhu",
+            "language": "English",
+            "date": "1916",
+            "author": "H Hadley Copeland",
+            "weeks": "8",
+            "sanity": "1D6",
+            "cthulhu_mythos_initial": "+1",
+            "cthulhu_mythos_full": "+2",
+            "mythos_rating": "9",
+            "suggested_spells": "the text is partially expurgated and contains no spells. The original Muvian tables contain Contact Deity/Cthulhu, Ghatanothoa, Lloigor, Yuggya, and Zoth-Ommog.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Occult Books",
+            "title": "Beatus Methodivo",
+            "subheading": "Latin, attributed to St. Methodius of Olympus, c. 300 AD",
+            "description": "Of Gnostic complexion, this relatively short work is written as a prophetic apocalypse. It foresees the history of the world. It recounts how Seth sought a new country in the East and came to the country of the initiates, how the children of Cain instituted a system of black magic in India.",
+            "sanity": "none",
+            "occult": "+2 percentiles",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Occult Books",
+            "title": "The Emerald Tablet",
+            "subheading": "Many languages, apparently from a Phoenician original, author or authors unknown, c. 200 AD",
+            "description": "The central alchemical text for medieval Europe, mercifully short but as cryptic as the Tao Te Ching of classical China.",
+            "sanity": "none",
+            "occult": "+1 percentile.",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Occult Books",
+            "title": "The Golden Bough",
+            "subheading": "English, by Sir George Frazer, 1890, in two volumes",
+            "description": "An expanded thirteen-volume edition was published 1911- 1915. A classic work of anthropology exploring the evolution of magical, religious, and scientific thought. An abridged version is available in most U.S. libraries.",
+            "sanity": "1D2",
+            "occult": "+5 percentiles",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Occult Books",
+            "title": "I Ching",
+            "subheading": "Classical Mandarin and many translations, including English (circa 2000 BC onwards, modern English translations available)",
+            "description": "One of the five classics of Confucian China. A subtle and poetical system of divination easily applied but capable of deep situational allusion.",
+            "sanity": "none",
+            "occult": "+8 percentiles",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Occult Books",
+            "title": "Isis Unveiled",
+            "subheading": "English, by Madame Helena Petrovna Blavatsky, 1877",
+            "description": "A two-volume set comprising the author's response to materialism and the arrogance of contemporary religious and scientific communities. The contents (to name but a few) also include sections on mesmerism, psychometry, the beings who inhabit ethereal space, and talismans.",
+            "sanity": "none",
+            "occult": "+6 percentiles",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Occult Books",
+            "title": "The Key of Solomon",
+            "subheading": "Various languages from Latin original, 14th century AD",
+            "description": "Claimed to be written by King Solomon. Composed of two books, the first indicating how to avoid drastic mistakes when dealing with spirits and the second discussing the magical arts, including many complex rituals.",
+            "sanity": "none",
+            "occult": "+5 percentiles",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Occult Books",
+            "title": "Malleus Maleficarum",
+            "subheading": "Various languages from Latin, by Sprenger and Kramer, 1486 AD",
+            "description": "Also known as the 'Hammer of Witches'. A guide for inquisitors in the Middle Ages on the identification and torturous persuasion of witches. This terrible book helped send approximately nine million people to their deaths. The German translation of 1906 has the excellent title Der Hexenhammer.",
+            "sanity": "none",
+            "occult": "+3 percentiles",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Occult Books",
+            "title": "Oracles of Nostradamus",
+            "subheading": "Various languages, by Michel de Nostradame [Nostradamus], 1555-1557",
+            "description": "Contains about a thousand four-line verses, purporting to be prophecies concerning human events until the year 3797 AD. The prophecies are nonspecific and imagistic, lending themselves to all sorts of applications. Numerous interpretations have been made for many of these prophecies",
+            "sanity": "none",
+            "occult": "+1 percentile",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Occult Books",
+            "title": "The Witch-Cult in Western Europe",
+            "subheading": "English, by Dr. Margaret Murray, 1921",
+            "description": "A modern English octavo with dust jacket; many editions and printings since. Connects the so-called covens of the Middle Ages with pre-Christian beliefs surviving as superstitions or, in a more organized sense, driven underground by the Church. This volume is often found in libraries and bookstores.",
+            "sanity": "none",
+            "occult": "+1 percentile",
+            "era": "1920"
+            }
+        }
+    },
+    {
+      "model": "creator.Item",
+      "fields": {
+        "category": 1,
+        "properties": {
+            "subcategory": "Occult Books",
+            "title": "The Zohar",
+            "subheading": "Aramaic, many editions and translated to Latin, German, English, French, etc., by Moses de Leon, 1280 AD",
+            "description": "The fundamental work of medieval Jewish mystical thought, representing the effort to know or to reach God through contemplation and revelation.",
+            "sanity": "1/1D3+1",
+            "occult": "+7 percentiles",
+            "era": "1920"
+            }
+        }
+    }
+]
