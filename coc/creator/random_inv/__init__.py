@@ -195,6 +195,7 @@ class RandomInvestigator:
         self.seed_inventory()
         self.seed_weapons()
         self.seed_spells()
+        self.investigator.set_credit_status()
     
     def destroy():
         pass
@@ -239,7 +240,6 @@ class RandomInvestigator:
         self.investigator.sanity = self.investigator.init_sanity()
         self.investigator.magic_points = self.investigator.init_magic_points()
         self.investigator.save()
-
     
     def skills_assigner(self):
         '''Assign skills to investigator entity.'''

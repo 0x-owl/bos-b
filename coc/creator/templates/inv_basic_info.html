@@ -60,10 +60,38 @@
                 </div>
                 <div class="input-group mb-4">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="inv-crmax">Credit Rating Max:</span>
+                        <span class="input-group-text" id="inv-crmin">Credit Rating Max:</span>
                     </div>
                     <input class="form-control" type="text" disabled
                         value={{res.investigator.occupation.credit_rating_max}} aria-describedby="inv-crmax">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-crmax">Credit Rating Category:</span>
+                    </div>
+                    <input class="form-control" type="text" disabled value={{res.investigator.credit_rating_category}}
+                        aria-describedby="inv-cr-cat">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-crmax">Spending Level:</span>
+                    </div>
+                    <input class="form-control" type="text" disabled value={{res.investigator.spending_level}}
+                        aria-describedby="inv-spending-level">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-crmin">Cash:</span>
+                    </div>
+                    <input class="form-control" type="text" disabled value={{res.investigator.cash}}
+                        aria-describedby="inv-cash">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inv-crmax">Assets:</span>
+                    </div>
+                    <input class="form-control" type="text" disabled value={{res.investigator.assets}}
+                        aria-describedby="inv-assets">
                 </div>
                 <hr>
                 <div class="row">
