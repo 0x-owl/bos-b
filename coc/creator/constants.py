@@ -10,15 +10,12 @@ GAME_TYPE = (
     ('2', 'Campaign')
 )
 
-<<<<<<< HEAD
 ERA = (
     ('1920', '1920'),
     ('modern', 'Modern'),
     ('WWII', 'WorldWar 2')
 )
 
-=======
->>>>>>> 147 Initilization of CR system
 TAG_FIELDS = {
     'id': Int(),
     'uuid': String(),

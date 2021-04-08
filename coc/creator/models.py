@@ -9,8 +9,8 @@ from django.db.models import (CASCADE, PROTECT, SET_NULL, BooleanField,
                               UUIDField)
 from graphene.types.scalars import String
 
-from creator.constants import (ERA, GAME_TYPE, GENDER, ITEM_CATEGORIES,
-                               SPELL_CATEGORIES)
+from creator.constants import (CREDIT_RATING, ERA, GAME_TYPE, GENDER,
+                               ITEM_CATEGORIES, SPELL_CATEGORIES)
 from creator.helpers.model_helpers import renamer, roller_stats
 
 User = get_user_model()
