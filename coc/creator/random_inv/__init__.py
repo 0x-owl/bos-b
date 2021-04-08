@@ -192,11 +192,11 @@ class RandomInvestigator:
         self.investigator = self.base_build()
         self.roll_attributes()
         self.skills_assigner()
-        self.seed_inventory()
         self.seed_weapons()
         self.seed_spells()
         self.investigator.set_credit_status()
-    
+        self.seed_inventory()
+
     def destroy():
         pass
 
@@ -254,22 +254,28 @@ class RandomInvestigator:
     
     def seed_inventory(self):
         '''Give the investigator 5 random tools or consumables.'''
-        items = Item.objects.filter(
-            category__in=[2, 4]
-        ).filter(~Q(title='Generic Editable Item'))
-        for _ in range(5):
-            item = choice(items)
-            props = item.properties.copy()
-            props['title'] = item.title
-            props['era'] = item.era
-            props['price'] = item.base_price
-            props['rare'] = item.rare
-            inventory = Inventory(
-                investigator=self.investigator,
-                item=item,
-                properties=props
+        if self.investigator.assets:
+            items = Item.objects.filter(
+                category__in=[2, 4]
+            ).filter(
+                ~Q(title='Generic Editable Item', base_price=None)
+            ).filter(
+                base_price__lte=self.investigator.cash + self.investigator.spending_level,
+                era=self.investigator.era
             )
-            inventory.save()
+            for _ in range(5):
+                item = choice(items)
+                props = item.properties.copy()
+                props['title'] = item.title
+                props['era'] = item.era
+                props['price'] = item.base_price
+                props['rare'] = item.rare
+                inventory = Inventory(
+                    investigator=self.investigator,
+                    item=item,
+                    properties=props
+                )
+                inventory.save()
     
     def seed_weapons(self):
         '''Give the investigator 1 weapon from the handguns or
