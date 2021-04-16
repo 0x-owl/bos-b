@@ -4,7 +4,7 @@
         "fields": {
             "title": "Horse (with rider)",
             "description": "",
-            "era": "modern",
+            "era": "1920",
             "base_price": 0,
             "max_price": 0,
             "category": 6,
@@ -23,7 +23,7 @@
         "fields": {
             "title": "4-horse carriage",
             "description": "",
-            "era": "modern",
+            "era": "1920",
             "base_price": 0,
             "max_price": 0,
             "category": 6,
@@ -42,7 +42,7 @@
         "fields": {
             "title": "Bicycle",
             "description": "",
-            "era": "modern",
+            "era": "1920",
             "base_price": 0,
             "max_price": 0,
             "category": 6,

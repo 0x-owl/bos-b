@@ -22,7 +22,7 @@
         "fields": {
             "title": "Propeller plane",
             "description": "",
-            "era": "modern",
+            "era": "1920",
             "base_price": 0,
             "max_price": 0,
             "category": 6,
@@ -40,7 +40,7 @@
         "fields": {
             "title": "Bomber plane",
             "description": "",
-            "era": "modern",
+            "era": "1920",
             "base_price": 0,
             "max_price": 0,
             "category": 6,
