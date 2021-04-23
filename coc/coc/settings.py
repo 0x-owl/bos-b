@@ -124,6 +124,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_ROOT += os.path.join(BASE_DIR, '/creator/static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = 'uploads/'
+#html files can only be loaded  if rendered through django views, this is needed to link to the templates statically as is
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'creator','templates'),]
 # Remove this!
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 100000000
 #  GRAPHENE = {

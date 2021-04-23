@@ -103,7 +103,7 @@ class Skills(BaseModel):
             'base_value': self.base_value,
             'description': self.description,
             'uncommon': self.uncommon,
-            'sub_skills': self.sub_skills
+            'sub_skills': str(self.sub_skills)
             }
         return model
 
@@ -128,13 +128,14 @@ class Occupation(BaseModel):
     
     def safe_dict(self):
         """Creates dict of all fields"""
+
         model = {
             'title': self.title,
             'description': self.description,
             'suggested_contacts': self.suggested_contacts,
             'credit_rating':  f"{self.credit_rating_min}-{self.credit_rating_max}",
-            'skills': self.skills,
-            'points': self.points,
+            'skills': str(self.skills),
+            'points': str(self.points),
             'era': self.era,
             'lovecraftian': self.lovecraftian,
             'classic': self.classic,

@@ -1,0 +1,30 @@
+{%load static%}
+<div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+        <h4 class="cartd-title"> Listing Links </h4>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+</div>
+
+<div class="container">
+    <div id="model-btn" class="row row-cols-auto justify-content-between">
+        <button type="button" class="btn btn-primary rec-list-btn" value="occupations">Occupations</button>
+        <button type="button" class="btn btn-primary rec-list-btn" value="skills">Skills</button>
+        <button type="button" class="btn btn-primary rec-list-btn" value="phobias">Phobias</button>
+        <button type="button" class="btn btn-primary rec-list-btn" value="items">Items</button>
+        <button type="button" class="btn btn-primary rec-list-btn" value="spells">Spells</button>
+        <button type="button" class="btn btn-primary rec-list-btn" value="manias">Manias</button>
+    </div>
+</div>
+
+<script>
+
+     $('.rec-list-btn').on('click', function(){
+        let value = $(this).val()
+        location.href = "{% static 'listing_acc.html' %}" + "?model=" + value 
+    })
+
+</script>

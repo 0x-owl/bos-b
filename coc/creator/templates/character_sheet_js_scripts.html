@@ -314,3 +314,18 @@
         }
     )
 </script>
+<!-- Model Listing on sidebar-->
+<script type="module">
+import {createOverlay, getListingData} from '{% static "creator/js/model_listing.js" %}';
+$('.listing-btn').ready(function(){
+    $('.listing-btn').on('click', function(){
+        let value = $(this).val()
+        createOverlay()
+        let title = value.charAt(0).toUpperCase() + value.slice(1)
+        $('#sidebar').append(`<h3 class="bg-dark rounded-0" id="sidebar-header">${title}</h3>`)
+        $('#sidebar').append('<div class="list-group" id="mod-list"></div>')
+        let url = "list/" + value;
+        $('#mod-list').ready(getListingData(url));
+    })
+})
+</script>
