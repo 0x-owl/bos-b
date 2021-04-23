@@ -1,0 +1,52 @@
+[
+    {
+    "model": "creator.Spell",
+    "fields": {
+      "name": "Enchant Book",
+      "description": "Aids in summoning star vampires by enchanting any book in which is inscribed the words of the spell Summon/Bind Star Vampire. The book's ink must contain the ichor of a star vampire. The caster sacrifices a varying amount of POW, loses 1D4 Sanity points, and meditates for three days. For each point of POW channeled to the book, add 2 percentiles to the caster's chance of success with Summon/Bind Star Vampire.",
+      "cost": "variable POW; 1D4 Sanity points",
+      "casting_time": "3 days",
+      "category": 6
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": {
+      "name": "Enchant Knife",
+      "description": "An enchanted knife increases the success chance for other spells. The spell enchants a knife or dagger made of a pure metal, such as gold or iron. With the knife blade an intricate diagram is drawn on a flat surface and then the blade is used to kill an animal of at least SIZ 20. The creature's blood is then traced out to follow the lines of the drawn diagram and the enchantment is complete. Such a knife is suitable for use in casting Summon Dimensional Shambler. Every point of POW placed into it adds 1 percentiles to the chance for success in casting that spell. If this knife is used to slay the small animal for Enchant Brazier, the brazier so made adds 10 percentiles to the chance for successfully casting Conjure Glass of Mortlan.",
+      "cost": "variable POW; 1D4 Sanity points",
+      "casting_time": "2 hours",
+      "category": 6
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": {
+      "name": "Enchant Pipes",
+      "description": "Augments the chance for success in casting particular spells. The spell enchants a set of panpipes or a flute. The instrument must be at least 90% metal. An hourlong ritual of concentration and incantation must be performed over the musical instrument, during which Sanity points are sacrificed by the caster, who must also sacrifice POW into the instrument. For each lot of 5 POW sacrificed, the musical instrument must steep in fresh, warm blood for two hours. A new animal, of at least cat or rabbit size, must be slaughtered for each 5 POW. For each point of POW it contains, the finished instrument adds 2 percentiles to the success chance of Summon/Bind Servitor of the Outer Gods and other spells requiring the use of pipes or flutes to cast.",
+      "cost": "variable magic points; 1D6 Sanity points",
+      "casting_time": "3+ hours",
+      "category": 6
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": {
+      "name": "Enchant Sacrificial Dagger",
+      "description": "The caster creates a flame-shaped dagger over which this spell is performed. The dagger must then be used to kill a living being of at least 100 POW. Simultaneously, 30 points of the enchanter's own POW must be sacrificed. From then on, when the dagger is used properly to sacrifice chosen victims in the presence of Nyarlathotep, the POW of the victim flows into the dagger, and from the dagger the POW can be sent to any convenient storage site—the caster or an inanimate object.",
+      "cost": "30 POW",
+      "casting_time": "1 week",
+      "category": 6
+    }
+  },
+  {
+    "model": "creator.Spell",
+    "fields": {
+      "name": "Enchant Whistle",
+      "description": "Augments the caster's chance to Summon/Bind Byakhee. The spell enchants a whistle, which must be an alloy of silver and iron meteorite. For each point of POW sacrificed to the whistle, add 2 percentiles to the chance of successfully casting Summon/Bind Byakhee.",
+      "cost": "variable POW; 1D4 Sanity points",
+      "casting_time": "1 day",
+      "category": 6
+    }
+  }
+]
