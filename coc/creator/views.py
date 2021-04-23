@@ -354,17 +354,19 @@ def generate_random_investigator(request):
 
 def generic_model_list(request, model_type):
 
-    model = {
+    res = {
         'model_name': model_type,
-        'records': all_models[model_type].objects.all()
+        'records_title': [[model.uuid, model.__str__()] for model in all_models[model_type].objects.all()],
     }
 
-    return render(request, 'generic_detail.html', model)
+    return JsonResponse(res, status=200)
 
 def record_detail(request, id, model_name):
-
+    record = all_models[model_name].objects.get(uuid=id)
     rec = {
-        'record': all_models[model_name].objects.get(uuid=id)
+        'record': record.safe_dict()
     }
 
-    return render(request, 'record_detail.html', rec)
+    
+
+    return JsonResponse(rec, status=200)
