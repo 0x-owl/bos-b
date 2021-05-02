@@ -98,7 +98,7 @@
     {
         "model": "creator.Item",
         "fields": {
-            "title": "For 12 Words",
+            "title": "For a 12 Words telegraph",
             "description": "Communications",
             "era": "1920",
             "base_price": 0.25,
@@ -122,7 +122,7 @@
     {
         "model": "creator.Item",
         "fields": {
-            "title": "Per Additional Word",
+            "title": "Telegraph, Per Additional Word",
             "description": "Communications",
             "era": "1920",
             "base_price": 0.02,
@@ -134,7 +134,7 @@
     {
         "model": "creator.Item",
         "fields": {
-            "title": "International per Word",
+            "title": "International telegraph per Word",
             "description": "Communications",
             "era": "1920",
             "base_price": 1.25,
