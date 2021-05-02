@@ -349,6 +349,7 @@ def update_investigators_backstory(request, inv):
 def generate_random_investigator(request):
     rand = RandomInvestigator()
     rand.build()
+
     return redirect(get_investigators_data, inv=rand.investigator.uuid)
 
 
@@ -361,12 +362,11 @@ def generic_model_list(request, model_type):
 
     return JsonResponse(res, status=200)
 
+
 def record_detail(request, id, model_name):
     record = all_models[model_name].objects.get(uuid=id)
     rec = {
         'record': record.safe_dict()
     }
-
-    
 
     return JsonResponse(rec, status=200)

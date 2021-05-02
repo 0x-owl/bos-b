@@ -394,15 +394,16 @@ class Item(BaseModel):
     def safe_dict(self):
         """Creates dict of all fields"""
         properties = self.properties.copy()
-        properties['title'] = self.title
-        properties['era'] = self.era
-        properties['rare'] = self.rare
-        properties['base_price'] = self.base_price
-        properties['max_price'] = self.max_price
         model = {
+            'title': self.title,
             'category': self.category,
-            'properties': properties
-            }
+            'era': self.era,
+            'rare': self.rare,
+            'base_price': self.base_price,
+            'max_price': self.max_price
+        }
+
+        model.update(properties)
         return model 
 
 
