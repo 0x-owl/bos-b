@@ -6,7 +6,7 @@ from creator import views
 
 urlpatterns = [
     path(
-        'detail/<slug:id>/<str:model_name>',
+        'detail/<slug:id>/<str:model_name>', 
         views.GenericViews.record_detail,
         name='detail'
     ),
@@ -15,10 +15,30 @@ urlpatterns = [
         views.GenericViews.generic_model_list,
         name="listing"
     ),
+     #Add endpoints
+    path(
+        'add_phobia',
+        views.ManiaPhobiaInvestigatorView.add_phobia,
+        name='phobia_add'
+    ),
+    path(
+        'add_mania',
+        views.ManiaPhobiaInvestigatorView.add_mania,
+        name='mania_add'
+    ),
+    path(
+        'mania/<slug:inv>/<slug:mania>/remove',
+        views.ManiaPhobiaInvestigatorView.remove_mania,
+        name='mania-rem'
+    ),
+    path(
+        'phobia/<slug:inv>/<slug:phobia>/remove',
+        views.ManiaPhobiaInvestigatorView.remove_phobia,
+        name='phobia-rem'),
+    #generate random inv
     path(
         'random',
-        views.GeneralInvestigatorViews.generate_random_investigator
-    ),
+        views.GeneralInvestigatorViews.generate_random_investigator),
     # Core endpoints
     path(
         '<slug:inv>',

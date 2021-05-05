@@ -6,6 +6,11 @@
 #sidebar {
     width: 15%;
     top: 55px;
+    position: fixed; 
+    height: calc(100% - 55px);
+    z-index: 5;
+    overflow: auto;
+    display: block;
 }
 
 #sidebar #sidebar-header {
@@ -27,4 +32,20 @@
     display: block;
     background: black;
     opacity: 15%;
+}
+
+a[id^="mania-inv-rem"]{
+    color: crimson;
+}
+
+a[id^="mania-inv-rem"]:hover{
+    color: rgb(138, 13, 38);
+}
+
+a[id^="phobia-inv-rem"]{
+    color: crimson;
+}
+
+a[id^="phobia-inv-rem"]:hover{
+    color: rgb(138, 13, 38);
 }

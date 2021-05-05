@@ -1,3 +1,13 @@
+import {add_mania, add_phobia} from './mania_phobias.js'
+
+let adding_functions = {
+    //'occupations': add_occupation,
+    //'skills': add_skill,
+    'manias': add_mania,
+    'phobias': add_phobia
+    //'items': add_item
+}
+
 export function list_model(res){
     //lists all records of the selected model on the sidebar
     for(let record of res.records_title){
@@ -6,13 +16,14 @@ export function list_model(res){
         data-bs-toggle="modal" 
         data-bs-target="#listingModal"
         value="${record[0]}">${record[1]}</button>`).appendTo('#mod-list')
+        let model_name = res.model_name
         //creates a modal with the details of the clicked element
         detail_button.click(function(){
             $.ajaxSetup({ cache: false });
             $.ajax({
-                url: "detail" + "/" + detail_button.val() + "/" + res.model_name,
+                url: "detail" + "/" + detail_button.val() + "/" + model_name,
                 success: function (res) {
-                    populate_detail_modal(res);
+                    populate_detail_modal(res, detail_button.val(), model_name);
                 },
                 error: function (res) {
                     console.log(res);
@@ -21,18 +32,29 @@ export function list_model(res){
         })
 }}
 
-function populate_detail_modal(detail_fields){
+function populate_detail_modal(detail_fields, uuid, model_name){
     //TODO: for now we are listing all record fields on the modal.But later we will need to prettify the modal so printing all fields will have to change.
     $('.modal-title').append(`${detail_fields.record[Object.keys(detail_fields.record)[0]]}`);
     for(let item in detail_fields.record){
         $('#listingModal .modal-body').append(`<div>${item}: ${detail_fields.record[item]}</div>`);
     }
+    // TODO: check if this is needed
+    //$('#add-detail').attr('data-uuid', uuid);
+    //$('#add-detail').attr('data-model-name', model_name);
+    $('.modal-footer').append('<button type="button" class="btn btn-success" data-bs-dismiss="modal" id="add-detail">Add</button>')
+    $('.modal-footer').append('<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>')
+    $('#add-detail').click(function(){
+        let func = adding_functions[model_name]
+        func(uuid)
+
+    })
 }
 
 $('#listingModal').on('hidden.bs.modal', function (e) {
    //empty the modal when closed
     $('.modal-title').empty();
     $('#listingModal .modal-body').empty()
+    $('.modal-footer').empty()
   })
 
 
