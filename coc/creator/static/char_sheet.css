@@ -34,18 +34,10 @@
     opacity: 15%;
 }
 
-a[id^="mania-inv-rem"]{
+a[class^="bi bi-x-circle-fill"]{
     color: crimson;
 }
-
-a[id^="mania-inv-rem"]:hover{
+a[class^="bi bi-x-circle-fill"]:hover{
     color: rgb(138, 13, 38);
-}
-
-a[id^="phobia-inv-rem"]{
-    color: crimson;
-}
-
-a[id^="phobia-inv-rem"]:hover{
-    color: rgb(138, 13, 38);
+    cursor: pointer;
 }

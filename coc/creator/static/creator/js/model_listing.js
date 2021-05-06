@@ -1,11 +1,13 @@
 import {add_mania, add_phobia} from './mania_phobias.js'
+import {add_spells} from './arcane.js'
 
 let adding_functions = {
     //'occupations': add_occupation,
     //'skills': add_skill,
     'manias': add_mania,
-    'phobias': add_phobia
-    //'items': add_item
+    'phobias': add_phobia,
+    //'items': add_item,
+    'spells': add_spells
 }
 
 export function list_model(res){

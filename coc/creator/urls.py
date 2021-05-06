@@ -27,6 +27,16 @@ urlpatterns = [
         name='mania_add'
     ),
     path(
+        'add_spell',
+        views.BackstoryInvestigatorViews.add_spell,
+        name='spell_add'
+    ),
+    path(
+        'spell/<slug:inv>/<slug:spell>/remove',
+        views.BackstoryInvestigatorViews.remove_spell,
+        name='spell-rem'
+    ),
+    path(
         'mania/<slug:inv>/<slug:mania>/remove',
         views.ManiaPhobiaInvestigatorView.remove_mania,
         name='mania-rem'
