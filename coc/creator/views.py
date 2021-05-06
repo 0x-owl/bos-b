@@ -313,6 +313,7 @@ class BackstoryInvestigatorViews:
         spells = [
             {
                 'name': spell.spell.name,
+                'uuid': spell.spell.uuid,
                 'cost': spell.spell.cost,
                 'casting_time': spell.spell.casting_time,
                 'description': spell.spell.description,
@@ -369,6 +370,31 @@ class BackstoryInvestigatorViews:
             return JsonResponse(res, status=200)
         return JsonResponse({'response': 'Unauthorized'}, status=401)
 
+    def add_spell(request):
+        if request.POST:
+            data = dict(request.POST)
+            sanitize_data = {
+                k: data[k][0] for k in data.keys()
+            }
+            inv_spell = SpellInvestigator()
+            inv = Investigator.objects.get(uuid=sanitize_data['inv'])
+            spell = all_models['spells'].objects.get(uuid=sanitize_data['spell'])
+            spell_query = SpellInvestigator.objects.filter(investigator=inv,spell=spell)
+            #checks if the investigator already has the mania, if not it adds it
+            if not spell_query.exists():
+                inv_spell.spell = spell
+                inv_spell.investigator = inv
+                inv_spell.save()
+                return JsonResponse({'spell': spell.safe_dict()}, status=200)
+            else:
+                return JsonResponse({}, status=204)
+        return JsonResponse({'response': 'Unauthorized'}, status=401)
+
+    def remove_spell(request, inv, spell):
+        '''Remove spell from investigator.'''
+        spell = SpellInvestigator.objects.get(investigator=inv,spell=spell)
+        spell.delete()
+        return JsonResponse({'response': 'Ok'}, status=200)
 
 class GenericViews:
     '''Agnostic model views.'''
