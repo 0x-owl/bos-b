@@ -3,7 +3,8 @@
     "model": "creator.Spell",
     "fields": {
       "name": "Gate Creation",
-      "description": "cost to access gate: variable magic points and 1 Sanity point.\nGate spells allow the caster to create doorways between other lands or times, dimensions, or worlds—allowing the user to travel great distances with a simple step. Usually a Gate connects to a single other location. Creation of a Gate requires the permanent expenditure of POW, in a sacrifice equal to the log to base 10 of the distance the Gate connects in miles times five. A Gate may take many forms, common ones being indicated by a pattern of painted lines on a floor or a peculiar arrangement of stones in a field. Using the Gate costs a number of magic points equal to one-fifth of the POW originally used to make the Gate. Each trip through a Gate costs 1 Sanity point. Should the user lack enough magic points for a trip, the traveler expends hit points to make up the cost. Return trips through a Gate always cost the same as the initial journey. Ordinarily, anyone or anything can move through a Gate, though some have been built so that a certain key—a word or gesture—is needed to activate the portal. Certain versions of the spell are known that also 'change' those who pass through, to aid survival on an alien world. There are also hints that some Gates are capable of more than one destination.",
+      "alternative_names": "Rite of Seeing, (Behold) Doorway to Other Places, Ye Portal of Many Journeys. Arch of Time, Gateway to Things Long Past and Sights Unseen,The Wizard's Trap.",
+      "description": "Cost to access gate: variable magic points and 1 Sanity point.Gate spells allow the caster to create doorways between other lands or times, dimensions, or worlds—allowing the user to travel great distances with a simple step. Usually a Gate connects to a single other location. Creation of a Gate requires the permanent expenditure of POW, in a sacrifice equal to the log to base 10 of the distance the Gate connects in miles times five. A Gate may take many forms, common ones being indicated by a pattern of painted lines on a floor or a peculiar arrangement of stones in a field. Using the Gate costs a number of magic points equal to one-fifth of the POW originally used to make the Gate. Each trip through a Gate costs 1 Sanity point. Should the user lack enough magic points for a trip, the traveler expends hit points to make up the cost. Return trips through a Gate always cost the same as the initial journey. Ordinarily, anyone or anything can move through a Gate, though some have been built so that a certain key—a word or gesture—is needed to activate the portal. Certain versions of the spell are known that also 'change' those who pass through, to aid survival on an alien world. There are also hints that some Gates are capable of more than one destination.",
       "cost": "variable POW",
       "casting_time": "one hour per POW spent",
       "category": 17
@@ -13,6 +14,7 @@
     "model": "creator.Spell",
     "fields": {
       "name": "Find Gate",
+      "alternative_names": "Rite of Seeing, (Behold) Doorway to Other Places, Ye Portal of Many Journeys. Arch of Time, Gateway to Things Long Past and Sights Unseen,The Wizard's Trap.",
       "description": "Through a series of gestures and a specific chant, the spell reveals to the caster any Gate if it is within the caster's direct vision. While this spell locates a Gate, it does not empower anyone to open, close, create, or pass through it. Neither does this limited form of the spell allow the caster to determine whether the Gate traverses time or distance.",
       "cost": "1 magic point; 1D3 Sanity points",
       "casting_time": "20-60 minutes",
@@ -23,6 +25,7 @@
     "model": "creator.Spell",
     "fields": {
       "name": "Gate Boxes",
+      "alternative_names": "Rite of Seeing, (Behold) Doorway to Other Places, Ye Portal of Many Journeys. Arch of Time, Gateway to Things Long Past and Sights Unseen,The Wizard's Trap.",
       "description": "Allows the creation of twin magical boxes that form two ends of a magical Gate. Going through a gate box costs exactly the same magic points and Sanity points as going through a normal Gate and the transit procedure is the same. First, two identical wooden boxes must be made to any desired SIZ. The boxes should be open only at one end. Then the necessary ritual, consisting of placing one's hands on the boxes and conceiving certain hyper-dimensional lines and angles in one's mind for about five hours must be performed. 5 POW is sacrificed at this time. Then the boxes automatically drain half the creator's Magic points each day, until they have absorbed magic points equal to their total SIZ x 20. 1 Sanity point is lost for every full week of magic point drain. Once the necessary magic points have been taken, the boxes become operative.",
       "cost": "1 POW; variable magic points and Sanity points",
       "casting_time": "5 hours",
@@ -33,6 +36,7 @@
     "model": "creator.Spell",
     "fields": {
       "name": "Time Gate",
+      "alternative_names": "Rite of Seeing, (Behold) Doorway to Other Places, Ye Portal of Many Journeys. Arch of Time, Gateway to Things Long Past and Sights Unseen,The Wizard's Trap.",
       "description": "Creates a gate to the future or to the past. The spell resembles the Create Gate spell but costs POW for the number of years travelled rather than the number of miles journeyed. Use the Gate Creation and Travel Costs Table and substitute distance in years for distance in miles. The spell only yields a time approximate to that desired, though once such a Gate is created the exact interval between 'now' and 'then' remains the same.",
       "cost": "variable POW",
       "casting_time": "one hour per POW spent",
@@ -43,6 +47,7 @@
     "model": "creator.Spell",
     "fields": {
       "name": "View Gate",
+      "alternative_names": "Rite of Seeing, (Behold) Doorway to Other Places, Ye Portal of Many Journeys. Arch of Time, Gateway to Things Long Past and Sights Unseen,The Wizard's Trap.",
       "description": "When cast at a suspected Gate, this spell allows the caster and companions to see what, if anything, is on the other side of the Gate without going through it. The cost varies with the number of magic points needed to activate the Gate. It always costs 1 magic point and 1 Sanity point to cast the spell. Viewing is a variable cost, one-tenth of the Gate cost (round up fractions). Thus a Gate costing 7 magic points to pass through requires 2 magic points and 2 Sanity points to view through. The view lasts 1D6+1 rounds. The spell may be cast as often as the caster’s magic points and Sanity points allow. If there is something horrific to see, additional Sanity charges should be required for each viewer. Viewers may attempt appropriate skill rolls to learn where or when or what is being viewing.",
       "cost": "variable magic and Sanity points",
       "casting_time": "3 rounds",
