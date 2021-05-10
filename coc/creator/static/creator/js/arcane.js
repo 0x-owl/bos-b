@@ -28,9 +28,14 @@ export function add_spells(uuid){
         beforeSend: function (xhr) {
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
         },
-        success: function (res) {
-            append_html_spell(uuid, res.spell)
-            remove_spell_handler()
+        success: function (res, xhr, responseText) {
+            if (responseText.status === 200){
+                append_html_spell(uuid, res.spell)
+                remove_spell_handler()
+            }
+            else{
+                console.log(xhr)
+            }
         },
         error: function (res) {
             console.log(res);
@@ -60,7 +65,7 @@ function append_html_spell(uuid, spell){
 
 
 function remove_spell_handler() {
-    $("a[id^='spell-inv-rem-']").click(
+    $("a[id^='spell-inv-rem-']").off().click(
         function (evt) {
             evt.preventDefault();
             let inv = window.location.href.split('/').pop()

@@ -370,6 +370,63 @@ class BackstoryInvestigatorViews:
             return JsonResponse(res, status=200)
         return JsonResponse({'response': 'Unauthorized'}, status=401)
 
+
+    def add_mania(request):
+        if request.POST:
+            data = dict(request.POST)
+            sanitize_data = {
+                k: data[k][0] for k in data.keys()
+            }
+            inv_mania = ManiaInvestigator()
+            inv = Investigator.objects.get(uuid=sanitize_data['inv'])
+            mania = all_models['manias'].objects.get(uuid=sanitize_data['mania'])
+            mania_query = ManiaInvestigator.objects.filter(investigator=inv,mania=mania)
+            #checks if the investigator already has the mania, if not it adds it
+            if not mania_query.exists():
+                inv_mania.mania = mania
+                inv_mania.investigator = inv
+                inv_mania.save()
+                return JsonResponse({'title': mania.__str__()}, status=200)
+            else:
+                return JsonResponse({'response': 'Already in use'}, status=304)
+        return JsonResponse({'response': 'Unauthorized'}, status=401)
+
+
+    def remove_mania(request, inv, mania):
+        '''Remove mania from investigator.'''
+        mania = ManiaInvestigator.objects.get(investigator=inv,mania=mania)
+        mania.delete()
+        return JsonResponse({'response': 'Ok'}, status=200)
+
+
+    def add_phobia(request):
+        if request.POST:
+            data = dict(request.POST)
+            sanitize_data = {
+                k: data[k][0] for k in data.keys()
+            }
+            inv_phobia = PhobiaInvestigator()
+            inv = Investigator.objects.get(uuid=sanitize_data['inv'])
+            phobia = all_models['phobias'].objects.get(uuid=sanitize_data['phobia'])
+            phobia_query = PhobiaInvestigator.objects.filter(investigator=inv,phobia=phobia)
+            #checks if the investigator already has the phobia, if not it adds it
+            if not phobia_query.exists():
+                inv_phobia.phobia = phobia
+                inv_phobia.investigator = inv
+                inv_phobia.save()
+                return JsonResponse({'title': phobia.__str__()}, status=200)
+            else:
+                return JsonResponse({'response': 'Already in use'}, status=304)
+        return JsonResponse({'response': 'Unauthorized'}, status=401)
+
+
+    def remove_phobia(request, inv, phobia):
+        '''Remove mania from investigator.'''
+        phobia = PhobiaInvestigator.objects.get(investigator=inv,phobia=phobia)
+        phobia.delete()
+        return JsonResponse({'response': 'Ok'}, status=200)
+
+
     def add_spell(request):
         if request.POST:
             data = dict(request.POST)
@@ -380,21 +437,23 @@ class BackstoryInvestigatorViews:
             inv = Investigator.objects.get(uuid=sanitize_data['inv'])
             spell = all_models['spells'].objects.get(uuid=sanitize_data['spell'])
             spell_query = SpellInvestigator.objects.filter(investigator=inv,spell=spell)
-            #checks if the investigator already has the mania, if not it adds it
+            #checks if the investigator already has the spell, if not it adds it
             if not spell_query.exists():
                 inv_spell.spell = spell
                 inv_spell.investigator = inv
                 inv_spell.save()
                 return JsonResponse({'spell': spell.safe_dict()}, status=200)
             else:
-                return JsonResponse({}, status=204)
+                return JsonResponse({'response': 'Already in use'}, status=304)
         return JsonResponse({'response': 'Unauthorized'}, status=401)
+
 
     def remove_spell(request, inv, spell):
         '''Remove spell from investigator.'''
         spell = SpellInvestigator.objects.get(investigator=inv,spell=spell)
         spell.delete()
         return JsonResponse({'response': 'Ok'}, status=200)
+
 
 class GenericViews:
     '''Agnostic model views.'''
@@ -414,59 +473,3 @@ class GenericViews:
         }
 
         return JsonResponse(rec, status=200)
-
-class ManiaPhobiaInvestigatorView:
-    def add_mania(request):
-        if request.POST:
-            data = dict(request.POST)
-            sanitize_data = {
-                k: data[k][0] for k in data.keys()
-            }
-            inv_mania = ManiaInvestigator()
-            inv = Investigator.objects.get(uuid=sanitize_data['inv'])
-            mania = all_models['manias'].objects.get(uuid=sanitize_data['mania'])
-            mania_query = ManiaInvestigator.objects.filter(investigator=inv,mania=mania)
-            #checks if the investigator already has the mania, if not it adds it
-            if mania_query.exists() == False:
-                inv_mania.mania = mania
-                inv_mania.investigator = inv
-                inv_mania.save()
-                return JsonResponse({'title': mania.__str__()}, status=200)
-            else:
-                return JsonResponse({}, status=204)
-        return JsonResponse({'response': 'Unauthorized'}, status=401)
-
-
-    def add_phobia(request):
-        if request.POST:
-            data = dict(request.POST)
-            sanitize_data = {
-                k: data[k][0] for k in data.keys()
-            }
-            inv_phobia = PhobiaInvestigator()
-            inv = Investigator.objects.get(uuid=sanitize_data['inv'])
-            phobia = all_models['phobias'].objects.get(uuid=sanitize_data['phobia'])
-            phobia_query = PhobiaInvestigator.objects.filter(investigator=inv,phobia=phobia)
-            #checks if the investigator already has the phobia, if not it adds it
-            if phobia_query.exists() == False:
-                inv_phobia.phobia = phobia
-                inv_phobia.investigator = inv
-                inv_phobia.save()
-                return JsonResponse({'title': phobia.__str__()}, status=200)
-            else:
-                return JsonResponse({}, status=204)
-        return JsonResponse({'response': 'Unauthorized'}, status=401)
-
-
-    def remove_mania(request, inv, mania):
-        '''Remove mania from investigator.'''
-        mania = ManiaInvestigator.objects.get(investigator=inv,mania=mania)
-        mania.delete()
-        return JsonResponse({'response': 'Ok'}, status=200)
-
-
-    def remove_phobia(request, inv, phobia):
-        '''Remove mania from investigator.'''
-        phobia = PhobiaInvestigator.objects.get(investigator=inv,phobia=phobia)
-        phobia.delete()
-        return JsonResponse({'response': 'Ok'}, status=200)
