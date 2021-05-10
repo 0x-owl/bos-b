@@ -23,9 +23,15 @@ export function add_mania(uuid){
         beforeSend: function (xhr) {
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
         },
-        success: function (res) {
-            append_html_mania(uuid, res.title)
-            remove_mania_handler()
+        success: function (res, xhr, responseText) {
+            if (responseText.status === 200){
+                append_html_mania(uuid, res.title)
+                remove_mania_handler()
+            }
+            else{
+                console.log(xhr)
+            }
+
         },
         error: function (res) {
             console.log(res);
@@ -46,9 +52,14 @@ export function add_phobia(uuid){
         beforeSend: function (xhr) {
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
         },
-        success: function (res) {
-            append_html_phobia(uuid, res.title)
-            remove_phobia_handler()
+        success: function (res, xhr, responseText) {
+            if (responseText.status === 200){
+                append_html_phobia(uuid, res.title)
+                remove_phobia_handler()
+            }
+            else{
+                console.log(xhr)
+            }
         },
         error: function (res) {
             console.log(res);
@@ -73,7 +84,7 @@ function append_html_phobia(uuid, title){
 }
 
 function remove_mania_handler() {
-    $("a[id^='mania-inv-rem-']").click(
+    $("a[id^='mania-inv-rem-']").off().click(
         function (evt) {
             evt.preventDefault();
             let inv = window.location.href.split('/').pop()
@@ -97,7 +108,7 @@ function remove_mania_handler() {
 }
 
 function remove_phobia_handler() {
-    $("a[id^='phobia-inv-rem-']").click(
+    $("a[id^='phobia-inv-rem-']").off().click(
         function (evt) {
             evt.preventDefault();
             let inv = window.location.href.split('/').pop()

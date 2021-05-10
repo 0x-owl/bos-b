@@ -15,15 +15,15 @@ urlpatterns = [
         views.GenericViews.generic_model_list,
         name="listing"
     ),
-     #Add endpoints
+     #Add-to-inv endpoints
     path(
         'add_phobia',
-        views.ManiaPhobiaInvestigatorView.add_phobia,
+        views.BackstoryInvestigatorViews.add_phobia,
         name='phobia_add'
     ),
     path(
         'add_mania',
-        views.ManiaPhobiaInvestigatorView.add_mania,
+        views.BackstoryInvestigatorViews.add_mania,
         name='mania_add'
     ),
     path(
@@ -32,19 +32,19 @@ urlpatterns = [
         name='spell_add'
     ),
     path(
+        'phobia/<slug:inv>/<slug:phobia>/remove',
+        views.BackstoryInvestigatorViews.remove_phobia,
+        name='phobia-rem'),
+    path(
+        'mania/<slug:inv>/<slug:mania>/remove',
+        views.BackstoryInvestigatorViews.remove_mania,
+        name='mania-rem'
+    ),
+    path(
         'spell/<slug:inv>/<slug:spell>/remove',
         views.BackstoryInvestigatorViews.remove_spell,
         name='spell-rem'
     ),
-    path(
-        'mania/<slug:inv>/<slug:mania>/remove',
-        views.ManiaPhobiaInvestigatorView.remove_mania,
-        name='mania-rem'
-    ),
-    path(
-        'phobia/<slug:inv>/<slug:phobia>/remove',
-        views.ManiaPhobiaInvestigatorView.remove_phobia,
-        name='phobia-rem'),
     #generate random inv
     path(
         'random',
