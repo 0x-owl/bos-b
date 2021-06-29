@@ -256,7 +256,7 @@ class RandomInvestigator:
         '''Give the investigator 5 random tools or consumables.'''
         if self.investigator.assets:
             items = Item.objects.filter(
-                category__in=[2, 4]
+                category__in=[2, 5]
             ).filter(
                 ~Q(title='Generic Editable Item', base_price=None)
             ).filter(

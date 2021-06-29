@@ -102,7 +102,7 @@ def skills_sanitizer(investigator):
 def gear_sanitizer(investigator):
     items = Inventory.objects.filter(
         investigator=investigator,
-        item__category__in=[2,4]
+        item__category__in=[2,4,5]
     )
     gear = [
         {
