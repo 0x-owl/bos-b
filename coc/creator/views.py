@@ -473,3 +473,23 @@ class GenericViews:
         }
 
         return JsonResponse(rec, status=200)
+
+
+    def generic_search(request, text):
+        '''
+            General searcher, this view should be capable of searching by name/title on
+            a defined set of models and capable of accepting filters.
+
+        '''
+        if request.POST:
+            # apply filters
+            data_unclean = dict(request.POST)
+            res = {
+            "results": []
+            }
+            return JsonResponse(res, status=200)
+        else:
+            # simple search
+            print(request.GET)
+            print(dir(request.GET))
+            return JsonResponse({}, status=200)

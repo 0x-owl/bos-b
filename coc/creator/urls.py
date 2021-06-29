@@ -15,6 +15,11 @@ urlpatterns = [
         views.GenericViews.generic_model_list,
         name="listing"
     ),
+    path(
+        'search',
+        views.GenericViews.generic_search,
+        name='search'
+    ),
      #Add-to-inv endpoints
     path(
         'add_phobia',
