@@ -1,5 +1,4 @@
 import {remove_item_inventory_handler, edit_item_inventory_handler, save_item_inventory_handler} from "/static/creator/js/gear.js"
-import {save_weapon_inventory_handler, edit_weapon_inventory_handler} from "/static/creator/js/weapons.js"
 
 const ITEM_SUBCATEGORIES={
     'artifacts': 'Artifacts',
