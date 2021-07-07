@@ -32,6 +32,11 @@ urlpatterns = [
         name='spell_add'
     ),
     path(
+        'inventory/add_item',
+        views.ItemsInvestigatorViews.add_item,
+        name='item_add'
+    ),
+    path(
         'phobia/<slug:inv>/<slug:phobia>/remove',
         views.BackstoryInvestigatorViews.remove_phobia,
         name='phobia-rem'),

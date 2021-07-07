@@ -9,6 +9,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Mi-go"
             }
         }
@@ -23,6 +24,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Serpent people"
             }
         }
@@ -37,6 +39,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Mi-go"
             }
         }
@@ -51,6 +54,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Serpent people"
             }
         }
@@ -65,6 +69,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Elder things"
             }
         }
@@ -79,6 +84,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Anyone"
             }
         }
@@ -93,6 +99,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Serpent people"
             }
         }
@@ -107,6 +114,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Mi-go"
             }
         }
@@ -121,6 +129,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Mi-go"
             }
         }
@@ -135,6 +144,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Anyone"
             }
         }
@@ -149,6 +159,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Anyone"
             }
         }
@@ -163,6 +174,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Elder things"
             }
         }
@@ -177,6 +189,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Anyone"
             }
         }
@@ -191,6 +204,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Yithians"
             }
         }
@@ -205,6 +219,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Mi-go"
             }
         }
@@ -219,6 +234,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Anyone"
             }
         }
@@ -233,6 +249,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Cultists of Nyarlathotep"
             }
         }
@@ -247,6 +264,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Anyone"
             }
         }
@@ -261,6 +279,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Yithians"
             }
         }
@@ -275,6 +294,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Yithians"
             }
         }
@@ -289,6 +309,7 @@
             "max_price": 0,
             "category": 1,
             "properties": {
+                "subcategory": "Artifacts",
                 "used_by": "Yithians"
             }
         }

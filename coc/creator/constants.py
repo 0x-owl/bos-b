@@ -1,5 +1,11 @@
 from graphene import Int, String
 
+ITEM_SUBCATEGORIES={
+    'artifacts': 'Artifacts',
+    'tomes': 'Tomes of Eldritch Lore',
+    'occult_books': 'Occult Books'
+}
+
 GENDER = (
     ('M', 'Male'),
     ('F', 'Female')

@@ -397,6 +397,7 @@ class Item(BaseModel):
         model = {
             'title': self.title,
             'category': self.category,
+            'description': self.description,
             'era': self.era,
             'rare': self.rare,
             'base_price': self.base_price,
