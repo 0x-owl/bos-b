@@ -1,7 +1,9 @@
+from ast import literal_eval as leval
 from json import dumps
 from random import choice
 
 from django.http import HttpResponse, JsonResponse
+from django.db.models import Q
 from django.shortcuts import redirect, render
 from django.template.loader import render_to_string
 
@@ -16,7 +18,7 @@ from creator.helpers.views_helper import (gear_sanitizer,
                                           skills_sanitizer)
 from creator.models import (Inventory, Investigator, Item, ManiaInvestigator,
                             Occupation, PhobiaInvestigator, Portrait, Skills,
-                            SpellInvestigator)
+                            SpellInvestigator, Mania, Phobia, Spell)
 from creator.random_inv import (RandomInvestigator, base_skills_generator,
                                 free_point_assigner, occ_point_assigner)
 
@@ -548,6 +550,17 @@ class BackstoryInvestigatorViews:
 
 class GenericViews:
     '''Agnostic model views.'''
+
+    common_models = {
+        # if tuples second element is unset will look on key 'title'
+        Item: [],
+        Skills: [],
+        Occupation: [],
+        Mania: [],
+        Phobia: [],
+        Spell: ['name', 'alternative_names']
+    }
+
     def generic_model_list(request, model_type):
 
         res = {
@@ -564,3 +577,41 @@ class GenericViews:
         }
 
         return JsonResponse(rec, status=200)
+
+
+    def generic_search(request):
+        '''
+            General searcher, this view should be capable of searching by name/title on
+            a defined set of models and capable of accepting filters.
+
+        '''
+        if request.POST:
+            # apply filters
+            data_unclean = dict(request.POST)
+            res = {
+            "results": []
+            }
+            return JsonResponse(res, status=200)
+        else:
+            # simple search
+            query = str(request.GET.get('q'))
+            unclean_results = []
+            for model in GenericViews.common_models:
+                especial_keys = GenericViews.common_models[model]
+                if especial_keys:
+                    for key in especial_keys:
+                        unclean_results.extend(
+                            model.objects.filter(
+                                **{f'{key}__icontains': query},
+                            )
+                        )
+                else:
+                    unclean_results.extend(
+                        list(model.objects.filter(
+                            title__icontains=query 
+                        ))
+                    )
+            sanitized_results = {
+                str(res.uuid): res.safe_dict() for res in unclean_results
+            }
+            return JsonResponse(sanitized_results, status=200)
