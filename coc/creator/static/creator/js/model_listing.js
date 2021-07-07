@@ -37,7 +37,12 @@ export function list_model(res){
 
 function populate_detail_modal(detail_fields, uuid, model_name){
     //TODO: for now we are listing all record fields on the modal.But later we will need to prettify the modal so printing all fields will have to change.
-    $('.modal-title').append(`${detail_fields.record[Object.keys(detail_fields.record)[0]]}`);
+    if (detail_fields.record.title === undefined){
+        $('.modal-title').append(`${detail_fields.record.name}`);
+    }
+    else{
+        $('.modal-title').append(`${detail_fields.record.title}`);
+    }
     for(let item in detail_fields.record){
         $('#listingModal .modal-body').append(`<div>${item}: ${detail_fields.record[item]}</div>`);
     }
