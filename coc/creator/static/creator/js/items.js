@@ -1,5 +1,4 @@
-import { append_html_gear, append_html_weapon, append_html_magic_item} from "/static/creator/js/items_append_html.js";
-
+import { append_html_gear, append_html_weapon, append_html_magic_item, remove_magic_item_handler } from "/static/creator/js/items_append_html.js";
 
 let items_category = {
     '1' : append_html_magic_item,
@@ -28,6 +27,7 @@ export function add_items(uuid){
                 let category = res.category.toString();
                 let func = items_category[category];
                 func(res.item);
+                remove_magic_item_handler()
             }
             else{
                 console.log(xhr)
