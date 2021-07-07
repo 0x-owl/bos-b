@@ -190,7 +190,11 @@
                     "base_value": 10,
                     "description": "Weapons firing bursts from bipods, tripods, and mounted weapons. If single shots are fired from a bipod, use Rifle skill. The differences between assault rifle, submachine gun, and light machine gun are tenuous today."
                 },
-                "Rifle/Shotgun": {
+                "Rifle": {
+                    "base_value": 25,
+                    "description": "With this skill any type of rifle (whether lever-action, bolt-action, or semi-automatic) or scatter-gun can be fired. Since the load from a shotgun expands in a spreading pattern, the user's chance to hit does not decrease with range, but the damage dealt does. When an assault rifle fires a single shot (or multiple singles) use this skill."
+                },
+                "Shotgun": {
                     "base_value": 25,
                     "description": "With this skill any type of rifle (whether lever-action, bolt-action, or semi-automatic) or scatter-gun can be fired. Since the load from a shotgun expands in a spreading pattern, the user's chance to hit does not decrease with range, but the damage dealt does. When an assault rifle fires a single shot (or multiple singles) use this skill."
                 },

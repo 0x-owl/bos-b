@@ -1,3 +1,5 @@
+import {remove_magic_item_handler, append_html_tome, append_html_artifact, append_html_occult_book} from "/static/creator/js/items_append_html.js"
+
 export function get_arcane(res) {
     for (let spell of res.spells) {
         append_html_spell(spell.uuid, spell)
@@ -5,10 +7,20 @@ export function get_arcane(res) {
     }
 
     for (let artifact of res.artifacts) {
-        $("#inv-artifacts").append(
-            `<li>${artifact}</li>`
-        )
+        append_html_artifact(artifact)
+        remove_magic_item_handler()
     }
+
+    for (let tome of res.tomes){
+        append_html_tome(tome)
+        remove_magic_item_handler()
+    }
+    
+    for (let occult_book of res.occult_books){
+        append_html_occult_book(occult_book)
+        remove_magic_item_handler()
+    }
+    
     $("#inv-encounters").after(
         `<p>${res.encounters}</p>`
     )

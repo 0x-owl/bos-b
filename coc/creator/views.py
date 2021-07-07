@@ -6,6 +6,7 @@ from django.shortcuts import redirect, render
 from django.template.loader import render_to_string
 
 from creator.constants import SILOUETTES as silouettes
+from creator.constants import ITEM_CATEGORIES as item_categories, ITEM_SUBCATEGORIES as item_subcategories
 from creator.helpers.investigator import generate_full_half_fifth_values
 from creator.helpers.views_helper import ALL_MODELS as all_models
 from creator.helpers.views_helper import (gear_sanitizer,
@@ -272,6 +273,43 @@ class ItemsInvestigatorViews:
             return JsonResponse(inventory.properties, status=200)
         return JsonResponse({'response': 'Unauthorized'}, status=401)
 
+    def add_item(request):
+        if request.POST:
+            data = dict(request.POST)
+            sanitize_data = {
+                k: data[k][0] for k in data.keys()
+            }
+            inv = Investigator.objects.get(uuid=sanitize_data['inv'])
+            item = all_models['items'].objects.get(uuid=sanitize_data['item'])
+            props = item.properties.copy()
+            props['title'] = item.title
+            props['era'] = item.era
+            props['price'] = item.base_price
+            props['rare'] = item.rare
+            props['description'] = item.description
+            if item.category == item_categories[2][0]:
+                props['ammo'] = item.properties["bullets_in_gun_mag"]
+            inventory = Inventory.objects.filter(investigator=inv, item=item, properties=props).first()
+            #checks if the investigator already has the item, if not it adds it
+            if inventory is None:
+                inventory = Inventory(
+                    investigator=inv,
+                    item=item,
+                    properties=props
+                    )
+                inventory.save()
+                if item.category == item_categories[2][0]:
+                    props['skill_value'] = generate_full_half_fifth_values(
+                    inv.skills[item.properties['skill']]['value'])
+                return JsonResponse(
+                    {'item': {'uuid': inventory.uuid, 'properties': props, 'stock': inventory.stock },
+                     'category': item.category}, status=201)
+            else:
+                stock = inventory.stock
+                inventory.stock = stock + 1
+                inventory.save()
+                return JsonResponse({'response': 'Stock Increased'}, status=200)
+        return JsonResponse({'response': 'Unauthorized'}, status=401)
 
 class BackstoryInvestigatorViews:
     '''Views associated to all backstory related views of an investigator.'''
@@ -304,9 +342,20 @@ class BackstoryInvestigatorViews:
         # Retrieve arcane
         artifacts = Inventory.objects.filter(
             investigator=investigator,
-            item__category=1
+            item__category=item_categories[0][0],
+            properties__subcategory=item_subcategories['artifacts']
 
         )
+        tomes = Inventory.objects.filter(
+            investigator=investigator, 
+            item__category=item_categories[0][0],
+            properties__subcategory=item_subcategories['tomes']
+            )
+        occult_books= Inventory.objects.filter(
+            investigator=investigator, 
+            item__category=item_categories[0][0],
+            properties__subcategory=item_subcategories['occult_books']
+            )
         spells = SpellInvestigator.objects.filter(
             investigator=investigator
         )
@@ -323,11 +372,53 @@ class BackstoryInvestigatorViews:
             for spell in spells
         ]
         artifacts = [
-            artifact.properties.title
+            {
+                'uuid': artifact.uuid,
+                'properties':{
+                    'title': artifact.properties['title'],
+                    'description': artifact.properties['description'],
+                    'used_by': artifact.properties['used_by'],
+                    'subcategory': artifact.properties['subcategory']
+                }
+            }
             for artifact in artifacts
+        ]
+        tomes = [
+            {
+                'uuid': tome.uuid,
+                'properties': {
+                    'title': tome.properties['title'],
+                    'author': tome.properties['author'],
+                    'mythos_rating': tome.properties['mythos_rating'],
+                    'cthulhu_mythos_initial': tome.properties['cthulhu_mythos_initial'],
+                    'cthulhu_mythos_full': tome.properties['cthulhu_mythos_full'],
+                    'language': tome.properties['language'],
+                    'sanity': tome.properties['sanity'],
+                    'subheading': tome.properties['subheading'],
+                    'subcategory': tome.properties['subcategory']
+                }
+            }
+            for tome in tomes
+        ]
+        occult_books = [
+            {
+                'uuid': occult_book.uuid,
+                'properties': {
+                    'title': occult_book.properties['title'],
+                    'subheading': occult_book.properties['subheading'],
+                    'description': occult_book.properties['description'],
+                    'sanity': occult_book.properties['sanity'],
+                    'occult': occult_book.properties['occult'],
+                    'subheading': occult_book.properties['subheading'],
+                    'subcategory': occult_book.properties['subcategory']
+                }
+            }
+            for occult_book in occult_books
         ]
         res = {
             'artifacts': artifacts,
+            'tomes': tomes,
+            'occult_books': occult_books,
             'spells': spells,
             'encounters': investigator.encounters_with_strange_entities
         }

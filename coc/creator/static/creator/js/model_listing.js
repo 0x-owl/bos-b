@@ -1,12 +1,13 @@
 import {add_mania, add_phobia} from './mania_phobias.js'
 import {add_spells} from './arcane.js'
+import {add_items} from './items.js'
 
 let adding_functions = {
     //'occupations': add_occupation,
     //'skills': add_skill,
     'manias': add_mania,
     'phobias': add_phobia,
-    //'items': add_item,
+    'items': add_items,
     'spells': add_spells
 }
 
@@ -40,9 +41,6 @@ function populate_detail_modal(detail_fields, uuid, model_name){
     for(let item in detail_fields.record){
         $('#listingModal .modal-body').append(`<div>${item}: ${detail_fields.record[item]}</div>`);
     }
-    // TODO: check if this is needed
-    //$('#add-detail').attr('data-uuid', uuid);
-    //$('#add-detail').attr('data-model-name', model_name);
     $('.modal-footer').append('<button type="button" class="btn btn-success" data-bs-dismiss="modal" id="add-detail">Add</button>')
     $('.modal-footer').append('<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>')
     $('#add-detail').click(function(){
