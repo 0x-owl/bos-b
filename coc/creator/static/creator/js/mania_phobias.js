@@ -24,7 +24,7 @@ export function add_mania(uuid){
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
         },
         success: function (res, xhr, responseText) {
-            if (responseText.status === 200){
+            if (responseText.status === 201){
                 append_html_mania(uuid, res.title)
                 remove_mania_handler()
             }
@@ -53,7 +53,7 @@ export function add_phobia(uuid){
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
         },
         success: function (res, xhr, responseText) {
-            if (responseText.status === 200){
+            if (responseText.status === 201){
                 append_html_phobia(uuid, res.title)
                 remove_phobia_handler()
             }
