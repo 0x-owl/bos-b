@@ -3,8 +3,6 @@ import {add_spells} from './arcane.js'
 import {add_items} from './items.js'
 
 let adding_functions = {
-    //'occupations': add_occupation,
-    //'skills': add_skill,
     'manias': add_mania,
     'phobias': add_phobia,
     'items': add_items,

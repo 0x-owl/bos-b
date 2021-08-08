@@ -41,7 +41,7 @@ export function add_spells(uuid){
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
         },
         success: function (res, xhr, responseText) {
-            if (responseText.status === 200){
+            if (responseText.status === 201){
                 append_html_spell(uuid, res.spell)
                 remove_spell_handler()
             }

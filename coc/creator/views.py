@@ -479,7 +479,7 @@ class BackstoryInvestigatorViews:
                 inv_mania.mania = mania
                 inv_mania.investigator = inv
                 inv_mania.save()
-                return JsonResponse({'title': mania.__str__()}, status=200)
+                return JsonResponse({'title': mania.__str__()}, status=201)
             else:
                 return JsonResponse({'response': 'Already in use'}, status=304)
         return JsonResponse({'response': 'Unauthorized'}, status=401)
@@ -507,7 +507,7 @@ class BackstoryInvestigatorViews:
                 inv_phobia.phobia = phobia
                 inv_phobia.investigator = inv
                 inv_phobia.save()
-                return JsonResponse({'title': phobia.__str__()}, status=200)
+                return JsonResponse({'title': phobia.__str__()}, status=201)
             else:
                 return JsonResponse({'response': 'Already in use'}, status=304)
         return JsonResponse({'response': 'Unauthorized'}, status=401)
@@ -535,7 +535,7 @@ class BackstoryInvestigatorViews:
                 inv_spell.spell = spell
                 inv_spell.investigator = inv
                 inv_spell.save()
-                return JsonResponse({'spell': spell.safe_dict()}, status=200)
+                return JsonResponse({'spell': spell.safe_dict()}, status=201)
             else:
                 return JsonResponse({'response': 'Already in use'}, status=304)
         return JsonResponse({'response': 'Unauthorized'}, status=401)
