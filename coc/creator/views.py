@@ -1,5 +1,5 @@
 from ast import literal_eval as leval
-from json import dumps
+from json import dumps, loads
 from random import choice
 
 from django.http import HttpResponse, JsonResponse
@@ -15,7 +15,7 @@ from creator.helpers.views_helper import (gear_sanitizer,
                                           generate_attributes_form,
                                           generate_basic_info_form,
                                           generate_derivative_attributes_form,
-                                          skills_sanitizer)
+                                          skills_sanitizer, skills_sum)
 from creator.models import (Inventory, Investigator, Item, ManiaInvestigator,
                             Occupation, PhobiaInvestigator, Portrait, Skills,
                             SpellInvestigator, Mania, Phobia, Spell)
@@ -171,18 +171,33 @@ class SkillsInvestigatorViews:
 
     def update_investigators_skill(request, inv):
         '''Update a single skill for an investigator.'''
-        investigator = Investigator.objects.get(
-            uuid=inv
-        )
-        data_unclean = dict(request.POST)
-        skill = list(data_unclean.keys())[0]
-        skill_value = data_unclean[skill][0]
-        inv_sk = investigator.skills.get(skill)
-        if inv_sk is not None:
-            investigator.skills[skill]['value'] = int(skill_value)
-        investigator.save()
-        res = {skill: list(generate_full_half_fifth_values(int(skill_value)))}
-        return JsonResponse(res, status=200)
+        if request.method == "POST":
+            investigator = Investigator.objects.get(
+                uuid=inv
+            )
+            data_unclean = loads(request.body)
+            improved = data_unclean.get('improved', False)
+            skill = list(data_unclean.keys())[0]
+            new_value = data_unclean[skill]
+            assert isinstance(new_value, int), 'Invalid Value, Expected int'
+            assigned_points = skills_sum(investigator.skills, 'value') - skills_sum(investigator.skills, 'base_value')
+            if investigator.skills.get(skill) is None:
+                return JsonResponse({'response': 'Invalid Skill'}, status=400)
+            old_value = investigator.skills[skill]['value']
+            points_change = new_value - old_value
+            skill_pool = investigator.occupation_skill_points + investigator.free_skill_points
+            if new_value < investigator.skills[skill]['base_value'] or (improved and points_change < 0) or new_value >= 99:
+                return JsonResponse({'response': 'Invalid Value'}, status=400)
+            if not improved and assigned_points + points_change > skill_pool:
+                return JsonResponse({'response': 'Overassigned Skill'}, status=400)
+            if improved:
+                investigator.skills[skill]['improved'] = points_change
+            else:
+                investigator.skills[skill]['value'] = new_value
+            investigator.save()
+            res = {skill: list(generate_full_half_fifth_values(new_value))}
+            return JsonResponse(res, status=200)
+        return JsonResponse({'response': 'Unauthorized'}, status=401)
 
 
     def investigators_skills_reset(request, inv):

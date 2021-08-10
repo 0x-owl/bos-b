@@ -139,7 +139,9 @@ def occ_point_assigner(max_points: int, inv: Investigator):
 
     
     inv.skills['Language(Own)']['value'] = inv.education
+    inv.skills['Language(Own)']['base_value'] = inv.education
     inv.skills['Dodge']['value'] = inv.dexterity // 2
+    inv.skills['Dodge']['base_value'] = inv.dexterity // 2
     inv.save()
 
 
@@ -169,14 +171,17 @@ def base_skills_generator(skills: list, inv: Investigator):
                 sub_skill_val = skill.sub_skills[sub_skill].get('base_value')
                 if sub_skill_val is None:
                     inv.skills[skill_name] = {
+                        'base_value': skill.base_value,
                         'value': skill.base_value
                     }
                 else:
                     inv.skills[skill_name] = {
+                        'base_value': sub_skill_val,
                         'value': sub_skill_val
                     }
         else:
             inv.skills[skill.title] = {
+                'base_value': skill.base_value,
                 'value': skill.base_value
             }
     
@@ -251,7 +256,7 @@ class RandomInvestigator:
         occ_point_assigner(proff_points, self.investigator)
         # Assign free skill points
         free_point_assigner(self.investigator.free_skill_points, self.investigator)
-    
+
     def seed_inventory(self):
         '''Give the investigator 5 random tools or consumables.'''
         if self.investigator.assets:
