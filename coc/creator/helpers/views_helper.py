@@ -15,6 +15,14 @@ ALL_MODELS = {
     'phobias': Phobia
     }
 
+
+def skills_sum(skill_list, value_key):
+    total = 0
+    for skill in skill_list:
+        total += skill_list[skill][value_key]
+    return total
+    
+
 def generate_basic_info_form(request, inv):
     '''Generate or update the investigator using the basic information form.'''
     inv = Investigator.objects.get(

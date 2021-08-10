@@ -198,7 +198,6 @@ class Investigator(BaseModel):
     cash = IntegerField(default=0)
     assets = IntegerField(default=0)
     spending_level = IntegerField(default=0)
-
     @property
     def max_health(self):
         """Health property."""
